@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <script src="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/_ds_bundle.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; }
+    ::selection { background: var(--indigo-200); }
+  </style>
+</helmet>
+
+<div style="background:var(--cold-grey-200); font-family:var(--font-primary); color:var(--neutral-fg-primary); padding:36px 24px 48px;">
+<div style="width:1200px; max-width:100%; margin:0 auto;">
+
+  <!-- header -->
+  <div style="margin-bottom:26px;">
+    <span style="display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--brand); background:var(--indigo-200); padding:6px 13px; border-radius:9999px;"><i class="ri-node-tree" style="font-size:15px;"></i>Megoldási javaslat · 2. út</span>
+    <h1 style="font-weight:700; font-size:40px; line-height:1.1; letter-spacing:-0.02em; margin:16px 0 10px; color:var(--neutral-fg-primary);">Headless architektúra</h1>
+    <p style="font-size:18px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); max-width:820px; margin:0;">A publikus arculatot leválasztjuk a Moodle-ról: a látogatók egy modern, szabadon formálható fronton érkeznek, a tényleges tanulást pedig a bevált Moodle motor szolgálja ki. A kettőt egy egységes belépés köti össze.</p>
+  </div>
+
+  <!-- legend -->
+  <div style="display:flex; gap:18px; flex-wrap:wrap; margin-bottom:20px;">
+    <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--neutral-fg-secondary);"><span style="width:14px; height:14px; border-radius:4px; background:var(--semantic-green-800);"></span>Új fejlesztés (headless front)</span>
+    <span style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--neutral-fg-secondary);"><span style="width:14px; height:14px; border-radius:4px; background:var(--brand);"></span>Marad Moodle-ben (átszínezve)</span>
+  </div>
+
+  <!-- main diagram -->
+  <div style="display:grid; grid-template-columns:1fr 96px 1fr; gap:0; align-items:stretch;">
+
+    <!-- ZONE A: headless front -->
+    <div style="background:#fff; border:1px solid var(--neutral-border); border-top:4px solid var(--semantic-green-800); border-radius:16px; box-shadow:var(--elevation-200); padding:26px; display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:center; gap:13px; margin-bottom:6px;">
+        <span style="width:48px; height:48px; border-radius:13px; background:var(--semantic-green-200); color:var(--semantic-green-900); display:inline-flex; align-items:center; justify-content:center; font-size:26px;"><i class="ri-window-line"></i></span>
+        <div>
+          <div style="font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--semantic-green-900);">Új · headless</div>
+          <div style="font-weight:700; font-size:21px; letter-spacing:-0.01em; color:var(--neutral-fg-primary);">Publikus front</div>
+        </div>
+      </div>
+      <p style="font-size:13.5px; font-weight:500; line-height:1.5; color:var(--neutral-fg-tertiary); margin:0 0 18px;">Belépés előtt, mindenkinek látható. Teljes arculati szabadság, gyors, SEO-barát.</p>
+      <div style="display:flex; flex-direction:column; gap:9px;">
+        <sc-for list="{{ frontItems }}" as="i" hint-placeholder-count="6">
+          <div style="display:flex; align-items:center; gap:12px; padding:11px 13px; background:var(--cold-grey-200); border-radius:10px;">
+            <i class="{{ i.icon }}" style="font-size:20px; color:var(--semantic-green-900); flex:0 0 auto;"></i>
+            <span style="flex:1;"><span style="display:block; font-weight:700; font-size:14.5px; color:var(--neutral-fg-primary);">{{ i.title }}</span><span style="display:block; font-size:12.5px; font-weight:500; color:var(--neutral-fg-tertiary); margin-top:1px;">{{ i.desc }}</span></span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:auto; padding-top:16px;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <sc-for list="{{ frontTags }}" as="t" hint-placeholder-count="3">
+            <span style="font-size:12px; font-weight:700; color:var(--semantic-green-900); background:var(--semantic-green-200); padding:5px 11px; border-radius:9999px;">{{ t }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- GATE -->
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; padding:0 4px;">
+      <div style="width:2px; flex:1; background:linear-gradient(var(--neutral-border), var(--brand));"></div>
+      <div style="width:72px; height:72px; border-radius:9999px; background:var(--brand); color:#fff; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 8px 20px rgba(66,88,237,0.4); flex:0 0 auto;"><i class="ri-shield-user-line" style="font-size:32px;"></i></div>
+      <div style="text-align:center; font-size:11px; font-weight:700; letter-spacing:0.03em; color:var(--brand); line-height:1.3;">Belépés<br>Ügyfélkapu+</div>
+      <div style="width:2px; flex:1; background:linear-gradient(var(--brand), var(--neutral-border));"></div>
+    </div>
+
+    <!-- ZONE B: Moodle -->
+    <div style="background:#fff; border:1px solid var(--neutral-border); border-top:4px solid var(--brand); border-radius:16px; box-shadow:var(--elevation-200); padding:26px; display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:center; gap:13px; margin-bottom:6px;">
+        <span style="width:48px; height:48px; border-radius:13px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-size:26px;"><i class="ri-graduation-cap-line"></i></span>
+        <div>
+          <div style="font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--brand);">Marad · LMS motor</div>
+          <div style="font-weight:700; font-size:21px; letter-spacing:-0.01em; color:var(--neutral-fg-primary);">Moodle</div>
+        </div>
+      </div>
+      <p style="font-size:13.5px; font-weight:500; line-height:1.5; color:var(--neutral-fg-tertiary); margin:0 0 18px;">Belépés után, a tényleges tanulás. Bevált, megfelelőségi (compliance) szempontból is biztos — csak átszínezzük.</p>
+      <div style="display:flex; flex-direction:column; gap:9px;">
+        <sc-for list="{{ moodleItems }}" as="i" hint-placeholder-count="6">
+          <div style="display:flex; align-items:center; gap:12px; padding:11px 13px; background:var(--cold-grey-200); border-radius:10px;">
+            <i class="{{ i.icon }}" style="font-size:20px; color:var(--brand); flex:0 0 auto;"></i>
+            <span style="flex:1;"><span style="display:block; font-weight:700; font-size:14.5px; color:var(--neutral-fg-primary);">{{ i.title }}</span><span style="display:block; font-size:12.5px; font-weight:500; color:var(--neutral-fg-tertiary); margin-top:1px;">{{ i.desc }}</span></span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:auto; padding-top:16px;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <sc-for list="{{ moodleTags }}" as="t" hint-placeholder-count="3">
+            <span style="font-size:12px; font-weight:700; color:var(--brand); background:var(--indigo-200); padding:5px 11px; border-radius:9999px;">{{ t }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- shared arculat layer -->
+  <div style="margin-top:18px; background:linear-gradient(135deg, var(--indigo-1300), var(--indigo-1500)); border-radius:16px; padding:22px 26px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; color:#fff;">
+    <div style="display:flex; align-items:center; gap:13px; flex:0 0 auto;">
+      <span style="width:44px; height:44px; border-radius:12px; background:var(--white-alpha-10); display:inline-flex; align-items:center; justify-content:center; font-size:22px;"><i class="ri-palette-line"></i></span>
+      <div><div style="font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--indigo-500);">Közös réteg</div><div style="font-weight:700; font-size:18px; letter-spacing:-0.01em;">Egységes arculat mindkét oldalon</div></div>
+    </div>
+    <div style="flex:1; min-width:280px; display:flex; gap:9px; flex-wrap:wrap; justify-content:flex-end;">
+      <sc-for list="{{ sharedTags }}" as="t" hint-placeholder-count="5">
+        <span style="font-size:13px; font-weight:600; color:#fff; background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); padding:7px 14px; border-radius:9999px;">{{ t }}</span>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- data connection note -->
+  <div style="margin-top:18px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+    <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:14px; padding:20px 22px; display:flex; gap:14px;">
+      <i class="ri-exchange-line" style="font-size:24px; color:var(--brand); flex:0 0 auto;"></i>
+      <div><div style="font-weight:700; font-size:16px; letter-spacing:-0.01em; margin-bottom:4px;">Hogyan beszél a két oldal?</div><p style="font-size:13.5px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0;">A „Belépés" gomb átirányít a Moodle-ba (SSO / Ügyfélkapu+). A publikus front a kurzus-metaadatokat (cím, modulszám, leírás) egyszerű szinkronból vagy a Moodle API-ból kapja — így a kurzuslista mindig naprakész.</p></div>
+    </div>
+    <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:14px; padding:20px 22px; display:flex; gap:14px;">
+      <i class="ri-shield-check-line" style="font-size:24px; color:var(--semantic-green-900); flex:0 0 auto;"></i>
+      <div><div style="font-weight:700; font-size:16px; letter-spacing:-0.01em; margin-bottom:4px;">Miért ez a legkisebb kockázat?</div><p style="font-size:13.5px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0;">A tananyag, az oklevél-logika, a jogosultságok és a compliance érintetlenül maradnak a Moodle-ban. Csak a látható felületeket újítjuk meg — a kockázatos „mag" nem mozdul.</p></div>
+    </div>
+  </div>
+
+  <!-- plan -->
+  <div style="margin-top:30px;">
+    <h2 style="font-weight:700; font-size:24px; letter-spacing:-0.02em; margin:0 0 16px; color:var(--neutral-fg-primary);">Javasolt ütemterv</h2>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+      <sc-for list="{{ phases }}" as="p" hint-placeholder-count="4">
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:14px; padding:20px; position:relative;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span style="width:36px; height:36px; border-radius:9999px; background:var(--brand); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:16px;">{{ p.n }}</span>
+            <span style="font-size:11px; font-weight:700; color:{{ p.statusFg }}; background:{{ p.statusBg }}; padding:4px 10px; border-radius:9999px;">{{ p.status }}</span>
+          </div>
+          <div style="font-weight:700; font-size:15.5px; letter-spacing:-0.01em; color:var(--neutral-fg-primary); margin-bottom:6px;">{{ p.title }}</div>
+          <p style="font-size:13px; font-weight:500; line-height:1.5; color:var(--neutral-fg-secondary); margin:0;">{{ p.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      frontItems: [
+        { icon: 'ri-home-4-line', title: 'Kezdőoldal', desc: 'Hero, értékajánlat, CTA' },
+        { icon: 'ri-newspaper-line', title: 'Hírek / blog', desc: 'Események, tájékoztatók' },
+        { icon: 'ri-book-open-line', title: 'Kurzus-leírások', desc: 'Nyilvános ismertetők, tananyag-vázlat' },
+        { icon: 'ri-customer-service-2-line', title: 'Elérhetőségek', desc: 'Kapcsolati űrlap, GYIK' },
+        { icon: 'ri-search-eye-line', title: 'SEO & megosztás', desc: 'Kereshetőség, közösségi előnézet' },
+        { icon: 'ri-mail-send-line', title: 'Hírlevél-feliratkozás', desc: 'Landing + űrlap' },
+      ],
+      frontTags: ['Teljes arculati szabadság', 'Gyors', 'Reszponzív'],
+      moodleItems: [
+        { icon: 'ri-stack-line', title: 'Kurzusok & modulok', desc: '4 modul, 69 lecke' },
+        { icon: 'ri-play-list-2-line', title: 'Leckék & kvízek', desc: 'Interaktív tananyag, SCORM' },
+        { icon: 'ri-line-chart-line', title: 'Haladáskövetés', desc: 'Folytatás, teljesítés' },
+        { icon: 'ri-medal-line', title: 'Oklevél (PDF)', desc: 'Automatikus generálás' },
+        { icon: 'ri-group-line', title: 'Szerepek & jogosultságok', desc: 'Résztvevő, oktató, admin' },
+        { icon: 'ri-bar-chart-box-line', title: 'Riportok & adatbázis', desc: 'Statisztika, adatkezelés' },
+      ],
+      moodleTags: ['Bevált', 'Compliance', 'Nem mozdul'],
+      sharedTags: ['Logó', 'Színek (indigó)', 'Tipográfia (Inter)', 'Gombok & komponensek', 'Akadálymentesség'],
+      phases: [
+        { n: '1', title: 'Arculat véglegesítése', desc: 'Hero-irány és logó kiválasztása. Az alapok készen állnak.', status: 'Kész alap', statusFg: 'var(--semantic-green-900)', statusBg: 'var(--semantic-green-200)' },
+        { n: '2', title: 'Publikus front élesítése', desc: 'A mostani terv statikus/CMS-alapú frontként, saját tárhelyen.', status: 'Következő', statusFg: 'var(--brand)', statusBg: 'var(--indigo-200)' },
+        { n: '3', title: 'Moodle-téma egységesítése', desc: 'Belépés utáni nézetek átszínezése: dashboard, kurzus, lecke, oklevél.', status: 'Tervezendő', statusFg: 'var(--semantic-orange-900)', statusBg: 'var(--semantic-orange-200)' },
+        { n: '4', title: 'Összekötés', desc: 'Belépés-átirányítás (SSO) + kurzus-metaadat szinkron a fronthoz.', status: 'Tervezendő', statusFg: 'var(--semantic-orange-900)', statusBg: 'var(--semantic-orange-200)' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

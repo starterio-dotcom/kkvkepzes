@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+  <meta name="design_doc_mode" content="canvas">
+  <link rel="stylesheet" href="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <style>
+    html, body { margin:0; background:#e9edf2; font-family:var(--font-primary); }
+    .dv-turn { padding:40px 44px 34px; }
+    .dv-thd { display:flex; align-items:baseline; gap:10px; margin:0 0 6px; }
+    .dv-tid { font:600 10px ui-monospace,Menlo,monospace; padding:3px 7px; background:#1a1a1a; color:#fff; border-radius:4px; text-decoration:none; }
+    .dv-tname { font:600 13px/1.2 var(--font-primary); color:#1a1a1a; }
+    .dv-sub { font:500 13px/1.5 var(--font-primary); color:rgba(0,0,0,.5); margin:0 0 24px; max-width:720px; }
+    .dv-opts { display:flex; flex-wrap:wrap; gap:30px; align-items:flex-start; }
+    .dv-opt { flex:none; display:flex; flex-direction:column; gap:11px; scroll-margin-top:16px; }
+    .dv-oid { font:600 10.5px ui-monospace,Menlo,monospace; padding:3px 7px; background:rgba(0,0,0,.08); color:#1a1a1a; border-radius:5px; text-decoration:none; }
+    .dv-olabel { display:flex; align-items:center; gap:9px; font:500 12px/1.3 var(--font-primary); color:rgba(0,0,0,.6); }
+    .dv-otag { font:700 10px/1 var(--font-primary); letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:9999px; }
+    .dv-opt:target .dv-oid { background:var(--brand); color:#fff; }
+    /* hero panel */
+    .hp { width:560px; max-width:100%; aspect-ratio:7/5; border-radius:22px; position:relative; overflow:hidden; box-shadow:0 20px 50px rgba(8,12,40,.28); display:flex; align-items:center; justify-content:center; padding:34px; box-sizing:border-box;
+      background:radial-gradient(130% 130% at 18% 0%, #4258ed 0%, #262d71 62%, #181f4f 100%); }
+    .glass { background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22); backdrop-filter:blur(6px); }
+    /* animations — all resting-safe (base state already looks finished) */
+    @keyframes floatA { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-11px)} }
+    @keyframes floatB { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    @keyframes floatC { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+    @keyframes spinS { to { transform:rotate(360deg) } }
+    @keyframes spinR { to { transform:rotate(-360deg) } }
+    @keyframes barFill { 0%{width:34%} 100%{width:88%} }
+    @keyframes pulseRing { 0%{transform:scale(.65);opacity:.55} 100%{transform:scale(1.35);opacity:0} }
+    @keyframes shimmer { 0%{transform:translateX(-120%)} 100%{transform:translateX(120%)} }
+    @keyframes orbit { to { transform:rotate(360deg) } }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.45} }
+  </style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+  <div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Alternatív hero-vizuálok · hero A jobb oldali eleme</span></div>
+  <p class="dv-sub">Öt irány a hero jobb oldali képéhez. Mindegyik a DÁP palettával, visszafogott mozgással (nyugodt, lassú — ahol animált). A nyugalmi állapot minden esetben „kész" képet mutat, a mozgás csak finom réteg. Válaszd ki, melyiket építsem be — akár többet is, hero-váltónként.</p>
+
+  <div class="dv-opts">
+
+    <!-- 1a static card -->
+    <div class="dv-opt" id="1a">
+      <div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a><span class="dv-otag" style="background:#e9edf2;color:#606b7a;">Statikus</span>Kurzus-előnézeti kártya (jelenlegi, letisztítva)</div>
+      <div class="hp">
+        <div style="width:340px; max-width:100%; background:#fff; border-radius:18px; box-shadow:0 24px 44px rgba(5,9,32,.34); padding:22px; color:var(--neutral-fg-primary);">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="width:46px;height:46px;border-radius:13px;background:var(--indigo-200);color:var(--brand);display:inline-flex;align-items:center;justify-content:center;font-size:24px;"><i class="ri-scales-3-line"></i></span>
+            <div><div style="font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--brand);">Kiemelt kurzus</div><div style="font-weight:700;font-size:16px;letter-spacing:-.01em;">Közbeszerzési szakmai tananyag</div></div>
+          </div>
+          <div style="height:1px;background:var(--neutral-border);margin:16px 0;"></div>
+          <div style="display:flex;flex-direction:column;gap:11px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--neutral-fg-secondary);"><i class="ri-stack-line" style="font-size:18px;color:var(--neutral-fg-tertiary);"></i>Modulok</span><span style="font-size:14px;font-weight:700;">4</span></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--neutral-fg-secondary);"><i class="ri-play-list-2-line" style="font-size:18px;color:var(--neutral-fg-tertiary);"></i>Leckék</span><span style="font-size:14px;font-weight:700;">69</span></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--neutral-fg-secondary);"><i class="ri-medal-line" style="font-size:18px;color:var(--neutral-fg-tertiary);"></i>Oklevél</span><span style="font-size:14px;font-weight:700;">PDF</span></div>
+          </div>
+          <button style="margin-top:16px;width:100%;height:44px;border-radius:9999px;background:var(--brand);color:#fff;border:none;font-weight:700;font-size:14px;font-family:var(--font-primary);">Megnézem a tananyagot</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1b animated progress -->
+    <div class="dv-opt" id="1b">
+      <div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a><span class="dv-otag" style="background:var(--semantic-green-200);color:var(--semantic-green-900);">Animált</span>Haladás-kártya — kitöltődő csík, teljesített modulok</div>
+      <div class="hp">
+        <div style="width:360px; max-width:100%; background:#fff; border-radius:18px; box-shadow:0 24px 44px rgba(5,9,32,.34); padding:22px; color:var(--neutral-fg-primary); opacity:{{ cardOpacity }}; transition:opacity .5s ease;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+            <div style="font-weight:700;font-size:15px;letter-spacing:-.01em;">A haladásod</div>
+            <span style="{{ badgeStyle }}">{{ doneLabel }}</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:9px;">
+            <sc-for list="{{ modules }}" as="m" hint-placeholder-count="4">
+              <div style="{{ m.rowStyle }}"><span style="{{ m.iconWrap }}"><i class="{{ m.icon }}" style="{{ m.iconStyle }}"></i></span><span style="{{ m.textStyle }}">{{ m.name }}</span></div>
+            </sc-for>
+          </div>
+          <div style="margin-top:16px;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:7px;"><span style="font-size:12px;font-weight:600;color:var(--neutral-fg-secondary);">Összesített haladás</span><span style="font-size:12px;font-weight:700;color:var(--brand);">{{ pct }}</span></div>
+            <div style="height:9px;background:var(--cold-grey-300);border-radius:9999px;overflow:hidden;"><div style="width:{{ pct }};height:100%;background:linear-gradient(90deg,var(--brand),var(--indigo-800));border-radius:9999px;transition:width .7s ease;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1c certificate ring -->
+    <div class="dv-opt" id="1c">
+      <div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a><span class="dv-otag" style="background:var(--semantic-green-200);color:var(--semantic-green-900);">Animált</span>Oklevél-motívum — forgó pecsétgyűrű, teljesítve</div>
+      <div class="hp">
+        <div style="position:relative;width:300px;height:100%;display:flex;align-items:center;justify-content:center;">
+          <!-- rotating dashed outer ring -->
+          <svg width="230" height="230" viewBox="0 0 230 230" style="position:absolute;animation:spinS 26s linear infinite;">
+            <circle cx="115" cy="115" r="108" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"></circle>
+          </svg>
+          <svg width="196" height="196" viewBox="0 0 196 196" style="position:absolute;">
+            <circle cx="98" cy="98" r="86" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="10"></circle>
+            <circle cx="98" cy="98" r="86" fill="none" stroke="#5fe9aa" stroke-width="10" stroke-linecap="round" stroke-dasharray="540" stroke-dashoffset="0" transform="rotate(-90 98 98)"></circle>
+          </svg>
+          <div style="position:relative;width:150px;height:150px;border-radius:9999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;">
+            <i class="ri-medal-2-fill" style="font-size:52px;color:#fff;"></i>
+            <div style="font-weight:700;font-size:15px;letter-spacing:-.01em;margin-top:4px;">Oklevél</div>
+            <div style="font-size:11px;font-weight:600;color:#5fe9aa;">Teljesítve · 100%</div>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:26px;text-align:center;color:#fff;">
+          <div style="font-weight:700;font-size:16px;letter-spacing:-.01em;">Közbeszerzési szakmai tananyag</div>
+          <div style="font-size:12px;font-weight:500;color:rgba(255,255,255,.7);margin-top:2px;">Letölthető PDF · a te nevedre</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1d floating glass icons -->
+    <div class="dv-opt" id="1d">
+      <div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a><span class="dv-otag" style="background:var(--semantic-green-200);color:var(--semantic-green-900);">Animált</span>Lebegő üveglapok — mélység, témák ikonjai</div>
+      <div class="hp">
+        <span style="position:absolute;width:230px;height:230px;border-radius:9999px;background:radial-gradient(closest-side,rgba(138,170,255,.35),transparent);"></span>
+        <div style="position:relative;width:320px;height:270px;">
+          <div class="glass" style="position:absolute;left:8px;top:24px;width:190px;border-radius:16px;padding:16px;display:flex;align-items:center;gap:13px;color:#fff;animation:floatA 6s ease-in-out infinite;">
+            <span style="width:42px;height:42px;border-radius:11px;background:#fff;color:var(--brand);display:inline-flex;align-items:center;justify-content:center;font-size:22px;flex:0 0 auto;"><i class="ri-scales-3-line"></i></span>
+            <div><div style="font-weight:700;font-size:14px;">Ajánlattétel</div><div style="font-size:11px;color:rgba(255,255,255,.7);">21 lecke</div></div>
+          </div>
+          <div class="glass" style="position:absolute;right:0;top:96px;width:210px;border-radius:16px;padding:16px;display:flex;align-items:center;gap:13px;color:#fff;animation:floatB 6s ease-in-out infinite .8s;">
+            <span style="width:42px;height:42px;border-radius:11px;background:#fff;color:var(--semantic-green-800);display:inline-flex;align-items:center;justify-content:center;font-size:22px;flex:0 0 auto;"><i class="ri-computer-line"></i></span>
+            <div><div style="font-weight:700;font-size:14px;">EKR használata</div><div style="font-size:11px;color:rgba(255,255,255,.7);">gyakorlati</div></div>
+          </div>
+          <div class="glass" style="position:absolute;left:26px;bottom:6px;width:200px;border-radius:16px;padding:16px;display:flex;align-items:center;gap:13px;color:#fff;animation:floatC 7s ease-in-out infinite .4s;">
+            <span style="width:42px;height:42px;border-radius:11px;background:#fff;color:var(--semantic-orange-900);display:inline-flex;align-items:center;justify-content:center;font-size:22px;flex:0 0 auto;"><i class="ri-auction-line"></i></span>
+            <div><div style="font-weight:700;font-size:14px;">Jogorvoslat</div><div style="font-size:11px;color:rgba(255,255,255,.7);">10 lecke</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1e brand mark motif -->
+    <div class="dv-opt" id="1e">
+      <div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a><span class="dv-otag" style="background:var(--semantic-green-200);color:var(--semantic-green-900);">Animált</span>Márkajel-motívum — lüktető gyűrűk, keringő pontok</div>
+      <div class="hp">
+        <div style="position:relative;width:260px;height:260px;display:flex;align-items:center;justify-content:center;">
+          <span style="position:absolute;width:210px;height:210px;border-radius:9999px;border:1px solid rgba(255,255,255,.22);animation:pulseRing 3.6s ease-out infinite;"></span>
+          <span style="position:absolute;width:210px;height:210px;border-radius:9999px;border:1px solid rgba(255,255,255,.22);animation:pulseRing 3.6s ease-out infinite 1.8s;"></span>
+          <span style="position:absolute;width:170px;height:170px;border-radius:9999px;border:1px solid rgba(255,255,255,.16);"></span>
+          <!-- orbit dots -->
+          <div style="position:absolute;width:210px;height:210px;animation:orbit 18s linear infinite;">
+            <span style="position:absolute;top:-4px;left:50%;width:9px;height:9px;border-radius:9999px;background:#5fe9aa;transform:translateX(-50%);"></span>
+            <span style="position:absolute;bottom:-4px;left:50%;width:7px;height:7px;border-radius:9999px;background:#8aaaff;transform:translateX(-50%);"></span>
+          </div>
+          <div style="position:relative;width:118px;height:118px;border-radius:30px;background:linear-gradient(150deg,#647aff,#4258ed 55%,#3130ab);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(66,88,237,.5);animation:floatB 6s ease-in-out infinite;">
+            <svg width="66" height="66" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4 L21 8 L12 12 L3 8 Z" fill="#fff"></path>
+              <path d="M6.5 9.8 V13.6 C6.5 13.6 8.6 15.6 12 15.6 C15.4 15.6 17.5 13.6 17.5 13.6 V9.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M21 8 V13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+              <circle cx="21" cy="14" r="1.1" fill="#fff"></circle>
+            </svg>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:24px;text-align:center;color:#fff;">
+          <div style="font-weight:700;font-size:16px;letter-spacing:-.01em;">Közbeszerzés, érthetően</div>
+          <div style="font-size:12px;font-weight:500;color:rgba(255,255,255,.7);margin-top:2px;">4 modul · 69 lecke · oklevél</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="dv-sub" style="margin-top:26px;">Következő lépés — írd meg pl.: „építsd be a <a class="dv-oid" href="#1c">1c</a>-t hero A-ba" · „1b legyen az alap, de statikus csíkkal" · „1e-t, de zöld helyett kék pontokkal" · „kombináld 1d ikonjait 1a kártyájával".</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { done: 0, fading: false };
+  componentDidMount() { this._run(); }
+  componentWillUnmount() { clearTimeout(this._t); }
+  _run() {
+    const d = this.state.done;
+    if (d < 4) {
+      this._t = setTimeout(() => { this.setState({ done: d + 1 }); this._run(); }, 1300);
+    } else {
+      this._t = setTimeout(() => {
+        this.setState({ fading: true });
+        this._t = setTimeout(() => { this.setState({ done: 0, fading: false }); this._run(); }, 650);
+      }, 1700);
+    }
+  }
+  renderVals() {
+    const names = ['Közbeszerzési alapok', 'Ajánlattétel a gyakorlatban', 'Szerződés teljesítése', 'Jogorvoslat és EKR'];
+    const done = this.state.done;
+    const base = 'display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;transition:background .45s ease,opacity .45s ease;';
+    const iconBase = 'width:26px;height:26px;border-radius:9999px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;transition:background .45s ease;';
+    const modules = names.map((name, i) => {
+      const isDone = i < done;
+      const isActive = i === done && done < 4;
+      if (isDone) return { name, rowStyle: base + 'background:var(--cold-grey-200);', iconWrap: iconBase + 'background:var(--semantic-green-800);color:#fff;font-size:15px;', icon: 'ri-check-line', iconStyle: '', textStyle: 'flex:1;font-size:13.5px;font-weight:600;color:var(--neutral-fg-primary);' };
+      if (isActive) return { name, rowStyle: base + 'background:var(--indigo-100);box-shadow:inset 0 0 0 1px var(--indigo-200);', iconWrap: iconBase + 'background:var(--brand);color:#fff;font-size:14px;', icon: 'ri-loader-4-line', iconStyle: 'animation:spinS 1s linear infinite;', textStyle: 'flex:1;font-size:13.5px;font-weight:700;color:var(--brand);' };
+      return { name, rowStyle: base + 'background:var(--cold-grey-200);opacity:.55;', iconWrap: iconBase + 'background:var(--cold-grey-400);color:#fff;font-size:14px;', icon: 'ri-lock-line', iconStyle: '', textStyle: 'flex:1;font-size:13.5px;font-weight:600;color:var(--neutral-fg-secondary);' };
+    });
+    const pct = Math.round(done / 4 * 100) + '%';
+    const doneLabel = done >= 4 ? '4 / 4 · kész' : done + ' / 4 modul';
+    const badgeStyle = 'font-size:12px;font-weight:700;padding:4px 10px;border-radius:9999px;transition:background .4s ease,color .4s ease;' + (done >= 4 ? 'color:#fff;background:var(--semantic-green-800);' : 'color:var(--semantic-green-900);background:var(--semantic-green-200);');
+    return { modules, pct, doneLabel, badgeStyle, cardOpacity: this.state.fading ? 0.3 : 1 };
+  }
+}
+</script>
+</body>
+</html>

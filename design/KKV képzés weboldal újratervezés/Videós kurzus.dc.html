@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <script src="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/_ds_bundle.js"></script>
+  <style>
+    @keyframes vkFade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @keyframes vkPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+    html, body { margin: 0; padding: 0; }
+    ::selection { background: var(--indigo-200); }
+    a { color: inherit; text-decoration: none; }
+    .vk-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+    .vk-scroll::-webkit-scrollbar-thumb { background: var(--cold-grey-400); border-radius: 9999px; }
+    .vk-scroll::-webkit-scrollbar-track { background: transparent; }
+  </style>
+</helmet>
+
+<div style="min-height:100vh; background:var(--cold-grey-200); font-family:var(--font-primary); color:var(--neutral-fg-primary); display:flex; flex-direction:column;">
+
+  <!-- ============ HEADER (egységes) ============ -->
+  <div style="position:sticky; top:0; z-index:50;">
+    <header style="background:rgba(255,255,255,0.92); backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--neutral-border);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:0 20px; height:64px; display:flex; align-items:center; gap:24px;">
+        <a href="KKV Képzés.dc.html" style="display:flex; align-items:center; gap:12px;">
+          <span style="width:40px; height:40px; border-radius:11px; background:linear-gradient(150deg, var(--indigo-800), var(--brand) 55%, var(--indigo-1000)); display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; box-shadow:0 4px 10px rgba(66,88,237,0.35);">
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 4 L21 8 L12 12 L3 8 Z" fill="#fff"></path>
+              <path d="M6.5 9.8 V13.6 C6.5 13.6 8.6 15.6 12 15.6 C15.4 15.6 17.5 13.6 17.5 13.6 V9.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M21 8 V13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+              <circle cx="21" cy="14" r="1.1" fill="#fff"></circle>
+            </svg>
+          </span>
+          <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1;">
+            <span style="font-weight:800; font-size:18px; letter-spacing:-0.02em; color:var(--neutral-fg-primary);">KKV&nbsp;<span style="color:var(--brand);">Képzés</span></span>
+            <span style="font-weight:700; font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-top:3px;">Közbeszerzési képzések</span>
+          </span>
+        </a>
+        <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <nav style="margin-left:12px; display:flex; gap:2px;">
+          <a href="KKV Képzés.dc.html" style="padding:9px 15px; border-radius:9999px; font-weight:700; font-size:14px; color:var(--neutral-fg-secondary);" style-hover="background:var(--cold-grey-200);">Kezdőoldal</a>
+          <a href="KKV Képzés.dc.html" style="padding:9px 15px; border-radius:9999px; font-weight:700; font-size:14px; color:var(--brand); background:var(--indigo-100);">Kurzusok</a>
+          <a href="KKV Képzés.dc.html" style="padding:9px 15px; border-radius:9999px; font-weight:700; font-size:14px; color:var(--neutral-fg-secondary);" style-hover="background:var(--cold-grey-200);">Hírek</a>
+          <a href="KKV Képzés.dc.html" style="padding:9px 15px; border-radius:9999px; font-weight:700; font-size:14px; color:var(--neutral-fg-secondary);" style-hover="background:var(--cold-grey-200);">Elérhetőségek</a>
+        </nav>
+        </sc-if>
+        <div style="margin-left:auto; display:flex; align-items:center; gap:8px;">
+          <span style="font-weight:700; font-size:14px; color:var(--neutral-fg-secondary); display:inline-flex; align-items:center; gap:5px;"><i class="ri-global-line" style="font-size:18px;"></i>HU</span>
+          <a href="KKV Képzés.dc.html" style="height:40px; padding:0 18px; border-radius:9999px; background:var(--brand); color:#fff; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:7px;"><i class="ri-graduation-cap-line" style="font-size:17px;"></i>Tanulásom</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ---- sötétkék kurzus-sáv ---- -->
+    <div style="background:var(--indigo-1600); color:#fff; box-shadow:0 6px 18px -10px rgba(19,26,68,.5);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:0 20px; min-height:58px; display:flex; align-items:center; gap:16px;">
+        <a href="KKV Képzés.dc.html#course" style="display:inline-flex; align-items:center; gap:6px; font-size:12.5px; font-weight:700; color:rgba(255,255,255,.62); flex:0 0 auto;" style-hover="color:#fff;"><i class="ri-arrow-left-line" style="font-size:16px;"></i>Vissza a kurzushoz</a>
+        <div style="width:1px; height:26px; background:rgba(255,255,255,.16); flex:0 0 auto;"></div>
+        <div style="min-width:0; flex:1;">
+          <div style="font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,.48);">Videós kurzus</div>
+          <div style="font-size:15px; font-weight:800; letter-spacing:-0.01em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px;">Közbeszerzési szakmai tananyag</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:13px; flex:0 0 auto;">
+          <div style="text-align:right; line-height:1.25;">
+            <div style="font-size:13px; font-weight:800;">{{ overallPct }}% teljesítve</div>
+            <div style="font-size:11px; color:rgba(255,255,255,.52); font-weight:600;">{{ doneCount }} / {{ totalCount }} lecke</div>
+          </div>
+          <div style="position:relative; width:40px; height:40px;">
+            <svg width="40" height="40" viewBox="0 0 40 40" style="transform:rotate(-90deg);">
+              <circle cx="20" cy="20" r="16" fill="none" stroke="rgba(255,255,255,.16)" stroke-width="4"></circle>
+              <circle cx="20" cy="20" r="16" fill="none" stroke="var(--semantic-green-400)" stroke-width="4" stroke-linecap="round" stroke-dasharray="{{ ringDash }}"></circle>
+            </svg>
+            <i class="ri-graduation-cap-fill" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:15px; color:var(--semantic-green-400);"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BODY ============ -->
+  <div style="{{ bodyStyle }}">
+
+    <!-- ---- SIDEBAR: SYLLABUS ---- -->
+    <aside class="vk-scroll" style="{{ sidebarStyle }}">
+      <div style="padding:20px 18px 14px; background:#fff; border-bottom:1px solid var(--neutral-border); position:sticky; top:0; z-index:2;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+          <span style="font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color:var(--neutral-fg-tertiary); white-space:nowrap;">Kurzus tartalma</span>
+          <span style="font-size:11.5px; font-weight:700; color:var(--brand);">{{ overallPct }}%</span>
+        </div>
+        <div style="height:6px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden; margin-top:10px;">
+          <div style="height:100%; background:linear-gradient(90deg,var(--indigo-700),var(--indigo-900)); border-radius:9999px; width:{{ overallPct }}%;"></div>
+        </div>
+        <div style="font-size:12px; color:var(--neutral-fg-tertiary); font-weight:600; margin-top:9px;">5 szekció · {{ totalCount }} lecke</div>
+      </div>
+
+      <div style="padding:14px 14px 28px; display:flex; flex-direction:column; gap:11px;">
+        <sc-for list="{{ weeksView }}" as="wk" hint-placeholder-count="5">
+          <div style="{{ wk.cardStyle }}">
+            <button onClick="{{ wk.onToggle }}" style="{{ wk.headStyle }}">
+              <span style="{{ wk.badgeStyle }}">
+                <sc-if value="{{ wk.complete }}" hint-placeholder-val="{{ false }}"><i class="ri-check-line" style="font-size:19px;"></i></sc-if>
+                <sc-if value="{{ wk.notComplete }}" hint-placeholder-val="{{ true }}">{{ wk.badge }}</sc-if>
+              </span>
+              <span style="flex:1; min-width:0;">
+                <span style="display:block; font-size:14px; font-weight:800; letter-spacing:-0.01em; line-height:1.3; color:var(--neutral-fg-primary);">{{ wk.label }}</span>
+                <span style="display:flex; align-items:center; gap:9px; margin-top:8px;">
+                  <span style="{{ wk.secBarTrackStyle }}"><span style="{{ wk.secBarStyle }}"></span></span>
+                  <span style="{{ wk.secLabelStyle }}">{{ wk.secProgLabel }}</span>
+                </span>
+              </span>
+              <i class="{{ wk.chevron }}" style="font-size:22px; color:var(--cold-grey-700); flex:0 0 auto;"></i>
+            </button>
+
+            <sc-if value="{{ wk.isOpen }}" hint-placeholder-val="{{ true }}">
+              <div style="padding:4px 8px 10px; display:flex; flex-direction:column; gap:2px; border-top:1px solid var(--neutral-border);">
+                <sc-for list="{{ wk.lessons }}" as="ls" hint-placeholder-count="4">
+                  <button onClick="{{ ls.onSelect }}" style="width:100%; display:flex; align-items:center; gap:12px; padding:10px 11px; background:none; border:none; border-radius:10px; cursor:pointer; text-align:left; font-family:var(--font-primary); {{ ls.rowExtra }}" style-hover="background:var(--cold-grey-200);">
+                    <i class="{{ ls.icon }}" style="font-size:21px; flex:0 0 auto; {{ ls.iconExtra }}"></i>
+                    <span style="flex:1; min-width:0;">
+                      <span style="display:block; font-size:13px; font-weight:600; line-height:1.35; color:var(--neutral-fg-secondary); {{ ls.titleExtra }}">{{ ls.t }}</span>
+                      <span style="display:flex; align-items:center; gap:5px; margin-top:3px;">
+                        <i class="{{ ls.kindIcon }}" style="font-size:12.5px; color:var(--cold-grey-600);"></i>
+                        <span style="font-size:11px; font-weight:600; color:var(--cold-grey-700);">{{ ls.kindDur }}</span>
+                      </span>
+                    </span>
+                  </button>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <!-- ---- MAIN: PLAYER ---- -->
+    <main class="vk-scroll" style="{{ mainStyle }}">
+      <div style="width:min(920px,100%); margin:0 auto; padding:24px 24px 80px;">
+
+        <!-- breadcrumb / week label -->
+        <div style="display:flex; align-items:center; gap:8px; font-size:12.5px; font-weight:600; color:var(--neutral-fg-tertiary); margin-bottom:12px;">
+          <i class="ri-folder-video-line" style="font-size:15px; color:var(--brand);"></i>
+          <span>{{ cur.weekLabel }}</span>
+          <span style="color:var(--cold-grey-500);">·</span>
+          <span>{{ cur.kindLabel }}</span>
+        </div>
+
+        <sc-if value="{{ isVideo }}" hint-placeholder-val="{{ true }}">
+        <!-- VIDEO PANEL -->
+        <div style="position:relative; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px -20px rgba(19,26,68,.55); background:var(--cold-grey-1900); animation:vkFade .35s ease;">
+          <div style="position:relative; width:100%; padding-top:56.25%; background:linear-gradient(150deg,var(--indigo-1500),var(--cold-grey-1900) 70%); overflow:hidden;">
+
+            <!-- faux screencast window -->
+            <div style="position:absolute; inset:34px 40px 78px; background:var(--cold-grey-100); border-radius:10px; box-shadow:0 18px 40px rgba(0,0,0,.4); overflow:hidden; opacity:.96;">
+              <div style="height:30px; background:var(--cold-grey-300); display:flex; align-items:center; gap:6px; padding:0 12px; border-bottom:1px solid var(--cold-grey-400);">
+                <span style="width:9px; height:9px; border-radius:50%; background:#ff5f57;"></span>
+                <span style="width:9px; height:9px; border-radius:50%; background:#febc2e;"></span>
+                <span style="width:9px; height:9px; border-radius:50%; background:#28c840;"></span>
+                <span style="margin-left:12px; font-size:10px; font-weight:700; color:var(--cold-grey-900); background:var(--cold-grey-100); border-radius:5px; padding:3px 12px;">ekr.gov.hu</span>
+              </div>
+              <div style="padding:16px 18px; display:flex; gap:14px;">
+                <div style="flex:0 0 120px; display:flex; flex-direction:column; gap:8px;">
+                  <div style="height:9px; width:80%; background:var(--indigo-300); border-radius:4px;"></div>
+                  <div style="height:8px; width:100%; background:var(--cold-grey-300); border-radius:4px;"></div>
+                  <div style="height:8px; width:92%; background:var(--cold-grey-300); border-radius:4px;"></div>
+                  <div style="height:8px; width:70%; background:var(--cold-grey-300); border-radius:4px;"></div>
+                  <div style="height:8px; width:88%; background:var(--cold-grey-300); border-radius:4px; margin-top:8px;"></div>
+                  <div style="height:8px; width:60%; background:var(--cold-grey-300); border-radius:4px;"></div>
+                </div>
+                <div style="flex:1; display:flex; flex-direction:column; gap:10px;">
+                  <div style="height:11px; width:45%; background:var(--indigo-800); border-radius:4px;"></div>
+                  <div style="height:44px; background:var(--indigo-100); border:1px solid var(--indigo-300); border-radius:8px;"></div>
+                  <div style="display:flex; gap:10px;">
+                    <div style="flex:1; height:30px; background:var(--cold-grey-200); border:1px solid var(--cold-grey-400); border-radius:7px;"></div>
+                    <div style="flex:1; height:30px; background:var(--cold-grey-200); border:1px solid var(--cold-grey-400); border-radius:7px;"></div>
+                  </div>
+                  <div style="height:8px; width:100%; background:var(--cold-grey-300); border-radius:4px;"></div>
+                  <div style="height:8px; width:82%; background:var(--cold-grey-300); border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- dark scrim -->
+            <div style="position:absolute; inset:0; background:radial-gradient(circle at 50% 42%, rgba(8,13,40,.15), rgba(8,13,40,.72) 78%);"></div>
+
+            <!-- top-left badge -->
+            <div style="position:absolute; top:16px; left:18px; display:flex; align-items:center; gap:7px; background:rgba(8,13,40,.62); border:1px solid rgba(255,255,255,.16); color:#fff; font-size:11.5px; font-weight:700; padding:6px 12px; border-radius:9999px;">
+              <i class="{{ cur.badgeIcon }}" style="font-size:14px; color:var(--indigo-400);"></i>{{ cur.badgeText }}
+            </div>
+
+            <!-- center play button -->
+            <button onClick="{{ playToggle }}" style="position:absolute; inset:0; margin:auto; width:82px; height:82px; border-radius:50%; border:none; cursor:pointer; background:rgba(255,255,255,.95); box-shadow:0 12px 34px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; animation:vkPulse 2.6s ease-in-out infinite;" style-hover="background:#fff;">
+              <i class="{{ bigPlayIcon }}" style="font-size:36px; color:var(--brand); margin-left:{{ playIconNudge }};"></i>
+            </button>
+
+            <!-- title lower-left -->
+            <div style="position:absolute; left:22px; right:22px; bottom:62px; color:#fff;">
+              <div style="font-size:22px; font-weight:800; letter-spacing:-0.02em; text-shadow:0 2px 12px rgba(0,0,0,.4); line-height:1.2;">{{ cur.t }}</div>
+            </div>
+
+            <!-- control bar -->
+            <div style="position:absolute; left:0; right:0; bottom:0; padding:0 18px 14px;">
+              <div style="height:5px; background:rgba(255,255,255,.25); border-radius:9999px; position:relative; margin-bottom:11px;">
+                <div style="position:absolute; left:0; top:0; bottom:0; background:var(--indigo-500); border-radius:9999px; width:{{ progPct }}%;"></div>
+                <div style="position:absolute; top:50%; transform:translate(-50%,-50%); width:13px; height:13px; border-radius:50%; background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.4); left:{{ progPct }}%;"></div>
+              </div>
+              <div style="display:flex; align-items:center; gap:16px; color:#fff;">
+                <button onClick="{{ playToggle }}" style="background:none; border:none; cursor:pointer; color:#fff; display:flex; padding:0;"><i class="{{ barPlayIcon }}" style="font-size:24px;"></i></button>
+                <i class="ri-volume-up-line" style="font-size:20px; opacity:.9;"></i>
+                <span style="font-size:12.5px; font-weight:600; font-variant-numeric:tabular-nums;">{{ curTime }} / {{ cur.dur }}</span>
+                <div style="flex:1;"></div>
+                <span style="font-size:11.5px; font-weight:700; background:rgba(255,255,255,.16); padding:3px 9px; border-radius:6px;">1.0×</span>
+                <i class="ri-closed-captioning-line" style="font-size:20px; opacity:.9;"></i>
+                <i class="ri-fullscreen-line" style="font-size:20px; opacity:.9;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- title + actions -->
+        <div style="display:flex; align-items:flex-start; gap:16px; margin-top:22px;">
+          <div style="flex:1; min-width:0;">
+            <h1 style="font-size:26px; font-weight:800; letter-spacing:-0.02em; margin:0 0 6px; line-height:1.2; color:var(--neutral-fg-primary);">{{ cur.t }}</h1>
+            <div style="display:flex; align-items:center; gap:16px; font-size:13px; color:var(--neutral-fg-tertiary); font-weight:600; flex-wrap:wrap;">
+              <span style="display:inline-flex; align-items:center; gap:6px;"><i class="ri-time-line" style="font-size:16px;"></i>{{ cur.dur }}</span>
+              <span style="display:inline-flex; align-items:center; gap:6px;"><i class="ri-user-star-line" style="font-size:16px;"></i>Előadó: KKV Képzés oktatói csapat</span>
+              <span style="display:inline-flex; align-items:center; gap:6px;"><i class="ri-translate-2" style="font-size:16px;"></i>Magyar felirat</span>
+            </div>
+          </div>
+          <button onClick="{{ toggleDone }}" style="{{ doneBtnStyle }}"><i class="{{ doneBtnIcon }}" style="font-size:18px;"></i>{{ doneBtnLabel }}</button>
+        </div>
+
+        <!-- TABS -->
+        <div style="display:flex; gap:4px; border-bottom:1.5px solid var(--neutral-border); margin-top:22px;">
+          <button onClick="{{ tab.overview }}" style="{{ tabStyle.overview }}">Áttekintés</button>
+          <button onClick="{{ tab.resources }}" style="{{ tabStyle.resources }}">Források <span style="font-size:11px; opacity:.7;">({{ resCount }})</span></button>
+          <button onClick="{{ tab.transcript }}" style="{{ tabStyle.transcript }}">Átirat</button>
+          <button onClick="{{ tab.notes }}" style="{{ tabStyle.notes }}">Jegyzeteim</button>
+        </div>
+
+        <div style="padding-top:22px; animation:vkFade .3s ease;">
+          <!-- OVERVIEW -->
+          <sc-if value="{{ isOverview }}" hint-placeholder-val="{{ true }}">
+            <div>
+              <p style="font-size:15.5px; line-height:1.7; color:var(--neutral-fg-secondary); margin:0 0 22px; max-width:66ch;">{{ cur.desc }}</p>
+              <div style="font-size:13px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-bottom:12px;">Mit tanulsz meg ebben a videóban</div>
+              <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:24px;">
+                <sc-for list="{{ cur.obj }}" as="o" hint-placeholder-count="3">
+                  <div style="display:flex; align-items:flex-start; gap:11px;">
+                    <i class="ri-checkbox-circle-fill" style="font-size:19px; color:var(--semantic-green-600); flex:0 0 auto; margin-top:1px;"></i>
+                    <span style="font-size:14.5px; line-height:1.55; color:var(--neutral-fg-secondary);">{{ o }}</span>
+                  </div>
+                </sc-for>
+              </div>
+
+              <!-- KNOWLEDGE CHECK -->
+              <sc-if value="{{ hasCheck }}" hint-placeholder-val="{{ true }}">
+                <div style="border:1.5px solid var(--indigo-300); background:var(--indigo-100); border-radius:16px; padding:22px 22px 20px; margin-top:6px;">
+                  <div style="display:flex; align-items:center; gap:9px; margin-bottom:14px;">
+                    <span style="width:30px; height:30px; border-radius:9px; background:var(--indigo-900); display:flex; align-items:center; justify-content:center;"><i class="ri-question-answer-fill" style="font-size:17px; color:#fff;"></i></span>
+                    <span style="font-size:13px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--brand);">Beágyazott ellenőrző kérdés</span>
+                  </div>
+                  <div style="font-size:16px; font-weight:700; line-height:1.45; color:var(--neutral-fg-primary); margin-bottom:16px;">{{ cur.check.q }}</div>
+                  <div style="display:flex; flex-direction:column; gap:10px;">
+                    <sc-for list="{{ checkOpts }}" as="op" hint-placeholder-count="3">
+                      <button onClick="{{ op.onClick }}" style="display:flex; align-items:center; gap:12px; width:100%; text-align:left; padding:13px 15px; border-radius:11px; cursor:pointer; font-family:var(--font-primary); font-size:14.5px; font-weight:600; line-height:1.4; {{ op.style }}">
+                        <span style="{{ op.markStyle }}"><i class="{{ op.markIcon }}" style="font-size:15px;"></i></span>
+                        <span style="flex:1;">{{ op.label }}</span>
+                      </button>
+                    </sc-for>
+                  </div>
+                  <sc-if value="{{ showFeedback }}" hint-placeholder-val="{{ false }}">
+                    <div style="{{ feedbackStyle }}"><i class="{{ feedbackIcon }}" style="font-size:18px;"></i><span>{{ feedbackText }}</span></div>
+                  </sc-if>
+                </div>
+              </sc-if>
+            </div>
+          </sc-if>
+
+          <!-- RESOURCES -->
+          <sc-if value="{{ isResources }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <p style="font-size:14px; color:var(--neutral-fg-tertiary); margin:0 0 18px;">Letölthető, vázlatos olvasmányok és a videóban bemutatott képernyőfotó-csomag. A videók mellé kiegészítő elméleti anyagként ajánljuk.</p>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <sc-for list="{{ cur.res }}" as="r" hint-placeholder-count="2">
+                  <div style="display:flex; align-items:center; gap:15px; padding:16px 18px; background:#fff; border:1px solid var(--neutral-border); border-radius:14px;" style-hover="border-color:var(--indigo-400);">
+                    <span style="{{ r.iconWrap }}"><i class="{{ r.icon }}" style="font-size:22px; color:#fff;"></i></span>
+                    <div style="flex:1; min-width:0;">
+                      <div style="font-size:15px; font-weight:700; color:var(--neutral-fg-primary); letter-spacing:-0.01em;">{{ r.title }}</div>
+                      <div style="font-size:12.5px; color:var(--neutral-fg-tertiary); font-weight:500; margin-top:2px;">{{ r.meta }}</div>
+                    </div>
+                    <span style="display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:var(--brand); border:1.5px solid var(--indigo-300); padding:8px 15px; border-radius:9999px;"><i class="ri-download-2-line" style="font-size:16px;"></i>{{ r.action }}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- TRANSCRIPT -->
+          <sc-if value="{{ isTranscript }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; flex-direction:column; gap:2px; max-width:70ch;">
+              <sc-for list="{{ transcript }}" as="tr" hint-placeholder-count="4">
+                <div style="display:flex; gap:16px; padding:11px 12px; border-radius:9px;" style-hover="background:var(--cold-grey-200);">
+                  <span style="font-size:12.5px; font-weight:700; color:var(--brand); font-variant-numeric:tabular-nums; flex:0 0 auto; padding-top:2px;">{{ tr.time }}</span>
+                  <span style="font-size:14.5px; line-height:1.6; color:var(--neutral-fg-secondary);">{{ tr.line }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <!-- NOTES -->
+          <sc-if value="{{ isNotes }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <div style="font-size:13px; color:var(--neutral-fg-tertiary); margin-bottom:10px; font-weight:600;">A jegyzeteid ehhez a leckéhez tartoznak, és csak neked láthatók.</div>
+              <textarea onInput="{{ onNotes }}" placeholder="Írd ide a jegyzeteidet a videóhoz…" style="width:100%; min-height:180px; resize:vertical; border:1.5px solid var(--neutral-border); border-radius:14px; padding:16px 18px; font-family:var(--font-primary); font-size:15px; line-height:1.6; color:var(--neutral-fg-primary); background:#fff; box-sizing:border-box;" style-focus="border-color:var(--brand); outline:none;">{{ notesValue }}</textarea>
+            </div>
+          </sc-if>
+        </div>
+        </sc-if>
+
+        <!-- QUIZ PAGE -->
+        <sc-if value="{{ isQuiz }}" hint-placeholder-val="{{ false }}">
+
+          <!-- intro -->
+          <sc-if value="{{ quizIntro }}" hint-placeholder-val="{{ true }}">
+            <div style="border-radius:18px; overflow:hidden; border:1px solid var(--neutral-border); box-shadow:0 20px 50px -24px rgba(19,26,68,.5); animation:vkFade .35s ease;">
+              <div style="background:linear-gradient(140deg,var(--indigo-1500),var(--cold-grey-1900) 80%); padding:36px 34px 30px; color:#fff;">
+                <span style="display:inline-flex; align-items:center; gap:7px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.2); font-size:11.5px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; padding:6px 13px; border-radius:9999px;"><i class="ri-questionnaire-line" style="font-size:15px;"></i>Interaktív feladat</span>
+                <h1 style="font-size:28px; font-weight:800; letter-spacing:-0.025em; line-height:1.18; margin:16px 0 10px;">{{ cur.t }}</h1>
+                <p style="font-size:15px; line-height:1.6; color:rgba(255,255,255,.82); margin:0; max-width:60ch;">{{ cur.desc }}</p>
+                <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:22px;">
+                  <span style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.16); padding:9px 14px; border-radius:11px; font-size:13px; font-weight:700;"><i class="ri-list-check-2" style="font-size:16px; color:var(--indigo-300);"></i>{{ quizCount }} kérdés</span>
+                  <span style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.16); padding:9px 14px; border-radius:11px; font-size:13px; font-weight:700;"><i class="ri-time-line" style="font-size:16px; color:var(--indigo-300);"></i>~{{ quizMins }} perc</span>
+                  <span style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.16); padding:9px 14px; border-radius:11px; font-size:13px; font-weight:700;"><i class="{{ quizPassIcon }}" style="font-size:16px; color:var(--indigo-300);"></i>{{ quizPassText }}</span>
+                </div>
+              </div>
+              <div style="padding:20px 26px; background:#fff; display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--neutral-fg-tertiary); font-weight:600;"><i class="ri-flashlight-line" style="font-size:19px; color:var(--brand); flex:0 0 auto;"></i><span style="max-width:42ch;">Minden kérdésnél azonnali, indoklással kísért visszajelzést kapsz.</span></div>
+                <button onClick="{{ startQuiz }}" style="display:inline-flex; align-items:center; gap:9px; background:var(--brand); color:#fff; border:none; border-radius:9999px; padding:14px 26px; font-family:var(--font-primary); font-size:15px; font-weight:700; cursor:pointer;" style-hover="background:var(--indigo-1000);"><i class="ri-play-fill" style="font-size:20px;"></i>{{ quizStartLabel }}</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- run -->
+          <sc-if value="{{ quizRun }}" hint-placeholder-val="{{ false }}">
+            <div style="border:1px solid var(--neutral-border); border-radius:18px; background:#fff; box-shadow:0 12px 40px -22px rgba(19,26,68,.4); overflow:hidden; animation:vkFade .3s ease;">
+              <div style="padding:18px 26px; border-bottom:1px solid var(--neutral-border); display:flex; align-items:center; gap:16px;">
+                <span style="font-size:12.5px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--brand); flex:0 0 auto; white-space:nowrap;">Kérdés {{ qNum }} / {{ quizCount }}</span>
+                <span style="flex:1; height:6px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><span style="display:block; height:100%; border-radius:9999px; background:linear-gradient(90deg,var(--indigo-700),var(--indigo-900)); width:{{ qProgPct }}%; transition:width .3s ease;"></span></span>
+              </div>
+              <div style="padding:28px 30px 26px;">
+                <div style="font-size:20px; font-weight:700; line-height:1.4; color:var(--neutral-fg-primary); margin-bottom:22px; max-width:60ch;">{{ qText }}</div>
+                <div style="display:flex; flex-direction:column; gap:11px;">
+                  <sc-for list="{{ qOpts }}" as="op" hint-placeholder-count="3">
+                    <button onClick="{{ op.onClick }}" style="display:flex; align-items:center; gap:14px; width:100%; text-align:left; padding:15px 17px; border-radius:12px; font-family:var(--font-primary); font-size:15px; font-weight:600; line-height:1.4; {{ op.style }}">
+                      <span style="{{ op.markStyle }}">{{ op.letter }}</span>
+                      <span style="flex:1;">{{ op.label }}</span>
+                      <i class="{{ op.stateIcon }}" style="font-size:20px; flex:0 0 auto; {{ op.stateIconStyle }}"></i>
+                    </button>
+                  </sc-for>
+                </div>
+                <sc-if value="{{ qShowFeedback }}" hint-placeholder-val="{{ false }}">
+                  <div style="{{ qFeedbackStyle }}"><i class="{{ qFeedbackIcon }}" style="font-size:19px; flex:0 0 auto; margin-top:1px;"></i><span>{{ qFeedbackText }}</span></div>
+                </sc-if>
+              </div>
+              <div style="padding:16px 26px; border-top:1px solid var(--neutral-border); display:flex; align-items:center; justify-content:space-between; gap:16px; background:var(--cold-grey-100);">
+                <span style="font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary);">{{ qDoneHint }}</span>
+                <sc-if value="{{ qNotChecked }}" hint-placeholder-val="{{ true }}">
+                  <button onClick="{{ checkQ }}" style="{{ checkBtnStyle }}"><i class="ri-check-line" style="font-size:19px;"></i>Ellenőrzés</button>
+                </sc-if>
+                <sc-if value="{{ qChecked }}" hint-placeholder-val="{{ false }}">
+                  <button onClick="{{ nextQ }}" style="display:inline-flex; align-items:center; gap:8px; background:var(--brand); color:#fff; border:none; border-radius:9999px; padding:12px 22px; font-family:var(--font-primary); font-size:14.5px; font-weight:700; cursor:pointer;" style-hover="background:var(--indigo-1000);">{{ nextBtnLabel }}<i class="ri-arrow-right-line" style="font-size:19px;"></i></button>
+                </sc-if>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- done -->
+          <sc-if value="{{ quizDone }}" hint-placeholder-val="{{ false }}">
+            <div style="border-radius:18px; overflow:hidden; border:1px solid var(--neutral-border); box-shadow:0 18px 50px -24px rgba(19,26,68,.45); animation:vkFade .35s ease;">
+              <div style="{{ resultHeroStyle }}">
+                <div style="width:92px; height:92px; border-radius:50%; background:rgba(255,255,255,.16); border:2px solid rgba(255,255,255,.4); display:flex; align-items:center; justify-content:center; flex:0 0 auto;"><i class="{{ resultIcon }}" style="font-size:50px; color:#fff;"></i></div>
+                <div style="min-width:0;">
+                  <div style="font-size:12.5px; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,.82);">{{ resultKicker }}</div>
+                  <div style="font-size:40px; font-weight:800; letter-spacing:-0.02em; margin:3px 0 4px; color:#fff;">{{ scoreCorrect }} / {{ quizCount }} <span style="font-size:20px; font-weight:700; opacity:.8;">· {{ scorePct }}%</span></div>
+                  <div style="font-size:14.5px; font-weight:600; color:rgba(255,255,255,.92); line-height:1.5; max-width:48ch;">{{ resultMsg }}</div>
+                </div>
+              </div>
+              <div style="padding:22px 26px 26px; background:#fff;">
+                <div style="font-size:12.5px; font-weight:800; letter-spacing:0.05em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-bottom:14px;">Kérdések áttekintése</div>
+                <div style="display:flex; flex-direction:column; gap:12px;">
+                  <sc-for list="{{ reviewItems }}" as="rv" hint-placeholder-count="3">
+                    <div style="display:flex; gap:13px; padding:14px 16px; border:1px solid var(--neutral-border); border-radius:13px;">
+                      <i class="{{ rv.icon }}" style="font-size:22px; flex:0 0 auto; margin-top:1px; {{ rv.iconStyle }}"></i>
+                      <div style="flex:1; min-width:0;">
+                        <div style="font-size:14.5px; font-weight:700; line-height:1.4; color:var(--neutral-fg-primary);">{{ rv.q }}</div>
+                        <div style="font-size:13px; line-height:1.5; color:var(--neutral-fg-tertiary); font-weight:600; margin-top:5px;">{{ rv.yours }}</div>
+                        <sc-if value="{{ rv.showCorrect }}" hint-placeholder-val="{{ false }}"><div style="font-size:13px; line-height:1.5; color:var(--semantic-green-700); font-weight:700; margin-top:3px;">{{ rv.right }}</div></sc-if>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="display:flex; gap:12px; margin-top:22px; flex-wrap:wrap;">
+                  <button onClick="{{ retryQuiz }}" style="display:inline-flex; align-items:center; gap:9px; background:#fff; color:var(--brand); border:1.5px solid var(--indigo-300); border-radius:9999px; padding:13px 24px; font-family:var(--font-primary); font-size:14.5px; font-weight:700; cursor:pointer;" style-hover="border-color:var(--brand);"><i class="ri-restart-line" style="font-size:19px;"></i>Újrapróbálom</button>
+                  <sc-if value="{{ hasNext }}" hint-placeholder-val="{{ true }}"><button onClick="{{ goNext }}" style="display:inline-flex; align-items:center; gap:9px; background:var(--brand); color:#fff; border:none; border-radius:9999px; padding:13px 24px; font-family:var(--font-primary); font-size:14.5px; font-weight:700; cursor:pointer;" style-hover="background:var(--indigo-1000);">Következő lecke<i class="ri-arrow-right-line" style="font-size:19px;"></i></button></sc-if>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+        </sc-if>
+
+        <!-- PREV / NEXT -->
+        <div style="display:flex; align-items:stretch; gap:14px; margin-top:34px; border-top:1px solid var(--neutral-border); padding-top:22px;">
+          <sc-if value="{{ hasPrev }}" hint-placeholder-val="{{ true }}">
+            <button onClick="{{ goPrev }}" style="flex:1; display:flex; align-items:center; gap:12px; padding:15px 18px; background:#fff; border:1px solid var(--neutral-border); border-radius:14px; cursor:pointer; text-align:left; font-family:var(--font-primary);" style-hover="border-color:var(--indigo-400);">
+              <i class="ri-arrow-left-line" style="font-size:22px; color:var(--brand);"></i>
+              <span style="min-width:0;"><span style="display:block; font-size:11.5px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:var(--neutral-fg-tertiary);">Előző</span><span style="display:block; font-size:14px; font-weight:700; color:var(--neutral-fg-primary); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ prevTitle }}</span></span>
+            </button>
+          </sc-if>
+          <sc-if value="{{ hasNext }}" hint-placeholder-val="{{ true }}">
+            <button onClick="{{ goNext }}" style="flex:1; display:flex; align-items:center; gap:12px; padding:15px 18px; background:var(--brand); border:none; border-radius:14px; cursor:pointer; text-align:right; font-family:var(--font-primary); justify-content:flex-end;" style-hover="background:var(--indigo-1000);">
+              <span style="min-width:0;"><span style="display:block; font-size:11.5px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:rgba(255,255,255,.7);">Következő</span><span style="display:block; font-size:14px; font-weight:700; color:#fff; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ nextTitle }}</span></span>
+              <i class="ri-arrow-right-line" style="font-size:22px; color:#fff;"></i>
+            </button>
+          </sc-if>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:840}}">
+class Component extends DCLogic {
+  state = {
+    current: 'w1v2',
+    tab: 'overview',
+    open: { w0: true, w1: true, w2: false, w3: false, w4: false },
+    playing: false,
+    prog: 0,
+    answered: null,
+    notes: {},
+    done: { w0v1: 1, w0q: 1, w1v1: 1 },
+    quiz: { phase: 'intro', i: 0, sel: null, checked: false, answers: [] },
+  };
+
+  componentWillUnmount() { clearInterval(this._t); }
+
+  data() {
+    return [
+      { id: 'w0', label: 'Bevezető szekció', badge: 'B', meta: 'Onboarding · 2 lecke', lessons: [
+        { id: 'w0v1', t: 'Képzésbevezető — a projekt és a kurzus célja', dur: '6:12', type: 'video',
+          desc: 'Megismered a képzési program célját, a KKV-k közbeszerzési kihívásait és azt, hogyan épül fel a négyhetes, videóalapú kurzus. Áttekintjük a tanulási utat és a záró oklevél feltételeit.',
+          obj: ['A kurzus felépítése és a heti ütemezés', 'Kiknek szól a képzés és milyen előismeret szükséges', 'Hogyan szerezhető meg a záró oklevél'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Kurzus-útmutató és tematika (PDF)', meta: '4 oldal · 380 kB', action: 'Letöltés' }],
+          check: { q: 'Hány hetes a videóalapú kurzus fő tananyaga (a bevezető szekción felül)?', opts: ['2 hét', '4 hét', '8 hét'], correct: 1, exp: 'A kurzus négy tematikus hétre tagolódik, egy bevezető onboarding szekcióval kiegészítve.' } },
+        { id: 'w0q', t: 'Belépési tudásszint-felmérő kérdőív', dur: '4 kérdés', type: 'quiz', selfAssess: true,
+          desc: 'Rövid, pontozás nélküli önértékelő kérdőív, amely segít felmérni a közbeszerzési előismereteidet, és ez alapján ajánl fókuszpontokat a kurzus során.',
+          obj: ['Előzetes tudásszint felmérése', 'Személyre szabott tanulási javaslatok', 'Nincs bukó — csak önértékelés'],
+          res: [],
+          qset: [
+            { q: 'Mit jelent a közbeszerzési értékhatár?', opts: ['Az az összeg, amely felett a beszerzésre közbeszerzési eljárást kell lefolytatni', 'A nyertes ajánlat maximális ára', 'Az ajánlati biztosíték kötelező összege'], correct: 0, exp: 'Az értékhatár az a becsült érték, amelyet elérve vagy meghaladva a beszerzést közbeszerzési eljárás keretében kell megvalósítani.' },
+            { q: 'Melyik rendszeren keresztül zajlik ma Magyarországon az elektronikus közbeszerzés?', opts: ['EKR – Elektronikus Közbeszerzési Rendszer', 'Kizárólag e-mailben és papíron', 'A cégkapu üzenőfalán'], correct: 0, exp: 'A közbeszerzési eljárások elektronikus lebonyolítása az EKR (Elektronikus Közbeszerzési Rendszer) felületén történik.' },
+            { q: 'Ki lehet ajánlattevő egy közbeszerzési eljárásban?', opts: ['Csak állami tulajdonú szervezetek', 'Bármely gazdasági szereplő, aki a felhívás feltételeinek megfelel', 'Kizárólag a korábbi nyertesek'], correct: 1, exp: 'Ajánlattevő bármely gazdasági szereplő lehet, amennyiben megfelel a felhívásban előírt alkalmassági és egyéb feltételeknek.' },
+            { q: 'Melyik a közbeszerzés egyik alapelve?', opts: ['A verseny tisztasága és az egyenlő bánásmód', 'Az ajánlatkérő szabad, indoklás nélküli választása', 'A legrövidebb határidő minden más szempont előtt'], correct: 0, exp: 'A közbeszerzés alapelvei közé tartozik a verseny tisztasága, a nyilvánosság, az átláthatóság és az esélyegyenlőség.' },
+          ] },
+      ]},
+      { id: 'w1', label: 'Az EKR alapjai', badge: '1', meta: '3 videó + modulzáró · ~34 perc', lessons: [
+        { id: 'w1v1', t: 'Mi az az EKR?', dur: '8:40', type: 'video',
+          desc: 'Az Elektronikus Közbeszerzési Rendszer jogi hátterének, céljának és a regisztráció nélkül is elérhető publikus felületeinek (pl. Eljárástár, hirdetménykeresés) bemutatása.',
+          obj: ['Az EKR jogi alapja és kötelező használati köre', 'A publikus, regisztráció nélkül elérhető felületek', 'A rendszer fő moduljainak áttekintése'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'EKR bevezető — olvasmány (PDF)', meta: '6 oldal · 520 kB', action: 'Letöltés' }, { icon: 'ri-image-2-line', title: 'Képernyőfotó-csomag: publikus felületek', meta: '9 kép · ZIP', action: 'Letöltés' }],
+          check: { q: 'Az alábbiak közül melyik érhető el az EKR-ben regisztráció NÉLKÜL is?', opts: ['Ajánlat benyújtása', 'Nyilvános eljárások és hirdetmények keresése', 'Szervezethez tartozó jogosultságok kiosztása'], correct: 1, exp: 'A publikus felületeken bárki kereshet a nyilvános eljárások és hirdetmények között; az ajánlattétel és a jogosultságkezelés belépéshez kötött.' } },
+        { id: 'w1v2', t: 'Regisztráció és jogosultságok', dur: '11:20', type: 'video',
+          desc: 'Személyes fiók létrehozása, szervezet regisztrációja és a szervezethez való csatlakozás lépésről lépésre. Bemutatjuk az EKR-es szerepköröket (pl. ajánlatszerkesztő, szuper user) és azok kiosztását.',
+          obj: ['Személyes fiók és szervezeti regisztráció menete', 'Csatlakozás meglévő szervezethez', 'A fő szerepkörök és jogosultságok kezelése'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Regisztráció és jogosultságok — olvasmány (PDF)', meta: '8 oldal · 610 kB', action: 'Letöltés' }, { icon: 'ri-image-2-line', title: 'Képernyőfotó-csomag: regisztrációs űrlapok', meta: '12 kép · ZIP', action: 'Letöltés' }],
+          check: { q: 'Ki képes az EKR-ben egy szervezeten belül új szerepköröket és jogosultságokat kiosztani más felhasználóknak?', opts: ['Bármely regisztrált felhasználó', 'A szervezet szuper user (adminisztrátor) jogosultságú tagja', 'Kizárólag a Közbeszerzési Hatóság'], correct: 1, exp: 'A jogosultságok kiosztása a szervezet szuper user jogkörű felhasználójához kötött, aki a többi tag hozzáféréseit is kezeli.' } },
+        { id: 'w1v3', t: 'Tájékozódás az EKR-ben', dur: '7:35', type: 'video',
+          desc: 'Keresési funkciók, értesítéskérés beállítása, érdeklődés jelzése és az eljáráshoz tartozó dokumentumok (hirdetmények, felhívások) letöltése.',
+          obj: ['Hatékony keresés és szűrés az eljárások között', 'Értesítések és érdeklődés jelzésének beállítása', 'Eljárási dokumentumok letöltése'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Keresés és értesítések — olvasmány (PDF)', meta: '5 oldal · 440 kB', action: 'Letöltés' }],
+          check: { q: 'Miért érdemes az érdeklődést jelezni egy eljárásnál az EKR-ben?', opts: ['Így automatikus értesítést kapunk az eljárás változásairól', 'Ezzel véglegesen benyújtjuk az ajánlatot', 'Ez helyettesíti a szervezeti regisztrációt'], correct: 0, exp: 'Az érdeklődés jelzésével a rendszer értesít az adott eljárás dokumentumainak és határidőinek változásairól.' } },
+        { id: 'w1q', t: 'Modulzáró — interaktív ellenőrző teszt', dur: '8 kérdés', type: 'quiz',
+          desc: 'Az 1. hét anyagát lefedő interaktív ellenőrző teszt: EKR-felület, regisztráció, jogosultságok és a kommunikációs alapok.',
+          obj: ['Az 1. hét kulcsfogalmainak ellenőrzése', 'Azonnali visszajelzés minden kérdésre', 'A gyenge pontok azonosítása'],
+          res: [] },
+      ]},
+      { id: 'w2', label: 'Ajánlattétel a gyakorlatban', badge: '2', meta: '4 videó + modulzáró · ~44 perc', lessons: [
+        { id: 'w2v1', t: 'Az ajánlattétel alapjai', dur: '9:05', type: 'video',
+          desc: 'A közbeszerzési eljárásrendek, a határidők és a közbeszerzési dokumentumok (műszaki leírás, árazatlan költségvetés) helyes értelmezése egy nyílt eljárás példáján keresztül.',
+          obj: ['Eljárásrendek és értékhatárok a gyakorlatban', 'A közbeszerzési dokumentumok értelmezése', 'A fontos ajánlattételi határidők'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Ajánlattétel alapjai — olvasmány (PDF)', meta: '9 oldal · 680 kB', action: 'Letöltés' }],
+          check: { q: 'Mit tartalmaz jellemzően az „árazatlan költségvetés” a közbeszerzési dokumentumok között?', opts: ['A nyertes ajánlat végleges árait', 'A tételek listáját, amelyet az ajánlattevőnek kell beáraznia', 'Az ajánlatkérő belső költségvetését'], correct: 1, exp: 'Az árazatlan költségvetés a beárazandó tételeket sorolja fel; az ajánlattevő ezt tölti ki a saját egységáraival.' } },
+        { id: 'w2v2', t: 'Az ajánlat összeállítása az EKR-ben', dur: '12:40', type: 'video',
+          desc: 'A gazdasági szereplők (vezető ajánlattevő, közös ajánlattevők, alvállalkozók) rögzítése és az ajánlat felépítése az EKR elektronikus felületén.',
+          obj: ['Gazdasági szereplők helyes rögzítése', 'Közös ajánlattétel kezelése az EKR-ben', 'Az ajánlat szerkezetének összeállítása'],
+          res: [{ icon: 'ri-image-2-line', title: 'Képernyőfotó-csomag: ajánlatösszeállítás', meta: '15 kép · ZIP', action: 'Letöltés' }],
+          check: { q: 'Hogyan kell az alvállalkozókat kezelni az ajánlat EKR-es összeállításakor?', opts: ['Nem kell feltüntetni őket', 'A megfelelő elektronikus űrlapon rögzíteni kell a bevonásukat', 'Csak a szerződéskötés után kell bejelenteni'], correct: 1, exp: 'Az ajánlatban az erre szolgáló űrlapokon fel kell tüntetni az alvállalkozók bevonását és a nekik szánt részt.' } },
+        { id: 'w2v3', t: 'Nyilatkozatok és az EEKD', dur: '10:15', type: 'video',
+          desc: 'Az Egységes Európai Közbeszerzési Dokumentum (EEKD) és a kötelező EKR-es nyilatkozatok — pl. a Kbt. 66. § szerinti nyilatkozat és a kizáró okok — elektronikus űrlapjainak kitöltése.',
+          obj: ['Az EEKD szerepe és kitöltése', 'A kötelező nyilatkozatok köre', 'A kizáró okokkal kapcsolatos nyilatkozattétel'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'EEKD és nyilatkozatok — olvasmány (PDF)', meta: '11 oldal · 740 kB', action: 'Letöltés' }],
+          check: { q: 'Mi az EEKD (Egységes Európai Közbeszerzési Dokumentum) fő funkciója az eljárás elején?', opts: ['A végleges műszaki teljesítés igazolása', 'Előzetes igazolásként szolgál a kizáró okok fenn nem állásáról és az alkalmasságról', 'Az ellenszolgáltatás kifizetésének ütemezése'], correct: 1, exp: 'Az EEKD előzetes nyilatkozat: az ajánlattevő ezzel igazolja, hogy nem áll fenn kizáró ok és megfelel az alkalmassági követelményeknek.' } },
+        { id: 'w2v4', t: 'Bírálati szakasz és kommunikáció', dur: '11:50', type: 'video',
+          desc: 'Hiánypótlás benyújtása, számítási hiba javítása, előzetes vitarendezés kérése, valamint a végleges ajánlat beadása és a bontás folyamata az EKR-ben.',
+          obj: ['A hiánypótlás és számítási hiba kezelése', 'Az előzetes vitarendezés menete', 'A bontási eljárás megértése'],
+          res: [{ icon: 'ri-image-2-line', title: 'Képernyőfotó-csomag: hiánypótlás és bontás', meta: '10 kép · ZIP', action: 'Letöltés' }],
+          check: { q: 'Mit tehet az ajánlattevő, ha az ajánlatából egy dokumentum hiányzik, és az ajánlatkérő erre felhívja?', opts: ['Semmit, az ajánlat automatikusan érvénytelen', 'Hiánypótlás keretében pótolhatja a hiányzó dokumentumot', 'Új eljárást kell indítania'], correct: 1, exp: 'Az ajánlatkérő hiánypótlási felhívására az ajánlattevő az EKR-ben pótolhatja a hiányzó vagy hibás dokumentumokat.' } },
+        { id: 'w2q', t: 'Szituációs modulzáró', dur: '10 kérdés', type: 'quiz',
+          desc: 'Szituációs, videós kérdésekre épülő modulzáró a 2. hét anyagából, kiegészítve a „Közbeszerzési szerződések sajátosságai” feladattal.',
+          obj: ['Gyakorlati ajánlattételi helyzetek elemzése', 'A bírálati szakasz szabályainak alkalmazása', 'A modulzáró teljesítése'],
+          res: [] },
+      ]},
+      { id: 'w3', label: 'Szerződések teljesítése', badge: '3', meta: '4 videó + esettanulmány · ~36 perc', lessons: [
+        { id: 'w3v1', t: 'Felkészülés a teljesítésre', dur: '8:20', type: 'video',
+          desc: 'A szerződés hatálybalépése, a biztosítékok rendelkezésre bocsátása és az ellenszolgáltatás kifizetésének rendje a sikeres ajánlattételt követően.',
+          obj: ['A szerződés hatálybalépésének feltételei', 'Biztosítékok típusai és határidői', 'A kifizetés rendjének alapjai'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Teljesítésre felkészülés — olvasmány (PDF)', meta: '7 oldal · 560 kB', action: 'Letöltés' }],
+          check: { q: 'Mikor válik jellemzően esedékessé a teljesítési biztosíték rendelkezésre bocsátása?', opts: ['Csak a teljesítés lezárása után', 'A szerződés hatálybalépéséhez / a teljesítés megkezdéséhez kötötten', 'Sosem, ez opcionális'], correct: 1, exp: 'A biztosítékot jellemzően a szerződés hatálybalépéséhez, a teljesítés megkezdéséhez kapcsolódóan kell rendelkezésre bocsátani a szerződés feltételei szerint.' } },
+        { id: 'w3v2', t: 'A közreműködők bevonása', dur: '7:45', type: 'video',
+          desc: 'Az alvállalkozókra és a teljesítésbe bevont szakemberekre vonatkozó szigorú bejelentési szabályok a szerződés teljesítése során.',
+          obj: ['Az alvállalkozói bejelentés szabályai', 'A bevont szakemberekre vonatkozó előírások', 'A be nem jelentett közreműködés kockázatai'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Közreműködők bevonása — olvasmány (PDF)', meta: '6 oldal · 500 kB', action: 'Letöltés' }],
+          check: { q: 'Mi a fő szabály a teljesítésbe bevont új alvállalkozókkal kapcsolatban?', opts: ['Szabadon, bejelentés nélkül bevonhatók', 'A teljesítés megkezdése előtt be kell jelenteni őket az ajánlatkérőnek', 'Csak a Közbeszerzési Hatóság engedélyével vonhatók be'], correct: 1, exp: 'A teljesítésbe bevont alvállalkozókat előzetesen, a teljesítésük megkezdése előtt be kell jelenteni az ajánlatkérő felé.' } },
+        { id: 'w3v3', t: 'A szerződésmódosítás szabályai', dur: '10:30', type: 'video',
+          desc: 'A Kbt. által engedélyezett módosítási jogalapok (pl. rendkívüli gazdasági körülmények, jogutódlás) és a jogellenes szerződésmódosítások veszélyei.',
+          obj: ['A megengedett módosítási jogalapok', 'A de minimis (értékhatár alatti) módosítás', 'A jogellenes módosítás következményei'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Szerződésmódosítás — olvasmány (PDF)', meta: '10 oldal · 700 kB', action: 'Letöltés' }],
+          check: { q: 'Az alábbiak közül melyik lehet a Kbt. szerint jogszerű szerződésmódosítási alap?', opts: ['A nyertes ajánlattevő egyszerű kérése', 'Előre nem látható, rendkívüli körülmény, a törvényi feltételek fennállása mellett', 'A verseny utólagos kizárása'], correct: 1, exp: 'A módosítás többek között előre nem látható körülmény esetén lehet jogszerű, ha teljesülnek a Kbt. szigorú feltételei.' } },
+        { id: 'w3v4', t: 'Kockázatok és integritás', dur: '9:10', type: 'video',
+          desc: 'Az aránytalanul alacsony ár indokolása, a felelős ajánlattétel elve és a korrupciós kockázatok elkerülése a teljesítés során.',
+          obj: ['Az aránytalanul alacsony ár kezelése', 'A felelős, fenntartható teljesítés', 'Integritási és korrupciós kockázatok'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Kockázatok és integritás — olvasmány (PDF)', meta: '8 oldal · 590 kB', action: 'Letöltés' }],
+          check: { q: 'Mit tehet az ajánlatkérő, ha egy ajánlati ár aránytalanul alacsonynak tűnik?', opts: ['Azonnal érvénytelenné nyilvánítja', 'Írásbeli indokolást kér az ajánlattevőtől az ár megalapozottságáról', 'Automatikusan elfogadja a legolcsóbb árat'], correct: 1, exp: 'Aránytalanul alacsony ár gyanúja esetén az ajánlatkérő indokolást kér; érvénytelenítés csak akkor lehet, ha az indokolás nem támasztja alá az árat.' } },
+        { id: 'w3q', t: 'Esettanulmányos kvíz — KDB határozatok', dur: '6 kérdés', type: 'quiz',
+          desc: 'Valós Közbeszerzési Döntőbizottsági (KDB) határozatok elemzésére épülő esettanulmányos kvíz a 3. hét anyagából.',
+          obj: ['KDB-határozatok értelmezése', 'A teljesítési szabályok gyakorlati alkalmazása', 'A modulzáró teljesítése'],
+          res: [] },
+      ]},
+      { id: 'w4', label: 'Jogorvoslat', badge: '4', meta: '4 videó + kurzuszárás · ~35 perc', lessons: [
+        { id: 'w4v1', t: 'A jogorvoslat alapjai', dur: '7:00', type: 'video',
+          desc: 'A jogorvoslati eljárást megalapozó ajánlatkérői magatartások és a jogorvoslat célja a közbeszerzési eljárás jogszerűségének biztosításában.',
+          obj: ['Mikor indítható jogorvoslat', 'A jogorvoslat célja és funkciója', 'A tipikus jogsértő magatartások'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Jogorvoslat alapjai — olvasmány (PDF)', meta: '6 oldal · 480 kB', action: 'Letöltés' }],
+          check: { q: 'Mi a közbeszerzési jogorvoslat elsődleges célja?', opts: ['Az ajánlatkérő büntetése minden esetben', 'A közbeszerzési eljárás jogszerűségének helyreállítása és biztosítása', 'Az eljárás felgyorsítása'], correct: 1, exp: 'A jogorvoslat célja a jogsértések orvoslása és az eljárás jogszerűségének biztosítása, nem önmagában a szankcionálás.' } },
+        { id: 'w4v2', t: 'A Közbeszerzési Döntőbizottság (KDB)', dur: '8:15', type: 'video',
+          desc: 'A KDB mint jogorvoslati hatóság szerepe, valamint a jogorvoslati eljárás szereplői (ajánlatkérő, kérelmező, kérelmezett) és jogállásuk.',
+          obj: ['A KDB feladat- és hatásköre', 'Az eljárás szereplőinek jogállása', 'A hivatalból indított eljárás esetei'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'A KDB szerepe — olvasmány (PDF)', meta: '7 oldal · 520 kB', action: 'Letöltés' }],
+          check: { q: 'Melyik szerv jár el a közbeszerzési jogorvoslati ügyekben első fokon?', opts: ['A rendes bíróság', 'A Közbeszerzési Döntőbizottság (KDB)', 'Az Európai Bizottság'], correct: 1, exp: 'A közbeszerzési jogorvoslati eljárás első fokon a Közbeszerzési Döntőbizottság (KDB) hatáskörébe tartozik.' } },
+        { id: 'w4v3', t: 'A jogorvoslati kérelem', dur: '9:30', type: 'video',
+          desc: 'A jogorvoslati kérelem benyújtásának határidői, alaki és tartalmi követelményei, valamint a befizetendő igazgatási szolgáltatási díjak.',
+          obj: ['A kérelem benyújtási határideje', 'Alaki és tartalmi követelmények', 'Az igazgatási szolgáltatási díj'],
+          res: [{ icon: 'ri-file-pdf-2-line', title: 'Jogorvoslati kérelem — olvasmány (PDF)', meta: '8 oldal · 600 kB', action: 'Letöltés' }],
+          check: { q: 'Mi jellemző a jogorvoslati kérelem benyújtására?', opts: ['Bármikor, határidő nélkül benyújtható', 'Törvényi határidőn belül, meghatározott tartalmi és díjfizetési feltételekkel', 'Kizárólag szóban terjeszthető elő'], correct: 1, exp: 'A kérelmet a törvényi határidőn belül, az előírt tartalommal és az igazgatási szolgáltatási díj megfizetésével kell benyújtani.' } },
+        { id: 'w4v4', t: 'Az eljárás lefolytatása', dur: '10:05', type: 'video',
+          desc: 'Hogyan zajlik a jogorvoslati eljárás, milyen döntéseket hozhat a KDB, és mik a lehetséges jogkövetkezmények (pl. bírság, a szerződés semmissége).',
+          obj: ['Az eljárás menete és határidői', 'A KDB lehetséges döntései', 'A jogkövetkezmények: bírság, semmisség'],
+          res: [{ icon: 'ri-image-2-line', title: 'Képernyőfotó-csomag: döntési folyamat', meta: '8 kép · ZIP', action: 'Letöltés' }],
+          check: { q: 'Az alábbiak közül mi lehet a KDB jogorvoslati döntésének következménye?', opts: ['Bírság kiszabása és/vagy a jogsértő szerződés semmisségének megállapítása', 'Az ajánlatkérő automatikus feloszlatása', 'A kérelmező kötelező kizárása minden jövőbeli eljárásból'], correct: 0, exp: 'A KDB többek között bírságot szabhat ki, megsemmisítheti a jogsértő döntést, vagy megállapíthatja a szerződés semmisségét.' } },
+        { id: 'w4end', t: 'Kurzuszárás — kilépési kérdőív és oklevél', dur: 'Lezárás', type: 'quiz',
+          desc: 'Modulzáró ismétlőkérdések, a kurzus egészét értékelő kilépési kérdőív, majd a teljesítést igazoló oklevél kiállítása és letöltése.',
+          obj: ['Összefoglaló ismétlőkérdések', 'Kilépési (elégedettségi) kérdőív', 'A záró oklevél kiállítása'],
+          res: [{ icon: 'ri-award-line', title: 'Minta-oklevél (PDF)', meta: 'Kiállítás a kurzus teljesítése után', action: 'Megtekintés' }] },
+      ]},
+    ];
+  }
+
+  flat() { const a = []; this.data().forEach(w => w.lessons.forEach(l => a.push(Object.assign({ wkId: w.id, weekLabel: w.label }, l)))); return a; }
+  cur() { return this.flat().find(l => l.id === this.state.current) || this.flat()[0]; }
+
+  select = (id) => { clearInterval(this._t); this.setState({ current: id, tab: 'overview', playing: false, prog: 0, answered: null, quiz: { phase: 'intro', i: 0, sel: null, checked: false, answers: [] } }); };
+  toggleWeek = (id) => this.setState(s => ({ open: Object.assign({}, s.open, { [id]: !s.open[id] }) }));
+  toggleDone = () => { const id = this.state.current; this.setState(s => { const d = Object.assign({}, s.done); if (d[id]) delete d[id]; else d[id] = 1; return { done: d }; }); };
+
+  playToggle = () => {
+    clearInterval(this._t);
+    if (this.state.playing) { this.setState({ playing: false }); return; }
+    this.setState({ playing: true });
+    this._t = setInterval(() => {
+      this.setState(s => {
+        const np = s.prog + 0.8;
+        if (np >= 100) { clearInterval(this._t); const d = Object.assign({}, s.done); d[s.current] = 1; return { prog: 100, playing: false, done: d }; }
+        return { prog: np };
+      });
+    }, 120);
+  };
+
+  answer = (i) => { if (this.state.answered != null) return; this.setState({ answered: i }); };
+
+  assembleQuiz(lesson, week) {
+    if (lesson.qset) return lesson.qset;
+    const wk = week || this.data().find(w => w.id === lesson.wkId);
+    if (!wk) return [];
+    return wk.lessons.filter(l => l.type === 'video' && l.check).map(l => ({ q: l.check.q, opts: l.check.opts, correct: l.check.correct, exp: l.check.exp }));
+  }
+  startQuiz = () => this.setState({ quiz: { phase: 'run', i: 0, sel: null, checked: false, answers: [] } });
+  pickQ = (i) => { if (this.state.quiz.checked) return; this.setState(s => ({ quiz: Object.assign({}, s.quiz, { sel: i }) })); };
+  checkQ = () => this.setState(s => { if (s.quiz.sel == null || s.quiz.checked) return {}; return { quiz: Object.assign({}, s.quiz, { checked: true, answers: s.quiz.answers.concat(s.quiz.sel) }) }; });
+  nextQ = (count) => this.setState(s => {
+    const ni = s.quiz.i + 1;
+    if (ni >= count) { const d = Object.assign({}, s.done); d[s.current] = 1; return { quiz: Object.assign({}, s.quiz, { phase: 'done' }), done: d }; }
+    return { quiz: Object.assign({}, s.quiz, { i: ni, sel: null, checked: false }) };
+  });
+  retryQuiz = () => this.setState({ quiz: { phase: 'intro', i: 0, sel: null, checked: false, answers: [] } });
+  onNotes = (e) => { const v = e.target.value, id = this.state.current; this.setState(s => ({ notes: Object.assign({}, s.notes, { [id]: v }) })); };
+  setTab = (t) => () => this.setState({ tab: t });
+
+  fmt(sec) { const m = Math.floor(sec / 60), s = Math.floor(sec % 60); return m + ':' + (s < 10 ? '0' : '') + s; }
+  durSec(d) { const p = String(d).split(':'); return p.length === 2 ? (+p[0]) * 60 + (+p[1]) : 0; }
+
+  renderVals() {
+    const flat = this.flat(), cur = this.cur(), done = this.state.done;
+    const totalCount = flat.length, doneCount = Object.keys(done).length;
+    const overallPct = Math.round(doneCount / totalCount * 100);
+    const idx = flat.findIndex(l => l.id === cur.id);
+    const prev = idx > 0 ? flat[idx - 1] : null, next = idx < flat.length - 1 ? flat[idx + 1] : null;
+    const isVideo = cur.type === 'video';
+    const curX = Object.assign({}, cur, {
+      kindLabel: isVideo ? 'Videós lecke' : 'Interaktív feladat',
+      badgeIcon: isVideo ? 'ri-play-circle-line' : 'ri-questionnaire-line',
+      badgeText: isVideo ? 'Videós lecke · képernyős bemutató' : 'Interaktív feladat',
+    });
+
+    const weeksView = this.data().map((w, wi) => {
+      const total = w.lessons.length, dn = w.lessons.filter(l => done[l.id]).length;
+      const complete = dn === total && total > 0;
+      const started = dn > 0;
+      const pct = total ? Math.round(dn / total * 100) : 0;
+      const isOpen = !!this.state.open[w.id];
+      return {
+        label: w.label, badge: w.badge, isOpen,
+        complete, notComplete: !complete,
+        chevron: isOpen ? 'ri-arrow-up-s-line' : 'ri-arrow-down-s-line',
+        onToggle: () => this.toggleWeek(w.id),
+        secProgLabel: dn + ' / ' + total + ' kész',
+        cardStyle: 'border-radius:16px; overflow:hidden; border:1px solid ' + (isOpen ? 'var(--indigo-300)' : 'var(--neutral-border)') + '; background:#fff; box-shadow:' + (isOpen ? '0 8px 22px -14px rgba(66,88,237,.4)' : '0 1px 2px rgba(19,26,68,.04)') + ';',
+        headStyle: 'width:100%; display:flex; align-items:center; gap:13px; padding:14px 15px; background:' + (isOpen ? 'var(--indigo-50,#f4f5ff)' : '#fff') + '; border:none; cursor:pointer; text-align:left; font-family:var(--font-primary);',
+        badgeStyle: 'flex:0 0 auto; width:36px; height:36px; border-radius:11px; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:800; ' + (complete ? 'background:var(--semantic-green-600); color:#fff;' : (started ? 'background:var(--brand); color:#fff;' : 'background:var(--indigo-100); color:var(--brand);')),
+        secBarTrackStyle: 'flex:1; height:5px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;',
+        secBarStyle: 'display:block; height:100%; border-radius:9999px; width:' + pct + '%; background:' + (complete ? 'var(--semantic-green-500)' : 'linear-gradient(90deg,var(--indigo-700),var(--indigo-900))') + ';',
+        secLabelStyle: 'font-size:11px; font-weight:700; flex:0 0 auto; color:' + (complete ? 'var(--semantic-green-700)' : 'var(--neutral-fg-tertiary)') + ';',
+        lessons: w.lessons.map(l => {
+          const isDone = !!done[l.id], active = l.id === this.state.current;
+          const isQuiz = l.type === 'quiz';
+          const qCnt = isQuiz ? this.assembleQuiz(l, w).length : 0;
+          let icon, iconColor;
+          if (active) { icon = isQuiz ? 'ri-pause-circle-fill' : 'ri-play-circle-fill'; iconColor = 'var(--brand)'; }
+          else if (isDone) { icon = 'ri-checkbox-circle-fill'; iconColor = 'var(--semantic-green-600)'; }
+          else { icon = isQuiz ? 'ri-questionnaire-line' : 'ri-play-circle-line'; iconColor = 'var(--cold-grey-600)'; }
+          return {
+            t: l.t, onSelect: () => this.select(l.id),
+            icon, iconExtra: 'color:' + iconColor + ';',
+            kindIcon: isQuiz ? 'ri-checkbox-multiple-line' : 'ri-vidicon-line',
+            kindDur: isQuiz ? ('Kvíz · ' + qCnt + ' kérdés') : ('Videó · ' + l.dur),
+            rowExtra: active ? 'background:var(--indigo-100); box-shadow:inset 3px 0 0 var(--brand);' : '',
+            titleExtra: active ? 'color:var(--brand); font-weight:700;' : (isDone ? 'color:var(--neutral-fg-tertiary);' : ''),
+          };
+        }),
+      };
+    });
+
+    // knowledge check
+    const hasCheck = isVideo && !!cur.check;
+    let checkOpts = [], showFeedback = false, feedbackText = '', feedbackStyle = '', feedbackIcon = '';
+    if (hasCheck) {
+      const ans = this.state.answered, correct = cur.check.correct;
+      checkOpts = cur.check.opts.map((label, i) => {
+        let style = 'background:#fff; border:1.5px solid var(--neutral-border); color:var(--neutral-fg-primary);';
+        let markIcon = 'ri-checkbox-blank-circle-line', markColor = 'var(--cold-grey-500)';
+        if (ans != null) {
+          if (i === correct) { style = 'background:var(--semantic-green-100); border:1.5px solid var(--semantic-green-500); color:var(--semantic-green-900);'; markIcon = 'ri-checkbox-circle-fill'; markColor = 'var(--semantic-green-600)'; }
+          else if (i === ans) { style = 'background:var(--semantic-red-100); border:1.5px solid var(--semantic-red-500); color:var(--semantic-red-900);'; markIcon = 'ri-close-circle-fill'; markColor = 'var(--semantic-red-700)'; }
+          else { style = 'background:#fff; border:1.5px solid var(--neutral-border); color:var(--neutral-fg-tertiary); opacity:.7;'; }
+        }
+        return { label, onClick: () => this.answer(i), style: style + (ans == null ? ' cursor:pointer;' : ' cursor:default;'), markIcon, markStyle: 'flex:0 0 auto; color:' + markColor + '; display:flex;' };
+      });
+      if (ans != null) {
+        showFeedback = true;
+        const ok = ans === correct;
+        feedbackIcon = ok ? 'ri-check-line' : 'ri-information-line';
+        feedbackText = (ok ? 'Helyes! ' : 'Nézd át újra. ') + cur.check.exp;
+        feedbackStyle = 'display:flex; align-items:flex-start; gap:9px; margin-top:16px; padding:13px 15px; border-radius:11px; font-size:14px; line-height:1.5; font-weight:600; ' + (ok ? 'background:var(--semantic-green-100); color:var(--semantic-green-900);' : 'background:var(--semantic-orange-100,#fff6ea); color:var(--cold-grey-1200);');
+      }
+    }
+
+    // resources
+    const res = (cur.res || []).map(r => ({ title: r.title, meta: r.meta, action: r.action, icon: r.icon,
+      iconWrap: 'flex:0 0 auto; width:46px; height:46px; border-radius:12px; display:flex; align-items:center; justify-content:center; background:' + (r.icon === 'ri-image-2-line' ? 'linear-gradient(140deg,var(--indigo-700),var(--indigo-900))' : (r.icon === 'ri-award-line' ? 'linear-gradient(140deg,var(--semantic-green-500),var(--semantic-green-700))' : 'linear-gradient(140deg,#e7402d,#b30b00)')) + ';' }));
+
+    // ---- QUIZ view model ----
+    const isQuiz = cur.type === 'quiz';
+    const qArr = isQuiz ? this.assembleQuiz(cur) : [];
+    const quizCount = qArr.length;
+    const qz = this.state.quiz;
+    const selfAssess = !!cur.selfAssess;
+    const passMark = selfAssess ? 0 : 60;
+    const letters = ['A', 'B', 'C', 'D', 'E'];
+    const markBase = 'flex:0 0 auto; width:30px; height:30px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:800;';
+
+    let qNum = 1, qProgPct = 0, qText = '', qOpts = [], qChecked = false, qNotChecked = true,
+        qShowFeedback = false, qFeedbackStyle = '', qFeedbackIcon = '', qFeedbackText = '',
+        nextBtnLabel = 'Következő kérdés', qDoneHint = '', checkBtnStyle = '';
+    if (isQuiz && qz.phase === 'run' && quizCount) {
+      const qc = qArr[qz.i] || qArr[0];
+      qNum = qz.i + 1;
+      qProgPct = Math.round((qz.i + (qz.checked ? 1 : 0)) / quizCount * 100);
+      qText = qc.q;
+      qChecked = qz.checked; qNotChecked = !qz.checked;
+      qOpts = qc.opts.map((label, i) => {
+        let style = 'background:#fff; border:1.5px solid var(--neutral-border); color:var(--neutral-fg-primary);';
+        let markStyle = markBase + ' background:var(--cold-grey-200); color:var(--neutral-fg-tertiary);';
+        let stateIcon = 'ri-checkbox-blank-circle-line', stateIconStyle = 'color:transparent;';
+        if (!qz.checked) {
+          if (i === qz.sel) { style = 'background:var(--indigo-100); border:1.5px solid var(--brand); color:var(--neutral-fg-primary);'; markStyle = markBase + ' background:var(--brand); color:#fff;'; }
+          style += ' cursor:pointer;';
+        } else {
+          if (i === qc.correct) { style = 'background:var(--semantic-green-100); border:1.5px solid var(--semantic-green-500); color:var(--semantic-green-900);'; markStyle = markBase + ' background:var(--semantic-green-600); color:#fff;'; stateIcon = 'ri-checkbox-circle-fill'; stateIconStyle = 'color:var(--semantic-green-600);'; }
+          else if (i === qz.sel) { style = 'background:var(--semantic-red-100); border:1.5px solid var(--semantic-red-500); color:var(--semantic-red-900);'; markStyle = markBase + ' background:var(--semantic-red-600); color:#fff;'; stateIcon = 'ri-close-circle-fill'; stateIconStyle = 'color:var(--semantic-red-700);'; }
+          else { style = 'background:#fff; border:1.5px solid var(--neutral-border); color:var(--neutral-fg-tertiary); opacity:.65;'; }
+          style += ' cursor:default;';
+        }
+        return { label, letter: letters[i], onClick: () => this.pickQ(i), style, markStyle, stateIcon, stateIconStyle };
+      });
+      const ok = qz.sel === qc.correct;
+      if (qz.checked) {
+        qShowFeedback = true;
+        qFeedbackIcon = ok ? 'ri-checkbox-circle-fill' : 'ri-information-line';
+        qFeedbackText = (ok ? 'Helyes! ' : 'Nem egészen. ') + qc.exp;
+        qFeedbackStyle = 'display:flex; align-items:flex-start; gap:10px; margin-top:20px; padding:15px 17px; border-radius:12px; font-size:14px; line-height:1.55; font-weight:600; ' + (ok ? 'background:var(--semantic-green-100); color:var(--semantic-green-900);' : 'background:var(--semantic-orange-100,#fff6ea); color:var(--cold-grey-1200);');
+        qDoneHint = ok ? 'Helyes válasz' : 'Nézd át az indoklást';
+      } else {
+        qDoneHint = qz.sel == null ? 'Válassz egy lehetőséget' : 'Ellenőrizd a válaszod';
+      }
+      nextBtnLabel = (qz.i === quizCount - 1) ? 'Eredmény megtekintése' : 'Következő kérdés';
+      checkBtnStyle = 'display:inline-flex; align-items:center; gap:8px; border-radius:9999px; padding:12px 22px; font-family:var(--font-primary); font-size:14.5px; font-weight:700; border:none; ' + (qz.sel == null ? 'background:var(--cold-grey-300); color:var(--cold-grey-700); cursor:not-allowed;' : 'background:var(--brand); color:#fff; cursor:pointer;');
+    }
+
+    // quiz results
+    let scoreCorrect = 0, scorePct = 0, passed = false, reviewItems = [],
+        resultHeroStyle = '', resultIcon = '', resultKicker = '', resultMsg = '';
+    if (isQuiz && qz.phase === 'done' && quizCount) {
+      scoreCorrect = qArr.reduce((n, qq, i) => n + (qz.answers[i] === qq.correct ? 1 : 0), 0);
+      scorePct = Math.round(scoreCorrect / quizCount * 100);
+      passed = scorePct >= passMark;
+      reviewItems = qArr.map((qq, i) => {
+        const a = qz.answers[i], ok = a === qq.correct;
+        return { q: qq.q, icon: ok ? 'ri-checkbox-circle-fill' : 'ri-close-circle-fill', iconStyle: 'color:' + (ok ? 'var(--semantic-green-600)' : 'var(--semantic-red-600)') + ';', yours: 'A válaszod: ' + (a != null ? qq.opts[a] : '—'), showCorrect: !ok, right: 'Helyes válasz: ' + qq.opts[qq.correct] };
+      });
+      if (selfAssess) {
+        resultIcon = 'ri-lightbulb-flash-fill'; resultKicker = 'Önértékelés kész';
+        resultHeroStyle = 'display:flex; align-items:center; gap:22px; padding:32px 30px; background:linear-gradient(135deg,var(--indigo-800),var(--indigo-1000));';
+        resultMsg = scorePct >= 75 ? 'Erős alapokkal indulsz — a kurzus a gyakorlati, EKR-es részekre építhet.' : 'Jó kiindulás — a kurzus lépésről lépésre felépíti a hiányzó alapokat is.';
+      } else if (passed) {
+        resultIcon = 'ri-medal-2-fill'; resultKicker = 'Modul teljesítve';
+        resultHeroStyle = 'display:flex; align-items:center; gap:22px; padding:32px 30px; background:linear-gradient(135deg,var(--semantic-green-600),var(--semantic-green-800,#0f6b3f));';
+        resultMsg = scorePct === 100 ? 'Hibátlan! Minden kérdésre helyesen válaszoltál.' : 'Sikeresen teljesítetted a modulzárót. Átnézheted a hibákat, vagy továbbléphetsz.';
+      } else {
+        resultIcon = 'ri-refresh-line'; resultKicker = 'Még gyakorolj';
+        resultHeroStyle = 'display:flex; align-items:center; gap:22px; padding:32px 30px; background:linear-gradient(135deg,#c76a12,#9a4e0a);';
+        resultMsg = 'A teljesítéshez ' + passMark + '% szükséges. Nézd át az indoklásokat, majd próbáld újra.';
+      }
+    }
+
+    const quizMins = Math.max(2, Math.round(quizCount * 0.8));
+
+    // transcript (generated)
+    const transcript = [
+      { time: '0:00', line: 'Üdvözöllek ebben a leckében: „' + cur.t + '”. Röviden áttekintjük, mit fogsz látni a következő percekben.' },
+      { time: '0:34', line: 'Először a gyakorlati kontextust és a legfontosabb fogalmakat tisztázzuk, hogy a képernyős bemutató könnyen követhető legyen.' },
+      { time: '1:58', line: 'Ezután lépésről lépésre végigmegyünk a folyamaton az EKR felületén, kiemelve a tipikus hibalehetőségeket.' },
+      { time: '3:40', line: 'A videó közben egy rövid ellenőrző kérdés is megjelenik, amellyel azonnal tesztelheted a megértést.' },
+      { time: '5:05', line: 'Végül összefoglaljuk a kulcspontokat, és jelezzük, melyik letölthető olvasmány kapcsolódik a témához.' },
+    ];
+
+    const tabStyleFn = (t) => 'padding:11px 16px; background:none; border:none; cursor:pointer; font-family:var(--font-primary); font-size:14px; font-weight:700; border-bottom:2.5px solid ' + (this.state.tab === t ? 'var(--brand); color:var(--brand);' : 'transparent; color:var(--neutral-fg-tertiary);') + ' margin-bottom:-1.5px;';
+
+    const isDoneCur = !!done[cur.id];
+    const dur = this.durSec(cur.dur);
+
+    return {
+      overallPct, doneCount, totalCount,
+      ringDash: (overallPct / 100 * 100.5).toFixed(1) + ',100.5',
+      showNav: !this.isMobile,
+      bodyStyle: 'flex:1; display:flex; ' + (this.isMobile ? 'flex-direction:column;' : '') + ' min-height:0;',
+      sidebarStyle: this.isMobile
+        ? 'order:2; width:100%; background:var(--cold-grey-100); border-top:1px solid var(--neutral-border); max-height:540px; overflow-y:auto;'
+        : 'width:392px; flex:0 0 392px; background:var(--cold-grey-100); border-right:1px solid var(--neutral-border); overflow-y:auto; height:calc(100vh - 122px); position:sticky; top:122px;',
+      mainStyle: this.isMobile ? 'order:1; flex:1;' : 'flex:1; overflow-y:auto; height:calc(100vh - 122px);',
+      weeksView, cur: curX,
+      // player
+      playing: this.state.playing,
+      progPct: this.state.prog.toFixed(1),
+      curTime: this.fmt(this.state.prog / 100 * dur),
+      bigPlayIcon: this.state.playing ? 'ri-pause-fill' : 'ri-play-fill',
+      barPlayIcon: this.state.playing ? 'ri-pause-fill' : 'ri-play-fill',
+      playIconNudge: this.state.playing ? '0' : '4px',
+      playToggle: this.playToggle,
+      // done button
+      toggleDone: this.toggleDone,
+      doneBtnStyle: 'flex:0 0 auto; display:inline-flex; align-items:center; gap:8px; padding:11px 18px; border-radius:9999px; cursor:pointer; font-family:var(--font-primary); font-size:13.5px; font-weight:700; ' + (isDoneCur ? 'background:var(--semantic-green-600); color:#fff; border:none;' : 'background:#fff; color:var(--brand); border:1.5px solid var(--indigo-300);'),
+      doneBtnIcon: isDoneCur ? 'ri-check-double-line' : 'ri-check-line',
+      doneBtnLabel: isDoneCur ? 'Teljesítve' : 'Megjelölöm késznek',
+      // tabs
+      tab: { overview: this.setTab('overview'), resources: this.setTab('resources'), transcript: this.setTab('transcript'), notes: this.setTab('notes') },
+      tabStyle: { overview: tabStyleFn('overview'), resources: tabStyleFn('resources'), transcript: tabStyleFn('transcript'), notes: tabStyleFn('notes') },
+      isOverview: this.state.tab === 'overview', isResources: this.state.tab === 'resources', isTranscript: this.state.tab === 'transcript', isNotes: this.state.tab === 'notes',
+      resCount: (cur.res || []).length,
+      // overview content
+      hasCheck, checkOpts, showFeedback, feedbackText, feedbackStyle, feedbackIcon,
+      res, transcript,
+      notesValue: this.state.notes[cur.id] || '', onNotes: this.onNotes,
+      // nav
+      hasPrev: !!prev, hasNext: !!next,
+      prevTitle: prev ? prev.t : '', nextTitle: next ? next.t : '',
+      goPrev: () => prev && this.select(prev.id), goNext: () => next && this.select(next.id),
+      // quiz
+      isVideo, isQuiz,
+      quizIntro: isQuiz && qz.phase === 'intro',
+      quizRun: isQuiz && qz.phase === 'run',
+      quizDone: isQuiz && qz.phase === 'done',
+      quizCount, quizMins,
+      quizPassIcon: selfAssess ? 'ri-lightbulb-line' : 'ri-flag-2-line',
+      quizPassText: selfAssess ? 'Önértékelés' : 'Sikeres: ' + passMark + '%+',
+      quizStartLabel: selfAssess ? 'Kitöltöm' : 'Kvíz indítása',
+      startQuiz: this.startQuiz,
+      qNum, qProgPct, qText, qOpts, qChecked, qNotChecked,
+      qShowFeedback, qFeedbackStyle, qFeedbackIcon, qFeedbackText, qDoneHint,
+      checkQ: this.checkQ, nextQ: () => this.nextQ(quizCount), checkBtnStyle, nextBtnLabel,
+      scoreCorrect, scorePct, reviewItems, resultHeroStyle, resultIcon, resultKicker, resultMsg,
+      retryQuiz: this.retryQuiz,
+    };
+  }
+
+  get isMobile() { return typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(max-width: 900px)').matches; }
+  componentDidMount() { this._r = () => this.forceUpdate(); window.addEventListener('resize', this._r); requestAnimationFrame(this._r); }
+  componentWillUnmount() { clearInterval(this._t); window.removeEventListener('resize', this._r); }
+}
+</script>
+</body>
+</html>

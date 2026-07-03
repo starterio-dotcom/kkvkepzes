@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+</helmet>
+
+<article style="font-family:var(--font-primary); color:var(--neutral-fg-primary);">
+
+  <!-- title -->
+  <div style="display:flex; align-items:flex-start; gap:14px;">
+    <span style="width:44px; height:44px; border-radius:12px; background:var(--brand); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:22px; flex:0 0 auto;"><i class="{{ icon }}"></i></span>
+    <div>
+      <h1 style="font-weight:700; font-size:clamp(22px,2.6vw,30px); line-height:1.2; letter-spacing:-0.02em; margin:0; color:var(--neutral-fg-primary);">{{ title }}</h1>
+    </div>
+  </div>
+  <div style="margin-top:14px; background:var(--cold-grey-200); border-radius:10px; padding:10px 14px; display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--neutral-fg-secondary);"><i class="ri-checkbox-circle-line" style="font-size:17px; color:var(--brand);"></i><strong style="font-weight:700; color:var(--neutral-fg-primary);">Teendő:</strong> {{ teendo }}</div>
+
+  <!-- sections -->
+  <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="2">
+    <div style="margin-top:30px;">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;"><span style="font-size:12px; font-weight:700; letter-spacing:0.06em; color:var(--brand); background:var(--indigo-200); padding:4px 10px; border-radius:9999px;">{{ sec.badge }}</span><h2 style="font-weight:700; font-size:20px; letter-spacing:-0.01em; margin:0;">{{ sec.heading }}</h2></div>
+
+      <sc-for list="{{ sec.blocks }}" as="b" hint-placeholder-count="3">
+        <sc-if value="{{ b.isLead }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size:16px; font-weight:600; line-height:1.65; color:var(--neutral-fg-primary); margin:0 0 14px;">{{ b.text }}</p>
+        </sc-if>
+        <sc-if value="{{ b.isP }}" hint-placeholder-val="{{ true }}">
+          <p style="font-size:15px; font-weight:500; line-height:1.65; color:var(--neutral-fg-secondary); margin:0 0 14px;">{{ b.text }}</p>
+        </sc-if>
+        <sc-if value="{{ b.isInfo }}" hint-placeholder-val="{{ false }}">
+          <div style="background:var(--semantic-blue-200); color:var(--semantic-blue-1200); border-radius:12px; padding:14px 16px; display:flex; gap:12px; margin:0 0 14px;"><i class="ri-information-fill" style="font-size:22px; flex:0 0 auto;"></i><span style="font-size:14px; font-weight:500; line-height:1.55;">{{ b.text }}</span></div>
+        </sc-if>
+        <sc-if value="{{ b.isWarn }}" hint-placeholder-val="{{ false }}">
+          <div style="background:var(--semantic-orange-200); color:var(--semantic-orange-1100); border-radius:12px; padding:14px 16px; display:flex; gap:12px; margin:0 0 14px;"><i class="ri-alert-fill" style="font-size:22px; flex:0 0 auto;"></i><span style="font-size:14px; font-weight:500; line-height:1.55;">{{ b.text }}</span></div>
+        </sc-if>
+        <sc-if value="{{ b.isTip }}" hint-placeholder-val="{{ false }}">
+          <div style="background:var(--indigo-100); color:var(--neutral-fg-primary); border-radius:12px; padding:14px 16px; display:flex; gap:12px; margin:0 0 14px;"><i class="ri-lightbulb-flash-line" style="font-size:22px; flex:0 0 auto; color:var(--brand);"></i><span style="font-size:14px; font-weight:500; line-height:1.55;">{{ b.text }}</span></div>
+        </sc-if>
+        <sc-if value="{{ b.isImage }}" hint-placeholder-val="{{ false }}">
+          <div style="border:1px solid var(--neutral-border); border-radius:14px; overflow:hidden; margin:0 0 16px;">
+            <div style="background:linear-gradient(135deg,var(--semantic-blue-700),var(--semantic-blue-1000)); aspect-ratio:16/7; display:flex; align-items:center; justify-content:center; color:#fff; gap:12px;"><i class="{{ b.icon }}" style="font-size:40px; opacity:.9;"></i><span style="font-weight:800; font-size:22px; letter-spacing:0.04em;">{{ b.label }}</span></div>
+            <div style="padding:8px 14px; font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary); background:var(--cold-grey-200);"><i class="ri-image-line" style="margin-right:6px;"></i>{{ b.caption }}</div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ b.isList }}" hint-placeholder-val="{{ false }}">
+          <div style="margin:0 0 16px;">
+            <sc-if value="{{ b.hasTitle }}" hint-placeholder-val="{{ false }}"><p style="font-size:14px; font-weight:700; color:var(--neutral-fg-primary); margin:0 0 10px;">{{ b.title }}</p></sc-if>
+            <div style="display:flex; flex-direction:column; gap:9px;">
+              <sc-for list="{{ b.items }}" as="it" hint-placeholder-count="3">
+                <div style="display:flex; align-items:flex-start; gap:9px; font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary);"><i class="ri-checkbox-circle-line" style="font-size:18px; color:var(--brand); flex:0 0 auto; margin-top:1px;"></i><span>{{ it }}</span></div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ b.isSteps }}" hint-placeholder-val="{{ false }}">
+          <div style="margin:0 0 16px; display:flex; flex-direction:column; gap:12px;">
+            <sc-for list="{{ b.items }}" as="st" hint-placeholder-count="3">
+              <div style="display:flex; align-items:flex-start; gap:13px;"><span style="width:28px; height:28px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; flex:0 0 auto;">{{ st.num }}</span><span style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); padding-top:3px;">{{ st.text }}</span></div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </sc-for>
+    </div>
+  </sc-for>
+
+  <!-- quiz -->
+  <sc-if value="{{ hasQuiz }}" hint-placeholder-val="{{ false }}">
+  <div style="margin-top:34px; background:var(--cold-grey-200); border:1px solid var(--neutral-border); border-radius:16px; padding:24px;">
+    <div style="display:flex; align-items:center; gap:9px; margin-bottom:16px;"><i class="ri-question-answer-line" style="font-size:22px; color:var(--brand);"></i><h3 style="font-weight:700; font-size:17px; letter-spacing:-0.01em; margin:0;">Ellenőrizd a tudásod</h3></div>
+    <p style="font-size:15px; font-weight:600; color:var(--neutral-fg-primary); margin:0 0 14px;">{{ quizQuestion }}</p>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <sc-for list="{{ quizOptions }}" as="o" hint-placeholder-count="3">
+        <button onClick="{{ o.onPick }}" style="{{ o.style }}"><span style="{{ o.dot }}"><i class="{{ o.dotIcon }}" style="font-size:15px;"></i></span><span style="flex:1; text-align:left;">{{ o.label }}</span></button>
+      </sc-for>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
+      <button onClick="{{ onCheck }}" style="height:44px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; font-family:var(--font-primary);">Ellenőrzés</button>
+      <sc-if value="{{ quizFeedbackShow }}" hint-placeholder-val="{{ false }}">
+        <span style="{{ quizFeedbackStyle }}"><i class="{{ quizFeedbackIcon }}" style="font-size:18px;"></i>{{ quizFeedbackText }}</span>
+      </sc-if>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- lecke nav -->
+  <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--neutral-border); display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;">
+    <sc-if value="{{ hasPrev }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ onPrev }}" style="height:46px; padding:0 20px; border-radius:9999px; background:#fff; color:var(--neutral-fg-secondary); border:1px solid var(--neutral-border); cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-arrow-left-line" style="font-size:18px;"></i>Előző</button>
+    </sc-if>
+    <sc-if value="{{ noPrev }}" hint-placeholder-val="{{ true }}"><span></span></sc-if>
+    <sc-if value="{{ hasNext }}" hint-placeholder-val="{{ true }}">
+      <button onClick="{{ onNext }}" style="height:46px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);">Következő: {{ nextLabel }}<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+    </sc-if>
+    <sc-if value="{{ noNext }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ onNext }}" style="height:46px; padding:0 22px; border-radius:9999px; background:var(--semantic-green-800); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-check-double-line" style="font-size:18px;"></i>Modul teljesítve</button>
+    </sc-if>
+  </div>
+
+</article>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:760,&quot;height&quot;:1100},&quot;lesson&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;i1&quot;,&quot;options&quot;:[&quot;intro&quot;,&quot;i1&quot;,&quot;i2&quot;,&quot;i3&quot;,&quot;i4&quot;,&quot;i5&quot;,&quot;i6&quot;,&quot;i7&quot;],&quot;tsType&quot;:&quot;string&quot;},&quot;prevLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;nextLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;I.2. Személyes fiók&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { pick: null, checked: false };
+
+  componentDidUpdate(prev) {
+    if (prev.lesson !== this.props.lesson) this.setState({ pick: null, checked: false });
+  }
+
+  lessons() {
+    return {
+      intro: {
+        icon: 'ri-book-open-line', title: 'Képzésbevezető', teendo: 'A bevezető elolvasása',
+        sections: [
+          { badge: '1 / 2', heading: 'Üdvözlünk a képzésben!', blocks: [
+            { kind: 'lead', text: 'Ez a tananyag a közbeszerzési eljárások gyakorlati ismereteit adja át — kifejezetten kis- és középvállalkozások számára, érthető, lépésről lépésre felépített formában.' },
+            { kind: 'p', text: 'A képzés négy modulból áll: a közbeszerzési alapoktól az ajánlattételen és a szerződés teljesítésén át a jogorvoslatig és az EKR használatáig. A modulok egymástól függetlenül, saját tempódban is elvégezhetők.' },
+            { kind: 'info', text: 'A képzés elvégzése teljesen ingyenes, és a sikeres teljesítés után letölthető oklevelet állítunk ki a nevedre.' },
+          ]},
+          { badge: '2 / 2', heading: 'Hogyan haladj a tananyagban?', blocks: [
+            { kind: 'list', title: 'Néhány tipp a hatékony tanuláshoz', items: ['Haladj a leckéken sorban — minden lecke az előzőre épül.', 'A „Következő" gombbal lépj tovább, a Tananyag fiókból bármikor átugorhatsz.', 'A leckék végén ellenőrizd a tudásod a rövid kérdésekkel.', 'A haladásod automatikusan mentődik, bármikor folytathatod.'] },
+            { kind: 'tip', text: 'Bármikor visszatérhetsz egy korábbi leckéhez a bal felső „Tananyag" gombbal megnyíló listából.' },
+          ]},
+        ],
+      },
+      i1: {
+        icon: 'ri-node-tree', title: 'I.1. Az EKR rövid ismertetése, regisztráció nélkül elérhető felülete', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 3', heading: 'Jogi háttér és a rendszer célja', blocks: [
+            { kind: 'image', icon: 'ri-global-line', label: 'EKR', caption: 'Az EKR belépés nélkül elérhető nyitófelülete' },
+            { kind: 'lead', text: '2018. április 15-étől a közbeszerzési eljárásokat — az uniós elvárásokkal összhangban — főszabály szerint elektronikus úton, az Elektronikus Közbeszerzési Rendszer (EKR) igénybevételével kell lebonyolítani.' },
+            { kind: 'p', text: 'A közbeszerzési eljárás valamennyi szakaszában kizárólag az EKR-en keresztüli kommunikáció elfogadott. Kivétel ez alól az eljárás előkészítésének szakasza, valamint a szerződéskötés és az azt követő kommunikáció.' },
+            { kind: 'info', text: 'Az EKR használata Ajánlattevői oldalról ingyenes; rendszerhasználati díj csak az eljárások megindításakor, az Ajánlatkérői oldalon jelentkezik.' },
+          ]},
+          { badge: '2 / 3', heading: 'Az eljárások lefolytatásának struktúrája', blocks: [
+            { kind: 'p', text: 'Az EKR-ben az eljárás két felhasználócsoportnak megfelelően bomlik: az Ajánlatkérők az „eljárás", az ajánlattevők az „ajánlat" ügylet segítségével dolgoznak. Az ügyletek szakaszokra tagolódnak, a szakaszokon belül eljárási cselekmények indíthatók.' },
+            { kind: 'list', title: 'Egy uniós, nyílt eljárás szakaszai', items: ['I. Előkészítés — a becsült érték rögzítése, a felhívás és a dokumentum összeállítása.', 'II. Ajánlattétel — érdeklődés jelzése, adatok rögzítése, benyújtás, majd bontás.', 'III. Bírálat — hiánypótlás, igazolások benyújtása, összegezés.', 'IV. Szerződéskötés és teljesítés — eredménytájékoztató, vitarendezés.'] },
+            { kind: 'warn', text: 'Egy eljárási cselekmény csak akkor tekinthető befejezettnek, ha a státusza „befejezett"-re vált. A rendszer erről nem mindig küld e-mailt, ezért érdemes az állapotot figyelemmel kísérni.' },
+          ]},
+          { badge: '3 / 3', heading: 'Regisztráció nélkül elérhető felület', blocks: [
+            { kind: 'p', text: 'Az EKR bármilyen friss böngészővel működik, és a https://ekr.gov.hu/ címen érhető el. A bal felső EKR-ikonra kattintva bármely menüpontból visszaugorhatunk a nyitóoldalra.' },
+            { kind: 'image', icon: 'ri-layout-top-2-line', label: 'Kezdőképernyő', caption: 'Kereső, Belépés és Regisztráció' },
+            { kind: 'tip', text: 'A megjelenítési problémák többségét (pl. egy gombra kattintunk, és nem tölt be a következő oldal) a Ctrl+F5, illetve a böngésző sütijeinek törlése megoldja.' },
+            { kind: 'info', text: 'Az EKR-ikon mellett látható a szerver ideje. A rendszer ez alapján számolja a határidőket, ezért az eljárási cselekményeket mindig ehhez igazítsd.' },
+            { kind: 'p', text: '2024. június 30-tól a főoldalon egy egyszerű kereső mező is elérhető, amellyel belépés nélkül is kereshetünk az EKR eljárásaiban. A találatok a mező alatti szűrőkkel pontosíthatók.' },
+          ]},
+        ],
+        quiz: { question: 'Mikortól kötelező főszabály szerint az EKR használata a közbeszerzési eljárásokban?', options: [{ key: 'a', label: '2018. április 15-étől' }, { key: 'b', label: '2016. november 1-jétől' }, { key: 'c', label: '2020. január 1-jétől' }], correct: 'a', ok: 'Helyes! 2018. április 15-étől kötelező.', no: 'Nem pontos — a helyes válasz: 2018. április 15.' },
+      },
+      i2: {
+        icon: 'ri-user-add-line', title: 'I.2. Személyes fiók létrehozása', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 2', heading: 'A regisztráció menete', blocks: [
+            { kind: 'lead', text: 'Az EKR-ben végzett érdemi tevékenységhez — például ajánlat benyújtásához — belépés, ahhoz pedig egyszeri regisztráció szükséges.' },
+            { kind: 'steps', items: [{ num: '1', text: 'Nyisd meg a https://ekr.gov.hu/ oldalt, és kattints a „Regisztráció" gombra.' }, { num: '2', text: 'Válaszd ki a felhasználó típusát, és add meg az alapadatokat.' }, { num: '3', text: 'Erősítsd meg az e-mail-címedet a kapott aktiváló linkkel.' }, { num: '4', text: 'Első belépéskor állítsd be a jelszavad és a kapcsolattartási adataid.' }] },
+            { kind: 'info', text: 'Egy természetes személy több szervezethez is kapcsolódhat; a szervezethez rendelés a következő leckék témája.' },
+          ]},
+          { badge: '2 / 2', heading: 'Fontos tudnivalók', blocks: [
+            { kind: 'warn', text: 'A regisztrációkor megadott e-mail-cím lesz az elsődleges értesítési csatorna — ügyelj rá, hogy aktív, rendszeresen figyelt címet adj meg.' },
+            { kind: 'p', text: 'A személyes fiók a te azonosításodat szolgálja. A szervezet nevében végzett cselekményekhez a fiókodat később a szervezethez kell kapcsolni, megfelelő jogosultsággal.' },
+          ]},
+        ],
+        quiz: { question: 'Mi szükséges az EKR-ben ajánlat benyújtásához?', options: [{ key: 'a', label: 'Regisztráció és belépés' }, { key: 'b', label: 'Csak a nyitóoldal megnyitása' }, { key: 'c', label: 'Semmilyen azonosítás' }], correct: 'a', ok: 'Így van — regisztráció és belépés is szükséges.', no: 'A helyes válasz: regisztráció és belépés.' },
+      },
+      i3: {
+        icon: 'ri-login-box-line', title: 'I.3. Belépés az EKR felületre', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 1', heading: 'A belépés lépései', blocks: [
+            { kind: 'lead', text: 'A regisztrációt követően a felhasználóneveddel (e-mail) és a jelszavaddal léphetsz be az EKR-be.' },
+            { kind: 'steps', items: [{ num: '1', text: 'Kattints a nyitóoldal jobb felső sarkában a „Belépés" gombra.' }, { num: '2', text: 'Add meg az e-mail-címed és a jelszavad.' }, { num: '3', text: 'Sikeres belépés után a személyes munkafelületedre jutsz.' }] },
+            { kind: 'tip', text: 'Ha elfelejtetted a jelszavad, a belépési űrlapon az „Elfelejtett jelszó" linkkel kérhetsz újat.' },
+            { kind: 'info', text: 'Belépés után a jobb felső sarokban láthatod, mely szervezet nevében jársz el éppen — több szervezet esetén itt válthatsz közöttük.' },
+          ]},
+        ],
+      },
+      i4: {
+        icon: 'ri-building-line', title: 'I.4. Szervezet regisztráció', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 2', heading: 'A szervezet felvétele', blocks: [
+            { kind: 'lead', text: 'Ahhoz, hogy egy vállalkozás nevében ajánlatot nyújthass be, a szervezetet is regisztrálni kell az EKR-ben.' },
+            { kind: 'steps', items: [{ num: '1', text: 'Belépés után válaszd a „Szervezet regisztrációja" menüpontot.' }, { num: '2', text: 'Add meg a szervezet adószámát — a rendszer több adatot automatikusan kitölt.' }, { num: '3', text: 'Ellenőrizd és egészítsd ki a cégadatokat, majd mentsd el.' }] },
+            { kind: 'info', text: 'Egy szervezetet csak egyszer kell regisztrálni; ezt követően több felhasználó is kapcsolódhat hozzá.' },
+          ]},
+          { badge: '2 / 2', heading: 'Az első regisztráló szerepe', blocks: [
+            { kind: 'p', text: 'A szervezetet elsőként regisztráló felhasználó lesz alapértelmezetten a szervezet adminisztrátora, aki a további felhasználók jogosultságait kezelheti.' },
+            { kind: 'warn', text: 'Körültekintően járj el az adószám megadásakor — hibás adószám esetén a szervezet nem azonosítható helyesen.' },
+          ]},
+        ],
+      },
+      i5: {
+        icon: 'ri-shield-keyhole-line', title: 'I.5. Jogosultságok kezelése', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 1', heading: 'Felhasználók és szerepkörök', blocks: [
+            { kind: 'lead', text: 'A szervezet adminisztrátora határozza meg, ki milyen műveleteket végezhet a szervezet nevében.' },
+            { kind: 'list', title: 'Tipikus szerepkörök', items: ['Adminisztrátor — felhasználókat és jogosultságokat kezel.', 'Ügyintéző — eljárási cselekményeket végez, ajánlatot állít össze.', 'Megtekintő — csak olvasási joggal fér hozzá az eljárásokhoz.'] },
+            { kind: 'info', text: 'A jogosultságok bármikor módosíthatók, így a felelősségi körök rugalmasan igazíthatók a szervezethez.' },
+            { kind: 'tip', text: 'Kulcsfontosságú eljárásoknál érdemes legalább két személynek ügyintézői jogot adni, hogy a benyújtás ne múljon egyetlen ember elérhetőségén.' },
+          ]},
+        ],
+      },
+      i6: {
+        icon: 'ri-dashboard-3-line', title: 'I.6. Az EKR belépést követő felülete', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 2', heading: 'A munkafelület felépítése', blocks: [
+            { kind: 'lead', text: 'Belépés után a személyes munkafelület fogad, ahonnan minden eljárásod és feladatod elérhető.' },
+            { kind: 'image', icon: 'ri-dashboard-3-line', label: 'Munkafelület', caption: 'Az EKR belépés utáni áttekintő nézete' },
+            { kind: 'list', title: 'A főbb területek', items: ['Folyamatban lévő eljárások és ajánlatok.', 'Feladatok és határidők áttekintése.', 'Értesítések és üzenetek az ajánlatkérőktől.', 'Szervezeti és felhasználói beállítások.'] },
+          ]},
+          { badge: '2 / 2', heading: 'Tájékozódás a felületen', blocks: [
+            { kind: 'p', text: 'A bal felső EKR-ikon mindig visszavisz a nyitóoldalra, a jobb felső sarokban pedig a belépett felhasználó és a szervezet neve látható.' },
+            { kind: 'info', text: 'A szerver ideje a fejlécben is megjelenik — a határidőket mindig ehhez igazítsd.' },
+          ]},
+        ],
+      },
+      i7: {
+        icon: 'ri-notification-badge-line', title: 'I.7. Érdeklődés jelzése', teendo: 'A tevékenység végignézése',
+        sections: [
+          { badge: '1 / 2', heading: 'Miért jelezz érdeklődést?', blocks: [
+            { kind: 'lead', text: 'Ha egy eljárás felkeltette az érdeklődésed, jelezheted azt az EKR-ben — így automatikusan értesülsz a fejleményekről.' },
+            { kind: 'p', text: 'Az érdeklődés jelzése után a rendszer értesít az eljárással kapcsolatos változásokról, például a kiegészítő tájékoztatásokról vagy a dokumentumok módosításáról.' },
+            { kind: 'info', text: 'Az érdeklődés jelzése nem kötelezettségvállalás — nem jelenti azt, hogy ajánlatot is be kell nyújtanod.' },
+          ]},
+          { badge: '2 / 2', heading: 'Az érdeklődés jelzésének menete', blocks: [
+            { kind: 'steps', items: [{ num: '1', text: 'Keresd meg az eljárást a keresőben vagy a felhívás alapján.' }, { num: '2', text: 'Nyisd meg az eljárás adatlapját, és válaszd az „Érdeklődés jelzése" lehetőséget.' }, { num: '3', text: 'Ezt követően az eljárás megjelenik a munkafelületeden, és értesítéseket kapsz róla.' }] },
+            { kind: 'tip', text: 'Érdemes már az érdeklődés jelzésekor átnézni a dokumentációt és a határidőket, hogy legyen időd az ajánlat összeállítására.' },
+          ]},
+        ],
+        quiz: { question: 'Mit jelent az érdeklődés jelzése egy eljárásnál?', options: [{ key: 'a', label: 'Értesítést kérsz a fejleményekről, kötelezettség nélkül' }, { key: 'b', label: 'Kötelezően ajánlatot kell benyújtanod' }, { key: 'c', label: 'Lemondasz a részvételről' }], correct: 'a', ok: 'Pontosan — értesítést kapsz, de nem vállalsz kötelezettséget.', no: 'A helyes válasz: értesítést kérsz, kötelezettség nélkül.' },
+      },
+    };
+  }
+
+  renderVals() {
+    const all = this.lessons();
+    const cur = all[this.props.lesson] || all.i1;
+
+    const sections = (cur.sections || []).map(sec => ({
+      badge: sec.badge, heading: sec.heading,
+      blocks: (sec.blocks || []).map(b => ({
+        text: b.text, icon: b.icon, label: b.label, caption: b.caption, title: b.title, items: b.items,
+        hasTitle: !!b.title,
+        isLead: b.kind === 'lead', isP: b.kind === 'p', isInfo: b.kind === 'info',
+        isWarn: b.kind === 'warn', isTip: b.kind === 'tip', isImage: b.kind === 'image',
+        isList: b.kind === 'list', isSteps: b.kind === 'steps',
+      })),
+    }));
+
+    const quiz = cur.quiz;
+    let quizVals = { hasQuiz: false, quizOptions: [], quizFeedbackShow: false };
+    if (quiz) {
+      const quizOptions = quiz.options.map(o => {
+        const picked = this.state.pick === o.key;
+        const checked = this.state.checked;
+        let bg = '#fff', bd = 'var(--neutral-border)', dotBg = 'var(--cold-grey-300)', dotFg = 'transparent', dotIcon = 'ri-checkbox-blank-circle-line';
+        if (picked && !checked) { bd = 'var(--brand)'; dotBg = 'var(--brand)'; dotFg = '#fff'; dotIcon = 'ri-checkbox-circle-fill'; }
+        if (checked && o.key === quiz.correct) { bg = 'var(--semantic-green-200)'; bd = 'var(--semantic-green-800)'; dotBg = 'var(--semantic-green-800)'; dotFg = '#fff'; dotIcon = 'ri-check-line'; }
+        if (checked && picked && o.key !== quiz.correct) { bg = 'var(--semantic-red-200)'; bd = 'var(--semantic-red-800)'; dotBg = 'var(--semantic-red-800)'; dotFg = '#fff'; dotIcon = 'ri-close-line'; }
+        return {
+          label: o.label,
+          onPick: () => { if (!this.state.checked) this.setState({ pick: o.key }); },
+          style: 'display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:12px;cursor:pointer;font-family:var(--font-primary);font-size:15px;font-weight:600;color:var(--neutral-fg-primary);background:' + bg + ';border:1.5px solid ' + bd + ';',
+          dot: 'width:24px;height:24px;border-radius:9999px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:' + dotBg + ';color:' + dotFg + ';',
+          dotIcon,
+        };
+      });
+      const correctPicked = this.state.checked && this.state.pick === quiz.correct;
+      const wrongPicked = this.state.checked && this.state.pick && this.state.pick !== quiz.correct;
+      quizVals = {
+        hasQuiz: true, quizQuestion: quiz.question, quizOptions,
+        onCheck: () => { if (this.state.pick) this.setState({ checked: true }); },
+        quizFeedbackShow: this.state.checked,
+        quizFeedbackText: correctPicked ? quiz.ok : (wrongPicked ? quiz.no : ''),
+        quizFeedbackIcon: correctPicked ? 'ri-checkbox-circle-fill' : 'ri-error-warning-fill',
+        quizFeedbackStyle: 'display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:700;color:' + (correctPicked ? 'var(--semantic-green-900)' : 'var(--semantic-red-800)') + ';',
+      };
+    }
+
+    const nextLabel = this.props.nextLabel;
+    const prevLabel = this.props.prevLabel;
+    const hasNext = !!(this.props.onNext && nextLabel);
+    return {
+      icon: cur.icon, title: cur.title, teendo: cur.teendo, sections,
+      ...quizVals,
+      hasPrev: !!prevLabel, noPrev: !prevLabel,
+      onPrev: this.props.onPrev, onNext: this.props.onNext,
+      prevLabel, nextLabel,
+      hasNext, noNext: !hasNext,
+    };
+  }
+}
+</script>
+</body>
+</html>

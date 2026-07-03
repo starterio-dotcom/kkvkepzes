@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <style>
+    html, body { margin:0; padding:0; }
+    ::selection { background: var(--indigo-200); }
+    .lv-scroll::-webkit-scrollbar { width:8px; }
+    .lv-scroll::-webkit-scrollbar-thumb { background: var(--cold-grey-400); border-radius:9999px; }
+  </style>
+</helmet>
+
+<div style="min-height:100vh; background:var(--cold-grey-200); font-family:var(--font-primary); color:var(--neutral-fg-primary);">
+
+  <!-- ============ TOP APP BAR ============ -->
+  <header style="position:sticky; top:0; z-index:30; background:#fff; border-bottom:1px solid var(--neutral-border);">
+    <div style="height:64px; padding:0 22px; display:flex; align-items:center; gap:22px;">
+      <span style="display:flex; align-items:center; gap:10px;">
+        <span style="width:34px; height:34px; border-radius:9px; background:linear-gradient(150deg,var(--indigo-800),var(--brand) 55%,var(--indigo-1000)); display:inline-flex; align-items:center; justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M12 4 L21 8 L12 12 L3 8 Z" fill="#fff"></path><path d="M6.5 9.8 V13.6 C6.5 13.6 8.6 15.6 12 15.6 C15.4 15.6 17.5 13.6 17.5 13.6 V9.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 8 V13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path><circle cx="21" cy="14" r="1.1" fill="#fff"></circle></svg></span>
+        <span style="font-weight:800; font-size:16px; letter-spacing:-0.02em;">KKV&nbsp;<span style="color:var(--brand);">Képzés</span></span>
+      </span>
+      <nav style="display:flex; gap:2px; margin-left:8px;">
+        <sc-for list="{{ topNav }}" as="n" hint-placeholder-count="4">
+          <span style="{{ n.style }}">{{ n.label }}</span>
+        </sc-for>
+      </nav>
+      <div style="margin-left:auto; display:flex; align-items:center; gap:14px;">
+        <i class="ri-notification-3-line" style="font-size:21px; color:var(--neutral-fg-secondary);"></i>
+        <span style="display:flex; align-items:center; gap:8px;"><span style="width:34px; height:34px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:13px;">JA</span><i class="ri-arrow-down-s-line" style="font-size:18px; color:var(--neutral-fg-tertiary);"></i></span>
+      </div>
+    </div>
+    <!-- modern: course progress line -->
+    <sc-if value="{{ isModern }}" hint-placeholder-val="{{ true }}">
+      <div style="height:3px; background:var(--cold-grey-300);"><div style="width:{{ coursePct }}; height:100%; background:linear-gradient(90deg,var(--brand),var(--indigo-800));"></div></div>
+    </sc-if>
+  </header>
+
+  <!-- ============ MODERN VARIANT ============ -->
+  <sc-if value="{{ isModern }}" hint-placeholder-val="{{ true }}">
+  <div>
+    <!-- sub bar -->
+    <div style="background:#fff; border-bottom:1px solid var(--neutral-border);">
+      <div style="max-width:1180px; margin:0 auto; padding:12px 24px; display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <button onClick="{{ openDrawer }}" style="height:42px; padding:0 16px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-menu-2-line" style="font-size:19px;"></i>Tananyag</button>
+        <div style="display:flex; flex-direction:column; gap:2px;">
+          <span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">I. Az Elektronikus Közbeszerzési Rendszer · 1 / 7 lecke</span>
+          <span style="font-size:14px; font-weight:700; color:var(--neutral-fg-primary);">Közbeszerzési szakmai tananyag</span>
+        </div>
+        <span style="margin-left:auto; display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; color:var(--brand);"><i class="ri-focus-3-line" style="font-size:17px;"></i>Kurzus haladás {{ coursePct }}</span>
+      </div>
+    </div>
+
+    <div style="max-width:1180px; margin:0 auto; padding:34px 24px 120px; display:grid; grid-template-columns:{{ modernCols }}; gap:36px; align-items:start;">
+      <div style="min-width:0; background:#fff; border:1px solid var(--neutral-border); border-radius:20px; padding:clamp(24px,3vw,44px); box-shadow:var(--elevation-100);">
+        <dc-import name="LeckeTartalom" hint-size="100%,1200px"></dc-import>
+      </div>
+      <!-- right mini TOC -->
+      <aside style="position:sticky; top:96px; display:{{ railDisplay }}; flex-direction:column; gap:16px;">
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:18px;">
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-bottom:12px;">Ezen a leckén</div>
+          <div style="display:flex; flex-direction:column; gap:2px;">
+            <sc-for list="{{ miniToc }}" as="t" hint-placeholder-count="4">
+              <span style="{{ t.style }}"><span style="{{ t.dot }}"></span>{{ t.label }}</span>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:linear-gradient(140deg,var(--indigo-900),var(--indigo-1200)); border-radius:16px; padding:18px; color:#fff;">
+          <div style="font-size:13px; font-weight:600; color:rgba(255,255,255,.8);">Ha végeztél</div>
+          <div style="font-weight:700; font-size:15px; letter-spacing:-0.01em; margin:4px 0 12px;">I.2. Személyes fiók létrehozása</div>
+          <button style="width:100%; height:42px; border-radius:9999px; background:#fff; color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:14px; font-family:var(--font-primary);">Következő lecke</button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- sticky bottom bar -->
+    <div style="position:fixed; left:0; right:0; bottom:0; z-index:20; background:#fff; border-top:1px solid var(--neutral-border); box-shadow:0 -4px 16px rgba(0,0,0,.05);">
+      <div style="max-width:1180px; margin:0 auto; padding:12px 24px; display:flex; align-items:center; gap:16px;">
+        <div style="flex:1; min-width:0;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;"><span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">I.1. lecke</span><span style="font-size:12px; font-weight:700; color:var(--brand);">végignézve</span></div>
+          <div style="height:6px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><div style="width:100%; height:100%; background:var(--semantic-green-700);"></div></div>
+        </div>
+        <button style="height:44px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);">Következő<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ DRAWER OVERLAY ============ -->
+  <sc-if value="{{ drawerOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed; inset:0; z-index:60; display:flex;">
+    <div onClick="{{ closeDrawer }}" style="position:absolute; inset:0; background:rgba(8,12,40,.5);"></div>
+    <aside class="lv-scroll" style="position:relative; width:340px; max-width:88vw; background:#fff; height:100%; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.4);">
+      <div style="padding:18px; border-bottom:1px solid var(--neutral-border);">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-weight:700; font-size:15px; letter-spacing:-0.01em;">Közbeszerzési szakmai tananyag</span><button onClick="{{ closeDrawer }}" style="width:34px; height:34px; border-radius:9px; background:var(--cold-grey-200); border:none; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;"><i class="ri-close-line" style="font-size:20px;"></i></button></div>
+        <div style="display:flex; justify-content:space-between; margin-bottom:6px;"><span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">Kurzus haladás</span><span style="font-size:12px; font-weight:700; color:var(--brand);">{{ coursePct }}</span></div>
+        <div style="height:7px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><div style="width:{{ coursePct }}; height:100%; background:linear-gradient(90deg,var(--brand),var(--indigo-800)); border-radius:9999px;"></div></div>
+      </div>
+      <div style="padding:10px 10px 30px;">
+        <sc-for list="{{ tree }}" as="r" hint-placeholder-count="10">
+          <sc-if value="{{ r.isGroup }}" hint-placeholder-val="{{ true }}">
+            <button style="{{ r.rowStyle }}"><span style="{{ r.badgeStyle }}"><i class="{{ r.badgeIcon }}" style="font-size:14px;"></i></span><span style="{{ r.labelStyle }}">{{ r.label }}</span><i class="{{ r.trailIcon }}" style="font-size:20px; color:var(--neutral-fg-tertiary); flex:0 0 auto;"></i></button>
+          </sc-if>
+          <sc-if value="{{ r.isItem }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ closeDrawer }}" style="{{ r.rowStyle }}"><span style="{{ r.circleStyle }}"><i class="{{ r.circleIcon }}" style="font-size:12px;"></i></span><span style="{{ r.labelStyle }}">{{ r.label }}</span></button>
+          </sc-if>
+        </sc-for>
+      </div>
+    </aside>
+  </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { drawerOpen: false, isMobile: false };
+
+  componentDidMount() {
+    this._mq = window.matchMedia('(max-width: 900px)');
+    this._sync = () => this.setState({ isMobile: window.innerWidth <= 900 });
+    this._sync();
+    window.addEventListener('resize', this._sync);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this._sync); }
+
+  renderVals() {
+    const s = this.state;
+
+    const topNav = ['Kezdőoldal', 'Hírek', 'Kurzusok', 'Elérhetőségek'].map((l, i) => ({
+      label: l,
+      style: 'padding:9px 14px;border-radius:9999px;font-weight:700;font-size:14px;font-family:var(--font-primary);color:var(--neutral-fg-secondary);',
+    }));
+
+    // course tree
+    const groupRow = 'width:100%;display:flex;align-items:center;gap:11px;padding:11px 12px;border:none;background:none;cursor:pointer;text-align:left;font-family:var(--font-primary);border-radius:10px;';
+    const badge = (color) => 'width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:#fff;background:' + color + ';';
+    const glabel = 'flex:1;font-weight:700;font-size:13.5px;letter-spacing:-0.01em;color:var(--neutral-fg-primary);';
+    const mkGroup = (label, opts) => ({
+      isGroup: true, isItem: false, label,
+      rowStyle: groupRow,
+      badgeStyle: badge(opts.badgeColor || 'var(--brand)'),
+      badgeIcon: opts.icon || 'ri-folder-3-line',
+      labelStyle: glabel,
+      trailIcon: opts.trail || 'ri-arrow-down-s-line',
+    });
+    const mkItem = (label, state) => {
+      const active = state === 'active';
+      let cBg = 'transparent', cBorder = '2px solid var(--cold-grey-500)', cIcon = '', cColor = 'transparent';
+      if (state === 'done') { cBg = 'var(--semantic-green-800)'; cBorder = 'none'; cIcon = 'ri-check-line'; cColor = '#fff'; }
+      if (active) { cBg = 'var(--brand)'; cBorder = 'none'; cIcon = 'ri-play-mini-fill'; cColor = '#fff'; }
+      return {
+        isGroup: false, isItem: true, label,
+        rowStyle: 'width:100%;display:flex;align-items:center;gap:11px;padding:9px 12px 9px 26px;border:none;cursor:pointer;text-align:left;font-family:var(--font-primary);border-radius:10px;background:' + (active ? 'var(--indigo-200)' : 'transparent') + ';',
+        circleStyle: 'width:20px;height:20px;border-radius:9999px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:' + cBg + ';border:' + cBorder + ';color:' + cColor + ';',
+        circleIcon: cIcon,
+        labelStyle: 'flex:1;font-size:13px;font-weight:' + (active ? '700' : '600') + ';line-height:1.35;color:' + (active ? 'var(--brand)' : 'var(--neutral-fg-secondary)') + ';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;',
+      };
+    };
+
+    const tree = [
+      mkGroup('Általános', { icon: 'ri-apps-2-line', trail: 'ri-arrow-down-s-line' }),
+      mkItem('Képzésbevezető', 'done'),
+      mkItem('Tematikák', 'none'),
+      mkGroup('Belépési kérdőív', { icon: 'ri-survey-line', badgeColor: 'var(--semantic-green-800)', trail: 'ri-check-line' }),
+      mkGroup('I. Az Elektronikus Közbeszerzési Rendszer', { icon: 'ri-node-tree', trail: 'ri-arrow-down-s-line' }),
+      mkItem('I.1. Az EKR rövid ismertetése', 'active'),
+      mkItem('I.2. Személyes fiók létrehozása', 'todo'),
+      mkItem('I.3. Belépés az EKR felületre', 'todo'),
+      mkItem('I.4. Szervezet regisztráció', 'todo'),
+      mkItem('I.5. Jogosultságok kezelése', 'todo'),
+      mkItem('I.6. EKR belépést követő felülete', 'todo'),
+      mkItem('I.7. Érdeklődés jelzése', 'todo'),
+      mkGroup('II. Ajánlattétel a közbeszerzési eljárásokban', { icon: 'ri-file-list-3-line', trail: 'ri-arrow-right-s-line' }),
+      mkGroup('III. A közbeszerzési szerződések teljesítése', { icon: 'ri-handshake-line', trail: 'ri-arrow-right-s-line' }),
+      mkGroup('IV. A közbeszerzési jogorvoslat', { icon: 'ri-scales-3-line', trail: 'ri-arrow-right-s-line' }),
+      mkGroup('Kilépési kérdőív', { icon: 'ri-survey-line', trail: 'ri-arrow-right-s-line' }),
+    ];
+
+    const miniToc = [
+      { label: 'Jogi háttér és a rendszer célja', active: true },
+      { label: 'Az eljárások struktúrája', active: false },
+      { label: 'Regisztráció nélküli felület', active: false },
+      { label: 'Ellenőrizd a tudásod', active: false },
+    ].map(t => ({
+      label: t.label,
+      style: 'display:flex;align-items:center;gap:10px;padding:8px 6px;font-size:13px;font-weight:' + (t.active ? '700' : '600') + ';color:' + (t.active ? 'var(--brand)' : 'var(--neutral-fg-secondary)') + ';cursor:pointer;',
+      dot: 'width:7px;height:7px;border-radius:9999px;flex:0 0 auto;background:' + (t.active ? 'var(--brand)' : 'var(--cold-grey-500)') + ';',
+    }));
+
+    return {
+      isModern: true,
+      coursePct: '8%',
+      modernCols: s.isMobile ? '1fr' : 'minmax(0,1fr) 280px',
+      railDisplay: s.isMobile ? 'none' : 'flex',
+      isMobile: s.isMobile,
+      topNav, tree, miniToc,
+      drawerOpen: s.drawerOpen,
+      openDrawer: () => this.setState({ drawerOpen: true }),
+      closeDrawer: () => this.setState({ drawerOpen: false }),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#131a44">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#131a44"></rect>
+    <rect x="470" y="250" width="260" height="260" rx="60" fill="url(#g)"></rect>
+    <path d="M600 320 L680 355 L600 390 L520 355 Z" fill="#fff"></path>
+    <path d="M545 372 V405 C545 405 566 423 600 423 C634 423 655 405 655 405 V372" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+    <text x="600" y="600" font-family="system-ui, sans-serif" font-size="64" font-weight="700" fill="#fff" text-anchor="middle">KKV Képzés</text>
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#3b57d6"></stop>
+        <stop offset="0.55" stop-color="#2a3fb8"></stop>
+        <stop offset="1" stop-color="#1a2680"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/colors_and_type.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <script src="_ds/d-p-design-system-019e2b9f-d905-73fa-9410-21440f73254a/_ds_bundle.js"></script>
+  <style>
+    @keyframes kkvFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @keyframes kkvspin { to { transform: rotate(360deg); } }
+    html, body { margin: 0; padding: 0; }
+    ::selection { background: var(--indigo-200); }
+    a { color: inherit; }
+    .kkv-scroll::-webkit-scrollbar { height: 6px; }
+    .kkv-scroll::-webkit-scrollbar-thumb { background: var(--cold-grey-400); border-radius: 9999px; }
+  </style>
+</helmet>
+
+<div style="min-height:100vh; background:var(--cold-grey-200); font-family:var(--font-primary); color:var(--neutral-fg-primary); display:flex; flex-direction:column;">
+
+  <!-- ================= HEADER ================= -->
+  <header style="position:sticky; top:0; z-index:40; background:rgba(255,255,255,0.92); backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--neutral-border);">
+    <div style="width:min(1240px,100%); margin:0 auto; padding:0 20px; height:68px; display:flex; align-items:center; gap:24px;">
+      <button onClick="{{ goHome }}" style="background:none; border:none; cursor:pointer; padding:0; display:flex; align-items:center; gap:12px;">
+        <span style="width:40px; height:40px; border-radius:11px; background:linear-gradient(150deg, var(--indigo-800), var(--brand) 55%, var(--indigo-1000)); display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; box-shadow:0 4px 10px rgba(66,88,237,0.35);">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 4 L21 8 L12 12 L3 8 Z" fill="#fff"></path>
+            <path d="M6.5 9.8 V13.6 C6.5 13.6 8.6 15.6 12 15.6 C15.4 15.6 17.5 13.6 17.5 13.6 V9.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M21 8 V13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+            <circle cx="21" cy="14" r="1.1" fill="#fff"></circle>
+          </svg>
+        </span>
+        <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1;">
+          <span style="font-weight:800; font-size:18px; letter-spacing:-0.02em; color:var(--neutral-fg-primary);">KKV&nbsp;<span style="color:var(--brand);">Képzés</span></span>
+          <span style="font-weight:700; font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-top:3px;">Közbeszerzési képzések</span>
+        </span>
+      </button>
+
+      <sc-if value="{{ showDesktopNav }}" hint-placeholder-val="{{ true }}">
+        <nav style="margin-left:12px; display:flex; gap:2px;">
+          <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="4">
+            <button onClick="{{ item.onClick }}" style="{{ item.style }}">{{ item.label }}</button>
+          </sc-for>
+        </nav>
+        <div style="margin-left:auto; display:flex; align-items:center; gap:8px;">
+          <button style="background:none; border:none; cursor:pointer; font-weight:700; font-size:14px; color:var(--neutral-fg-secondary); display:inline-flex; align-items:center; gap:5px; font-family:var(--font-primary);"><i class="ri-global-line" style="font-size:18px;"></i>HU</button>
+          <button onClick="{{ authClick }}" style="height:40px; padding:0 18px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:7px; font-family:var(--font-primary);"><i class="{{ authIcon }}" style="font-size:17px;"></i>{{ authLabel }}</button>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showMobileToggle }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" style="margin-left:auto; width:44px; height:44px; border-radius:12px; background:var(--cold-grey-200); border:none; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;"><i class="ri-menu-line" style="font-size:24px; color:var(--neutral-fg-primary);"></i></button>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:1px solid var(--neutral-border); background:#fff; padding:12px 20px 20px; display:flex; flex-direction:column; gap:6px;">
+        <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="4">
+          <button onClick="{{ item.onClick }}" style="{{ item.mobileStyle }}">{{ item.label }}</button>
+        </sc-for>
+        <button onClick="{{ goLogin }}" style="margin-top:8px; height:48px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:16px; font-family:var(--font-primary);">Belépés Ügyfélkapu+ azonosítással</button>
+      </div>
+    </sc-if>
+  </header>
+
+  <main style="flex:1;">
+
+  <!-- ============================================================ HOME ============================================================ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div style="">
+
+    <!-- hero irányválasztó — diszkrét, lebegő vezérlő jobbra lent -->
+    <div style="position:fixed; right:16px; bottom:16px; z-index:60; background:rgba(255,255,255,0.94); backdrop-filter:blur(10px); border:1px solid var(--neutral-border); border-radius:9999px; box-shadow:var(--elevation-300); padding:5px 6px 5px 13px; display:flex; align-items:center; gap:9px;">
+      <span style="font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--neutral-fg-tertiary); display:inline-flex; align-items:center; gap:4px;"><i class="ri-layout-2-line" style="font-size:14px;"></i>Hero</span>
+      <div style="display:flex; gap:3px; background:var(--cold-grey-200); padding:3px; border-radius:9999px;">
+        <sc-for list="{{ heroBtns }}" as="h" hint-placeholder-count="3">
+          <button onClick="{{ h.onClick }}" style="{{ h.styleMini }}" title="{{ h.label }}">{{ h.short }}</button>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- HERO A — Klasszikus split -->
+    <sc-if value="{{ heroA }}" hint-placeholder-val="{{ true }}">
+    <section style="background:radial-gradient(120% 140% at 15% 0%, var(--indigo-900) 0%, var(--indigo-1200) 60%, var(--indigo-1400) 100%); color:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(48px,7vw,88px) 20px; display:grid; grid-template-columns:{{ heroCols }}; gap:clamp(32px,5vw,64px); align-items:center;">
+        <div>
+          <span style="display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); padding:7px 14px; border-radius:9999px; color:#fff;"><i class="ri-graduation-cap-line" style="font-size:16px;"></i>Ingyenes online képzés · KKV-knak</span>
+          <h1 style="font-weight:700; font-size:clamp(34px,5.4vw,58px); line-height:1.06; letter-spacing:-0.02em; margin:22px 0 0;">Közbeszerzés,<br>érthetően.</h1>
+          <p style="font-size:clamp(16px,1.6vw,20px); font-weight:500; line-height:1.55; color:rgba(255,255,255,0.82); max-width:520px; margin:20px 0 0;">Ismerd meg a közbeszerzési eljárások törvényes kereteit és az EKR használatát — saját tempódban, ingyen. A modulok végén letölthető oklevél jár.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:32px;">
+            <button onClick="{{ goLogin }}" style="height:52px; padding:0 26px; border-radius:9999px; background:#fff; color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:17px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);">Kezdd el ingyen<i class="ri-arrow-right-line" style="font-size:19px;"></i></button>
+            <button onClick="{{ goCourses }}" style="height:52px; padding:0 26px; border-radius:9999px; background:var(--white-alpha-10); color:#fff; border:1px solid var(--white-alpha-40); cursor:pointer; font-weight:700; font-size:17px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-book-open-line" style="font-size:19px;"></i>Böngészd a kurzusokat</button>
+          </div>
+          <div style="display:flex; gap:24px; flex-wrap:wrap; margin-top:34px;">
+            <sc-for list="{{ heroTrust }}" as="t" hint-placeholder-count="3">
+              <div style="display:flex; align-items:center; gap:9px;"><i class="{{ t.icon }}" style="font-size:20px; color:var(--indigo-500);"></i><span style="font-size:14px; font-weight:600; color:rgba(255,255,255,0.88);">{{ t.label }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+        <!-- floating animated progress card -->
+        <div style="background:#fff; border-radius:20px; box-shadow:0 30px 60px rgba(5,9,32,0.4); padding:22px; color:var(--neutral-fg-primary); opacity:{{ heroCardOpacity }}; transition:opacity .5s ease;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="width:46px; height:46px; border-radius:14px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-size:24px; flex:0 0 auto;"><i class="ri-scales-3-line"></i></span>
+            <div style="flex:1; min-width:0;"><div style="font-size:11px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--brand);">Kiemelt kurzus</div><div style="font-weight:700; font-size:16px; letter-spacing:-0.01em;">Közbeszerzési szakmai tananyag</div></div>
+            <span style="{{ heroBadgeStyle }}">{{ heroDoneLabel }}</span>
+          </div>
+          <div style="height:1px; background:var(--neutral-border); margin:16px 0;"></div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <sc-for list="{{ heroModules }}" as="m" hint-placeholder-count="4">
+              <div style="{{ m.rowStyle }}"><span style="{{ m.iconWrap }}"><i class="{{ m.icon }}" style="{{ m.iconStyle }}"></i></span><span style="{{ m.textStyle }}">{{ m.name }}</span></div>
+            </sc-for>
+          </div>
+          <div style="margin-top:16px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:7px;"><span style="font-size:13px; font-weight:600; color:var(--neutral-fg-secondary);">Összesített haladás</span><span style="font-size:13px; font-weight:700; color:var(--brand);">{{ heroPct }}</span></div>
+            <div style="height:8px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><div style="width:{{ heroPct }}; height:100%; background:linear-gradient(90deg,var(--brand),var(--indigo-800)); border-radius:9999px; transition:width .7s ease;"></div></div>
+          </div>
+          <button onClick="{{ goCourse }}" style="margin-top:16px; width:100%; height:46px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; font-family:var(--font-primary);">Megnézem a tananyagot</button>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <!-- HERO B — Kereső / portál -->
+    <sc-if value="{{ heroB }}" hint-placeholder-val="{{ false }}">
+    <section style="background:radial-gradient(120% 120% at 50% 0%, var(--indigo-900) 0%, var(--indigo-1300) 70%); color:#fff; text-align:center;">
+      <div style="width:min(880px,100%); margin:0 auto; padding:clamp(52px,8vw,96px) 20px;">
+        <span style="display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); padding:7px 14px; border-radius:9999px;"><i class="ri-graduation-cap-line" style="font-size:16px;"></i>Ingyenes · Oklevéllel · Saját tempóban</span>
+        <h1 style="font-weight:700; font-size:clamp(34px,6vw,62px); line-height:1.05; letter-spacing:-0.02em; margin:22px 0 0;">Tanuld meg a közbeszerzést,<br>lépésről lépésre.</h1>
+        <p style="font-size:clamp(16px,1.6vw,20px); font-weight:500; line-height:1.55; color:rgba(255,255,255,0.82); max-width:600px; margin:20px auto 0;">Keress a kurzusok és témák között, és kezdd el még ma — teljesen ingyen, a KKV-k igényeire szabva.</p>
+        <div style="max-width:640px; margin:32px auto 0; display:flex; gap:10px; align-items:center; background:#fff; border-radius:9999px; padding:7px 7px 7px 22px; box-shadow:0 20px 44px rgba(5,9,32,0.32);">
+          <i class="ri-search-line" style="font-size:22px; color:var(--neutral-fg-tertiary);"></i>
+          <input value="{{ courseSearch }}" onChange="{{ onCourseSearch }}" placeholder="Keresés a kurzusok között — pl. ajánlattétel, EKR" style="flex:1; border:none; outline:none; background:transparent; font-size:16px; font-weight:500; font-family:var(--font-primary); color:var(--neutral-fg-primary);">
+          <button onClick="{{ goCourses }}" style="height:46px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; font-family:var(--font-primary);">Keresés</button>
+        </div>
+        <div style="display:flex; gap:9px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+          <sc-for list="{{ heroChips }}" as="c" hint-placeholder-count="4">
+            <button onClick="{{ c.onClick }}" style="background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); color:#fff; padding:9px 16px; border-radius:9999px; font-weight:600; font-size:14px; cursor:pointer; font-family:var(--font-primary);">{{ c.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <!-- HERO C — Editorial -->
+    <sc-if value="{{ heroC }}" hint-placeholder-val="{{ false }}">
+    <section style="background:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:0 20px; display:grid; grid-template-columns:{{ heroCols }}; gap:0; align-items:stretch;">
+        <div style="padding:clamp(48px,7vw,96px) clamp(8px,3vw,48px) clamp(48px,7vw,96px) 0; display:flex; flex-direction:column; justify-content:center;">
+          <span style="font-size:13px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--brand);">Digitális Állampolgárság Program</span>
+          <h1 style="font-weight:700; font-size:clamp(38px,6.4vw,72px); line-height:1.0; letter-spacing:-0.03em; margin:18px 0 0; color:var(--neutral-fg-primary);">A közbeszerzés<br>nem <span style="color:var(--brand);">ördöngösség.</span></h1>
+          <p style="font-size:clamp(16px,1.6vw,20px); font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); max-width:480px; margin:24px 0 0;">Négy modul, hetvenkilenc lecke, egy oklevél. Minden, amit egy kis- vagy középvállalkozásnak tudnia kell — ingyen, online.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:34px;">
+            <button onClick="{{ goLogin }}" style="height:52px; padding:0 26px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:17px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);">Kezdd el ingyen<i class="ri-arrow-right-line" style="font-size:19px;"></i></button>
+            <button onClick="{{ goCourses }}" style="height:52px; padding:0 26px; border-radius:9999px; background:#fff; color:var(--brand); border:2px solid var(--brand); cursor:pointer; font-weight:700; font-size:17px; font-family:var(--font-primary);">Kurzusok</button>
+          </div>
+        </div>
+        <div style="background:linear-gradient(160deg, var(--indigo-900), var(--indigo-1400)); border-radius:0; margin:clamp(0px,2vw,32px) 0; padding:clamp(28px,3vw,40px); display:flex; flex-direction:column; gap:14px; justify-content:center; border-radius:24px;">
+          <sc-for list="{{ heroStack }}" as="s" hint-placeholder-count="4">
+            <div style="background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); border-radius:16px; padding:18px 20px; display:flex; align-items:center; gap:16px;">
+              <span style="width:44px; height:44px; border-radius:12px; background:#fff; color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-size:22px; flex:0 0 auto;"><i class="{{ s.icon }}"></i></span>
+              <div><div style="color:#fff; font-weight:700; font-size:16px; letter-spacing:-0.01em;">{{ s.title }}</div><div style="color:rgba(255,255,255,0.72); font-weight:500; font-size:13px;">{{ s.sub }}</div></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <!-- VALUE PROPS -->
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(48px,7vw,88px) 20px;">
+      <div style="text-align:center; max-width:640px; margin:0 auto 44px;">
+        <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--brand);">Miért érdemes</span>
+        <h2 style="font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 0; color:var(--neutral-fg-primary);">Képzés, ami a vállalkozásod sikeréért van</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:20px;">
+        <sc-for list="{{ valueProps }}" as="v" hint-placeholder-count="4">
+          <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:26px 24px; box-shadow:var(--elevation-100);">
+            <span style="width:52px; height:52px; border-radius:14px; background:{{ v.bg }}; color:{{ v.fg }}; display:inline-flex; align-items:center; justify-content:center; font-size:26px;"><i class="{{ v.icon }}"></i></span>
+            <h3 style="font-weight:700; font-size:19px; letter-spacing:-0.01em; margin:18px 0 8px; color:var(--neutral-fg-primary);">{{ v.title }}</h3>
+            <p style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0;">{{ v.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- FEATURED COURSES -->
+    <section style="background:#fff; border-top:1px solid var(--neutral-border); border-bottom:1px solid var(--neutral-border);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(48px,7vw,88px) 20px;">
+        <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:36px;">
+          <div style="max-width:560px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--brand);">Felvehető kurzusok</span>
+            <h2 style="font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 0; color:var(--neutral-fg-primary);">Kifejezetten KKV-knak kialakítva</h2>
+          </div>
+          <button onClick="{{ goCourses }}" style="height:44px; padding:0 20px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; gap:7px; font-family:var(--font-primary);">Összes kurzus<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px;">
+          <sc-for list="{{ homeCourses }}" as="c" hint-placeholder-count="2">
+            <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:18px; overflow:hidden; box-shadow:var(--elevation-100); display:flex; flex-direction:column;">
+              <div style="height:150px; background:{{ c.band }}; position:relative; display:flex; align-items:flex-end; padding:18px;">
+                <i class="{{ c.icon }}" style="position:absolute; top:16px; right:18px; font-size:64px; color:rgba(255,255,255,0.22);"></i>
+                <span style="background:rgba(255,255,255,0.92); color:{{ c.tagFg }}; font-size:12px; font-weight:700; padding:6px 12px; border-radius:9999px;">{{ c.tag }}</span>
+              </div>
+              <div style="padding:22px; display:flex; flex-direction:column; flex:1;">
+                <h3 style="font-weight:700; font-size:20px; letter-spacing:-0.01em; margin:0 0 10px; color:var(--neutral-fg-primary);">{{ c.title }}</h3>
+                <p style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0 0 18px;">{{ c.desc }}</p>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:auto; margin-bottom:18px;">
+                  <sc-for list="{{ c.chips }}" as="chip" hint-placeholder-count="3">
+                    <span style="display:inline-flex; align-items:center; gap:6px; background:var(--cold-grey-200); color:var(--neutral-fg-secondary); font-size:13px; font-weight:600; padding:6px 11px; border-radius:9999px;"><i class="{{ chip.icon }}" style="font-size:15px;"></i>{{ chip.label }}</span>
+                  </sc-for>
+                </div>
+                <button onClick="{{ c.onClick }}" style="height:46px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; justify-content:center; gap:7px; font-family:var(--font-primary);">Részletek<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(48px,7vw,88px) 20px;">
+      <div style="text-align:center; max-width:640px; margin:0 auto 48px;">
+        <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--brand);">Három lépés</span>
+        <h2 style="font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 0; color:var(--neutral-fg-primary);">Így működik</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px;">
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="3">
+          <div style="position:relative; background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:28px 24px;">
+            <span style="width:44px; height:44px; border-radius:9999px; background:{{ accentBg }}; color:{{ accent }}; display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:19px;">{{ s.n }}</span>
+            <h3 style="font-weight:700; font-size:19px; letter-spacing:-0.01em; margin:18px 0 8px; color:var(--neutral-fg-primary);">{{ s.title }}</h3>
+            <p style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0;">{{ s.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <sc-if value="{{ showVideo }}" hint-placeholder-val="{{ true }}">
+    <section style="background:var(--indigo-1400);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(48px,7vw,88px) 20px; display:grid; grid-template-columns:{{ videoCols }}; gap:clamp(28px,4vw,56px); align-items:center; color:#fff;">
+        <div>
+          <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--indigo-500);">Bemutató</span>
+          <h2 style="font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 16px;">Nézd meg, miről szól a program</h2>
+          <p style="font-size:16px; font-weight:500; line-height:1.6; color:rgba(255,255,255,0.8); margin:0 0 24px; max-width:440px;">Rövid bemutató a közbeszerzési eljárások alapjairól és arról, hogyan segít a képzés a mindennapi ügyintézésben.</p>
+          <button onClick="{{ goLogin }}" style="height:48px; padding:0 24px; border-radius:9999px; background:#fff; color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:16px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-play-circle-line" style="font-size:20px;"></i>Kezdd el a tanulást</button>
+        </div>
+        <div style="border-radius:18px; overflow:hidden; box-shadow:0 30px 60px rgba(5,9,32,0.5); aspect-ratio:16/9; background:#000;">
+          <iframe src="https://www.youtube-nocookie.com/embed/G8cNcVRpmAY?rel=0" title="KKV Képzés bemutató" style="width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <!-- STATS -->
+    <section style="background:#fff; border-top:1px solid var(--neutral-border); border-bottom:1px solid var(--neutral-border);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(36px,5vw,56px) 20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px; text-align:center;">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+          <div>
+            <div style="font-weight:700; font-size:clamp(30px,4vw,44px); letter-spacing:-0.02em; color:var(--brand);">{{ s.k }}</div>
+            <div style="font-size:14px; font-weight:600; color:var(--neutral-fg-secondary); margin-top:4px;">{{ s.v }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- NEWS TEASER -->
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(48px,7vw,88px) 20px;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:36px;">
+        <div>
+          <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--brand);">Hírek</span>
+          <h2 style="font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 0; color:var(--neutral-fg-primary);">Ami a programban történik</h2>
+        </div>
+        <button onClick="{{ goNews }}" style="height:44px; padding:0 20px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; gap:7px; font-family:var(--font-primary);">Összes hír<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px;">
+        <sc-for list="{{ homeNews }}" as="n" hint-placeholder-count="3">
+          <button onClick="{{ goNews }}" style="text-align:left; background:#fff; border:1px solid var(--neutral-border); border-radius:16px; overflow:hidden; cursor:pointer; box-shadow:var(--elevation-100); display:flex; flex-direction:column; font-family:var(--font-primary); padding:0;">
+            <div style="height:8px; background:{{ n.accent }};"></div>
+            <div style="padding:22px;">
+              <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;"><span style="font-size:12px; font-weight:700; color:{{ n.accent }}; text-transform:uppercase; letter-spacing:0.04em;">{{ n.cat }}</span><span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">{{ n.date }}</span></div>
+              <h3 style="font-weight:700; font-size:18px; line-height:1.3; letter-spacing:-0.01em; margin:0 0 10px; color:var(--neutral-fg-primary);">{{ n.title }}</h3>
+              <p style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0;">{{ n.excerpt }}</p>
+            </div>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section style="width:min(1240px,100%); margin:0 auto; padding:0 20px clamp(48px,7vw,88px);">
+      <div style="background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1200)); border-radius:24px; padding:clamp(32px,5vw,56px); display:grid; grid-template-columns:{{ videoCols }}; gap:28px; align-items:center; color:#fff;">
+        <div>
+          <h2 style="font-weight:700; font-size:clamp(24px,3vw,34px); line-height:1.15; letter-spacing:-0.02em; margin:0 0 10px;">Iratkozz fel a hírlevelünkre</h2>
+          <p style="font-size:16px; font-weight:500; line-height:1.55; color:rgba(255,255,255,0.82); margin:0;">Friss hírek új képzésekről és modulokról — havonta legfeljebb egyszer, spam nélkül.</p>
+        </div>
+        <div>
+          <sc-if value="{{ subscribed }}" hint-placeholder-val="{{ false }}">
+            <div style="background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); border-radius:14px; padding:20px; display:flex; align-items:center; gap:12px;"><i class="ri-checkbox-circle-fill" style="font-size:26px; color:var(--semantic-green-400);"></i><span style="font-weight:600; font-size:15px;">Köszönjük! Megerősítő e-mailt küldtünk a címedre.</span></div>
+          </sc-if>
+          <sc-if value="{{ notSubscribed }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex; gap:10px; flex-wrap:wrap; background:#fff; border-radius:9999px; padding:7px 7px 7px 20px;">
+              <input value="{{ email }}" onChange="{{ onEmail }}" type="email" placeholder="Az e-mail címed" style="flex:1; min-width:180px; border:none; outline:none; background:transparent; font-size:15px; font-weight:500; font-family:var(--font-primary); color:var(--neutral-fg-primary);">
+              <button onClick="{{ onSubscribe }}" style="height:46px; padding:0 24px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; font-family:var(--font-primary);">Feliratkozom</button>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ COURSES LIST ============================================================ -->
+  <sc-if value="{{ isCourses }}" hint-placeholder-val="{{ false }}">
+  <div style="">
+    <section style="background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1300)); color:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(40px,6vw,72px) 20px;">
+        <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--indigo-500);">Kurzusok</span>
+        <h1 style="font-weight:700; font-size:clamp(30px,4.5vw,48px); line-height:1.1; letter-spacing:-0.02em; margin:12px 0 14px;">Ingyenes közbeszerzési képzések</h1>
+        <p style="font-size:clamp(16px,1.5vw,19px); font-weight:500; line-height:1.55; color:rgba(255,255,255,0.82); max-width:600px; margin:0;">Válaszd ki a vállalkozásodnak megfelelő tananyagot. Minden kurzus díjmentes, és a modulok teljesítése után oklevél jár.</p>
+      </div>
+    </section>
+
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(28px,4vw,44px) 20px;">
+      <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap; margin-bottom:28px;">
+        <div style="flex:1; min-width:240px; display:flex; align-items:center; gap:10px; background:#fff; border:2px solid var(--cold-grey-400); border-radius:9999px; padding:0 18px; height:48px;">
+          <i class="ri-search-line" style="font-size:20px; color:var(--neutral-fg-tertiary);"></i>
+          <input value="{{ courseSearch }}" onChange="{{ onCourseSearch }}" placeholder="Keresés a kurzusok között" style="flex:1; border:none; outline:none; background:transparent; font-size:15px; font-weight:500; font-family:var(--font-primary); color:var(--neutral-fg-primary);">
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <sc-for list="{{ courseCats }}" as="cat" hint-placeholder-count="4">
+            <button onClick="{{ cat.onClick }}" style="{{ cat.style }}">{{ cat.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:24px;">
+        <sc-for list="{{ filteredCourses }}" as="c" hint-placeholder-count="4">
+          <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:18px; overflow:hidden; box-shadow:var(--elevation-100); display:flex; flex-direction:column;">
+            <div style="height:150px; background:{{ c.band }}; position:relative; display:flex; align-items:flex-end; padding:18px;">
+              <i class="{{ c.icon }}" style="position:absolute; top:16px; right:18px; font-size:60px; color:rgba(255,255,255,0.22);"></i>
+              <span style="background:rgba(255,255,255,0.92); color:{{ c.tagFg }}; font-size:12px; font-weight:700; padding:6px 12px; border-radius:9999px;">{{ c.tag }}</span>
+            </div>
+            <div style="padding:22px; display:flex; flex-direction:column; flex:1;">
+              <h3 style="font-weight:700; font-size:19px; letter-spacing:-0.01em; margin:0 0 10px; color:var(--neutral-fg-primary);">{{ c.title }}</h3>
+              <p style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0 0 18px;">{{ c.desc }}</p>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:auto; margin-bottom:18px;">
+                <sc-for list="{{ c.chips }}" as="chip" hint-placeholder-count="3">
+                  <span style="display:inline-flex; align-items:center; gap:6px; background:var(--cold-grey-200); color:var(--neutral-fg-secondary); font-size:13px; font-weight:600; padding:6px 11px; border-radius:9999px;"><i class="{{ chip.icon }}" style="font-size:15px;"></i>{{ chip.label }}</span>
+                </sc-for>
+              </div>
+              <sc-if value="{{ c.available }}" hint-placeholder-val="{{ true }}">
+                <button onClick="{{ c.onClick }}" style="height:46px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; justify-content:center; gap:7px; font-family:var(--font-primary);">Részletek<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+              </sc-if>
+              <sc-if value="{{ c.soon }}" hint-placeholder-val="{{ false }}">
+                <div style="height:46px; border-radius:9999px; background:var(--cold-grey-200); color:var(--neutral-fg-tertiary); border:none; font-weight:700; font-size:15px; display:inline-flex; align-items:center; justify-content:center; gap:7px;"><i class="ri-time-line" style="font-size:18px;"></i>Hamarosan</div>
+              </sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ COURSE DETAIL ============================================================ -->
+  <sc-if value="{{ isCourse }}" hint-placeholder-val="{{ false }}">
+  <div style="">
+    <section style="background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1300)); color:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(28px,4vw,48px) 20px clamp(36px,5vw,60px);">
+        <button onClick="{{ goCourses }}" style="background:var(--white-alpha-10); border:1px solid var(--white-alpha-20); color:#fff; padding:8px 16px; border-radius:9999px; font-weight:600; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:7px; font-family:var(--font-primary);"><i class="ri-arrow-left-line" style="font-size:17px;"></i>Vissza a kurzusokhoz</button>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:22px 0 14px;">
+          <span style="background:#fff; color:var(--brand); font-size:12px; font-weight:700; padding:6px 13px; border-radius:9999px;">{{ course.tag }}</span>
+          <span style="background:var(--semantic-green-400); color:var(--semantic-green-1000); font-size:12px; font-weight:700; padding:6px 13px; border-radius:9999px;">Ingyenes</span>
+        </div>
+        <h1 style="font-weight:700; font-size:clamp(28px,4.2vw,46px); line-height:1.1; letter-spacing:-0.02em; margin:0 0 16px; max-width:760px;">{{ course.title }}</h1>
+        <p style="font-size:clamp(15px,1.5vw,18px); font-weight:500; line-height:1.55; color:rgba(255,255,255,0.82); max-width:680px; margin:0 0 22px;">{{ course.intro }}</p>
+        <div style="display:flex; gap:22px; flex-wrap:wrap;">
+          <sc-for list="{{ course.meta }}" as="m" hint-placeholder-count="4">
+            <div style="display:flex; align-items:center; gap:9px;"><i class="{{ m.icon }}" style="font-size:20px; color:var(--indigo-500);"></i><span style="font-size:15px; font-weight:600; color:#fff;">{{ m.label }}</span></div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(32px,5vw,56px) 20px; display:grid; grid-template-columns:{{ detailCols }}; gap:32px; align-items:start;">
+      <div style="min-width:0;">
+        <!-- what you learn -->
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:28px; margin-bottom:24px;">
+          <h2 style="font-weight:700; font-size:22px; letter-spacing:-0.01em; margin:0 0 18px; color:var(--neutral-fg-primary);">Mit tanulsz meg?</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;">
+            <sc-for list="{{ course.learn }}" as="l" hint-placeholder-count="4">
+              <div style="display:flex; align-items:flex-start; gap:11px;"><i class="ri-checkbox-circle-fill" style="font-size:20px; color:{{ accent }}; flex:0 0 auto; margin-top:1px;"></i><span style="font-size:15px; font-weight:500; line-height:1.45; color:var(--neutral-fg-secondary);">{{ l }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+
+        <!-- curriculum -->
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:28px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap; gap:8px;">
+            <h2 style="font-weight:700; font-size:22px; letter-spacing:-0.01em; margin:0; color:var(--neutral-fg-primary);">Tananyag</h2>
+            <span style="font-size:14px; font-weight:600; color:var(--neutral-fg-tertiary);">{{ course.moduleSummary }}</span>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <sc-for list="{{ moduleGroups }}" as="m" hint-placeholder-count="4">
+              <div style="border:1px solid var(--neutral-border); border-radius:12px; overflow:hidden;">
+                <button onClick="{{ m.onToggle }}" style="width:100%; background:{{ m.headBg }}; border:none; cursor:pointer; padding:16px 18px; display:flex; align-items:center; gap:14px; text-align:left; font-family:var(--font-primary);">
+                  <span style="width:40px; height:40px; border-radius:10px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:15px; flex:0 0 auto;">{{ m.n }}</span>
+                  <span style="flex:1;"><span style="display:block; font-weight:700; font-size:16px; color:var(--neutral-fg-primary); letter-spacing:-0.01em;">{{ m.title }}</span><span style="display:block; font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary); margin-top:2px;">{{ m.count }}</span></span>
+                  <i class="{{ m.chevron }}" style="font-size:22px; color:var(--neutral-fg-tertiary);"></i>
+                </button>
+                <sc-if value="{{ m.open }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding:6px 18px 14px; display:flex; flex-direction:column;">
+                    <sc-for list="{{ m.lessons }}" as="ls" hint-placeholder-count="4">
+                      <div onClick="{{ lessonRowClick }}" style="display:flex; align-items:center; gap:12px; padding:11px 6px; border-top:1px solid var(--neutral-border); cursor:pointer;"><i class="ri-play-circle-line" style="font-size:19px; color:var(--brand);"></i><span style="flex:1; font-size:14px; font-weight:500; color:var(--neutral-fg-secondary);">{{ ls }}</span><i class="{{ lessonTrailIcon }}" style="font-size:15px; color:var(--cold-grey-600);"></i></div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- sticky sidebar -->
+      <aside style="position:sticky; top:88px; background:#fff; border:1px solid var(--neutral-border); border-radius:18px; box-shadow:var(--elevation-200); overflow:hidden;">
+        <div style="height:120px; background:{{ course.band }}; display:flex; align-items:center; justify-content:center;"><i class="{{ course.icon }}" style="font-size:56px; color:rgba(255,255,255,0.9);"></i></div>
+        <div style="padding:24px;">
+          <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:16px;"><span style="font-weight:700; font-size:28px; letter-spacing:-0.02em; color:var(--neutral-fg-primary);">Ingyenes</span><span style="font-size:14px; font-weight:600; color:var(--neutral-fg-tertiary); text-decoration:line-through;">Regisztrációhoz kötött</span></div>
+          <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px;">
+            <sc-for list="{{ course.sidebar }}" as="s" hint-placeholder-count="4">
+              <div style="display:flex; align-items:center; gap:11px;"><i class="{{ s.icon }}" style="font-size:19px; color:{{ accent }};"></i><span style="font-size:14px; font-weight:500; color:var(--neutral-fg-secondary);">{{ s.label }}</span></div>
+            </sc-for>
+          </div>
+          <button onClick="{{ enrollClick }}" style="width:100%; height:50px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:16px; display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:var(--font-primary);"><i class="ri-shield-user-line" style="font-size:19px;"></i>{{ enrollLabel }}</button>
+          <a href="Videós kurzus.dc.html" style="margin-top:10px; width:100%; height:50px; border-radius:9999px; background:#fff; color:var(--brand); border:1.5px solid var(--brand); cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:var(--font-primary); box-sizing:border-box; text-decoration:none;" style-hover="background:var(--indigo-100);"><i class="ri-play-circle-line" style="font-size:20px;"></i>Videós kurzus indítása</a>
+          <p style="font-size:12px; font-weight:500; color:var(--neutral-fg-tertiary); text-align:center; margin:12px 0 0; line-height:1.5;">A beiratkozáshoz Ügyfélkapu+ azonosítás szükséges.</p>
+        </div>
+      </aside>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ NEWS ============================================================ -->
+  <sc-if value="{{ isNews }}" hint-placeholder-val="{{ false }}">
+  <div style="">
+    <section style="background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1300)); color:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(40px,6vw,72px) 20px;">
+        <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--indigo-500);">Hírek</span>
+        <h1 style="font-weight:700; font-size:clamp(30px,4.5vw,48px); line-height:1.1; letter-spacing:-0.02em; margin:12px 0 0;">Program hírek és tájékoztatók</h1>
+      </div>
+    </section>
+
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(28px,4vw,44px) 20px;">
+      <!-- featured -->
+      <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:20px; overflow:hidden; box-shadow:var(--elevation-100); display:grid; grid-template-columns:{{ videoCols }}; margin-bottom:36px;">
+        <div style="min-height:220px; background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1200)); display:flex; align-items:center; justify-content:center; position:relative;">
+          <i class="ri-calendar-event-line" style="font-size:90px; color:rgba(255,255,255,0.28);"></i>
+          <span style="position:absolute; top:18px; left:18px; background:#fff; color:var(--brand); font-size:12px; font-weight:700; padding:6px 13px; border-radius:9999px;">Esemény</span>
+        </div>
+        <div style="padding:clamp(24px,3vw,40px); display:flex; flex-direction:column; justify-content:center;">
+          <span style="font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary);">2026. 04. 30.</span>
+          <h2 style="font-weight:700; font-size:clamp(22px,2.6vw,30px); line-height:1.2; letter-spacing:-0.02em; margin:8px 0 12px; color:var(--neutral-fg-primary);">Sikeresen lezajlott a projekt zárórendezvénye</h2>
+          <p style="font-size:15px; font-weight:500; line-height:1.6; color:var(--neutral-fg-secondary); margin:0 0 22px;">2026. április 30-án lezajlott a projekt zárórendezvénye. Köszönjük mindenkinek a részvételt és a közreműködést! A rendezvényről készült összefoglaló elérhető a program felületén.</p>
+          <button style="align-self:flex-start; height:46px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);">Összefoglaló megtekintése<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:22px;">
+        <sc-for list="{{ moreNews }}" as="n" hint-placeholder-count="3">
+          <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; overflow:hidden; box-shadow:var(--elevation-100); display:flex; flex-direction:column;">
+            <div style="height:8px; background:{{ n.accent }};"></div>
+            <div style="padding:22px; display:flex; flex-direction:column; flex:1;">
+              <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;"><span style="font-size:12px; font-weight:700; color:{{ n.accent }}; text-transform:uppercase; letter-spacing:0.04em;">{{ n.cat }}</span><span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">{{ n.date }}</span></div>
+              <h3 style="font-weight:700; font-size:18px; line-height:1.3; letter-spacing:-0.01em; margin:0 0 10px; color:var(--neutral-fg-primary);">{{ n.title }}</h3>
+              <p style="font-size:14px; font-weight:500; line-height:1.55; color:var(--neutral-fg-secondary); margin:0 0 16px;">{{ n.excerpt }}</p>
+              <span style="margin-top:auto; font-size:14px; font-weight:700; color:var(--brand); display:inline-flex; align-items:center; gap:6px;">Tovább olvasom<i class="ri-arrow-right-line" style="font-size:17px;"></i></span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ CONTACT ============================================================ -->
+  <sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+  <div style="">
+    <section style="background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1300)); color:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(40px,6vw,72px) 20px;">
+        <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--indigo-500);">Elérhetőségek</span>
+        <h1 style="font-weight:700; font-size:clamp(30px,4.5vw,48px); line-height:1.1; letter-spacing:-0.02em; margin:12px 0 14px;">Hogyan tudunk segíteni?</h1>
+        <p style="font-size:clamp(16px,1.5vw,19px); font-weight:500; line-height:1.55; color:rgba(255,255,255,0.82); max-width:560px; margin:0;">Kérdésed van a képzésekről vagy a beiratkozásról? Írj nekünk, vagy nézd meg a gyakori kérdéseket.</p>
+      </div>
+    </section>
+
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(32px,5vw,56px) 20px; display:grid; grid-template-columns:{{ contactCols }}; gap:32px; align-items:start;">
+      <!-- form -->
+      <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:18px; padding:clamp(24px,3vw,36px); box-shadow:var(--elevation-100);">
+        <h2 style="font-weight:700; font-size:22px; letter-spacing:-0.01em; margin:0 0 20px; color:var(--neutral-fg-primary);">Írj nekünk</h2>
+        <sc-if value="{{ contactSent }}" hint-placeholder-val="{{ false }}">
+          <div style="background:var(--semantic-green-200); color:var(--semantic-green-1000); border-radius:12px; padding:18px 20px; display:flex; gap:12px; align-items:center;"><i class="ri-checkbox-circle-fill" style="font-size:24px;"></i><div style="font-size:15px; font-weight:600; line-height:1.45;">Köszönjük az üzeneted! Munkatársaink 2 munkanapon belül válaszolnak.</div></div>
+        </sc-if>
+        <sc-if value="{{ contactNotSent }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <sc-for list="{{ contactFields }}" as="f" hint-placeholder-count="3">
+              <label style="display:flex; flex-direction:column; gap:6px;"><span style="font-size:14px; font-weight:700; color:var(--neutral-fg-primary);">{{ f.label }}</span>
+                <input value="{{ f.value }}" onChange="{{ f.onChange }}" type="{{ f.type }}" placeholder="{{ f.placeholder }}" style="height:46px; border:2px solid var(--cold-grey-400); border-radius:8px; padding:0 14px; font-size:15px; font-weight:500; font-family:var(--font-primary); color:var(--neutral-fg-primary); outline:none; background:#fff;">
+              </label>
+            </sc-for>
+            <label style="display:flex; flex-direction:column; gap:6px;"><span style="font-size:14px; font-weight:700; color:var(--neutral-fg-primary);">Üzenet</span>
+              <textarea value="{{ contactMsg }}" onChange="{{ onContactMsg }}" placeholder="Miben segíthetünk?" style="min-height:120px; border:2px solid var(--cold-grey-400); border-radius:8px; padding:12px 14px; font-size:15px; font-weight:500; font-family:var(--font-primary); color:var(--neutral-fg-primary); outline:none; background:#fff; resize:vertical;"></textarea>
+            </label>
+            <button onClick="{{ onContactSubmit }}" style="height:50px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:16px; font-family:var(--font-primary);">Üzenet küldése</button>
+          </div>
+        </sc-if>
+      </div>
+
+      <!-- info + faq -->
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:18px; padding:28px; box-shadow:var(--elevation-100);">
+          <h3 style="font-weight:700; font-size:18px; letter-spacing:-0.01em; margin:0 0 18px; color:var(--neutral-fg-primary);">Elérhetőségeink</h3>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <sc-for list="{{ contactInfo }}" as="ci" hint-placeholder-count="3">
+              <div style="display:flex; align-items:flex-start; gap:14px;"><span style="width:44px; height:44px; border-radius:12px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-size:22px; flex:0 0 auto;"><i class="{{ ci.icon }}"></i></span><div><div style="font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary); text-transform:uppercase; letter-spacing:0.03em;">{{ ci.label }}</div><div style="font-size:16px; font-weight:700; color:var(--neutral-fg-primary); margin-top:2px;">{{ ci.value }}</div></div></div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:18px; padding:28px; box-shadow:var(--elevation-100);">
+          <h3 style="font-weight:700; font-size:18px; letter-spacing:-0.01em; margin:0 0 16px; color:var(--neutral-fg-primary);">Gyakori kérdések</h3>
+          <div style="display:flex; flex-direction:column;">
+            <sc-for list="{{ faq }}" as="q" hint-placeholder-count="4">
+              <div style="border-top:1px solid var(--neutral-border);">
+                <button onClick="{{ q.onToggle }}" style="width:100%; background:none; border:none; cursor:pointer; padding:16px 0; display:flex; align-items:center; gap:14px; text-align:left; font-family:var(--font-primary);"><span style="flex:1; font-weight:700; font-size:15px; color:var(--neutral-fg-primary);">{{ q.q }}</span><i class="{{ q.chevron }}" style="font-size:22px; color:var(--brand);"></i></button>
+                <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}">
+                  <p style="font-size:14px; font-weight:500; line-height:1.6; color:var(--neutral-fg-secondary); margin:0 0 16px; padding-right:36px;">{{ q.a }}</p>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ LOGIN ============================================================ -->
+  <sc-if value="{{ isLogin }}" hint-placeholder-val="{{ false }}">
+  <div style=" background:linear-gradient(160deg, var(--indigo-1300) 0%, var(--indigo-1500) 100%); min-height:calc(100vh - 108px); display:flex; align-items:center; justify-content:center; padding:clamp(28px,5vw,64px) 20px;">
+    <div style="width:min(980px,100%); display:grid; grid-template-columns:{{ loginCols }}; gap:0; background:#fff; border-radius:24px; overflow:hidden; box-shadow:0 40px 80px rgba(3,6,22,0.5);">
+      <!-- left promo -->
+      <div style="background:linear-gradient(160deg, var(--indigo-900), var(--indigo-1300)); color:#fff; padding:clamp(28px,3.5vw,44px); display:flex; flex-direction:column;">
+        <span style="display:flex; align-items:center; gap:11px;"><span style="width:40px; height:40px; border-radius:11px; background:#fff; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; box-shadow:0 2px 8px rgba(0,0,0,0.25);"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 4 L21 8 L12 12 L3 8 Z" fill="var(--brand)"></path><path d="M6.5 9.8 V13.6 C6.5 13.6 8.6 15.6 12 15.6 C15.4 15.6 17.5 13.6 17.5 13.6 V9.8" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 8 V13" stroke="var(--brand)" stroke-width="1.5" stroke-linecap="round"></path><circle cx="21" cy="14" r="1.1" fill="var(--brand)"></circle></svg></span><span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1;"><span style="font-weight:800; font-size:18px; letter-spacing:-0.02em; color:#fff;">KKV&nbsp;<span style="color:var(--indigo-500);">Képzés</span></span><span style="font-weight:700; font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.55); margin-top:3px;">Közbeszerzési képzések</span></span></span>
+        <h2 style="font-weight:700; font-size:clamp(24px,3vw,32px); line-height:1.15; letter-spacing:-0.02em; margin:auto 0 16px;">Egy fiók, minden képzés.</h2>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <sc-for list="{{ loginBenefits }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex; align-items:center; gap:12px;"><i class="ri-checkbox-circle-fill" style="font-size:22px; color:var(--semantic-green-400);"></i><span style="font-size:15px; font-weight:500; color:rgba(255,255,255,0.9);">{{ b }}</span></div>
+          </sc-for>
+        </div>
+      </div>
+      <!-- right form -->
+      <div style="padding:clamp(28px,3.5vw,48px); display:flex; flex-direction:column; justify-content:center;">
+        <h1 style="font-weight:700; font-size:28px; letter-spacing:-0.02em; margin:0 0 6px; color:var(--neutral-fg-primary);">Belépés</h1>
+        <p style="font-size:15px; font-weight:500; color:var(--neutral-fg-secondary); margin:0 0 26px; line-height:1.5;">Lépj be a magyar állam központi azonosítási szolgáltatásával.</p>
+        <button onClick="{{ doLogin }}" style="height:56px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:16px; display:inline-flex; align-items:center; justify-content:center; gap:10px; font-family:var(--font-primary);"><i class="ri-shield-user-line" style="font-size:22px;"></i>Belépés Ügyfélkapu+ azonosítással</button>
+        <div style="display:flex; align-items:center; gap:14px; margin:22px 0;"><span style="flex:1; height:1px; background:var(--neutral-border);"></span><span style="font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary);">vagy</span><span style="flex:1; height:1px; background:var(--neutral-border);"></span></div>
+        <button onClick="{{ doLogin }}" style="height:52px; border-radius:9999px; background:#fff; color:var(--brand); border:2px solid var(--brand); cursor:pointer; font-weight:700; font-size:16px; display:inline-flex; align-items:center; justify-content:center; gap:9px; font-family:var(--font-primary);"><i class="ri-user-add-line" style="font-size:20px;"></i>Új fiók regisztrációja</button>
+        <div style="margin-top:24px; background:var(--semantic-blue-200); color:var(--semantic-blue-1200); border-radius:12px; padding:14px 16px; display:flex; gap:11px; align-items:flex-start;"><i class="ri-information-fill" style="font-size:20px; flex:0 0 auto;"></i><span style="font-size:13px; font-weight:500; line-height:1.5;">A képzések elvégzése ingyenes. Az azonosítás a személyes adataid védelmét szolgálja.</span></div>
+        <button onClick="{{ goHome }}" style="margin-top:20px; align-self:center; background:none; border:none; cursor:pointer; font-weight:700; font-size:14px; color:var(--neutral-fg-tertiary); display:inline-flex; align-items:center; gap:6px; font-family:var(--font-primary);"><i class="ri-arrow-left-line"></i>Vissza a főoldalra</button>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ DASHBOARD (Tanulásom) ============================================================ -->
+  <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ false }}">
+  <div style="background:var(--cold-grey-200); min-height:calc(100vh - 108px);">
+    <section style="background:linear-gradient(135deg, var(--indigo-900), var(--indigo-1300)); color:#fff;">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(32px,5vw,56px) 20px;">
+        <span style="font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--indigo-500);">Tanulásom</span>
+        <h1 style="font-weight:700; font-size:clamp(28px,4vw,44px); line-height:1.1; letter-spacing:-0.02em; margin:10px 0 8px;">Üdv újra, Anna!</h1>
+        <p style="font-size:clamp(15px,1.5vw,18px); font-weight:500; color:rgba(255,255,255,0.82); margin:0;">Folytasd ott, ahol abbahagytad — jó úton haladsz.</p>
+      </div>
+    </section>
+
+    <section style="width:min(1240px,100%); margin:0 auto; padding:clamp(24px,4vw,40px) 20px; display:grid; grid-template-columns:{{ detailCols }}; gap:24px; align-items:start;">
+      <div style="display:flex; flex-direction:column; gap:24px;">
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:18px; overflow:hidden; box-shadow:var(--elevation-100);">
+          <div style="display:grid; grid-template-columns:{{ videoCols }};">
+            <div style="min-height:160px; background:linear-gradient(135deg, var(--indigo-800), var(--indigo-1100)); display:flex; align-items:center; justify-content:center;"><i class="ri-scales-3-line" style="font-size:60px; color:rgba(255,255,255,0.9);"></i></div>
+            <div style="padding:24px; display:flex; flex-direction:column; justify-content:center;">
+              <span style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--brand);">Folytasd, ahol abbahagytad</span>
+              <h2 style="font-weight:700; font-size:20px; letter-spacing:-0.01em; margin:8px 0 4px; color:var(--neutral-fg-primary);">Közbeszerzési szakmai tananyag</h2>
+              <p style="font-size:14px; font-weight:600; color:var(--neutral-fg-tertiary); margin:0 0 14px;">Következő: {{ crumbLesson }}</p>
+              <div style="height:8px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden; margin-bottom:8px;"><div style="width:8%; height:100%; background:var(--brand); border-radius:9999px;"></div></div>
+              <span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">8% teljesítve · 1 / 69 lecke</span>
+              <button onClick="{{ continueLearning }}" style="margin-top:16px; align-self:flex-start; height:46px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-play-fill" style="font-size:20px;"></i>Folytatás</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 style="font-weight:700; font-size:20px; letter-spacing:-0.01em; margin:4px 0 14px; color:var(--neutral-fg-primary);">Kurzusaim</h2>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <sc-for list="{{ myCourses }}" as="c" hint-placeholder-count="2">
+              <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:18px; display:flex; align-items:center; gap:16px;">
+                <span style="width:52px; height:52px; border-radius:12px; background:{{ c.band }}; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:26px; flex:0 0 auto;"><i class="{{ c.icon }}"></i></span>
+                <div style="flex:1; min-width:0;">
+                  <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;"><span style="font-weight:700; font-size:16px; color:var(--neutral-fg-primary);">{{ c.title }}</span><span style="{{ c.statusStyle }}">{{ c.status }}</span></div>
+                  <span style="display:block; font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary); margin:3px 0 10px;">{{ c.meta }}</span>
+                  <div style="height:6px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><div style="{{ c.barStyle }}"></div></div>
+                </div>
+                <button onClick="{{ c.onClick }}" style="height:42px; padding:0 18px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:14px; flex:0 0 auto; font-family:var(--font-primary);">Folytatás</button>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <aside style="display:flex; flex-direction:column; gap:20px;">
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:20px;">
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-bottom:14px;">Haladásom</div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <sc-for list="{{ myStats }}" as="st" hint-placeholder-count="3">
+              <div style="display:flex; align-items:center; gap:13px;"><span style="width:40px; height:40px; border-radius:10px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; font-size:20px; flex:0 0 auto;"><i class="{{ st.icon }}"></i></span><div><span style="display:block; font-weight:700; font-size:18px; color:var(--neutral-fg-primary); line-height:1.1;">{{ st.k }}</span><span style="font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary);">{{ st.v }}</span></div></div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:linear-gradient(140deg, var(--cold-grey-1400), var(--cold-grey-1600)); border-radius:16px; padding:22px; color:#fff;">
+          <div style="width:48px; height:48px; border-radius:12px; background:rgba(255,255,255,0.14); display:inline-flex; align-items:center; justify-content:center; margin-bottom:14px;"><i class="ri-medal-line" style="font-size:26px;"></i></div>
+          <h3 style="font-weight:700; font-size:17px; letter-spacing:-0.01em; margin:0 0 6px;">Oklevél</h3>
+          <p style="font-size:13.5px; font-weight:500; line-height:1.55; color:rgba(255,255,255,0.75); margin:0 0 14px;">Teljesítsd mind a 4 modult, és letöltheted a nevedre kiállított PDF oklevelet.</p>
+          <div style="height:6px; background:rgba(255,255,255,0.2); border-radius:9999px; overflow:hidden; margin-bottom:8px;"><div style="width:8%; height:100%; background:var(--semantic-green-500); border-radius:9999px;"></div></div>
+          <span style="font-size:12px; font-weight:600; color:rgba(255,255,255,0.7);">0 / 4 modul teljesítve</span>
+        </div>
+      </aside>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ============================================================ LESSON ============================================================ -->
+  <sc-if value="{{ isLesson }}" hint-placeholder-val="{{ false }}">
+  <div style="background:var(--cold-grey-200);">
+    <div style="background:#fff; border-bottom:1px solid var(--neutral-border);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:12px 20px; display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <button onClick="{{ openDrawer }}" style="height:42px; padding:0 16px; border-radius:9999px; background:var(--indigo-200); color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary);"><i class="ri-menu-2-line" style="font-size:19px;"></i>Tananyag</button>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:13px; font-weight:600; color:var(--neutral-fg-tertiary);">
+          <button onClick="{{ goCourseBack }}" style="background:none; border:none; cursor:pointer; padding:0; font-family:var(--font-primary); font-size:13px; font-weight:700; color:var(--brand);">Közbeszerzési szakmai tananyag</button>
+          <i class="ri-arrow-right-s-line"></i><span style="color:var(--brand);">{{ crumbModule }}</span><i class="ri-arrow-right-s-line"></i><span>{{ crumbLesson }}</span>
+        </div>
+        <span style="margin-left:auto; display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; color:var(--brand);"><i class="ri-focus-3-line" style="font-size:17px;"></i>Kurzus haladás 8%</span>
+      </div>
+    </div>
+
+    <div style="width:min(1240px,100%); margin:0 auto; padding:34px 20px 120px; display:grid; grid-template-columns:{{ lessonCols }}; gap:36px; align-items:start;">
+      <div style="min-width:0; background:#fff; border:1px solid var(--neutral-border); border-radius:20px; padding:clamp(24px,3vw,44px); box-shadow:var(--elevation-100);">
+        <dc-import name="LeckeTartalom" lesson="{{ activeLesson }}" prev-label="{{ lessonPrevLabel }}" next-label="{{ lessonNextLabel }}" on-prev="{{ onPrevLesson }}" on-next="{{ onNextLesson }}" hint-size="100%,1200px"></dc-import>
+      </div>
+      <aside style="position:sticky; top:96px; display:flex; flex-direction:column; gap:16px;">
+        <div style="background:#fff; border:1px solid var(--neutral-border); border-radius:16px; padding:18px;">
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--neutral-fg-tertiary); margin-bottom:10px;">Aktuális lecke</div>
+          <div style="display:flex; align-items:flex-start; gap:11px;"><span style="width:34px; height:34px; border-radius:9px; background:var(--indigo-200); color:var(--brand); display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto;"><i class="ri-play-circle-fill" style="font-size:19px;"></i></span><span style="font-size:14px; font-weight:700; line-height:1.35; color:var(--neutral-fg-primary);">{{ crumbLesson }}</span></div>
+          <button onClick="{{ openDrawer }}" style="margin-top:14px; width:100%; height:38px; border-radius:9999px; background:var(--cold-grey-200); color:var(--neutral-fg-secondary); border:none; cursor:pointer; font-weight:700; font-size:13px; display:inline-flex; align-items:center; justify-content:center; gap:6px; font-family:var(--font-primary);"><i class="ri-list-unordered" style="font-size:16px;"></i>Teljes tananyag</button>
+        </div>
+        <sc-if value="{{ hasNextCardNext }}" hint-placeholder-val="{{ true }}">
+        <div style="background:linear-gradient(140deg,var(--indigo-900),var(--indigo-1200)); border-radius:16px; padding:18px; color:#fff;">
+          <div style="font-size:13px; font-weight:600; color:rgba(255,255,255,.8);">Következő lecke</div>
+          <div style="font-weight:700; font-size:15px; letter-spacing:-0.01em; margin:4px 0 12px;">{{ nextCardTitle }}</div>
+          <button onClick="{{ onNextLesson }}" style="width:100%; height:42px; border-radius:9999px; background:#fff; color:var(--brand); border:none; cursor:pointer; font-weight:700; font-size:14px; font-family:var(--font-primary);">Tovább</button>
+        </div>
+        </sc-if>
+      </aside>
+    </div>
+
+    <div style="position:fixed; left:0; right:0; bottom:0; z-index:35; background:#fff; border-top:1px solid var(--neutral-border); box-shadow:0 -4px 16px rgba(0,0,0,.05);">
+      <div style="width:min(1240px,100%); margin:0 auto; padding:12px 20px; display:flex; align-items:center; gap:16px;">
+        <div style="flex:1; min-width:0;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;"><span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ crumbLesson }}</span><span style="font-size:12px; font-weight:700; color:var(--brand);">folyamatban</span></div>
+          <div style="height:6px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><div style="width:33%; height:100%; background:var(--brand);"></div></div>
+        </div>
+        <button onClick="{{ stickyNextClick }}" style="height:44px; padding:0 22px; border-radius:9999px; background:var(--brand); color:#fff; border:none; cursor:pointer; font-weight:700; font-size:14px; display:inline-flex; align-items:center; gap:8px; font-family:var(--font-primary); flex:0 0 auto;">{{ stickyNextLabel }}<i class="ri-arrow-right-line" style="font-size:18px;"></i></button>
+      </div>
+    </div>
+
+    <sc-if value="{{ drawerOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; z-index:60; display:flex;">
+      <div onClick="{{ closeDrawer }}" style="position:absolute; inset:0; background:rgba(8,12,40,.5);"></div>
+      <aside style="position:relative; width:340px; max-width:88vw; background:#fff; height:100%; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.4);">
+        <div style="padding:18px; border-bottom:1px solid var(--neutral-border);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-weight:700; font-size:15px; letter-spacing:-0.01em;">Közbeszerzési szakmai tananyag</span><button onClick="{{ closeDrawer }}" style="width:34px; height:34px; border-radius:9px; background:var(--cold-grey-200); border:none; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;"><i class="ri-close-line" style="font-size:20px;"></i></button></div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:6px;"><span style="font-size:12px; font-weight:600; color:var(--neutral-fg-tertiary);">Kurzus haladás</span><span style="font-size:12px; font-weight:700; color:var(--brand);">8%</span></div>
+          <div style="height:7px; background:var(--cold-grey-300); border-radius:9999px; overflow:hidden;"><div style="width:8%; height:100%; background:linear-gradient(90deg,var(--brand),var(--indigo-800)); border-radius:9999px;"></div></div>
+        </div>
+        <div style="padding:10px 10px 30px;">
+          <sc-for list="{{ lessonTree }}" as="r" hint-placeholder-count="10">
+            <sc-if value="{{ r.isGroup }}" hint-placeholder-val="{{ true }}">
+              <button style="{{ r.rowStyle }}"><span style="{{ r.badgeStyle }}"><i class="{{ r.badgeIcon }}" style="font-size:14px;"></i></span><span style="{{ r.labelStyle }}">{{ r.label }}</span><i class="{{ r.trailIcon }}" style="font-size:20px; color:var(--neutral-fg-tertiary); flex:0 0 auto;"></i></button>
+            </sc-if>
+            <sc-if value="{{ r.isItem }}" hint-placeholder-val="{{ false }}">
+              <button onClick="{{ r.onClick }}" style="{{ r.rowStyle }}"><span style="{{ r.circleStyle }}"><i class="{{ r.circleIcon }}" style="font-size:12px;"></i></span><span style="{{ r.labelStyle }}">{{ r.label }}</span></button>
+            </sc-if>
+          </sc-for>
+        </div>
+      </aside>
+    </div>
+    </sc-if>
+  </div>
+  </sc-if>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:var(--cold-grey-1500); color:#fff;">
+    <div style="width:min(1240px,100%); margin:0 auto; padding:clamp(40px,5vw,64px) 20px 24px;">
+      <div style="display:grid; grid-template-columns:{{ footerCols }}; gap:32px;">
+        <div style="display:flex; flex-direction:column; gap:16px; max-width:340px;">
+          <span style="display:flex; align-items:center; gap:11px;"><span style="width:40px; height:40px; border-radius:11px; background:#fff; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; box-shadow:0 2px 8px rgba(0,0,0,0.25);"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 4 L21 8 L12 12 L3 8 Z" fill="var(--brand)"></path><path d="M6.5 9.8 V13.6 C6.5 13.6 8.6 15.6 12 15.6 C15.4 15.6 17.5 13.6 17.5 13.6 V9.8" stroke="var(--brand)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 8 V13" stroke="var(--brand)" stroke-width="1.5" stroke-linecap="round"></path><circle cx="21" cy="14" r="1.1" fill="var(--brand)"></circle></svg></span><span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1;"><span style="font-weight:800; font-size:18px; letter-spacing:-0.02em; color:#fff;">KKV&nbsp;<span style="color:var(--indigo-500);">Képzés</span></span><span style="font-weight:700; font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.55); margin-top:3px;">Közbeszerzési képzések</span></span></span>
+          <p style="margin:0; font-size:14px; font-weight:500; color:rgba(255,255,255,0.7); line-height:1.6;">Ingyenes közbeszerzési e-learning kis- és középvállalkozásoknak. Az állam veled van a vállalkozásod sikeréért.</p>
+          <div style="display:flex; gap:10px;">
+            <span style="width:38px; height:38px; border-radius:10px; background:var(--white-alpha-10); display:inline-flex; align-items:center; justify-content:center; font-size:19px;"><i class="ri-facebook-fill"></i></span>
+            <span style="width:38px; height:38px; border-radius:10px; background:var(--white-alpha-10); display:inline-flex; align-items:center; justify-content:center; font-size:19px;"><i class="ri-youtube-fill"></i></span>
+            <span style="width:38px; height:38px; border-radius:10px; background:var(--white-alpha-10); display:inline-flex; align-items:center; justify-content:center; font-size:19px;"><i class="ri-linkedin-fill"></i></span>
+          </div>
+        </div>
+        <sc-for list="{{ footerCols2 }}" as="col" hint-placeholder-count="3">
+          <div style="display:flex; flex-direction:column; gap:11px;">
+            <span style="font-size:13px; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:2px;">{{ col.title }}</span>
+            <sc-for list="{{ col.links }}" as="lnk" hint-placeholder-count="4">
+              <button onClick="{{ lnk.onClick }}" style="background:none; border:none; padding:0; text-align:left; cursor:pointer; font-size:14px; font-weight:500; color:rgba(255,255,255,0.7); font-family:var(--font-primary);">{{ lnk.label }}</button>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:36px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.12); font-size:12px; font-weight:500; color:rgba(255,255,255,0.55); line-height:1.7;">
+        Felnőttképzők nyilvántartásában szereplő nyilvántartási szám: E/2025/000043 · Az e-learning rendszer fejlesztése az RRF-9.4.1-22-2022-00001 projekt támogatásával valósult meg.
+      </div>
+      <div style="margin-top:16px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:13px; color:rgba(255,255,255,0.5);">
+        <span>© 2026 KKV Képzés · Digitális Állampolgárság Program</span>
+        <span style="display:inline-flex; align-items:center; gap:7px;"><i class="ri-shield-check-fill" style="font-size:15px;"></i>Magyarország hivatalos weboldala</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showBanner&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Megjelenés&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;green&quot;,&quot;options&quot;:[&quot;green&quot;,&quot;blue&quot;,&quot;indigo&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Megjelenés&quot;}}">
+class Component extends DCLogic {
+  state = {
+    page: 'home',
+    hero: 'a',
+    isMobile: false,
+    menuOpen: false,
+    cat: 'all',
+    search: '',
+    activeCourse: 'szakmai',
+    openModule: 0,
+    openFaq: -1,
+    loggedIn: false,
+    drawerOpen: false,
+    activeLesson: 'i1',
+    email: '',
+    subscribed: false,
+    cName: '', cEmail: '', cSubject: '', cMsg: '',
+    contactSent: false,
+    heroDone: 0, heroFading: false,
+  };
+
+  syncMobile = () => {
+    const m = window.innerWidth <= 860;
+    if (m !== this.state.isMobile) this.setState({ isMobile: m });
+  };
+  componentDidMount() {
+    this.syncMobile();
+    requestAnimationFrame(this.syncMobile);
+    setTimeout(this.syncMobile, 300);
+    window.addEventListener('resize', this.syncMobile);
+    try {
+      var h = (window.location.hash || '').replace('#', '');
+      if (h === 'course') this.setState({ page: 'course' });
+      else if (h === 'courses') this.setState({ page: 'courses' });
+    } catch (e) {}
+    this._runProg();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.syncMobile);
+    clearTimeout(this._pt);
+  }
+  _runProg() {
+    const d = this.state.heroDone;
+    if (d < 4) {
+      this._pt = setTimeout(() => { this.setState({ heroDone: d + 1 }); this._runProg(); }, 1300);
+    } else {
+      this._pt = setTimeout(() => {
+        this.setState({ heroFading: true });
+        this._pt = setTimeout(() => { this.setState({ heroDone: 0, heroFading: false }); this._runProg(); }, 650);
+      }, 1800);
+    }
+  }
+  _heroProg() {
+    const names = ['Közbeszerzési alapok', 'Ajánlattétel', 'Szerződés teljesítése', 'Jogorvoslat és EKR'];
+    const done = this.state.heroDone;
+    const base = 'display:flex;align-items:center;gap:11px;padding:8px 11px;border-radius:10px;transition:background .45s ease,opacity .45s ease;';
+    const iconBase = 'width:24px;height:24px;border-radius:9999px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;';
+    const heroModules = names.map((name, i) => {
+      const isDone = i < done;
+      const isActive = i === done && done < 4;
+      if (isDone) return { name, rowStyle: base + 'background:var(--cold-grey-200);', iconWrap: iconBase + 'background:var(--semantic-green-800);color:#fff;font-size:14px;', icon: 'ri-check-line', iconStyle: '', textStyle: 'flex:1;font-size:13px;font-weight:600;color:var(--neutral-fg-primary);' };
+      if (isActive) return { name, rowStyle: base + 'background:var(--indigo-100);box-shadow:inset 0 0 0 1px var(--indigo-200);', iconWrap: iconBase + 'background:var(--brand);color:#fff;font-size:13px;', icon: 'ri-loader-4-line', iconStyle: 'animation:kkvspin 1s linear infinite;', textStyle: 'flex:1;font-size:13px;font-weight:700;color:var(--brand);' };
+      return { name, rowStyle: base + 'background:var(--cold-grey-200);opacity:.55;', iconWrap: iconBase + 'background:var(--cold-grey-400);color:#fff;font-size:13px;', icon: 'ri-lock-line', iconStyle: '', textStyle: 'flex:1;font-size:13px;font-weight:600;color:var(--neutral-fg-secondary);' };
+    });
+    const heroPct = Math.round(done / 4 * 100) + '%';
+    const heroDoneLabel = done >= 4 ? 'Kész' : done + ' / 4';
+    const heroBadgeStyle = 'font-size:11px;font-weight:700;padding:4px 9px;border-radius:9999px;flex:0 0 auto;transition:background .4s ease,color .4s ease;' + (done >= 4 ? 'color:#fff;background:var(--semantic-green-800);' : 'color:var(--semantic-green-900);background:var(--semantic-green-200);');
+    return { heroModules, heroPct, heroDoneLabel, heroBadgeStyle, heroCardOpacity: this.state.heroFading ? 0.3 : 1 };
+  }
+
+  go = (page) => {
+    this.setState({ page, menuOpen: false });
+    try { window.scrollTo({ top: 0, behavior: 'auto' }); } catch (e) {}
+  };
+  openCourse = (id) => {
+    this.setState({ activeCourse: id, page: 'course', menuOpen: false, openModule: 0 });
+    try { window.scrollTo({ top: 0 }); } catch (e) {}
+  };
+  openLesson = () => {
+    this.setState({ page: 'lesson', menuOpen: false });
+    try { window.scrollTo({ top: 0 }); } catch (e) {}
+  };
+  doLogin = () => {
+    this.setState({ loggedIn: true, page: 'lesson', menuOpen: false });
+    try { window.scrollTo({ top: 0 }); } catch (e) {}
+  };
+  openDrawer = () => this.setState({ drawerOpen: true });
+  closeDrawer = () => this.setState({ drawerOpen: false });
+  selectLesson = (id) => {
+    this.setState({ activeLesson: id, page: 'lesson', drawerOpen: false, menuOpen: false });
+    try { window.scrollTo({ top: 0 }); } catch (e) {}
+  };
+  lessonTitles() {
+    return { intro: 'Képzésbevezető', i1: 'I.1. Az EKR rövid ismertetése', i2: 'I.2. Személyes fiók létrehozása', i3: 'I.3. Belépés az EKR felületre', i4: 'I.4. Szervezet regisztráció', i5: 'I.5. Jogosultságok kezelése', i6: 'I.6. EKR belépést követő felülete', i7: 'I.7. Érdeklődés jelzése' };
+  }
+  lessonNav() {
+    const order = ['intro', 'i1', 'i2', 'i3', 'i4', 'i5', 'i6', 'i7'];
+    const titles = this.lessonTitles();
+    const i = order.indexOf(this.state.activeLesson);
+    const prevId = i > 0 ? order[i - 1] : null;
+    const nextId = (i >= 0 && i < order.length - 1) ? order[i + 1] : null;
+    return {
+      lessonPrevLabel: prevId ? titles[prevId] : '',
+      lessonNextLabel: nextId ? titles[nextId] : '',
+      onPrevLesson: prevId ? () => this.selectLesson(prevId) : null,
+      onNextLesson: nextId ? () => this.selectLesson(nextId) : null,
+    };
+  }
+  lessonTree(activeId) {
+    const groupRow = 'width:100%;display:flex;align-items:center;gap:11px;padding:11px 12px;border:none;background:none;cursor:pointer;text-align:left;font-family:var(--font-primary);border-radius:10px;';
+    const badge = (color) => 'width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:#fff;background:' + color + ';';
+    const glabel = 'flex:1;font-weight:700;font-size:13.5px;letter-spacing:-0.01em;color:var(--neutral-fg-primary);';
+    const mkGroup = (label, opts) => ({ isGroup: true, isItem: false, label, onClick: () => {}, rowStyle: groupRow, badgeStyle: badge(opts.badgeColor || 'var(--brand)'), badgeIcon: opts.icon || 'ri-folder-3-line', labelStyle: glabel, trailIcon: opts.trail || 'ri-arrow-down-s-line' });
+    const mkItem = (label, id, base) => {
+      const isActive = !!id && id === activeId;
+      const st = isActive ? 'active' : (id ? (base || 'todo') : 'none');
+      let cBg = 'transparent', cBorder = '2px solid var(--cold-grey-500)', cIcon = '', cColor = 'transparent';
+      if (st === 'done') { cBg = 'var(--semantic-green-800)'; cBorder = 'none'; cIcon = 'ri-check-line'; cColor = '#fff'; }
+      if (st === 'active') { cBg = 'var(--brand)'; cBorder = 'none'; cIcon = 'ri-play-mini-fill'; cColor = '#fff'; }
+      return { isGroup: false, isItem: true, label,
+        onClick: id ? () => this.selectLesson(id) : () => {},
+        rowStyle: 'width:100%;display:flex;align-items:center;gap:11px;padding:9px 12px 9px 26px;border:none;cursor:pointer;text-align:left;font-family:var(--font-primary);border-radius:10px;background:' + (isActive ? 'var(--indigo-200)' : 'transparent') + ';',
+        circleStyle: 'width:20px;height:20px;border-radius:9999px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;background:' + cBg + ';border:' + cBorder + ';color:' + cColor + ';',
+        circleIcon: cIcon,
+        labelStyle: 'flex:1;font-size:13px;font-weight:' + (isActive ? '700' : '600') + ';line-height:1.35;color:' + (isActive ? 'var(--brand)' : 'var(--neutral-fg-secondary)') + ';white-space:nowrap;overflow:hidden;text-overflow:ellipsis;' };
+    };
+    return [
+      mkGroup('Általános', { icon: 'ri-apps-2-line' }),
+      mkItem('Képzésbevezető', 'intro', 'done'),
+      mkItem('Tematikák', null, 'none'),
+      mkGroup('Belépési kérdőív', { icon: 'ri-survey-line', badgeColor: 'var(--semantic-green-800)', trail: 'ri-check-line' }),
+      mkGroup('I. Az Elektronikus Közbeszerzési Rendszer', { icon: 'ri-node-tree' }),
+      mkItem('I.1. Az EKR rövid ismertetése', 'i1', 'todo'),
+      mkItem('I.2. Személyes fiók létrehozása', 'i2', 'todo'),
+      mkItem('I.3. Belépés az EKR felületre', 'i3', 'todo'),
+      mkItem('I.4. Szervezet regisztráció', 'i4', 'todo'),
+      mkItem('I.5. Jogosultságok kezelése', 'i5', 'todo'),
+      mkItem('I.6. EKR belépést követő felülete', 'i6', 'todo'),
+      mkItem('I.7. Érdeklődés jelzése', 'i7', 'todo'),
+      mkGroup('II. Ajánlattétel a közbeszerzési eljárásokban', { icon: 'ri-file-list-3-line', trail: 'ri-arrow-right-s-line' }),
+      mkGroup('III. A közbeszerzési szerződések teljesítése', { icon: 'ri-handshake-line', trail: 'ri-arrow-right-s-line' }),
+      mkGroup('IV. A közbeszerzési jogorvoslat', { icon: 'ri-scales-3-line', trail: 'ri-arrow-right-s-line' }),
+      mkGroup('Kilépési kérdőív', { icon: 'ri-survey-line', trail: 'ri-arrow-right-s-line' }),
+    ];
+  }
+  lessonToc() {
+    return [
+      { label: 'Jogi háttér és a rendszer célja', active: true },
+      { label: 'Az eljárások struktúrája', active: false },
+      { label: 'Regisztráció nélküli felület', active: false },
+      { label: 'Ellenőrizd a tudásod', active: false },
+    ].map(t => ({ label: t.label,
+      style: 'display:flex;align-items:center;gap:10px;padding:8px 6px;font-size:13px;font-weight:' + (t.active ? '700' : '600') + ';color:' + (t.active ? 'var(--brand)' : 'var(--neutral-fg-secondary)') + ';cursor:pointer;',
+      dot: 'width:7px;height:7px;border-radius:9999px;flex:0 0 auto;background:' + (t.active ? 'var(--brand)' : 'var(--cold-grey-500)') + ';' }));
+  }
+
+  navStyle(active, mobile) {
+    if (mobile) {
+      return 'padding:14px 16px; border-radius:12px; font-weight:700; font-size:16px; cursor:pointer; border:none; text-align:left; font-family:var(--font-primary); background:' + (active ? 'var(--indigo-200)' : 'transparent') + '; color:' + (active ? 'var(--brand)' : 'var(--neutral-fg-primary)') + ';';
+    }
+    return 'padding:10px 15px; border-radius:9999px; font-weight:700; font-size:14px; cursor:pointer; border:none; font-family:var(--font-primary); background:' + (active ? 'var(--indigo-200)' : 'transparent') + '; color:' + (active ? 'var(--brand)' : 'var(--neutral-fg-secondary)') + ';';
+  }
+
+  segStyle(active) {
+    return 'padding:7px 15px; border-radius:9999px; font-weight:700; font-size:13px; cursor:pointer; border:none; font-family:var(--font-primary); background:' + (active ? '#fff' : 'transparent') + '; color:' + (active ? 'var(--brand)' : 'rgba(255,255,255,0.75)') + ';';
+  }
+
+  segMini(active) {
+    return 'width:28px; height:28px; border-radius:9999px; border:none; cursor:pointer; font-weight:700; font-size:12px; font-family:var(--font-primary); background:' + (active ? 'var(--brand)' : 'transparent') + '; color:' + (active ? '#fff' : 'var(--neutral-fg-secondary)') + ';';
+  }
+
+  chipStyle(active) {
+    return 'padding:9px 16px; border-radius:9999px; font-weight:600; font-size:14px; cursor:pointer; font-family:var(--font-primary); background:' + (active ? 'var(--brand)' : '#fff') + '; color:' + (active ? '#fff' : 'var(--neutral-fg-secondary)') + '; border:1px solid ' + (active ? 'var(--brand)' : 'var(--neutral-border)') + ';';
+  }
+
+  courseData() {
+    const green = 'linear-gradient(135deg, var(--semantic-green-800), var(--semantic-green-900))';
+    const indigo = 'linear-gradient(135deg, var(--indigo-800), var(--indigo-1100))';
+    const azure = 'linear-gradient(135deg, var(--azure-900), var(--indigo-1100))';
+    return {
+      szakmai: {
+        id: 'szakmai', tag: 'Szakmai tananyag', tagFg: 'var(--brand)', band: indigo, icon: 'ri-scales-3-line',
+        cat: 'elearning', available: true,
+        title: 'Közbeszerzési szakmai tananyag',
+        desc: 'Moduláris, teljeskörű elméleti ismeretanyag az ajánlattételtől a szerződés teljesítésén át a jogorvoslatig és az EKR használatáig.',
+        intro: 'A közbeszerzési szakmai tananyag modulárisan felépített struktúrája kifejezetten a KKV-k számára készült. Teljeskörű elméleti ismeretanyagot biztosít — különösen az ajánlattételhez, a szerződés teljesítéséhez és a jogorvoslathoz, valamint az EKR használatához kapcsolódóan.',
+        chips: [ {icon:'ri-stack-line',label:'4 modul'}, {icon:'ri-play-list-2-line',label:'69 lecke'}, {icon:'ri-medal-line',label:'Oklevél'} ],
+        meta: [ {icon:'ri-stack-line',label:'4 modul'}, {icon:'ri-play-list-2-line',label:'69 lecke'}, {icon:'ri-time-line',label:'kb. 12 óra'}, {icon:'ri-medal-line',label:'Letölthető oklevél'} ],
+        moduleSummary: '4 modul · 69 lecke',
+        learn: [
+          'A közbeszerzési eljárások törvényes kereteit és alapelveit',
+          'Az ajánlattétel gyakorlati lépéseit, buktatóit',
+          'A nyertes szerződés jogszerű teljesítését',
+          'A jogorvoslati lehetőségeket és határidőket',
+          'Az Elektronikus Közbeszerzési Rendszer (EKR) használatát',
+          'A KKV-kat érintő legfontosabb kedvezményeket',
+        ],
+        sidebar: [ {icon:'ri-play-list-2-line',label:'69 interaktív lecke'}, {icon:'ri-time-line',label:'Saját tempóban, bármikor'}, {icon:'ri-medal-line',label:'PDF oklevél a végén'}, {icon:'ri-infinity-line',label:'Korlátlan hozzáférés'} ],
+      },
+      ingyenes: {
+        id: 'ingyenes', tag: 'Élő képzés', tagFg: 'var(--semantic-green-900)', band: green, icon: 'ri-team-line',
+        cat: 'live', available: true,
+        title: 'Ingyenes Közbeszerzési Képzések',
+        desc: 'Online és személyes formában megrendezett, jelentkezéshez kötött ingyenes képzések gyakorló szakemberek vezetésével.',
+        intro: 'A felületen lehetőség nyílik ingyenes közbeszerzési képzésekre való jelentkezésre is. A képzések online, illetve személyes formában kerülnek megrendezésre, gyakorló szakemberek vezetésével.',
+        chips: [ {icon:'ri-calendar-line',label:'2 alkalom'}, {icon:'ri-map-pin-line',label:'Online + személyes'}, {icon:'ri-medal-line',label:'Igazolás'} ],
+        meta: [ {icon:'ri-calendar-line',label:'2 alkalom'}, {icon:'ri-map-pin-line',label:'Online + személyes'}, {icon:'ri-user-star-line',label:'Gyakorló oktatók'}, {icon:'ri-medal-line',label:'Részvételi igazolás'} ],
+        moduleSummary: '2 alkalom',
+        learn: [
+          'Élő, interaktív esettanulmányok feldolgozása',
+          'Kérdés-felelet gyakorló szakemberekkel',
+          'A leggyakoribb hibák elkerülése a gyakorlatban',
+          'Naprakész információk a szabályozás változásairól',
+        ],
+        sidebar: [ {icon:'ri-calendar-line',label:'Kötött időpontok'}, {icon:'ri-map-pin-line',label:'Online vagy személyes'}, {icon:'ri-medal-line',label:'Részvételi igazolás'}, {icon:'ri-group-line',label:'Korlátozott létszám'} ],
+      },
+    };
+  }
+
+  moduleSets() {
+    return {
+      szakmai: [
+        { n: '01', title: 'Közbeszerzési alapok és jogi keretek', count: '18 lecke', lessons: ['A közbeszerzés fogalma és alapelvei', 'A Kbt. felépítése és logikája', 'Eljárásrendek és értékhatárok', 'Az ajánlatkérők köre', 'A KKV-kat érintő kedvezmények'] },
+        { n: '02', title: 'Ajánlattétel a gyakorlatban', count: '21 lecke', lessons: ['A felhívás és a dokumentáció értelmezése', 'Alkalmassági követelmények', 'Az ajánlat összeállítása', 'Hiánypótlás és felvilágosítás', 'Gyakori hibák az ajánlattételnél'] },
+        { n: '03', title: 'Szerződés teljesítése', count: '15 lecke', lessons: ['A szerződéskötés menete', 'Teljesítésigazolás és számlázás', 'Szerződésmódosítás szabályai', 'Alvállalkozók bevonása'] },
+        { n: '04', title: 'Jogorvoslat és az EKR használata', count: '15 lecke', lessons: ['A jogorvoslati eljárás menete', 'Határidők és költségek', 'Az EKR regisztráció lépései', 'Eljárás indítása és követése az EKR-ben', 'Dokumentumok feltöltése'] },
+      ],
+      ingyenes: [
+        { n: '01', title: 'Online képzési alkalom', count: 'kb. 3 óra', lessons: ['Bevezetés és aktualitások', 'Esettanulmányok közösen', 'Kérdések és válaszok'] },
+        { n: '02', title: 'Személyes műhelynap', count: 'kb. 4 óra', lessons: ['Gyakorlati ajánlatkészítés', 'EKR bemutató élőben', 'Konzultáció szakemberekkel'] },
+      ],
+    };
+  }
+
+  renderVals() {
+    const s = this.state;
+    const isMobile = s.isMobile;
+    const accMap = {
+      green: { fg: 'var(--semantic-green-900)', bg: 'var(--semantic-green-200)' },
+      blue: { fg: 'var(--semantic-blue-900)', bg: 'var(--semantic-blue-200)' },
+      indigo: { fg: 'var(--brand)', bg: 'var(--indigo-200)' },
+    };
+    const acc = accMap[this.props.accent] || accMap.green;
+    const showBanner = this.props.showBanner !== false;
+
+    const nav = [
+      { label: 'Kezdőoldal', key: 'home', go: () => this.go('home') },
+      { label: 'Kurzusok', key: 'courses', go: () => this.go('courses') },
+      { label: 'Hírek', key: 'news', go: () => this.go('news') },
+      { label: 'Elérhetőségek', key: 'contact', go: () => this.go('contact') },
+    ];
+    const navItems = nav.map(n => ({
+      label: n.label,
+      onClick: n.go,
+      style: this.navStyle(s.page === n.key, false),
+      mobileStyle: this.navStyle(s.page === n.key, true),
+    }));
+
+    const heroBtns = [
+      { label: 'A · Klasszikus', short: 'A', v: 'a' },
+      { label: 'B · Kereső', short: 'B', v: 'b' },
+      { label: 'C · Editorial', short: 'C', v: 'c' },
+    ].map(h => ({ label: h.label, short: h.short, onClick: () => this.setState({ hero: h.v }), style: this.segStyle(s.hero === h.v), styleMini: this.segMini(s.hero === h.v) }));
+
+    const valueProps = [
+      { icon: 'ri-price-tag-3-line', title: '100%-ban ingyenes', desc: 'Minden kurzus és a kiállított oklevél is teljesen díjmentes, uniós támogatásból.', bg: acc.bg, fg: acc.fg },
+      { icon: 'ri-time-line', title: 'Saját tempóban', desc: 'Bármikor, bárhonnan tanulhatsz — a modulok tetszőleges sorrendben elvégezhetők.', bg: 'var(--indigo-200)', fg: 'var(--brand)' },
+      { icon: 'ri-medal-line', title: 'Letölthető oklevél', desc: 'A sikeres teljesítés után PDF formátumú oklevelet állítunk ki a nevedre.', bg: 'var(--semantic-orange-200)', fg: 'var(--semantic-orange-900)' },
+      { icon: 'ri-service-line', title: 'Gyakorlati EKR-tudás', desc: 'Az Elektronikus Közbeszerzési Rendszer használata lépésről lépésre, érthetően.', bg: 'var(--semantic-blue-200)', fg: 'var(--semantic-blue-900)' },
+    ];
+
+    const cd = this.courseData();
+    const toCard = (c) => ({
+      id: c.id, tag: c.tag, tagFg: c.tagFg, band: c.band, icon: c.icon,
+      title: c.title, desc: c.desc, chips: c.chips,
+      available: true, soon: false,
+      onClick: () => this.openCourse(c.id),
+    });
+    const homeCourses = [ toCard(cd.szakmai), toCard(cd.ingyenes) ];
+
+    const soonCards = [
+      { id: 'ekr', tag: 'Hamarosan', tagFg: 'var(--neutral-fg-tertiary)', band: 'linear-gradient(135deg, var(--cold-grey-700), var(--cold-grey-1000))', icon: 'ri-computer-line', title: 'EKR mesterkurzus', desc: 'Haladó, gyakorlatorientált képzés az Elektronikus Közbeszerzési Rendszer teljes körű használatáról.', chips: [ {icon:'ri-stack-line',label:'Fejlesztés alatt'} ], available: false, soon: true, cat: 'soon', onClick: () => {} },
+      { id: 'kkv', tag: 'Hamarosan', tagFg: 'var(--neutral-fg-tertiary)', band: 'linear-gradient(135deg, var(--cold-grey-700), var(--cold-grey-1000))', icon: 'ri-briefcase-line', title: 'Pályázati alapismeretek KKV-knak', desc: 'A közbeszerzéshez kapcsolódó pályázati lehetőségek és forrásbevonás alapjai.', chips: [ {icon:'ri-stack-line',label:'Fejlesztés alatt'} ], available: false, soon: true, cat: 'soon', onClick: () => {} },
+    ];
+
+    const allCourses = [ toCard(cd.szakmai), toCard(cd.ingyenes), ...soonCards ];
+    const catMeta = { szakmai: 'elearning', ingyenes: 'live', ekr: 'soon', kkv: 'soon' };
+    const cats = [
+      { key: 'all', label: 'Mind' },
+      { key: 'elearning', label: 'E-learning' },
+      { key: 'live', label: 'Élő képzés' },
+      { key: 'soon', label: 'Hamarosan' },
+    ];
+    const courseCats = cats.map(c => ({ label: c.label, onClick: () => this.setState({ cat: c.key }), style: this.chipStyle(s.cat === c.key) }));
+    const q = s.search.trim().toLowerCase();
+    const filteredCourses = allCourses.filter(c => {
+      const catOk = s.cat === 'all' || catMeta[c.id] === s.cat;
+      const qOk = !q || (c.title + ' ' + c.desc).toLowerCase().includes(q);
+      return catOk && qOk;
+    });
+
+    const steps = [
+      { n: '1', title: 'Regisztrálj', desc: 'Lépj be Ügyfélkapu+ azonosítással — mindössze pár másodperc.' },
+      { n: '2', title: 'Tanulj a modulokból', desc: 'Interaktív leckék, saját tempóban, bárhonnan elérhetően.' },
+      { n: '3', title: 'Töltsd le az oklevelet', desc: 'A modul teljesítése után PDF oklevél jár, letölthető formában.' },
+    ];
+
+    const stats = [
+      { k: '4', v: 'tananyag-modul' },
+      { k: '69', v: 'interaktív lecke' },
+      { k: 'PDF', v: 'letölthető oklevél' },
+      { k: '0 Ft', v: 'részvételi díj' },
+    ];
+
+    const news = [
+      { cat: 'Esemény', date: '2026. 04. 30.', accent: 'var(--brand)', title: 'Sikeresen lezajlott a projekt zárórendezvénye', excerpt: 'Köszönjük mindenkinek a részvételt és a közreműködést! A rendezvényről készült összefoglaló elérhető.' },
+      { cat: 'Képzés', date: '2026. 03. 12.', accent: 'var(--semantic-green-900)', title: 'Új ingyenes közbeszerzési képzések indulnak tavasszal', excerpt: 'Bővül a kínálat: online és személyes alkalmakra is lehet jelentkezni a felületen.' },
+      { cat: 'Útmutató', date: '2026. 02. 20.', accent: 'var(--semantic-blue-900)', title: 'Így regisztrálj első alkalommal az EKR-ben', excerpt: 'Lépésről lépésre bemutatjuk az Elektronikus Közbeszerzési Rendszer regisztrációját.' },
+      { cat: 'GYIK', date: '2026. 01. 15.', accent: 'var(--semantic-orange-900)', title: 'A leggyakoribb kérdések az ajánlattételről', excerpt: 'Összegyűjtöttük a KKV-kat leginkább foglalkoztató kérdéseket és a rájuk adott válaszokat.' },
+    ];
+
+    const course = cd[s.activeCourse] || cd.szakmai;
+    const mods = (this.moduleSets()[s.activeCourse] || this.moduleSets().szakmai).map((m, i) => ({
+      n: m.n, title: m.title, count: m.count, lessons: m.lessons,
+      open: s.openModule === i,
+      onToggle: () => this.setState({ openModule: s.openModule === i ? -1 : i }),
+      chevron: s.openModule === i ? 'ri-arrow-up-s-line' : 'ri-arrow-down-s-line',
+      headBg: s.openModule === i ? 'var(--cold-grey-200)' : '#fff',
+    }));
+
+    const contactFields = [
+      { key: 'cName', label: 'Neved', type: 'text', placeholder: 'Kovács Anna', value: s.cName, onChange: (e) => this.setState({ cName: e.target.value }) },
+      { key: 'cEmail', label: 'E-mail címed', type: 'email', placeholder: 'nev@pelda.hu', value: s.cEmail, onChange: (e) => this.setState({ cEmail: e.target.value }) },
+      { key: 'cSubject', label: 'Tárgy', type: 'text', placeholder: 'Miről szeretnél kérdezni?', value: s.cSubject, onChange: (e) => this.setState({ cSubject: e.target.value }) },
+    ];
+
+    const contactInfo = [
+      { icon: 'ri-mail-line', label: 'E-mail', value: 'info@kkvkepzes.gov.hu' },
+      { icon: 'ri-customer-service-2-line', label: 'Ügyfélszolgálat', value: '+36 1 234 5678' },
+      { icon: 'ri-time-line', label: 'Ügyfélfogadás', value: 'H–P, 8:00–16:00' },
+    ];
+
+    const faqData = [
+      { q: 'Valóban ingyenesek a képzések?', a: 'Igen, minden kurzus és a kiállított oklevél is teljesen díjmentes. A rendszer uniós támogatásból (RRF-9.4.1-22 projekt) valósult meg.' },
+      { q: 'Kell-e külön regisztrálni?', a: 'A tananyagok eléréséhez Ügyfélkapu+ azonosítással kell belépned. Külön jelszót nem kell létrehoznod.' },
+      { q: 'Kapok-e oklevelet a végén?', a: 'A modulok sikeres teljesítése után a nevedre kiállított PDF oklevelet tölthetsz le a felületről.' },
+      { q: 'Milyen sorrendben végezzem a modulokat?', a: 'A modulok egymástól függetlenül, tetszőleges sorrendben elvégezhetők — teljesen a te időbeosztásodhoz igazodva.' },
+    ];
+    const faq = faqData.map((f, i) => ({
+      q: f.q, a: f.a, open: s.openFaq === i,
+      onToggle: () => this.setState({ openFaq: s.openFaq === i ? -1 : i }),
+      chevron: s.openFaq === i ? 'ri-subtract-line' : 'ri-add-line',
+    }));
+
+    const footerCols2 = [
+      { title: 'Menü', links: [
+        { label: 'Kezdőoldal', onClick: () => this.go('home') },
+        { label: 'Hírek', onClick: () => this.go('news') },
+        { label: 'Kurzusok', onClick: () => this.go('courses') },
+        { label: 'Elérhetőségek', onClick: () => this.go('contact') },
+      ]},
+      { title: 'Tájékoztatók', links: [
+        { label: 'Panaszkezelés', onClick: () => {} },
+        { label: 'Adatkezelés', onClick: () => {} },
+        { label: 'Sütik használata', onClick: () => {} },
+        { label: 'Impresszum', onClick: () => {} },
+      ]},
+      { title: 'Nyereményjáték', links: [
+        { label: 'Játékszabályzat', onClick: () => {} },
+        { label: 'Adatvédelmi tájékoztató', onClick: () => {} },
+        { label: 'Szabályzatok', onClick: () => {} },
+      ]},
+    ];
+
+    const loginBenefits = [
+      'Ingyenes hozzáférés minden képzéshez',
+      'Nyomon követett haladás és folytatás',
+      'Letölthető PDF oklevél a teljesítésről',
+    ];
+
+    return {
+      ...this._heroProg(),
+      showBanner,
+      isMobile,
+      showDesktopNav: !isMobile,
+      showMobileToggle: isMobile,
+      menuOpen: s.menuOpen,
+      toggleMenu: () => this.setState(st => ({ menuOpen: !st.menuOpen })),
+      navItems,
+      goHome: () => this.go('home'),
+      goCourses: () => this.go('courses'),
+      goCourse: () => this.openCourse('szakmai'),
+      goNews: () => this.go('news'),
+      goContact: () => this.go('contact'),
+      goLogin: () => this.go('login'),
+      openLesson: this.openLesson,
+      doLogin: this.doLogin,
+      authClick: s.loggedIn ? () => this.go('dashboard') : () => this.go('login'),
+      authLabel: s.loggedIn ? 'Tanulásom' : 'Belépés',
+      authIcon: s.loggedIn ? 'ri-graduation-cap-line' : 'ri-shield-user-line',
+      enrollClick: s.loggedIn ? this.openLesson : () => this.go('login'),
+      enrollLabel: s.loggedIn ? 'Folytatom a tanulást' : 'Beiratkozom',
+      lessonRowClick: s.loggedIn ? this.openLesson : () => this.go('login'),
+      lessonTrailIcon: s.loggedIn ? 'ri-arrow-right-s-line' : 'ri-lock-line',
+      loggedIn: s.loggedIn,
+      drawerOpen: s.drawerOpen,
+      openDrawer: this.openDrawer,
+      closeDrawer: this.closeDrawer,
+      lessonTree: this.lessonTree(s.activeLesson),
+      lessonToc: this.lessonToc(),
+      lessonCols: isMobile ? '1fr' : 'minmax(0,1fr) 300px',
+      goCourseBack: () => this.openCourse('szakmai'),
+      activeLesson: s.activeLesson,
+      ...this.lessonNav(),
+      crumbLesson: this.lessonTitles()[s.activeLesson] || '',
+      crumbModule: s.activeLesson === 'intro' ? 'Általános' : 'I. Az EKR',
+      nextCardTitle: this.lessonNav().lessonNextLabel || 'Modul teljesítve',
+      hasNextCardNext: !!this.lessonNav().lessonNextLabel,
+      goDashboard: () => this.go('dashboard'),
+      continueLearning: this.openLesson,
+      stickyNextClick: this.lessonNav().onNextLesson || (() => this.go('dashboard')),
+      stickyNextLabel: this.lessonNav().lessonNextLabel ? 'Következő' : 'Befejezés',
+      myStats: [
+        { icon: 'ri-play-list-2-line', k: '1 / 69', v: 'lecke elvégezve' },
+        { icon: 'ri-stack-line', k: '0 / 4', v: 'modul teljesítve' },
+        { icon: 'ri-medal-line', k: '0', v: 'megszerzett oklevél' },
+      ],
+      myCourses: [
+        { title: 'Közbeszerzési szakmai tananyag', meta: '4 modul · 69 lecke', status: 'Folyamatban', icon: 'ri-scales-3-line', band: 'linear-gradient(135deg, var(--indigo-800), var(--indigo-1100))', barStyle: 'width:8%;height:100%;background:var(--brand);border-radius:9999px;', statusStyle: 'font-size:11px;font-weight:700;padding:3px 9px;border-radius:9999px;color:var(--brand);background:var(--indigo-200);', onClick: this.openLesson },
+        { title: 'Ingyenes Közbeszerzési Képzések', meta: 'Online + személyes · időpontok', status: 'Jelentkezve', icon: 'ri-team-line', band: 'linear-gradient(135deg, var(--semantic-green-800), var(--semantic-green-900))', barStyle: 'width:0%;height:100%;background:var(--semantic-green-800);border-radius:9999px;', statusStyle: 'font-size:11px;font-weight:700;padding:3px 9px;border-radius:9999px;color:var(--semantic-green-900);background:var(--semantic-green-200);', onClick: () => this.openCourse('ingyenes') },
+      ],
+
+      isHome: s.page === 'home',
+      isCourses: s.page === 'courses',
+      isCourse: s.page === 'course',
+      isNews: s.page === 'news',
+      isContact: s.page === 'contact',
+      isLogin: s.page === 'login',
+      isLesson: s.page === 'lesson',
+      isDashboard: s.page === 'dashboard',
+
+      hero: s.hero,
+      heroA: s.hero === 'a',
+      heroB: s.hero === 'b',
+      heroC: s.hero === 'c',
+      heroBtns,
+      heroCols: isMobile ? '1fr' : '1.05fr 0.95fr',
+      videoCols: isMobile ? '1fr' : '1fr 1fr',
+      detailCols: isMobile ? '1fr' : 'minmax(0,1fr) 340px',
+      contactCols: isMobile ? '1fr' : '1.1fr 0.9fr',
+      loginCols: isMobile ? '1fr' : '1fr 1fr',
+      footerCols: isMobile ? '1fr' : '1.4fr 1fr 1fr 1fr',
+
+      heroTrust: [
+        { icon: 'ri-price-tag-3-line', label: 'Ingyenes' },
+        { icon: 'ri-medal-line', label: 'Oklevéllel' },
+        { icon: 'ri-time-line', label: 'Saját tempóban' },
+      ],
+      heroCardRows: [
+        { icon: 'ri-stack-line', label: 'Modulok', value: '4' },
+        { icon: 'ri-play-list-2-line', label: 'Leckék', value: '69' },
+        { icon: 'ri-medal-line', label: 'Oklevél', value: 'PDF' },
+      ],
+      heroChips: [
+        { label: 'Alapfogalmak', onClick: () => this.go('courses') },
+        { label: 'Ajánlattétel', onClick: () => this.go('courses') },
+        { label: 'EKR használata', onClick: () => this.go('courses') },
+        { label: 'Jogorvoslat', onClick: () => this.go('courses') },
+      ],
+      heroStack: [
+        { icon: 'ri-scales-3-line', title: '4 tananyag-modul', sub: 'Alapoktól a jogorvoslatig' },
+        { icon: 'ri-play-list-2-line', title: '69 interaktív lecke', sub: 'Videók, esettanulmányok' },
+        { icon: 'ri-medal-line', title: 'Letölthető oklevél', sub: 'A teljesítés igazolása' },
+      ],
+
+      valueProps,
+      accent: acc.fg,
+      accentBg: acc.bg,
+      homeCourses,
+      steps,
+      stats,
+      showVideo: true,
+      homeNews: news.slice(0, 3),
+
+      email: s.email,
+      onEmail: (e) => this.setState({ email: e.target.value }),
+      onSubscribe: () => { if (s.email.trim()) this.setState({ subscribed: true }); },
+      subscribed: s.subscribed,
+      notSubscribed: !s.subscribed,
+
+      courseCats,
+      filteredCourses,
+      search: s.search,
+      courseSearch: s.search,
+      onCourseSearch: (e) => this.setState({ search: e.target.value }),
+
+      course,
+      moduleGroups: mods,
+
+      moreNews: news.slice(1),
+
+      contactFields,
+      contactMsg: s.cMsg,
+      onContactMsg: (e) => this.setState({ cMsg: e.target.value }),
+      onContactSubmit: () => this.setState({ contactSent: true }),
+      contactSent: s.contactSent,
+      contactNotSent: !s.contactSent,
+      contactInfo,
+      faq,
+
+      footerCols2,
+      loginBenefits,
+    };
+  }
+}
+</script>
+</body>
+</html>

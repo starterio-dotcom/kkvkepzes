@@ -1,0 +1,36 @@
+# --- Titkok / környezet ---
+.env
+.env.*
+!.env.example
+
+# --- Moodle core (upstream forrás, nem verziózzuk) – minden példány ---
+/moodle/
+/moodle-*/
+
+# --- Moodle adat- és feltöltési könyvtár ---
+/moodledata/
+
+# --- Backupok és nagy binárisok (GitHub 100MB limit!) ---
+/backups/
+*.mbz
+
+# A ~139MB-os .mbz és a ~16MB PDF nem mehet a git repóba.
+# Ha kell verziózni, Git LFS-t használjunk.
+Kozbeszerzesi_szakmai_tananyag.pdf
+
+# --- Node / Next.js (bármely szinten, ne csak a web/.gitignore védje) ---
+node_modules/
+.next/
+
+# --- Claude Code lokális (gépfüggő) beállítás ---
+.claude/settings.local.json
+
+# --- Tanúsítványok / privát kulcsok ---
+*.pem
+*.key
+
+# --- OS / editor ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log

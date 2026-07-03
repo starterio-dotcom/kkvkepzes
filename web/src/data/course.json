@@ -1,0 +1,607 @@
+{
+  "title": "Közbeszerzési szakmai tananyag",
+  "source": "https://dev2.kkvkepzes.gov.hu/course/view.php?id=3",
+  "exportedAt": "2026-07-01T10:27:10.048Z",
+  "totalLessons": 49,
+  "images": [
+    "/course/img/ktk-kezdo-1.png",
+    "/course/img/image-1.png",
+    "/course/img/image-3.png",
+    "/course/img/image-4.png",
+    "/course/img/evk-kezdokep.png",
+    "/course/img/image001.jpg",
+    "/course/img/image003.jpg",
+    "/course/img/image.png",
+    "/course/img/image-1.png",
+    "/course/img/image-2.png",
+    "/course/img/image-3.png",
+    "/course/img/benyujtott-ajanlat-visszavonasa.png",
+    "/course/img/image001.jpg",
+    "/course/img/image003-2.jpg",
+    "/course/img/image005.jpg",
+    "/course/img/image-4.png",
+    "/course/img/image.png",
+    "/course/img/image-5.png",
+    "/course/img/image-1.png",
+    "/course/img/image-2.png",
+    "/course/img/aranytlan-alacsony-kezdo.png",
+    "/course/img/image001.jpg",
+    "/course/img/image003.jpg",
+    "/course/img/anyak-kezdo.png",
+    "/course/img/image001.jpg",
+    "/course/img/image003.jpg"
+  ],
+  "sections": [
+    {
+      "key": "I",
+      "title": "Az Elektronikus Közbeszerzési Rendszer (EKR)",
+      "lessons": [
+        {
+          "id": "l1",
+          "num": "I.1",
+          "title": "I.1. Az EKR rövid ismertetése, regisztráció nélkül elérhető felülete",
+          "shortTitle": "Az EKR rövid ismertetése, regisztráció nélkül elérhető felülete",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/ktk-kezdo-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=40"
+        },
+        {
+          "id": "l2",
+          "num": "I.2",
+          "title": "I.2. Személyes fiók létrehozása az EKR felületén",
+          "shortTitle": "Személyes fiók létrehozása az EKR felületén",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=41"
+        },
+        {
+          "id": "l3",
+          "num": "I.3",
+          "title": "I.3. Belépés az EKR felületre, teendők elfelejtett jelszó esetén",
+          "shortTitle": "Belépés az EKR felületre, teendők elfelejtett jelszó esetén",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-3.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=42"
+        },
+        {
+          "id": "l4",
+          "num": "I.4",
+          "title": "I.4. Szervezet regisztráció, szervezethez csatlakozás az EKR-ben",
+          "shortTitle": "Szervezet regisztráció, szervezethez csatlakozás az EKR-ben",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-4.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=43"
+        },
+        {
+          "id": "l5",
+          "num": "I.5",
+          "title": "I.5. Jogosultságok, jogosultságok kezelése az EKR-ben",
+          "shortTitle": "Jogosultságok, jogosultságok kezelése az EKR-ben",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/evk-kezdokep.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=44"
+        },
+        {
+          "id": "l6",
+          "num": "I.6",
+          "title": "I.6. EKR belépést követő felülete, legfontosabb menüpontok és azok felépítése ajánlattevői oldalról",
+          "shortTitle": "EKR belépést követő felülete, legfontosabb menüpontok és azok felépítése ajánlattevői oldalról",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=45"
+        },
+        {
+          "id": "l7",
+          "num": "I.7",
+          "title": "I.7. Érdeklődés jelzése az EKR felületen, eljáráshoz tartozó dokumentumok letöltése",
+          "shortTitle": "Érdeklődés jelzése az EKR felületen, eljáráshoz tartozó dokumentumok letöltése",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=47"
+        },
+        {
+          "id": "l8",
+          "num": "I.8",
+          "title": "I.8. Kiegészítő tájékoztatás kérése az EKR felületen",
+          "shortTitle": "Kiegészítő tájékoztatás kérése az EKR felületen",
+          "paragraphs": [
+            "Amennyiben az Ajánlattevő/Részvételre jelentkező az eljárással kapcsolatban kiegészítő tájékoztatást kérne az Ajánlatkérőtől, akkor azt minden esetben a „KTK - Kiegészítő tájékoztatás kérése” eljárási cselekmény keretein belül tegye meg. A KTK - Kiegészítő tájékoztatás kérése eljárási cselekmény elindításával van lehetőség kiegészítő tájékoztatást kérni az Ajánlatkérőtől az ajánlatunk/részvételi jelentkezésünk összeállításához.",
+            "Ezen eljárási cselekmény technikailag többször is indítható, amennyiben a legutoljára indított kiegészítő tájékoztatás kérése cselekmény lezárásra került. Az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra szükséges kattintani, majd ezt követően a legördülő listából a Kiegészítő tájékoztatás kérése eljárási cselekményt válasszuk ki.",
+            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az eljárási cselekményt az Indít funkciógombbal van lehetőség elindítani, ezt követően a Kommunikáció fülön, a Leírás mezőben 4000 karakterig szabadszövegesen megfogalmazható a tájékoztatás kérés. Új dokumentum csatolása funkciógombbal lehetőséget ad a rendszer dokumentumok csatolására.",
+            "Dokumentum csatolás - a megtekintéshez kattintson ide! Dokumentumot a következőképpen tudunk csatolni: az Új dokumentum csatolása funkciógombra kell kattintani. A megjelenő felületen nyomjuk meg a + Tallóz/csatol gombot és válasszuk ki a feltölteni kívánt dokumentumot. A lenti mezők kitöltésével adjuk meg a dokumentum nevét, típusát, valamint válasszuk ki, hogy a feltölteni kívánt dokumentum üzleti titoknak minősül-e.",
+            "ellenkező esetben a dokumentumfeltöltés folyamatban marad, a rendszer nem engedi az adott eljárási cselekmény lezárását, amiről az EKR hibaüzenetet is küld. A kiegészítő tájékoztatás kérés összeállítását követően, az Értesítés küldése gomb megnyomásával lehetséges azt elküldeni az Ajánlatkérőnek.",
+            "Fontos, hogy az eljárási cselekmény csak akkor minősül megküldöttnek, ha az eljárási cselekmény státusza oszlopban a Kiküldve szerepel. A Cselekmény megszakítása gombbal lehetőség van a cselekmény lezárására kiegészítő tájékoztatás megküldése nélkül. Az Eljárási cselekmény kereső felületen nyomon követhető a kiegészítő tájékoztatás kérés státusza.",
+            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide!"
+          ],
+          "durationMin": 10,
+          "image": "/course/img/image.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=48"
+        },
+        {
+          "id": "l9",
+          "num": "I.9",
+          "title": "I.9. Előzetes vitarendezés kérelem benyújtása az EKR felületen",
+          "shortTitle": "Előzetes vitarendezés kérelem benyújtása az EKR felületen",
+          "paragraphs": [
+            "EKR-ben lefolytatott eljárás esetében az Ajánlattevő az előzetes vitarendezési kérelmet mindenképp az EKR-en keresztül küldje meg az Ajánlatkérő felé. Az EVK - Előzetes vitarendezés kérése eljárási cselekmény célja, hogy előzetes vitarendezési kérelmünket össze tudjuk állítani az EKR rendszeren belül.",
+            "Az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra kell kattintanunk, majd a legördülő mezőből az EVK – Előzetes vitarendezési kérelem benyújtása eljárási cselekményt kell kiválasztanunk. A cselekmény elindításához kattintsunk az Indít funkciógombra.",
+            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Ekkor az EVK010 – Kommunikációs adatok rögzítése feladat jelenik meg, itt a Kommunikáció fül Leírás mezőjében maximum 4000 karakterben megfogalmazva megadhatjuk az előzetes vitarendezési kérelmünket, illetve itt tudunk dokumentumot is csatolni az Új dokumentum csatolása funkciógombra kattintva.",
+            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az előzetes vitarendezési kérelem megküldéséhez az Értesítés küldése gombra kell kattintanunk, az eljárási cselekmény viszont csak abban az esetben minősül megküldöttnek, ha az eljárási cselekmény státusza Kiküldve státuszba kerül.",
+            "Az eljárási cselekmény értesítés megküldése nélküli lezárásához kattintsunk a Cselekmény elvetése gombra. A 2024. április 1-jén hatályba lépő Kbt. módosítás lehetőséget biztosít az összegezés és az eljárás eredményéről szóló hirdetmények részenkénti megküldésére, feladására. Ennek lényege, hogy többrészes uniós eljárásokban, azaz a Kbt.",
+            "Második Rész szerint lefolytatott eljárásokban, valamint a 3. melléklet szerinti szolgáltatások esetén az uniós értékhatárt elérő értékű közbeszerzési eljárásban és az uniós értékhatárt elérő értékű koncessziós beszerzési eljárásokban az ajánlatok bontását követően, az ajánlatok elbírálásáról szóló összegezést és az eljárás eredményéről szóló tájékoztatót lehetőség van most már részenként/részcsoportonként közzétenni.",
+            "A változások tehát nem érintik az uniós eljárásrendben lefolytatásra kerülő egy részes eljárásokat, nemzeti eljárásrendben lefolytatásra kerülő eljárásokat, valamint a 2024. április 1. napját megelőzően megindított eljárásokat sem. Ezzel egyidejűleg az EKR-ben is megtörténtek a szükséges fejlesztések.",
+            "Ennek a pozitív hozadéka például, hogy ha több részes eljárásnál egy rész esetében egy jogorvoslat megakasztja az eljárást, akkor a jogorvoslattal nem érintett többi résznél van lehetőség külön kiküldeni az összegezést, megkötni szerződéseket és feladni az eredménytájékoztatót."
+          ],
+          "durationMin": 11,
+          "image": "/course/img/image-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=49"
+        },
+        {
+          "id": "l10",
+          "num": "I.10",
+          "title": "I.10. Egyéb kommunikáció az EKR felületen",
+          "shortTitle": "Egyéb kommunikáció az EKR felületen",
+          "paragraphs": [
+            "Amennyiben az Ajánlatunkhoz dokumentumokat szeretnénk felcsatolni, azt ne az Egyéb kommunikációs eljárási cselekmény keretein belül tegyük meg, hanem az Ajánlat összeállítása/Részvételi jelentkezés összeállítása eljárási cselekményben. Az AETK – Egyéb kommunikáció (AT) eljárási cselekmény az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgál a közbeszerzési eljárás során, természetesen a jogszabályi előírások figyelembevételével.",
+            "Elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény gombra szükséges kattintani. A legördülő mezőből pedig az AETK – Egyéb kommunikáció (AT) eljárási cselekményt kell kiválasztani és az Indít funkciógombra kell kattintani. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide!",
+            "Ekkor az AETK010 – Kommunikációs adatok rögzítése feladat jelenik meg, ahol a Kommunikáció fül Leírás mezőjében maximum 4000 karakterben megfogalmazva megadható a kért/nyújtani kívánt tájékoztatás, illetve itt van lehetőség dokumentum csatolására is az Új dokumentum csatolása funkciógomb használatával.",
+            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az eljárási cselekmény egyéb kommunikáció kérés megküldése nélkül történő lezárásához válasszuk a Cselekmény megszakítása gombot. Egyéb kommunikáció kérésünk megküldéséhez az Értesítés küldése funkciógombra kell kattintani.",
+            "Fontos azonban, hogy az eljárási cselekmény abban az esetben minősül csak megküldöttnek, ha a cselekmény státusza Kiküldve státuszba kerül. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Ezt az Eljárási cselekmény kereső felületen van lehetőség leellenőrizni. Itt láthatjuk az Ajánlatkérő válaszát is, ennek megtekintéséhez kattintsunk a megfelelő eljárási cselekmény sorban a Megnyitás gombra."
+          ],
+          "durationMin": 9,
+          "image": "/course/img/image-2.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=50"
+        },
+        {
+          "id": "l11",
+          "num": "I.11",
+          "title": "I.11. Ajánlat összeállítása az EKR-ben I: Gazdasági szereplők rögzítése",
+          "shortTitle": "Ajánlat összeállítása az EKR-ben I: Gazdasági szereplők rögzítése",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-3.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=51"
+        },
+        {
+          "id": "l12",
+          "num": "I.12",
+          "title": "I.12. Ajánlat összeállítása az EKR-ben II: elektronikus űrlapok, dokumentumok feltöltése, Egységes Európai Közbeszerzési Dokumentumok, felolvasólap, ajánlat benyújtása, bontás",
+          "shortTitle": "Ajánlat összeállítása az EKR-ben II: elektronikus űrlapok, dokumentumok feltöltése, Egységes Európai Közbeszerzési Dokumentumok, felolvasólap, ajánlat benyújtása, bontás",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/benyujtott-ajanlat-visszavonasa.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=52"
+        },
+        {
+          "id": "l13",
+          "num": "I.13",
+          "title": "I.13. Sablonok használata az EKR-ben",
+          "shortTitle": "Sablonok használata az EKR-ben",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=53"
+        },
+        {
+          "id": "l14",
+          "num": "I.14",
+          "title": "I.14. Benyújtott ajánlat visszavonása, ajánlat módosítása az EKR felületen",
+          "shortTitle": "Benyújtott ajánlat visszavonása, ajánlat módosítása az EKR felületen",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003-2.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=54"
+        },
+        {
+          "id": "l15",
+          "num": "I.15",
+          "title": "I.15. Benyújtott ajánlat visszavonása az EKR-ben bontást követően",
+          "shortTitle": "Benyújtott ajánlat visszavonása az EKR-ben bontást követően",
+          "paragraphs": [
+            "Kiemelendő, hogy Ajánlattevőnek érdemes alaposan megfontolni ezen döntését, ugyanis ez a művelet nem visszavonható. Amennyiben az Ajánlattevő az ajánlatok bontását követően szeretné visszavonni az ajánlatát, azt az AVV – Ajánlat visszavonása eljárási cselekménnyel tudja megtenni. Az eljárási cselekmény elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra szükséges kattintani.",
+            "Itt a legördülő mezőből kerüljön kiválasztásra az Ajánlat visszavonása eljárási cselekmény és az Indít gombra kattintva indítható. Abban az esetben, ha Ajánlattevő szeretné megszakítani a folyamatot, akkor meg a Mégsem gombot kell megnyomni. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide!",
+            "Az Indít gomb megnyomását követően a Kommunikáció felületre navigál a rendszer. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az Indít gomb megnyomását követően megjelenő Kommunikáció fülön adható meg szövegesen az ajánlat visszavonásának indoklása, a Visszavonás indoklása mezőben.",
+            "Dokumentum csatolására is lehetőségünk van. A cselekmény lezárásához az Ajánlat visszavonása funkciógombot kell megnyomni, ezen lépéssel az ajánlat a Visszavont ajánlat státuszba kerül. A Cselekmény megszakítása gomb megnyomásával az ajánlat visszavonása nélkül lezárható a cselekmény.",
+            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az AVV – Ajánlat visszavonása eljárási cselekménnyel megegyező módon működik az RVV – Részvételi jelentkezés visszavonása eljárási cselekmény."
+          ],
+          "durationMin": 8,
+          "image": "/course/img/image005.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=55"
+        },
+        {
+          "id": "l16",
+          "num": "I.16",
+          "title": "I.16. Hiánypótlás benyújtása, felvilágosítás kérés megválaszolása az EKR felületen",
+          "shortTitle": "Hiánypótlás benyújtása, felvilágosítás kérés megválaszolása az EKR felületen",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-4.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=56"
+        },
+        {
+          "id": "l17",
+          "num": "I.17",
+          "title": "I.17. Igazolások benyújtása az EKR felületen",
+          "shortTitle": "Igazolások benyújtása az EKR felületen",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=57"
+        },
+        {
+          "id": "l18",
+          "num": "I.18",
+          "title": "I.18. Számítási hiba javítása az EKR felületen",
+          "shortTitle": "Számítási hiba javítása az EKR felületen",
+          "paragraphs": [
+            "Amennyiben az Ajánlatkérő felkéri az Ajánlattevőt a számítási hiba javítására, akkor azt minden esetben a „TSZJ – Számítási hiba javítása eljárási cselekmény” keretein belül van lehetőség megtenni. A „TSZJ – Számítási hiba javítása eljárási cselekmény” az ajánlatban szereplő számítási hiba javítására szolgál (az ajánlatkérő kérésének megfelelően, valamint a jogszabályokkal összhangban).",
+            "Fontos megjegyezni, hogy a „Számítási hiba javítása eljárási cselekménnyel” párhuzamosan nem indítható a Hiánypótlás összeállítása eljárási cselekmény, egyidejűleg nem lehet folyamatban mindkét eljárási cselekmény. „Számítási hiba javítása eljárási cselekményt” a következőképpen lehet elindítani: Az Eljárási cselekmény kereső oldalon a lap alján az Új eljárási cselekmény gombot kell megnyomni, majd a legördülő mezőből a „TSZJ – Számítási hiba javítása eljárási cselekményt” kell kiválasztani.",
+            "Az Indít gombra kattintva van lehetőség elindítani a cselekményt. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! Ezt követően a megfelelő űrlapon javítani lehet a számítási hibát az Ajánlatkérő kérésének megfelelően, illetve dokumentum feltöltésére is lehetőség nyílik. Ha elvégezésre kerültek a szükséges módosítások, az Adatok formai ellenőrzése funkciógombra kell kattintani.",
+            "Ekkor a rendszer hibaüzenetben jelzi és pirossal ki is jelöli a hibás űrlapokat, amennyiben van még hiányzó- vagy hibás formátumú adat. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! A hiányzó- vagy hibás formátumú adatok javítását követően, az Adatok rögzítve gomb megnyomásával válik elérhetővé a Javítás benyújtása funkciógomb.",
+            "Erre kattintva nyílik lehetőség a „Számítási hiba javítása eljárási cselekményt” benyújtani. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! A Javítás benyújtása előtt azonban célszerű lehet az Ajánlati dokumentáció → Hiánypótlás/számítási hiba rövid összefoglalója menüre kattintva listát készíteni azokról az űrlapokról, ahol módosításokat hajtottunk végre.",
+            "Kapcsolódó képernyőkép - a megtekintéshez kattintson ide!"
+          ],
+          "durationMin": 10,
+          "image": "/course/img/image-5.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=58"
+        },
+        {
+          "id": "l19",
+          "num": "I.19",
+          "title": "I.19. Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása az EKR felületen",
+          "shortTitle": "Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása az EKR felületen",
+          "paragraphs": [
+            "Amennyiben az Ajánlatkérő felkéri az Ajánlattevőt arra, hogy indokolja meg az aránytalanul alacsony árat-, illetve egyéb, aránytalan vállalását, akkor azt az Ajánlattevő minden esetben az „AAIB - Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása” eljárási cselekmény keretein belül tegye meg.",
+            "Amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, akkor Ajánlattevőkent, az AAIB - Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása válasz cselekménnyel tudunk ennek eleget tenni. Az EKR-ben kifejezetten erre a célra került kialakításra egy felület, ahol lehetőségünk van arra, hogy elkészítsük az aránytalanul alacsony ár vagy egyéb aránytalan vállalás indokolását, valamint dokumentumot is csatolhatunk.",
+            "Ezen eljárási cselekmény technikailag többször is indítható, amennyiben az utolsó Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása cselekmény lezárásra került. Az Eljárási cselekmény kereső felületen, az oldal alján kattintsunk az Új eljárási cselekmény funkciógombra, majd válasszuk ki az indítható eljárási cselekmények közül az „Aránytalanul alacsony ár és egyéb aránytalan vállalás esetében indokolás benyújtása” eljárási cselekményt.",
+            "Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! Az Indít gomb megnyomásával a Kommunikáció menüpontba navigál a rendszer, ahol szövegesen is megadhatjuk az aránytalanul alacsony ár, és egyéb aránytalan vállalások esetében kért indokolást a Leírás mezőben, illetve dokumentumot is tudunk csatolni az eljárási cselekményen belül.",
+            "Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! Az Értesítés küldése gomb megnyomásával az aránytalanul alacsony ár, és egyéb aránytalan vállalások esetében az indokolás elküldésre kerül. Az eljárási cselekmény akkor minősül megküldöttnek, ha az eljárási cselekmény státusza Kiküldve státuszba kerül.",
+            "Az indokolást a benyújtási határidő lejártát megelőzően is van lehetősége az Ajánlatkérőnek ellenőrizni az indokolást. A Cselekmény megszakítása gombbal a folyamat értesítés küldése nélkül lezárul."
+          ],
+          "durationMin": 10,
+          "image": "/course/img/image-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=59"
+        },
+        {
+          "id": "l20",
+          "num": "I.20",
+          "title": "I.20. Ajánlati kötöttség fenntartása az EKR-ben",
+          "shortTitle": "Ajánlati kötöttség fenntartása az EKR-ben",
+          "paragraphs": [
+            "Amennyiben az Ajánlatkérő felkéri az Ajánlattevőt az ajánlati kötöttség fenntartására, akkor azt az Ajánlattevő minden esetben az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekmény eljárási cselekmény keretein belül tegye meg. Ha az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttségünk fenntartására vonatkozó kérés érkezik, akkor azt az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekmény segítségével lehet megválaszolni.",
+            "A cselekmény elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra kell kattintani. A legördülő mezőből az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekményt kell kiválasztani, s az Indít gombra kell kattintani. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide!",
+            "Mégsem gombra kattintva lehetőség van megszakítani a folyamatot. Az Indít gomb megnyomását követően a rendszer a Kommunikáció fülre irányít, itt a Leírás mezőben szövegesen tudjuk megfogalmazni a válaszunkat, illetve itt is lehetőségünk van dokumentumok csatolására. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide!",
+            "Válaszunkat az Értesítés küldése gomb megnyomásával tudjuk elküldeni. Ekkor az eljárási cselekmény státusza Kiküldve státuszba kerül. Mindig győződjünk meg róla, hogy ez megtörtént-e, mivel csak ebben az esetben minősül megküldöttnek a válaszunk! Az eljárási cselekmény válasz küldése nélküli lezárásához használjuk a Cselekmény elvetése gombot."
+          ],
+          "durationMin": 8,
+          "image": "/course/img/image-2.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=60"
+        }
+      ]
+    },
+    {
+      "key": "II",
+      "title": "Ajánlatkérői folyamatok az EKR-ben",
+      "lessons": [
+        {
+          "id": "l21",
+          "num": "II.1",
+          "title": "II.1. A közbeszerzés fogalma, célja és a közbeszerzés mint üzleti lehetőség",
+          "shortTitle": "A közbeszerzés fogalma, célja és a közbeszerzés mint üzleti lehetőség",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/aranytlan-alacsony-kezdo.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=5"
+        },
+        {
+          "id": "l22",
+          "num": "II.2",
+          "title": "II.2. A közbeszerzési eljárások ajánlattételt érintő főbb sajátosságai",
+          "shortTitle": "A közbeszerzési eljárások ajánlattételt érintő főbb sajátosságai",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=6"
+        },
+        {
+          "id": "l23",
+          "num": "II.3",
+          "title": "II.3. A gazdasági szereplők (a vállalkozások) alanyi oldala",
+          "shortTitle": "A gazdasági szereplők (a vállalkozások) alanyi oldala",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=7"
+        },
+        {
+          "id": "l24",
+          "num": "II.4",
+          "title": "II.4. A közbeszerzési ajánlattétel alapvető feltételei és lépései",
+          "shortTitle": "A közbeszerzési ajánlattétel alapvető feltételei és lépései",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/anyak-kezdo.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=8"
+        },
+        {
+          "id": "l25",
+          "num": "II.5",
+          "title": "II.5. Az ajánlattételhez kapcsolódó eljárási cselekmények és az ajánlatok bontása",
+          "shortTitle": "Az ajánlattételhez kapcsolódó eljárási cselekmények és az ajánlatok bontása",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=9"
+        },
+        {
+          "id": "l26",
+          "num": "II.6",
+          "title": "II.6. Az ajánlat tartalmi elemei",
+          "shortTitle": "Az ajánlat tartalmi elemei",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=10"
+        },
+        {
+          "id": "l27",
+          "num": "II.7",
+          "title": "II.7. A főbb eljárási cselekmények a bírálat során, döntéshozatal, szerződéskötés",
+          "shortTitle": "A főbb eljárási cselekmények a bírálat során, döntéshozatal, szerződéskötés",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/ktk-kezdo-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=11"
+        },
+        {
+          "id": "l28",
+          "num": "II.8",
+          "title": "II.8. Az integritás, a korrupció elkerülése és a verseny tisztasága",
+          "shortTitle": "Az integritás, a korrupció elkerülése és a verseny tisztasága",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=12"
+        }
+      ]
+    },
+    {
+      "key": "III",
+      "title": "Eljárási cselekmények és dokumentáció",
+      "lessons": [
+        {
+          "id": "l29",
+          "num": "III.1",
+          "title": "III.1. A szerződések teljesítésének szabályozása",
+          "shortTitle": "A szerződések teljesítésének szabályozása",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-3.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=15"
+        },
+        {
+          "id": "l30",
+          "num": "III.2",
+          "title": "III.2. A szerződés teljesítését meghatározó körülmények",
+          "shortTitle": "A szerződés teljesítését meghatározó körülmények",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-4.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=16"
+        },
+        {
+          "id": "l31",
+          "num": "III.3",
+          "title": "III.3. Felkészülés a teljesítésre – a hatálybalépés és a teljesítés megkezdése",
+          "shortTitle": "Felkészülés a teljesítésre – a hatálybalépés és a teljesítés megkezdése",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/evk-kezdokep.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=17"
+        },
+        {
+          "id": "l32",
+          "num": "III.4",
+          "title": "III.4. A teljesítésben közreműködő alanyok",
+          "shortTitle": "A teljesítésben közreműködő alanyok",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=18"
+        },
+        {
+          "id": "l33",
+          "num": "III.5",
+          "title": "III.5. A teljesítés mennyisége: az opciók és a mennyiségi eltérések",
+          "shortTitle": "A teljesítés mennyisége: az opciók és a mennyiségi eltérések",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=19"
+        },
+        {
+          "id": "l34",
+          "num": "III.6",
+          "title": "III.6. Az ellenszolgáltatás kifizetése",
+          "shortTitle": "Az ellenszolgáltatás kifizetése",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=20"
+        },
+        {
+          "id": "l35",
+          "num": "III.7",
+          "title": "III.7. A szerződések módosítása",
+          "shortTitle": "A szerződések módosítása",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=21"
+        },
+        {
+          "id": "l36",
+          "num": "III.8",
+          "title": "III.8. Az egyes szerződésmódosítási jogalapok részletei",
+          "shortTitle": "Az egyes szerződésmódosítási jogalapok részletei",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-2.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=22"
+        },
+        {
+          "id": "l37",
+          "num": "III.9",
+          "title": "III.9. A jogellenes szerződésmódosítás jogkövetkezményei",
+          "shortTitle": "A jogellenes szerződésmódosítás jogkövetkezményei",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-3.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=23"
+        },
+        {
+          "id": "l38",
+          "num": "III.10",
+          "title": "III.10. A szerződések teljesítéséhez kapcsolódó további kérdések és kockázatok",
+          "shortTitle": "A szerződések teljesítéséhez kapcsolódó további kérdések és kockázatok",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/benyujtott-ajanlat-visszavonasa.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=24"
+        },
+        {
+          "id": "l39",
+          "num": "III.11",
+          "title": "III.11. Az integritás és a korrupció elkerülése",
+          "shortTitle": "Az integritás és a korrupció elkerülése",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=25"
+        }
+      ]
+    },
+    {
+      "key": "IV",
+      "title": "Értékelés, eredmény és jogorvoslat",
+      "lessons": [
+        {
+          "id": "l40",
+          "num": "IV.1",
+          "title": "IV.1. A közbeszerzési jogviták általános jellemzői",
+          "shortTitle": "A közbeszerzési jogviták általános jellemzői",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003-2.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=28"
+        },
+        {
+          "id": "l41",
+          "num": "IV.2",
+          "title": "IV.2. A jogorvoslati eljárást megalapozó körülmények, a célok és a lehetséges eredmények",
+          "shortTitle": "A jogorvoslati eljárást megalapozó körülmények, a célok és a lehetséges eredmények",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image005.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=29"
+        },
+        {
+          "id": "l42",
+          "num": "IV.3",
+          "title": "IV.3. Az alanyok",
+          "shortTitle": "Az alanyok",
+          "paragraphs": [
+            "Az egyik legfontosabb kérdés, hogy kik vesznek, vehetnek részt milyen pozícióban egy jogorvoslati eljárásban, és ezeket az alanyokat hogyan nevezik? A kérelmező – és a hivatalból lefolytatott jogorvoslati eljárást kezdeményező – személye a fentiekben már ismertetésre került. Általában az ajánlatkérő a „támadott” fél, vagyis akinek az eljárásával, beszerzésével szerződésmódosításával stb.",
+            "szemben kérelmet vagy hivatalból kezdeményezést nyújtanak be. Az eljárási megnevezés ennek megfelelően „ajánlatkérő”, de ha közbeszerzési eljárás jogtalan mellőzése a jogorvoslati eljárás tárgya, akkor „beszerző” elnevezés használatos. Aki a jogorvoslati kérelmet benyújtja – jellemzően az ajánlattevő –, az a „kérelmező”, de ha az ajánlatkérő a jogsértése orvoslása érdekében a saját eljárásával szemben nyújt be kérelmet, akkor ő is kérelmezőként jelenik meg.",
+            "De az ajánlatkérő is lehet „támadó” fél valamely ajánlattevővel szemben, például akkor, ha a nyertes ajánlattevő az összegezés megküldését követően jogellenesen tagadja meg a szerződés megkötését, jogellenesen lép vissza, és emiatt az ajánlatkérő a KDB-hez fordul. „Kérelmezett” az, aki az ajánlatkérőn/beszerzőn felül szintén „támadott” fél, és akit ügyfélként vonnak be az eljárásba.",
+            "Az ő esetében kulcsfontosságú, hogy milyen nyilatkozatot tesz, hogyan tud védekezni, milyen bizonyítékokat képes előterjeszteni, hiszen a jogorvoslati eljárás végkifejlete közvetlenül érinti. Így például a nyertes ajánlattevőként szerződő fél kérelmezettként jelenik meg, ha: · jogellenes szerződésmódosítás a jogorvoslati eljárás tárgya, vagy · hamis adatszolgáltatás gyanúját veti fel vele szemben egy másik kérelmező, · a szerződés megkötésének jogellenes megtagadása miatt nyújt be nyertes ajánlattevővel szemben kérelmet az ajánlatkérő.",
+            "A „kérelmezett” tehát többet kockáztat, mint egy „egyszerű” egyéb érdekelt, ugyanis vele szemben jogsértés állapítható meg, így például bírságot is kockáztat, ebből adódóan az esetükben az ügyféli jogokra, a tisztességes eljáráshoz való jog érvényesítésére különös hangsúlyt kell fektetni.",
+            "„Egyéb érdekelt” az: · akinek a jogorvoslati eljárás eredménye akár közömbös, vagy kevésbé fontos, · vagy bár az eredmény a nyertesség szempontjából döntő jelentőségű, mégsem kell számára közvetlen ügyféli pozíciót biztosítani, hiszen jogsértés megvalósítójaként nem merülhet fel. Például, ha az ajánlatkérő az ajánlattevőt az ajánlatok elbírálásáról szóló összegzésben nyertes ajánlattevőként tüntette fel, a második helyezett pedig vitatja a nyertes ajánlat érvényességét.",
+            "Ilyen esetben a nyertes ajánlattevő érdeke nyilván az, hogy a jogorvoslati eljárásban az ajánlatkérő döntésének jogszerűsége mellett érveljen, de nem az ő, hanem az ajánlatkérő döntése képezi a jogvita tárgyát, így ő nem valósíthatott meg jogsértést. Hiszen nem ő döntött az ajánlat érvényességéről és nyertességéről, ez az ajánlatkérő felelősségi körébe tartozik.",
+            "Nyilván bekapcsolódhat a jogorvoslati eljárásba, tehet észrevételt, az érdeke az, hogy az ajánlatkérő döntése jogszerűnek bizonyuljon, és a nyertesi pozíciója megmaradjon, az ajánlatkérő nyertességének előmozdítása áll az érdekében."
+          ],
+          "durationMin": 13,
+          "image": "/course/img/image-4.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=30"
+        },
+        {
+          "id": "l43",
+          "num": "IV.4",
+          "title": "IV.4. Felkészülés a jogorvoslati eljárásra",
+          "shortTitle": "Felkészülés a jogorvoslati eljárásra",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=31"
+        },
+        {
+          "id": "l44",
+          "num": "IV.5",
+          "title": "IV.5. Az eljárási akadályok kérdése",
+          "shortTitle": "Az eljárási akadályok kérdése",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-5.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=32"
+        },
+        {
+          "id": "l45",
+          "num": "IV.6",
+          "title": "IV.6. A kérelem elkészítése és benyújtása – a jogorvoslati eljárás megindulása és megindítása",
+          "shortTitle": "A kérelem elkészítése és benyújtása – a jogorvoslati eljárás megindulása és megindítása",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-1.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=33"
+        },
+        {
+          "id": "l46",
+          "num": "IV.7",
+          "title": "IV.7. A jogorvoslati kérelem visszavonásának lehetősége",
+          "shortTitle": "A jogorvoslati kérelem visszavonásának lehetősége",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image-2.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=34"
+        },
+        {
+          "id": "l47",
+          "num": "IV.8",
+          "title": "IV.8. A jogorvoslati eljárás lefolytatása",
+          "shortTitle": "A jogorvoslati eljárás lefolytatása",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/aranytlan-alacsony-kezdo.png",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=35"
+        },
+        {
+          "id": "l48",
+          "num": "IV.9",
+          "title": "IV.9. A jogkövetkezmények",
+          "shortTitle": "A jogkövetkezmények",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image001.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=36"
+        },
+        {
+          "id": "l49",
+          "num": "IV.10",
+          "title": "IV.10. Az eljárási költségek",
+          "shortTitle": "Az eljárási költségek",
+          "paragraphs": [],
+          "durationMin": 3,
+          "image": "/course/img/image003.jpg",
+          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=37"
+        }
+      ]
+    }
+  ]
+}

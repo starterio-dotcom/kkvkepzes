@@ -1,0 +1,371 @@
+/* ============================================================
+   DÁP Design System — Colors, Type, Spacing, Elevation
+   Source: DÁP (Digitális Állampolgárság Program) Figma 1.3
+   ============================================================ */
+
+/* ---------- FONTS ---------- */
+/* The design system uses Inter exclusively (primary + secondary).
+   Roboto Mono is used in a single place for code/utility labels. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap");
+
+:root {
+  /* ============================================================
+     1. CORE COLOR FOUNDATIONS
+     20-step scales (100 lightest → 2000 darkest)
+     ============================================================ */
+
+  /* Indigo — used as Brand by default */
+  --indigo-100: #f0f3ff;
+  --indigo-200: #e0e7ff;
+  --indigo-300: #cfdeff;
+  --indigo-400: #b6caff;
+  --indigo-500: #a5c6ff;
+  --indigo-600: #8aaaff;
+  --indigo-700: #6a8adb;
+  --indigo-800: #647aff;
+  --indigo-900: #4258ed;   /* brand primary */
+  --indigo-1000: #3130ab;
+  --indigo-1100: #2c2d99;
+  --indigo-1200: #262d71;
+  --indigo-1300: #1f2660;
+  --indigo-1400: #181f4f;
+  --indigo-1500: #131a44;
+  --indigo-1600: #0e1538;
+  --indigo-1700: #0b1130;
+  --indigo-1800: #080d28;
+  --indigo-1900: #050920;
+  --indigo-2000: #030616;
+
+  /* Cold Grey — used as Neutral by default */
+  --cold-grey-100: #ffffff;
+  --cold-grey-200: #f5f7fa;
+  --cold-grey-300: #e9edf2;
+  --cold-grey-400: #d1d7df;
+  --cold-grey-500: #c2c9d2;
+  --cold-grey-600: #a3abba;
+  --cold-grey-700: #8a93a3;
+  --cold-grey-800: #707a8a;
+  --cold-grey-900: #606b7a;
+  --cold-grey-1000: #4a5363;
+  --cold-grey-1100: #404753;
+  --cold-grey-1200: #353b46;
+  --cold-grey-1300: #2c313a;
+  --cold-grey-1400: #262a32;
+  --cold-grey-1500: #1f232a;
+  --cold-grey-1600: #1c1f26;
+  --cold-grey-1700: #161920;
+  --cold-grey-1800: #11141a;
+  --cold-grey-1900: #0c0e13;
+  --cold-grey-2000: #06080d;
+
+  /* Semantic Blue — used as Informative by default */
+  --semantic-blue-100: #f0f7fc;
+  --semantic-blue-200: #e0eff8;
+  --semantic-blue-300: #cee6f3;
+  --semantic-blue-400: #a8d6ec;
+  --semantic-blue-500: #7fc4e3;
+  --semantic-blue-600: #51b1d9;
+  --semantic-blue-700: #2e9fcc;
+  --semantic-blue-800: #098dbc;
+  --semantic-blue-900: #00729b;
+  --semantic-blue-1000: #00587a;
+  --semantic-blue-1100: #00496a;
+  --semantic-blue-1200: #003e5c;
+  --semantic-blue-1300: #00344f;
+  --semantic-blue-1400: #002a42;
+  --semantic-blue-1500: #002336;
+  --semantic-blue-1600: #001c2c;
+  --semantic-blue-1700: #001624;
+  --semantic-blue-1800: #00111b;
+  --semantic-blue-1900: #000c14;
+  --semantic-blue-2000: #00080e;
+
+  /* Semantic Green — used as Positive by default */
+  --semantic-green-100: #f0fff8;
+  --semantic-green-200: #dffaef;
+  --semantic-green-300: #c2f5e0;
+  --semantic-green-400: #5fe9aa;
+  --semantic-green-500: #18cf6f;
+  --semantic-green-600: #11ad5c;
+  --semantic-green-700: #0d8f4a;
+  --semantic-green-800: #097338;
+  --semantic-green-900: #005012;
+  --semantic-green-1000: #004410;
+  --semantic-green-1100: #00390e;
+  --semantic-green-1200: #002f0b;
+  --semantic-green-1300: #002608;
+  --semantic-green-1400: #001f07;
+  --semantic-green-1500: #001805;
+  --semantic-green-1600: #001304;
+  --semantic-green-1700: #000e03;
+  --semantic-green-1800: #000a02;
+  --semantic-green-1900: #000801;
+  --semantic-green-2000: #000400;
+
+  /* Semantic Orange — used as Warning by default */
+  --semantic-orange-100: #fff6ed;
+  --semantic-orange-200: #ffeed8;
+  --semantic-orange-300: #ffe1bd;
+  --semantic-orange-400: #ffc890;
+  --semantic-orange-500: #ffaa55;
+  --semantic-orange-600: #ff9759;
+  --semantic-orange-700: #ff8a17;
+  --semantic-orange-800: #e05514;
+  --semantic-orange-900: #b94400;
+  --semantic-orange-1000: #9a3700;
+  --semantic-orange-1100: #7d2c00;
+  --semantic-orange-1200: #682400;
+  --semantic-orange-1300: #561d00;
+  --semantic-orange-1400: #461700;
+  --semantic-orange-1500: #391300;
+  --semantic-orange-1600: #2d0f00;
+  --semantic-orange-1700: #240c00;
+  --semantic-orange-1800: #1b0900;
+  --semantic-orange-1900: #130600;
+  --semantic-orange-2000: #0a0300;
+
+  /* Semantic Red — used as Negative by default */
+  --semantic-red-100: #fff2f1;
+  --semantic-red-200: #ffe4e1;
+  --semantic-red-300: #fdd0cc;
+  --semantic-red-400: #faa49b;
+  --semantic-red-500: #f57b6e;
+  --semantic-red-600: #ee5d4d;
+  --semantic-red-700: #e7402d;
+  --semantic-red-800: #d40d00;
+  --semantic-red-900: #b30b00;
+  --semantic-red-1000: #8e0000;
+  --semantic-red-1100: #770000;
+  --semantic-red-1200: #620000;
+  --semantic-red-1300: #500000;
+  --semantic-red-1400: #410000;
+  --semantic-red-1500: #340000;
+  --semantic-red-1600: #2a0000;
+  --semantic-red-1700: #210000;
+  --semantic-red-1800: #190000;
+  --semantic-red-1900: #110000;
+  --semantic-red-2000: #090000;
+
+  /* Teal */
+  --teal-900: #00736e;
+  --teal-500: #4dd0b0;
+
+  /* Azure */
+  --azure-900: #006a99;
+  --azure-500: #29c5f0;
+
+  /* Violet */
+  --violet-900: #9747ff;
+  --violet-500: #b199fe;
+  --violet-400: #d6c3ff;
+
+  /* Black & White alphas (commonly used for shadows / overlays) */
+  --black-alpha-5: rgba(0, 0, 0, 0.05);
+  --black-alpha-6: rgba(0, 0, 0, 0.06);
+  --black-alpha-8: rgba(0, 0, 0, 0.08);
+  --black-alpha-10: rgba(0, 0, 0, 0.10);
+  --black-alpha-20: rgba(0, 0, 0, 0.20);
+  --black-alpha-40: rgba(0, 0, 0, 0.40);
+  --black-alpha-60: rgba(0, 0, 0, 0.60);
+  --black-alpha-80: rgba(0, 0, 0, 0.80);
+  --white-alpha-10: rgba(255, 255, 255, 0.10);
+  --white-alpha-20: rgba(255, 255, 255, 0.20);
+  --white-alpha-40: rgba(255, 255, 255, 0.40);
+  --white-alpha-80: rgba(255, 255, 255, 0.80);
+
+  /* ============================================================
+     2. SEMANTIC / THEME TOKENS
+     The system maps every palette into a role.
+     ============================================================ */
+
+  /* Brand (Indigo by default) */
+  --brand-subtle: var(--indigo-200);
+  --brand-soft:   var(--indigo-500);
+  --brand:        var(--indigo-900);   /* #4258ED */
+  --brand-strong: var(--indigo-1000);
+  --brand-deep:   var(--indigo-1400);
+
+  /* Neutral (Cold Grey by default) */
+  --neutral-canvas: var(--cold-grey-100);   /* page bg */
+  --neutral-surface: var(--cold-grey-200);  /* card / panel bg */
+  --neutral-border: var(--cold-grey-300);   /* divider */
+  --neutral-border-strong: var(--cold-grey-400);
+  --neutral-fg-tertiary: var(--cold-grey-900);  /* meta */
+  --neutral-fg-secondary: var(--cold-grey-1100); /* body */
+  --neutral-fg-primary: var(--cold-grey-1500);   /* headings */
+  --neutral-fg-strong: var(--cold-grey-1700);
+
+  /* Informative (Semantic Blue) */
+  --info-subtle: var(--semantic-blue-200);
+  --info: var(--semantic-blue-900);
+
+  /* Positive (Semantic Green) */
+  --positive-subtle: var(--semantic-green-200);
+  --positive: var(--semantic-green-900);
+
+  /* Warning (Semantic Orange) */
+  --warning-subtle: var(--semantic-orange-200);
+  --warning: var(--semantic-orange-900);
+
+  /* Negative (Semantic Red) */
+  --negative-subtle: var(--semantic-red-200);
+  --negative: var(--semantic-red-800);   /* #D40D00 */
+  --negative-strong: var(--semantic-red-1100);
+
+  /* ============================================================
+     3. TYPOGRAPHY
+     Family — primary + secondary are both Inter.
+     ============================================================ */
+  --font-primary: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-secondary: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Size scale (px) */
+  --text-2xs: 10px;
+  --text-xs:  12px;
+  --text-sm:  14px;
+  --text-base: 16px;
+  --text-lg:  18px;
+  --text-xl:  20px;
+  --text-2xl: 22px;
+  --text-3xl: 24px;
+  --text-4xl: 28px;
+  --text-5xl: 32px;
+  --text-6xl: 36px;
+  --text-7xl: 40px;
+  --text-8xl: 46px;
+  --text-9xl: 52px;
+  --text-10xl: 58px;
+  --text-11xl: 66px;
+  --text-12xl: 74px;
+
+  /* Weight — only Medium and Bold are used in practice */
+  --weight-medium: 500;
+  --weight-bold:   700;
+
+  /* Line-height: 1.25 for headings, 1.5 for body */
+  --lh-tight: 1.25;
+  --lh-body:  1.5;
+
+  /* Letter-spacing: -0.02em on most headings */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+
+  /* ============================================================
+     4. SEMANTIC TYPE TOKENS
+     ============================================================ */
+  --type-display: var(--weight-bold) var(--text-12xl)/var(--lh-tight) var(--font-primary);
+  --type-h1: var(--weight-bold) var(--text-7xl)/var(--lh-tight) var(--font-primary);
+  --type-h2: var(--weight-bold) var(--text-5xl)/var(--lh-tight) var(--font-primary);
+  --type-h3: var(--weight-bold) var(--text-3xl)/var(--lh-tight) var(--font-primary);
+  --type-h4: var(--weight-bold) var(--text-xl)/var(--lh-tight) var(--font-primary);
+  --type-h5: var(--weight-bold) var(--text-lg)/var(--lh-tight) var(--font-primary);
+  --type-h6: var(--weight-bold) var(--text-base)/var(--lh-tight) var(--font-primary);
+  --type-body-lg: var(--weight-medium) var(--text-lg)/var(--lh-body) var(--font-primary);
+  --type-body: var(--weight-medium) var(--text-base)/var(--lh-body) var(--font-primary);
+  --type-body-sm: var(--weight-medium) var(--text-sm)/var(--lh-body) var(--font-primary);
+  --type-label: var(--weight-bold) var(--text-xs)/var(--lh-body) var(--font-primary);
+  --type-button: var(--weight-bold) var(--text-base)/1 var(--font-primary);
+  --type-code: var(--weight-medium) var(--text-base)/var(--lh-body) var(--font-mono);
+
+  /* ============================================================
+     5. SPACING (px) — scale is named in 100s, ascending
+     ============================================================ */
+  --space-0:    0;
+  --space-100:  4px;
+  --space-200:  8px;
+  --space-300:  12px;
+  --space-400:  16px;
+  --space-500:  20px;
+  --space-600:  24px;
+  --space-700:  28px;
+  --space-800:  32px;
+  --space-1000: 40px;
+  --space-1200: 48px;
+  --space-1400: 56px;
+  --space-1600: 64px;
+  --space-1800: 72px;
+  --space-2000: 80px;
+  --space-2400: 96px;
+  --space-3000: 120px;
+  --space-3200: 160px;
+  --space-4000: 200px;
+  --space-6000: 240px;
+
+  /* ============================================================
+     6. RADIUS
+     ============================================================ */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ============================================================
+     7. ICON SIZES
+     ============================================================ */
+  --icon-xsmall: 12px;
+  --icon-small:  16px;
+  --icon-base:   20px;
+  --icon-medium: 24px;
+  --icon-large:  32px;
+
+  /* ============================================================
+     8. ELEVATION
+     Layered soft drop-shadows. Positive numbers float
+     above the page; negative numbers sit inset / below.
+     ============================================================ */
+  --elevation-100: 0 1px 2px var(--black-alpha-6), 0 1px 3px var(--black-alpha-8);
+  --elevation-200: 0 2px 4px var(--black-alpha-6), 0 4px 8px var(--black-alpha-8);
+  --elevation-300: 0 4px 8px var(--black-alpha-6), 0 8px 16px var(--black-alpha-8);
+  --elevation-400: 0 8px 16px var(--black-alpha-6), 0 16px 32px var(--black-alpha-8);
+  --elevation-500: 0 16px 32px var(--black-alpha-6), 0 24px 48px var(--black-alpha-8);
+  --elevation-600: 0 24px 56px var(--black-alpha-8), 0 40px 80px var(--black-alpha-10);
+
+  --elevation-inset-100: inset 0 1px 2px var(--black-alpha-6);
+  --elevation-inset-200: inset 0 2px 4px var(--black-alpha-8);
+  --elevation-inset-300: inset 0 4px 8px var(--black-alpha-8);
+
+  /* ============================================================
+     9. FOCUS RING — used on every interactive element
+     Two-layer: 2px brand outline + 2px white halo
+     ============================================================ */
+  --focus-ring: 0 0 0 2px var(--neutral-canvas), 0 0 0 4px var(--brand);
+
+  /* ============================================================
+     10. BORDER WIDTHS
+     ============================================================ */
+  --border-1: 1px;
+  --border-2: 2px;
+
+  /* ============================================================
+     11. CONTAINER BREAKPOINTS
+     ============================================================ */
+  --bp-sm: 640px;
+  --bp-md: 1024px;
+  --bp-lg: 1440px;
+  --bp-xl: 1920px;
+}
+
+/* ============================================================
+   Type primitives
+   Use these classes (or compose with the tokens above)
+   ============================================================ */
+.dap-display { font: var(--type-display); letter-spacing: var(--tracking-tight); color: var(--neutral-fg-primary); }
+.dap-h1 { font: var(--type-h1); letter-spacing: var(--tracking-tight); color: var(--neutral-fg-primary); }
+.dap-h2 { font: var(--type-h2); letter-spacing: var(--tracking-tight); color: var(--neutral-fg-primary); }
+.dap-h3 { font: var(--type-h3); color: var(--neutral-fg-primary); }
+.dap-h4 { font: var(--type-h4); color: var(--neutral-fg-primary); }
+.dap-h5 { font: var(--type-h5); color: var(--neutral-fg-primary); }
+.dap-h6 { font: var(--type-h6); color: var(--neutral-fg-primary); }
+.dap-body-lg { font: var(--type-body-lg); color: var(--neutral-fg-secondary); }
+.dap-body { font: var(--type-body); color: var(--neutral-fg-secondary); }
+.dap-body-sm { font: var(--type-body-sm); color: var(--neutral-fg-secondary); }
+.dap-label { font: var(--type-label); color: var(--neutral-fg-primary); text-transform: none; }
+.dap-code { font: var(--type-code); color: var(--neutral-fg-primary); }
+
+/* Global resets used by the preview cards */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: var(--font-primary); color: var(--neutral-fg-primary); background: var(--neutral-canvas); -webkit-font-smoothing: antialiased; }
