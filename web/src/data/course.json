@@ -1,7 +1,7 @@
 {
   "title": "Közbeszerzési szakmai tananyag",
-  "source": "https://dev2.kkvkepzes.gov.hu/course/view.php?id=3",
-  "exportedAt": "2026-07-01T10:27:10.048Z",
+  "source": "localhost:8080 (course 2)",
+  "exportedAt": "2026-07-03T07:10:23.610Z",
   "totalLessons": 49,
   "images": [
     "/course/img/ktk-kezdo-1.png",
@@ -34,572 +34,711 @@
   "sections": [
     {
       "key": "I",
-      "title": "Az Elektronikus Közbeszerzési Rendszer (EKR)",
+      "title": "I. Az Elektronikus Közbeszerzési Rendszer használatának bemutatása",
       "lessons": [
         {
-          "id": "l1",
+          "id": "cm6",
           "num": "I.1",
           "title": "I.1. Az EKR rövid ismertetése, regisztráció nélkül elérhető felülete",
           "shortTitle": "Az EKR rövid ismertetése, regisztráció nélkül elérhető felülete",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "2018. április 15-étől kezdődően a közbeszerzési eljárásokat, az uniós elvárásokkal összhangban, főszabály szerint elektronikus úton az Elektronikus Közbeszerzési Rendszer (röviden: EKR) igénybevételével szükséges lebonyolítani. Ez azt jelenti, hogy a klasszikus és közszolgáltató ajánlatkérők eljárásainak lebonyolítását, a gazdasági szereplők részvételre jelentkezését és ajánlatkészítését az EKR-en keresztül kell lefolytatni, a közbeszerzési eljárás valamennyi szakaszában kizárólag az EKR-en keresztül történő kommunikáció elfogadott a résztvevők között. Kivétel ez alól az eljárás előkészítésének szakasza (ám az előkészítés során keletkezett dokumentáció feltöltésre kerül az Ajánlatkérő által), valamint a szerződéskötés és az ezt követő kommunikáció, melyek esetében EKR-en kívüli platformokon is megvalósulhat a résztvevők közötti kommunikáció.",
+            "Mindennek célja, hogy a hagyományos papír alapú kommunikáció felszámolásával csökkenthetőek legyenek az adminisztrációs terhek, az eljárások egyszerűbben és gyorsabban lefolytathatóak legyenek, a közbeszerzési eljárások átláthatóbbá és könnyebben ellenőrizhetővé váljanak. Ennek érdekében az EKR-ben minden eljárási cselekmény pontosan dokumentálható, az adott eljáráshoz tartozó valamennyi dokumentum egy helyről, közvetlenül elérhető."
+          ],
+          "durationMin": 28,
           "image": "/course/img/ktk-kezdo-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=40"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=6",
+          "lessonId": 1
         },
         {
-          "id": "l2",
+          "id": "cm7",
           "num": "I.2",
           "title": "I.2. Személyes fiók létrehozása az EKR felületén",
           "shortTitle": "Személyes fiók létrehozása az EKR felületén",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az EKR regisztrációhoz kötött funkcióinak eléréséhez első lépésben egy személyes fiókot kell regisztrálni.",
+            "Függetlenül attól, hogy a későbbiekben milyen tevékenységet szeretnénk végezni az EKR-ben, a kibővített funkciók használatához, szervezethez történő csatlakozáshoz ez a lépés megkerülhetetlen."
+          ],
+          "durationMin": 18,
           "image": "/course/img/image-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=41"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=7",
+          "lessonId": 2
         },
         {
-          "id": "l3",
+          "id": "cm8",
           "num": "I.3",
           "title": "I.3. Belépés az EKR felületre, teendők elfelejtett jelszó esetén",
           "shortTitle": "Belépés az EKR felületre, teendők elfelejtett jelszó esetén",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Regisztrált felhasználóként az EKR-be történő bejelentkezéshez az EKR kezdőlapján a Belépés gombra kell kattintani, majd a megjelenő Bejelentkezés ablakban adható meg a regisztráció során megadott felhasználónév/e-mail cím és jelszó . Ezt követően a Bejelentkezés gombra kell kattintani.",
+            "Ha a felhasználónév vagy a jelszót hibásan került beírásra, a rendszer figyelmeztető üzenetet küld, ezt követően a felhasználónév és jelszó újbóli beírása mellett szükséges egy ellenőrző szöveg (CAPTCHA) kitöltésére is az erre szolgáló üres mezőben. Ha olvashatatlannak tűnik a szöveg, az Új kép feliratra kattintva új CAPTCHA kérhető."
+          ],
+          "durationMin": 8,
           "image": "/course/img/image-3.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=42"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=8",
+          "lessonId": 3
         },
         {
-          "id": "l4",
+          "id": "cm9",
           "num": "I.4",
           "title": "I.4. Szervezet regisztráció, szervezethez csatlakozás az EKR-ben",
           "shortTitle": "Szervezet regisztráció, szervezethez csatlakozás az EKR-ben",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Belépést követően, első lépésként nyissuk meg a regisztrációs űrlapot a Szervezet/Szervezet regisztráció útvonalat követve.",
+            "Itt válasszuk ki a jogalany típusát (jogi személy VAGY természetes személy), valamint a megnevezés melletti jelölőnégyzetbe történő kattintással kiválasztható a szervezettípus – egyszerre több is jelölhető."
+          ],
+          "durationMin": 8,
           "image": "/course/img/image-4.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=43"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=9",
+          "lessonId": 4
         },
         {
-          "id": "l5",
+          "id": "cm10",
           "num": "I.5",
           "title": "I.5. Jogosultságok, jogosultságok kezelése az EKR-ben",
           "shortTitle": "Jogosultságok, jogosultságok kezelése az EKR-ben",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az EKR-ben különböző jogosultságok határozzák meg, hogy egy adott felhasználó egy adott szervezetben (amelyet létrehozott vagy csatlakozott hozzá), milyen funkciókhoz fér hozzá, vagy másképp megfogalmazva: minden felhasználó csak azokhoz a funkciókhoz fér hozzá, amellyel kapcsolatban rendelkezik az adott funkcióhoz szükséges jogosultsággal, jogosultsági szerepkörrel.",
+            "A rendszer 3 különböző kategóriába (szerepkörszint) sorolja a jogosultságokat:"
+          ],
+          "durationMin": 17,
           "image": "/course/img/evk-kezdokep.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=44"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=10",
+          "lessonId": 5
         },
         {
-          "id": "l6",
+          "id": "cm11",
           "num": "I.6",
           "title": "I.6. EKR belépést követő felülete, legfontosabb menüpontok és azok felépítése ajánlattevői oldalról",
           "shortTitle": "EKR belépést követő felülete, legfontosabb menüpontok és azok felépítése ajánlattevői oldalról",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az EKR-t megnyitva, a rendszer publikus felületével találkozunk. Itt a nyilvános információkat, regisztráció nélkül elérhető szolgáltatásokat találhatóak. Az eljárások lebonyolítása, részvételre jelentkezés, ajánlattétel regisztrációhoz kötött, melyet az EKR publikus felületén lehetséges kezdeményezni. Itt fontos megjegyezni, hogy egy eljárásra részvételi jelentkezést/ajánlat összeállását kezdeményezni csak az Új ajánlattételt létrehozó jogosultsággal rendelkező felhasználók tudnak.",
+            "Bejelentkezést követően a Nyitóképernyő jobb felső sarkában van lehetőség nyomon követni a munkamenetünk lejárati idejét . Az EKR-ben 6 órás folyamatos bejelentkezést követően, abban az esetben is, ha ez idő alatt folyamatosan használatban van a rendszer, ismét be kell jelentkezni."
+          ],
+          "durationMin": 22,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=45"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=11",
+          "lessonId": 6
         },
         {
-          "id": "l7",
+          "id": "cm13",
           "num": "I.7",
           "title": "I.7. Érdeklődés jelzése az EKR felületen, eljáráshoz tartozó dokumentumok letöltése",
           "shortTitle": "Érdeklődés jelzése az EKR felületen, eljáráshoz tartozó dokumentumok letöltése",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az EKR felületén a nem regisztrált felhasználók számára is elérhető az eljárástár, regisztrált felhasználóknak azonban már lehetőségük van az eljárás további részleteinek, dokumentációinak az elérésére is. Ehhez az Eljárás/Eljárástár eljárások menüben szükséges kiválasztani az adott eljárást, majd megnyitni a Részleteke t és rákattintani az Érdeklődés jelzése funkciógombra. Megjegyzendő azonban, hogy ez a funkció csak akkor lesz elérhető egy adott eljárás esetén, ha jogosultak vagyunk arra részvételi jelentkezést beadni vagy ajánlatot tenni.",
+            "Ha jelentkezni szeretnénk egy adott eljárásra, azt az EKR-ben regisztrált felhasználóként, az EKR-be belépést követően, a fent részletezett útvonalat követve tudjuk megtenni a kiválasztott eljárásnál található Érdeklődés jelzése funkciógombra kattintva. Ezt követően adjuk meg, hogy mely szervezet nevében járunk el."
+          ],
+          "durationMin": 4,
           "image": "/course/img/image003.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=47"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=13",
+          "lessonId": 7
         },
         {
-          "id": "l8",
+          "id": "cm14",
           "num": "I.8",
           "title": "I.8. Kiegészítő tájékoztatás kérése az EKR felületen",
           "shortTitle": "Kiegészítő tájékoztatás kérése az EKR felületen",
           "paragraphs": [
-            "Amennyiben az Ajánlattevő/Részvételre jelentkező az eljárással kapcsolatban kiegészítő tájékoztatást kérne az Ajánlatkérőtől, akkor azt minden esetben a „KTK - Kiegészítő tájékoztatás kérése” eljárási cselekmény keretein belül tegye meg. A KTK - Kiegészítő tájékoztatás kérése eljárási cselekmény elindításával van lehetőség kiegészítő tájékoztatást kérni az Ajánlatkérőtől az ajánlatunk/részvételi jelentkezésünk összeállításához.",
-            "Ezen eljárási cselekmény technikailag többször is indítható, amennyiben a legutoljára indított kiegészítő tájékoztatás kérése cselekmény lezárásra került. Az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra szükséges kattintani, majd ezt követően a legördülő listából a Kiegészítő tájékoztatás kérése eljárási cselekményt válasszuk ki.",
-            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az eljárási cselekményt az Indít funkciógombbal van lehetőség elindítani, ezt követően a Kommunikáció fülön, a Leírás mezőben 4000 karakterig szabadszövegesen megfogalmazható a tájékoztatás kérés. Új dokumentum csatolása funkciógombbal lehetőséget ad a rendszer dokumentumok csatolására.",
-            "Dokumentum csatolás - a megtekintéshez kattintson ide! Dokumentumot a következőképpen tudunk csatolni: az Új dokumentum csatolása funkciógombra kell kattintani. A megjelenő felületen nyomjuk meg a + Tallóz/csatol gombot és válasszuk ki a feltölteni kívánt dokumentumot. A lenti mezők kitöltésével adjuk meg a dokumentum nevét, típusát, valamint válasszuk ki, hogy a feltölteni kívánt dokumentum üzleti titoknak minősül-e.",
-            "ellenkező esetben a dokumentumfeltöltés folyamatban marad, a rendszer nem engedi az adott eljárási cselekmény lezárását, amiről az EKR hibaüzenetet is küld. A kiegészítő tájékoztatás kérés összeállítását követően, az Értesítés küldése gomb megnyomásával lehetséges azt elküldeni az Ajánlatkérőnek.",
-            "Fontos, hogy az eljárási cselekmény csak akkor minősül megküldöttnek, ha az eljárási cselekmény státusza oszlopban a Kiküldve szerepel. A Cselekmény megszakítása gombbal lehetőség van a cselekmény lezárására kiegészítő tájékoztatás megküldése nélkül. Az Eljárási cselekmény kereső felületen nyomon követhető a kiegészítő tájékoztatás kérés státusza.",
-            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide!"
+            "A KTK - Kiegészítő tájékoztatás kérése eljárási cselekmény elindításával van lehetőség kiegészítő tájékoztatást kérni az Ajánlatkérőtől az ajánlatunk/részvételi jelentkezésünk összeállításához.",
+            "Ezen eljárási cselekmény technikailag többször is indítható, amennyiben a legutoljára indított kiegészítő tájékoztatás kérése cselekmény lezárásra került."
           ],
-          "durationMin": 10,
+          "durationMin": 3,
           "image": "/course/img/image.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=48"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=14",
+          "lessonId": 8
         },
         {
-          "id": "l9",
+          "id": "cm15",
           "num": "I.9",
           "title": "I.9. Előzetes vitarendezés kérelem benyújtása az EKR felületen",
           "shortTitle": "Előzetes vitarendezés kérelem benyújtása az EKR felületen",
           "paragraphs": [
-            "EKR-ben lefolytatott eljárás esetében az Ajánlattevő az előzetes vitarendezési kérelmet mindenképp az EKR-en keresztül küldje meg az Ajánlatkérő felé. Az EVK - Előzetes vitarendezés kérése eljárási cselekmény célja, hogy előzetes vitarendezési kérelmünket össze tudjuk állítani az EKR rendszeren belül.",
-            "Az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra kell kattintanunk, majd a legördülő mezőből az EVK – Előzetes vitarendezési kérelem benyújtása eljárási cselekményt kell kiválasztanunk. A cselekmény elindításához kattintsunk az Indít funkciógombra.",
-            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Ekkor az EVK010 – Kommunikációs adatok rögzítése feladat jelenik meg, itt a Kommunikáció fül Leírás mezőjében maximum 4000 karakterben megfogalmazva megadhatjuk az előzetes vitarendezési kérelmünket, illetve itt tudunk dokumentumot is csatolni az Új dokumentum csatolása funkciógombra kattintva.",
-            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az előzetes vitarendezési kérelem megküldéséhez az Értesítés küldése gombra kell kattintanunk, az eljárási cselekmény viszont csak abban az esetben minősül megküldöttnek, ha az eljárási cselekmény státusza Kiküldve státuszba kerül.",
-            "Az eljárási cselekmény értesítés megküldése nélküli lezárásához kattintsunk a Cselekmény elvetése gombra. A 2024. április 1-jén hatályba lépő Kbt. módosítás lehetőséget biztosít az összegezés és az eljárás eredményéről szóló hirdetmények részenkénti megküldésére, feladására. Ennek lényege, hogy többrészes uniós eljárásokban, azaz a Kbt.",
-            "Második Rész szerint lefolytatott eljárásokban, valamint a 3. melléklet szerinti szolgáltatások esetén az uniós értékhatárt elérő értékű közbeszerzési eljárásban és az uniós értékhatárt elérő értékű koncessziós beszerzési eljárásokban az ajánlatok bontását követően, az ajánlatok elbírálásáról szóló összegezést és az eljárás eredményéről szóló tájékoztatót lehetőség van most már részenként/részcsoportonként közzétenni.",
-            "A változások tehát nem érintik az uniós eljárásrendben lefolytatásra kerülő egy részes eljárásokat, nemzeti eljárásrendben lefolytatásra kerülő eljárásokat, valamint a 2024. április 1. napját megelőzően megindított eljárásokat sem. Ezzel egyidejűleg az EKR-ben is megtörténtek a szükséges fejlesztések.",
-            "Ennek a pozitív hozadéka például, hogy ha több részes eljárásnál egy rész esetében egy jogorvoslat megakasztja az eljárást, akkor a jogorvoslattal nem érintett többi résznél van lehetőség külön kiküldeni az összegezést, megkötni szerződéseket és feladni az eredménytájékoztatót."
+            "Az EVK - Előzetes vitarendezés kérése eljárási cselekmény célja, hogy előzetes vitarendezési kérelmünket össze tudjuk állítani az EKR rendszeren belül. Az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra kell kattintanunk, majd a legördülő mezőből az EVK – Előzetes vitarendezési kérelem benyújtása eljárási cselekményt kell kiválasztanunk. A cselekmény elindításához kattintsunk az Indít funkciógombra.",
+            "Ekkor az EVK010 – Kommunikációs adatok rögzítése feladat jelenik meg, itt a Kommunikáció fül Leírás mezőjében maximum 4000 karakterben megfogalmazva megadhatjuk az előzetes vitarendezési kérelmünket, illetve itt tudunk dokumentumot is csatolni az Új dokumentum csatolása funkciógombra kattintva."
           ],
-          "durationMin": 11,
+          "durationMin": 3,
           "image": "/course/img/image-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=49"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=15",
+          "lessonId": 9
         },
         {
-          "id": "l10",
+          "id": "cm16",
           "num": "I.10",
           "title": "I.10. Egyéb kommunikáció az EKR felületen",
           "shortTitle": "Egyéb kommunikáció az EKR felületen",
           "paragraphs": [
-            "Amennyiben az Ajánlatunkhoz dokumentumokat szeretnénk felcsatolni, azt ne az Egyéb kommunikációs eljárási cselekmény keretein belül tegyük meg, hanem az Ajánlat összeállítása/Részvételi jelentkezés összeállítása eljárási cselekményben. Az AETK – Egyéb kommunikáció (AT) eljárási cselekmény az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgál a közbeszerzési eljárás során, természetesen a jogszabályi előírások figyelembevételével.",
-            "Elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény gombra szükséges kattintani. A legördülő mezőből pedig az AETK – Egyéb kommunikáció (AT) eljárási cselekményt kell kiválasztani és az Indít funkciógombra kell kattintani. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide!",
-            "Ekkor az AETK010 – Kommunikációs adatok rögzítése feladat jelenik meg, ahol a Kommunikáció fül Leírás mezőjében maximum 4000 karakterben megfogalmazva megadható a kért/nyújtani kívánt tájékoztatás, illetve itt van lehetőség dokumentum csatolására is az Új dokumentum csatolása funkciógomb használatával.",
-            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az eljárási cselekmény egyéb kommunikáció kérés megküldése nélkül történő lezárásához válasszuk a Cselekmény megszakítása gombot. Egyéb kommunikáció kérésünk megküldéséhez az Értesítés küldése funkciógombra kell kattintani.",
-            "Fontos azonban, hogy az eljárási cselekmény abban az esetben minősül csak megküldöttnek, ha a cselekmény státusza Kiküldve státuszba kerül. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Ezt az Eljárási cselekmény kereső felületen van lehetőség leellenőrizni. Itt láthatjuk az Ajánlatkérő válaszát is, ennek megtekintéséhez kattintsunk a megfelelő eljárási cselekmény sorban a Megnyitás gombra."
+            "Az AETK – Egyéb kommunikáció (AT) eljárási cselekmény az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgál a közbeszerzési eljárás során, természetesen a jogszabályi előírások figyelembevételével.",
+            "Elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény gombra szükséges kattintani. A legördülő mezőből pedig az AETK – Egyéb kommunikáció (AT) eljárási cselekményt kell kiválasztani és az Indít funkciógombra kell kattintani."
           ],
-          "durationMin": 9,
+          "durationMin": 3,
           "image": "/course/img/image-2.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=50"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=16",
+          "lessonId": 10
         },
         {
-          "id": "l11",
+          "id": "cm17",
           "num": "I.11",
           "title": "I.11. Ajánlat összeállítása az EKR-ben I: Gazdasági szereplők rögzítése",
           "shortTitle": "Ajánlat összeállítása az EKR-ben I: Gazdasági szereplők rögzítése",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az eljárási cselekmény elindításához az Ajánlattevőnek jeleznie kell az eljárás iránti érdeklődését az adott eljárás adatlapján keresztül, az Érdeklődés jelzése funkciógombra kattintva.",
+            "Ekkor az Ajánlat ügylet felületével találkozik elsőként az Ajánlattevő. A fejléc tartalmazza, hogy melyik eljárás, mely szakaszában és milyen lépésben van éppen, illetve itt szerepel az eljárás EKR azonosítószáma is."
+          ],
+          "durationMin": 10,
           "image": "/course/img/image-3.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=51"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=17",
+          "lessonId": 11
         },
         {
-          "id": "l12",
+          "id": "cm18",
           "num": "I.12",
           "title": "I.12. Ajánlat összeállítása az EKR-ben II: elektronikus űrlapok, dokumentumok feltöltése, Egységes Európai Közbeszerzési Dokumentumok, felolvasólap, ajánlat benyújtása, bontás",
           "shortTitle": "Ajánlat összeállítása az EKR-ben II: elektronikus űrlapok, dokumentumok feltöltése, Egységes Európai Közbeszerzési Dokumentumok, felolvasólap, ajánlat benyújtása, bontás",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A gazdasági szereplők rögzítését követően szerkeszthetővé válnak az Ajánlati dokumentáció , illetve az EEKD menüpontok (középső menüsor), valamint az ezekhez tartozó bal oldali almenük.",
+            "Bal oldalon, a Benyújtandó iratok jegyzéke alatt találhatóak azon elektronikus nyilatkozatminták, melyeket be kell nyújtani."
+          ],
+          "durationMin": 16,
           "image": "/course/img/benyujtott-ajanlat-visszavonasa.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=52"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=18",
+          "lessonId": 12
         },
         {
-          "id": "l13",
+          "id": "cm19",
           "num": "I.13",
           "title": "I.13. Sablonok használata az EKR-ben",
           "shortTitle": "Sablonok használata az EKR-ben",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az EKR-ben lehetőség van nyilatkozat sablonok létrehozására, melyeket a későbbiek során az Ajánlat/Részvételi jelentkezés összeállításakor tudunk felhasználni az EKR-es nyilatkozatok és az EEKD nyilatkozatok egyszerűbb és gyorsabb benyújtása érdekében. Különösen hasznos több részes eljárásokban, ahol egy adott nyilatkozatot minden egyes részre külön-külön is be kell nyújtani – sablon használatával nem szükséges minden rész esetén egyesével kitölteni a nyilatkozatokat, azok betölthetők a sablonból.",
+            "Sablon létrehozásához Sablon szerkesztő jogosultság szükséges – ezzel a jogosultsággal rendelkező felhasználó tud új sablont létrehozni, illetve a már létrehozott sablonokat szerkeszteni és megtekinteni. Sablon használó jogosultsággal rendelkező felhasználó nem szerkesztheti a nyilatkozat sablonokat, de használhatja azokat az eljárásokban, ajánlatokban. Megjegyzendő, hogy egy felhasználónak kiosztható párhuzamosan mindkét jogosultság is."
+          ],
+          "durationMin": 5,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=53"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=19",
+          "lessonId": 13
         },
         {
-          "id": "l14",
+          "id": "cm20",
           "num": "I.14",
           "title": "I.14. Benyújtott ajánlat visszavonása, ajánlat módosítása az EKR felületen",
           "shortTitle": "Benyújtott ajánlat visszavonása, ajánlat módosítása az EKR felületen",
-          "paragraphs": [],
+          "paragraphs": [
+            "Amennyiben szükséges a benyújtott ajánlat módosítása, azt az Ajánlat visszanyitás funkciógomb megnyomásával van lehetőség visszanyitni. Ez az ajánlat ügyletbe történő belépést követően érhető el, fontos azonban, hogy csak az ajánlattételi határidő lejártáig van erre lehetőség.",
+            "Az ajánlat visszanyitásához az ajánlat benyújtásakor megadott telefonszámra, sms-ben kért- és kapott, 5 jegyű kód megadására van szükség. Fontos megjegyezni, hogy az ajánlat visszanyitásával egyben visszavonásra is kerül az ajánlat . Ez azt jelenti, hogy amíg Ajánlattevő nem adja be újra a módosított ajánlatot, addig nem lesz benyújtott ajánlat, erre a tényre az EKR felülete is felhívja a figyelmünket."
+          ],
           "durationMin": 3,
           "image": "/course/img/image003-2.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=54"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=20",
+          "lessonId": 14
         },
         {
-          "id": "l15",
+          "id": "cm21",
           "num": "I.15",
           "title": "I.15. Benyújtott ajánlat visszavonása az EKR-ben bontást követően",
           "shortTitle": "Benyújtott ajánlat visszavonása az EKR-ben bontást követően",
           "paragraphs": [
-            "Kiemelendő, hogy Ajánlattevőnek érdemes alaposan megfontolni ezen döntését, ugyanis ez a művelet nem visszavonható. Amennyiben az Ajánlattevő az ajánlatok bontását követően szeretné visszavonni az ajánlatát, azt az AVV – Ajánlat visszavonása eljárási cselekménnyel tudja megtenni. Az eljárási cselekmény elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra szükséges kattintani.",
-            "Itt a legördülő mezőből kerüljön kiválasztásra az Ajánlat visszavonása eljárási cselekmény és az Indít gombra kattintva indítható. Abban az esetben, ha Ajánlattevő szeretné megszakítani a folyamatot, akkor meg a Mégsem gombot kell megnyomni. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide!",
-            "Az Indít gomb megnyomását követően a Kommunikáció felületre navigál a rendszer. Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az Indít gomb megnyomását követően megjelenő Kommunikáció fülön adható meg szövegesen az ajánlat visszavonásának indoklása, a Visszavonás indoklása mezőben.",
-            "Dokumentum csatolására is lehetőségünk van. A cselekmény lezárásához az Ajánlat visszavonása funkciógombot kell megnyomni, ezen lépéssel az ajánlat a Visszavont ajánlat státuszba kerül. A Cselekmény megszakítása gomb megnyomásával az ajánlat visszavonása nélkül lezárható a cselekmény.",
-            "Kapcsolódó képernyőkép – a megtekintéshez kattintson ide! Az AVV – Ajánlat visszavonása eljárási cselekménnyel megegyező módon működik az RVV – Részvételi jelentkezés visszavonása eljárási cselekmény."
+            "Amennyiben az Ajánlattevő az ajánlatok bontását követően szeretné visszavonni az ajánlatát, azt az AVV – Ajánlat visszavonása eljárási cselekménnyel tudja megtenni.",
+            "Az eljárási cselekmény elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra szükséges kattintani. Itt a legördülő mezőből kerüljön kiválasztásra az Ajánlat visszavonása eljárási cselekmény és az Indít gombra kattintva indítható. Abban az esetben, ha Ajánlattevő szeretné megszakítani a folyamatot, akkor meg a Mégsem gombot kell megnyomni."
           ],
-          "durationMin": 8,
+          "durationMin": 3,
           "image": "/course/img/image005.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=55"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=21",
+          "lessonId": 15
         },
         {
-          "id": "l16",
+          "id": "cm22",
           "num": "I.16",
           "title": "I.16. Hiánypótlás benyújtása, felvilágosítás kérés megválaszolása az EKR felületen",
           "shortTitle": "Hiánypótlás benyújtása, felvilágosítás kérés megválaszolása az EKR felületen",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az Ajánlatkérő által indított \" Hiánypótlás, felvilágosítás kérés \" eljárási cselekmény megválaszolására az Ajánlattevőnek két válasz eljárási cselekmény áll rendelkezésére. Az Ajánlatkérő által közölt információ/feltöltött dokumentum tartalma határozza meg, hogy az Ajánlattevőnek melyik cselekményt szükséges választania az elvártak teljesítéséhez.",
+            "Az FKM - Felvilágosítás kérés megválaszolása eljárási cselekmény eljárási cselekmény az Ajánlatkérőtől, - az Ajánlattevő által benyújtott dokumentumaival kapcsolatban - érkező felvilágosítás kérés megválaszolására szolgál."
+          ],
+          "durationMin": 5,
           "image": "/course/img/image-4.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=56"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=22",
+          "lessonId": 16
         },
         {
-          "id": "l17",
+          "id": "cm23",
           "num": "I.17",
           "title": "I.17. Igazolások benyújtása az EKR felületen",
           "shortTitle": "Igazolások benyújtása az EKR felületen",
-          "paragraphs": [],
+          "paragraphs": [
+            "A Kbt. 69. § (4) bekezdése alapján az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgál az Ajánlattevő által indítható AIGB – Igazolások benyújtása eljárási cselekmény .",
+            "A cselekmény indításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény gombra kell kattintani. Itt a legördülő mezőből kell kiválasztani az AIGB – Igazolások benyújtása eljárási cselekményt és az Indít gombra kattintani. Fontos, hogy a cselekmény csak abban az esetben lesz indítható, ha az eljárásban az Ajánlatkérő a fent megnevezett igazolás benyújtására felkért minket."
+          ],
           "durationMin": 3,
           "image": "/course/img/image.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=57"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=23",
+          "lessonId": 17
         },
         {
-          "id": "l18",
+          "id": "cm24",
           "num": "I.18",
           "title": "I.18. Számítási hiba javítása az EKR felületen",
           "shortTitle": "Számítási hiba javítása az EKR felületen",
           "paragraphs": [
-            "Amennyiben az Ajánlatkérő felkéri az Ajánlattevőt a számítási hiba javítására, akkor azt minden esetben a „TSZJ – Számítási hiba javítása eljárási cselekmény” keretein belül van lehetőség megtenni. A „TSZJ – Számítási hiba javítása eljárási cselekmény” az ajánlatban szereplő számítási hiba javítására szolgál (az ajánlatkérő kérésének megfelelően, valamint a jogszabályokkal összhangban).",
-            "Fontos megjegyezni, hogy a „Számítási hiba javítása eljárási cselekménnyel” párhuzamosan nem indítható a Hiánypótlás összeállítása eljárási cselekmény, egyidejűleg nem lehet folyamatban mindkét eljárási cselekmény. „Számítási hiba javítása eljárási cselekményt” a következőképpen lehet elindítani: Az Eljárási cselekmény kereső oldalon a lap alján az Új eljárási cselekmény gombot kell megnyomni, majd a legördülő mezőből a „TSZJ – Számítási hiba javítása eljárási cselekményt” kell kiválasztani.",
-            "Az Indít gombra kattintva van lehetőség elindítani a cselekményt. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! Ezt követően a megfelelő űrlapon javítani lehet a számítási hibát az Ajánlatkérő kérésének megfelelően, illetve dokumentum feltöltésére is lehetőség nyílik. Ha elvégezésre kerültek a szükséges módosítások, az Adatok formai ellenőrzése funkciógombra kell kattintani.",
-            "Ekkor a rendszer hibaüzenetben jelzi és pirossal ki is jelöli a hibás űrlapokat, amennyiben van még hiányzó- vagy hibás formátumú adat. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! A hiányzó- vagy hibás formátumú adatok javítását követően, az Adatok rögzítve gomb megnyomásával válik elérhetővé a Javítás benyújtása funkciógomb.",
-            "Erre kattintva nyílik lehetőség a „Számítási hiba javítása eljárási cselekményt” benyújtani. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! A Javítás benyújtása előtt azonban célszerű lehet az Ajánlati dokumentáció → Hiánypótlás/számítási hiba rövid összefoglalója menüre kattintva listát készíteni azokról az űrlapokról, ahol módosításokat hajtottunk végre.",
-            "Kapcsolódó képernyőkép - a megtekintéshez kattintson ide!"
+            "A „TSZJ – Számítási hiba javítása eljárási cselekmény” az ajánlatban szereplő számítási hiba javítására szolgál (az ajánlatkérő kérésének megfelelően, valamint a jogszabályokkal összhangban).",
+            "„Számítási hiba javítása eljárási cselekményt” a következőképpen lehet elindítani: Az Eljárási cselekmény kereső oldalon a lap alján az Új eljárási cselekmény gombot kell megnyomni, majd a legördülő mezőből a „ TSZJ – Számítási hiba javítása eljárási cselekményt ” kell kiválasztani. Az Indít gombra kattintva van lehetőség elindítani a cselekményt."
           ],
-          "durationMin": 10,
+          "durationMin": 3,
           "image": "/course/img/image-5.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=58"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=24",
+          "lessonId": 18
         },
         {
-          "id": "l19",
+          "id": "cm25",
           "num": "I.19",
           "title": "I.19. Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása az EKR felületen",
           "shortTitle": "Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása az EKR felületen",
           "paragraphs": [
-            "Amennyiben az Ajánlatkérő felkéri az Ajánlattevőt arra, hogy indokolja meg az aránytalanul alacsony árat-, illetve egyéb, aránytalan vállalását, akkor azt az Ajánlattevő minden esetben az „AAIB - Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása” eljárási cselekmény keretein belül tegye meg.",
-            "Amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, akkor Ajánlattevőkent, az AAIB - Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása válasz cselekménnyel tudunk ennek eleget tenni. Az EKR-ben kifejezetten erre a célra került kialakításra egy felület, ahol lehetőségünk van arra, hogy elkészítsük az aránytalanul alacsony ár vagy egyéb aránytalan vállalás indokolását, valamint dokumentumot is csatolhatunk.",
-            "Ezen eljárási cselekmény technikailag többször is indítható, amennyiben az utolsó Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása cselekmény lezárásra került. Az Eljárási cselekmény kereső felületen, az oldal alján kattintsunk az Új eljárási cselekmény funkciógombra, majd válasszuk ki az indítható eljárási cselekmények közül az „Aránytalanul alacsony ár és egyéb aránytalan vállalás esetében indokolás benyújtása” eljárási cselekményt.",
-            "Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! Az Indít gomb megnyomásával a Kommunikáció menüpontba navigál a rendszer, ahol szövegesen is megadhatjuk az aránytalanul alacsony ár, és egyéb aránytalan vállalások esetében kért indokolást a Leírás mezőben, illetve dokumentumot is tudunk csatolni az eljárási cselekményen belül.",
-            "Kapcsolódó képernyőkép - a megtekintéshez kattintson ide! Az Értesítés küldése gomb megnyomásával az aránytalanul alacsony ár, és egyéb aránytalan vállalások esetében az indokolás elküldésre kerül. Az eljárási cselekmény akkor minősül megküldöttnek, ha az eljárási cselekmény státusza Kiküldve státuszba kerül.",
-            "Az indokolást a benyújtási határidő lejártát megelőzően is van lehetősége az Ajánlatkérőnek ellenőrizni az indokolást. A Cselekmény megszakítása gombbal a folyamat értesítés küldése nélkül lezárul."
+            "Amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, akkor Ajánlattevőkent, az AAIB - Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása válasz cselekménnyel tudunk ennek eleget tenni.",
+            "Az EKR-ben kifejezetten erre a célra került kialakításra egy felület, ahol lehetőségünk van arra, hogy elkészítsük az aránytalanul alacsony ár vagy egyéb aránytalan vállalás indokolását, valamint dokumentumot is csatolhatunk."
           ],
-          "durationMin": 10,
+          "durationMin": 3,
           "image": "/course/img/image-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=59"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=25",
+          "lessonId": 19
         },
         {
-          "id": "l20",
+          "id": "cm26",
           "num": "I.20",
           "title": "I.20. Ajánlati kötöttség fenntartása az EKR-ben",
           "shortTitle": "Ajánlati kötöttség fenntartása az EKR-ben",
           "paragraphs": [
-            "Amennyiben az Ajánlatkérő felkéri az Ajánlattevőt az ajánlati kötöttség fenntartására, akkor azt az Ajánlattevő minden esetben az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekmény eljárási cselekmény keretein belül tegye meg. Ha az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttségünk fenntartására vonatkozó kérés érkezik, akkor azt az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekmény segítségével lehet megválaszolni.",
-            "A cselekmény elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra kell kattintani. A legördülő mezőből az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekményt kell kiválasztani, s az Indít gombra kell kattintani. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide!",
-            "Mégsem gombra kattintva lehetőség van megszakítani a folyamatot. Az Indít gomb megnyomását követően a rendszer a Kommunikáció fülre irányít, itt a Leírás mezőben szövegesen tudjuk megfogalmazni a válaszunkat, illetve itt is lehetőségünk van dokumentumok csatolására. Kapcsolódó képernyőkép - a megtekintéshez kattintson ide!",
-            "Válaszunkat az Értesítés küldése gomb megnyomásával tudjuk elküldeni. Ekkor az eljárási cselekmény státusza Kiküldve státuszba kerül. Mindig győződjünk meg róla, hogy ez megtörtént-e, mivel csak ebben az esetben minősül megküldöttnek a válaszunk! Az eljárási cselekmény válasz küldése nélküli lezárásához használjuk a Cselekmény elvetése gombot."
+            "Ha az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttségünk fenntartására vonatkozó kérés érkezik, akkor azt az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekmény segítségével lehet megválaszolni.",
+            "A cselekmény elindításához az Eljárási cselekmény kereső oldal alján az Új eljárási cselekmény funkciógombra kell kattintani. A legördülő mezőből az ANYAK – Nyilatkozat ajánlati kötöttségről eljárási cselekményt kell kiválasztani, s az Indít gombra kell kattintani."
           ],
-          "durationMin": 8,
+          "durationMin": 3,
           "image": "/course/img/image-2.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=60"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=26",
+          "lessonId": 20
         }
       ]
     },
     {
       "key": "II",
-      "title": "Ajánlatkérői folyamatok az EKR-ben",
+      "title": "II. Ajánlattétel a közbeszerzési eljárásokban",
       "lessons": [
         {
-          "id": "l21",
+          "id": "cm28",
           "num": "II.1",
           "title": "II.1. A közbeszerzés fogalma, célja és a közbeszerzés mint üzleti lehetőség",
           "shortTitle": "A közbeszerzés fogalma, célja és a közbeszerzés mint üzleti lehetőség",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;sekre vonatkoz&oacute; szab&aacute;lyoz&aacute;s alapvető rendeltet&eacute;se, hogy meghat&aacute;rozza azokat a szab&aacute;lyokat, amelyek alapj&aacute;n szerződ&eacute;sek &iacute;t&eacute;lhetők oda gazdas&aacute;gi szereplőknek, tov&aacute;bb&aacute; r&ouml;gz&iacute;tse a megk&ouml;t&ouml;tt szerződ&eacute;sek m&oacute;dos&iacute;t&aacute;s&aacute;ra &eacute;s teljes&iacute;t&eacute;s&eacute;re, a kapcsol&oacute;d&oacute; jogorvoslatra, az int&eacute;zm&eacute;nyrendszerre, valamint az &aacute;ltal&aacute;nos elők&eacute;sz&iacute;t&eacute;si, tervez&eacute;si &eacute;s strat&eacute;giai feladatokra vonatkoz&oacute; szab&aacute;lyokat. A kiindul&oacute;pont az, hogy meghat&aacute;rozott, jellemzően k&ouml;zp&eacute;nzeket elk&ouml;ltő &eacute;s/vagy k&ouml;zszolg&aacute;ltat&aacute;sokat ny&uacute;jt&oacute; szervezetek &ndash; amelyeket a t&ouml;rv&eacute;ny aj&aacute;nlatk&eacute;rő nek nevez &ndash; beszerz&eacute;si ig&eacute;nyeik kiel&eacute;g&iacute;t&eacute;s&eacute;re k&uuml;l&ouml;nb&ouml;ző szerződ&eacute;seket k&iacute;v&aacute;nnak k&ouml;tni. E k&ouml;zbeszerz&eacute;si szerződ&eacute;sek &uuml;zleti lehetős&eacute;geket jelentenek a v&aacute;llalkoz&aacute;sok , gazdas&aacute;gi szereplők sz&aacute;m&aacute;ra, &iacute;gy alapvető fontoss&aacute;g&uacute; annak szab&aacute;lyoz&aacute;sa, hogy e szerződ&eacute;sek megk&ouml;t&eacute;s&eacute;nek joga hogyan, milyen elj&aacute;r&aacute;sok eredm&eacute;nyek&eacute;nt nyerhető el a gazdas&aacute;gi szereplők r&eacute;sz&eacute;ről.",
+            "A k&ouml;zbeszerz&eacute;sekre &ouml;sszetett jogi szab&aacute;lyoz&aacute;s vonatkozik az Eur&oacute;pai Uni&oacute;ban (EU), de az uni&oacute;s jogszab&aacute;lyok mellett a nemzeti szab&aacute;lyoz&aacute;sok tartalmazz&aacute;k a r&eacute;szletes elő&iacute;r&aacute;sokat. A magyar jogrendszerben kiemelkedő jogforr&aacute;s a k&ouml;zbeszerz&eacute;sekről sz&oacute;l&oacute; 2015. &eacute;vi CXLIII. t&ouml;rv&eacute;ny (Kbt.) &eacute;s a kapcsol&oacute;d&oacute; v&eacute;grehajt&aacute;si rendeletek , de a jogszab&aacute;lyok mellett ismerni sz&uuml;ks&eacute;ges a jogorvoslati f&oacute;rumok &aacute;ltal k&ouml;vetett joggyakorlatot is , amelyek elsősorban a K&ouml;zbeszerz&eacute;si D&ouml;ntőbizotts&aacute;g (KDB) &eacute;s a d&ouml;nt&eacute;seit fel&uuml;lvizsg&aacute;l&oacute; b&iacute;r&oacute;s&aacute;gok d&ouml;nt&eacute;sei ből ismerhetők meg. [1] A jogi ismeretek mellett informatikai (rendszerhaszn&aacute;lati) ismeretekre is sz&uuml;ks&eacute;g van, mindez komoly kih&iacute;v&aacute;sok el&eacute; &aacute;ll&iacute;tja a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sokban &eacute;rintett valamennyi szereplőt."
+          ],
+          "durationMin": 22,
           "image": "/course/img/aranytlan-alacsony-kezdo.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=5"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=28",
+          "lessonId": 21
         },
         {
-          "id": "l22",
+          "id": "cm29",
           "num": "II.2",
           "title": "II.2. A közbeszerzési eljárások ajánlattételt érintő főbb sajátosságai",
           "shortTitle": "A közbeszerzési eljárások ajánlattételt érintő főbb sajátosságai",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az aj&aacute;nlatt&eacute;telt a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sok n&eacute;h&aacute;ny főbb jellemzője hat&aacute;rozza meg. Egyr&eacute;szt eml&iacute;t&eacute;st kell tenni az elj&aacute;r&aacute;srend fogalm&aacute;r&oacute;l. A Kbt. k&eacute;t elj&aacute;r&aacute;srendet k&uuml;l&ouml;nb&ouml;ztet meg:",
+            "&middot; az uni&oacute;s elj&aacute;r&aacute;srendet, valamint"
+          ],
+          "durationMin": 8,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=6"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=29",
+          "lessonId": 22
         },
         {
-          "id": "l23",
+          "id": "cm30",
           "num": "II.3",
           "title": "II.3. A gazdasági szereplők (a vállalkozások) alanyi oldala",
           "shortTitle": "A gazdasági szereplők (a vállalkozások) alanyi oldala",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sban az aj&aacute;nlatk&eacute;rővel szemben k&uuml;l&ouml;nb&ouml;ző gazdas&aacute;gi szereplők vesznek r&eacute;szt, mely meghat&aacute;roz&aacute;s egy gyűjtőfogalom, ennek megfelelően tov&aacute;bb kell vizsg&aacute;lni, hogy kik milyen m&oacute;don &eacute;s c&eacute;llal vesznek r&eacute;szt a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sban, illetve milyen kapcsolatban &aacute;llhatnak az aj&aacute;nlatk&eacute;rővel .",
+            "Az első az aj&aacute;nlattevő , aki (amely) a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sban aj&aacute;nlatot ny&uacute;jt be. Az aj&aacute;nlattevő c&eacute;lja, hogy a legkedvezőbb aj&aacute;nlat beny&uacute;jt&aacute;s&aacute;val ő legyen az elj&aacute;r&aacute;s nyertese, vagyis az aj&aacute;nlatk&eacute;rő vele k&ouml;sse meg a szerződ&eacute;st. Az aj&aacute;nlattevő feladata , hogy:"
+          ],
+          "durationMin": 8,
           "image": "/course/img/image003.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=7"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=30",
+          "lessonId": 23
         },
         {
-          "id": "l24",
+          "id": "cm31",
           "num": "II.4",
           "title": "II.4. A közbeszerzési ajánlattétel alapvető feltételei és lépései",
           "shortTitle": "A közbeszerzési ajánlattétel alapvető feltételei és lépései",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;sek egyik alapvető elv e a nyilv&aacute;noss&aacute;g . K&uuml;l&ouml;n&ouml;sen fontosak ebből a szempontb&oacute;l a k&uuml;l&ouml;nb&ouml;ző hivatalos kiadv&aacute;nyokban megjelenő hirdetm&eacute;nyek. Főszab&aacute;ly szerint hirdetm&eacute;nnyel indul egy k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s , ami azt jelenti, hogy az aj&aacute;nlatk&eacute;rői szerződ&eacute;sk&ouml;t&eacute;si sz&aacute;nd&eacute;kr&oacute;l b&aacute;rki &eacute;rtes&uuml;lhet, azaz nem csak az aj&aacute;nlatk&eacute;rő &aacute;ltal kiv&aacute;lasztott szem&eacute;lyek jogosultak a szerződ&eacute;sk&ouml;t&eacute;s jog&aacute;nak elnyer&eacute;s&eacute;&eacute;rt versenyezni aj&aacute;nlatok megt&eacute;tel&eacute;vel. A nyilv&aacute;noss&aacute;g elv&eacute;nek fontos megnyilv&aacute;nul&aacute;s&aacute;t jelentik a felh&iacute;v&aacute;son k&iacute;v&uuml;li egy&eacute;b hirdetm&eacute;nyek , amelyek az adott elj&aacute;r&aacute;s szempontj&aacute;b&oacute;l fontos d&ouml;nt&eacute;sek (p&eacute;ld&aacute;ul eml&iacute;thetj&uuml;k az elj&aacute;r&aacute;st megind&iacute;t&oacute; felh&iacute;v&aacute;s m&oacute;dos&iacute;t&aacute;s&aacute;t, visszavon&aacute;s&aacute;t, az elj&aacute;r&aacute;s eredm&eacute;ny&eacute;ről sz&oacute;l&oacute; t&aacute;j&eacute;koztat&oacute;t).",
+            "A hirdetm&eacute;nyeken k&iacute;v&uuml;l egy&eacute;b k&ouml;zz&eacute;t&eacute;teli k&ouml;telezetts&eacute;gek et is meg&aacute;llap&iacute;t a t&ouml;rv&eacute;ny, &iacute;gy p&eacute;ld&aacute;ul az aj&aacute;nlatk&eacute;rőknek az EKR-ben k&ouml;zz&eacute; kell tenni&uuml;k meghat&aacute;rozott dokumentumokat, adatokat (p&eacute;ld&aacute;ul az &eacute;ves k&ouml;zbeszerz&eacute;si tervet vagy a szerződ&eacute;s teljes&iacute;t&eacute;s&eacute;re vonatkoz&oacute; inform&aacute;ci&oacute;kat). A k&uuml;l&ouml;nb&ouml;ző adatb&aacute;zisok lehetőv&eacute; teszik, hogy egy-egy k&ouml;zbeszerz&eacute;shez kapcsol&oacute;d&oacute; valamennyi hirdetm&eacute;ny &eacute;s dokumentum egy helyen , kereshető form&aacute;ban megismerhető legyen, azaz egy k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s teljes folyamata, eredm&eacute;nye b&aacute;rki &aacute;ltal megvizsg&aacute;lhat&oacute;, nyomon k&ouml;vethető."
+          ],
+          "durationMin": 30,
           "image": "/course/img/anyak-kezdo.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=8"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=31",
+          "lessonId": 24
         },
         {
-          "id": "l25",
+          "id": "cm32",
           "num": "II.5",
           "title": "II.5. Az ajánlattételhez kapcsolódó eljárási cselekmények és az ajánlatok bontása",
           "shortTitle": "Az ajánlattételhez kapcsolódó eljárási cselekmények és az ajánlatok bontása",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;vetkezőkben egy ny&iacute;lt elj&aacute;r&aacute;s alapvető cselekm&eacute;nyei ker&uuml;lnek bemutat&aacute;sra az elj&aacute;r&aacute;s megind&iacute;t&aacute;s&aacute;t&oacute;l az aj&aacute;nlatt&eacute;teli hat&aacute;ridő lej&aacute;rt&aacute;ig, illetve az aj&aacute;nlatok felbont&aacute;s&aacute;ig.",
+            "A felh&iacute;v&aacute;s megjelen&eacute;s&eacute;t, valamint a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s felt&eacute;telrendszer&eacute;nek megismer&eacute;s&eacute;t k&ouml;vetően az aj&aacute;nlattevőnek el kell d&ouml;ntenie, hogy minden aj&aacute;nlatk&eacute;rői elő&iacute;r&aacute;s egy&eacute;rtelmű-e, biztos&iacute;tott-e a megfelelő aj&aacute;nlatt&eacute;tel lehetős&eacute;ge vagy sem. Ha ugyanis az aj&aacute;nlatk&eacute;rő elő&iacute;r&aacute;sai k&eacute;t&eacute;rtelműek, ellentmond&aacute;sosak, elt&eacute;rők&eacute;ppen &eacute;rtelmezhetők, akkor nem val&oacute;sul meg az egyenlő es&eacute;llyel t&ouml;rt&eacute;nő aj&aacute;nlatt&eacute;tel lehetős&eacute;ge, az aj&aacute;nlatok &ouml;sszehasonl&iacute;that&oacute;s&aacute;ga, hiszen nem &aacute;llap&iacute;that&oacute; meg, hogy pontosan mire is tesznek a gazdas&aacute;gi szereplők aj&aacute;nlatot, v&aacute;llal&aacute;sokat. Az aj&aacute;nlattevőknek lehetős&eacute;g&uuml;k van kieg&eacute;sz&iacute;tő t&aacute;j&eacute;koztat&aacute;s k&eacute;r&eacute;s&eacute;re : &iacute;r&aacute;sban tehetők fel a k&eacute;rd&eacute;sek az aj&aacute;nlatk&eacute;rőnek. A kieg&eacute;sz&iacute;tő t&aacute;j&eacute;koztat&aacute;s folyamata k&eacute;rd&eacute;sek aj&aacute;nlattevői felt&eacute;tel&eacute;ből &eacute;s aj&aacute;nlatk&eacute;rői megv&aacute;laszol&aacute;s&aacute;b&oacute;l &aacute;ll, l&eacute;nyege a megl&eacute;vő elő&iacute;r&aacute;sok egy&eacute;rtelműs&iacute;t&eacute;se, &eacute;rtelmez&eacute;se, magyar&aacute;zata. A gyakorlatban azonban figyelemfelh&iacute;v&oacute; javaslatok, &eacute;szrev&eacute;telek megfogalmaz&aacute;s&aacute; ra is haszn&aacute;lj&aacute;k ezt a jogint&eacute;zm&eacute;nyt. Az aj&aacute;nlatk&eacute;rőnek &iacute;r&aacute;sban kell v&aacute;laszt adni, amely v&aacute;laszt valamennyi aj&aacute;nlattevőnek meg kell k&uuml;ldeni, nemcsak a k&eacute;rd&eacute;st feltevőnek. A Kbt. k&uuml;l&ouml;nb&ouml;ző hat&aacute;ridőket &aacute;llap&iacute;t meg e folyamattal kapcsolatban, azokat felt&eacute;tlen&uuml;l &eacute;rdemes szem előtt tartani, tekintettel arra is, hogy az aj&aacute;nlattevők alapvető &eacute;rdeke is az, hogy egy kommunik&aacute;ci&oacute; eredm&eacute;nyek&eacute;nt egy&eacute;rtelmű, ellentmond&aacute;smentes aj&aacute;nlatt&eacute;teli felt&eacute;telrendszer j&ouml;jj&ouml;n l&eacute;tre. Sajnos a gyakorlatban m&eacute;g a legk&ouml;r&uuml;ltekintőbb aj&aacute;nlatk&eacute;rői elők&eacute;sz&iacute;t&eacute;s mellett is előfordulhatnak, maradhatnak hib&aacute;s, hi&aacute;nyos, ellentmond&aacute;sos elemek a k&ouml;zbeszerz&eacute;si dokumentumokban. Jogs&eacute;rt&eacute;st val&oacute;s&iacute;t meg az aj&aacute;nlatk&eacute;rő, ha a hat&aacute;ridőben feltett, a kieg&eacute;sz&iacute;tő t&aacute;j&eacute;koztat&aacute;sra vonatkoz&oacute; szab&aacute;lyok k&ouml;r&eacute;be tartoz&oacute; k&eacute;rd&eacute;sekre egy&aacute;ltal&aacute;n nem ad v&aacute;laszt, vagy nem ad &eacute;rdemi, t&eacute;nyleges &eacute;rtelmező v&aacute;laszt. A Kbt. az elj&aacute;r&aacute;srendekhez kapcsol&oacute;d&oacute;an elt&eacute;rő k&eacute;rdez&eacute;si &eacute;s v&aacute;laszad&aacute;si hat&aacute;ridőket r&ouml;gz&iacute;t. [1] Az aj&aacute;nlattevők seg&iacute;thetik a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s gyorsabb &eacute;s hat&eacute;konyabb megval&oacute;s&iacute;t&aacute;s&aacute;t, ha val&oacute;ban &eacute;rdemi k&eacute;rd&eacute;seket tesznek fel, tov&aacute;bb&aacute;, ha a k&eacute;rd&eacute;seiket &aacute;tgondoltan, tudatosan &eacute;s vil&aacute;gosan szerkesztve, nem az utols&oacute; napon teszik fel. A ny&uacute;jtott kieg&eacute;sz&iacute;tő t&aacute;j&eacute;koztat&aacute;s is a k&ouml;zbeszerz&eacute;si dokumentumok k&ouml;z&eacute; tartozik, az abban meghat&aacute;rozottak is k&ouml;telező erővel b&iacute;rnak , az azokban megfogalmazott k&ouml;vetelm&eacute;nyek is az &eacute;rv&eacute;nyes aj&aacute;nlatt&eacute;tel felt&eacute;telei. (Ha a k&ouml;zbeszerz&eacute;si dokumentumok m&oacute;dos&iacute;t&aacute;sra, jav&iacute;t&aacute;sra szorulnak, akkor a k&ouml;vetkező bekezd&eacute;sben t&aacute;rgyalt szab&aacute;lyszerű m&oacute;dos&iacute;t&aacute;st&oacute;l nem lehet eltekinteni, &iacute;gy p&eacute;ld&aacute;ul akkor, ha az aj&aacute;nlatk&eacute;rő egy &eacute;p&iacute;t&eacute;si beruh&aacute;z&aacute;s eset&eacute;n kieg&eacute;sz&iacute;ti a tervdokument&aacute;ci&oacute;t hi&aacute;nyz&oacute; elemekkel, vagy jav&iacute;tja a rendelkez&eacute;sre bocs&aacute;tott &aacute;razatlan k&ouml;lts&eacute;gvet&eacute;seket.)"
+          ],
+          "durationMin": 20,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=9"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=32",
+          "lessonId": 25
         },
         {
-          "id": "l26",
+          "id": "cm33",
           "num": "II.6",
           "title": "II.6. Az ajánlat tartalmi elemei",
           "shortTitle": "Az ajánlat tartalmi elemei",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az aj&aacute;nlatot az aj&aacute;nlatk&eacute;rő &aacute;ltal elő&iacute;rt formai &eacute;s tartalmi k&ouml;vetelm&eacute;nyeknek megfelelően kell elk&eacute;sz&iacute;teni &eacute;s beny&uacute;jtani, rendszerint az EKR-ben . Amennyiben az aj&aacute;nlatk&eacute;rő r&eacute;szben vagy eg&eacute;szben az EKR-en k&iacute;v&uuml;l folytatja le az elj&aacute;r&aacute;st (p&eacute;ld&aacute;ul mintadarab beny&uacute;jt&aacute;s&aacute;t is elv&aacute;rja), vagy k&uuml;l&ouml;nleges port&aacute;lt (p&eacute;ld&aacute;ul k&ouml;zpontos&iacute;tott beszerz&eacute;si rendszereket) kell haszn&aacute;lni, akkor a k&uuml;l&ouml;nleges helyzetnek megfelelően kell az aj&aacute;nlatot beny&uacute;jtani, de a tipikus az EKR haszn&aacute;lata, erre tekintettel ker&uuml;lnek &ouml;sszefoglal&aacute;sra a főbb feladatok, jellemzők &eacute;s tartalmi elemek.",
+            "Az aj&aacute;nlat elk&eacute;sz&iacute;t&eacute;s&eacute;hez kapcsol&oacute;d&oacute;an teh&aacute;t k&eacute;t alapvető k&ouml;vetelm&eacute;nycsoport ot kell elk&uuml;l&ouml;n&iacute;teni: a formai &eacute;s a tartalmi k&ouml;vetelm&eacute;nyeket."
+          ],
+          "durationMin": 13,
           "image": "/course/img/image003.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=10"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=33",
+          "lessonId": 26
         },
         {
-          "id": "l27",
+          "id": "cm34",
           "num": "II.7",
           "title": "II.7. A főbb eljárási cselekmények a bírálat során, döntéshozatal, szerződéskötés",
           "shortTitle": "A főbb eljárási cselekmények a bírálat során, döntéshozatal, szerződéskötés",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A bont&aacute;st k&ouml;vetően v&eacute;gzi az aj&aacute;nlatk&eacute;rő az aj&aacute;nlatok b&iacute;r&aacute;lat&aacute;t &eacute;s &eacute;rt&eacute;kel&eacute;s&eacute;t. Főszab&aacute;ly szerint az aj&aacute;nlatk&eacute;rő nem tekinthet el a beny&uacute;jtott aj&aacute;nlatok teljes k&ouml;rű b&iacute;r&aacute;lat&aacute;t&oacute;l, de vannak kiv&eacute;teles esetek. Ilyen p&eacute;ld&aacute;ul az, ha az elj&aacute;r&aacute;s egy&eacute;b okb&oacute;l előrel&aacute;that&oacute;lag eredm&eacute;nytelen (p&eacute;ld&aacute;ul egy&aacute;ltal&aacute;n nem biztos&iacute;that&oacute; fedezet a magas aj&aacute;nlati &aacute;rak miatt), vagy akkor, ha egy&eacute;b indokolt, előre nem l&aacute;that&oacute; rendk&iacute;v&uuml;li k&ouml;r&uuml;lm&eacute;ny mer&uuml;l fel. Az is egy lehets&eacute;ges eset, hogy az aj&aacute;nlatk&eacute;rő alkalmazza az &uacute;n. ford&iacute;tott &eacute;rt&eacute;kel&eacute;st , [1] vagyis elősz&ouml;r &eacute;rt&eacute;kel, &eacute;s azut&aacute;n b&iacute;r&aacute;l . Ez az aj&aacute;nlatk&eacute;rői oldal adminisztrat&iacute;v terheit cs&ouml;kkentő lehetős&eacute;g, hiszen felesleges sz&aacute;mos aj&aacute;nlat eset&eacute;ben a rangsor v&eacute;g&eacute;n &aacute;ll&oacute; aj&aacute;nlatokat is b&iacute;r&aacute;latba vonni, azokhoz kapcsol&oacute;d&oacute;an elj&aacute;r&aacute;si cselekm&eacute;nyeket gyakorolni. &Iacute;gy az aj&aacute;nlatk&eacute;rő elősz&ouml;r fel&aacute;ll&iacute;tja az aj&aacute;nlatok rangsor&aacute;t az &eacute;rt&eacute;kel&eacute;sre vonatkoz&oacute; elő&iacute;r&aacute;sai alapj&aacute;n (jogi sz&oacute;haszn&aacute;lattal &eacute;lve: elv&eacute;gzi az &eacute;rt&eacute;kel&eacute;st), &eacute;s csak az ehhez szigor&uacute;an kapcsol&oacute;d&oacute; cselekm&eacute;nyeket teljes&iacute;ti valamennyi aj&aacute;nlat eset&eacute;ben, ezt k&ouml;vetően pedig a d&ouml;nt&eacute;se f&uuml;ggv&eacute;ny&eacute;ben csak a legkedvezőbb, vagy csak az első n&eacute;h&aacute;ny legkedvezőbb aj&aacute;nlat b&iacute;r&aacute;lat&aacute;t v&eacute;gzi el. Az aj&aacute;nlatk&eacute;rő r&eacute;sz&eacute;ről a b&iacute;r&aacute;latot az &uacute;n. b&iacute;r&aacute;l&oacute;bizotts&aacute;g v&eacute;gzi el, amelyben jelen kell lennie k&uuml;l&ouml;nb&ouml;ző szakter&uuml;letek k&eacute;pviselőinek (p&eacute;nz&uuml;gyi, jogi, k&ouml;zbeszerz&eacute;si &eacute;s k&ouml;zbeszerz&eacute;s t&aacute;rgya szerinti szakmai szak&eacute;rtelemmel rendelkező szem&eacute;lyeket kell bevonni).",
+            "A b&iacute;r&aacute;lat sor&aacute;n az aj&aacute;nlatk&eacute;rő (a b&iacute;r&aacute;l&oacute;bizotts&aacute;g) &ouml;sszeveti az aj&aacute;nlatokat a jogszab&aacute;lyi rendelkez&eacute;sekkel, a k&ouml;zbeszerz&eacute;si dokumentumokban foglalt elő&iacute;r&aacute;sokkal , valamint elv&eacute;gzi egyes, nyilv&aacute;nosan el&eacute;rhető nyilv&aacute;ntart&aacute;sok adatainak ellenőrz&eacute;s&eacute;t &eacute;s dokument&aacute;l&aacute;s&aacute;t ."
+          ],
+          "durationMin": 18,
           "image": "/course/img/ktk-kezdo-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=11"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=34",
+          "lessonId": 27
         },
         {
-          "id": "l28",
+          "id": "cm35",
           "num": "II.8",
           "title": "II.8. Az integritás, a korrupció elkerülése és a verseny tisztasága",
           "shortTitle": "Az integritás, a korrupció elkerülése és a verseny tisztasága",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sok &ndash; ahogyan arr&oacute;l kor&aacute;bban sz&oacute; volt &ndash; akkor k&eacute;pesek bet&ouml;lteni a c&eacute;ljukat, ha t&eacute;nyleges verseny bontakozik ki. Ezen c&eacute;lkitűz&eacute;s el&eacute;r&eacute;s&eacute;t k&uuml;l&ouml;nb&ouml;ző aj&aacute;nlatk&eacute;rői &eacute;s aj&aacute;nlattevői magatart&aacute;sok vesz&eacute;lyeztethetik, vagy &eacute;ppen meg is hi&uacute;s&iacute;thatj&aacute;k. Ez&eacute;rt kell k&uuml;l&ouml;n&ouml;s figyelmet ford&iacute;tani a verseny tisztas&aacute;g&aacute;nak meg&oacute;v&aacute;s&aacute;ra, a jogellenes befoly&aacute;sol&aacute;sok, tisztess&eacute;gtelen előny&ouml;k felder&iacute;t&eacute;s&eacute;re, visszaszor&iacute;t&aacute;s&aacute;ra, megelőz&eacute;s&eacute;re &eacute;s szankcion&aacute;l&aacute;s&aacute;ra. E t&ouml;rekv&eacute;seknek vannak int&eacute;zm&eacute;nyei felt&eacute;telei: olyan hat&oacute;s&aacute;gokat, szervezeteket kell műk&ouml;dtetni, amelyek k&eacute;pesek a kock&aacute;zatokat felm&eacute;rni, a felmer&uuml;lt helyzeteket kezelni &eacute;s sz&uuml;ks&eacute;g szerint beavatkozni. Olyan szervezetek eml&iacute;tendők ebben a k&ouml;rben, mint a Gazdas&aacute;gi Versenyhivatal, az Integrit&aacute;s Hat&oacute;s&aacute;g vagy a K&ouml;zbeszerz&eacute;si Hat&oacute;s&aacute;g, amelyek a saj&aacute;t hat&aacute;sk&ouml;r&uuml;knek megfelelően k&eacute;pesek e c&eacute;lkitűz&eacute;sek megval&oacute;s&iacute;t&aacute;s&aacute;ban k&ouml;zreműk&ouml;dni, de term&eacute;szetesen valamilyen bűncselekm&eacute;ny &ndash; &iacute;gy p&eacute;ld&aacute;ul veszteget&eacute;s vagy versenyt korl&aacute;toz&oacute; meg&aacute;llapod&aacute;s k&ouml;zbeszerz&eacute;si &eacute;s koncesszi&oacute;s elj&aacute;r&aacute;sban &ndash; elk&ouml;vet&eacute;se eset&eacute;n a bűn&uuml;ld&ouml;ző hat&oacute;s&aacute;gokra is fontos feladatok h&aacute;rulnak.",
+            "Az aj&aacute;nlatk&eacute;rő r&eacute;sz&eacute;ről r&eacute;szrehajl&aacute;s , valamely aj&aacute;nlattevő előnyben r&eacute;szes&iacute;t&eacute;se, a felt&eacute;telek egy adott aj&aacute;nlattevőre igaz&iacute;t&aacute;sa, az &ouml;sszef&eacute;rhetetlens&eacute;gi k&ouml;vetelm&eacute;nyek figyelmen k&iacute;v&uuml;l hagy&aacute;sa vagy valamely szerződ&eacute;ses k&ouml;telezetts&eacute;g sz&aacute;monk&eacute;r&eacute;s&eacute;nek elmulaszt&aacute;sa is s&uacute;lyos &eacute;rdeks&eacute;relmeket, jogs&eacute;rt&eacute;seket eredm&eacute;nyezhet. P&eacute;ld&aacute;ul az aj&aacute;nlatk&eacute;rő kifejezetten valamely aj&aacute;nlattevőnek kedvező m&oacute;don hat&aacute;rozza meg a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s felt&eacute;teleit, vagy a m&aacute;r megk&ouml;t&ouml;tt szerződ&eacute;sek teljes&iacute;t&eacute;se sor&aacute;n nem &eacute;rv&eacute;nyes&iacute;ti a jogait, &iacute;gy eltekint a szerződ&eacute;sszeg&eacute;s k&ouml;vetkezm&eacute;nyeinek &eacute;rv&eacute;nyes&iacute;t&eacute;s&eacute;től."
+          ],
+          "durationMin": 10,
           "image": "/course/img/image-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=12"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=35",
+          "lessonId": 28
         }
       ]
     },
     {
       "key": "III",
-      "title": "Eljárási cselekmények és dokumentáció",
+      "title": "III. A közbeszerzési szerződések teljesítése",
       "lessons": [
         {
-          "id": "l29",
+          "id": "cm38",
           "num": "III.1",
           "title": "III.1. A szerződések teljesítésének szabályozása",
           "shortTitle": "A szerződések teljesítésének szabályozása",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sok eredm&eacute;nyek&eacute;nt b&aacute;r &uacute;n. k&ouml;zbeszerz&eacute;si szerződ&eacute;sek ker&uuml;lnek megk&ouml;t&eacute;sre, azonban alapvetően ezekre is a polg&aacute;ri jog szab&aacute;lyai vonatkoznak. A Kbt. egy&eacute;rtelműen fogalmaz, amikor &uacute;gy rendelkezik, hogy a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s alapj&aacute;n megk&ouml;t&ouml;tt szerződ&eacute;sekre a Kbt.-ben foglalt elt&eacute;r&eacute;sekkel a Ptk. szab&aacute;lyai t kell alkalmazni . [1] Ebből a szab&aacute;lyb&oacute;l t&ouml;bb jellemző is k&ouml;vetkezik.",
+            "Egyr&eacute;szt a k&ouml;zbeszerz&eacute;si szab&aacute;lyok r&aacute;&eacute;p&uuml;lnek a polg&aacute;ri jogi elő&iacute;r&aacute;sokra, &eacute;s ez&eacute;rt sok esetben egy cselekm&eacute;ny k&ouml;zbeszerz&eacute;si jogszerűs&eacute;ge att&oacute;l f&uuml;gg, hogy polg&aacute;ri jogi szempontb&oacute;l mi a k&eacute;rd&eacute;s meg&iacute;t&eacute;l&eacute;se. P&eacute;ldak&eacute;nt eml&iacute;thető, hogy a Kbt. tiltja a nyertes aj&aacute;nlattevőt terhelő t&ouml;bbletmunka k&ouml;lts&eacute;gek aj&aacute;nlatk&eacute;rő &aacute;ltali &aacute;tv&aacute;llal&aacute;s&aacute;t, azonban ennek a szab&aacute;lynak a helyes alkalmaz&aacute;s&aacute;hoz elősz&ouml;r azt kell tudni tiszt&aacute;zni, hogy a szerződ&eacute;s &eacute;s a Ptk. alapj&aacute;n az adott teljes&iacute;t&eacute;s sor&aacute;n mik minős&uuml;lnek t&ouml;bbletmunk&aacute;nak (elk&uuml;l&ouml;n&iacute;tve a p&oacute;tmunk&aacute;t&oacute;l), &eacute;s a polg&aacute;ri jog szerint az adott t&ouml;bbletmunka k&ouml;lts&eacute;ge melyik felet terheli."
+          ],
+          "durationMin": 6,
           "image": "/course/img/image-3.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=15"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=38",
+          "lessonId": 29
         },
         {
-          "id": "l30",
+          "id": "cm39",
           "num": "III.2",
           "title": "III.2. A szerződés teljesítését meghatározó körülmények",
           "shortTitle": "A szerződés teljesítését meghatározó körülmények",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;si szerződ&eacute;sek teljes&iacute;t&eacute;se alapvetően nem k&uuml;l&ouml;nb&ouml;zik m&aacute;s szerződ&eacute;sek teljes&iacute;t&eacute;s&eacute;től, azonban vannak olyan jelentős k&uuml;l&ouml;nbs&eacute;gek , amelyeket mindenk&eacute;ppen sz&uuml;ks&eacute;ges &aacute;ttekinteni.",
+            "A kiindul&oacute;pontot a k&ouml;zbeszerz&eacute;si dokumentumokban meghat&aacute;rozott aj&aacute;nlatk&eacute;rői elő&iacute;r&aacute;sok &eacute;s a nyertes aj&aacute;nlatban meghat&aacute;rozott v&aacute;llal&aacute;sok jelentik, figyelemmel az aj&aacute;nlati k&ouml;t&ouml;tts&eacute;g szab&aacute;lyaira, &iacute;gy k&uuml;l&ouml;n&ouml;sen az al&aacute;bbiak rendk&iacute;v&uuml;l fontosak:"
+          ],
+          "durationMin": 7,
           "image": "/course/img/image-4.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=16"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=39",
+          "lessonId": 30
         },
         {
-          "id": "l31",
+          "id": "cm40",
           "num": "III.3",
           "title": "III.3. Felkészülés a teljesítésre – a hatálybalépés és a teljesítés megkezdése",
           "shortTitle": "Felkészülés a teljesítésre – a hatálybalépés és a teljesítés megkezdése",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az eredm&eacute;nyes k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s eredm&eacute;nyek&eacute;nt a nyertes aj&aacute;nlattevővel ker&uuml;lhet a szerződ&eacute;s megk&ouml;t&eacute;sre, a szerződ&eacute;sk&ouml;t&eacute;si tilalmi időszak (morat&oacute;rium) lej&aacute;rt&aacute;t k&ouml;vetően. M&aacute;r a szerződ&eacute;s megk&ouml;t&eacute;s&eacute;t megelőzően is vannak fontos feladatai a nyertes aj&aacute;nlattevőnek, p&eacute;ld&aacute;ul &eacute;p&iacute;t&eacute;si beruh&aacute;z&aacute;sok eset&eacute;ben az elő&iacute;rt felelőss&eacute;gbiztos&iacute;t&aacute;s megk&ouml;t&eacute;se vagy a megl&eacute;vő kiterjeszt&eacute;se, kapcsolattart&aacute;si adatok egyeztet&eacute;se, de ha az elj&aacute;r&aacute;sban az adott szakemberek nem szerepeltek az elő&iacute;rt nyilv&aacute;ntart&aacute;sban, akkor a nyilv&aacute;ntart&aacute;sba v&eacute;telt is teljes&iacute;teni kell. Vagyis ebben a k&ouml;rben azok a k&ouml;telezetts&eacute;gek teljes&iacute;tendők, amelyek nem voltak az &eacute;rv&eacute;nyes aj&aacute;nlatt&eacute;tel felt&eacute;telei, de a szerződ&eacute;s megk&ouml;t&eacute;s&eacute;hez m&aacute;r az aj&aacute;nlatk&eacute;rői elő&iacute;r&aacute;sok szerint teljes&iacute;teni kell őket.",
+            "Vannak olyan szerződ&eacute;sek, amelyekn&eacute;l a szerződ&eacute;s megk&ouml;t&eacute;s&eacute;nek &eacute;s a teljes&iacute;t&eacute;s megkezd&eacute;s&eacute;nek időpontja egym&aacute;st&oacute;l elv&aacute;lik, teh&aacute;t csak k&eacute;sőbb kezdődhet meg a teljes&iacute;t&eacute;s. Az aj&aacute;nlattevőket v&eacute;dő alapvető jogszab&aacute;lyi koncepci&oacute; ebből ad&oacute;d&oacute;an az, hogy nem lehet p&eacute;ld&aacute;ul idő előtt biztos&iacute;t&eacute;k rendelkez&eacute;sre bocs&aacute;t&aacute;s&aacute;t k&eacute;rni. Ha az aj&aacute;nlatk&eacute;rő a szerződ&eacute;s teljes&iacute;t&eacute;s&eacute;nek elmarad&aacute;s&aacute;val kapcsolatos ig&eacute;nyekre biztos&iacute;t&eacute;kot k&ouml;t&ouml;tt ki, akkor nem &iacute;rhat&oacute; elő az, hogy a szerződ&eacute;s hat&aacute;lyba l&eacute;p&eacute;s&eacute;t megelőzően bocs&aacute;ss&aacute;k azt rendelkez&eacute;sre. [1]"
+          ],
+          "durationMin": 7,
           "image": "/course/img/evk-kezdokep.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=17"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=40",
+          "lessonId": 31
         },
         {
-          "id": "l32",
+          "id": "cm41",
           "num": "III.4",
           "title": "III.4. A teljesítésben közreműködő alanyok",
           "shortTitle": "A teljesítésben közreműködő alanyok",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A nyertes aj&aacute;nlattevői oldalhoz kapcsol&oacute;d&oacute;an a Kbt. &aacute;ltal&aacute;nos k&ouml;vetelm&eacute;nyk&eacute;nt hat&aacute;rozza meg az al&aacute;bbiakat.",
+            "&bdquo; A szerződ&eacute;st a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s alapj&aacute;n nyertes aj&aacute;nlattevők&eacute;nt szerződő f&eacute;lnek , illetve k&ouml;z&ouml;sen aj&aacute;nlatot tevőknek vagy &ndash; ha az aj&aacute;nlatk&eacute;rő gazd&aacute;lkod&oacute; szervezet l&eacute;trehoz&aacute;s&aacute;nak k&ouml;telezetts&eacute;g&eacute;t elő&iacute;rta vagy azt lehetőv&eacute; tette [35. &sect; (8)&ndash;(9) bekezd&eacute;s] &ndash; a nyertes aj&aacute;nlattevő (aj&aacute;nlattevők), vagy az aj&aacute;nlatk&eacute;rő &eacute;s a nyertes aj&aacute;nlattevő (aj&aacute;nlattevők) kiz&aacute;r&oacute;lagos r&eacute;szesed&eacute;s&eacute;vel l&eacute;trehozott gazd&aacute;lkod&oacute; szervezetnek (a tov&aacute;bbiakban: projektt&aacute;rsas&aacute;g) kell teljes&iacute;tenie .&rdquo; [1]"
+          ],
+          "durationMin": 30,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=18"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=41",
+          "lessonId": 32
         },
         {
-          "id": "l33",
+          "id": "cm42",
           "num": "III.5",
           "title": "III.5. A teljesítés mennyisége: az opciók és a mennyiségi eltérések",
           "shortTitle": "A teljesítés mennyisége: az opciók és a mennyiségi eltérések",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az aj&aacute;nlatk&eacute;rő a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s elők&eacute;sz&iacute;t&eacute;se sor&aacute;n k&ouml;teles felm&eacute;rni a beszerz&eacute;si ig&eacute;ny&eacute;nek r&eacute;szek&eacute;nt a mennyis&eacute;get is, &eacute;s a vonatkoz&oacute; &ouml;sszes&iacute;tett adatokat az elj&aacute;r&aacute;st megind&iacute;t&oacute; felh&iacute;v&aacute;sban r&ouml;gz&iacute;teni . Vannak olyan helyzetek, amikor az aj&aacute;nlatk&eacute;rő a legnagyobb gondoss&aacute;g mellett sem tudja meghat&aacute;rozni azt, hogy pontosan mekkora mennyis&eacute;gre is lesz sz&uuml;ks&eacute;ge a teljes&iacute;t&eacute;s időszak&aacute;ban. P&eacute;ld&aacute;ul &eacute;lelmiszerbeszerz&eacute;sn&eacute;l az &ouml;nkorm&aacute;nyzat nem tudja előre meghat&aacute;rozni, hogy h&aacute;ny főnek kell &eacute;tkeztet&eacute;st biztos&iacute;tani, h&aacute;ny ell&aacute;tott lesz az int&eacute;zm&eacute;nyeiben, ez&eacute;rt mennyis&eacute;gi elt&eacute;r&eacute;st engedő elő&iacute;r&aacute;sokat kell tennie. Ez&eacute;rt e tekintetben rugalmass&aacute;got biztos&iacute;t a t&ouml;rv&eacute;ny: &bdquo; Az aj&aacute;nlatk&eacute;rő k&ouml;teles megadni a k&ouml;zbeszerz&eacute;s t&aacute;rgy&aacute;t &eacute;s mennyis&eacute;g&eacute;t &ndash; adott esetben a szerződ&eacute;stervezetben foglaltaknak megfelelő mennyis&eacute;gi elt&eacute;r&eacute;s vagy opcion&aacute;lis r&eacute;sz megad&aacute;s&aacute;val &ndash; az elj&aacute;r&aacute;st megind&iacute;t&oacute; felh&iacute;v&aacute;sban, valamint előzetes t&aacute;j&eacute;koztat&oacute;val meghirdetett elj&aacute;r&aacute;s eset&eacute;n az előzetes t&aacute;j&eacute;koztat&oacute;ban is.&rdquo; [1]",
+            "Az elt&eacute;r&eacute;s megad&aacute;s&aacute;ra lehetős&eacute;g van &uacute;gy is, hogy az aj&aacute;nlatk&eacute;rő leh&iacute;v&aacute;si jogot mag&aacute;ban foglal&oacute; keretszerződ&eacute;st k&ouml;t, vagy pedig az alapmennyis&eacute;gen fel&uuml;li tov&aacute;bbi mennyis&eacute;g egyoldal&uacute; v&aacute;s&aacute;rl&aacute;s&aacute;ra jogos&iacute;t&oacute; opci&oacute;t k&ouml;t ki ."
+          ],
+          "durationMin": 14,
           "image": "/course/img/image003.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=19"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=42",
+          "lessonId": 33
         },
         {
-          "id": "l34",
+          "id": "cm43",
           "num": "III.6",
           "title": "III.6. Az ellenszolgáltatás kifizetése",
           "shortTitle": "Az ellenszolgáltatás kifizetése",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A kiindul&oacute;pont az, hogy az aj&aacute;nlatk&eacute;rő a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sban milyen fizet&eacute;si felt&eacute;teleket &iacute;rt elő a jogszab&aacute;lyi keretek k&ouml;z&ouml;tt. A legfontosabbak ebben a k&ouml;rben az előleg , a r&eacute;szsz&aacute;ml&aacute;k beny&uacute;jt&aacute;s&aacute;nak &uuml;temez&eacute;se, a fizet&eacute;si hat&aacute;ridő, valamint a tartal&eacute;kkeret . Rendk&iacute;v&uuml;l fontos, hogy a szerződ&eacute;s pontosan hat&aacute;rozza meg a kifizet&eacute;sek rendj&eacute; t, hiszen ellenkező esetben nem lehet meg&aacute;llap&iacute;tani azt, hogy mikor esed&eacute;kes a sz&aacute;ml&aacute;z&aacute;s. B&aacute;r k&eacute;ts&eacute;gtelen, hogy vannak olyan esetek, amikor a KDB az elő&iacute;r&aacute;sok r&eacute;szletess&eacute;g&eacute;nek hi&aacute;ny&aacute;t jogszerűnek fogadja el, &eacute;s vannak olyanok is, amikor nem, att&oacute;l f&uuml;ggően, hogy milyen jogszab&aacute;lyi rendelkez&eacute;sek vonatkoznak az adott t&aacute;rgyra.",
+            "1. p&eacute;lda: az aj&aacute;nlatk&eacute;rő munkag&eacute;pek beszerz&eacute;se t&aacute;rgyban k&ouml;t&ouml;tt szerződ&eacute;st, &eacute;s mind&ouml;ssze annyit &iacute;rt elő, hogy &bdquo;Aj&aacute;nlattevőnek Aj&aacute;nlatk&eacute;rőnk&eacute;nt 1 előlegsz&aacute;mla, 1 r&eacute;szsz&aacute;mla &eacute;s 1 v&eacute;gsz&aacute;mla beny&uacute;jt&aacute;s&aacute;ra van lehetős&eacute;ge.&rdquo; Azt azonban nem r&eacute;szletezte, hogy mikor, milyen felt&eacute;telek mellett van lehetős&eacute;g a r&eacute;szsz&aacute;mla beny&uacute;jt&aacute;s&aacute;ra. A KDB &uacute;gy foglalt &aacute;ll&aacute;st, hogy ez nem volt jogs&eacute;rtő. [1]"
+          ],
+          "durationMin": 29,
           "image": "/course/img/image.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=20"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=43",
+          "lessonId": 34
         },
         {
-          "id": "l35",
+          "id": "cm44",
           "num": "III.7",
           "title": "III.7. A szerződések módosítása",
           "shortTitle": "A szerződések módosítása",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "SEQ ábra \\* ARABIC 6 . &aacute;bra: A szerződ&eacute;sm&oacute;dos&iacute;t&aacute;s folyamata",
+            "Alapvető elv&aacute;r&aacute;s, hogy a szerződ&eacute;sek &uacute;gy teljes&uuml;ljenek, ahogyan azt az aj&aacute;nlatk&eacute;rők&eacute;nt szerződő f&eacute;l &eacute;s a nyertes aj&aacute;nlattevők&eacute;nt szerződő f&eacute;l megk&ouml;t&ouml;tt&eacute;k, az eredeti felt&eacute;telek szerint. A szerződ&eacute;s m&oacute;dos&iacute;t&aacute;s&aacute; nak lehetős&eacute;ge ez&eacute;rt korl&aacute;tozott, vagyis nem &eacute;rv&eacute;nyes&uuml;lhet a Ptk.-ban meghat&aacute;rozott &aacute;ltal&aacute;nos, felt&eacute;tel n&eacute;lk&uuml;li lehetős&eacute;g arra n&eacute;zve, hogy felek a szerződ&eacute;st m&oacute;dos&iacute;ts&aacute;k szabad bel&aacute;t&aacute;suk szerint. A jogalkot&oacute;nak e korl&aacute;tok meghat&aacute;roz&aacute;sakor egyr&eacute;szt azt kell alapul vennie, hogy a szerződ&eacute;seket indokolatlanul, az alapelvekbe &uuml;tk&ouml;ző m&oacute;don ne m&oacute;dos&iacute;thass&aacute;k. M&aacute;sr&eacute;szt pedig figyelemmel kell lennie arra is, hogy val&oacute;ban lehetnek olyan &ndash; p&eacute;ld&aacute;ul a felek &aacute;ltal előre nem l&aacute;that&oacute; &ndash; k&ouml;r&uuml;lm&eacute;nyek, amelyek indokolhat&oacute;v&aacute; tehetik a szerződ&eacute;s m&oacute;dos&iacute;t&aacute;s&aacute;t, p&eacute;ld&aacute;ul a teljes&iacute;t&eacute;si hat&aacute;ridő meghosszabb&iacute;t&aacute;s&aacute;t vagy a műszaki tartalom megv&aacute;ltoztat&aacute;s&aacute;t. A Kbt. szerződ&eacute;s m&oacute;dos&iacute;t&aacute;s&aacute;ra vonatkoz&oacute; felt&eacute;teleinek teljes&uuml;l&eacute;s&eacute;t t&ouml;bb szervezet is ellenőrzi , &iacute;gy p&eacute;ld&aacute;ul a K&ouml;zbeszerz&eacute;si Hat&oacute;s&aacute;g, valamint t&aacute;mogatott k&ouml;zbeszerz&eacute;sek eset&eacute;ben t&aacute;mogat&aacute;st ny&uacute;jt&oacute;, illetve azok felhaszn&aacute;l&aacute;s&aacute;t ellenőrző szervezetek. Ha a m&oacute;dos&iacute;t&aacute;s a Kbt.-be &uuml;tk&ouml;ző m&oacute;don val&oacute;sult meg, akkor a KDB jogorvoslati elj&aacute;r&aacute;s&aacute;nak van helye . A feleknek teh&aacute;t mindig gondosan kell megvizsg&aacute;lnia azt a k&eacute;rd&eacute;st, hogy fenn&aacute;llnak-e a m&oacute;dos&iacute;t&aacute;s felt&eacute;telei, tov&aacute;bb&aacute; a Kbt. 141. &sect;-a &aacute;ltal felk&iacute;n&aacute;lt jogalapok k&ouml;z&uuml;l melyik alkalmazhat&oacute;, illetve a v&aacute;lasztott jogalapot al&aacute; kell tudniuk t&aacute;masztani. Ennek sikertelens&eacute;ge eset&eacute;n a szerződ&eacute;s m&oacute;dos&iacute;t&aacute;s&aacute;nak jogelleness&eacute;ge &eacute;s annak jogk&ouml;vetkezm&eacute;nyei &aacute;llap&iacute;that&oacute;k meg a KDB &aacute;ltal, &iacute;gy a b&iacute;rs&aacute;g (amellyel a nyertes aj&aacute;nlattevők&eacute;nt szerződő f&eacute;l is s&uacute;jthat&oacute;), [1] illetve a Kbt. 141. &sect; (8) bekezd&eacute;se szerinti felt&eacute;tel fenn&aacute;ll&aacute;sa eset&eacute;n semmiss&eacute;g. [2]"
+          ],
+          "durationMin": 26,
           "image": "/course/img/image-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=21"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=44",
+          "lessonId": 35
         },
         {
-          "id": "l36",
+          "id": "cm45",
           "num": "III.8",
           "title": "III.8. Az egyes szerződésmódosítási jogalapok részletei",
           "shortTitle": "Az egyes szerződésmódosítási jogalapok részletei",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A Kbt. &ouml;sszesen 5 lehets&eacute;ges jogalap ot k&uuml;l&ouml;n&iacute;t el, ezt eg&eacute;sz&iacute;ti ki az alanyv&aacute;ltoz&aacute;sra vonatkoz&oacute; lehetős&eacute;g. A k&ouml;vetkező bekezd&eacute;sekben az &ouml;t lehets&eacute;ges esetk&ouml;r felt&eacute;telei ker&uuml;lnek r&ouml;viden &aacute;ttekint&eacute;sre.",
+            "a) Az első az &uacute;n. de minimis esete. &bdquo;A de minimis esetk&ouml;r alkalmazhat&oacute;s&aacute;g&aacute;nak t&aacute;rgyi &eacute;s m&eacute;rt&eacute;kbeli konjunkt&iacute;v felt&eacute;telei vannak. A t&aacute;rgyi felt&eacute;telek k&ouml;z&eacute; tartozik, hogy kiz&aacute;r&oacute;lag azon szerződ&eacute;sm&oacute;dos&iacute;t&aacute;sok jogszerűs&eacute;g&eacute;t alapozz&aacute;k meg, melyek a szerződ&eacute;s &eacute;rt&eacute;k&eacute;nek v&aacute;ltoz&aacute;s&aacute;val j&aacute;r, nem v&aacute;ltoztatja meg a szerződ&eacute;s &aacute;ltal&aacute;nos jelleg&eacute;t &eacute;s illeszkedik az eredeti szerződ&eacute;s jelleg&eacute;hez. A Kbt. id&eacute;zett szakasz&aacute;nak vizsg&aacute;lata k&ouml;r&eacute;ben alapvető felt&eacute;tel, hogy csak olyan m&oacute;dos&iacute;t&aacute;sra alkalmazhat&oacute; az eset, mely a szerződ&eacute;s &eacute;rt&eacute;k&eacute;nek v&aacute;ltoz&aacute;s&aacute;val j&aacute;r.&rdquo; [1] Fontos ugyanakkor, hogy a m&oacute;dos&iacute;t&aacute;s &eacute;rt&eacute;ke a k&uuml;sz&ouml;b&eacute;rt&eacute;ket (t&aacute;rgyt&oacute;l f&uuml;ggően 10-15%, illetve a vonatkoz&oacute; uni&oacute;s &eacute;rt&eacute;khat&aacute;r) [2] nem haladhatja meg, hiszen ilyen esetben jogszerűen nem lehet e jogalapot alkalmazni a szerződ&eacute;sm&oacute;dos&iacute;t&aacute;s al&aacute;t&aacute;maszt&aacute;sa k&ouml;r&eacute;ben."
+          ],
+          "durationMin": 30,
           "image": "/course/img/image-2.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=22"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=45",
+          "lessonId": 36
         },
         {
-          "id": "l37",
+          "id": "cm46",
           "num": "III.9",
           "title": "III.9. A jogellenes szerződésmódosítás jogkövetkezményei",
           "shortTitle": "A jogellenes szerződésmódosítás jogkövetkezményei",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A szerződ&eacute;s m&oacute;dos&iacute;t&aacute;s&aacute;nak egyik fontos jellemzője, hogy mindig kock&aacute;zat ot rejt mag&aacute;ban, hiszen, ha valamely ellenőrz&eacute;st v&eacute;gző szervezet &uacute;gy v&eacute;li, hogy az jogellenesnek minős&iacute;thető, akkor jogorvoslati elj&aacute;r&aacute;s indulhat. Ha pedig az elj&aacute;r&aacute;s jogs&eacute;rt&eacute;s meg&aacute;llap&iacute;t&aacute;s&aacute;val z&aacute;rul, akkor a KDB a hat&aacute;rozat&aacute;ban rendelkezik a jogk&ouml;vetkezm&eacute;nyek ről is.",
+            "Az első fontos jogk&ouml;vetkezm&eacute;ny a b&iacute;rs&aacute;g , amely m&eacute;rlegel&eacute;si jogk&ouml;r alapj&aacute;n szabhat ki a KDB. Ez azt jelenti, hogy &eacute;rt&eacute;keli a Kbt.-ben meghat&aacute;rozott szempontokat (p&eacute;ld&aacute;ul a jogs&eacute;rt&eacute;s s&uacute;ly&aacute;t, a szerződ&eacute;sm&oacute;dos&iacute;t&aacute;ssal &eacute;rintett &eacute;rt&eacute;ket), [1] &eacute;s a t&ouml;rv&eacute;nyi felső hat&aacute;ron bel&uuml;l &aacute;llap&iacute;tja meg a b&iacute;rs&aacute;g &ouml;sszeg&eacute;t, felt&eacute;ve, hogy az adott jogs&eacute;rt&eacute;s eset&eacute;ben nem k&ouml;telező valamilyen m&eacute;rt&eacute;kű b&iacute;rs&aacute;g kiszab&aacute;sa."
+          ],
+          "durationMin": 7,
           "image": "/course/img/image-3.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=23"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=46",
+          "lessonId": 37
         },
         {
-          "id": "l38",
+          "id": "cm47",
           "num": "III.10",
           "title": "III.10. A szerződések teljesítéséhez kapcsolódó további kérdések és kockázatok",
           "shortTitle": "A szerződések teljesítéséhez kapcsolódó további kérdések és kockázatok",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A szerződ&eacute;sek teljes&iacute;t&eacute;s&eacute;nek egyik alapvető szab&aacute;lya a Kbt.-ben, a k&ouml;zp&eacute;nzekkel val&oacute; felelős gazd&aacute;lkod&aacute;s elv&eacute;nek &eacute;rv&eacute;nyes&iacute;t&eacute;se k&ouml;telező. Ennek egyik alapvető megnyilv&aacute;nul&aacute;sa az al&aacute;bbiak:",
+            "&middot; a szerződ&eacute;sszeg&eacute;sek eset&eacute;n nem lehet eltekinteni a k&ouml;vetelm&eacute;nyek teljes&iacute;t&eacute;s&eacute;től, az ig&eacute;nyek &eacute;rv&eacute;nyes&iacute;t&eacute;s&eacute;től,"
+          ],
+          "durationMin": 11,
           "image": "/course/img/benyujtott-ajanlat-visszavonasa.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=24"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=47",
+          "lessonId": 38
         },
         {
-          "id": "l39",
+          "id": "cm48",
           "num": "III.11",
           "title": "III.11. Az integritás és a korrupció elkerülése",
           "shortTitle": "Az integritás és a korrupció elkerülése",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;si szerződ&eacute;sek megfelelő minős&eacute;gben val&oacute; teljes&iacute;t&eacute;se alapvető k&ouml;z&eacute;rdek, hiszen a k&ouml;zbeszerz&eacute;si szab&aacute;lyok megker&uuml;l&eacute;s&eacute;vel egyen&eacute;rt&eacute;kű az, ha a szerződ&eacute;s nem az elő&iacute;rt felt&eacute;teleknek megfelelően teljes&uuml;l. Hib&aacute;s &eacute;s k&eacute;sedelmes teljes&iacute;t&eacute;s, a szerződ&eacute;ses k&ouml;telezetts&eacute;gek k&ouml;vetkezetes &eacute;s szigor&uacute; sz&aacute;monk&eacute;r&eacute;s&eacute;nek elmarad&aacute;sa, a biztos&iacute;t&eacute;kok &eacute;rv&eacute;nyes&iacute;t&eacute;s&eacute;nek mellőz&eacute;se, az alv&aacute;llalkoz&oacute;i kifizet&eacute;sek olyan kock&aacute;zati t&eacute;nyezők, amelyekkel kapcsolatban hat&aacute;rozottan fel kell l&eacute;pni.",
+            "Egyr&eacute;szt biztos&iacute;tani kell azokat a jogint&eacute;zm&eacute;nyeket, jogi k&ouml;telezetts&eacute;geket, amelyek &aacute;tl&aacute;that&oacute;v&aacute; &eacute;s ellenőrizhetőv&eacute; teszik a folyamatot. Ebben a k&ouml;rben a nyilv&aacute;noss&aacute;g &eacute;s az adatok kereshetős&eacute;g&eacute;nek emelhető ki elsősorban. A szerződ&eacute;sm&oacute;dos&iacute;t&aacute;sok nyilv&aacute;noss&aacute;ga, a hirdetm&eacute;nyekben megadott indokok &eacute;s tartalmak megismerhetős&eacute;ge, a szerződ&eacute;s teljes&iacute;t&eacute;s&eacute;re &eacute;s az alv&aacute;llalkoz&oacute;kra vonatkoz&oacute; adatok k&ouml;zz&eacute;t&eacute;tel&eacute;nek k&ouml;telezetts&eacute;ge nagym&eacute;rt&eacute;kben hozz&aacute;j&aacute;rulhat a k&ouml;zbeszerz&eacute;sek c&eacute;ljainak megval&oacute;s&iacute;t&aacute;s&aacute;hoz. A k&ouml;zv&eacute;lem&eacute;ny, a versenyt&aacute;rs gazdas&aacute;gi szereplők &eacute;s a k&ouml;zigazgat&aacute;si szervezetrendszer sz&aacute;m&aacute;ra kulcsfontoss&aacute;g&uacute;ak lehetnek azok az inform&aacute;ci&oacute;k, amelyek az eml&iacute;tett k&ouml;zz&eacute;t&eacute;telekből megismerhetők. Ebből az is k&ouml;vetkezik, hogy nemcsak az ellenőrz&eacute;st v&eacute;gző int&eacute;zm&eacute;nyek feladata lehet a szerződ&eacute;sek m&oacute;dos&iacute;t&aacute;s&aacute;ra &eacute;s teljes&iacute;t&eacute;s&eacute;re vonatkoz&oacute; adatokb&oacute;l a sz&uuml;ks&eacute;ges k&ouml;vetkeztet&eacute;sek levon&aacute;sa. Term&eacute;szetesen az ő szerep&uuml;k is rendk&iacute;v&uuml;l fontos, hiszen nemcsak a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sokat, hanem a megk&ouml;t&ouml;tt szerződ&eacute;sek teljes&iacute;t&eacute;s&eacute;nek &eacute;s m&oacute;dos&iacute;t&aacute;s&aacute;nak k&ouml;r&uuml;lm&eacute;nyeit is folyamatosan ellenőrizni kell erre szakosodott int&eacute;zm&eacute;nyeknek."
+          ],
+          "durationMin": 4,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=25"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=48",
+          "lessonId": 39
         }
       ]
     },
     {
       "key": "IV",
-      "title": "Értékelés, eredmény és jogorvoslat",
+      "title": "IV. A közbeszerzési jogorvoslat",
       "lessons": [
         {
-          "id": "l40",
+          "id": "cm51",
           "num": "IV.1",
           "title": "IV.1. A közbeszerzési jogviták általános jellemzői",
           "shortTitle": "A közbeszerzési jogviták általános jellemzői",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;sekhez &eacute;s a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;sokhoz kapcsol&oacute;d&oacute;an mer&uuml;lhetnek fel k&uuml;l&ouml;nb&ouml;ző jogvit&aacute;k, jogs&eacute;rt&eacute;sek. Az Eur&oacute;pai Uni&oacute; ir&aacute;nyelvei alapj&aacute;n biztos&iacute;tani kell a hat&eacute;kony &eacute;s gyors jogorvoslat lehetős&eacute;g&eacute;t legal&aacute;bb azon szem&eacute;lyek sz&aacute;m&aacute;ra, akiknek &eacute;rdek&uuml;kben &aacute;ll vagy &aacute;llt egy adott szerződ&eacute;s elnyer&eacute;se, &eacute;s akiknek az &aacute;ll&iacute;t&oacute;lagos jogs&eacute;rt&eacute;s &eacute;rdeks&eacute;relmet okozott vagy ennek kock&aacute;zata fenn&aacute;ll, ami azt jelenti, hogy egy k&ouml;zigazgat&aacute;si vagy b&iacute;r&oacute;s&aacute;gi szervezet k&uuml;l&ouml;n elj&aacute;r&aacute;sban vizsg&aacute;lja meg, hogy megval&oacute;sult-e a k&ouml;zbeszerz&eacute;si jogszab&aacute;lyok megs&eacute;rt&eacute;se vagy sem. Ez a probl&eacute;mak&ouml;r kieg&eacute;sz&iacute;thető azokkal a k&aacute;rt&eacute;r&iacute;t&eacute;si ig&eacute;nyekkel, amelyeket az aj&aacute;nlattevők ut&oacute;bb b&iacute;r&oacute;s&aacute;g &aacute;ltal jogs&eacute;rtőnek &iacute;t&eacute;lt k&ouml;zigazgat&aacute;si d&ouml;nt&eacute;s folyt&aacute;n orvosol&aacute;s n&eacute;lk&uuml;l maradt k&ouml;zbeszerz&eacute;si jogs&eacute;rt&eacute;sek alapj&aacute;n t&aacute;maszthatnak, felt&eacute;ve, hogy annak jogszab&aacute;lyi felt&eacute;telei fenn&aacute;llnak. [1]",
+            "- A magyar jogrendszerben k&ouml;zigazgat&aacute;si szerv, a K&ouml;zbeszerz&eacute;si Hat&oacute;s&aacute;g keret&eacute;n bel&uuml;l műk&ouml;dő K&ouml;zbeszerz&eacute;si D&ouml;ntőbizotts&aacute;g (KDB) hat&aacute;sk&ouml;r&eacute;be tartozik a jogorvoslati elj&aacute;r&aacute;s lefolytat&aacute;sa."
+          ],
+          "durationMin": 8,
           "image": "/course/img/image003-2.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=28"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=51",
+          "lessonId": 40
         },
         {
-          "id": "l41",
+          "id": "cm52",
           "num": "IV.2",
           "title": "IV.2. A jogorvoslati eljárást megalapozó körülmények, a célok és a lehetséges eredmények",
           "shortTitle": "A jogorvoslati eljárást megalapozó körülmények, a célok és a lehetséges eredmények",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A jogorvoslati eljárások tárgyát jellemzően ajánlatkérői magatartások (döntések), mulasztások képezik, viszonylag ritkábban fordul elő ajánlattevővel szemben kérelmezett (kezdeményezett) jogorvoslati eljárás. Az ajánlattevői oldal jellemzően a szerződés teljesítésének időszakában, így például az alvállalkozók bejelentésének elmulasztására vagy a jogellenes szerződésmódosításokra irányuló jogorvoslati eljárásokban jelenik meg.",
+            "Az ajánlatkérői jogsértő cselekmények (mulasztások) abból a szempontból, hogy mi a jogellenesség forrása , az alábbi csoportokba sorolhatók: [1]"
+          ],
+          "durationMin": 14,
           "image": "/course/img/image005.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=29"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=52",
+          "lessonId": 41
         },
         {
-          "id": "l42",
+          "id": "cm53",
           "num": "IV.3",
           "title": "IV.3. Az alanyok",
           "shortTitle": "Az alanyok",
           "paragraphs": [
-            "Az egyik legfontosabb kérdés, hogy kik vesznek, vehetnek részt milyen pozícióban egy jogorvoslati eljárásban, és ezeket az alanyokat hogyan nevezik? A kérelmező – és a hivatalból lefolytatott jogorvoslati eljárást kezdeményező – személye a fentiekben már ismertetésre került. Általában az ajánlatkérő a „támadott” fél, vagyis akinek az eljárásával, beszerzésével szerződésmódosításával stb.",
-            "szemben kérelmet vagy hivatalból kezdeményezést nyújtanak be. Az eljárási megnevezés ennek megfelelően „ajánlatkérő”, de ha közbeszerzési eljárás jogtalan mellőzése a jogorvoslati eljárás tárgya, akkor „beszerző” elnevezés használatos. Aki a jogorvoslati kérelmet benyújtja – jellemzően az ajánlattevő –, az a „kérelmező”, de ha az ajánlatkérő a jogsértése orvoslása érdekében a saját eljárásával szemben nyújt be kérelmet, akkor ő is kérelmezőként jelenik meg.",
-            "De az ajánlatkérő is lehet „támadó” fél valamely ajánlattevővel szemben, például akkor, ha a nyertes ajánlattevő az összegezés megküldését követően jogellenesen tagadja meg a szerződés megkötését, jogellenesen lép vissza, és emiatt az ajánlatkérő a KDB-hez fordul. „Kérelmezett” az, aki az ajánlatkérőn/beszerzőn felül szintén „támadott” fél, és akit ügyfélként vonnak be az eljárásba.",
-            "Az ő esetében kulcsfontosságú, hogy milyen nyilatkozatot tesz, hogyan tud védekezni, milyen bizonyítékokat képes előterjeszteni, hiszen a jogorvoslati eljárás végkifejlete közvetlenül érinti. Így például a nyertes ajánlattevőként szerződő fél kérelmezettként jelenik meg, ha: · jogellenes szerződésmódosítás a jogorvoslati eljárás tárgya, vagy · hamis adatszolgáltatás gyanúját veti fel vele szemben egy másik kérelmező, · a szerződés megkötésének jogellenes megtagadása miatt nyújt be nyertes ajánlattevővel szemben kérelmet az ajánlatkérő.",
-            "A „kérelmezett” tehát többet kockáztat, mint egy „egyszerű” egyéb érdekelt, ugyanis vele szemben jogsértés állapítható meg, így például bírságot is kockáztat, ebből adódóan az esetükben az ügyféli jogokra, a tisztességes eljáráshoz való jog érvényesítésére különös hangsúlyt kell fektetni.",
-            "„Egyéb érdekelt” az: · akinek a jogorvoslati eljárás eredménye akár közömbös, vagy kevésbé fontos, · vagy bár az eredmény a nyertesség szempontjából döntő jelentőségű, mégsem kell számára közvetlen ügyféli pozíciót biztosítani, hiszen jogsértés megvalósítójaként nem merülhet fel. Például, ha az ajánlatkérő az ajánlattevőt az ajánlatok elbírálásáról szóló összegzésben nyertes ajánlattevőként tüntette fel, a második helyezett pedig vitatja a nyertes ajánlat érvényességét.",
-            "Ilyen esetben a nyertes ajánlattevő érdeke nyilván az, hogy a jogorvoslati eljárásban az ajánlatkérő döntésének jogszerűsége mellett érveljen, de nem az ő, hanem az ajánlatkérő döntése képezi a jogvita tárgyát, így ő nem valósíthatott meg jogsértést. Hiszen nem ő döntött az ajánlat érvényességéről és nyertességéről, ez az ajánlatkérő felelősségi körébe tartozik.",
-            "Nyilván bekapcsolódhat a jogorvoslati eljárásba, tehet észrevételt, az érdeke az, hogy az ajánlatkérő döntése jogszerűnek bizonyuljon, és a nyertesi pozíciója megmaradjon, az ajánlatkérő nyertességének előmozdítása áll az érdekében."
+            "Az egyik legfontosabb kérdés, hogy kik vesznek, vehetnek részt milyen pozícióban egy jogorvoslati eljárásban, és ezeket az alanyokat hogyan nevezik? A kérelmező – és a hivatalból lefolytatott jogorvoslati eljárást kezdeményező – személye a fentiekben már ismertetésre került.",
+            "Általában az ajánlatkérő a „támadott” fél, vagyis akinek az eljárásával, beszerzésével szerződésmódosításával stb. szemben kérelmet vagy hivatalból kezdeményezést nyújtanak be. Az eljárási megnevezés ennek megfelelően „ajánlatkérő”, de ha közbeszerzési eljárás jogtalan mellőzése a jogorvoslati eljárás tárgya, akkor „ beszerző ” elnevezés használatos. Aki a jogorvoslati kérelmet benyújtja – jellemzően az ajánlattevő –, az a „kérelmező”, de ha az ajánlatkérő a jogsértése orvoslása érdekében a saját eljárásával szemben nyújt be kérelmet, akkor ő is kérelmezőként jelenik meg. De az ajánlatkérő is lehet „támadó” fél valamely ajánlattevővel szemben, például akkor, ha a nyertes ajánlattevő az összegezés megküldését követően jogellenesen tagadja meg a szerződés megkötését, jogellenesen lép vissza, és emiatt az ajánlatkérő a KDB-hez fordul."
           ],
-          "durationMin": 13,
+          "durationMin": 3,
           "image": "/course/img/image-4.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=30"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=53",
+          "lessonId": 42
         },
         {
-          "id": "l43",
+          "id": "cm54",
           "num": "IV.4",
           "title": "IV.4. Felkészülés a jogorvoslati eljárásra",
           "shortTitle": "Felkészülés a jogorvoslati eljárásra",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A jogorvoslati elj&aacute;r&aacute;st &aacute;ltal&aacute;ban előzetes vitarendez&eacute;s szokta megelőzni. Alkalmaz&aacute;sa azonban nem k&ouml;telező&ndash; ahogyan arr&oacute;l m&aacute;r sz&oacute; volt &ndash;, viszont c&eacute;lszerű alkalmazni, hiszen lehetős&eacute;get k&iacute;n&aacute;l arra, hogy az aj&aacute;nlatk&eacute;rő saj&aacute;t maga orvosolja valamely jogs&eacute;rt&eacute;s&eacute;t, felt&eacute;ve, hogy elfogadja r&eacute;szben vagy eg&eacute;szben a k&eacute;relmezői &aacute;ll&aacute;spontot.",
+            "Ha az aj&aacute;nlattevő az előzm&eacute;nyek ismeret&eacute;ben v&eacute;gleges&iacute;tette az elhat&aacute;roz&aacute;s&aacute;t, hogy a KDB-hez k&iacute;v&aacute;n fordulni, akkor a k&ouml;vetkező főbb k&eacute;rd&eacute;seket, kock&aacute;zatokat &eacute;s k&ouml;lts&eacute;gig&eacute;nyeket kell megvizsg&aacute;lnia, &eacute;rt&eacute;kelnie. Mindezt pedig annak figyelembev&eacute;tel&eacute;vel, hogy a jogorvoslati k&eacute;relem beny&uacute;jt&aacute;s&aacute;ra jogvesztő hat&aacute;ridők vonatkoznak, teh&aacute;t a d&ouml;nt&eacute;seket ezeknek megfelelően kell meghozni."
+          ],
+          "durationMin": 11,
           "image": "/course/img/image.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=31"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=54",
+          "lessonId": 43
         },
         {
-          "id": "l44",
+          "id": "cm55",
           "num": "IV.5",
           "title": "IV.5. Az eljárási akadályok kérdése",
           "shortTitle": "Az eljárási akadályok kérdése",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Nézze meg a lecke bevezetőjeként a következő videót, majd válaszolja meg a végén megjelenő kérdést:",
+            "A Kbt. meghatározza, hogy melyek azok a körülmények, amelyek fennállása esetén a jogorvoslati eljárás lefolytatásának eljárásjogi akadálya XE &quot;eljárásjogi akadályok&quot; van. Ilyen esetben a kérelmet vissza kell utasítani, illetőleg, ha erre nem került sor az eljárás megindítását megelőzően, akkor a már megindított jogorvoslati eljárást meg kell szüntetni. E szabályozás lényege, hogy a jogalkotó bizonyos körülmények fennállása esetén megtagadja az eljárás megindításának lehetőségét. A KDB nem határozatot hoz, hanem végzéssel zárja le a jogorvoslati eljárást eljárási akadály megállapítása esetén. A KDB a kérelmet végzéssel visszautasítja, illetve a megindított jogorvoslati eljárást megszünteti különösen az alábbi esetekben:"
+          ],
+          "durationMin": 30,
           "image": "/course/img/image-5.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=32"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=55",
+          "lessonId": 44
         },
         {
-          "id": "l45",
+          "id": "cm56",
           "num": "IV.6",
           "title": "IV.6. A kérelem elkészítése és benyújtása – a jogorvoslati eljárás megindulása és megindítása",
           "shortTitle": "A kérelem elkészítése és benyújtása – a jogorvoslati eljárás megindulása és megindítása",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A jogorvoslati k&eacute;relmet meghat&aacute;rozott tartalmi elemekkel kell elk&eacute;sz&iacute;teni, valamint csatolni kell a sz&uuml;ks&eacute;ges mell&eacute;kleteket. A k&ouml;telező tartalmi elemek re XE &quot;jogorvoslati kérelem kötelező tartalmi elemei&quot; vonatkoz&oacute;an a jogszab&aacute;ly ad t&eacute;teles felsorol&aacute;st. [1] Ennek megfelelően a jogorvoslati k&eacute;relemben a k&ouml;vetkezőket kell megjel&ouml;lni:",
+            "Ha a jogorvoslati k&eacute;relem t&ouml;bb k&eacute;relmi elemet tartalmaz, abban az esetben k&eacute;relmi elem enk&eacute;nt XE &quot;kérelmi elem&quot; \\i kell k&ouml;z&ouml;lni a kapcsol&oacute;d&oacute; tartalmi elemeket (&eacute;rtelemszerűen az &aacute;ltal&aacute;nos k&ouml;zl&eacute;seket lesz&aacute;m&iacute;tva): &bdquo;Amennyiben a jogorvoslati k&eacute;relem t&ouml;bb aj&aacute;nlatk&eacute;rői magatart&aacute;st kifog&aacute;sol, k&eacute;relmi elemenk&eacute;nt sz&uuml;ks&eacute;ges a jogorvoslati k&eacute;relemmel szemben t&aacute;masztott t&ouml;rv&eacute;nyi k&ouml;vetelm&eacute;nyeket a k&eacute;relemben megjel&ouml;lni.&rdquo; [1]"
+          ],
+          "durationMin": 26,
           "image": "/course/img/image-1.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=33"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=56",
+          "lessonId": 45
         },
         {
-          "id": "l46",
+          "id": "cm57",
           "num": "IV.7",
           "title": "IV.7. A jogorvoslati kérelem visszavonásának lehetősége",
           "shortTitle": "A jogorvoslati kérelem visszavonásának lehetősége",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A Kbt. lehetőv&eacute; teszi, hogy a k&eacute;relmező &ndash; az &eacute;rdemi hat&aacute;rozat meghozatal&aacute;ig &ndash; visszavonja jogorvoslati k&eacute;relm&eacute;t XE &quot;jogorvoslati kérelem visszavonása&quot;\\i vagy annak egyes elemeit . [1] E lehetős&eacute;g biztos&iacute;tja a jogorvoslati elj&aacute;r&aacute;s feletti rendelkez&eacute;si jogosults&aacute;got, tekintettel arra, hogy a k&eacute;relmező &bdquo;az &uuml;gy ura&rdquo; [2] . A Kbt. egy&eacute;bk&eacute;nt felhatalmazza a KDB-t, hogy a k&eacute;relem visszavon&aacute;sa eset&eacute;n az elj&aacute;r&aacute;st folytassa, ha a rendelkez&eacute;sre &aacute;ll&oacute; adatok alapj&aacute;n s&uacute;lyos jogs&eacute;rt&eacute;s val&oacute;sz&iacute;nűs&iacute;thető. [3] A k&eacute;relmezőnek a visszavon&aacute;sra vonatkoz&oacute; d&ouml;nt&eacute;s&eacute;t nem kell indokolnia. Arr&oacute;l nyilatkozik l&eacute;nyeg&eacute;ben, hogy az elj&aacute;r&aacute;s folytat&aacute;s&aacute;t nem k&iacute;v&aacute;nja (ak&aacute;r teljes eg&eacute;sz&eacute;ben, ak&aacute;r r&eacute;szlegesen, ha t&ouml;bb k&eacute;relmi elem van, &eacute;s csak egyes elemeket von vissza). Az is fontos szempont, hogy ilyen esetben speci&aacute;lis szab&aacute;lyok alapj&aacute;n ker&uuml;lhet sor a megfizetett igazgat&aacute;si szolg&aacute;ltat&aacute;si d&iacute;j visszat&eacute;r&iacute;t&eacute;s&eacute;re. [4] A joggyakorlatban arra is van p&eacute;lda, hogy a k&eacute;relmező a jogorvoslati k&eacute;relem felt&eacute;teles visszavon&aacute;s&aacute;r&oacute;l nyilatkozik. [5]",
+            "A visszavon&aacute;s XE &quot;jogorvoslati kérelmi elem visszavonása&quot; nemcsak a teljes k&eacute;relemre, hanem egyes k&eacute;relmi elemek re is kiterjedhet. Ha a k&eacute;relmező &uacute;gy nyilatkozik, hogy egyes k&eacute;relmi elemeket visszavon, akkor e visszavon&aacute;st tartalmaz&oacute; nyilatkozat ut&oacute;lag nem v&aacute;ltoztathat&oacute; meg, azaz a visszavon&aacute;s &bdquo; nem vonhat&oacute; vissza .&rdquo;"
+          ],
+          "durationMin": 6,
           "image": "/course/img/image-2.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=34"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=57",
+          "lessonId": 46
         },
         {
-          "id": "l47",
+          "id": "cm58",
           "num": "IV.8",
           "title": "IV.8. A jogorvoslati eljárás lefolytatása",
           "shortTitle": "A jogorvoslati eljárás lefolytatása",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Az adott konkr&eacute;t jogorvoslati elj&aacute;r&aacute;sban a KDB r&eacute;sz&eacute;ről k&ouml;zbeszerz&eacute;si biztosok XE &quot;közbeszerzési biztos&quot; j&aacute;rnak el. A kollekt&iacute;v elj&aacute;r&aacute;s &eacute;s d&ouml;nt&eacute;shozatal &eacute;rtelm&eacute;ben főszab&aacute;ly szerint a KDB h&aacute;rom k&ouml;zbeszerz&eacute;si biztosb&oacute;l &aacute;ll&oacute; tan&aacute;cs ban j&aacute;r el, hat&aacute;rozat&aacute;t pedig t&ouml;bbs&eacute;gi szavaz&aacute;s alapj&aacute;n hozza. A KDB eln&ouml;ke jel&ouml;li ki az elj&aacute;r&oacute; tan&aacute;cs tagjait &eacute;s az elj&aacute;r&oacute; tan&aacute;cs eln&ouml;k&eacute;t. Ez a fő szab&aacute;ly, egy k&ouml;zbeszerz&eacute;si biztos is elj&aacute;rhat kiv&eacute;telesen meghat&aacute;rozott &uuml;gyben, illetve &uuml;gyekben, a tan&aacute;csban t&ouml;rt&eacute;nő elj&aacute;r&aacute;s al&oacute;li kiv&eacute;telek r&ouml;gz&iacute;t&eacute;se azon alapul, hogy az ilyen &uuml;gyekben a jogorvoslati kezdem&eacute;nyez&eacute;sek elb&iacute;r&aacute;l&aacute;sa egyszerűen meg&iacute;t&eacute;lhető. [1] Az elj&aacute;r&oacute; tan&aacute;cs tagjait &uacute;gy kell kijel&ouml;lni, hogy legal&aacute;bb k&eacute;t tagnak jogi szakvizsg&aacute;val, tov&aacute;bbi egy tagnak pedig az &uuml;gy t&aacute;rgy&aacute;val legink&aacute;bb &ouml;sszef&uuml;ggő egyetemi vagy főiskolai v&eacute;gzetts&eacute;ggel kell rendelkeznie . Emellett kiz&aacute;r&aacute;si (&ouml;sszef&eacute;rhetetlens&eacute;gi) szab&aacute;lyok biztos&iacute;tj&aacute;k azt, hogy a jogorvoslati elj&aacute;r&aacute;sban p&aacute;rtatlan biztosok vegyenek r&eacute;szt. Az elj&aacute;r&oacute; tan&aacute;cs eln&ouml;ke kiz&aacute;r&oacute;lag jogi szakvizsg&aacute;val rendelkező k&ouml;zbeszerz&eacute;si biztos lehet. Az elj&aacute;r&oacute; tan&aacute;cs legal&aacute;bb egy tagj&aacute;nak &ndash; eur&oacute;pai uni&oacute;s t&aacute;mogat&aacute;ssal &eacute;rintett k&ouml;zbeszerz&eacute;si &uuml;gy eset&eacute;n &ndash; az eur&oacute;pai uni&oacute;s t&aacute;mogat&aacute;sb&oacute;l megval&oacute;sul&oacute; beszerz&eacute;sekkel kapcsolatos tapasztalattal kell rendelkeznie , mivel az ilyen &uuml;gyek sor&aacute;n saj&aacute;tos k&eacute;rd&eacute;sek mer&uuml;lhetnek fel az eur&oacute;pai uni&oacute;s t&aacute;mogat&aacute;ssal &ouml;sszef&uuml;gg&eacute;sben.",
+            "K&ouml;zbeszerz&eacute;si biztos egy&eacute;bk&eacute;nt az lehet, aki felsőfok&uacute; v&eacute;gzetts&eacute;ggel &eacute;s legal&aacute;bb h&aacute;rom&eacute;ves szakmai gyakorlattal, valamint k&ouml;zigazgat&aacute;si, illetőleg jogi szakvizsg&aacute;val rendelkezik. [2] Az elj&aacute;r&oacute; tan&aacute;cs eln&ouml;k&eacute;nek feladata az elj&aacute;r&aacute;s elők&eacute;sz&iacute;t&eacute;se &eacute;s levezet&eacute;se. Az elj&aacute;r&oacute; tan&aacute;cs eln&ouml;ke megtehet minden olyan int&eacute;zked&eacute;st &eacute;s meghozhat minden olyan v&eacute;gz&eacute;st, amelyet a t&ouml;rv&eacute;ny a KDB hat&aacute;sk&ouml;r&eacute;be utal, az al&aacute;bbiak kiv&eacute;tel&eacute;vel:"
+          ],
+          "durationMin": 30,
           "image": "/course/img/aranytlan-alacsony-kezdo.png",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=35"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=58",
+          "lessonId": 47
         },
         {
-          "id": "l48",
+          "id": "cm59",
           "num": "IV.9",
           "title": "IV.9. A jogkövetkezmények",
           "shortTitle": "A jogkövetkezmények",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "Ha jogs&eacute;rt&eacute;s ker&uuml;l meg&aacute;llap&iacute;t&aacute;sra a KDB &aacute;ltal, akkor a k&ouml;vetkező főbb jogk&ouml;vetkezm&eacute;nyek alkalmaz&aacute;sa mer&uuml;lhet fel.",
+            "Az első a b&iacute;rs&aacute;g . A Kbt. arra jogos&iacute;tja fel a KDB-t arra, hogy a t&ouml;rv&eacute;nyi keretek k&ouml;z&ouml;tt &eacute;s a megadott szempontok figyelembev&eacute;tel&eacute;vel d&ouml;nts&ouml;n a jogs&eacute;rt&eacute;s meg&aacute;llap&iacute;t&aacute;sa eset&eacute;ben a b&iacute;rs&aacute;g kiszab&aacute;s&aacute;r&oacute;l. A Kbt. arra hatalmazza fel a KDB-t, hogy a t&ouml;rv&eacute;nyi maximum&eacute;rt&eacute;k hat&aacute;r&aacute;n bel&uuml;l b&iacute;rs&aacute;got szabjon ki, vagy azt mellőzze. A Kbt. eml&iacute;t olyan s&uacute;lyos jogs&eacute;rt&eacute;seket is (p&eacute;ld&aacute;ul a k&ouml;zbeszerz&eacute;si elj&aacute;r&aacute;s jogtalan mellőz&eacute;se vagy a szerződ&eacute;sk&ouml;t&eacute;si morat&oacute;rium megs&eacute;rt&eacute;s&eacute;vel t&ouml;rt&eacute;nő szerződ&eacute;sk&ouml;t&eacute;s), amelyek megval&oacute;s&iacute;t&aacute;sa eset&eacute;ben a b&iacute;rs&aacute;g kiszab&aacute;s&aacute;t&oacute;l nem lehet eltekinteni. Viszont az &ouml;sszegszerűs&eacute;g szint&eacute;n m&eacute;rlegel&eacute;s t&aacute;rgy&aacute;t k&eacute;pezi. Kiv&eacute;teles egy&eacute;bk&eacute;nt az, amikor nem szabnak ki valamilyen &ouml;sszegű b&iacute;rs&aacute;got. Ennek m&eacute;rt&eacute;ke lehet n&eacute;h&aacute;ny t&iacute;z- vagy sz&aacute;zezer forint, &aacute;ltal&aacute;ban azonban milli&oacute;s nagys&aacute;grendben alkalmazz&aacute;k. Arra is eml&iacute;thető azonban p&eacute;lda, amikor t&ouml;bb, mint sz&aacute;zmilli&oacute; forint a kiszabott b&iacute;rs&aacute;g &eacute;rt&eacute;ke. (Term&eacute;szetesen igazodik a k&ouml;zbeszerz&eacute;s &eacute;rt&eacute;k&eacute;hez &eacute;s m&aacute;s m&eacute;rlegelt k&ouml;r&uuml;lm&eacute;nyekhez a m&eacute;rt&eacute;k.)"
+          ],
+          "durationMin": 15,
           "image": "/course/img/image001.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=36"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=59",
+          "lessonId": 48
         },
         {
-          "id": "l49",
+          "id": "cm60",
           "num": "IV.10",
           "title": "IV.10. Az eljárási költségek",
           "shortTitle": "Az eljárási költségek",
-          "paragraphs": [],
-          "durationMin": 3,
+          "paragraphs": [
+            "A k&ouml;zbeszerz&eacute;si jogorvoslati elj&aacute;r&aacute;s meglehetősen s&uacute;lyos p&eacute;nz&uuml;gyi hat&aacute;sokkal j&aacute;rhat. Felmer&uuml;lhet a b&iacute;rs&aacute;g, mint kock&aacute;zati &eacute;s kifizetendő t&eacute;nyező mellett k&ouml;lts&eacute;gk&eacute;nt az igazgat&aacute;si szolg&aacute;ltat&aacute;si d&iacute;j, valamint a m&aacute;sik (a nyertes) f&eacute;l jogi k&eacute;pviselőj&eacute;t (szak&eacute;rtőj&eacute;t) megillető megb&iacute;z&aacute;si d&iacute;j &eacute;s egy&eacute;b k&ouml;lts&eacute;gek megt&eacute;r&iacute;t&eacute;s&eacute;re val&oacute; k&ouml;telez&eacute;s. A t&eacute;teles jogi kiindul&oacute;pontot egyr&eacute;szt az &Aacute;kr., [1] m&aacute;sr&eacute;szt pedig egy k&uuml;l&ouml;n jogszab&aacute;ly [2] jelenti. A legfontosabb elem a megb&iacute;zott k&eacute;pviselők munkad&iacute;ja , amelynek megfizet&eacute;s&eacute;re a vesztes f&eacute;l k&ouml;telezhető , a felek erre vonatkoz&oacute;an is fogalmazhatnak meg ind&iacute;tv&aacute;nyt egy&eacute;b ig&eacute;nyek mellett.",
+            "A k&ouml;lts&eacute;gt&eacute;r&iacute;t&eacute;s meg&aacute;llap&iacute;t&aacute;s&aacute;ra vonatkoz&oacute; m&eacute;rlegel&eacute;si jogk&ouml;r &aacute;ltal&aacute;nos megalapoz&aacute;s&aacute;t az &Aacute;kr. v&eacute;gzi el a k&ouml;vetkezők&eacute;ppen: &bdquo;A hat&oacute;s&aacute;g az indokolatlanul magas elj&aacute;r&aacute;si k&ouml;lts&eacute;g helyett alacsonyabb &ouml;sszeget &aacute;llap&iacute;t meg.&rdquo; [3] Ez azt jelenti, hogy a f&eacute;l &aacute;ltal bemutatott &eacute;s igazolt (p&eacute;ld&aacute;ul bizonylattal, sz&aacute;ml&aacute;val, k&ouml;lts&eacute;g-, illetve tev&eacute;kenys&eacute;gkimutat&aacute;ssal, szerződ&eacute;ssel) [4] k&ouml;lts&eacute;get a KDB fel&uuml;lb&iacute;r&aacute;lhatja, &eacute;s nem a teljes &ouml;sszeget rendeli megt&eacute;r&iacute;teni, hanem annak csak egy r&eacute;sz&eacute;t . Vagyis ugyan a megb&iacute;z&aacute;si d&iacute;j az &uuml;gyf&eacute;l &eacute;s a jogi k&eacute;pviselője k&ouml;z&ouml;tt l&eacute;trej&ouml;tt, a mag&aacute;njogi szerződ&eacute;si szabads&aacute;g elv&eacute;n nyugv&oacute; meg&aacute;llapod&aacute;son alapul, azonban &bdquo;amennyiben indokolatlanul magas, azt nem k&ouml;teles elfogadni, jogszab&aacute;lyi felhatalmaz&aacute;s alapj&aacute;n m&eacute;rlegel&eacute;si jogk&ouml;rben lesz&aacute;ll&iacute;thatja&rdquo; a KDB. M&aacute;sk&eacute;ppen fogalmazva: a jogszab&aacute;ly &bdquo;nem biztos&iacute;t alanyi jogot XE „alanyi jog” a pernyertes &uuml;gyf&eacute;lnek arra, hogy az elj&aacute;r&aacute;ssal felmer&uuml;lt k&ouml;lts&eacute;gei teljes m&eacute;rt&eacute;kben megt&eacute;r&uuml;ljenek. [&hellip;] Nem jogszab&aacute;lys&eacute;rtő teh&aacute;t, ha a hat&oacute;s&aacute;g a f&eacute;l &eacute;s jogi k&eacute;pviselője igazolt meg&aacute;llapod&aacute;s&aacute;t&oacute;l elt&eacute;rően [&hellip;] m&eacute;rlegel&eacute;ssel a meg&aacute;llapodottn&aacute;l alacsonyabb &ouml;sszegben hat&aacute;rozza meg az &uuml;gyv&eacute;di munkad&iacute;jat. Az &uuml;gyv&eacute;di munkad&iacute;j meg&aacute;llap&iacute;t&aacute;s&aacute;n&aacute;l ugyanis arra is figyelemmel kell lenni, hogy milyen volt a kifejtett &uuml;gyv&eacute;di tev&eacute;kenys&eacute;g idő- &eacute;s munkaig&eacute;nyess&eacute;ge, sz&iacute;nvonala. M&aacute;s oldalr&oacute;l figyelemmel kell lenni arra is, hogy a kir&iacute;v&oacute;an magas &ouml;sszegben, a kifejtett munkav&eacute;gz&eacute;s m&eacute;rt&eacute;k&eacute;től ar&aacute;nytalanul elt&eacute;rő &uuml;gyv&eacute;di munkad&iacute;j s&eacute;rtheti a t&aacute;rsadalom &eacute;rt&eacute;k&iacute;t&eacute;let&eacute;t.&rdquo; [5]"
+          ],
+          "durationMin": 8,
           "image": "/course/img/image003.jpg",
-          "sourceUrl": "https://dev2.kkvkepzes.gov.hu/mod/lesson/view.php?id=37"
+          "sourceUrl": "http://localhost:8080/mod/lesson/view.php?id=60",
+          "lessonId": 49
         }
       ]
     }

@@ -115,8 +115,8 @@ Preview-ból: a `moodle-b` konfig indítja (8081). Emlékeztető: mindig szabad 
 ## Publikus frontend (`web/`) — headless, DÁP arculat
 
 Next.js 16 (App Router, TS) app a `web/` mappában, a **DÁP (Digitális Állampolgárság
-Program) design rendszerrel**. A tananyagot a `design/uploads/course-archive-v4.json`-ból
-tölti (feldolgozva `web/src/data/course.json`-ba; képek `web/public/course/img/`).
+Program) design rendszerrel**. A statikus tananyag-adatot a `scripts/export-course.mjs`
+generálja a helyi Moodle-ból (lásd „Tartalom-pipeline" lentebb).
 
 ```bash
 cd web && npm install && npm run dev     # http://localhost:3000
@@ -133,10 +133,23 @@ A `/` egy választó a két verzió között; a fejlécben verzióváltó is van
 
 ### Élő adat: Moodle Web Services (REST)
 
-A frontend a kurzus **szerkezetét élőben** a Moodle WS-ből húzza (`core_course_get_contents`),
-**szerver-oldalról** (nincs CORS, a token nem kerül a kliensbe). A lecke-törzsszöveg a
-`course.json` cache-ből merge-elődik (szám-prefix alapján). Ha a Moodle/token nem elérhető,
-automatikus **statikus fallback** (a landingen „Élő Moodle adat" / „Gyorsítótár" jelző mutatja).
+A frontend a kurzus **szerkezetét és a lecke-tartalmat élőben** a Moodle WS-ből húzza
+(`core_course_get_contents`, `mod_lesson_get_pages`), **szerver-oldalról** (nincs CORS, a
+token nem kerül a kliensbe). Ha a Moodle/token nem elérhető, automatikus **statikus fallback**
+a teljes tananyaggal (a landingen „Élő Moodle adat" / „Gyorsítótár" jelző mutatja).
+
+### Tartalom-pipeline (statikus fallback frissítése)
+
+```bash
+node scripts/export-course.mjs   # a futó Moodle-ból (web/.env.local szerint) exportál
+```
+
+Kimenete (verziózott): `web/src/data/course-pages.json` — mind a 49 lecke összes oldala
+(cím + HTML); `web/src/data/course.json` — kurzus-szerkezet és metaadatok;
+`web/public/course/pages/` — a leckékben hivatkozott képek helyi másolata. A HTML-t a
+`web/src/lib/moodle.ts` kérés-időben ugyanúgy sanitizálja/formázza, mint az élő adatot,
+így a fallback ugyanazt adja, Moodle nélkül (offline) is. Tananyag-változás után futtasd
+újra, és commitold a kimenetét.
 
 Beállítás (`web/.env.local`, nem verziózott):
 ```

@@ -1,6 +1,7 @@
 // SZERVER-OLDALI Moodle Web Services kliens. Soha ne importáld kliens-komponensből
 // (a token env-változó csak a szerveren érhető el).
 import { staticCourse, staticByNum, type Course, type Section, type Lesson } from "./course";
+import coursePagesData from "@/data/course-pages.json";
 
 const MOODLE_URL = process.env.MOODLE_URL;
 const TOKEN = process.env.MOODLE_WS_TOKEN;
@@ -132,36 +133,57 @@ const normTitle = (s: string) =>
   s.replace(/^[IVXLC]+\.\d+\.\s*/i, "").replace(/\s+/g, " ").trim().toLowerCase();
 
 /**
- * Egy lecke oldalai: minden oldalhoz a törzs első címsorát emeljük ki fejlécnek
+ * Oldalak formázása: minden oldalhoz a törzs első címsorát emeljük ki fejlécnek
  * (a Moodle oldal-„címe" itt csak sorszám, pl. „10/1", ezért haszontalan).
  * A lecke címét visszhangzó vezető címsorokat átugorjuk, hogy ne ismétlődjön.
+ * Ugyanez fut az élő WS-adatra és a statikus exportra is.
  */
-export async function getLessonPages(lessonId?: number, lessonTitle = ""): Promise<LessonPage[] | null> {
-  if (!lessonId || !MOODLE_URL || !TOKEN) return null;
+type RawPage = { title?: string; contents?: string };
+
+function shapePages(raw: RawPage[], lessonTitle: string): LessonPage[] {
   const echo = normTitle(lessonTitle);
+  return raw
+    .map((p) => {
+      let html = sanitizeMoodleHtml(p.contents || "");
+      let title = "";
+      // Vezető címsorok leszedése: a lecke-címet visszhangzót eldobjuk, az első
+      // érdemi címsor lesz az oldal fejléce (a többit meghagyjuk a törzsben).
+      for (;;) {
+        const m = html.match(/^\s*<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/i);
+        if (!m) break;
+        const t = m[1].replace(/<[^>]+>/g, "").trim();
+        html = html.slice(m.index! + m[0].length).trim();
+        if (echo && normTitle(t) === echo) continue; // csak visszhang – ugord át
+        title = t;
+        break;
+      }
+      return { title, html };
+    })
+    .filter((p) => p.html || p.title);
+}
+
+// Statikus lecke-oldalak (scripts/export-course.mjs kimenete): a képek már helyi
+// /course/pages/ útvonalra mutatnak, így a Moodle nélkül (offline) is teljesek.
+const staticPages = coursePagesData as unknown as {
+  lessons: Record<string, { pages: { title: string; contents: string }[] }>;
+};
+
+function staticLessonPages(lessonTitle: string): LessonPage[] | null {
+  const entry = staticPages.lessons[lessonNum(lessonTitle)];
+  if (!entry) return null;
+  const pages = shapePages(entry.pages, lessonTitle);
+  return pages.length ? pages : null;
+}
+
+/** Egy lecke oldalai: élő Moodle WS-ből; hiba esetén a statikus exportból. */
+export async function getLessonPages(lessonId?: number, lessonTitle = ""): Promise<LessonPage[] | null> {
+  if (!lessonId || !MOODLE_URL || !TOKEN) return staticLessonPages(lessonTitle);
   try {
     const data = await ws<{ pages: WSLessonPage[] }>("mod_lesson_get_pages", { lessonid: String(lessonId) });
-    const pages = (data.pages || [])
-      .map((p) => {
-        let html = sanitizeMoodleHtml(p.page?.contents || "");
-        let title = "";
-        // Vezető címsorok leszedése: a lecke-címet visszhangzót eldobjuk, az első
-        // érdemi címsor lesz az oldal fejléce (a többit meghagyjuk a törzsben).
-        for (;;) {
-          const m = html.match(/^\s*<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/i);
-          if (!m) break;
-          const t = m[1].replace(/<[^>]+>/g, "").trim();
-          html = html.slice(m.index! + m[0].length).trim();
-          if (echo && normTitle(t) === echo) continue; // csak visszhang – ugord át
-          title = t;
-          break;
-        }
-        return { title, html };
-      })
-      .filter((p) => p.html || p.title);
-    return pages.length ? pages : null;
+    const pages = shapePages((data.pages || []).map((p) => p.page ?? {}), lessonTitle);
+    return pages.length ? pages : staticLessonPages(lessonTitle);
   } catch (err) {
-    console.error("[moodle] lecke-tartalom hiba:", (err as Error).message);
-    return null;
+    console.error("[moodle] lecke-tartalom hiba, statikus fallback:", (err as Error).message);
+    return staticLessonPages(lessonTitle);
   }
 }
