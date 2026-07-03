@@ -23,7 +23,7 @@ export default function LessonPlayer({
   prevId?: string;
   nextId?: string;
   pages: LessonPage[] | null;
-  quiz: QuizT;
+  quiz: QuizT | null;
   totalLessons: number;
 }) {
   const router = useRouter();
@@ -93,7 +93,7 @@ export default function LessonPlayer({
             ? <div className="moodle-content lp-body" dangerouslySetInnerHTML={{ __html: html }} />
             : <p className="lp-body body">Ebben a leckében az EKR kapcsolódó felületét tekintjük át, lépésről lépésre.</p>}
 
-          {page === total - 1 && <Quiz quiz={quiz} />}
+          {page === total - 1 && quiz && <Quiz quiz={quiz} />}
 
           <div className="lp-pager">
             <button className="btn btn-ghost" disabled={page === 0} onClick={() => setPage((p) => Math.max(0, p - 1))}>

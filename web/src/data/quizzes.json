@@ -1,0 +1,5555 @@
+{
+ "generatedAt": "2026-07-03T07:48:08.236Z",
+ "source": "localhost:8080 (course 2)",
+ "lessons": {
+  "I.1": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mióta kötelező az EKR-ben lefolytatni a közbeszerzési eljárásokat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "2018. április 15."
+      },
+      {
+       "key": "b",
+       "label": "2021. október 15."
+      },
+      {
+       "key": "c",
+       "label": "2023. október 25."
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 2018. április 15."
+    },
+    {
+     "q": "Ajánlattevőknek az EKR használata ingyenes?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mely menüpontok érhetők el regisztráció nélkül?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Nyilvántartások"
+      },
+      {
+       "key": "b",
+       "label": "Eljárás"
+      },
+      {
+       "key": "c",
+       "label": "Szerződés"
+      },
+      {
+       "key": "d",
+       "label": "Támogatás"
+      },
+      {
+       "key": "e",
+       "label": "Felhasználó"
+      },
+      {
+       "key": "f",
+       "label": "Szervezet"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Nyilvántartások · Eljárás · Szerződés · Támogatás"
+    }
+   ]
+  },
+  "I.3": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Az EKR-be bejelentkezni csak akkor lehetséges, amennyiben a regisztráció során elvégeztük az e-mail cím megerősítését?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Az EKR-be történő bejelentkezéskor felhasználónév, jelszó helyes megadását követően, biztonsági kód kerül kiküldésre a regisztrációkor rögzített elsődleges telefonszámra?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Melyek állítások igazak a biztonsági kódra?",
+     "options": [
+      {
+       "key": "a",
+       "label": "48 óráig marad érvényben"
+      },
+      {
+       "key": "b",
+       "label": "3 alkalommal kísérelhetjük meg helyesen megadni"
+      },
+      {
+       "key": "c",
+       "label": "kérhetünk másodlagos telefonszámra új biztonsági kódot"
+      },
+      {
+       "key": "d",
+       "label": "72 óráig marad érvényben"
+      },
+      {
+       "key": "e",
+       "label": "5 alkalommal kísérelhetjük meg helyesen megadni"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: 48 óráig marad érvényben · 3 alkalommal kísérelhetjük meg helyesen megadni · kérhetünk másodlagos telefonszámra új biztonsági kódot"
+    },
+    {
+     "q": "Jelszó változtatáskor, hány alkalom után inaktiválja a fiókunkat a rendszer?",
+     "options": [
+      {
+       "key": "a",
+       "label": "5"
+      },
+      {
+       "key": "b",
+       "label": "3"
+      },
+      {
+       "key": "c",
+       "label": "7"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 5"
+    }
+   ]
+  },
+  "I.4": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Egy szervezetet többször is regisztrálhatunk az EKR-be?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Amennyiben már regisztrálva van a szervezet az EKR-ben, mit kell benyújtani a szervezethez csatlakozáshoz?",
+     "options": [
+      {
+       "key": "a",
+       "label": "regisztrációs kérelmet"
+      },
+      {
+       "key": "b",
+       "label": "csatlakozási kérelmet"
+      },
+      {
+       "key": "c",
+       "label": "bejelentkezési kérelmet"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: csatlakozási kérelmet"
+    },
+    {
+     "q": "A szervezet regisztrációját követően a regisztrációt elvégző felhasználó lesz a regisztrált szervezet szervezeti szuperusere?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "I.5": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Milyen kategóriákba sorolhatók a jogosultságok az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Szervezet szintű szerepkörök"
+      },
+      {
+       "key": "b",
+       "label": "Eljárás szintű szerepkörök"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlat szintű szerepkörök"
+      },
+      {
+       "key": "d",
+       "label": "Hirdetmeny szerkesztő szerepkörök"
+      },
+      {
+       "key": "e",
+       "label": "Nyilvántartások szerkesztő szerepkörök"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Szervezet szintű szerepkörök · Eljárás szintű szerepkörök · Ajánlat szintű szerepkörök"
+    },
+    {
+     "q": "Melyek ajánlat szintű jogosultságok?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlat betekintő"
+      },
+      {
+       "key": "b",
+       "label": "Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlat szerkesztő"
+      },
+      {
+       "key": "d",
+       "label": "Ajánlattételt irányító szerepkör"
+      },
+      {
+       "key": "e",
+       "label": "Sablon szerkesztő"
+      },
+      {
+       "key": "f",
+       "label": "Szervezet tag"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Ajánlat betekintő · Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra · Ajánlat szerkesztő · Ajánlattételt irányító szerepkör"
+    },
+    {
+     "q": "Melyek szervezeti szintű jogosultságok?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Szervezeti szuper user"
+      },
+      {
+       "key": "b",
+       "label": "Szervezet tag"
+      },
+      {
+       "key": "c",
+       "label": "Sablon használó"
+      },
+      {
+       "key": "d",
+       "label": "Sablon szerkesztő"
+      },
+      {
+       "key": "e",
+       "label": "Ajánlat betekintő"
+      },
+      {
+       "key": "f",
+       "label": "Ajánlat szerkesztő"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Szervezeti szuper user · Szervezet tag · Sablon használó · Sablon szerkesztő"
+    },
+    {
+     "q": "Mire való a delegálás az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül."
+      },
+      {
+       "key": "b",
+       "label": "A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül. · A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+    }
+   ]
+  },
+  "I.6": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A megindított eljárások menüben milyen listát találunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a belépett felhasználó ajánlatait"
+      },
+      {
+       "key": "b",
+       "label": "a belépett felhasználó eljárásait"
+      },
+      {
+       "key": "c",
+       "label": "megindított eljárásokat"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a belépett felhasználó ajánlatait"
+    },
+    {
+     "q": "Az ajánlataim menüben miket találunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szerkesztett/megtekintett vagy benyújtani kívánt/benyújtott ajánlatokat, melyekre érdeklődésünket jeleztük"
+      },
+      {
+       "key": "b",
+       "label": "a belépett felhasználó eljárásait"
+      },
+      {
+       "key": "c",
+       "label": "megindított eljárásokat"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: szerkesztett/megtekintett vagy benyújtani kívánt/benyújtott ajánlatokat, melyekre érdeklődésünket jeleztük"
+    },
+    {
+     "q": "Mi található az eljárási cselekmény listázó felületen?",
+     "options": [
+      {
+       "key": "a",
+       "label": "már elindított eljárási cselekmények listáját látjuk táblázatos nézetben"
+      },
+      {
+       "key": "b",
+       "label": "elindítani kívánt eljárási cselekmények listáját látjuk táblázatos nézetben"
+      },
+      {
+       "key": "c",
+       "label": "az eljáráshoz/ajánlathoz tartozó üzenetek megjelenítésére szolgáló felület"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: már elindított eljárási cselekmények listáját látjuk táblázatos nézetben"
+    },
+    {
+     "q": "Az EKR-ben az archiválás művelet visszavonható?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Archivált ajánlat az ajánlatok listában megjelenik?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Az ajánlat/részvételre jelentkezés összeállítása eljárási cselekmény felület fejlécében mely adatok kerülnek megjelenítésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "eljárás típusa, EKR azonosító száma, aktuális szakasza"
+      },
+      {
+       "key": "b",
+       "label": "ajánlat ügylet aktuális szakasza"
+      },
+      {
+       "key": "c",
+       "label": "folyamatban lévő eljárási cselekmény, a cselekményen belül a feladat, amelyet el kell végeznünk"
+      },
+      {
+       "key": "d",
+       "label": "eljárási cselekmény indítás dátuma"
+      },
+      {
+       "key": "e",
+       "label": "eljárási cselekmény státusza"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: eljárás típusa, EKR azonosító száma, aktuális szakasza · ajánlat ügylet aktuális szakasza · folyamatban lévő eljárási cselekmény, a cselekményen belül a feladat, amelyet el kell végeznünk"
+    }
+   ]
+  },
+  "I.7": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Érdeklődés jelzése funkció gomb minden felhasználó számára elérhető?",
+     "options": [
+      {
+       "key": "a",
+       "label": "csak regisztrált felhasználók számára, akik jogosultak részvételi jelentkezést beadni vagy ajánlatot tenni"
+      },
+      {
+       "key": "b",
+       "label": "nem regisztrált felhasználók számára is"
+      },
+      {
+       "key": "c",
+       "label": "csak regisztrált felhasználók számára, akiknek csak részvételre jelentkezés/ajánlat megtekintő jogosultsággal rendelkeznek"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: csak regisztrált felhasználók számára, akik jogosultak részvételi jelentkezést beadni vagy ajánlatot tenni"
+    },
+    {
+     "q": "Több részes eljárás esetében minden rész esetében külön-külön szükséges az érdeklődést jelezni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "I.8": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mire használható a kiegészítő tájékoztatás kérése eljárási cselekmény?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ezzel az eljárási cselekménnyel van lehetőség kiegészítő tájékoztatást kérni az Ajánlatkérőtől az ajánlatunk/részvételi jelentkezésünk összeállításához."
+      },
+      {
+       "key": "b",
+       "label": "Ezzel az eljárási cselekménnyel van lehetőség előzetes vitarendezést kérni az eljárás során."
+      },
+      {
+       "key": "c",
+       "label": "Ezzel az eljárási cselekménnyel egyéb kommunikációt tudunk indítani az eljárás során."
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Ezzel az eljárási cselekménnyel van lehetőség kiegészítő tájékoztatást kérni az Ajánlatkérőtől az ajánlatunk/részvételi jelentkezésünk összeállításához."
+    }
+   ]
+  },
+  "I.9": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mi az előzetes vitarendezés kérése eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "előzetes vitarendezési kérelmünket össze tudjuk állítani"
+      },
+      {
+       "key": "b",
+       "label": "kiegészítő tájékoztatást kérésünket tudjuk az Ajánlatkérőnek megküldeni az ajánlatunk/részvételi jelentkezésünk összeállítása kapcsán"
+      },
+      {
+       "key": "c",
+       "label": "egyéb kommunikációt tudunk indítani az eljárás során"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: előzetes vitarendezési kérelmünket össze tudjuk állítani"
+    }
+   ]
+  },
+  "I.10": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mi az egyéb kommunikációs kérése eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgáló eljárási cselekmény a közbeszerzési eljárás során"
+      },
+      {
+       "key": "b",
+       "label": "előzetes vitarendezési kérelmünket össze tudjuk állítani"
+      },
+      {
+       "key": "c",
+       "label": "kiegészítő tájékoztatást kérésünket tudjuk az Ajánlatkérőnek megküldeni az ajánlatunk/részvételi jelentkezésünk összeállítása kapcsán"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgáló eljárási cselekmény a közbeszerzési eljárás során"
+    }
+   ]
+  },
+  "I.11": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mely eljárási cselekményben tudjuk az ajánlatunkat/részvételre jelentkezésünket benyújtani?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlat/Részvételre jelentkezés összeállítása"
+      },
+      {
+       "key": "b",
+       "label": "előzetes vitarendezés kérése"
+      },
+      {
+       "key": "c",
+       "label": "kiegészítő tájékoztatás kérése"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Ajánlat/Részvételre jelentkezés összeállítása"
+    },
+    {
+     "q": "Érdeklődés jelzését követően az ajánlat ügylet kap egyedi azonosítót?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Az Ajánlat/Részvételre jelentkezés összeállítása hanyadik lépése a gazdasági szereplők rögzítése lépés?",
+     "options": [
+      {
+       "key": "a",
+       "label": "első"
+      },
+      {
+       "key": "b",
+       "label": "második"
+      },
+      {
+       "key": "c",
+       "label": "harmadik"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: első"
+    }
+   ]
+  },
+  "I.12": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A gazdasági szereplők rögzítését követően mely felületek válnak szerkeszthetővé az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlati dokumentáció"
+      },
+      {
+       "key": "b",
+       "label": "EEKD menüpont valamint az ezekhez tartozó bal oldali almenük"
+      },
+      {
+       "key": "c",
+       "label": "Felhívás"
+      },
+      {
+       "key": "d",
+       "label": "Bontás"
+      },
+      {
+       "key": "e",
+       "label": "Összegezés"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Ajánlati dokumentáció · EEKD menüpont valamint az ezekhez tartozó bal oldali almenük"
+    },
+    {
+     "q": "Az Ajánlati dokumentáció bal oldali menüsorában a Benyújtandó iratok jegyzéke miket tartalmaz?",
+     "options": [
+      {
+       "key": "a",
+       "label": "azon elektronikus nyilatkozat mintákat, amelyeket be kell nyújtani az eljárásban"
+      },
+      {
+       "key": "b",
+       "label": "azon elektronikus nyilatkozat mintákat, melyeket nem kell benyújtani az eljárásban"
+      },
+      {
+       "key": "c",
+       "label": "azon nem elektronikus nyilatkozat mintákat, melyeket be kell benyújtani az eljárásban"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: azon elektronikus nyilatkozat mintákat, amelyeket be kell nyújtani az eljárásban"
+    },
+    {
+     "q": "Az Ajánlat/Részvételre jelentkezés összeállítása során mely felületeken van lehetőségünk dokumentumot csatolni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az Ajánlati dokumentáció/Benyújtandó iratok jegyzéke felületen"
+      },
+      {
+       "key": "b",
+       "label": "Ajánlati dokumentáció/További közbeszerzési dokumentumok felület"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlati dokumentáció/EEKD"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az Ajánlati dokumentáció/Benyújtandó iratok jegyzéke felületen · Ajánlati dokumentáció/További közbeszerzési dokumentumok felület"
+    },
+    {
+     "q": "Az ajánlat benyújtását követően időzár alá kerül, ez idő alatt megtekinthető az ajánlat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    }
+   ]
+  },
+  "I.14": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Meddig van lehetőségünk a benyújtott ajánlatunkat visszanyitni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlattételi határidő lejártáig"
+      },
+      {
+       "key": "b",
+       "label": "a bírálati szakasz végéig"
+      },
+      {
+       "key": "c",
+       "label": "szerződéskötésig"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlattételi határidő lejártáig"
+    },
+    {
+     "q": "Ha az ajánlatunk visszanyitásra kerül, ahhoz, hogy benyújtott ajánlat legyen ismételten be kell nyújtanunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "I.15": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Bontást követően az ajánlat visszavonása eljárási cselekmény visszavonható?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    }
+   ]
+  },
+  "I.16": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A Hiánypótlás, felvilágosítás kérés eljárási cselekmény megválaszolására az ajánlattevők mely eljárási cselekmény áll rendelkezésére?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Felvilágosítás kérés megválaszolása eljárási cselekmény"
+      },
+      {
+       "key": "b",
+       "label": "Hiánypótlás összeállítása"
+      },
+      {
+       "key": "c",
+       "label": "Nyilatkozat ajánlati kötöttségről eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Felvilágosítás kérés megválaszolása eljárási cselekmény · Hiánypótlás összeállítása"
+    }
+   ]
+  },
+  "I.17": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mi az Igazolások benyújtása eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklás megválaszolására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+    },
+    {
+     "q": "Az Igazolások benyújtása eljárási cselekmény csak abban az esetben indítható, ha az eljárásban az Ajánlatkérő a fent megnevezett igazolás benyújtására felkért minket?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "I.18": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mi a Számítási hiba javítása eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklás megválaszolására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+    },
+    {
+     "q": "A Számítási hiba javítása eljárási cselekmény, mely másik eljárási cselekménnyel nem indítható párhuzamosan?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Hiánypótlás összeállítása"
+      },
+      {
+       "key": "b",
+       "label": "Igazolások benyújtása eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Hiánypótlás összeállítása"
+    }
+   ]
+  },
+  "I.19": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mi az Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, ajánlattevőként indoklás megválaszolására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, ajánlattevőként indoklás megválaszolására szolgáló eljárási cselekmény"
+    }
+   ]
+  },
+  "I.20": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mi a Nyilatkozat ajánlati kötöttségről eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "amennyiben az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttség fenntartására vonatkozó kérés érkezik, annak megválaszolására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "b",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklás megválaszolására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: amennyiben az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttség fenntartására vonatkozó kérés érkezik, annak megválaszolására szolgáló eljárási cselekmény"
+    }
+   ]
+  },
+  "II.2": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A közbeszerzésekről szóló 2015. évi CXLIII. törvény milyen eljárásrendeket különböztet meg:",
+     "options": [
+      {
+       "key": "a",
+       "label": "Nemzeti"
+      },
+      {
+       "key": "b",
+       "label": "Uniós"
+      },
+      {
+       "key": "c",
+       "label": "Tárgyalásos"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Nemzeti · Uniós"
+    },
+    {
+     "q": "Minden közbeszerzési eljárás hirdetménnyel indul?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Az ajánlati kötöttség beálltával...",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlatkérő nem módosíthatja a feltételeit, az ajánlattevő pedig az ajánlatában meghatározott vállalásokat nem változtathatja meg"
+      },
+      {
+       "key": "b",
+       "label": "tárgyalásos eljárásban az ajánlati kötöttség csak a tárgyalások lezárásával áll be, tehát a végső ajánlattételi felhívás és végső ajánlat benyújtásával"
+      },
+      {
+       "key": "c",
+       "label": "az ajánlatkérő módosíthatja a feltételeit , az ajánlattevő pedig az ajánlatában meghatározott vállalásokat megváltoztathatja"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az ajánlatkérő nem módosíthatja a feltételeit, az ajánlattevő pedig az ajánlatában meghatározott vállalásokat nem változtathatja meg · tárgyalásos eljárásban az ajánlati kötöttség csak a tárgyalások lezárásával áll be, tehát a végső ajánlattételi felhívás és végső ajánlat benyújtásával"
+    }
+   ]
+  },
+  "II.4": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A hirdetmények az eljárásrendeknek megfelelően az alábbi helyeken jelennek meg hivatalosan:",
+     "options": [
+      {
+       "key": "a",
+       "label": "A hirdetmények uniós eljárásrendben az Európai Unió Hivatalos Lapjának Kiegészítő mellékletében, illetve ennek kereshető adatbázisában (ted.europa.eu)."
+      },
+      {
+       "key": "b",
+       "label": "Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Közbeszerzési Értesítőben (https://www.kozbeszerzes.hu/ertesito) jelennek meg."
+      },
+      {
+       "key": "c",
+       "label": "Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Magyar közlönyben (https://magyarkozlony.hu/) jelennek meg."
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: A hirdetmények uniós eljárásrendben az Európai Unió Hivatalos Lapjának Kiegészítő mellékletében, illetve ennek kereshető adatbázisában (ted.europa.eu). · Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Közbeszerzési Értesítőben (https://www.kozbeszerzes.hu/ertesito) jelennek meg."
+    },
+    {
+     "q": "Mely rendszerben zajlik főszabály szerint a közbeszerzési eljárások lefolytatása valamint az ajánlattétel?",
+     "options": [
+      {
+       "key": "a",
+       "label": "EPTK"
+      },
+      {
+       "key": "b",
+       "label": "EKR (Elektronikus Közbeszerzési Rendszer)"
+      },
+      {
+       "key": "c",
+       "label": "Ügyfélkapu"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: EKR (Elektronikus Közbeszerzési Rendszer)"
+    },
+    {
+     "q": "Mely dokumentumok tartoznak a közbeszerzési dokumentumok közé?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az eljárást megindító felhívás"
+      },
+      {
+       "key": "b",
+       "label": "műszaki leírás"
+      },
+      {
+       "key": "c",
+       "label": "szerződéstervezet"
+      },
+      {
+       "key": "d",
+       "label": "javasolt iratminták"
+      },
+      {
+       "key": "e",
+       "label": "árazatlan költségvetés"
+      },
+      {
+       "key": "f",
+       "label": "eljárás eredményéről szóló tájékoztató"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az eljárást megindító felhívás · műszaki leírás · szerződéstervezet · javasolt iratminták · árazatlan költségvetés"
+    },
+    {
+     "q": "Milyen alapvető típusai vannak az alkalmassági követelményeknek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "pénzügyi-gazdasági"
+      },
+      {
+       "key": "b",
+       "label": "műszaki-szakmai"
+      },
+      {
+       "key": "c",
+       "label": "olyan követelmények, amelyek meghatározott engedélyekre, kamarai tagságokra, nyilvántartásokban való szereplésre vonatkoznak"
+      },
+      {
+       "key": "d",
+       "label": "csőd vagy felszámolás alatt álló vállalkozás"
+      },
+      {
+       "key": "e",
+       "label": "a pályázó vállalkozásnak nem lehetnek jogerősen elmarasztaló ítéletei jogellenes tevékenységért"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: pénzügyi-gazdasági · műszaki-szakmai · olyan követelmények, amelyek meghatározott engedélyekre, kamarai tagságokra, nyilvántartásokban való szereplésre vonatkoznak"
+    }
+   ]
+  },
+  "II.5": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A kiegészítő tájékoztatás lényege a meglévő előírások egyértelműsítése, értelmezése, magyarázata?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "A kiegészítő tájékoztatás a közbeszerzési dokumentumok részévé válik?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Meddig módosíthatja az ajánlattevő az ajánlatát?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a szerződéskötésig"
+      },
+      {
+       "key": "b",
+       "label": "az ajánlattételi határidő lejártáig"
+      },
+      {
+       "key": "c",
+       "label": "a bírálati szakaszban bármikor"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlattételi határidő lejártáig"
+    }
+   ]
+  },
+  "II.6": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A tartalmi követelményeknek történő meg nem felelés esetében eredményteleníthető az ajánlat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Melyek az ajánlat főbb tartalmi elemei?",
+     "options": [
+      {
+       "key": "a",
+       "label": "felolvasólap"
+      },
+      {
+       "key": "b",
+       "label": "általános nyilatkozatok"
+      },
+      {
+       "key": "c",
+       "label": "szakmai ajánlat"
+      },
+      {
+       "key": "d",
+       "label": "szerződéstervezet"
+      },
+      {
+       "key": "e",
+       "label": "részvételi/ajánlati felhívás"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: felolvasólap · általános nyilatkozatok · szakmai ajánlat"
+    },
+    {
+     "q": "Üzleti titokká azon adatokat (információkat) nyilváníthat az ajánlattevő, amelyek nyilvánosságra hozatala az üzleti tevékenysége szempontjából aránytalan sérelmet okozna?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "II.7": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mely eljárási cselekmény nem tartozik a bírálat során alkalmazandó eljárási cselekmények közé?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Hiánypótlás, felvilágosítás kérés"
+      },
+      {
+       "key": "b",
+       "label": "Indokoláskérés"
+      },
+      {
+       "key": "c",
+       "label": "Számítási hiba javítása"
+      },
+      {
+       "key": "d",
+       "label": "Kiegészítő tájékoztatás"
+      }
+     ],
+     "correct": [
+      "d"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Kiegészítő tájékoztatás"
+    },
+    {
+     "q": "Bírálatot, értékelést követően a döntést meg kell hoznia az ajánlatkérőnek. Mely dokumentumban jelenik meg a döntés?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlati / részvételi felhívás"
+      },
+      {
+       "key": "b",
+       "label": "Írásbeli összegezés"
+      },
+      {
+       "key": "c",
+       "label": "Közbeszerzési terv"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Írásbeli összegezés"
+    },
+    {
+     "q": "A szerződéskötési moratórium alatt, mely eljárási cselekményt tehetik meg az ajánlattevők?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szerződéskötés"
+      },
+      {
+       "key": "b",
+       "label": "még a szerződés megkötését megelőzően vitathatják az ajánlatkérő döntését a Közbeszerzési Döntőbizottsághoz benyújtható jogorvoslati kérelemmel"
+      },
+      {
+       "key": "c",
+       "label": "szerződés teljesítésének megkezdése"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: még a szerződés megkötését megelőzően vitathatják az ajánlatkérő döntését a Közbeszerzési Döntőbizottsághoz benyújtható jogorvoslati kérelemmel"
+    }
+   ]
+  },
+  "II.8": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A verseny tisztaságának megóvása érdekében különös figyelmet kell fordítani a közbeszerzési eljárások során a jogellenes befolyásolások, tisztességtelen előnyök felderítésére, visszaszorítására, megelőzésére és szankcionálására?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "A verseny tisztaságának megóvása érdekében olyan hatóságokat, szervezeteket kell működtetni, amelyek képesek a kockázatokat felmérni, a felmerült helyzeteket kezelni és szükség szerint beavatkozni. Milyen ilyen szervezeteket ismer?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Gazdasági Versenyhivatal"
+      },
+      {
+       "key": "b",
+       "label": "Integritás Hatóság"
+      },
+      {
+       "key": "c",
+       "label": "Közbeszerzési Hatóság"
+      },
+      {
+       "key": "d",
+       "label": "Nemzeti Adó és Vámhivatal (NAV)"
+      },
+      {
+       "key": "e",
+       "label": "Közbeszerzési Döntőbizottság"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Gazdasági Versenyhivatal · Integritás Hatóság · Közbeszerzési Hatóság"
+    },
+    {
+     "q": "Hol van lehetőség anonim módon közbeszerzési jogsértések bejelentésére?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a fejlesztéspolitikai Irányító Hatóságoknál"
+      },
+      {
+       "key": "b",
+       "label": "Közbeszerzési Hatóság által működtetett Anonim Chat-en"
+      },
+      {
+       "key": "c",
+       "label": "EKR-ben"
+      },
+      {
+       "key": "d",
+       "label": "EPTK-ban"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a fejlesztéspolitikai Irányító Hatóságoknál · Közbeszerzési Hatóság által működtetett Anonim Chat-en"
+    },
+    {
+     "q": "Felelős ajánlattétel azt jelenti, hogy a gazdasági szereplők figyelembe veszik a közpénzek felelős és hatékony felhasználásának követelményét, tartózkodnak a teljesíthetetlen ajánlatok megtételétől, nem támasztanak lehetetlen feltételeket, és a piaci viszonyoknak megfelelő árakat ajánlanak meg?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mi javíthatja a piacon a verseny tisztaságát, növelve a versenyt?",
+     "options": [
+      {
+       "key": "a",
+       "label": "részlehajlás"
+      },
+      {
+       "key": "b",
+       "label": "transzparencia (átláthatóság)"
+      },
+      {
+       "key": "c",
+       "label": "nyilvánosság biztosítása a közbeszerzési eljárásokban"
+      },
+      {
+       "key": "d",
+       "label": "rendeltetésszerű joggyakorlás (jogszabálykövetés)"
+      },
+      {
+       "key": "e",
+       "label": "joggal való visszaélés"
+      },
+      {
+       "key": "f",
+       "label": "felelős ajánlattétel"
+      }
+     ],
+     "correct": [
+      "b",
+      "c",
+      "d",
+      "f"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: transzparencia (átláthatóság) · nyilvánosság biztosítása a közbeszerzési eljárásokban · rendeltetésszerű joggyakorlás (jogszabálykövetés) · felelős ajánlattétel"
+    }
+   ]
+  },
+  "III.1": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A szerződésben mely rendelkezések tekinthetők általános gazdaságpolitikai célkitűzésnek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a teljesítés dokumentálási kötelezettsége"
+      },
+      {
+       "key": "b",
+       "label": "a szerződés teljesítésére valamint az alvállalkozókra vonatkozó bizonyos adatok EKR-ben történő közzététele"
+      },
+      {
+       "key": "c",
+       "label": "a szerződés hatálya"
+      },
+      {
+       "key": "d",
+       "label": "szerződés megszűnése"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a teljesítés dokumentálási kötelezettsége · a szerződés teljesítésére valamint az alvállalkozókra vonatkozó bizonyos adatok EKR-ben történő közzététele"
+    }
+   ]
+  },
+  "III.3": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Ha az ajánlatkérő a szerződés teljesítésének elmaradásával kapcsolatos igényekre biztosítékot kötött ki, akkor előírható az, hogy a szerződés hatálybalépését megelőzően bocsássa azt a nyertes ajánlattevő rendelkezésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Mikor tekinthető egy közbeszerzés feltételesnek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "ha a szerződés felfüggesztő feltételt tartalmaz, akkor az akkor léphet hatályba, ha a feltétel bekövetkezik"
+      },
+      {
+       "key": "b",
+       "label": "ha a hatályba léptetés körülményeiről, feltételeiről, a nyertes ajánlattevőként szerződő fél értesítéséről a szerződésben kell rendelkezni"
+      },
+      {
+       "key": "c",
+       "label": "ha a szerződés nem tartalmaz felfüggesztő feltételt, és akkor léphet hatályba, amikor a nyertes ajánlattevő szeretné"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: ha a szerződés felfüggesztő feltételt tartalmaz, akkor az akkor léphet hatályba, ha a feltétel bekövetkezik · ha a hatályba léptetés körülményeiről, feltételeiről, a nyertes ajánlattevőként szerződő fél értesítéséről a szerződésben kell rendelkezni"
+    }
+   ]
+  },
+  "III.4": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Kinek kell a közbeszerzési eljárás eredményeként megkötött szerződést teljesíteni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "nyertes ajánlattevőként szerződő félnek"
+      },
+      {
+       "key": "b",
+       "label": "ajánlatkérőnek"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: nyertes ajánlattevőként szerződő félnek"
+    },
+    {
+     "q": "Szakemberek bevonása, miként írható elő egy közbeszerzési eljárásban?",
+     "options": [
+      {
+       "key": "a",
+       "label": "alkalmassági követelményként"
+      },
+      {
+       "key": "b",
+       "label": "minőségi értékelési szempontként"
+      },
+      {
+       "key": "c",
+       "label": "szerződéskötési feltételként"
+      },
+      {
+       "key": "d",
+       "label": "költség szempontú értékelési szempontként"
+      },
+      {
+       "key": "e",
+       "label": "ár szempontú értékelési szempontként"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: alkalmassági követelményként · minőségi értékelési szempontként · szerződéskötési feltételként"
+    },
+    {
+     "q": "Hol tájékozódhat az ajánlatkérő az ajánlatba bevont szakember ajánlattételi időpontjában fennálló tényleges foglalkoztatási körülményeiről?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szakmai önéletrajzban, a munkáltatóra vonatkozó adatokból"
+      },
+      {
+       "key": "b",
+       "label": "a részvételi/ajánlati felhívásból"
+      },
+      {
+       "key": "c",
+       "label": "a közbeszerzési dokumentumokból"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: szakmai önéletrajzban, a munkáltatóra vonatkozó adatokból"
+    },
+    {
+     "q": "Mi igaz a kapacitás nyújtó szervezetekre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az alkalmassági követelmények igazolásában vesznek részt"
+      },
+      {
+       "key": "b",
+       "label": "az ajánlattevőnek megállapodást kell velük kötni"
+      },
+      {
+       "key": "c",
+       "label": "minden esetben bevonásra kerül a szerződés teljesítésébe"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az alkalmassági követelmények igazolásában vesznek részt · az ajánlattevőnek megállapodást kell velük kötni"
+    },
+    {
+     "q": "Az alvállalkozó olyan gazdasági szereplő aki a közbeszerzési eljárás eredményeként megkötött szerződés teljesítésében az ajánlattevő által bevontan közvetlenül vesz részt?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "III.5": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Melyek igazak a keretszerződésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a teljes mennyiség megvételére nem vállal az ajánlatkérő kötelezettséget"
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatkérő a mennyiségtől „lefelé” térhet el anélkül, hogy ezt előre vagy külön jeleznie kellene"
+      },
+      {
+       "key": "c",
+       "label": "az alapmennyiség biztosan megrendelésre kerül"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a teljes mennyiség megvételére nem vállal az ajánlatkérő kötelezettséget · az ajánlatkérő a mennyiségtől „lefelé” térhet el anélkül, hogy ezt előre vagy külön jeleznie kellene"
+    },
+    {
+     "q": "Mely állítások igazak az opcióra?",
+     "options": [
+      {
+       "key": "a",
+       "label": "kötelező az alapmennyiség megrendelése"
+      },
+      {
+       "key": "b",
+       "label": "az alap mennyiségen felül meghaladó többlet nem feltétlenül kerül megrendelésre*"
+      },
+      {
+       "key": "c",
+       "label": "az ajánlatkérő a mennyiségtől „lefelé” térhet el"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: kötelező az alapmennyiség megrendelése"
+    }
+   ]
+  },
+  "III.6": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Milyen fizetési feltételeket írhat elő a közbeszerzési eljárásban az ajánlatkérő?",
+     "options": [
+      {
+       "key": "a",
+       "label": "előleg"
+      },
+      {
+       "key": "b",
+       "label": "részszámlák benyújtásának ütemezése"
+      },
+      {
+       "key": "c",
+       "label": "a fizetési határidő"
+      },
+      {
+       "key": "d",
+       "label": "értékelési szempont(ok)"
+      },
+      {
+       "key": "e",
+       "label": "alkalmassági követelmény(ek)"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: előleg · részszámlák benyújtásának ütemezése · a fizetési határidő"
+    },
+    {
+     "q": "Mely dokumentumban kell rögzítenie az ajánlatkérőnek az ellenszolgáltatás kifizetésével kapcsolatos előírásait?",
+     "options": [
+      {
+       "key": "a",
+       "label": "eljárást megindító felhívásban"
+      },
+      {
+       "key": "b",
+       "label": "szerződéstervezetben"
+      },
+      {
+       "key": "c",
+       "label": "szakmai ajánlatban"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: eljárást megindító felhívásban · szerződéstervezetben"
+    },
+    {
+     "q": "Szállítói finanszírozás esetén a támogatást nyújtó szervezet fizeti ki közvetlenül az ellenszolgáltatást?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Építési beruházásoknál a tartalékkeret mértéke legfeljebb hány százalék lehet?",
+     "options": [
+      {
+       "key": "a",
+       "label": "20%"
+      },
+      {
+       "key": "b",
+       "label": "15%"
+      },
+      {
+       "key": "c",
+       "label": "10%"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 10%"
+    }
+   ]
+  },
+  "III.7": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mely szervezetek ellenőrzik a Kbt. szerződés módosítására vonatkozó feltételeinek teljesülését?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Közbeszerzési Hatóság"
+      },
+      {
+       "key": "b",
+       "label": "Támogatást nyújtó szervezetek"
+      },
+      {
+       "key": "c",
+       "label": "Ellenőrző szervezetek"
+      },
+      {
+       "key": "d",
+       "label": "Gazdasági Versenyhivatal"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Közbeszerzési Hatóság · Támogatást nyújtó szervezetek · Ellenőrző szervezetek"
+    }
+   ]
+  },
+  "III.9": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Milyen jogkövetkezményei lehetnek a jogszabályba ütköző szerződés módosításának?",
+     "options": [
+      {
+       "key": "a",
+       "label": "bírság"
+      },
+      {
+       "key": "b",
+       "label": "a módosítás semmissége"
+      },
+      {
+       "key": "c",
+       "label": "figyelmeztetés"
+      },
+      {
+       "key": "d",
+       "label": "eltiltás"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: bírság · a módosítás semmissége"
+    }
+   ]
+  },
+  "III.10": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Jogsértő módon jár el az ajánlatkérő, amennyiben a szerződő fél olyan teljesítést fogad el, amely nem felel meg az előírt követelményeknek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "III.11": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A szerződés teljesítése kapcsán, mely kockázatok emelhetők ki?",
+     "options": [
+      {
+       "key": "a",
+       "label": "A hibás teljesítés elfogadása megfelelőként"
+      },
+      {
+       "key": "b",
+       "label": "Ha szándékosan olyan költségeket kívánnak elszámolni, amelyek nem engedélyezettek vagy indokoltak, vagy amelyek nem rendelhetők sem közvetlen, sem közvetett módon a szerződéshez"
+      },
+      {
+       "key": "c",
+       "label": "A nyertes ajánlattevőként szerződő fél a közbeszerzési eljárásban nem megfelelő módon tett ajánlatot, és a teljesítés során arra törekszik, hogy áremelkedést ismertessen el"
+      },
+      {
+       "key": "d",
+       "label": "Politikai vagy jogi változások"
+      },
+      {
+       "key": "e",
+       "label": "Gazdasági változások"
+      },
+      {
+       "key": "f",
+       "label": "Természeti katasztrófák"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: A hibás teljesítés elfogadása megfelelőként · Ha szándékosan olyan költségeket kívánnak elszámolni, amelyek nem engedélyezettek vagy indokoltak, vagy amelyek nem rendelhetők sem közvetlen, sem közvetett módon a szerződéshez · A nyertes ajánlattevőként szerződő fél a közbeszerzési eljárásban nem megfelelő módon tett ajánlatot, és a teljesítés során arra törekszik, hogy áremelkedést ismertessen el"
+    }
+   ]
+  },
+  "IV.1": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Magyarországon kinek a hatáskörébe tartozik a közbeszerzési eljárások vonatkozásában a jogorvoslati eljárás lefolytatása?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Közbeszerzési Döntőbizottság (KDB)"
+      },
+      {
+       "key": "b",
+       "label": "Integritás Hatóság"
+      },
+      {
+       "key": "c",
+       "label": "Gazdasági Versenyhivatal"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Közbeszerzési Döntőbizottság (KDB)"
+    },
+    {
+     "q": "Szemben a hagyományos, akár hosszú évekig húzódó bírósági eljárásokkal, a lehető leghamarabb le kell zárni a jogorvoslati eljárásokat. Mi ennek az oka?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlatkérői beszerzési igények a lehető leghamarabb kielégítésre kerülhessenek"
+      },
+      {
+       "key": "b",
+       "label": "a kereskedelmi kapcsolatokban a forgalombiztonság minél kevésbé sérüljön a jogviták esetleges elhúzódása miatt"
+      },
+      {
+       "key": "c",
+       "label": "a KDB számára biztosított a törvényben az a jogkör is, hogy az ajánlatkérő döntését megsemmisítse, ami által a jogsértések korrigálhatók"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az ajánlatkérői beszerzési igények a lehető leghamarabb kielégítésre kerülhessenek · a kereskedelmi kapcsolatokban a forgalombiztonság minél kevésbé sérüljön a jogviták esetleges elhúzódása miatt"
+    },
+    {
+     "q": "A jogorvoslati eljárás hogyan indulhat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "kérelemre"
+      },
+      {
+       "key": "b",
+       "label": "hivatalból"
+      },
+      {
+       "key": "c",
+       "label": "e-mail-en keresztül"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: kérelemre · hivatalból"
+    },
+    {
+     "q": "Kérelmezőnek tekinthető az, akinek jogát vagy jogos érdekét a Kbt.-be ütköző tevékenység vagy mulasztás sérti vagy veszélyezteti?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "IV.3": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Ha az ajánlatok elbírálásáról szóló összegzésben nyertes ajánlattevőként feltüntetésre került egy ajánlattevő, a második helyezett pedig vitatja a nyertes ajánlat érvényességét, a nyertesként megjelölt ajánlattevő a jogorvoslati eljárásban milyen szereplőként fog megjelenni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Kérelmező"
+      },
+      {
+       "key": "b",
+       "label": "Kedvezményzett"
+      },
+      {
+       "key": "c",
+       "label": "Egyéb érdekelt"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Egyéb érdekelt"
+    }
+   ]
+  },
+  "IV.4": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Általában mely eljárási cselekmény előzi meg a jogorvoslati eljárást?",
+     "options": [
+      {
+       "key": "a",
+       "label": "előzetes vitarendezési kérelem"
+      },
+      {
+       "key": "b",
+       "label": "kiegészítő tájékoztatás kérés"
+      },
+      {
+       "key": "c",
+       "label": "eljárás megindítása"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: előzetes vitarendezési kérelem"
+    },
+    {
+     "q": "Ha az ajánlattevő jogorvoslati eljárást kíván indítani, a következő főbb kérdéseket, kockázatokat kell megvizsgálnia. Találja meg a helyes válaszokat!",
+     "options": [
+      {
+       "key": "a",
+       "label": "előzetes vitarendezési kérelem alkalmazása"
+      },
+      {
+       "key": "b",
+       "label": "iratbetekintés kérése"
+      },
+      {
+       "key": "c",
+       "label": "a közbeszerzési jogorvoslati eljárásban nem lehet jogi képviselő nélkül eljárni"
+      },
+      {
+       "key": "d",
+       "label": "van-e jogi akadálya annak, hogy érdemben vizsgálja a KDB a jogorvoslati kérelmet"
+      },
+      {
+       "key": "e",
+       "label": "meg kell vizsgálni az esélyeket, kockázatokat, lehetőségeket"
+      },
+      {
+       "key": "f",
+       "label": "kérelemre indult eljárás esetében igazgatási szolgáltatási díj kockázatvállalását"
+      },
+      {
+       "key": "g",
+       "label": "kiegészítő tájékoztatás kérése"
+      },
+      {
+       "key": "h",
+       "label": "ajánlatkérő e-mail-ben történő tájékoztatása"
+      },
+      {
+       "key": "i",
+       "label": "ajánlatkérő telefonon történő tájékoztatása"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: előzetes vitarendezési kérelem alkalmazása · iratbetekintés kérése · a közbeszerzési jogorvoslati eljárásban nem lehet jogi képviselő nélkül eljárni · van-e jogi akadálya annak, hogy érdemben vizsgálja a KDB a jogorvoslati kérelmet · meg kell vizsgálni az esélyeket, kockázatokat, lehetőségeket · kérelemre indult eljárás esetében igazgatási szolgáltatási díj kockázatvállalását"
+    }
+   ]
+  },
+  "IV.6": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mely tekinthető egy kérelmi elemnek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a KDB-hez benyújtott jogorvoslati kérelemnek az az elkülöníthető része, amely tartalmazza a jogsértőnek vélt kérelmezetti eljárási cselekményt, magatartást, döntést vagy mulasztást a megsértett jogszabályi rendelkezés(ek) megjelölésével"
+      },
+      {
+       "key": "b",
+       "label": "a kérelmező ajánlatának vagy részvételi jelentkezésének érvénytelenségét megállapító ajánlatkérői döntés vitatása ha valamely érvénytelenségi okhoz egyéb jogkövetkezmény is fűződik"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a KDB-hez benyújtott jogorvoslati kérelemnek az az elkülöníthető része, amely tartalmazza a jogsértőnek vélt kérelmezetti eljárási cselekményt, magatartást, döntést vagy mulasztást a megsértett jogszabályi rendelkezés(ek) megjelölésével"
+    },
+    {
+     "q": "A KDB az érdemi határozatában, milyen döntéseket hozhat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a kérelem (részbeni) elutasítása"
+      },
+      {
+       "key": "b",
+       "label": "jogsértés megállapítása"
+      },
+      {
+       "key": "c",
+       "label": "bírság kiszabása"
+      },
+      {
+       "key": "d",
+       "label": "ajánlatkérői döntés megsemmisítése vagy az eljárás folytatásának feltételhez kötése"
+      },
+      {
+       "key": "e",
+       "label": "ajánlatkérői döntés módosítása"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a kérelem (részbeni) elutasítása · jogsértés megállapítása · bírság kiszabása · ajánlatkérői döntés megsemmisítése vagy az eljárás folytatásának feltételhez kötése"
+    },
+    {
+     "q": "Mihez igazodóan kell kiszámítani a jogorvoslati eljárás igazgatási szolgáltatási díját?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a becsült értékhez igazodik"
+      },
+      {
+       "key": "b",
+       "label": "a nyertes ajánlattevői árhoz igazodik"
+      },
+      {
+       "key": "c",
+       "label": "szerződésben szereplő értékhez igazodik"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a becsült értékhez igazodik"
+    }
+   ]
+  },
+  "IV.7": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A Kbt. lehetővé teszi, hogy a kérelmező az érdemi határozat meghozataláig visszavonja jogorvoslati kérelmét vagy annak egyes elemeit?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    }
+   ]
+  },
+  "IV.8": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Az adott konkrét jogorvoslati eljárásban a KDB részéről hány közbeszerzési biztosból álló tanács jár el?",
+     "options": [
+      {
+       "key": "a",
+       "label": "hat"
+      },
+      {
+       "key": "b",
+       "label": "négy"
+      },
+      {
+       "key": "c",
+       "label": "három"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: három"
+    },
+    {
+     "q": "Milyen szabályok biztosítják, hogy a jogorvoslati eljárásban pártatlan biztosok vegyenek részt?",
+     "options": [
+      {
+       "key": "a",
+       "label": "kizárási (összeférhetetlenségi) szabályok"
+      },
+      {
+       "key": "b",
+       "label": "fizetési feltételek"
+      },
+      {
+       "key": "c",
+       "label": "hatályba léptető rendelkezések"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: kizárási (összeférhetetlenségi) szabályok"
+    },
+    {
+     "q": "A jogorvoslati eljárásban hány nap az ügyintézési határidő ha a KDB nem tart tárgyalást (főszabály szerint)?",
+     "options": [
+      {
+       "key": "a",
+       "label": "15 nap"
+      },
+      {
+       "key": "b",
+       "label": "25 nap"
+      },
+      {
+       "key": "c",
+       "label": "10 nap"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 15 nap"
+    }
+   ]
+  },
+  "IV.9": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Ha jogsértés kerül megállapításra a KDB által, akkor mely jogkövetkezmények alkalmazása merülhet fel?",
+     "options": [
+      {
+       "key": "a",
+       "label": "bírság kiszabása"
+      },
+      {
+       "key": "b",
+       "label": "a döntés megsemmisítése"
+      },
+      {
+       "key": "c",
+       "label": "a KDB feltételhez köti az eljárás folytatását"
+      },
+      {
+       "key": "d",
+       "label": "a szerződés semmissé nyilvánítása"
+      },
+      {
+       "key": "e",
+       "label": "ajánlattevő kizárása az eljárásból"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: bírság kiszabása · a döntés megsemmisítése · a KDB feltételhez köti az eljárás folytatását · a szerződés semmissé nyilvánítása"
+    }
+   ]
+  },
+  "IV.10": {
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Milyen költségek merülhetnek fel egy közbeszerzési jogorvoslati eljárásban?",
+     "options": [
+      {
+       "key": "a",
+       "label": "bírság"
+      },
+      {
+       "key": "b",
+       "label": "igazgatási szolgáltatási díj"
+      },
+      {
+       "key": "c",
+       "label": "rendszerhasználati díj"
+      },
+      {
+       "key": "d",
+       "label": "a másik (a nyertes) fél jogi képviselőjét (szakértőjét) megillető megbízási díj"
+      },
+      {
+       "key": "e",
+       "label": "egyéb költségek mint pl. szemle költsége vagy az útiköltség"
+      },
+      {
+       "key": "f",
+       "label": "nem a jogorvoslati eljáráshoz, hanem az alapul fekvő közbeszerzési eljáráshoz kapcsolódó költségek"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: bírság · igazgatási szolgáltatási díj · a másik (a nyertes) fél jogi képviselőjét (szakértőjét) megillető megbízási díj · egyéb költségek mint pl. szemle költsége vagy az útiköltség"
+    }
+   ]
+  }
+ },
+ "modules": {
+  "I": {
+   "title": "Modul-4_Modulzaro",
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mióta kötelező az EKR-ben lefolytatni a közbeszerzési eljárásokat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "2018. április 15."
+      },
+      {
+       "key": "b",
+       "label": "2021. október 15."
+      },
+      {
+       "key": "c",
+       "label": "2023. október 25."
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 2018. április 15."
+    },
+    {
+     "q": "Ajánlattevőknek az EKR használata ingyenes?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mely menüpontok érhetők el regisztráció nélkül?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Nyilvántartások"
+      },
+      {
+       "key": "b",
+       "label": "Eljárás"
+      },
+      {
+       "key": "c",
+       "label": "Szerződés"
+      },
+      {
+       "key": "d",
+       "label": "Támogatás"
+      },
+      {
+       "key": "e",
+       "label": "Felhasználó"
+      },
+      {
+       "key": "f",
+       "label": "Szervezet"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Nyilvántartások · Eljárás · Szerződés · Támogatás"
+    },
+    {
+     "q": "Az EKR-be bejelentkezni csak akkor lehetséges, amennyiben a regisztráció során elvégeztük az e-mail cím megerősítését?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Az EKR-be történő bejelentkezéskor felhasználónév, jelszó helyes megadását követően, biztonsági kód kerül kiküldésre a regisztrációkor rögzített elsődleges telefonszámra?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Jelszó változtatáskor, hány alkalom után inaktiválja a fiókunkat a rendszer?",
+     "options": [
+      {
+       "key": "a",
+       "label": "5"
+      },
+      {
+       "key": "b",
+       "label": "3"
+      },
+      {
+       "key": "c",
+       "label": "7"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 5"
+    },
+    {
+     "q": "Egy szervezetet többször is regisztrálhatunk az EKR-be?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Amennyiben már regisztrálva van a szervezet az EKR-ben, mit kell benyújtani a szervezethez csatlakozáshoz?",
+     "options": [
+      {
+       "key": "a",
+       "label": "regisztrációs kérelmet"
+      },
+      {
+       "key": "b",
+       "label": "csatlakozási kérelmet"
+      },
+      {
+       "key": "c",
+       "label": "bejelentkezési kérelmet"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: csatlakozási kérelmet"
+    },
+    {
+     "q": "A szervezet regisztrációját követően a regisztrációt elvégző felhasználó lesz a regisztrált szervezet szervezeti szuperusere?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Milyen kategóriákba sorolhatók a jogosultságok az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Szervezet szintű szerepkörök"
+      },
+      {
+       "key": "b",
+       "label": "Eljárás szintű szerepkörök"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlat szintű szerepkörök"
+      },
+      {
+       "key": "d",
+       "label": "Hirdetmeny szerkesztő szerepkörök"
+      },
+      {
+       "key": "e",
+       "label": "Nyilvántartások szerkesztő szerepkörök"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Szervezet szintű szerepkörök · Eljárás szintű szerepkörök · Ajánlat szintű szerepkörök"
+    },
+    {
+     "q": "Melyek ajánlat szintű jogosultságok?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlat betekintő"
+      },
+      {
+       "key": "b",
+       "label": "Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlat szerkesztő"
+      },
+      {
+       "key": "d",
+       "label": "Ajánlattételt irányító szerepkör"
+      },
+      {
+       "key": "e",
+       "label": "Sablon szerkesztő"
+      },
+      {
+       "key": "f",
+       "label": "Szervezet tag"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Ajánlat betekintő · Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra · Ajánlat szerkesztő · Ajánlattételt irányító szerepkör"
+    },
+    {
+     "q": "Melyek szervezeti szintű jogosultságok?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Szervezeti szuper user"
+      },
+      {
+       "key": "b",
+       "label": "Szervezet tag"
+      },
+      {
+       "key": "c",
+       "label": "Sablon használó"
+      },
+      {
+       "key": "d",
+       "label": "Sablon szerkesztő"
+      },
+      {
+       "key": "e",
+       "label": "Ajánlat betekintő"
+      },
+      {
+       "key": "f",
+       "label": "Ajánlat szerkesztő"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Szervezeti szuper user · Szervezet tag · Sablon használó · Sablon szerkesztő"
+    },
+    {
+     "q": "Mire való a delegálás az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül."
+      },
+      {
+       "key": "b",
+       "label": "A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül. · A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+    },
+    {
+     "q": "A megindított eljárások menüben milyen listát találunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a belépett felhasználó ajánlatait"
+      },
+      {
+       "key": "b",
+       "label": "a belépett felhasználó eljárásait"
+      },
+      {
+       "key": "c",
+       "label": "megindított eljárásokat"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a belépett felhasználó ajánlatait"
+    },
+    {
+     "q": "Az ajánlataim menüben miket találunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szerkesztett/megtekintett vagy benyújtani kívánt/benyújtott ajánlatokat, melyekre érdeklődésünket jeleztük"
+      },
+      {
+       "key": "b",
+       "label": "a belépett felhasználó eljárásait"
+      },
+      {
+       "key": "c",
+       "label": "megindított eljárásokat"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: szerkesztett/megtekintett vagy benyújtani kívánt/benyújtott ajánlatokat, melyekre érdeklődésünket jeleztük"
+    },
+    {
+     "q": "Mi található az eljárási cselekmény listázó felületen?",
+     "options": [
+      {
+       "key": "a",
+       "label": "már elindított eljárási cselekmények listáját látjuk táblázatos nézetben"
+      },
+      {
+       "key": "b",
+       "label": "elindítani kívánt eljárási cselekmények listáját látjuk táblázatos nézetben"
+      },
+      {
+       "key": "c",
+       "label": "az eljáráshoz/ajánlathoz tartozó üzenetek megjelenítésére szolgáló felület"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: már elindított eljárási cselekmények listáját látjuk táblázatos nézetben"
+    },
+    {
+     "q": "Az EKR-ben az archiválás művelet visszavonható?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Archivált ajánlat az ajánlatok listában megjelenik?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Az ajánlat/részvételre jelentkezés összeállítása eljárási cselekmény felület fejlécében mely adatok kerülnek megjelenítésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "eljárás típusa, EKR azonosító száma, aktuális szakasza"
+      },
+      {
+       "key": "b",
+       "label": "ajánlat ügylet aktuális szakasza"
+      },
+      {
+       "key": "c",
+       "label": "folyamatban lévő eljárási cselekmény, a cselekményen belül a feladat, amelyet el kell végeznünk"
+      },
+      {
+       "key": "d",
+       "label": "eljárási cselekmény indítás dátuma"
+      },
+      {
+       "key": "e",
+       "label": "eljárási cselekmény státusza"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: eljárás típusa, EKR azonosító száma, aktuális szakasza · ajánlat ügylet aktuális szakasza · folyamatban lévő eljárási cselekmény, a cselekményen belül a feladat, amelyet el kell végeznünk"
+    },
+    {
+     "q": "Érdeklődés jelzése funkció gomb minden felhasználó számára elérhető?",
+     "options": [
+      {
+       "key": "a",
+       "label": "csak regisztrált felhasználók számára, akik jogosultak részvételi jelentkezést beadni vagy ajánlatot tenni"
+      },
+      {
+       "key": "b",
+       "label": "nem regisztrált felhasználók számára is"
+      },
+      {
+       "key": "c",
+       "label": "csak regisztrált felhasználók számára, akiknek csak részvételre jelentkezés/ajánlat megtekintő jogosultsággal rendelkeznek"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: csak regisztrált felhasználók számára, akik jogosultak részvételi jelentkezést beadni vagy ajánlatot tenni"
+    },
+    {
+     "q": "Több részes eljárás esetében minden rész esetében külön-külön szükséges az érdeklődést jelezni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Érdeklődés jelzése funkció gomb minden felhasználó számára elérhető?",
+     "options": [
+      {
+       "key": "a",
+       "label": "csak regisztrált felhasználók számára, akik jogosultak részvételi jelentkezést beadni vagy ajánlatot tenni"
+      },
+      {
+       "key": "b",
+       "label": "nem regisztrált felhasználók számára is"
+      },
+      {
+       "key": "c",
+       "label": "csak regisztrált felhasználók számára, akiknek csak részvételre jelentkezés/ajánlat megtekintő jogosultsággal rendelkeznek"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: csak regisztrált felhasználók számára, akik jogosultak részvételi jelentkezést beadni vagy ajánlatot tenni"
+    },
+    {
+     "q": "Több részes eljárás esetében minden rész esetében külön-külön szükséges az érdeklődést jelezni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mi az előzetes vitarendezés kérése eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "előzetes vitarendezési kérelmünket össze tudjuk állítani"
+      },
+      {
+       "key": "b",
+       "label": "kiegészítő tájékoztatást kérésünket tudjuk az Ajánlatkérőnek megküldeni az ajánlatunk/részvételi jelentkezésünk összeállítása kapcsán"
+      },
+      {
+       "key": "c",
+       "label": "egyéb kommunikációt tudunk indítani az eljárás során"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: előzetes vitarendezési kérelmünket össze tudjuk állítani"
+    },
+    {
+     "q": "Mi az egyéb kommunikációs kérése eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgáló eljárási cselekmény a közbeszerzési eljárás során"
+      },
+      {
+       "key": "b",
+       "label": "előzetes vitarendezési kérelmünket össze tudjuk állítani"
+      },
+      {
+       "key": "c",
+       "label": "kiegészítő tájékoztatást kérésünket tudjuk az Ajánlatkérőnek megküldeni az ajánlatunk/részvételi jelentkezésünk összeállítása kapcsán"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlatkérővel az EKR-en keresztüli kommunikáció biztosítására szolgáló eljárási cselekmény a közbeszerzési eljárás során"
+    },
+    {
+     "q": "Mely eljárási cselekményben tudjuk az ajánlatunkat/részvételre jelentkezésünket benyújtani?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlat/Részvételre jelentkezés összeállítása"
+      },
+      {
+       "key": "b",
+       "label": "előzetes vitarendezés kérése"
+      },
+      {
+       "key": "c",
+       "label": "kiegészítő tájékoztatás kérése"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Ajánlat/Részvételre jelentkezés összeállítása"
+    },
+    {
+     "q": "Érdeklődés jelzését követően az ajánlat ügylet kap egyedi azonosítót?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Az Ajánlat/Részvételre jelentkezés összeállítása hanyadik lépése a gazdasági szereplők rögzítése lépés?",
+     "options": [
+      {
+       "key": "a",
+       "label": "első"
+      },
+      {
+       "key": "b",
+       "label": "második"
+      },
+      {
+       "key": "c",
+       "label": "harmadik"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: első"
+    },
+    {
+     "q": "A gazdasági szereplők rögzítését követően mely felületek válnak szerkeszthetővé az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlati dokumentáció"
+      },
+      {
+       "key": "b",
+       "label": "EEKD menüpont valamint az ezekhez tartozó bal oldali almenük"
+      },
+      {
+       "key": "c",
+       "label": "Felhívás"
+      },
+      {
+       "key": "d",
+       "label": "Bontás"
+      },
+      {
+       "key": "e",
+       "label": "Összegezés"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Ajánlati dokumentáció · EEKD menüpont valamint az ezekhez tartozó bal oldali almenük"
+    },
+    {
+     "q": "Az Ajánlati dokumentáció bal oldali menüsorában a Benyújtandó iratok jegyzéke mit tartalmaz?",
+     "options": [
+      {
+       "key": "a",
+       "label": "azon elektronikus nyilatkozat mintákat, amelyeket be kell nyújtani az eljárásban"
+      },
+      {
+       "key": "b",
+       "label": "azon elektronikus nyilatkozat mintákat, melyeket nem kell benyújtani az eljárásban"
+      },
+      {
+       "key": "c",
+       "label": "azon nem elektronikus nyilatkozat mintákat, melyeket be kell benyújtani az eljárásban"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: azon elektronikus nyilatkozat mintákat, amelyeket be kell nyújtani az eljárásban"
+    },
+    {
+     "q": "Az Ajánlat/Részvételre jelentkezés összeállítása során mely felületeken van lehetőségünk dokumentumot csatolni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az Ajánlati dokumentáció/Benyújtandó iratok jegyzéke felületen"
+      },
+      {
+       "key": "b",
+       "label": "Ajánlati dokumentáció/További közbeszerzési dokumentumok felület"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlati dokumentáció/EEKD"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az Ajánlati dokumentáció/Benyújtandó iratok jegyzéke felületen · Ajánlati dokumentáció/További közbeszerzési dokumentumok felület"
+    },
+    {
+     "q": "Az ajánlat benyújtását követően időzár alá kerül, ez idő alatt megtekinthető az ajánlat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Meddig van lehetőségünk a benyújtott ajánlatunkat visszanyitni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlattételi határidő lejártáig"
+      },
+      {
+       "key": "b",
+       "label": "a bírálati szakasz végéig"
+      },
+      {
+       "key": "c",
+       "label": "szerződéskötésig"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlattételi határidő lejártáig"
+    },
+    {
+     "q": "Ha az ajánlatunk visszanyitásra kerül, ahhoz, hogy benyújtott ajánlat legyen ismételten be kell nyújtanunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Bontást követően az ajánlat visszavonása eljárási cselekmény visszavonható?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "A Hiánypótlás, felvilágosítás kérés eljárási cselekmény megválaszolására az ajánlattevők mely eljárási cselekmény áll rendelkezésére?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Felvilágosítás kérés megválaszolása eljárási cselekmény"
+      },
+      {
+       "key": "b",
+       "label": "Hiánypótlás összeállítása"
+      },
+      {
+       "key": "c",
+       "label": "Nyilatkozat ajánlati kötöttségről eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Felvilágosítás kérés megválaszolása eljárási cselekmény · Hiánypótlás összeállítása"
+    },
+    {
+     "q": "Mi az Igazolások benyújtása eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklás megválaszolására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+    },
+    {
+     "q": "Az Igazolások benyújtása eljárási cselekmény csak abban az esetben indítható, ha az eljárásban az Ajánlatkérő a fent megnevezett igazolás benyújtására felkért minket?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mi a Számítási hiba javítása eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklás megválaszolására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+    },
+    {
+     "q": "A Számítási hiba javítása eljárási cselekmény, mely másik eljárási cselekménnyel nem indítható párhuzamosan?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Hiánypótlás összeállítása"
+      },
+      {
+       "key": "b",
+       "label": "Igazolások benyújtása eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Hiánypótlás összeállítása"
+    },
+    {
+     "q": "Mi az Aránytalanul alacsony ár vagy egyéb aránytalan vállalás esetében indokolás benyújtása eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Az Ajánlatkérő felszólíthatja az ajánlattevőt a kizáró okok fenn nem állásának, valamint az alkalmassági minimum követelményeknek való megfelelés igazolásának benyújtására. Ennek a teljesítésére szolgáló az Ajánlattevő által indítható eljárási cselekmény."
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, ajánlattevőként indoklás megválaszolására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklást kér, ajánlattevőként indoklás megválaszolására szolgáló eljárási cselekmény"
+    },
+    {
+     "q": "Mi a Nyilatkozat ajánlati kötöttségről eljárási cselekmény célja?",
+     "options": [
+      {
+       "key": "a",
+       "label": "amennyiben az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttség fenntartására vonatkozó kérés érkezik, annak *megválaszolására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "b",
+       "label": "amennyiben az Ajánlatkérő aránytalanul alacsony ár és egyéb aránytalan vállalás miatt indoklás megválaszolására szolgáló eljárási cselekmény"
+      },
+      {
+       "key": "c",
+       "label": "az ajánlatban szereplő számítási hiba javítására szolgáló eljárási cselekmény"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: amennyiben az Ajánlatkérőtől a bírálati szakaszban, szerződéskötési-, teljesítési szakaszban az ajánlati kötöttség fenntartására vonatkozó kérés érkezik, annak *megválaszolására szolgáló eljárási cselekmény"
+    }
+   ]
+  },
+  "II": {
+   "title": "Modul-1_Modulzaro",
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A közbeszerzésekről szóló 2015. évi CXLIII. törvény milyen eljárásrendeket különböztet meg:",
+     "options": [
+      {
+       "key": "a",
+       "label": "Nemzeti"
+      },
+      {
+       "key": "b",
+       "label": "Uniós"
+      },
+      {
+       "key": "c",
+       "label": "Tárgyalásos"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Nemzeti · Uniós"
+    },
+    {
+     "q": "Minden közbeszerzési eljárás hirdetménnyel indul?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Az ajánlati kötöttség beálltával...",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlatkérő nem módosíthatja a feltételeit, az ajánlattevő pedig az ajánlatában meghatározott vállalásokat nem változtathatja meg"
+      },
+      {
+       "key": "b",
+       "label": "tárgyalásos eljárásban az ajánlati kötöttség csak a tárgyalások lezárásával áll be, tehát a végső ajánlattételi felhívás és végső ajánlat benyújtásával"
+      },
+      {
+       "key": "c",
+       "label": "az ajánlatkérő módosíthatja a feltételeit , az ajánlattevő pedig az ajánlatában meghatározott vállalásokat megváltoztathatja"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az ajánlatkérő nem módosíthatja a feltételeit, az ajánlattevő pedig az ajánlatában meghatározott vállalásokat nem változtathatja meg · tárgyalásos eljárásban az ajánlati kötöttség csak a tárgyalások lezárásával áll be, tehát a végső ajánlattételi felhívás és végső ajánlat benyújtásával"
+    },
+    {
+     "q": "A hirdetmények az eljárásrendeknek megfelelően az alábbi helyeken jelennek meg hivatalosan:",
+     "options": [
+      {
+       "key": "a",
+       "label": "A hirdetmények uniós eljárásrendben az Európai Unió Hivatalos Lapjának Kiegészítő mellékletében, illetve ennek kereshető adatbázisában (ted.europa.eu)."
+      },
+      {
+       "key": "b",
+       "label": "Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Közbeszerzési Értesítőben (https¤//www.kozbeszerzes.hu/ertesito) jelennek meg."
+      },
+      {
+       "key": "c",
+       "label": "Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Magyar közlönyben (https¤//magyarkozlony.hu/) jelennek meg."
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: A hirdetmények uniós eljárásrendben az Európai Unió Hivatalos Lapjának Kiegészítő mellékletében, illetve ennek kereshető adatbázisában (ted.europa.eu). · Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Közbeszerzési Értesítőben (https¤//www.kozbeszerzes.hu/ertesito) jelennek meg."
+    },
+    {
+     "q": "Mely rendszerben zajlik főszabály szerint a közbeszerzési eljárások lefolytatása valamint az ajánlattétel?",
+     "options": [
+      {
+       "key": "a",
+       "label": "EPTK"
+      },
+      {
+       "key": "b",
+       "label": "EKR (Elektronikus Közbeszerzési Rendszer)*"
+      },
+      {
+       "key": "c",
+       "label": "Ügyfélkapu"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: EKR (Elektronikus Közbeszerzési Rendszer)*"
+    },
+    {
+     "q": "Mely dokumentumok tartoznak a közbeszerzési dokumentumok közé?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az eljárást megindító felhívás"
+      },
+      {
+       "key": "b",
+       "label": "műszaki leírás"
+      },
+      {
+       "key": "c",
+       "label": "szerződéstervezet"
+      },
+      {
+       "key": "d",
+       "label": "javasolt iratminták"
+      },
+      {
+       "key": "e",
+       "label": "árazatlan költségvetés"
+      },
+      {
+       "key": "f",
+       "label": "eljárás eredményéről szóló tájékoztató"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az eljárást megindító felhívás · műszaki leírás · szerződéstervezet · javasolt iratminták · árazatlan költségvetés"
+    },
+    {
+     "q": "Milyen alapvető típusai vannak az alkalmassági követelményeknek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "pénzügyi-gazdasági"
+      },
+      {
+       "key": "b",
+       "label": "műszaki-szakmai"
+      },
+      {
+       "key": "c",
+       "label": "olyan követelmények, amelyek meghatározott engedélyekre, kamarai tagságokra, nyilvántartásokban való szereplésre vonatkoznak"
+      },
+      {
+       "key": "d",
+       "label": "csőd vagy felszámolás alatt álló vállalkozás"
+      },
+      {
+       "key": "e",
+       "label": "a pályázó vállalkozásnak nem lehetnek jogerősen elmarasztaló ítéletei jogellenes tevékenységért"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: pénzügyi-gazdasági · műszaki-szakmai · olyan követelmények, amelyek meghatározott engedélyekre, kamarai tagságokra, nyilvántartásokban való szereplésre vonatkoznak"
+    },
+    {
+     "q": "A hirdetmények az eljárásrendeknek megfelelően az alábbi helyeken jelennek meg hivatalosan:",
+     "options": [
+      {
+       "key": "a",
+       "label": "A hirdetmények uniós eljárásrendben az Európai Unió Hivatalos Lapjának Kiegészítő mellékletében, illetve ennek kereshető adatbázisában (ted.europa.eu)."
+      },
+      {
+       "key": "b",
+       "label": "Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Közbeszerzési Értesítőben (https¤//www.kozbeszerzes.hu/ertesito) jelennek meg."
+      },
+      {
+       "key": "c",
+       "label": "Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Magyar közlönyben (https¤//magyarkozlony.hu/) jelennek meg."
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: A hirdetmények uniós eljárásrendben az Európai Unió Hivatalos Lapjának Kiegészítő mellékletében, illetve ennek kereshető adatbázisában (ted.europa.eu). · Nemzeti eljárásrendben a Közbeszerzési Hatóság által kiadott Közbeszerzési Értesítőben (https¤//www.kozbeszerzes.hu/ertesito) jelennek meg."
+    },
+    {
+     "q": "Mely rendszerben zajlik főszabály szerint a közbeszerzési eljárások lefolytatása valamint az ajánlattétel?",
+     "options": [
+      {
+       "key": "a",
+       "label": "EPTK"
+      },
+      {
+       "key": "b",
+       "label": "EKR (Elektronikus Közbeszerzési Rendszer)"
+      },
+      {
+       "key": "c",
+       "label": "Ügyfélkapu"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: EKR (Elektronikus Közbeszerzési Rendszer)"
+    },
+    {
+     "q": "Mely dokumentumok tartoznak a közbeszerzési dokumentumok közé?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az eljárást megindító felhívás"
+      },
+      {
+       "key": "b",
+       "label": "műszaki leírás"
+      },
+      {
+       "key": "c",
+       "label": "szerződéstervezet"
+      },
+      {
+       "key": "d",
+       "label": "javasolt iratminták"
+      },
+      {
+       "key": "e",
+       "label": "árazatlan költségvetés"
+      },
+      {
+       "key": "f",
+       "label": "eljárás eredményéről szóló tájékoztató"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az eljárást megindító felhívás · műszaki leírás · szerződéstervezet · javasolt iratminták · árazatlan költségvetés"
+    },
+    {
+     "q": "Milyen alapvető típusai vannak az alkalmassági követelményeknek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "pénzügyi-gazdasági"
+      },
+      {
+       "key": "b",
+       "label": "műszaki-szakmai"
+      },
+      {
+       "key": "c",
+       "label": "olyan követelmények, amelyek meghatározott engedélyekre, kamarai tagságokra, nyilvántartásokban való szereplésre vonatkoznak"
+      },
+      {
+       "key": "d",
+       "label": "csőd vagy felszámolás alatt álló vállalkozás"
+      },
+      {
+       "key": "e",
+       "label": "a pályázó vállalkozásnak nem lehetnek jogerősen elmarasztaló ítéletei jogellenes tevékenységért"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: pénzügyi-gazdasági · műszaki-szakmai · olyan követelmények, amelyek meghatározott engedélyekre, kamarai tagságokra, nyilvántartásokban való szereplésre vonatkoznak"
+    },
+    {
+     "q": "A tartalmi követelményeknek történő meg nem felelés esetében eredményteleníthető az ajánlat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Melyek az ajánlat főbb tartalmi elemei?",
+     "options": [
+      {
+       "key": "a",
+       "label": "felolvasólap"
+      },
+      {
+       "key": "b",
+       "label": "általános nyilatkozatok"
+      },
+      {
+       "key": "c",
+       "label": "szakmai ajánlat"
+      },
+      {
+       "key": "d",
+       "label": "szerződéstervezet"
+      },
+      {
+       "key": "e",
+       "label": "részvételi/ajánlati felhívás"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: felolvasólap · általános nyilatkozatok · szakmai ajánlat"
+    },
+    {
+     "q": "Üzleti titokká azon adatokat (információkat) nyilváníthat az ajánlattevő, amelyek nyilvánosságra hozatala az üzleti tevékenysége szempontjából aránytalan sérelmet okozna?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mely eljárási cselekmény nem tartozik a bírálat során alkalmazandó eljárási cselekmények közé?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Hiánypótlás, felvilágosítás kérés"
+      },
+      {
+       "key": "b",
+       "label": "Indokoláskérés"
+      },
+      {
+       "key": "c",
+       "label": "Számítási hiba javítása"
+      },
+      {
+       "key": "d",
+       "label": "Kiegészítő tájékoztatás"
+      }
+     ],
+     "correct": [
+      "d"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Kiegészítő tájékoztatás"
+    },
+    {
+     "q": "Bírálatot, értékelést követően a döntést meg kell hoznia az ajánlatkérőnek. Mely dokumentumban jelenik meg a döntés?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlati / részvételi felhívás"
+      },
+      {
+       "key": "b",
+       "label": "Írásbeli összegezés"
+      },
+      {
+       "key": "c",
+       "label": "Közbeszerzési terv"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Írásbeli összegezés"
+    },
+    {
+     "q": "A szerződéskötési moratórium alatt, mely eljárási cselekményt tehetik meg az ajánlattevők?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szerződéskötés"
+      },
+      {
+       "key": "b",
+       "label": "még a szerződés megkötését megelőzően vitathatják az ajánlatkérő döntését a Közbeszerzési Döntőbizottsághoz benyújtható jogorvoslati kérelemmel"
+      },
+      {
+       "key": "c",
+       "label": "szerződés teljesítésének megkezdése"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: még a szerződés megkötését megelőzően vitathatják az ajánlatkérő döntését a Közbeszerzési Döntőbizottsághoz benyújtható jogorvoslati kérelemmel"
+    },
+    {
+     "q": "A verseny tisztaságának megóvása érdekében különös figyelmet kell fordítani a közbeszerzési eljárások során a jogellenes befolyásolások, tisztességtelen előnyök felderítésére, visszaszorítására, megelőzésére és szankcionálására?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "A verseny tisztaságának megóvása érdekében olyan hatóságokat, szervezeteket kell működtetni, amelyek képesek a kockázatokat felmérni, a felmerült helyzeteket kezelni és szükség szerint beavatkozni. Milyen ilyen szervezeteket ismer?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Gazdasági Versenyhivatal"
+      },
+      {
+       "key": "b",
+       "label": "Integritás Hatóság"
+      },
+      {
+       "key": "c",
+       "label": "Közbeszerzési Hatóság"
+      },
+      {
+       "key": "d",
+       "label": "Nemzeti Adó és Vámhivatal (NAV)"
+      },
+      {
+       "key": "e",
+       "label": "Közbeszerzési Döntőbizottság"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Gazdasági Versenyhivatal · Integritás Hatóság · Közbeszerzési Hatóság"
+    },
+    {
+     "q": "Hol van lehetőség anonim módon közbeszerzési jogsértések bejelentésére?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a fejlesztéspolitikai Irányító Hatóságoknál"
+      },
+      {
+       "key": "b",
+       "label": "Közbeszerzési Hatóság által működtetett Anonim Chat-en"
+      },
+      {
+       "key": "c",
+       "label": "EKR-ben"
+      },
+      {
+       "key": "d",
+       "label": "EPTK-ban"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a fejlesztéspolitikai Irányító Hatóságoknál · Közbeszerzési Hatóság által működtetett Anonim Chat-en"
+    },
+    {
+     "q": "Felelős ajánlattétel azt jelenti, hogy a gazdasági szereplők figyelembe veszik a közpénzek felelős és hatékony felhasználásának követelményét, tartózkodnak a teljesíthetetlen ajánlatok megtételétől, nem támasztanak lehetetlen feltételeket, és a piaci viszonyoknak megfelelő árakat ajánlanak meg?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mi javíthatja a piacon a verseny tisztaságát, növelve a versenyt?",
+     "options": [
+      {
+       "key": "a",
+       "label": "részlehajlás"
+      },
+      {
+       "key": "b",
+       "label": "transzparencia (átláthatóság)"
+      },
+      {
+       "key": "c",
+       "label": "nyilvánosság biztosítása a közbeszerzési eljárásokban"
+      },
+      {
+       "key": "d",
+       "label": "rendeltetésszerű joggyakorlás (jogszabálykövetés)"
+      },
+      {
+       "key": "e",
+       "label": "joggal való visszaélés"
+      },
+      {
+       "key": "f",
+       "label": "felelős ajánlattétel"
+      }
+     ],
+     "correct": [
+      "b",
+      "c",
+      "d",
+      "f"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: transzparencia (átláthatóság) · nyilvánosság biztosítása a közbeszerzési eljárásokban · rendeltetésszerű joggyakorlás (jogszabálykövetés) · felelős ajánlattétel"
+    }
+   ]
+  },
+  "III": {
+   "title": "Modul-2_Modulzaro",
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "A szerződésben mely rendelkezések tekinthetők általános gazdaságpolitikai célkitűzésnek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a teljesítés dokumentálási kötelezettsége"
+      },
+      {
+       "key": "b",
+       "label": "a szerződés teljesítésére valamint az alvállalkozókra vonatkozó bizonyos adatok EKR-ben történő közzététele"
+      },
+      {
+       "key": "c",
+       "label": "a szerződés hatálya"
+      },
+      {
+       "key": "d",
+       "label": "szerződés megszűnése"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a teljesítés dokumentálási kötelezettsége · a szerződés teljesítésére valamint az alvállalkozókra vonatkozó bizonyos adatok EKR-ben történő közzététele"
+    },
+    {
+     "q": "Ha az ajánlatkérő a szerződés teljesítésének elmaradásával kapcsolatos igényekre biztosítékot kötött ki, akkor előírható az, hogy a szerződés hatálybalépését megelőzően bocsássa azt a nyertes ajánlattevő rendelkezésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Mikor tekinthető egy közbeszerzés feltételesnek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "ha a szerződés felfüggesztő feltételt tartalmaz, akkor az akkor léphet hatályba, ha a feltétel bekövetkezik"
+      },
+      {
+       "key": "b",
+       "label": "ha a hatályba léptetés körülményeiről, feltételeiről, a nyertes ajánlattevőként szerződő fél értesítéséről a szerződésben kell rendelkezni"
+      },
+      {
+       "key": "c",
+       "label": "ha a szerződés nem tartalmaz felfüggesztő feltételt, és akkor léphet hatályba, amikor a nyertes ajánlattevő szeretné"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: ha a szerződés felfüggesztő feltételt tartalmaz, akkor az akkor léphet hatályba, ha a feltétel bekövetkezik · ha a hatályba léptetés körülményeiről, feltételeiről, a nyertes ajánlattevőként szerződő fél értesítéséről a szerződésben kell rendelkezni"
+    },
+    {
+     "q": "Kinek kell a közbeszerzési eljárás eredményeként megkötött szerződést teljesíteni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "nyertes ajánlattevőként szerződő félnek"
+      },
+      {
+       "key": "b",
+       "label": "ajánlatkérőnek"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: nyertes ajánlattevőként szerződő félnek"
+    },
+    {
+     "q": "Szakemberek bevonása, miként írható elő egy közbeszerzési eljárásban?",
+     "options": [
+      {
+       "key": "a",
+       "label": "alkalmassági követelményként"
+      },
+      {
+       "key": "b",
+       "label": "minőségi értékelési szempontként"
+      },
+      {
+       "key": "c",
+       "label": "szerződéskötési feltételként"
+      },
+      {
+       "key": "d",
+       "label": "költség szempontú értékelési szempontként"
+      },
+      {
+       "key": "e",
+       "label": "ár szempontú értékelési szempontként"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: alkalmassági követelményként · minőségi értékelési szempontként · szerződéskötési feltételként"
+    },
+    {
+     "q": "Hol tájékozódhat az ajánlatkérő az ajánlatba bevont szakember ajánlattételi időpontjában fennálló tényleges foglalkoztatási körülményeiről?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szakmai önéletrajzban, a munkáltatóra vonatkozó adatokból"
+      },
+      {
+       "key": "b",
+       "label": "a részvételi/ajánlati felhívásból"
+      },
+      {
+       "key": "c",
+       "label": "a közbeszerzési dokumentumokból"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: szakmai önéletrajzban, a munkáltatóra vonatkozó adatokból"
+    },
+    {
+     "q": "Mi igaz a kapacitás nyújtó szervezetekre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az alkalmassági követelmények igazolásában vesznek részt"
+      },
+      {
+       "key": "b",
+       "label": "az ajánlattevőnek megállapodást kell velük kötni"
+      },
+      {
+       "key": "c",
+       "label": "minden esetben bevonásra kerül a szerződés teljesítésébe"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az alkalmassági követelmények igazolásában vesznek részt · az ajánlattevőnek megállapodást kell velük kötni"
+    },
+    {
+     "q": "Az alvállalkozó olyan gazdasági szereplő aki a közbeszerzési eljárás eredményeként megkötött szerződés teljesítésében az ajánlattevő által bevontan közvetlenül vesz részt?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Melyek igazak a keretszerződésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a teljes mennyiség megvételére nem vállal az ajánlatkérő kötelezettséget"
+      },
+      {
+       "key": "b",
+       "label": "az ajánlatkérő a mennyiségtől „lefelé” térhet el anélkül, hogy ezt előre vagy külön jeleznie kellene"
+      },
+      {
+       "key": "c",
+       "label": "az alapmennyiség biztosan megrendelésre kerül"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a teljes mennyiség megvételére nem vállal az ajánlatkérő kötelezettséget · az ajánlatkérő a mennyiségtől „lefelé” térhet el anélkül, hogy ezt előre vagy külön jeleznie kellene"
+    },
+    {
+     "q": "Mely állítások igazak az opcióra?",
+     "options": [
+      {
+       "key": "a",
+       "label": "kötelező az alapmennyiség megrendelése"
+      },
+      {
+       "key": "b",
+       "label": "az alap mennyiségen felül meghaladó többlet nem feltétlenül kerül megrendelésre*"
+      },
+      {
+       "key": "c",
+       "label": "az ajánlatkérő a mennyiségtől „lefelé” térhet el"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: kötelező az alapmennyiség megrendelése"
+    },
+    {
+     "q": "Milyen fizetési feltételeket írhat elő a közbeszerzési eljárásban az ajánlatkérő?",
+     "options": [
+      {
+       "key": "a",
+       "label": "előleg"
+      },
+      {
+       "key": "b",
+       "label": "részszámlák benyújtásának ütemezése"
+      },
+      {
+       "key": "c",
+       "label": "a fizetési határidő"
+      },
+      {
+       "key": "d",
+       "label": "értékelési szempont(ok)"
+      },
+      {
+       "key": "e",
+       "label": "alkalmassági követelmény(ek)"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: előleg · részszámlák benyújtásának ütemezése · a fizetési határidő"
+    },
+    {
+     "q": "Mely dokumentumban kell rögzítenie az ajánlatkérőnek az ellenszolgáltatás kifizetésével kapcsolatos előírásait?",
+     "options": [
+      {
+       "key": "a",
+       "label": "eljárást megindító felhívásban"
+      },
+      {
+       "key": "b",
+       "label": "szerződéstervezetben"
+      },
+      {
+       "key": "c",
+       "label": "szakmai ajánlatban"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: eljárást megindító felhívásban · szerződéstervezetben"
+    },
+    {
+     "q": "Szállítói finanszírozás esetén a támogatást nyújtó szervezet fizeti ki közvetlenül az ellenszolgáltatást?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Építési beruházásoknál a tartalékkeret mértéke legfeljebb hány százalék lehet?",
+     "options": [
+      {
+       "key": "a",
+       "label": "20%"
+      },
+      {
+       "key": "b",
+       "label": "15%"
+      },
+      {
+       "key": "c",
+       "label": "10%"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 10%"
+    },
+    {
+     "q": "Mely szervezetek ellenőrzik a Kbt. szerződés módosítására vonatkozó feltételeinek teljesülését?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Közbeszerzési Hatóság"
+      },
+      {
+       "key": "b",
+       "label": "Támogatást nyújtó szervezetek"
+      },
+      {
+       "key": "c",
+       "label": "Ellenőrző szervezetek"
+      },
+      {
+       "key": "d",
+       "label": "Gazdasági Versenyhivatal"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Közbeszerzési Hatóság · Támogatást nyújtó szervezetek · Ellenőrző szervezetek"
+    },
+    {
+     "q": "Milyen jogkövetkezményei lehetnek a jogszabályba ütköző szerződés módosításának?",
+     "options": [
+      {
+       "key": "a",
+       "label": "bírság"
+      },
+      {
+       "key": "b",
+       "label": "a módosítás semmissége"
+      },
+      {
+       "key": "c",
+       "label": "figyelmeztetés"
+      },
+      {
+       "key": "d",
+       "label": "eltiltás"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: bírság · a módosítás semmissége"
+    },
+    {
+     "q": "Jogsértő módon jár el az ajánlatkérő, amennyiben a szerződő fél olyan teljesítést fogad el, amely nem felel meg az előírt követelményeknek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "A szerződés teljesítése kapcsán, mely kockázatok emelhetők ki?",
+     "options": [
+      {
+       "key": "a",
+       "label": "A hibás teljesítés elfogadása megfelelőként"
+      },
+      {
+       "key": "b",
+       "label": "Ha szándékosan olyan költségeket kívánnak elszámolni, amelyek nem engedélyezettek vagy indokoltak, vagy amelyek nem rendelhetők sem közvetlen, sem közvetett módon a szerződéshez"
+      },
+      {
+       "key": "c",
+       "label": "A nyertes ajánlattevőként szerződő fél a közbeszerzési eljárásban nem megfelelő módon tett ajánlatot, és a teljesítés során arra törekszik, hogy áremelkedést ismertessen el"
+      },
+      {
+       "key": "d",
+       "label": "Politikai vagy jogi változások"
+      },
+      {
+       "key": "e",
+       "label": "Gazdasági változások"
+      },
+      {
+       "key": "f",
+       "label": "Természeti katasztrófák"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: A hibás teljesítés elfogadása megfelelőként · Ha szándékosan olyan költségeket kívánnak elszámolni, amelyek nem engedélyezettek vagy indokoltak, vagy amelyek nem rendelhetők sem közvetlen, sem közvetett módon a szerződéshez · A nyertes ajánlattevőként szerződő fél a közbeszerzési eljárásban nem megfelelő módon tett ajánlatot, és a teljesítés során arra törekszik, hogy áremelkedést ismertessen el"
+    }
+   ]
+  },
+  "IV": {
+   "title": "Modul-3_Modulzaro",
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Magyarországon kinek a hatáskörébe tartozik a közbeszerzési eljárások vonatkozásában a jogorvoslati eljárás lefolytatása?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Közbeszerzési Döntőbizottság (KDB)"
+      },
+      {
+       "key": "b",
+       "label": "Integritás Hatóság"
+      },
+      {
+       "key": "c",
+       "label": "Gazdasági Versenyhivatal"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Közbeszerzési Döntőbizottság (KDB)"
+    },
+    {
+     "q": "Szemben a hagyományos, akár hosszú évekig húzódó bírósági eljárásokkal, a lehető leghamarabb le kell zárni a jogorvoslati eljárásokat. Mi ennek az oka?",
+     "options": [
+      {
+       "key": "a",
+       "label": "az ajánlatkérői beszerzési igények a lehető leghamarabb kielégítésre kerülhessenek"
+      },
+      {
+       "key": "b",
+       "label": "a kereskedelmi kapcsolatokban a forgalombiztonság minél kevésbé sérüljön a jogviták esetleges elhúzódása miatt"
+      },
+      {
+       "key": "c",
+       "label": "a KDB számára biztosított a törvényben az a jogkör is, hogy az ajánlatkérő döntését megsemmisítse, ami által a jogsértések korrigálhatók"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: az ajánlatkérői beszerzési igények a lehető leghamarabb kielégítésre kerülhessenek · a kereskedelmi kapcsolatokban a forgalombiztonság minél kevésbé sérüljön a jogviták esetleges elhúzódása miatt"
+    },
+    {
+     "q": "A jogorvoslati eljárás hogyan indulhat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "kérelemre"
+      },
+      {
+       "key": "b",
+       "label": "hivatalból"
+      },
+      {
+       "key": "c",
+       "label": "e-mail-en keresztül"
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: kérelemre · hivatalból"
+    },
+    {
+     "q": "Kérelmezőnek tekinthető az, akinek jogát vagy jogos érdekét a Kbt.-be ütköző tevékenység vagy mulasztás sérti vagy veszélyezteti?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Ha az ajánlatok elbírálásáról szóló összegzésben nyertes ajánlattevőként feltüntetésre került egy ajánlattevő, a második helyezett pedig vitatja a nyertes ajánlat érvényességét, a nyertesként megjelölt ajánlattevő a jogorvoslati eljárásban milyen szereplőként fog megjelenni?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Kérelmező"
+      },
+      {
+       "key": "b",
+       "label": "Kedvezményzett"
+      },
+      {
+       "key": "c",
+       "label": "Egyéb érdekelt"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Egyéb érdekelt"
+    },
+    {
+     "q": "Általában mely eljárási cselekmény előzi meg a jogorvoslati eljárást?",
+     "options": [
+      {
+       "key": "a",
+       "label": "előzetes vitarendezési kérelem"
+      },
+      {
+       "key": "b",
+       "label": "kiegészítő tájékoztatás kérés"
+      },
+      {
+       "key": "c",
+       "label": "eljárás megindítása"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: előzetes vitarendezési kérelem"
+    },
+    {
+     "q": "Ha az ajánlattevő jogorvoslati eljárást kíván indítani, a következő főbb kérdéseket, kockázatokat kell megvizsgálnia. Találja meg a helyes válaszokat!",
+     "options": [
+      {
+       "key": "a",
+       "label": "előzetes vitarendezési kérelem alkalmazása"
+      },
+      {
+       "key": "b",
+       "label": "iratbetekintés kérése"
+      },
+      {
+       "key": "c",
+       "label": "a közbeszerzési jogorvoslati eljárásban nem lehet jogi képviselő nélkül eljárni"
+      },
+      {
+       "key": "d",
+       "label": "van-e jogi akadálya annak, hogy érdemben vizsgálja a KDB a jogorvoslati kérelmet"
+      },
+      {
+       "key": "e",
+       "label": "meg kell vizsgálni az esélyeket, kockázatokat, lehetőségeket"
+      },
+      {
+       "key": "f",
+       "label": "kérelemre indult eljárás esetében igazgatási szolgáltatási díj kockázatvállalását"
+      },
+      {
+       "key": "g",
+       "label": "kiegészítő tájékoztatás kérése"
+      },
+      {
+       "key": "h",
+       "label": "ajánlatkérő e-mail-ben történő tájékoztatása"
+      },
+      {
+       "key": "i",
+       "label": "ajánlatkérő telefonon történő tájékoztatása"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: előzetes vitarendezési kérelem alkalmazása · iratbetekintés kérése · a közbeszerzési jogorvoslati eljárásban nem lehet jogi képviselő nélkül eljárni · van-e jogi akadálya annak, hogy érdemben vizsgálja a KDB a jogorvoslati kérelmet · meg kell vizsgálni az esélyeket, kockázatokat, lehetőségeket · kérelemre indult eljárás esetében igazgatási szolgáltatási díj kockázatvállalását"
+    },
+    {
+     "q": "Mely tekinthető egy kérelmi elemnek?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a KDB-hez benyújtott jogorvoslati kérelemnek az az elkülöníthető része, amely tartalmazza a jogsértőnek vélt kérelmezetti eljárási cselekményt, magatartást, döntést vagy mulasztást a megsértett jogszabályi rendelkezés(ek) megjelölésével"
+      },
+      {
+       "key": "b",
+       "label": "a kérelmező ajánlatának vagy részvételi jelentkezésének érvénytelenségét megállapító ajánlatkérői döntés vitatása ha valamely érvénytelenségi okhoz egyéb jogkövetkezmény is fűződik"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a KDB-hez benyújtott jogorvoslati kérelemnek az az elkülöníthető része, amely tartalmazza a jogsértőnek vélt kérelmezetti eljárási cselekményt, magatartást, döntést vagy mulasztást a megsértett jogszabályi rendelkezés(ek) megjelölésével"
+    },
+    {
+     "q": "A KDB az érdemi határozatában, milyen döntéseket hozhat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a kérelem (részbeni) elutasítása"
+      },
+      {
+       "key": "b",
+       "label": "jogsértés megállapítása"
+      },
+      {
+       "key": "c",
+       "label": "bírság kiszabása"
+      },
+      {
+       "key": "d",
+       "label": "ajánlatkérői döntés megsemmisítése vagy az eljárás folytatásának feltételhez kötése"
+      },
+      {
+       "key": "e",
+       "label": "ajánlatkérői döntés módosítása"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: a kérelem (részbeni) elutasítása · jogsértés megállapítása · bírság kiszabása · ajánlatkérői döntés megsemmisítése vagy az eljárás folytatásának feltételhez kötése"
+    },
+    {
+     "q": "Mihez igazodóan kell kiszámítani a jogorvoslati eljárás igazgatási szolgáltatási díját?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a becsült értékhez igazodik"
+      },
+      {
+       "key": "b",
+       "label": "a nyertes ajánlattevői árhoz igazodik"
+      },
+      {
+       "key": "c",
+       "label": "szerződésben szereplő értékhez igazodik"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a becsült értékhez igazodik"
+    },
+    {
+     "q": "A Kbt. lehetővé teszi, hogy a kérelmező az érdemi határozat meghozataláig visszavonja jogorvoslati kérelmét vagy annak egyes elemeit?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Az adott konkrét jogorvoslati eljárásban a KDB részéről hány közbeszerzési biztosból álló tanács jár el?",
+     "options": [
+      {
+       "key": "a",
+       "label": "hat"
+      },
+      {
+       "key": "b",
+       "label": "négy"
+      },
+      {
+       "key": "c",
+       "label": "három"
+      }
+     ],
+     "correct": [
+      "c"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: három"
+    },
+    {
+     "q": "Milyen szabályok biztosítják, hogy a jogorvoslati eljárásban pártatlan biztosok vegyenek részt?",
+     "options": [
+      {
+       "key": "a",
+       "label": "kizárási (összeférhetetlenségi) szabályok"
+      },
+      {
+       "key": "b",
+       "label": "fizetési feltételek"
+      },
+      {
+       "key": "c",
+       "label": "hatályba léptető rendelkezések"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: kizárási (összeférhetetlenségi) szabályok"
+    },
+    {
+     "q": "A jogorvoslati eljárásban hány nap az ügyintézési határidő ha a KDB nem tart tárgyalást (főszabály szerint)?",
+     "options": [
+      {
+       "key": "a",
+       "label": "15 nap"
+      },
+      {
+       "key": "b",
+       "label": "25 nap"
+      },
+      {
+       "key": "c",
+       "label": "10 nap"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 15 nap"
+    },
+    {
+     "q": "Ha jogsértés kerül megállapításra a KDB által, akkor mely jogkövetkezmények alkalmazása merülhet fel?",
+     "options": [
+      {
+       "key": "a",
+       "label": "bírság kiszabása"
+      },
+      {
+       "key": "b",
+       "label": "a döntés megsemmisítése"
+      },
+      {
+       "key": "c",
+       "label": "a KDB feltételhez köti az eljárás folytatását"
+      },
+      {
+       "key": "d",
+       "label": "a szerződés semmissé nyilvánítása"
+      },
+      {
+       "key": "e",
+       "label": "ajánlattevő kizárása az eljárásból"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: bírság kiszabása · a döntés megsemmisítése · a KDB feltételhez köti az eljárás folytatását · a szerződés semmissé nyilvánítása"
+    },
+    {
+     "q": "Milyen költségek merülhetnek fel egy közbeszerzési jogorvoslati eljárásban?",
+     "options": [
+      {
+       "key": "a",
+       "label": "bírság"
+      },
+      {
+       "key": "b",
+       "label": "igazgatási szolgáltatási díj"
+      },
+      {
+       "key": "c",
+       "label": "rendszerhasználati díj"
+      },
+      {
+       "key": "d",
+       "label": "a másik (a nyertes) fél jogi képviselőjét (szakértőjét) megillető megbízási díj"
+      },
+      {
+       "key": "e",
+       "label": "egyéb költségek mint pl. szemle költsége vagy az útiköltség"
+      },
+      {
+       "key": "f",
+       "label": "nem a jogorvoslati eljáráshoz, hanem az alapul fekvő közbeszerzési eljáráshoz kapcsolódó költségek"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: bírság · igazgatási szolgáltatási díj · a másik (a nyertes) fél jogi képviselőjét (szakértőjét) megillető megbízási díj · egyéb költségek mint pl. szemle költsége vagy az útiköltség"
+    }
+   ]
+  }
+ },
+ "extra": {
+  "modul-4-koztes-osszefoglalo-52.h5p": {
+   "section": "I",
+   "title": "Modul-4_Koztes_Osszefoglalo",
+   "passPct": 50,
+   "questions": [
+    {
+     "q": "Mióta kötelező az EKR-ben lefolytatni a közbeszerzési eljárásokat?",
+     "options": [
+      {
+       "key": "a",
+       "label": "2018. április 15."
+      },
+      {
+       "key": "b",
+       "label": "2021. október 15."
+      },
+      {
+       "key": "c",
+       "label": "2023. október 25."
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 2018. április 15."
+    },
+    {
+     "q": "Ajánlattevőknek az EKR használata ingyenes?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Mely menüpontok érhetők el regisztráció nélkül?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Nyilvántartások"
+      },
+      {
+       "key": "b",
+       "label": "Eljárás"
+      },
+      {
+       "key": "c",
+       "label": "Szerződés"
+      },
+      {
+       "key": "d",
+       "label": "Támogatás"
+      },
+      {
+       "key": "e",
+       "label": "Felhasználó"
+      },
+      {
+       "key": "f",
+       "label": "Szervezet"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Nyilvántartások · Eljárás · Szerződés · Támogatás"
+    },
+    {
+     "q": "Az EKR-be bejelentkezni csak akkor lehetséges, amennyiben a regisztráció során elvégeztük az e-mail cím megerősítését?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Az EKR-be történő bejelentkezéskor felhasználónév, jelszó helyes megadását követően, biztonsági kód kerül kiküldésre a regisztrációkor rögzített elsődleges telefonszámra?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Jelszó változtatáskor, hány alkalom után inaktiválja a fiókunkat a rendszer?",
+     "options": [
+      {
+       "key": "a",
+       "label": "5"
+      },
+      {
+       "key": "b",
+       "label": "3"
+      },
+      {
+       "key": "c",
+       "label": "7"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: 5"
+    },
+    {
+     "q": "Egy szervezetet többször is regisztrálhatunk az EKR-be?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Amennyiben már regisztrálva van a szervezet az EKR-ben, mit kell benyújtani a szervezethez csatlakozáshoz?",
+     "options": [
+      {
+       "key": "a",
+       "label": "regisztrációs kérelmet"
+      },
+      {
+       "key": "b",
+       "label": "csatlakozási kérelmet"
+      },
+      {
+       "key": "c",
+       "label": "bejelentkezési kérelmet"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: csatlakozási kérelmet"
+    },
+    {
+     "q": "A szervezet regisztrációját követően a regisztrációt elvégző felhasználó lesz a regisztrált szervezet szervezeti szuperusere?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Milyen kategóriákba sorolhatók a jogosultságok az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Szervezet szintű szerepkörök"
+      },
+      {
+       "key": "b",
+       "label": "Eljárás szintű szerepkörök"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlat szintű szerepkörök"
+      },
+      {
+       "key": "d",
+       "label": "Hirdetmeny szerkesztő szerepkörök"
+      },
+      {
+       "key": "e",
+       "label": "Nyilvántartások szerkesztő szerepkörök"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Szervezet szintű szerepkörök · Eljárás szintű szerepkörök · Ajánlat szintű szerepkörök"
+    },
+    {
+     "q": "Melyek ajánlat szintű jogosultságok?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Ajánlat betekintő"
+      },
+      {
+       "key": "b",
+       "label": "Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra"
+      },
+      {
+       "key": "c",
+       "label": "Ajánlat szerkesztő"
+      },
+      {
+       "key": "d",
+       "label": "Ajánlattételt irányító szerepkör"
+      },
+      {
+       "key": "e",
+       "label": "Sablon szerkesztő"
+      },
+      {
+       "key": "f",
+       "label": "Szervezet tag"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Ajánlat betekintő · Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra · Ajánlat szerkesztő · Ajánlattételt irányító szerepkör"
+    },
+    {
+     "q": "Melyek szervezeti szintű jogosultságok?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Szervezeti szuper user"
+      },
+      {
+       "key": "b",
+       "label": "Szervezet tag"
+      },
+      {
+       "key": "c",
+       "label": "Sablon használó"
+      },
+      {
+       "key": "d",
+       "label": "Sablon szerkesztő"
+      },
+      {
+       "key": "e",
+       "label": "Ajánlat betekintő"
+      },
+      {
+       "key": "f",
+       "label": "Ajánlat szerkesztő"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Szervezeti szuper user · Szervezet tag · Sablon használó · Sablon szerkesztő"
+    },
+    {
+     "q": "Mire való a delegálás az EKR-ben?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül."
+      },
+      {
+       "key": "b",
+       "label": "A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+      }
+     ],
+     "correct": [
+      "a",
+      "b"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül. · A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+    },
+    {
+     "q": "A megindított eljárások menüben milyen listát találunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "a belépett felhasználó ajánlatait"
+      },
+      {
+       "key": "b",
+       "label": "a belépett felhasználó eljárásait"
+      },
+      {
+       "key": "c",
+       "label": "megindított eljárásokat"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: a belépett felhasználó ajánlatait"
+    },
+    {
+     "q": "Az ajánlataim menüben miket találunk?",
+     "options": [
+      {
+       "key": "a",
+       "label": "szerkesztett/megtekintett vagy benyújtani kívánt/benyújtott ajánlatokat, melyekre érdeklődésünket jeleztük"
+      },
+      {
+       "key": "b",
+       "label": "a belépett felhasználó eljárásait"
+      },
+      {
+       "key": "c",
+       "label": "megindított eljárásokat"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: szerkesztett/megtekintett vagy benyújtani kívánt/benyújtott ajánlatokat, melyekre érdeklődésünket jeleztük"
+    },
+    {
+     "q": "Mi található az eljárási cselekmény listázó felületen?",
+     "options": [
+      {
+       "key": "a",
+       "label": "már elindított eljárási cselekmények listáját látjuk táblázatos nézetben"
+      },
+      {
+       "key": "b",
+       "label": "elindítani kívánt eljárási cselekmények listáját látjuk táblázatos nézetben"
+      },
+      {
+       "key": "c",
+       "label": "az eljáráshoz/ajánlathoz tartozó üzenetek megjelenítésére szolgáló felület"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: már elindított eljárási cselekmények listáját látjuk táblázatos nézetben"
+    },
+    {
+     "q": "Az EKR-ben az archiválás művelet visszavonható?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "a"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Igen"
+    },
+    {
+     "q": "Archivált ajánlat az ajánlatok listában megjelenik?",
+     "options": [
+      {
+       "key": "a",
+       "label": "Igen"
+      },
+      {
+       "key": "b",
+       "label": "Nem"
+      }
+     ],
+     "correct": [
+      "b"
+     ],
+     "multi": false,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válasz: Nem"
+    },
+    {
+     "q": "Az ajánlat/részvételre jelentkezés összeállítása eljárási cselekmény felület fejlécében mely adatok kerülnek megjelenítésre?",
+     "options": [
+      {
+       "key": "a",
+       "label": "eljárás típusa, EKR azonosító száma, aktuális szakasza"
+      },
+      {
+       "key": "b",
+       "label": "ajánlat ügylet aktuális szakasza"
+      },
+      {
+       "key": "c",
+       "label": "folyamatban lévő eljárási cselekmény, a cselekményen belül a feladat, amelyet el kell végeznünk"
+      },
+      {
+       "key": "d",
+       "label": "eljárási cselekmény indítás dátuma"
+      },
+      {
+       "key": "e",
+       "label": "eljárási cselekmény státusza"
+      }
+     ],
+     "correct": [
+      "a",
+      "b",
+      "c"
+     ],
+     "multi": true,
+     "ok": "Helyes válasz!",
+     "no": "A helyes válaszok: eljárás típusa, EKR azonosító száma, aktuális szakasza · ajánlat ügylet aktuális szakasza · folyamatban lévő eljárási cselekmény, a cselekményen belül a feladat, amelyet el kell végeznünk"
+    }
+   ]
+  }
+ }
+}

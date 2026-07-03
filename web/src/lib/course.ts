@@ -1,4 +1,5 @@
 import staticData from "@/data/course.json";
+import quizzesData from "@/data/quizzes.json";
 
 export type Lesson = {
   id: string;
@@ -52,49 +53,20 @@ export function totalMinutes(course: Course): number {
 /** Statikus törzs-szöveg és kép szám-prefix szerint (élő WS-hez merge-höz). */
 export const staticByNum = new Map(flatten(staticCourse).map((l) => [l.num, l]));
 
-/* ---- Kvíz: valós kérdések a tervekből ---- */
-export type Quiz = {
-  question: string;
+/* ---- Kvíz: a Moodle H5P-kvízekből kinyert valós kérdések ---- */
+export type QuizQuestion = {
+  q: string;
   options: { key: string; label: string }[];
-  correct: string;
+  correct: string[]; // egy vagy több helyes kulcs
+  multi: boolean;
   ok: string;
   no: string;
 };
-const QUIZZES: Quiz[] = [
-  {
-    question: "Mikortól kötelező főszabály szerint az EKR használata a közbeszerzési eljárásokban?",
-    options: [
-      { key: "a", label: "2018. április 15-étől" },
-      { key: "b", label: "2016. november 1-jétől" },
-      { key: "c", label: "2020. január 1-jétől" },
-    ],
-    correct: "a",
-    ok: "Helyes! 2018. április 15-étől kötelező.",
-    no: "Nem pontos — a helyes válasz: 2018. április 15.",
-  },
-  {
-    question: "Mi szükséges az EKR-ben ajánlat benyújtásához?",
-    options: [
-      { key: "a", label: "Regisztráció és belépés" },
-      { key: "b", label: "Csak a nyitóoldal megnyitása" },
-      { key: "c", label: "Semmilyen azonosítás" },
-    ],
-    correct: "a",
-    ok: "Így van — regisztráció és belépés is szükséges.",
-    no: "A helyes válasz: regisztráció és belépés.",
-  },
-  {
-    question: "Mit jelent az érdeklődés jelzése egy eljárásnál?",
-    options: [
-      { key: "a", label: "Értesítést kérsz a fejleményekről, kötelezettség nélkül" },
-      { key: "b", label: "Kötelezően ajánlatot kell benyújtanod" },
-      { key: "c", label: "Lemondasz a részvételről" },
-    ],
-    correct: "a",
-    ok: "Pontosan — értesítést kapsz, de nem vállalsz kötelezettséget.",
-    no: "A helyes válasz: értesítést kérsz, kötelezettség nélkül.",
-  },
-];
-export function getQuiz(lesson: FlatLesson): Quiz {
-  return QUIZZES[lesson.index % QUIZZES.length];
+export type Quiz = { passPct: number; questions: QuizQuestion[] };
+
+const quizzes = quizzesData as unknown as { lessons: Record<string, Quiz> };
+
+/** A lecke saját (H5P-ből kinyert) kvíze; null, ha a leckében nincs kvíz. */
+export function getQuiz(lesson: FlatLesson): Quiz | null {
+  return quizzes.lessons[lesson.num] ?? null;
 }

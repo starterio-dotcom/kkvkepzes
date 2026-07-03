@@ -232,26 +232,36 @@ function QuizBlock({ lesson, onPass }: { lesson: FlatV; onPass: () => void }) {
   const quiz: QuizQ[] = lesson.quiz ?? [];
   const [started, setStarted] = useState(false);
   const [qi, setQi] = useState(0);
-  const [pick, setPick] = useState<string | null>(null);
+  const [picks, setPicks] = useState<Set<string>>(new Set());
   const [checked, setChecked] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
 
   const cur = quiz[qi];
+  const isCorrect = cur ? cur.correct.length === picks.size && cur.correct.every((k) => picks.has(k)) : false;
 
+  const toggle = (key: string) => {
+    if (checked) return;
+    setPicks((prev) => {
+      if (!cur.multi) return new Set([key]);
+      const s = new Set(prev);
+      if (s.has(key)) s.delete(key); else s.add(key);
+      return s;
+    });
+  };
   const check = () => {
-    if (!pick) return;
+    if (!picks.size) return;
     setChecked(true);
-    if (pick === cur.correct) setScore((s) => s + 1);
+    if (isCorrect) setScore((s) => s + 1);
   };
   const nextQ = () => {
     if (qi + 1 >= quiz.length) {
       setFinished(true);
       const pct = Math.round((score / quiz.length) * 100);
       if (pct >= (lesson.passPct ?? 60)) onPass();
-    } else { setQi((i) => i + 1); setPick(null); setChecked(false); }
+    } else { setQi((i) => i + 1); setPicks(new Set()); setChecked(false); }
   };
-  const restart = () => { setStarted(true); setQi(0); setPick(null); setChecked(false); setScore(0); setFinished(false); };
+  const restart = () => { setStarted(true); setQi(0); setPicks(new Set()); setChecked(false); setScore(0); setFinished(false); };
 
   if (!started) {
     return (
@@ -295,33 +305,36 @@ function QuizBlock({ lesson, onPass }: { lesson: FlatV; onPass: () => void }) {
         <div className="qcard-bar"><span style={{ width: `${((qi + (checked ? 1 : 0)) / quiz.length) * 100}%` }} /></div>
       </div>
       <p className="qcard-q">{cur.q}</p>
+      {cur.multi && <p className="meta" style={{ marginBottom: "var(--space-300)" }}><i className="ri-checkbox-multiple-line" /> Több helyes válasz is lehet!</p>}
       <div className="qcard-opts">
         {cur.options.map((o) => {
+          const isPick = picks.has(o.key);
+          const isOk = cur.correct.includes(o.key);
           let cls = "qopt";
-          if (checked && o.key === cur.correct) cls += " ok";
-          else if (checked && o.key === pick) cls += " no";
-          else if (o.key === pick) cls += " sel";
+          if (checked && isOk) cls += " ok";
+          else if (checked && isPick) cls += " no";
+          else if (isPick) cls += " sel";
           return (
-            <button key={o.key} className={cls} disabled={checked} onClick={() => setPick(o.key)}>
+            <button key={o.key} className={cls} disabled={checked} onClick={() => toggle(o.key)}>
               <span className="qopt-key">{o.key.toUpperCase()}</span>
               <span>{o.label}</span>
-              {checked && o.key === cur.correct && <i className="ri-check-line" />}
-              {checked && o.key === pick && o.key !== cur.correct && <i className="ri-close-line" />}
+              {checked && isOk && <i className="ri-check-line" />}
+              {checked && isPick && !isOk && <i className="ri-close-line" />}
             </button>
           );
         })}
       </div>
       {checked && (
-        <div className={`qfb ${pick === cur.correct ? "ok" : "no"}`}>
-          <i className={pick === cur.correct ? "ri-checkbox-circle-fill" : "ri-error-warning-fill"} />
-          <span>{pick === cur.correct ? cur.ok : cur.no}</span>
+        <div className={`qfb ${isCorrect ? "ok" : "no"}`}>
+          <i className={isCorrect ? "ri-checkbox-circle-fill" : "ri-error-warning-fill"} />
+          <span>{isCorrect ? cur.ok : cur.no}</span>
         </div>
       )}
       <div className="qcard-foot">
-        <span className="meta">{checked ? "" : pick ? "Ellenőrizd a válaszod" : "Válassz egy lehetőséget"}</span>
+        <span className="meta">{checked ? "" : picks.size ? "Ellenőrizd a válaszod" : cur.multi ? "Jelöld be az összes helyes választ" : "Válassz egy lehetőséget"}</span>
         {checked
           ? <button className="btn btn-primary" onClick={nextQ}>{qi + 1 >= quiz.length ? "Eredmény" : "Következő kérdés"} <i className="ri-arrow-right-line" /></button>
-          : <button className="btn btn-primary" disabled={!pick} onClick={check}><i className="ri-check-line" /> Ellenőrzés</button>}
+          : <button className="btn btn-primary" disabled={!picks.size} onClick={check}><i className="ri-check-line" /> Ellenőrzés</button>}
       </div>
     </div>
   );

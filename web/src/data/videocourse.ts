@@ -1,5 +1,19 @@
 // Kurált videós kurzus-szerkezet (a design szerint: 5 szekció · 21 lecke, kevert videó/kvíz).
-export type QuizQ = { q: string; options: { key: string; label: string }[]; correct: string; ok: string; no: string };
+// A modulzáró kvízek a Moodle H5P-iből kinyert VALÓS kérdések (module-quizzes.json,
+// forrás: scripts/export-quizzes.mjs).
+import moduleQuizzesData from "@/data/module-quizzes.json";
+
+export type QuizQ = {
+  q: string;
+  options: { key: string; label: string }[];
+  correct: string[]; // egy vagy több helyes kulcs
+  multi: boolean;
+  ok: string;
+  no: string;
+};
+
+type ModuleQuiz = { title: string; passPct: number; questions: QuizQ[] };
+const MQ = (moduleQuizzesData as unknown as { modules: Record<string, ModuleQuiz> }).modules;
 export type VLesson = {
   id: string;
   name: string;
@@ -22,7 +36,8 @@ const Q_EKR: QuizQ[] = [
       { key: "b", label: "Nyilvános eljárások és hirdetmények keresése" },
       { key: "c", label: "Szervezethez tartozó jogosultságok kiosztása" },
     ],
-    correct: "b",
+    correct: ["b"],
+    multi: false,
     ok: "Így van — a nyilvános eljárások és hirdetmények regisztráció nélkül böngészhetők.",
     no: "A helyes válasz: a nyilvános eljárások és hirdetmények keresése.",
   },
@@ -33,7 +48,8 @@ const Q_EKR: QuizQ[] = [
       { key: "b", label: "2016. november 1-jétől" },
       { key: "c", label: "2020. január 1-jétől" },
     ],
-    correct: "a",
+    correct: ["a"],
+    multi: false,
     ok: "Helyes! 2018. április 15-étől kötelező.",
     no: "Nem pontos — a helyes válasz: 2018. április 15.",
   },
@@ -44,16 +60,20 @@ const Q_EKR: QuizQ[] = [
       { key: "b", label: "Csak a nyitóoldal megnyitása" },
       { key: "c", label: "Semmilyen azonosítás" },
     ],
-    correct: "a",
+    correct: ["a"],
+    multi: false,
     ok: "Így van — regisztráció és belépés is szükséges.",
     no: "A helyes válasz: regisztráció és belépés.",
   },
 ];
 
 const v = (id: string, name: string, duration: string, desc: string, learn?: string[]): VLesson => ({ id, name, type: "video", duration, desc, learn });
-const q = (id: string, name: string, questions: number, quizIntro: string, quiz: QuizQ[]): VLesson => ({
-  id, name, type: "quiz", questions, desc: quizIntro, quizIntro, quiz, passPct: 60,
+const q = (id: string, name: string, questions: number, quizIntro: string, quiz: QuizQ[], passPct = 60): VLesson => ({
+  id, name, type: "quiz", questions, desc: quizIntro, quizIntro, quiz, passPct,
 });
+// Modulzáró a valós H5P-kérdésekből.
+const mq = (id: string, name: string, intro: string, key: string): VLesson =>
+  q(id, name, MQ[key].questions.length, intro, MQ[key].questions, MQ[key].passPct);
 
 export const videoCourse: { title: string; sections: VSection[] } = {
   title: "Közbeszerzési szakmai tananyag",
@@ -71,7 +91,7 @@ export const videoCourse: { title: string; sections: VSection[] } = {
         v("e1", "Mi az az EKR?", "8:40", "Az Elektronikus Közbeszerzési Rendszer szerepe, a nyilvános és a bejelentkezést igénylő felületek.", ["Mi az EKR és mire használjuk", "Regisztráció nélkül elérhető funkciók"]),
         v("e2", "Regisztráció és jogosultságok", "11:20", "Személyes fiók létrehozása, szervezet regisztrációja és a szervezethez való csatlakozás lépésről lépésre. Bemutatjuk az EKR-es szerepköröket (pl. ajánlatszerkesztő, szuper user) és azok kiosztását.", ["Személyes fiók és szervezeti regisztráció menete", "Szerepkörök és jogosultságok kiosztása", "Elfelejtett jelszó kezelése"]),
         v("e3", "Tájékozódás az EKR-ben", "7:35", "Az eljárások keresése, az érdeklődés jelzése és a dokumentumok letöltése a felületen.", ["Eljárások és hirdetmények keresése", "Érdeklődés jelzése egy eljárásnál"]),
-        q("e4", "Modulzáró — interaktív ellenőrző teszt", 3, "Az 1. hét anyagát lefedő interaktív ellenőrző teszt: EKR-felület, regisztráció, jogosultságok és a kommunikációs alapok.", Q_EKR),
+        mq("e4", "Modulzáró — interaktív ellenőrző teszt", "Az I. modul anyagát lefedő ellenőrző teszt: EKR-felület, regisztráció, jogosultságok és a kommunikációs alapok. A kérdések a hivatalos tananyag modulzárójából származnak.", "I"),
       ],
     },
     {
@@ -81,7 +101,7 @@ export const videoCourse: { title: string; sections: VSection[] } = {
         v("a2", "Elektronikus űrlapok és dokumentumok", "8:05", "Az elektronikus űrlapok kitöltése, dokumentumok feltöltése, EEKD és felolvasólap.", ["Űrlapok kitöltése", "Dokumentumok feltöltése"]),
         v("a3", "Sablonok használata az EKR-ben", "5:40", "Sablonok létrehozása és újrahasznosítása a gyorsabb ajánlatkészítéshez.", ["Sablonok mentése és használata"]),
         v("a4", "Ajánlat benyújtása és visszavonása", "7:20", "A benyújtás menete, az ajánlati kötöttség és a visszavonás/módosítás lehetőségei.", ["Ajánlat benyújtása", "Visszavonás és módosítás"]),
-        q("a5", "Modulzáró kvíz", 3, "A 2. modul anyagát lefedő ellenőrző kérdések az ajánlattételről.", Q_EKR),
+        mq("a5", "Modulzáró kvíz", "A II. modul anyagát lefedő ellenőrző kérdések az ajánlattételről — a hivatalos tananyag modulzárójából.", "II"),
       ],
     },
     {
@@ -91,7 +111,7 @@ export const videoCourse: { title: string; sections: VSection[] } = {
         v("sz2", "Teljesítésigazolás az EKR-ben", "5:50", "A teljesítésigazolás kiállítása és kezelése a felületen.", ["Teljesítésigazolás menete"]),
         v("sz3", "Szerződésmódosítás kezelése", "7:10", "Mikor és hogyan módosítható a szerződés; a dokumentáció kezelése.", ["Szerződésmódosítás feltételei"]),
         v("sz4", "Kifizetések és dokumentáció", "6:05", "A kifizetésekhez kapcsolódó dokumentumok és nyilvántartás.", ["Kifizetési dokumentáció"]),
-        q("sz5", "Modulzáró kvíz", 3, "A 3. modul anyagát lefedő ellenőrző kérdések a teljesítésről.", Q_EKR),
+        mq("sz5", "Modulzáró kvíz", "A III. modul anyagát lefedő ellenőrző kérdések a teljesítésről — a hivatalos tananyag modulzárójából.", "III"),
       ],
     },
     {
@@ -101,7 +121,7 @@ export const videoCourse: { title: string; sections: VSection[] } = {
         v("j2", "Előzetes vitarendezés", "6:40", "Az előzetes vitarendezési kérelem benyújtása az EKR-ben.", ["Előzetes vitarendezés menete"]),
         v("j3", "A jogorvoslati eljárás menete", "9:25", "A Közbeszerzési Döntőbizottság előtti eljárás lépései.", ["A jogorvoslati eljárás szakaszai"]),
         v("j4", "Jogkövetkezmények és költségek", "5:35", "A lehetséges jogkövetkezmények és az eljárási költségek.", ["Jogkövetkezmények", "Eljárási költségek"]),
-        q("j5", "Záró kvíz", 4, "A teljes anyagot lefedő záró ellenőrző teszt.", Q_EKR),
+        mq("j5", "Záró kvíz", "A IV. modul anyagát lefedő záró ellenőrző teszt — a hivatalos tananyag modulzárójából.", "IV"),
       ],
     },
   ],
