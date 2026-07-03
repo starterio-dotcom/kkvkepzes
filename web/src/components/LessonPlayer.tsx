@@ -1,9 +1,10 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { FlatLesson, Quiz as QuizT } from "@/lib/course";
 import type { OutlineSection, LessonPage } from "@/lib/moodle";
+import { useStoredSet } from "@/lib/useStoredSet";
 import Quiz from "./Quiz";
 
 const LS_KEY = "kkv_trad_done";
@@ -28,9 +29,7 @@ export default function LessonPlayer({
   const router = useRouter();
   const [drawer, setDrawer] = useState(false);
   const [page, setPage] = useState(0);
-  const [done, setDone] = useState<Set<string>>(new Set());
-  useEffect(() => { try { const s = localStorage.getItem(LS_KEY); if (s) setDone(new Set(JSON.parse(s))); } catch {} }, []);
-  const mark = (id: string) => { setDone((prev) => { const s = new Set(prev); s.add(id); try { localStorage.setItem(LS_KEY, JSON.stringify([...s])); } catch {} return s; }); };
+  const [done, mark] = useStoredSet(LS_KEY);
 
   const pages = useMemo<LessonPage[]>(
     () => (livePages && livePages.length ? livePages : [{ title: lesson.shortTitle, html: "" }]),

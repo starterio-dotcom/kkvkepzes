@@ -1,10 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import {
-  videoCourse, flatV, findV, siblingsV, totalVLessons, defaultDone,
+  videoCourse, findV, siblingsV, totalVLessons, defaultDone,
   type FlatV, type QuizQ,
 } from "@/data/videocourse";
+import { useStoredSet } from "@/lib/useStoredSet";
 
 const LS_KEY = "kkv_done";
 const RES = ["ri-file-pdf-2-line", "ri-image-line"];
@@ -13,12 +14,7 @@ export default function VideoCourse({ activeId }: { activeId: string }) {
   const lesson = findV(activeId) as FlatV;
   const { prev, next } = siblingsV(activeId);
 
-  const [done, setDone] = useState<Set<string>>(new Set(defaultDone));
-  useEffect(() => {
-    try { const s = localStorage.getItem(LS_KEY); if (s) setDone(new Set(JSON.parse(s))); } catch {}
-  }, []);
-  const persist = (s: Set<string>) => { setDone(new Set(s)); try { localStorage.setItem(LS_KEY, JSON.stringify([...s])); } catch {} };
-  const markDone = (id: string) => { const s = new Set(done); s.add(id); persist(s); };
+  const [done, markDone] = useStoredSet(LS_KEY, defaultDone);
 
   const donePct = Math.round((done.size / totalVLessons) * 100);
   const doneCount = done.size;
