@@ -228,8 +228,20 @@ function VideoBlock({ lesson, isDone, onDone }: { lesson: FlatV; isDone: boolean
 }
 
 /* ---- Kvíz / interaktív feladat ---- */
+// Véletlen minta a kérdésbankból (Fisher–Yates keverés + levágás).
+function drawSample(bank: QuizQ[], n: number): QuizQ[] {
+  const a = [...bank];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a.slice(0, n);
+}
+
 function QuizBlock({ lesson, onPass }: { lesson: FlatV; onPass: () => void }) {
-  const quiz: QuizQ[] = lesson.quiz ?? [];
+  const bank: QuizQ[] = lesson.quiz ?? [];
+  const sampleN = lesson.sampleSize && lesson.sampleSize < bank.length ? lesson.sampleSize : bank.length;
+  const [quiz, setQuiz] = useState<QuizQ[]>(bank);
   const [started, setStarted] = useState(false);
   const [qi, setQi] = useState(0);
   const [picks, setPicks] = useState<Set<string>>(new Set());
@@ -261,7 +273,12 @@ function QuizBlock({ lesson, onPass }: { lesson: FlatV; onPass: () => void }) {
       if (pct >= (lesson.passPct ?? 60)) onPass();
     } else { setQi((i) => i + 1); setPicks(new Set()); setChecked(false); }
   };
-  const restart = () => { setStarted(true); setQi(0); setPicks(new Set()); setChecked(false); setScore(0); setFinished(false); };
+  // Indítás/újrapróbálás: minden nekifutás ÚJ véletlen mintát húz a bankból.
+  // Csak kattintásra fut (hidratálás után), így nincs SSR-eltérés.
+  const begin = () => {
+    setQuiz(drawSample(bank, sampleN));
+    setStarted(true); setQi(0); setPicks(new Set()); setChecked(false); setScore(0); setFinished(false);
+  };
 
   if (!started) {
     return (
@@ -271,14 +288,15 @@ function QuizBlock({ lesson, onPass }: { lesson: FlatV; onPass: () => void }) {
           <h1 className="h2 white">{lesson.name}</h1>
           <p className="qintro-desc">{lesson.quizIntro}</p>
           <div className="qintro-badges">
-            <span><i className="ri-list-check-2" /> {quiz.length} kérdés</span>
-            <span><i className="ri-time-line" /> ~ {Math.max(2, quiz.length)} perc</span>
+            <span><i className="ri-list-check-2" /> {sampleN} kérdés</span>
+            <span><i className="ri-time-line" /> ~ {Math.max(2, sampleN)} perc</span>
             <span><i className="ri-flag-line" /> Sikeres: {lesson.passPct ?? 60}%+</span>
+            {sampleN < bank.length && <span><i className="ri-shuffle-line" /> véletlen válogatás {bank.length} kérdésből</span>}
           </div>
         </div>
         <div className="qintro-foot">
           <p className="meta"><i className="ri-flashlight-line" /> Minden kérdésnél azonnali, indoklással kísért visszajelzést kapsz.</p>
-          <button className="btn btn-primary" onClick={() => setStarted(true)}><i className="ri-play-fill" /> Kvíz indítása</button>
+          <button className="btn btn-primary" onClick={begin}><i className="ri-play-fill" /> Kvíz indítása</button>
         </div>
       </div>
     );
@@ -293,7 +311,7 @@ function QuizBlock({ lesson, onPass }: { lesson: FlatV; onPass: () => void }) {
         <h2 className="h3">{pass ? "Sikeres teljesítés!" : "Majdnem megvan!"}</h2>
         <p className="qresult-score">{score} / {quiz.length} helyes · {pct}%</p>
         <p className="body">{pass ? "Teljesítetted a modulzáró tesztet. A lecke készként megjelölve." : `A sikeres teljesítéshez ${lesson.passPct ?? 60}% szükséges. Nézd át a leckéket, és próbáld újra!`}</p>
-        <button className="btn btn-outline" onClick={restart}><i className="ri-restart-line" /> Újrapróbálom</button>
+        <button className="btn btn-outline" onClick={begin}><i className="ri-restart-line" /> Újrapróbálom {sampleN < bank.length ? "(új kérdésekkel)" : ""}</button>
       </div>
     );
   }

@@ -19,12 +19,13 @@ export type VLesson = {
   name: string;
   type: "video" | "quiz";
   duration?: string; // videóhoz
-  questions?: number; // kvízhez
+  questions?: number; // kvízhez (egy nekifutás kérdésszáma)
   desc: string;
   learn?: string[];
-  quiz?: QuizQ[];
+  quiz?: QuizQ[]; // teljes kérdésbank
   quizIntro?: string;
   passPct?: number;
+  sampleSize?: number; // ha kisebb a banknál: ennyi véletlen kérdés jut egy nekifutásra
 };
 export type VSection = { key: string; num: string; title: string; lessons: VLesson[] };
 
@@ -71,9 +72,13 @@ const v = (id: string, name: string, duration: string, desc: string, learn?: str
 const q = (id: string, name: string, questions: number, quizIntro: string, quiz: QuizQ[], passPct = 60): VLesson => ({
   id, name, type: "quiz", questions, desc: quizIntro, quizIntro, quiz, passPct,
 });
-// Modulzáró a valós H5P-kérdésekből.
-const mq = (id: string, name: string, intro: string, key: string): VLesson =>
-  q(id, name, MQ[key].questions.length, intro, MQ[key].questions, MQ[key].passPct);
+// Modulzáró a valós H5P-kérdésekből: nekifutásonként QUIZ_SAMPLE véletlen kérdés a bankból.
+const QUIZ_SAMPLE = 12;
+const mq = (id: string, name: string, intro: string, key: string): VLesson => {
+  const bank = MQ[key].questions;
+  const n = Math.min(QUIZ_SAMPLE, bank.length);
+  return { ...q(id, name, n, intro, bank, MQ[key].passPct), sampleSize: n };
+};
 
 export const videoCourse: { title: string; sections: VSection[] } = {
   title: "Közbeszerzési szakmai tananyag",
