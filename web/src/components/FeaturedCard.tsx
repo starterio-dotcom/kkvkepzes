@@ -2,7 +2,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const MODULES = ["Közbeszerzési alapok", "Ajánlattétel", "Szerződés teljesítése", "Jogorvoslat és EKR"];
+const MODULES = [
+  "A közbeszerzés mint üzleti lehetőség",
+  "Belépés és eljárások keresése",
+  "Az ajánlattétel",
+  "A bírálati szakasz",
+  "A szerződés teljesítése",
+  "Vitarendezés és jogorvoslat",
+];
 
 /** Élő haladás-demó: a modulok egyesével pipálódnak, a csík lépcsőzetesen tölt (a terv szerint). */
 export default function FeaturedCard({ href }: { href: string }) {

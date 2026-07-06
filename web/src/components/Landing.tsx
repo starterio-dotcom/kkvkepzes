@@ -4,9 +4,7 @@ import Footer from "./Footer";
 import FeaturedCard from "./FeaturedCard";
 import YouTubeEmbed from "./YouTubeEmbed";
 import NewsletterForm from "./NewsletterForm";
-import { getCourse } from "@/lib/moodle";
-import { firstLessonId } from "@/lib/course";
-import { firstVideoLessonId } from "@/data/videocourse";
+import { allVideoPlans, firstLessonId, totalLessons, totalModules } from "@/lib/tananyag";
 import { getSession } from "@/lib/auth";
 
 const FEATURES = [
@@ -28,13 +26,11 @@ const NEWS = [
   { tag: "Útmutató", date: "2026. 02. 20.", cls: "teal", title: "Így regisztrálj első alkalommal az EKR-ben", text: "Lépésről lépésre bemutatjuk az Elektronikus Közbeszerzési Rendszer regisztrációját." },
 ];
 
-export default async function Landing({ variant }: { variant: "hagyomanyos" | "videos" }) {
-  const course = await getCourse();
+export default async function Landing() {
   const user = await getSession();
-  const startHref = variant === "videos"
-    ? `/videos/tanulas/${firstVideoLessonId}`
-    : `/hagyomanyos/tanulas/${firstLessonId(course)}`;
+  const startHref = `/hagyomanyos/tanulas/${firstLessonId}`;
   const ctaHref = user ? startHref : `/belepes?vissza=${encodeURIComponent(startHref)}`;
+  const videoCount = allVideoPlans().length;
 
   return (
     <>
@@ -96,18 +92,31 @@ export default async function Landing({ variant }: { variant: "hagyomanyos" | "v
             </div>
             <Link href="/kurzusok" className="sec-link">Összes kurzus <i className="ri-arrow-right-line" /></Link>
           </div>
-          <div className="course-grid">
+          <div className="course-grid three">
             <div className="ccard">
-              <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Szakmai tananyag</span><i className="ri-scales-3-line" /></div>
+              <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Hagyományos tanfolyam</span><i className="ri-book-open-line" /></div>
               <div className="ccard-body">
                 <h3 className="h4">Közbeszerzési szakmai tananyag</h3>
-                <p className="body">Moduláris, teljeskörű elméleti ismeretanyag az ajánlattételtől a szerződés teljesítésén át a jogorvoslatig és az EKR használatáig.</p>
+                <p className="body">A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.</p>
                 <div className="ccard-meta">
-                  <span><i className="ri-stack-line" /> {course.sections.length} modul</span>
-                  <span><i className="ri-list-check-2" /> {course.totalLessons} lecke</span>
+                  <span><i className="ri-stack-line" /> {totalModules} modul</span>
+                  <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
                   <span><i className="ri-award-line" /> Oklevél</span>
                 </div>
-                <Link href={ctaHref} className="btn btn-primary btn-block">Részletek <i className="ri-arrow-right-line" /></Link>
+                <Link href="/hagyomanyos" className="btn btn-primary btn-block">Részletek <i className="ri-arrow-right-line" /></Link>
+              </div>
+            </div>
+            <div className="ccard">
+              <div className="ccard-banner teal" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Videókkal bővítve</span><i className="ri-play-circle-line" /></div>
+              <div className="ccard-body">
+                <h3 className="h4">Tananyag videó-végigvezetésekkel</h3>
+                <p className="body">Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.</p>
+                <div className="ccard-meta">
+                  <span><i className="ri-film-line" /> {videoCount} videó</span>
+                  <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
+                  <span><i className="ri-award-line" /> Oklevél</span>
+                </div>
+                <Link href="/videos" className="btn btn-primary btn-block">Részletek <i className="ri-arrow-right-line" /></Link>
               </div>
             </div>
             <div className="ccard">
@@ -162,8 +171,8 @@ export default async function Landing({ variant }: { variant: "hagyomanyos" | "v
       {/* ---------- STATISZTIKA ---------- */}
       <section className="statbar">
         <div className="container-wide stat-grid">
-          <div className="stat"><b>{course.sections.length}</b><span>tananyag-modul</span></div>
-          <div className="stat"><b>{course.totalLessons}</b><span>interaktív lecke</span></div>
+          <div className="stat"><b>{totalModules}</b><span>tananyag-modul</span></div>
+          <div className="stat"><b>{totalLessons}</b><span>interaktív lecke</span></div>
           <div className="stat"><b>PDF</b><span>letölthető oklevél</span></div>
           <div className="stat"><b>0 Ft</b><span>részvételi díj</span></div>
         </div>

@@ -1,33 +1,29 @@
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
-import LessonPlayer from "@/components/LessonPlayer";
-import { getCourse, getLessonPages, getOutline } from "@/lib/moodle";
-import { flatten, findLesson, siblingsOf, getQuiz } from "@/lib/course";
+import CoursePlayer from "@/components/CoursePlayer";
+import { courseTitle, findLesson, getOutline, siblings, totalLessons } from "@/lib/tananyag";
 import { requireAuth } from "@/lib/auth";
 
 export default async function Page({ params }: { params: Promise<{ lessonId: string }> }) {
   const { lessonId } = await params;
   const user = await requireAuth(`/hagyomanyos/tanulas/${lessonId}`);
-  const course = await getCourse();
-  const lesson = findLesson(course, lessonId);
+  const lesson = findLesson(lessonId);
   if (!lesson) notFound();
 
-  const [outline, pages] = await Promise.all([getOutline(), getLessonPages(lesson.lessonId, lesson.title)]);
-  const { prev, next } = siblingsOf(course, lessonId);
-  const flat = flatten(course).map((l) => ({ id: l.id, num: l.num, shortTitle: l.shortTitle, sectionKey: l.sectionKey }));
+  const { prev, next } = siblings(lessonId);
 
   return (
     <>
       <Header user={user} />
-      <LessonPlayer
-        outline={outline}
-        lessons={flat}
+      <CoursePlayer
+        variant="hagyomanyos"
+        outline={getOutline("hagyomanyos")}
         lesson={lesson}
-        prevId={prev?.id}
-        nextId={next?.id}
-        pages={pages}
-        quiz={getQuiz(lesson)}
-        totalLessons={course.totalLessons}
+        prev={prev ? { id: prev.id, title: prev.title } : null}
+        next={next ? { id: next.id, title: next.title } : null}
+        courseTitle={courseTitle}
+        courseLabel="Hagyományos tanfolyam"
+        totalLessons={totalLessons}
       />
     </>
   );

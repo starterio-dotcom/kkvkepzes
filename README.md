@@ -82,33 +82,15 @@ Ha éles/gyorsabb kell: a Moodle kódot érdemes named volume-ba vagy image-be t
 
 ---
 
-## Több verzió párhuzamos bemutatása (több példány)
+## Moodle-példányok
 
-Minden Moodle-példány a saját `wwwroot`-jához (porthoz) van kötve, ezért két verziót
-**külön, izolált stackként** kell futtatni. A compose paraméterezett: `MOODLE_PORT`,
-`MOODLE_SRC` (kódkönyvtár), és a projektnév (`-p`) különbözteti meg őket. Így külön a
-**kód (`config.php`!)**, az **adatbázis** és a **`moodledata`** is – nem keverednek.
+Egyetlen Moodle-példány fut: projekt `kkvkepzes`, env `.env`, kód `./moodle`, port
+**8080**. (A korábbi B bemutató-példány 2026. júliusban kivezetve; teljes mentése a
+`backups/db-b-20260703.sql.gz` + `backups/moodledata-b-20260703.tar.gz` fájlokban.)
 
-| Példány | Projekt (`-p`) | Env | Kód | Port |
-|---------|----------------|-----|-----|------|
-| A (alap)| `kkvkepzes`    | `.env`   | `./moodle`   | 8080 |
-| B       | `kkvkepzes_b`  | `.env.b` | `./moodle-b` | 8081 |
-
-Kezelés a `scripts/instance.sh`-val:
-
-```bash
-# GYORS: 'a' tartalmának független másolata 'b'-be (azonos verzió, ~perc)
-scripts/instance.sh bootstrap-clone b a
-
-# FRISS: teljesen új példány saját telepítéssel (lassú ~30-40p a bind mount miatt)
-scripts/instance.sh bootstrap-fresh b            # vagy más verzió: bootstrap-fresh b v5.1.5
-scripts/instance.sh restore b                    # opcionális: ugyanaz a tananyag
-
-scripts/instance.sh up b | down b | ps b | logs b
-```
-
-Preview-ból: a `moodle-b` konfig indítja (8081). Emlékeztető: mindig szabad porttal
-(`scripts/instance.sh down b` előbb, ha „port in use").
+A `scripts/instance.sh` továbbra is paraméteres — ha valaha újra több példány kell,
+a compose `MOODLE_PORT` / `MOODLE_SRC` / projektnév (`-p`) hármassal izolált stackek
+indíthatók (`scripts/instance.sh bootstrap-clone b a`, `up b`, `down b`, …).
 
 ---
 

@@ -1,11 +1,11 @@
-import Landing from "@/components/Landing";
+import CourseOverview from "@/components/CourseOverview";
 
 export const metadata = {
-  title: "Videós kurzus",
+  title: "Videókkal bővített tanfolyam",
   description:
-    "Nézd végig a közbeszerzést lépésről lépésre: rövid videós leckék az EKR valós felületén, magyar felirattal és beágyazott ellenőrző kérdésekkel.",
+    "A teljes közbeszerzési tananyag képernyős videó-végigvezetésekkel az EKR legfontosabb műveleteihez — a videós leckékben a szöveges tartalom is elérhető.",
 };
 
 export default function Page() {
-  return <Landing variant="videos" />;
+  return <CourseOverview variant="videos" />;
 }

@@ -1,11 +1,11 @@
-import Landing from "@/components/Landing";
+import CourseOverview from "@/components/CourseOverview";
 
 export const metadata = {
-  title: { absolute: "KKV Képzés – Ingyenes közbeszerzési képzés" },
+  title: "Hagyományos tanfolyam",
   description:
-    "Tanuld meg a közbeszerzést a gyakorlatban: olvasmányos leckék, képernyőképek és lépésenkénti útmutatók az EKR-hez — ingyen, saját tempóban, letölthető oklevéllel.",
+    "Tanuld meg a közbeszerzést a gyakorlatban: olvasmányos leckék, képernyőképek, esettanulmányok és modulzáró kvízek — ingyen, saját tempóban, oklevéllel.",
 };
 
 export default function Page() {
-  return <Landing variant="hagyomanyos" />;
+  return <CourseOverview variant="hagyomanyos" />;
 }

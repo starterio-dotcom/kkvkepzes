@@ -1,0 +1,477 @@
+{
+ "items": [
+  {
+   "id": "ajanlat-ellenorzolista",
+   "module": "m2",
+   "title": "Ajánlat-ellenőrzőlista",
+   "download": "/segedletek/segedlet_ajanlat_ellenorzolista.docx",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<em>Végigmenni rajta minden benyújtás előtt – lehetőleg ketten, egymástól függetlenül.</em>"
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "A) A dokumentáció megismerése"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>✔</strong>",
+       "<strong>Ellenőrzési pont</strong>",
+       "<strong>Miért fontos?</strong>"
+      ],
+      [
+       "☐",
+       "Az eljárás teljes dokumentációját letöltöttem (Eljárás dokumentáció letöltése – zip), és a legfrissebb változattal dolgozom.",
+       "Módosítás esetén a régi dokumentáció alapján készült ajánlat érvénytelen lehet."
+      ],
+      [
+       "☐",
+       "Az érdeklődést jeleztem az EKR-ben, így minden eljárási eseményről értesítést kapok.",
+       "Enélkül lemaradhatok a módosításokról, kiegészítő tájékoztatásokról."
+      ],
+      [
+       "☐",
+       "Minden kiegészítő tájékoztatásra adott választ elolvastam és beépítettem az ajánlatba.",
+       "A válaszok a közbeszerzési dokumentumok részei, kötelező erejűek."
+      ],
+      [
+       "☐",
+       "Minden előírás egyértelmű; a kétértelmű pontokra határidőben kiegészítő tájékoztatást kértem.",
+       "Bizonytalan előírásra nem lehet felelősen árazni; utólag már nem vitatható."
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "B) Az ajánlat összeállítása az EKR-ben"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>✔</strong>",
+       "<strong>Ellenőrzési pont</strong>",
+       "<strong>Miért fontos?</strong>"
+      ],
+      [
+       "☐",
+       "A gazdasági szereplők adatait rögzítettem (közös ajánlattétel esetén minden szereplőét), és a „Gazdasági szereplők rögzítése kész” gombra kattintottam.",
+       "Enélkül a dokumentumcsatolás és az űrlapkitöltés nem érhető el."
+      ],
+      [
+       "☐",
+       "A kapcsolattartó e-mail-címe mellett további kapcsolattartói címeket is megadtam.",
+       "Egyetlen postafiókra hagyatkozni kockázatos – az értesítés elveszhet."
+      ],
+      [
+       "☐",
+       "A telefonszámokat a megfelelő formátumban adtam meg (+országhívó, szóköz, szám; pl. +36 701234567), másolásnál nem maradt felesleges karakter.",
+       "Hibás formátum esetén az űrlap nem menthető."
+      ],
+      [
+       "☐",
+       "Minden elektronikus űrlapot kitöltöttem, az EEKD-t a felhívás szerint állítottam ki.",
+       "Hiányzó űrlap = hiánypótlás vagy érvénytelenség."
+      ],
+      [
+       "☐",
+       "Minden előírt nyilatkozatot és dokumentumot feltöltöttem a Benyújtandó iratok jegyzékébe.",
+       "A jegyzék mutatja a korábban feltöltött fájlokat is – duplikálás és kihagyás is elkerülendő."
+      ],
+      [
+       "☐",
+       "Minden feltöltött dokumentumnál nyilatkoztam az üzleti titokról.",
+       "Enélkül a rendszer nem engedi lezárni a cselekményt."
+      ],
+      [
+       "☐",
+       "A felolvasólapon szereplő ár megegyezik a részletes ártáblázat / költségvetés végösszegével.",
+       "Az eltérés felvilágosításkérést, rosszabb esetben érvénytelenséget okozhat."
+      ],
+      [
+       "☐",
+       "Az árazást négyszemközt ellenőriztük: mennyiségek, egységárak, összesítések újraszámolva.",
+       "A számítási hiba javítható, de a rosszul kalkulált ár kötelez."
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "C) Benyújtás és utóellenőrzés"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>✔</strong>",
+       "<strong>Ellenőrzési pont</strong>",
+       "<strong>Miért fontos?</strong>"
+      ],
+      [
+       "☐",
+       "Nem az utolsó órára időzítettem a benyújtást (cél: legkésőbb a határidő előtti nap).",
+       "Technikai akadály, feltöltési hiba esetén így marad idő korrigálni."
+      ],
+      [
+       "☐",
+       "A benyújtás után ellenőriztem: az ajánlat státusza „Benyújtott”.",
+       "Csak a benyújtott státuszú ajánlat vesz részt az eljárásban."
+      ],
+      [
+       "☐",
+       "Módosítás esetén a módosított ajánlatot nyújtottam be, nem az eredetit.",
+       "Az „Eredeti ajánlat benyújtása” gombbal a módosítások elvesznek."
+      ],
+      [
+       "☐",
+       "A bontási jegyzőkönyvet letöltöttem és elmentettem az eljárás dossziéjába.",
+       "A későbbi cselekmények (bírálat, esetleges vita) kiindulópontja."
+      ]
+     ]
+    },
+    {
+     "t": "callout",
+     "html": "<strong>⚠ Közzététel előtt: jogi lektorálás</strong> A segédletben hivatkozott határidők és szabályok a képzési tananyagon alapulnak. Közzététel előtt közbeszerzési szakjogász ellenőrizze a hatályos Kbt.-rendelkezésekkel való egyezést. Ez a segédlet tájékoztató jellegű, nem minősül jogi tanácsadásnak."
+    },
+    {
+     "t": "p",
+     "html": "<em>Közbeszerzési szakmai tananyag · 2. modul segédlete · 1. változat, 2026. július</em>"
+    }
+   ]
+  },
+  {
+   "id": "hianypotlasi-gyorssegedlet",
+   "module": "m3",
+   "title": "Hiánypótlási gyorssegédlet",
+   "download": "/segedletek/segedlet_hianypotlasi_gyorssegedlet.docx",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<em>Mit tegyen, ha az ajánlatkérő felhívása megérkezik? – teendők időrendben.</em>"
+    },
+    {
+     "t": "callout",
+     "html": "<strong>A legfontosabb szabály</strong> A hiánypótlási felhívás az EKR-ben történt megküldéssel hatályos – akkor is, ha e-mail értesítés nem érkezett róla. A bírálati szakaszban ezért az EKR-t naponta ellenőrizni kell."
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "1. lépés – Azonnal: a felhívás megnyitása és a határidő rögzítése"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>✔</strong>",
+       "<strong>Teendő</strong>"
+      ],
+      [
+       "☐",
+       "Nyissa meg a felhívást az érintett ajánlat Eljárási cselekmény kereső felületén, és jelölje meg olvasottként."
+      ],
+      [
+       "☐",
+       "Írja fel a benyújtási határidőt (nap + óra), és rögzítse a cég naptárában, felelős megjelölésével. Az EKR a szerveridő szerint számol – a határidő percre pontosan jár le."
+      ],
+      [
+       "☐",
+       "Mérje fel: kell-e harmadik féltől dokumentumot beszereznie (pl. referenciaigazolás, banki nyilatkozat)? Ha igen, még ma indítsa el a beszerzést."
+      ],
+      [
+       "☐",
+       "Ha a határidő a beszerzendő iratok miatt teljesíthetetlenül rövid, azt haladéktalanul, még a határidőn belül jelezze / vitassa – utólag már nem lehet."
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "2. lépés – Mit kérnek pontosan? A megfelelő cselekmény kiválasztása"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>Ha az ajánlatkérő ezt kéri…</strong>",
+       "<strong>…ez a megfelelő EKR-cselekmény</strong>",
+       "<strong>Figyelem!</strong>"
+      ],
+      [
+       "Hiányzó vagy hibás dokumentum pótlása, javítása; űrlap módosítása",
+       "AMHP – Hiánypótlás összeállítása",
+       "Egyszerre csak egy AMHP lehet folyamatban; párhuzamosan nem indítható a számítási hiba javítása és az igazolások benyújtása cselekménnyel."
+      ],
+      [
+       "Magyarázat, indokolás az ajánlat valamely nem egyértelmű eleméről",
+       "FKM – Felvilágosítás kérés megválaszolása",
+       "Szövegesen válaszoljon a Leírás mezőben; dokumentum is csatolható."
+      ],
+      [
+       "Számítási hiba javítása",
+       "Számítási hiba javítása cselekmény",
+       "Csak a levezethető számítási hiba javítható – az ár érdemi módosítása tilos."
+      ],
+      [
+       "Igazolások benyújtása (bírálati felhívásra)",
+       "Igazolások benyújtása cselekmény",
+       "AMHP-val párhuzamosan nem futhat – gondolja végig a sorrendet."
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Tipp: </strong>ha a legördülő listában nem jelenik meg a várt cselekmény, ellenőrizze, nincs-e már folyamatban egy korábban elindított példány."
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "3. lépés – A válasz összeállítása és megküldése"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>✔</strong>",
+       "<strong>Teendő</strong>"
+      ],
+      [
+       "☐",
+       "AMHP esetén először a Gazdasági szereplők adatait erősítse meg („Gazdasági szereplők rögzítése kész”) – enélkül a dokumentumcsatolás nem érhető el."
+      ],
+      [
+       "☐",
+       "Pontosan azt pótolja/javítsa, amit a felhívás kér – se többet, se kevesebbet. Az ajánlat érdemi tartalma (különösen a vállalások) hiánypótlásban nem módosítható."
+      ],
+      [
+       "☐",
+       "Felvilágosításnál adjon őszinte, levezetéssel alátámasztott magyarázatot."
+      ],
+      [
+       "☐",
+       "Küldés után ellenőrizze: a cselekmény státusza „Kiküldve”. Csak ekkor minősül megküldöttnek – a mentett, de el nem küldött válasz jogilag nem létezik."
+      ],
+      [
+       "☐",
+       "Mentse el a benyújtott válasz másolatát az eljárás dossziéjába, a benyújtás időpontjával együtt."
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "Jó tudni"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>•</strong>",
+       "<strong>Szabály</strong>"
+      ],
+      [
+       "•",
+       "Hiánypótlásra és felvilágosításra több körben is sor kerülhet – az újabb felhívás újabb határidőt jelent."
+      ],
+      [
+       "•",
+       "A Kbt. által biztosított keretek között önkéntesen, külön felhívás nélkül is benyújtható hiánypótlás – de a cselekmény csak akkor indítható, ha az ajánlatkérő küldött hiánypótlási felhívást / felvilágosításkérést az EKR-ben."
+      ],
+      [
+       "•",
+       "Általános tapasztalat, hogy az ajánlatkérők eljárási cselekményenként legalább két teljes munkanapot szoktak biztosítani – de mindig a konkrét felhívásban tűzött határidő az irányadó."
+      ],
+      [
+       "•",
+       "A határidő elmulasztása az érintett dokumentum figyelmen kívül hagyásával, végső soron az ajánlat érvénytelenségével járhat."
+      ]
+     ]
+    },
+    {
+     "t": "callout",
+     "html": "<strong>⚠ Közzététel előtt: jogi lektorálás</strong> A segédletben hivatkozott határidők és szabályok a képzési tananyagon alapulnak. Közzététel előtt közbeszerzési szakjogász ellenőrizze a hatályos Kbt.-rendelkezésekkel való egyezést. Ez a segédlet tájékoztató jellegű, nem minősül jogi tanácsadásnak."
+    },
+    {
+     "t": "p",
+     "html": "<em>Közbeszerzési szakmai tananyag · 3. modul segédlete · 1. változat, 2026. július</em>"
+    }
+   ]
+  },
+  {
+   "id": "jogorvoslati-dontesi-fa",
+   "module": "m5",
+   "title": "Megéri-e jogorvoslattal élni? – döntési fa",
+   "download": "/segedletek/segedlet_jogorvoslati_dontesi_fa.docx",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<em>Kérdéssor arra az esetre, ha Ön szerint az ajánlatkérő előírása vagy döntése jogsértő. Haladjon sorban; minden lépésnél kövesse az IGEN/NEM ágat.</em>"
+    },
+    {
+     "t": "callout",
+     "html": "<strong>Mielőtt elindul</strong> Minden határidő jogvesztő, és a tudomásszerzéstől – jellemzően rövid, munkanapokban számított határidővel – ketyeg. Az első teendő ezért mindig: rögzítse írásban, mikor és miből szerzett tudomást a sérelmezett eseményről."
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>1.</strong>",
+       "<strong>Pontosan meg tudja jelölni, mely előírás/döntés sérti és mely szabályba ütközik? (Az „ez így nem fair” érzés nem jogi érv.)</strong>"
+      ],
+      [
+       "<strong>IGEN →</strong>",
+       "Lépjen a 2. pontra."
+      ],
+      [
+       "<strong>NEM →</strong>",
+       "Gyűjtsön információt: kérjen iratbetekintést (pl. a nyertes ajánlat nem üzleti titkot képező részeibe), olvassa újra az összegezés indokolását. Ha ezután sem azonosítható konkrét jogsértés, a jogorvoslat esélytelen."
+      ]
+     ]
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>2.</strong>",
+       "<strong>A vitatott elem a felhívás / közbeszerzési dokumentumok előírása, és az ajánlattételi határidő még nem járt le?</strong>"
+      ],
+      [
+       "<strong>IGEN →</strong>",
+       "Két „puha” eszköz áll rendelkezésre: kiegészítő tájékoztatás kérése (udvarias: javasolja az előírás újragondolását) vagy előzetes vitarendezés (erősebb: jogsértést állít). A határidő lejárta után a feltételek már nem támadhatók – aki hallgatott, azt a feltételek kötik!"
+      ],
+      [
+       "<strong>NEM →</strong>",
+       "A sérelem az eljárás későbbi döntéséhez (pl. érvénytelenítés, összegezés) kapcsolódik – lépjen a 3. pontra."
+      ]
+     ]
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>3.</strong>",
+       "<strong>Benyújtotta az előzetes vitarendezési kérelmet határidőben?</strong>"
+      ],
+      [
+       "<strong>IGEN →</strong>",
+       "Várja meg a választ: az ajánlatkérő köteles érdemben, indokolással válaszolni. Ha részben/egészben elfogadja az álláspontját: a vita rendeződött, KDB-eljárásra nincs szükség. Ha fenntartja a döntését: a válasz indokolása értékes muníció – lépjen a 4. pontra."
+      ],
+      [
+       "<strong>NEM →</strong>",
+       "Ha a határidő még nyitva áll: nyújtsa be (EVK cselekmény az EKR-ben; pontos hivatkozás az összegezés vitatott pontjaira, alátámasztott állításokkal). Gyors és díjmentes – szinte mindig ez az észszerű első lépés. Ha a határidő már lejárt: lépjen a 4. pontra, de a KDB-határidőket még sürgősebben ellenőrizze."
+      ]
+     ]
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>4.</strong>",
+       "<strong>Fennáll-e az ügyfélképessége, és a jogorvoslati kérelem határideje még nyitva áll? (Elkésettség, hatáskör hiánya, res iudicata = visszautasítás.)</strong>"
+      ],
+      [
+       "<strong>IGEN →</strong>",
+       "Lépjen az 5. pontra."
+      ],
+      [
+       "<strong>NEM →</strong>",
+       "Eljárási akadály esetén a KDB a kérelmet érdemi vizsgálat nélkül visszautasítja – a díj elveszik. Ha bizonytalan, ezt a kérdést tisztázza először jogi képviselővel."
+      ]
+     ]
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>5.</strong>",
+       "<strong>Vállalja a költségeket? (a) A KDB előtt kötelező a jogi képviselet: ügyvéd, kamarai jogtanácsos vagy közbeszerzési szaktanácsadó. (b) Igazgatási szolgáltatási díj: a becsült értékhez igazodik, vesztes ügyben elveszik. (c) Saját munkaidő, esetleges üzleti következmények.</strong>"
+      ],
+      [
+       "<strong>IGEN →</strong>",
+       "Lépjen a 6. pontra."
+      ],
+      [
+       "<strong>NEM →</strong>",
+       "Ha a várható haszon (a szerződés értéke, a precedens jelentősége) nem áll arányban a költségkockázattal, üzleti alapon észszerű lehet elengedni az ügyet – ez is döntés, nem vereség."
+      ]
+     ]
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>6.</strong>",
+       "<strong>A jogi képviselő az iratok és a korábbi KDB-/bírósági gyakorlat alapján reálisnak látja az esélyeket? (A joggyakorlat támpont, de a bizonytalanságot sosem szünteti meg teljesen.)</strong>"
+      ],
+      [
+       "<strong>IGEN →</strong>",
+       "Készítsék el a kérelmet a kötelező tartalmi elemekkel (kérelmi elemenként!): jogsértő esemény és tudomásszerzés időpontja, megsértett rendelkezés, bizonyítékok, a KDB döntésére irányuló indítvány, az előzetes vitarendezés eredménye csatolva. Benyújtás a jogvesztő határidőn belül."
+      ],
+      [
+       "<strong>NEM →</strong>",
+       "Fontolja meg a lezárást – a vitarendezés során szerzett tapasztalat és információ így sem vész kárba: a következő ajánlatnál már tudatosabban jár el."
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "level": 2,
+     "text": "A két eszköz összehasonlítása dióhéjban"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "<strong>Szempont</strong>",
+       "<strong>Előzetes vitarendezés</strong>",
+       "<strong>KDB jogorvoslati eljárás</strong>"
+      ],
+      [
+       "Kihez fordul?",
+       "Közvetlenül az ajánlatkérőhöz",
+       "A Közbeszerzési Döntőbizottsághoz"
+      ],
+      [
+       "Költség",
+       "Díjmentes",
+       "Igazgatási szolgáltatási díj (becsült értékhez igazodik) + kötelező jogi képviselet költsége"
+      ],
+      [
+       "Jogi képviselet",
+       "Nem kötelező",
+       "Kötelező (ügyvéd / kamarai jogtanácsos / közbeszerzési szaktanácsadó)"
+      ],
+      [
+       "Gyorsaság",
+       "Néhány munkanapon belül válasz",
+       "Hetek–hónapok"
+      ],
+      [
+       "Eredmény",
+       "Az ajánlatkérő önként korrigál – vagy fenntartja döntését",
+       "Kötelező erejű döntés, jogkövetkezményekkel"
+      ],
+      [
+       "Mellékhaszon",
+       "Részletes indokolás, információ a további lépésekhez",
+       "Precedensértékű döntés születhet"
+      ]
+     ]
+    },
+    {
+     "t": "callout",
+     "html": "<strong>⚠ Közzététel előtt: jogi lektorálás</strong> A segédletben hivatkozott határidők és szabályok a képzési tananyagon alapulnak. Közzététel előtt közbeszerzési szakjogász ellenőrizze a hatályos Kbt.-rendelkezésekkel való egyezést. Ez a segédlet tájékoztató jellegű, nem minősül jogi tanácsadásnak."
+    },
+    {
+     "t": "p",
+     "html": "<em>Közbeszerzési szakmai tananyag · 5. modul segédlete · 1. változat, 2026. július</em>"
+    }
+   ]
+  }
+ ]
+}

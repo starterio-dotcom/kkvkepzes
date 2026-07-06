@@ -1,21 +1,19 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getCourse } from "@/lib/moodle";
-import { firstLessonId } from "@/lib/course";
+import { allVideoPlans, getOutline, totalLessons, totalModules } from "@/lib/tananyag";
 import { getSession } from "@/lib/auth";
 
 export const metadata = {
   title: "Kurzusok",
-  description: "Felvehető ingyenes közbeszerzési képzések: moduláris szakmai tananyag és élő, vezetett képzések — a teljes tematikával.",
+  description:
+    "Felvehető ingyenes közbeszerzési képzések: hagyományos és videókkal bővített tanfolyam a teljes tematikával, valamint élő képzések.",
 };
 
 export default async function Page() {
-  const course = await getCourse();
   const user = await getSession();
-  const startHref = user
-    ? `/hagyomanyos/tanulas/${firstLessonId(course)}`
-    : `/belepes?vissza=${encodeURIComponent(`/hagyomanyos/tanulas/${firstLessonId(course)}`)}`;
+  const outline = getOutline("hagyomanyos");
+  const videoCount = allVideoPlans().length;
 
   return (
     <>
@@ -35,18 +33,31 @@ export default async function Page() {
 
       <section className="sec">
         <div className="container">
-          <div className="course-grid">
+          <div className="course-grid three">
             <div className="ccard">
-              <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Szakmai tananyag</span><i className="ri-scales-3-line" /></div>
+              <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Hagyományos tanfolyam</span><i className="ri-book-open-line" /></div>
               <div className="ccard-body">
                 <h3 className="h4">Közbeszerzési szakmai tananyag</h3>
-                <p className="body">Moduláris, teljeskörű elméleti ismeretanyag az ajánlattételtől a szerződés teljesítésén át a jogorvoslatig és az EKR használatáig.</p>
+                <p className="body">A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.</p>
                 <div className="ccard-meta">
-                  <span><i className="ri-stack-line" /> {course.sections.length} modul</span>
-                  <span><i className="ri-list-check-2" /> {course.totalLessons} lecke</span>
+                  <span><i className="ri-stack-line" /> {totalModules} modul</span>
+                  <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
                   <span><i className="ri-award-line" /> Oklevél</span>
                 </div>
-                <Link href={startHref} className="btn btn-primary btn-block">Beiratkozom <i className="ri-arrow-right-line" /></Link>
+                <Link href="/hagyomanyos" className="btn btn-primary btn-block">Részletek <i className="ri-arrow-right-line" /></Link>
+              </div>
+            </div>
+            <div className="ccard">
+              <div className="ccard-banner teal" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Videókkal bővítve</span><i className="ri-play-circle-line" /></div>
+              <div className="ccard-body">
+                <h3 className="h4">Tananyag videó-végigvezetésekkel</h3>
+                <p className="body">Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.</p>
+                <div className="ccard-meta">
+                  <span><i className="ri-film-line" /> {videoCount} videó</span>
+                  <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
+                  <span><i className="ri-award-line" /> Oklevél</span>
+                </div>
+                <Link href="/videos" className="btn btn-primary btn-block">Részletek <i className="ri-arrow-right-line" /></Link>
               </div>
             </div>
             <div className="ccard">
@@ -69,31 +80,31 @@ export default async function Page() {
       <section className="sec sec-alt">
         <div className="container">
           <div className="eyebrow" style={{ marginBottom: "var(--space-300)" }}>Tematika</div>
-          <h2 className="h2" style={{ marginBottom: "var(--space-200)" }}>{course.title}</h2>
+          <h2 className="h2" style={{ marginBottom: "var(--space-200)" }}>Közbeszerzési szakmai tananyag</h2>
           <p className="body" style={{ marginBottom: "var(--space-1200)" }}>
-            {course.sections.length} modul · {course.totalLessons} lecke · a teljes anyag ingyenes.
+            {totalModules} modul · {totalLessons} lecke · folyamatalapú felépítés — a teljes anyag ingyenes.
           </p>
           <div className="curric">
-            {course.sections.map((s) => (
-              <div className="curric-sec" key={s.key}>
+            {outline.map((m) => (
+              <div className="curric-sec" key={m.key}>
                 <div className="curric-head">
-                  <span className="curric-num">{s.key}</span>
+                  <span className="curric-num">{m.badge}</span>
                   <div>
-                    <h3 className="h5">{s.title}</h3>
-                    <p className="meta">{s.lessons.length} lecke</p>
+                    <h3 className="h5">{m.title}</h3>
+                    <p className="meta">{m.lessons.length} lecke</p>
                   </div>
-                  <Link href={`/hagyomanyos/tanulas/${s.lessons[0].id}`} className="btn btn-outline btn-sm">Megnyitom</Link>
+                  <Link href={`/hagyomanyos/tanulas/${m.lessons[0].id}`} className="btn btn-outline btn-sm">Megnyitom</Link>
                 </div>
                 <ul className="curric-list">
-                  {s.lessons.slice(0, 5).map((l) => (
+                  {m.lessons.slice(0, 5).map((l) => (
                     <li key={l.id}>
                       <i className="ri-file-text-line" />
                       <Link href={`/hagyomanyos/tanulas/${l.id}`}>{l.title}</Link>
                       <span className="meta">{l.durationMin} perc</span>
                     </li>
                   ))}
-                  {s.lessons.length > 5 && (
-                    <li className="more"><i className="ri-more-line" /> +{s.lessons.length - 5} további lecke</li>
+                  {m.lessons.length > 5 && (
+                    <li className="more"><i className="ri-more-line" /> +{m.lessons.length - 5} további lecke</li>
                   )}
                 </ul>
               </div>
