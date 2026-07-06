@@ -1017,3 +1017,12 @@ button.btn{font-family:var(--font-primary);}
   .course-grid.three,.ovr-vgrid{grid-template-columns:1fr;}
   .ovr-mod ul{padding-left:var(--space-600);}
 }
+
+/* Pipálható ellenőrzőlista a segédletekben */
+.ltable.check tr:not(.lth){cursor:pointer;}
+.ltable.check tr:not(.lth):hover{background:var(--indigo-50,#f4f5ff);}
+.ltable.check td:first-child{width:36px;}
+.ltable.check input[type="checkbox"]{width:17px;height:17px;accent-color:var(--brand);cursor:pointer;}
+.ltable.check tr.done td{color:var(--neutral-fg-tertiary);}
+.ltable.check tr.done td:nth-child(2){text-decoration:line-through;text-decoration-color:var(--neutral-fg-tertiary);}
+.ltable.check tr.lth td{font-weight:700;background:var(--neutral-bg-weak,#f7f8fa);}

@@ -288,24 +288,66 @@ function BlockView({ b, lesson, variant }: { b: Block; lesson: PlayerLesson; var
       if (variant !== "videos") return null;
       return <VideoPlanCard v={lesson.videos[b.i]} />;
     case "table":
-      return (
-        <div className="ltable-wrap">
-          <table className="ltable">
-            <tbody>
-              {b.rows.map((r, i) => (
-                <tr key={i}>
-                  {r.map((c, j) => <td key={j} dangerouslySetInnerHTML={{ __html: c }} />)}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      );
+      return <TableBlock rows={b.rows} />;
     case "callout":
       return <div className="lcallout"><i className="ri-error-warning-line" /><span dangerouslySetInnerHTML={{ __html: b.html }} /></div>;
     default:
       return null;
   }
+}
+
+/* ---- Táblázat; a ☐-sorok pipálható ellenőrzőlistává válnak ---- */
+function TableBlock({ rows }: { rows: string[][] }) {
+  const [checked, setChecked] = useState<Set<number>>(new Set());
+  const isChecklist = rows.some((r) => (r[0] ?? "").trim() === "☐");
+
+  if (!isChecklist) {
+    return (
+      <div className="ltable-wrap">
+        <table className="ltable">
+          <tbody>
+            {rows.map((r, i) => (
+              <tr key={i}>
+                {r.map((c, j) => <td key={j} dangerouslySetInnerHTML={{ __html: c }} />)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
+  const toggle = (i: number) =>
+    setChecked((prev) => {
+      const s = new Set(prev);
+      if (s.has(i)) s.delete(i); else s.add(i);
+      return s;
+    });
+
+  return (
+    <div className="ltable-wrap">
+      <table className="ltable check">
+        <tbody>
+          {rows.map((r, i) => {
+            if ((r[0] ?? "").trim() !== "☐") {
+              return (
+                <tr key={i} className="lth">
+                  {r.map((c, j) => <td key={j} dangerouslySetInnerHTML={{ __html: c }} />)}
+                </tr>
+              );
+            }
+            const on = checked.has(i);
+            return (
+              <tr key={i} className={on ? "done" : ""} onClick={() => toggle(i)}>
+                <td><input type="checkbox" checked={on} onChange={() => toggle(i)} aria-label="Ellenőrzési pont kipipálása" /></td>
+                {r.slice(1).map((c, j) => <td key={j} dangerouslySetInnerHTML={{ __html: c }} />)}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
 }
 
 /* ---- Tervezett videó kártyája (amíg a gyártás tart) ---- */
