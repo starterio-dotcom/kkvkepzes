@@ -678,7 +678,7 @@ button.btn{font-family:var(--font-primary);}
 .vside-head .meta{margin-top:var(--space-300);}
 .vside-scroll{flex:1;overflow-y:auto;padding:var(--space-400);display:flex;flex-direction:column;gap:var(--space-400);}
 
-.vsec{border:1px solid var(--neutral-border);border-radius:var(--radius-md);overflow:hidden;background:var(--neutral-canvas);}
+.vsec{flex:none;border:1px solid var(--neutral-border);border-radius:var(--radius-md);overflow:hidden;background:var(--neutral-canvas);}
 .vsec.current{border-color:var(--brand-soft);box-shadow:var(--elevation-100);}
 .vsec-head{display:flex;align-items:center;gap:var(--space-400);width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:var(--space-400);font-family:var(--font-primary);}
 .vsec-head:hover{background:var(--neutral-surface);}
