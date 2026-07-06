@@ -38,7 +38,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="hu" className={`${inter.variable} ${robotoMono.variable}`}>
+    <html lang="hu" data-scroll-behavior="smooth" className={`${inter.variable} ${robotoMono.variable}`}>
       <body>
         <a href="#main" className="skip-link">Ugrás a tartalomra</a>
         {children}

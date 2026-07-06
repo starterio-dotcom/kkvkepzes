@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-06T20:59:50+00:00",
+ "generatedAt": "2026-07-06T21:45:07+00:00",
  "source": "kozbeszerzesi_tananyag_mesterpeldany_videokkal.docx",
  "title": "Közbeszerzési szakmai tananyag",
  "modules": [
@@ -1003,12 +1003,23 @@
         "no": "A helyes válasz: A jellemzően közpénzt költő és/vagy közszolgáltatást nyújtó szervezeteket, amelyek beszerzési igényeik kielégítésére szerződést kívánnak kötni.. az ajánlatkérő a beszerző oldal; a vállalkozások az eljárásban gazdasági szereplőként, ajánlattevőként jelennek meg."
        },
        {
-        "q": "„A közbeszerzési eljárásban való eredményes részvételhez a jogi ismeretek mellett rendszerhasználati (informatikai) ismeretekre is szükség van.” ✔ Igaz Hamis",
-        "options": [],
-        "correct": [],
+        "q": "„A közbeszerzési eljárásban való eredményes részvételhez a jogi ismeretek mellett rendszerhasználati (informatikai) ismeretekre is szükség van.”",
+        "options": [
+         {
+          "key": "a",
+          "label": "Igaz"
+         },
+         {
+          "key": "b",
+          "label": "Hamis"
+         }
+        ],
+        "correct": [
+         "a"
+        ],
         "multi": false,
         "ok": "Helyes! az eljárások az EKR-ben zajlanak, így a Kbt. ismerete önmagában nem elég – a rendszer magabiztos használata az érvényes ajánlattétel gyakorlati feltétele. Erre épül a kurzus felépítése is.",
-        "no": "A helyes válasz: . az eljárások az EKR-ben zajlanak, így a Kbt. ismerete önmagában nem elég – a rendszer magabiztos használata az érvényes ajánlattétel gyakorlati feltétele. Erre épül a kurzus felépítése is."
+        "no": "A helyes válasz: Igaz. az eljárások az EKR-ben zajlanak, így a Kbt. ismerete önmagában nem elég – a rendszer magabiztos használata az érvényes ajánlattétel gyakorlati feltétele. Erre épül a kurzus felépítése is."
        },
        {
         "q": "Hol talál egy vállalkozás ingyenesen elérhető, hiteles útmutatókat a közbeszerzési szabályok értelmezéséhez?",
@@ -4614,7 +4625,8 @@
       },
       {
        "t": "h",
-       "level": 3
+       "level": 3,
+       "text": "Gyakorlati feladat: Állítsa be az első hirdetményfigyelését!"
       },
       {
        "t": "p",
@@ -16509,7 +16521,8 @@
      "blocks": [
       {
        "t": "h",
-       "level": 3
+       "level": 3,
+       "text": "Forrásszöveg A – korábbi II.8: Az integritás, a korrupció elkerülése és a verseny tisztasága"
       },
       {
        "t": "p",
@@ -16590,7 +16603,8 @@
       },
       {
        "t": "h",
-       "level": 3
+       "level": 3,
+       "text": "Forrásszöveg B – korábbi III.11 (integritás a teljesítés során)"
       },
       {
        "t": "p",

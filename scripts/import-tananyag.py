@@ -370,6 +370,14 @@ def parse_quiz_blocks(blocks, report, where):
             if m.group(2):
                 cur["correct"].append(key)
             continue
+        # betűjel nélküli opciók: igaz/hamis, ill. ✔-pipával jelölt helyes válasz
+        m = re.match(r"^(✔\s*)?(Igaz|Hamis)\.?$", text)
+        if m:
+            key = chr(ord("a") + len(cur["options"]))
+            cur["options"].append({"key": key, "label": m.group(2)})
+            if m.group(1):
+                cur["correct"].append(key)
+            continue
         if text.startswith("Magyarázat"):
             expl = re.sub(r"^Magyarázat:\s*", "", text)
             cur["ok"] = "Helyes! " + expl
@@ -607,11 +615,12 @@ def main():
     attach_quizzes(modules, report)
     glossary = extract_glossary(report)
 
-    # takarítás: belső mezők eldobása
+    # takarítás: belső mezők eldobása (a "h" blokknál a text a tartalom — marad!)
     for mod in modules:
         for lesson in mod["lessons"]:
             for b in lesson["blocks"]:
-                b.pop("text", None)
+                if b["t"] != "h":
+                    b.pop("text", None)
             lesson.pop("parsedQuiz", None)
 
     tananyag = {
