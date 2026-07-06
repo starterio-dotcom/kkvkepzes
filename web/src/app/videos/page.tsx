@@ -1,7 +1,7 @@
 import CourseOverview from "@/components/CourseOverview";
 
 export const metadata = {
-  title: "Videókkal bővített tanfolyam",
+  title: "Közbeszerzési szakmai tananyag (videókkal bővítve)",
   description:
     "A teljes közbeszerzési tananyag képernyős videó-végigvezetésekkel az EKR legfontosabb műveleteihez — a videós leckékben a szöveges tartalom is elérhető.",
 };

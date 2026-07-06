@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import CoursePlayer from "@/components/CoursePlayer";
-import { courseTitle, findLesson, getOutline, siblings, totalLessons } from "@/lib/tananyag";
+import { courseName, findLesson, getOutline, siblings, totalLessons } from "@/lib/tananyag";
 import { requireAuth } from "@/lib/auth";
 
 export default async function Page({ params }: { params: Promise<{ lessonId: string }> }) {
@@ -21,7 +21,7 @@ export default async function Page({ params }: { params: Promise<{ lessonId: str
         lesson={lesson}
         prev={prev ? { id: prev.id, title: prev.title } : null}
         next={next ? { id: next.id, title: next.title } : null}
-        courseTitle={courseTitle}
+        courseTitle={courseName("hagyomanyos")}
         courseLabel="Hagyományos tanfolyam"
         totalLessons={totalLessons}
       />

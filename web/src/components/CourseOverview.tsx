@@ -1,10 +1,10 @@
 // Kurzus-adatlap (szerver-komponens): leírás, modul-lista, indítás CTA.
-// Mindkét tanfolyam ezt használja; a videósnál a videótervek is megjelennek.
+// A két tanfolyam adatlapja egységes — csak a név, a leírás és a CTA-k térnek el.
 import Link from "next/link";
 import Header from "./Header";
 import Footer from "./Footer";
 import {
-  allVideoPlans, courseTitle, firstLessonId, getOutline, totalLessons, totalMinutes,
+  courseName, firstLessonId, getOutline, totalLessons, totalMinutes,
   type Variant,
 } from "@/lib/tananyag";
 import { getSession } from "@/lib/auth";
@@ -35,11 +35,12 @@ const KIND_META: Record<string, { icon: string; label: string }> = {
 export default async function CourseOverview({ variant }: { variant: Variant }) {
   const user = await getSession();
   const copy = COPY[variant];
-  const outline = getOutline(variant);
-  const mins = totalMinutes(variant);
+  // Egységes tematika: a videókat itt nem emeljük ki, ezért mindkét adatlap
+  // a videó-jelölés nélküli vázlatot mutatja (azonos ikonok, azonos időadatok).
+  const outline = getOutline("hagyomanyos");
+  const mins = totalMinutes("hagyomanyos");
   const startHref = `/${variant}/tanulas/${firstLessonId}`;
   const ctaHref = user ? startHref : `/belepes?vissza=${encodeURIComponent(startHref)}`;
-  const videos = variant === "videos" ? allVideoPlans() : [];
 
   return (
     <>
@@ -48,13 +49,12 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
         <section className="pagehead" style={{ ["--cover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}>
           <div className="container">
             <div className="eyebrow light"><i className={copy.icon} /> {copy.label}</div>
-            <h1 className="h1 white">{courseTitle}</h1>
+            <h1 className="h1 white">{courseName(variant)}</h1>
             <p className="pagehead-lead">{copy.lead}</p>
             <div className="ovr-meta">
               <span><i className="ri-stack-line" /> {outline.length} szakasz</span>
               <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
               <span><i className="ri-time-line" /> ~{Math.round(mins / 60)} óra</span>
-              {variant === "videos" && <span><i className="ri-film-line" /> {videos.length} videó (gyártás alatt)</span>}
               <span><i className="ri-award-line" /> Oklevél</span>
             </div>
             <div className="ovr-cta">
@@ -66,32 +66,7 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
           </div>
         </section>
 
-        {variant === "videos" && (
-          <section className="sec">
-            <div className="container">
-              <div className="sec-head center">
-                <div className="eyebrow">Videó-végigvezetések</div>
-                <h2 className="h2">Nézd, ahogy csinálják — az EKR valós felületén</h2>
-              </div>
-              <div className="ovr-vgrid">
-                {videos.map((v) => (
-                  <div className="ovr-vcard" key={v.title}>
-                    <div className="ovr-vthumb"><i className="ri-vidicon-line" /><span>Gyártás alatt</span></div>
-                    <b>{v.title}</b>
-                    <p className="meta">{v.desc}</p>
-                    <div className="ovr-vmeta">
-                      <span><i className="ri-movie-2-line" /> {v.genre}</span>
-                      <span><i className="ri-time-line" /> {v.length}</span>
-                      {v.optional && <span className="opt">opcionális</span>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        <section className={`sec${variant === "videos" ? " sec-alt" : ""}`}>
+        <section className="sec">
           <div className="container">
             <div className="sec-head center">
               <div className="eyebrow">Tematika</div>
@@ -112,12 +87,10 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
                   <ul>
                     {m.lessons.map((l) => (
                       <li key={l.id}>
-                        <i className={l.hasVideo ? "ri-play-circle-line video" : KIND_META[l.kind].icon} />
+                        <i className={KIND_META[l.kind].icon} />
                         <span>{l.title}</span>
                         <em>
-                          {l.kind === "modulzaro" ? `${l.quizCount} kérdés`
-                            : l.hasVideo ? `videó + ${l.durationMin} perc`
-                            : `${l.durationMin} perc`}
+                          {l.kind === "modulzaro" ? `${l.quizCount} kérdés` : `${l.durationMin} perc`}
                         </em>
                       </li>
                     ))}

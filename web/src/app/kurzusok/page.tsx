@@ -50,7 +50,7 @@ export default async function Page() {
             <div className="ccard">
               <div className="ccard-banner teal" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Videókkal bővítve</span><i className="ri-play-circle-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Tananyag videó-végigvezetésekkel</h3>
+                <h3 className="h4">Közbeszerzési szakmai tananyag (videókkal bővítve)</h3>
                 <p className="body">Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.</p>
                 <div className="ccard-meta">
                   <span><i className="ri-film-line" /> {videoCount} videó</span>

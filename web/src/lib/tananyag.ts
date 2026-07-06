@@ -94,6 +94,11 @@ const MODULES = buildModules();
 export const courseTitle = raw.title;
 export const glossary = raw.glossary;
 
+/** A tanfolyam megjelenített neve variánsonként. */
+export function courseName(variant: Variant): string {
+  return variant === "videos" ? `${raw.title} (videókkal bővítve)` : raw.title;
+}
+
 /* ---- vázlat (könnyű, kliensnek adható) ---- */
 export type OutlineLesson = {
   id: string;
