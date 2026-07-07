@@ -83,7 +83,7 @@ export default function CoursePlayer({
               const hasActive = m.lessons.some((l) => l.id === lesson.id);
               const isOpen = open[m.key];
               return (
-                <div className={`vsec${complete ? " done" : ""}${hasActive ? " current" : ""}`} key={m.key}>
+                <div className={`vsec${complete ? " done" : ""}${hasActive ? " current" : ""}${isOpen ? " open" : ""}`} key={m.key}>
                   <button className="vsec-head" onClick={() => setOpen((o) => ({ ...o, [m.key]: !o[m.key] }))} aria-expanded={isOpen}>
                     <span className="vsec-badge">{complete ? <i className="ri-check-line" /> : m.badge}</span>
                     <span className="vsec-info">
@@ -192,6 +192,16 @@ function Ring({ pct }: { pct: number }) {
 function LessonBody({ lesson, variant, isDone, onDone }: {
   lesson: PlayerLesson; variant: Variant; isDone: boolean; onDone: () => void;
 }) {
+  // Videós kurzus: a tervezett videó(k) a lecke ELEJÉN, a szöveges tartalom alattuk.
+  const showVideosOnTop = variant === "videos" && lesson.videos.length > 0;
+  // A frissítésként gyártandó videó a meglévő (régi) videót váltja ki — a chipje elhagyható.
+  const hideExistingVideoChip = lesson.videos.some((v) => v.refresh);
+  const bodyBlocks = lesson.blocks.filter((b) => {
+    if (showVideosOnTop && b.t === "video") return false;
+    if (hideExistingVideoChip && b.t === "h5p" && b.kind === "video") return false;
+    return true;
+  });
+
   return (
     <>
       <div className="vmeta-row">
@@ -210,6 +220,8 @@ function LessonBody({ lesson, variant, isDone, onDone }: {
         </button>
       </div>
 
+      {showVideosOnTop && lesson.videos.map((v, i) => <VideoPlanCard key={i} v={v} />)}
+
       {lesson.objectives.length > 0 && (
         <div className="lgoals">
           <b><i className="ri-focus-2-line" /> A lecke végére Ön képes lesz…</b>
@@ -220,7 +232,7 @@ function LessonBody({ lesson, variant, isDone, onDone }: {
       )}
 
       <div className="lcontent">
-        {lesson.blocks.map((b, i) => (
+        {bodyBlocks.map((b, i) => (
           <BlockView key={i} b={b} lesson={lesson} variant={variant} />
         ))}
       </div>
@@ -281,7 +293,7 @@ function BlockView({ b, lesson, variant }: { b: Block; lesson: PlayerLesson; var
       }
       if (b.kind === "video") {
         if (variant !== "videos") return null;
-        return <div className="lchip video"><i className="ri-film-line" /> Meglévő interaktív videó — átemelés alatt <code>({b.file})</code></div>;
+        return <div className="lchip lchip-video"><i className="ri-film-line" /> Meglévő interaktív videó — átemelés alatt <code>({b.file})</code></div>;
       }
       return <div className="lchip"><i className="ri-drag-drop-line" /> Interaktív gyakorlat (H5P) — a Moodle-változatban érhető el.</div>;
     case "video":

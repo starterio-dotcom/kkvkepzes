@@ -5,12 +5,10 @@ import { useState } from "react";
 
 export default function Header({ user }: { user?: { name: string } | null }) {
   const path = usePathname();
-  const isVideo = path.startsWith("/videos");
-  const base = isVideo ? "/videos" : "/hagyomanyos";
   const [open, setOpen] = useState(false);
 
   const nav = [
-    { href: base, label: "Kezdőoldal", active: path.startsWith("/hagyomanyos") || path.startsWith("/videos") },
+    { href: "/", label: "Kezdőoldal", active: path === "/" },
     { href: "/kurzusok", label: "Kurzusok", active: path.startsWith("/kurzusok") },
     { href: "/hirek", label: "Hírek", active: path.startsWith("/hirek") },
     { href: "/elerhetosegek", label: "Elérhetőségek", active: path.startsWith("/elerhetosegek") },
@@ -19,7 +17,7 @@ export default function Header({ user }: { user?: { name: string } | null }) {
   return (
     <header className="site-header">
       <div className="container-wide header-bar">
-        <Link href={base} className="brand" aria-label="KKV Képzés kezdőoldal">
+        <Link href="/" className="brand" aria-label="KKV Képzés kezdőoldal">
           <span className="mark"><i className="ri-graduation-cap-fill" /></span>
           <span className="wm">
             <b>KKV <span className="accent">Képzés</span></b>

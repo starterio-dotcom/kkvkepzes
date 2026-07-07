@@ -938,7 +938,7 @@ button.btn{font-family:var(--font-primary);}
 .ovr-mod ul li{display:flex;align-items:center;gap:var(--space-300);padding:var(--space-250) 0;font-size:var(--text-sm);border-bottom:1px dashed var(--neutral-border);}
 .ovr-mod ul li:last-child{border-bottom:none;}
 .ovr-mod ul li i{color:var(--brand);flex:none;font-size:17px;}
-.ovr-mod ul li i.video{color:#0e7490;}
+.ovr-mod ul li i.lchip-video{color:#0e7490;}
 .ovr-mod ul li span{flex:1;min-width:0;}
 .ovr-mod ul li em{font-style:normal;color:var(--neutral-fg-secondary);white-space:nowrap;}
 .ovr-foot{display:flex;justify-content:center;margin-top:var(--space-800);}
@@ -977,8 +977,8 @@ button.btn{font-family:var(--font-primary);}
 .lchip{display:flex;align-items:center;gap:var(--space-300);padding:var(--space-300) var(--space-500);border-radius:var(--radius-md);background:var(--indigo-50,#f4f5ff);border:1px solid var(--indigo-200,#c7cdfb);color:var(--neutral-fg-secondary);font-size:var(--text-sm);}
 .lchip i{color:var(--brand);font-size:18px;flex:none;}
 .lchip code{font-size:var(--text-2xs);}
-.lchip.video{background:#ecfeff;border-color:#67e8f9;}
-.lchip.video i{color:#0e7490;}
+.lchip.lchip-video{background:#ecfeff;border-color:#67e8f9;}
+.lchip.lchip-video i{color:#0e7490;}
 .lcallout{display:flex;gap:var(--space-300);padding:var(--space-400) var(--space-500);border-radius:var(--radius-md);background:#fff7ed;border:1px solid #fb923c;color:#7c2d12;font-size:var(--text-sm);line-height:1.55;}
 .lcallout i{font-size:18px;flex:none;margin-top:2px;}
 .lcallout.info{background:var(--indigo-50,#f4f5ff);border-color:var(--indigo-200,#c7cdfb);color:var(--neutral-fg-secondary);}
@@ -1026,3 +1026,8 @@ button.btn{font-family:var(--font-primary);}
 .ltable.check tr.done td{color:var(--neutral-fg-tertiary);}
 .ltable.check tr.done td:nth-child(2){text-decoration:line-through;text-decoration-color:var(--neutral-fg-tertiary);}
 .ltable.check tr.lth td{font-weight:700;background:var(--neutral-bg-weak,#f7f8fa);}
+
+/* Nyitott sidebar-kategória: sötétebb (indigó árnyalatú) háttér */
+.vsec.open{background:var(--indigo-50,#eef1fd);border-color:var(--indigo-200,#c7cdfb);}
+.vsec.open .vsec-head:hover{background:rgba(255,255,255,.55);}
+.vsec.open .vsec-bar{background:rgba(255,255,255,.9);}

@@ -9,20 +9,19 @@ import {
 } from "@/lib/tananyag";
 import { getSession } from "@/lib/auth";
 
-const COPY: Record<Variant, { label: string; lead: string; icon: string; cta: string }> = {
+const COPY: Record<Variant, { label: string; lead: string; icon: string }> = {
   hagyomanyos: {
     label: "Hagyományos tanfolyam",
     lead: "Olvasmányos leckék, képernyőképek, esettanulmány-fonál és modulzáró kvízek — a teljes tananyag szövegesen, saját tempóban.",
     icon: "ri-book-open-line",
-    cta: "Tanfolyam indítása",
   },
   videos: {
     label: "Videókkal bővített tanfolyam",
     lead: "Ugyanaz a teljes tananyag, kiegészítve képernyős videó-végigvezetésekkel a legfontosabb EKR-műveletekhez. A videós leckékben a szöveges tartalom is elérhető.",
     icon: "ri-play-circle-line",
-    cta: "Videós tanfolyam indítása",
   },
 };
+const CTA = "Tanfolyam indítása";
 
 const KIND_META: Record<string, { icon: string; label: string }> = {
   lecke: { icon: "ri-article-line", label: "Lecke" },
@@ -58,10 +57,7 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
               <span><i className="ri-award-line" /> Oklevél</span>
             </div>
             <div className="ovr-cta">
-              <Link href={ctaHref} className="btn btn-light btn-lg">{copy.cta} <i className="ri-arrow-right-line" /></Link>
-              <Link href={variant === "videos" ? "/hagyomanyos" : "/videos"} className="btn btn-outline-light btn-lg">
-                {variant === "videos" ? "Hagyományos változat" : "Videós változat"}
-              </Link>
+              <Link href={ctaHref} className="btn btn-light btn-lg">{CTA} <i className="ri-arrow-right-line" /></Link>
             </div>
           </div>
         </section>
@@ -99,7 +95,7 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
               ))}
             </div>
             <div className="ovr-foot">
-              <Link href={ctaHref} className="btn btn-primary btn-lg">{copy.cta} <i className="ri-arrow-right-line" /></Link>
+              <Link href={ctaHref} className="btn btn-primary btn-lg">{CTA} <i className="ri-arrow-right-line" /></Link>
             </div>
           </div>
         </section>
