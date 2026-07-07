@@ -1038,3 +1038,19 @@ button.btn{font-family:var(--font-primary);}
 /* Szolid sidebar-görgetősáv: vékony, halvány, csak hoverre erősödik */
 .vside-scroll{scrollbar-width:thin;scrollbar-color:var(--cold-grey-300,#d3d7e3) transparent;}
 .vside-scroll:hover{scrollbar-color:var(--cold-grey-500,#aab1c2) transparent;}
+
+/* Designos felsorolások a leckékben */
+.lcontent ul{list-style:none;padding-left:.2em;}
+.lcontent ul>li{position:relative;padding-left:1.6em;}
+.lcontent ul>li::before{content:"";position:absolute;left:.25em;top:.58em;width:7px;height:7px;
+  background:var(--brand);opacity:.7;border-radius:2px;transform:rotate(45deg);}
+.lcontent ol{list-style:none;counter-reset:lc;padding-left:.2em;}
+.lcontent ol>li{position:relative;padding-left:2.3em;counter-increment:lc;}
+.lcontent ol>li::before{content:counter(lc);position:absolute;left:0;top:.12em;width:1.6em;height:1.6em;
+  display:grid;place-items:center;font-size:.82em;font-weight:800;color:var(--brand);
+  background:var(--indigo-100);border-radius:var(--radius-full);}
+/* Tanulási célok: zöld pipa-jelölők */
+.lgoals ul{list-style:none;padding-left:.1em;}
+.lgoals ul>li{position:relative;padding-left:1.7em;}
+.lgoals ul>li::before{content:"✓";position:absolute;left:0;top:0;font-weight:800;
+  color:var(--semantic-green-500,#11ad5c);}
