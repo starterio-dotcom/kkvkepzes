@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-06T21:45:07+00:00",
+ "generatedAt": "2026-07-07T05:48:00+00:00",
  "source": "kozbeszerzesi_tananyag_mesterpeldany_videokkal.docx",
  "title": "Közbeszerzési szakmai tananyag",
  "modules": [
@@ -237,7 +237,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-1-video-1-300.h5p"
+       "file": "modul-1-video-1-300.h5p",
+       "title": "Modul-1_Video-1",
+       "youtubeId": "eJhouoxdUWw"
       },
       {
        "t": "p",
@@ -511,7 +513,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-1-video-2-200.h5p"
+       "file": "modul-1-video-2-200.h5p",
+       "title": "Modul-1_Video-2",
+       "youtubeId": "WRH4lqVUEeg"
       },
       {
        "t": "p",
@@ -1426,7 +1430,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-4-video-1-200.h5p"
+       "file": "modul-4-video-1-200.h5p",
+       "title": "Modul-4_Video-1",
+       "youtubeId": "hMXfmaVBzNc"
       },
       {
        "t": "p",
@@ -1515,11 +1521,6 @@
       {
        "t": "p",
        "html": "Ha a regisztráció megerősítése sikeres volt, a rendszer visszairányít a kezdőoldalra."
-      },
-      {
-       "t": "h5p",
-       "kind": "video",
-       "file": "modul-4-video-1-200.h5p"
       }
      ],
      "videos": []
@@ -3076,8 +3077,143 @@
       },
       {
        "t": "h5p",
-       "kind": "interaktiv",
-       "file": "modul-4-interaktiv-1-36.h5p"
+       "kind": "quiz",
+       "file": "modul-4-interaktiv-1-36.h5p",
+       "title": "Modul-4_Interaktiv-1",
+       "quiz": {
+        "passPct": 50,
+        "questions": [
+         {
+          "q": "Milyen kategóriákba sorolhatók a jogosultságok az EKR-ben?",
+          "options": [
+           {
+            "key": "a",
+            "label": "Szervezet szintű szerepkörök"
+           },
+           {
+            "key": "b",
+            "label": "Eljárás szintű szerepkörök"
+           },
+           {
+            "key": "c",
+            "label": "Ajánlat szintű szerepkörök"
+           },
+           {
+            "key": "d",
+            "label": "Hirdetmeny szerkesztő szerepkörök"
+           },
+           {
+            "key": "e",
+            "label": "Nyilvántartások szerkesztő szerepkörök"
+           }
+          ],
+          "correct": [
+           "a",
+           "b",
+           "c"
+          ],
+          "multi": true,
+          "ok": "Helyes válasz!",
+          "no": "A helyes válaszok: Szervezet szintű szerepkörök · Eljárás szintű szerepkörök · Ajánlat szintű szerepkörök"
+         },
+         {
+          "q": "Melyek ajánlat szintű jogosultságok?",
+          "options": [
+           {
+            "key": "a",
+            "label": "Ajánlat betekintő"
+           },
+           {
+            "key": "b",
+            "label": "Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra"
+           },
+           {
+            "key": "c",
+            "label": "Ajánlat szerkesztő"
+           },
+           {
+            "key": "d",
+            "label": "Ajánlattételt irányító szerepkör"
+           },
+           {
+            "key": "e",
+            "label": "Sablon szerkesztő"
+           },
+           {
+            "key": "f",
+            "label": "Szervezet tag"
+           }
+          ],
+          "correct": [
+           "a",
+           "b",
+           "c",
+           "d"
+          ],
+          "multi": true,
+          "ok": "Helyes válasz!",
+          "no": "A helyes válaszok: Ajánlat betekintő · Ajánlat betekintő, kivéve az üzleti titkot tartalmazó információkra · Ajánlat szerkesztő · Ajánlattételt irányító szerepkör"
+         },
+         {
+          "q": "Melyek szervezeti szintű jogosultságok?",
+          "options": [
+           {
+            "key": "a",
+            "label": "Szervezeti szuper user"
+           },
+           {
+            "key": "b",
+            "label": "Szervezet tag"
+           },
+           {
+            "key": "c",
+            "label": "Sablon használó"
+           },
+           {
+            "key": "d",
+            "label": "Sablon szerkesztő"
+           },
+           {
+            "key": "e",
+            "label": "Ajánlat betekintő"
+           },
+           {
+            "key": "f",
+            "label": "Ajánlat szerkesztő"
+           }
+          ],
+          "correct": [
+           "a",
+           "b",
+           "c",
+           "d"
+          ],
+          "multi": true,
+          "ok": "Helyes válasz!",
+          "no": "A helyes válaszok: Szervezeti szuper user · Szervezet tag · Sablon használó · Sablon szerkesztő"
+         },
+         {
+          "q": "Mire való a delegálás az EKR-ben?",
+          "options": [
+           {
+            "key": "a",
+            "label": "Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül."
+           },
+           {
+            "key": "b",
+            "label": "A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+           }
+          ],
+          "correct": [
+           "a",
+           "b"
+          ],
+          "multi": true,
+          "ok": "Helyes válasz!",
+          "no": "A helyes válaszok: Saját jogosultságainkat tudjuk a szervezet más tagjai számára delegálni. Az így kiosztott jogosultság a beállított időtartam végén automatikusan visszavonásra kerül. · A szervezet jogosultságait tudjuk más szervezet számára delegálni. Az így kiosztott jogosultság nem kerülhet visszavonásra."
+         }
+        ]
+       }
       }
      ],
      "videos": [],
@@ -4119,7 +4255,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-5-video-1.h5p"
+       "file": "modul-5-video-1.h5p",
+       "title": "Modul-5_Video-1",
+       "youtubeId": "tk2-6Ch8PQc"
       },
       {
        "t": "p",
@@ -8164,7 +8302,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-4-video-2-200.h5p"
+       "file": "modul-4-video-2-200.h5p",
+       "title": "Modul-4_Video-2",
+       "youtubeId": "xnqQE0BoyC8"
       }
      ],
      "videos": []
@@ -9138,8 +9278,27 @@
       },
       {
        "t": "h5p",
-       "kind": "interaktiv",
-       "file": "modul-1-interaktiv-2-200.h5p"
+       "kind": "accordion",
+       "file": "modul-1-interaktiv-2-200.h5p",
+       "title": "Modul-1_Interaktiv-2",
+       "panels": [
+        {
+         "title": "Hiánypótlás",
+         "html": "<p id=\"yui_3_18_1_1_1701645905031_199\"><span style=\"font-size:15px\"><span><span style=\"color:#1d2125\"><span><span><span><span><span><span style=\"background-color:#ffffff\"><span><span><span><span id=\"yui_3_18_1_1_1701645905031_198\"><span>A <strong><em>hiánypótlás</em>&nbsp;</strong>azt jelenti, hogy a benyújtott <strong>ajánlatban hiányt észlel az ajánlatkérő, és ennek pótlására az ajánlatkérő írásban felszólítja az ajánlattevőt</strong>. Hiánypótlásra kerülhet sor akkor, ha valamely irat hiányzik az ajánlatból vagy nem tartalmaz minden elemet, vagy éppen nem alkalmas a célzott hatás kiváltására, és ezért egy másik irattal kell felváltani.<br>\n<strong>A hiánypótlás nem eredményezheti az alapelvek sérelmét</strong>, így például hiányzó értékelési részszempont szerinti ajánlati vállalás utólag nem adható meg, és így az ajánlat hiánypótlás nélkül érvénytelenné nyilvánítandó, de a szakmai ajánlat jogellenes módosításának (az ajánlati kötöttség megsértésének) is ugyanez a jogkövetkezménye. Ez utóbbi tilalom alól azonban van kivétel, hiszen a <strong>csekélyebb jelentőségű hibák korrigálhatók</strong>, feltéve, hogy az érintett elemeket az ajánlatkérő önállóan nem pontozza. Az ajánlatkérőnek körültekintően kell eljárnia, hiszen, ha hiányosságot észlel, akkor el kell döntenie, hogy az hiánypótlás keretében orvosolható-e vagy sem. Ha túlterjeszkedik a hiánypótlás törvényi keretein, mert olyan hiány pótlását teszi lehetővé, amely a törvény szerint nem sorolható ebbe a körbe vagy ugyanazon hiány pótlására kétszer hívja fel az ajánlattevőt, akkor ugyanúgy jogsértést követ el, mint akkor, ha úgy foglal állást, hogy az adott hiány nem pótolható, és emiatt hiánypótlás lehetőségének biztosítása nélkül érvénytelenné nyilvánítja az ajánlatot. Nem egyszerű jogi feladatról van szó, hiszen a törvény olyan fogalmakat is használ bizonyos ajánlati tartalmakhoz kapcsolódóan, hogy „<strong>nem jelentős hiba”,</strong>&nbsp;vagy hogy <strong>„egyedi részletkérdésre vonatkozó hiba”</strong>&nbsp;is javítható. A kérdés az, hogy miképpen tölthetők meg tartalommal egy adott közbeszerzési eljárásban ezek az elvont kifejezések.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\n\n<p><span style=\"font-size:15px\"><span><span style=\"color:#1d2125\"><span><span><span><span><span><span style=\"background-color:#ffffff\"><span><span><span><span><span>&nbsp;&nbsp;&nbsp;&nbsp;A hiánypótláshoz kapcsolódóan említést kell tenni az <strong>önkéntes hiánypótlás </strong>lehetőségéről. Ez azt jelenti, hogy <span class=\"highlighted\">amíg bármely ajánlattevő számára hiánypótlásra vagy felvilágosítás nyújtására megjelölt határidő van folyamatban, addig az ajánlattevő pótolhat olyan hiányokat, amelyekre nézve az ajánlatkérő nem hívta fel hiánypótlásra.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\n\n<p>&nbsp;</p>\n"
+        },
+        {
+         "title": "Felvilágosítás",
+         "html": "<p><strong><em>Felvilágosítás</em></strong>t az ajánlatkérő a <strong>nem egyértelmű kijelentések, nyilatkozatok, igazolások tartalmának tisztázása érdekében <em>kérhet</em>&nbsp;az ajánlattevőktől</strong>.</p>\n"
+        },
+        {
+         "title": "Számítási hiba",
+         "html": "<p>A <strong><em>számítási hiba</em></strong><em>&nbsp;</em>javítása akkor alkalmazható jogintézmény például, ha az ellenszolgáltatást egy költségvetés, illetve ártáblázat beárazása eredményezi például egy építési beruházásnál vagy egy több tételből álló árubeszerzésnél. Ha az ajánlattevő valamely matematikai művelet elvégzése során hibázott, akkor az javítható. A számítási hiba javításának <strong>feltétele, hogy az ún.&nbsp;<em>alapadatok </em>ennek során ne módosuljanak</strong>, ugyanis ez a jogintézmény nem használható az árazás körében felmerülő hiányok, tévesztések korrigálására, hanem arra szolgál, hogy például az alapadatok összeadása, szorzása során felmerült valamilyen hibát orvosoljanak vele.</p>\n"
+        },
+        {
+         "title": "Indokláskérés",
+         "html": "<p><span style=\"font-size:15px\"><span><span style=\"color:#1d2125\"><span><span><span><span><span><span style=\"background-color:#ffffff\"><span><span><span><strong><span><span>Az <em>irreális ajánlati elemek</em>&nbsp;tekintetében az ajánlatkérőt <em>indokoláskérési kötelezettség </em>terheli</span></span></strong><span><span>&nbsp;az uniós eljárásrendben.<a href=\"http://localhost/m403/mod/lesson/view.php?id=89&amp;pageid=34#_ftn1\" name=\"_ftnref1\" title=\"\"><span class=\"MsoFootnoteReference\"><span><span><span><span>[1]</span></span></span></span></span></a>&nbsp;Esetei lehetnek például:</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\n\n<p><span style=\"font-size:15px\"><span><span style=\"color:#1d2125\"><span><span><span><span><span><span style=\"background-color:#ffffff\"><span><span><span><span><span><span>·</span></span></span><span><span>ha szerződés teljesítése valamely elem folytán megkérdőjelezhető,</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\n\n<p><span style=\"font-size:15px\"><span><span style=\"color:#1d2125\"><span><span><span><span><span><span style=\"background-color:#ffffff\"><span><span><span><span><span><span>·</span></span></span><span><span>ha túlságosan rövid teljesítési határidőt tartalmaz az ajánlat,</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\n\n<p><span style=\"font-size:15px\"><span><span style=\"color:#1d2125\"><span><span><span><span><span><span style=\"background-color:#ffffff\"><span><span><span><span><span><span>·</span></span></span><span><span>ha az ellenszolgáltatás aránytalanul alacsony.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\n\n<p>&nbsp;</p>\n"
+        }
+       ]
       },
       {
        "t": "p",
@@ -10774,7 +10933,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-2-video-1-200.h5p"
+       "file": "modul-2-video-1-200.h5p",
+       "title": "Modul-2_Video-1",
+       "youtubeId": "B_UBD_ZafeY"
       },
       {
        "t": "p",
@@ -10782,8 +10943,47 @@
       },
       {
        "t": "h5p",
-       "kind": "video",
-       "file": "modul-2-video-1-plus-200.h5p"
+       "kind": "quiz",
+       "file": "modul-2-video-1-plus-200.h5p",
+       "title": "Modul-2_Video-1_Plus",
+       "quiz": {
+        "passPct": 50,
+        "questions": [
+         {
+          "q": "Kulcsfontosságú, hogy az ajánlatkérő megfelelő gondossággal készítse elő a közbeszerzési eljárást, vagyis úgy határozza meg a feltételeket, hogy azok ténylegesen teljesíthetők legyenek. Mely okozhat problémát, a közbeszerzési szerződés teljesítése során?",
+          "options": [
+           {
+            "key": "a",
+            "label": "az ajánlatkérő utóbb rövidnek bizonyuló teljesítési határidőt szabott"
+           },
+           {
+            "key": "b",
+            "label": "tévesen mérte fel a teljesítendő mennyiségeket"
+           },
+           {
+            "key": "c",
+            "label": "olyan ajánlatot fogadott el érvényesnek, amely hibában szenvedett, és az a hiba nem került orvoslásra az eljárás során"
+           },
+           {
+            "key": "d",
+            "label": "ha az ajánlatkérő megfelelő mennyiségi teljesítési határidőt szabott"
+           },
+           {
+            "key": "e",
+            "label": "megfelelően határozta meg a teljesítendő mennyiségeket"
+           }
+          ],
+          "correct": [
+           "a",
+           "b",
+           "c"
+          ],
+          "multi": true,
+          "ok": "Helyes válasz!",
+          "no": "A helyes válaszok: az ajánlatkérő utóbb rövidnek bizonyuló teljesítési határidőt szabott · tévesen mérte fel a teljesítendő mennyiségeket · olyan ajánlatot fogadott el érvényesnek, amely hibában szenvedett, és az a hiba nem került orvoslásra az eljárás során"
+         }
+        ]
+       }
       }
      ],
      "videos": []
@@ -12316,7 +12516,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-2-video-2-200.h5p"
+       "file": "modul-2-video-2-200.h5p",
+       "title": "Modul-2_Video-2",
+       "youtubeId": "6VoSxPDq5V8"
       },
       {
        "t": "p",
@@ -13469,7 +13671,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-3-video-1-200.h5p"
+       "file": "modul-3-video-1-200.h5p",
+       "title": "Modul-3_Video-1",
+       "youtubeId": "2dVLrs6Y4X0"
       },
       {
        "t": "p",
@@ -13910,7 +14114,9 @@
       {
        "t": "h5p",
        "kind": "video",
-       "file": "modul-3-video-2-200.h5p"
+       "file": "modul-3-video-2-200.h5p",
+       "title": "Modul-3_Video-2",
+       "youtubeId": "whWCygKrtOY"
       },
       {
        "t": "p",
@@ -16640,8 +16846,23 @@
       },
       {
        "t": "h5p",
-       "kind": "interaktiv",
-       "file": "modul-2-interaktiv-2-200.h5p"
+       "kind": "accordion",
+       "file": "modul-2-interaktiv-2-200.h5p",
+       "title": "Modul-2_Interaktiv-2",
+       "panels": [
+        {
+         "title": "Hibás teljesítés elfogadása megfelelőként",
+         "html": "<p id=\"yui_3_18_1_1_1701645905031_199\">A minőséggel, az árral és a határidővel történő, a nyertes ajánlattevőként szerződő fél által elkövethető visszaélések említhetők ebben a körben, de az is előfordulhat, hogy e magatartások megvalósításában az ajánlatkérőként szerződő féllel együttműködik, például a kötbérfizetés elkerülése érdekében. A nyertes ajánlattevőként szerződő fél csalást követ el, ha szándékosan azt állítja, hogy megfelelt a teljesítés a követelményeknek, de a valóságban ez nem így van (mert például gyengébb minőségű építőanyagokat használt fel, vagy előírt útalapozást kihagyott). Az ajánlatkérőként szerződő fél felelőssége pedig a jogellenes szerződésmódosítások kapcsán hangsúlyos, ugyanis kerülni kell, hogy közreműködjön egy szerződésmódosítással a nyertes ajánlattevőként szerződő fél „megmentésében”, abban, hogy a szerződésszegés következményeit elkerülje.</p>\n\n<p>&nbsp;</p>\n"
+        },
+        {
+         "title": "Költségelszámolás",
+         "html": "<p>Ugyancsak felmerülhet a csalás gyanúja, ha szándékosan olyan <em>költségeket kívánnak elszámolni</em>, amelyek nem engedélyezettek vagy indokoltak, vagy amelyek nem rendelhetők sem közvetlen, sem közvetett módon a szerződéshez.</p>\n"
+        },
+        {
+         "title": "Áremelkedés",
+         "html": "<p>A nyertes ajánlattevőként szerződő fél a közbeszerzési eljárásban nem megfelelő módon tett ajánlatot (nem aktuális, teljes és pontos költségekkel számolt), és a teljesítés során arra törekszik, hogy <em>áremelkedést ismertessen el</em>. Az áremelkedés elfogadása a közbeszerzési eljárásban részt vett többi gazdasági szereplő szempontjából is kifogásolható, hiszen ők joggal kifogásolhatnák, hogy a nyertes ajánlattevő tisztességtelen módon jutott előnyhöz.</p>\n"
+        }
+       ]
       },
       {
        "t": "h5p",

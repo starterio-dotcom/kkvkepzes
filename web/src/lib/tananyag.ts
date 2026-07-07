@@ -24,7 +24,15 @@ export type Block =
   | { t: "think"; title: string; items: string[] }
   | { t: "img"; label?: string; srcs: string[] }
   | { t: "imgph"; label?: string }
-  | { t: "h5p"; kind: "video" | "kviz" | "interaktiv"; file: string }
+  | {
+      t: "h5p";
+      kind: "video" | "kviz" | "interaktiv" | "quiz" | "accordion";
+      file: string;
+      title?: string;
+      youtubeId?: string;                        // feloldott videó (YouTube)
+      panels?: { title: string; html: string }[]; // feloldott accordion
+      quiz?: LessonQuiz;                          // feloldott kvíz (pl. videó-utáni "plus")
+    }
   | { t: "video"; i: number }
   | { t: "table"; rows: string[][] }
   | { t: "callout"; html: string };
@@ -158,7 +166,7 @@ export function getOutline(variant: Variant): OutlineModule[] {
       id: l.id,
       title: l.title,
       kind: l.kind,
-      hasVideo: variant === "videos" && l.videos.length > 0,
+      hasVideo: variant === "videos" && (l.videos.length > 0 || l.blocks.some((b) => b.t === "h5p" && !!b.youtubeId)),
       videoLabel: variant === "videos" && l.videos.length ? l.videos[0].length : undefined,
       durationMin: durationMin(l, variant),
       quizCount: l.kind === "modulzaro" ? l.quiz?.sampleSize ?? l.quiz?.questions.length : undefined,

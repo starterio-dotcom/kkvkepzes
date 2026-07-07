@@ -6,6 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 import type { Block, LessonQuiz, OutlineModule, QuizQ, TLesson, Variant, VideoPlan } from "@/lib/tananyag";
 import { useStoredSet } from "@/lib/useStoredSet";
+import YouTubeEmbed from "./YouTubeEmbed";
 
 export type PlayerLesson = TLesson & { moduleKey: string; moduleTitle: string };
 export type NavMeta = { id: string; title: string } | null;
@@ -291,8 +292,30 @@ function BlockView({ b, lesson, variant }: { b: Block; lesson: PlayerLesson; var
           ? <InlineQuiz quiz={lesson.quiz} />
           : <div className="lchip"><i className="ri-questionnaire-line" /> Interaktív kvíz — átemelés alatt a Moodle-ból.</div>;
       }
+      if (b.kind === "quiz" && b.quiz) {
+        return <InlineQuiz quiz={b.quiz} />;
+      }
+      if (b.kind === "accordion" && b.panels) {
+        return (
+          <div className="laccordion">
+            {b.panels.map((p, i) => (
+              <details key={i}>
+                <summary><i className="ri-arrow-right-s-line" /> {p.title}</summary>
+                <div className="laccordion-body" dangerouslySetInnerHTML={{ __html: p.html }} />
+              </details>
+            ))}
+          </div>
+        );
+      }
       if (b.kind === "video") {
         if (variant !== "videos") return null;
+        if (b.youtubeId) {
+          return (
+            <div className="lvideo">
+              <YouTubeEmbed id={b.youtubeId} title="Videó a leckéhez" />
+            </div>
+          );
+        }
         return <div className="lchip lchip-video"><i className="ri-film-line" /> Meglévő interaktív videó — átemelés alatt <code>({b.file})</code></div>;
       }
       return <div className="lchip"><i className="ri-drag-drop-line" /> Interaktív gyakorlat (H5P) — a Moodle-változatban érhető el.</div>;

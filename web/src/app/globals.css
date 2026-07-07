@@ -1095,3 +1095,16 @@ button.btn{font-family:var(--font-primary);}
 /* Aloldalak tartalomsávja: a terv szerinti halvány (nem fehér) alap,
    a fehér a kártyáké */
 .sec-tint{background:var(--neutral-surface);}
+
+/* Beágyazott lecke-videó (YouTube facade) és H5P-accordion */
+.lvideo{margin:var(--space-300) 0;}
+.laccordion{display:flex;flex-direction:column;gap:var(--space-200);}
+.laccordion details{border:1px solid var(--neutral-border);border-radius:var(--radius-md);overflow:hidden;background:var(--neutral-canvas);}
+.laccordion summary{display:flex;align-items:center;gap:8px;padding:var(--space-400) var(--space-500);cursor:pointer;list-style:none;font-weight:700;font-size:var(--text-sm);}
+.laccordion summary::-webkit-details-marker{display:none;}
+.laccordion summary i{color:var(--brand);transition:transform .15s;flex:none;}
+.laccordion details[open] summary i{transform:rotate(90deg);}
+.laccordion summary:hover{background:var(--neutral-bg-weak,#f7f8fa);}
+.laccordion-body{padding:0 var(--space-500) var(--space-500);font-size:var(--text-sm);line-height:1.65;}
+.laccordion-body p{margin:0 0 var(--space-300);}
+.laccordion-body ul,.laccordion-body ol{margin:0 0 var(--space-300);padding-left:1.4em;}

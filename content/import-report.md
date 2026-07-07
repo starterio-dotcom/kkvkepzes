@@ -1,6 +1,6 @@
 # Tananyag-import riport
 
-Generálva: 2026-07-06T21:45:07+00:00
+Generálva: 2026-07-07T05:48:00+00:00
 
 ## Modulzáró kérdésbankok
 - **m0**: 7 kérdés (dokumentumból)
@@ -52,3 +52,8 @@ Generálva: 2026-07-06T21:45:07+00:00
 - **[mz5]** SZERKESZTŐI JEGYZET: A korábbi IV. modulzáró ismétlőblokk tartalma emelendő ide. Letölthető segédlet a modul végére: Jogorvoslati döntési fa. A kurzus zárása: Kilépési kérdőív (EU-s projektkövetelmény), záró oklevél.
 - **[int]** SZERKESZTŐI JEGYZET: A korábbi II.8 és III.11 lecke nagyon hasonló tartalmának összevonása. Az alábbiakban mindkét forrásszöveg szerepel – a szerkesztő feladata az átfedések kigyomlálása és egyetlen leckévé fésülése. Döntési pont: elhelyezés önálló szakaszként az 5. modul előtt VAGY a 2. modul zárásaként.
 - **[fog]** SZERKESZTŐI JEGYZET: A korábbi II–IV. modul fogalomtárai egyetlen kurzusszintű Moodle Glossary-vá vonandók össze, bekapcsolt automatikus szólinkeléssel. A szócikkek a Moodle-mentésben (glossary XML) találhatók; ez a mesterpéldány csak a helyüket jelöli.
+
+## Egyéb megjegyzések
+- H5P-média: 13 elem beágyazva (videó/kvíz/accordion)
+- H5P nem található a médiában (placeholder marad): kb: modul-0-video-1-200.h5p
+- H5P nem található a médiában (placeholder marad): 4.8: modul-2-video-2-plus-200.h5p

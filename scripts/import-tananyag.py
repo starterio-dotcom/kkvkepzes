@@ -37,6 +37,7 @@ SEGEDLETEK = [
 ]
 PAGES = ROOT / "web" / "src" / "data" / "course-pages.json"
 QUIZZES = ROOT / "web" / "src" / "data" / "quizzes.json"
+H5P_MEDIA = ROOT / "web" / "src" / "data" / "h5p-media.json"
 MBZ = ROOT / "backups" / "course-3.mbz"
 OUT_TANANYAG = ROOT / "web" / "src" / "data" / "tananyag.json"
 OUT_SEGEDLET = ROOT / "web" / "src" / "data" / "segedletek.json"
@@ -523,6 +524,50 @@ def attach_quizzes(modules, report):
             report["banks"].append((mod["key"], len(bank), "dokumentumból" if parsed else "régi H5P-bankból"))
 
 
+# ------------------------------------------------------------- H5P-média
+
+def resolve_h5p(modules, report):
+    """A videó-/interaktív H5P-dobozok feloldása a kinyert médiával.
+
+    A mesterpéldány dobozai a tényleges Moodle-fájlneveket hordozzák, ezért
+    név szerint egyeztetünk (h5p-media.json). Ha ugyanaz a videó kétszer
+    szerepel egy leckében (a régi lecke duplán ágyazta be), a második kiesik.
+    """
+    if not H5P_MEDIA.exists():
+        report["notes"].append("h5p-media.json hiányzik — H5P-elemek placeholderként maradnak "
+                               "(futtasd: python scripts/export-h5p-media.py)")
+        return
+    media = json.loads(H5P_MEDIA.read_text(encoding="utf-8"))["items"]
+    resolved, unmatched = 0, []
+    for mod in modules:
+        for lesson in mod["lessons"]:
+            seen_files = set()
+            for b in lesson["blocks"]:
+                if b.get("t") != "h5p" or b.get("kind") not in ("video", "interaktiv"):
+                    continue
+                it = media.get(b.get("file"))
+                if not it:
+                    unmatched.append(f"{lesson['id']}: {b.get('file')}")
+                    continue
+                if b["file"] in seen_files and it["kind"] == "video":
+                    b["drop"] = True
+                    continue
+                seen_files.add(b["file"])
+                b["kind"] = it["kind"]
+                b["title"] = it["title"]
+                if it["kind"] == "video":
+                    b["youtubeId"] = it["youtubeId"]
+                elif it["kind"] == "accordion":
+                    b["panels"] = it["panels"]
+                elif it["kind"] == "quiz":
+                    b["quiz"] = it["quiz"]
+                resolved += 1
+            lesson["blocks"] = [b for b in lesson["blocks"] if not b.get("drop")]
+    report["notes"].append(f"H5P-média: {resolved} elem beágyazva (videó/kvíz/accordion)")
+    for u in unmatched:
+        report["notes"].append(f"H5P nem található a médiában (placeholder marad): {u}")
+
+
 # ---------------------------------------------------------------- fogalomtár
 
 def extract_glossary(report):
@@ -613,6 +658,7 @@ def main():
     modules = parse_master(MASTER, report)
     map_images(modules, report)
     attach_quizzes(modules, report)
+    resolve_h5p(modules, report)
     glossary = extract_glossary(report)
 
     # takarítás: belső mezők eldobása (a "h" blokknál a text a tartalom — marad!)
