@@ -1093,3 +1093,6 @@ button.btn{font-family:var(--font-primary);}
   .ovr-aside{position:static;order:-1;}
   .ovr-learn ul{grid-template-columns:1fr;}
 }
+
+/* Kurzus-adatlap hero: a terv szerinti tiszta színátmenet, háttérkép nélkül */
+.pagehead.grad{background-image:linear-gradient(135deg,var(--indigo-900),var(--indigo-1300));}
