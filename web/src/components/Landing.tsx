@@ -48,8 +48,7 @@ export default async function Landing() {
               saját tempóban, ingyen. A modulok végén letölthető oklevél jár.
             </p>
             <div className="hero2-cta">
-              <Link href={ctaHref} className="btn btn-light btn-lg">Kezdd el ingyen <i className="ri-arrow-right-line" /></Link>
-              <Link href="#kurzusok" className="btn btn-outline-light btn-lg"><i className="ri-book-open-line" /> Böngészd a kurzusokat</Link>
+              <Link href="#kurzusok" className="btn btn-light btn-lg"><i className="ri-book-open-line" /> Böngészd a kurzusokat</Link>
             </div>
             <div className="hero2-tags">
               <span><i className="ri-checkbox-circle-line" /> Ingyenes</span>
