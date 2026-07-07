@@ -1054,3 +1054,42 @@ button.btn{font-family:var(--font-primary);}
 .lgoals ul>li{position:relative;padding-left:1.7em;}
 .lgoals ul>li::before{content:"✓";position:absolute;left:0;top:0;font-weight:800;
   color:var(--semantic-green-500,#11ad5c);}
+
+/* ---- Kurzus-adatlap: fejléc-kiegészítők + kétoszlopos elrendezés ---- */
+.pagehead-back{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:var(--radius-full);
+  background:rgba(255,255,255,.14);color:#fff;font-size:var(--text-sm);font-weight:600;margin-bottom:var(--space-600);}
+.pagehead-back:hover{background:rgba(255,255,255,.24);}
+.pagehead-tags{display:flex;gap:var(--space-300);margin-bottom:var(--space-400);}
+.ptag{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:var(--radius-full);
+  background:#fff;color:var(--brand);font-size:var(--text-xs);font-weight:700;}
+.ptag.green{background:var(--semantic-green-100,#d9f4e4);color:var(--semantic-green-800,#005012);}
+.ovr-grid{display:grid;grid-template-columns:1fr 340px;gap:var(--space-800);align-items:start;}
+.ovr-main{min-width:0;}
+.ovr-learn{background:var(--neutral-canvas);border:1px solid var(--neutral-border);border-radius:var(--radius-lg);
+  padding:var(--space-600) var(--space-700);margin-bottom:var(--space-800);}
+.ovr-learn h2{margin-bottom:var(--space-500);}
+.ovr-learn ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;
+  gap:var(--space-400) var(--space-600);}
+.ovr-learn li{display:flex;gap:10px;font-size:var(--text-sm);line-height:1.5;}
+.ovr-learn li i{color:var(--semantic-green-500,#11ad5c);font-size:18px;flex:none;margin-top:1px;}
+.ovr-them-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-400);
+  margin-bottom:var(--space-500);}
+.ovr-aside{position:sticky;top:84px;}
+.ovr-card{background:var(--neutral-canvas);border:1px solid var(--neutral-border);border-radius:var(--radius-lg);
+  overflow:hidden;box-shadow:var(--elevation-100);}
+.ovr-card-cover{height:150px;background-color:var(--brand);
+  background-image:linear-gradient(135deg,rgba(100,122,255,.55),rgba(49,48,171,.85)),var(--cbcover,none);
+  background-size:cover;background-position:center;}
+.ovr-card-body{padding:var(--space-600);display:flex;flex-direction:column;gap:var(--space-500);}
+.ovr-price{display:flex;align-items:baseline;gap:var(--space-400);}
+.ovr-price b{font-size:var(--text-2xl);font-weight:800;}
+.ovr-price s{color:var(--neutral-fg-tertiary);font-size:var(--text-sm);}
+.ovr-feats{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--space-300);}
+.ovr-feats li{display:flex;align-items:center;gap:10px;font-size:var(--text-sm);}
+.ovr-feats li i{color:var(--brand);font-size:18px;flex:none;}
+.ovr-card-note{margin:0;text-align:center;font-size:var(--text-xs);color:var(--neutral-fg-tertiary);}
+@media(max-width:960px){
+  .ovr-grid{grid-template-columns:1fr;}
+  .ovr-aside{position:static;order:-1;}
+  .ovr-learn ul{grid-template-columns:1fr;}
+}
