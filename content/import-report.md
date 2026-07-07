@@ -1,6 +1,6 @@
 # Tananyag-import riport
 
-Generálva: 2026-07-07T05:48:00+00:00
+Generálva: 2026-07-07T21:23:12+00:00
 
 ## Modulzáró kérdésbankok
 - **m0**: 7 kérdés (dokumentumból)
@@ -10,7 +10,7 @@ Generálva: 2026-07-07T05:48:00+00:00
 - **m4**: 17 kérdés (régi H5P-bankból)
 - **m5**: 20 kérdés (régi H5P-bankból)
 
-## Fogalomtár: 0 szócikk
+## Fogalomtár: 36 szócikk
 
 ## Nem mappelt képhelyek (placeholder marad)
 - 1.2: Kapcsolódó képernyőkép
@@ -57,3 +57,4 @@ Generálva: 2026-07-07T05:48:00+00:00
 - H5P-média: 13 elem beágyazva (videó/kvíz/accordion)
 - H5P nem található a médiában (placeholder marad): kb: modul-0-video-1-200.h5p
 - H5P nem található a médiában (placeholder marad): 4.8: modul-2-video-2-plus-200.h5p
+- Fogalomtár: 36 szócikk a content/fogalomtar.json tervezetből (jogi lektorálás szükséges)

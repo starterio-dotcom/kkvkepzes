@@ -571,6 +571,16 @@ def resolve_h5p(modules, report):
 # ---------------------------------------------------------------- fogalomtár
 
 def extract_glossary(report):
+    # Elsődleges forrás: a szerkesztett tervezet (content/fogalomtar.json) — az
+    # eredeti Moodle-fogalomtár szócikkei egyik mentésben sem maradtak fenn.
+    curated = ROOT / "content" / "fogalomtar.json"
+    if curated.exists():
+        data = json.loads(curated.read_text(encoding="utf-8"))
+        entries = sorted(data["entries"], key=lambda x: x["concept"].lower())
+        report["glossary_count"] = len(entries)
+        report["notes"].append(f"Fogalomtár: {len(entries)} szócikk a content/fogalomtar.json tervezetből "
+                               "(jogi lektorálás szükséges)")
+        return entries
     entries = {}
     if not MBZ.exists():
         report["notes"].append("backups/course-3.mbz nem található — fogalomtár kihagyva")

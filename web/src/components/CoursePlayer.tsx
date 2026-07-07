@@ -238,7 +238,7 @@ function LessonBody({ lesson, variant, isDone, onDone }: {
         ))}
       </div>
 
-      {lesson.kind === "fogalomtar" && <GlossaryNote />}
+      {lesson.kind === "fogalomtar" && <Glossary entries={lesson.glossary ?? []} />}
     </>
   );
 }
@@ -422,16 +422,47 @@ function VideoPlanCard({ v }: { v: VideoPlan }) {
   );
 }
 
-/* ---- Fogalomtár-jegyzet (a szócikkek még nem érhetők el) ---- */
-function GlossaryNote() {
+/* ---- Egyesített fogalomtár: kereshető szócikklista ---- */
+function Glossary({ entries }: { entries: { concept: string; definition: string }[] }) {
+  const [q, setQ] = useState("");
+  if (!entries.length) {
+    return (
+      <div className="lcallout info">
+        <i className="ri-book-2-line" />
+        <span>A fogalomtár szócikkeinek átemelése folyamatban van.</span>
+      </div>
+    );
+  }
+  const norm = (s: string) => s.toLowerCase();
+  const hits = q.trim()
+    ? entries.filter((e) => norm(e.concept).includes(norm(q)) || norm(e.definition).includes(norm(q)))
+    : entries;
   return (
-    <div className="lcallout info">
-      <i className="ri-book-2-line" />
-      <span>
-        Az egyesített fogalomtár a korábbi modulok Moodle-fogalomtáraiból áll össze.
-        A szócikkek átemelése folyamatban van — addig a leckék szövegében szereplő
-        fogalmak magyarázatát az adott lecke tartalmazza.
-      </span>
+    <div className="lgloss">
+      <div className="lcallout">
+        <i className="ri-error-warning-line" />
+        <span>Munkapéldány a tananyag szövege alapján — közzététel előtt közbeszerzési szakjogász általi lektorálás szükséges.</span>
+      </div>
+      <div className="lgloss-search">
+        <i className="ri-search-line" />
+        <input
+          type="search"
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder="Keresés a fogalmak között…"
+          aria-label="Keresés a fogalomtárban"
+        />
+        <span className="meta">{hits.length} / {entries.length} szócikk</span>
+      </div>
+      <dl className="lgloss-list">
+        {hits.map((e) => (
+          <div className="lgloss-item" key={e.concept}>
+            <dt>{e.concept}</dt>
+            <dd>{e.definition}</dd>
+          </div>
+        ))}
+      </dl>
+      {!hits.length && <p className="meta">Nincs találat a keresésre.</p>}
     </div>
   );
 }

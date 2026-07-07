@@ -60,6 +60,7 @@ export type TLesson = {
   videos: VideoPlan[];
   quiz?: LessonQuiz;
   download?: string; // segédletnél: letölthető docx
+  glossary?: { concept: string; definition: string }[]; // fogalomtár-leckénél
 };
 export type TModule = {
   key: string;
@@ -80,6 +81,10 @@ const segRaw = segedletekData as unknown as RawSeg;
 /* ---- segédletek beszúrása a moduljuk végére, egyszeri összeállítás ---- */
 function buildModules(): TModule[] {
   const modules = raw.modules.map((m) => ({ ...m, lessons: [...m.lessons] }));
+  // a fogalomtár-lecke megkapja a szócikkeket
+  for (const m of modules)
+    for (const l of m.lessons)
+      if (l.kind === "fogalomtar") l.glossary = raw.glossary;
   for (const s of segRaw.items) {
     const mod = modules.find((m) => m.key === s.module);
     if (!mod) continue;

@@ -1119,3 +1119,16 @@ button.btn{font-family:var(--font-primary);}
   background:rgba(0,0,0,.55);padding:7px 18px;border-radius:var(--radius-lg);white-space:nowrap;}
 .vvideo-soon b{font-size:var(--text-sm);}
 .vvideo-soon span{font-size:var(--text-2xs);color:rgba(255,255,255,.8);}
+
+/* Fogalomtár: kereső + szócikklista */
+.lgloss{display:flex;flex-direction:column;gap:var(--space-500);}
+.lgloss-search{display:flex;align-items:center;gap:var(--space-300);padding:var(--space-300) var(--space-500);
+  background:var(--neutral-canvas);border:1px solid var(--neutral-border);border-radius:var(--radius-md);}
+.lgloss-search i{color:var(--neutral-fg-tertiary);font-size:18px;flex:none;}
+.lgloss-search input{flex:1;border:none;outline:none;background:none;font:inherit;color:var(--neutral-fg-primary);}
+.lgloss-search .meta{white-space:nowrap;}
+.lgloss-list{margin:0;display:flex;flex-direction:column;gap:var(--space-300);}
+.lgloss-item{background:var(--neutral-canvas);border:1px solid var(--neutral-border);border-radius:var(--radius-md);
+  padding:var(--space-400) var(--space-500);}
+.lgloss-item dt{font-weight:800;color:var(--brand-strong,var(--brand));margin-bottom:var(--space-150);}
+.lgloss-item dd{margin:0;font-size:var(--text-sm);line-height:1.6;color:var(--neutral-fg-secondary);}
