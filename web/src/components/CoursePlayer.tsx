@@ -385,29 +385,37 @@ function TableBlock({ rows }: { rows: string[][] }) {
   );
 }
 
-/* ---- Tervezett videó kártyája (amíg a gyártás tart) ---- */
+/* ---- Tervezett videó: a videós lejátszó kerete, "Hamarosan" jelzéssel ---- */
 function VideoPlanCard({ v }: { v: VideoPlan }) {
   if (!v) return null;
   return (
     <div className="vplan">
-      <div className="vplan-frame">
-        <div className="vplan-mock-bar"><i /><i /><i /><span>ekr.gov.hu</span></div>
-        <div className="vplan-mock-body">
-          <i className="ri-vidicon-line" />
-          <b>Hamarosan</b>
-          <span>A videó gyártás alatt áll</span>
+      <div className="vvideo">
+        <span className="vvideo-tag"><i className="ri-play-circle-fill" /> Videós lecke · {v.genre}</span>
+        <div className="vvideo-mock">
+          <div className="vvideo-mock-bar"><i /><i /><i /><span>ekr.gov.hu</span></div>
+          <div className="vvideo-mock-body"><span className="w1" /><span /><span /><span className="half" /><span className="half" /></div>
+        </div>
+        <div className="vvideo-play soon" aria-hidden="true"><i className="ri-play-fill" /></div>
+        <div className="vvideo-soon"><b>Hamarosan</b><span>A videó gyártás alatt áll</span></div>
+        <div className="vvideo-title">{v.title}</div>
+        <div className="vvideo-ctrl">
+          <i className="ri-play-line" />
+          <i className="ri-volume-up-line" />
+          <span className="vvideo-time">0:00 / {v.length}</span>
+          <div className="vvideo-track"><span style={{ width: "0%" }} /></div>
+          <span className="vvideo-chip">1.0×</span>
+          <i className="ri-closed-captioning-line" />
+          <i className="ri-fullscreen-line" />
         </div>
       </div>
       <div className="vplan-info">
-        <div className="vplan-head">
-          <b><i className="ri-play-circle-fill" /> {v.title}</b>
-          {v.priority && <span className="vplan-prio">{v.priority}. prioritás{v.optional ? " · opcionális" : ""}</span>}
-        </div>
         <p>{v.desc}</p>
         <div className="vplan-meta">
           <span><i className="ri-movie-2-line" /> {v.genre}</span>
           <span><i className="ri-time-line" /> {v.length}</span>
           <span><i className="ri-closed-captioning-line" /> felirattal készül</span>
+          {v.priority && <span className="vplan-prio">{v.priority}. prioritás{v.optional ? " · opcionális" : ""}</span>}
         </div>
       </div>
     </div>
