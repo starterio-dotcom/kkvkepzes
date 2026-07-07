@@ -22,7 +22,7 @@ export default async function Page({ params }: { params: Promise<{ lessonId: str
         prev={prev ? { id: prev.id, title: prev.title } : null}
         next={next ? { id: next.id, title: next.title } : null}
         courseTitle={courseName("hagyomanyos")}
-        courseLabel="Hagyományos tanfolyam"
+        courseLabel="Szakmai tananyag"
         totalLessons={totalLessons}
       />
     </>

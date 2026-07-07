@@ -94,7 +94,7 @@ export default async function Landing() {
           </div>
           <div className="course-grid three">
             <div className="ccard">
-              <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Hagyományos tanfolyam</span><i className="ri-book-open-line" /></div>
+              <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Szakmai tananyag</span><i className="ri-book-open-line" /></div>
               <div className="ccard-body">
                 <h3 className="h4">Közbeszerzési szakmai tananyag</h3>
                 <p className="body">A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.</p>

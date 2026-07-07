@@ -12,12 +12,12 @@ import { getSession } from "@/lib/auth";
 
 const COPY: Record<Variant, { label: string; lead: string; icon: string }> = {
   hagyomanyos: {
-    label: "Hagyományos tanfolyam",
+    label: "Szakmai tananyag",
     lead: "Olvasmányos leckék, képernyőképek, esettanulmány-fonál és modulzáró kvízek — a teljes tananyag szövegesen, saját tempóban.",
     icon: "ri-book-open-line",
   },
   videos: {
-    label: "Videókkal bővített tanfolyam",
+    label: "Szakmai tananyag",
     lead: "Ugyanaz a teljes tananyag, kiegészítve képernyős videó-végigvezetésekkel a legfontosabb EKR-műveletekhez. A videós leckékben a szöveges tartalom is elérhető.",
     icon: "ri-play-circle-line",
   },
