@@ -38,7 +38,7 @@ export default async function Page() {
         </div>
       </section>
 
-      <section className="sec">
+      <section className="sec sec-tint">
         <div className="container">
           <div className="contact-cols">
             {/* Űrlap */}

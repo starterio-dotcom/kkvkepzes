@@ -37,7 +37,7 @@ export default async function Page() {
         </div>
       </section>
 
-      <section className="sec">
+      <section className="sec sec-tint">
         <div className="container">
           <article className="news-featured">
             <div className="news-featured-media">

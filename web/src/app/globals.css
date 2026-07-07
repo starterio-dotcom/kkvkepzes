@@ -1092,3 +1092,7 @@ button.btn{font-family:var(--font-primary);}
   .ovr-aside{position:static;order:-1;}
   .ovr-learn ul{grid-template-columns:1fr;}
 }
+
+/* Aloldalak tartalomsávja: a terv szerinti halvány (nem fehér) alap,
+   a fehér a kártyáké */
+.sec-tint{background:var(--neutral-surface);}

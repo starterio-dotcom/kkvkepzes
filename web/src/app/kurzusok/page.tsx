@@ -31,7 +31,7 @@ export default async function Page() {
         </div>
       </section>
 
-      <section className="sec">
+      <section className="sec sec-tint">
         <div className="container">
           <div className="course-grid three">
             <div className="ccard">

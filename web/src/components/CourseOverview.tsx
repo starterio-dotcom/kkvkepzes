@@ -80,7 +80,7 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
           </div>
         </section>
 
-        <section className="sec">
+        <section className="sec sec-tint">
           <div className="container ovr-grid">
             <div className="ovr-main">
               <div className="ovr-learn">
