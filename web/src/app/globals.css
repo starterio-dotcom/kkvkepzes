@@ -1027,7 +1027,10 @@ button.btn{font-family:var(--font-primary);}
 .ltable.check tr.done td:nth-child(2){text-decoration:line-through;text-decoration-color:var(--neutral-fg-tertiary);}
 .ltable.check tr.lth td{font-weight:700;background:var(--neutral-bg-weak,#f7f8fa);}
 
-/* Nyitott sidebar-kategória: sötétebb (indigó árnyalatú) háttér */
-.vsec.open{background:var(--indigo-50,#eef1fd);border-color:var(--indigo-200,#c7cdfb);}
-.vsec.open .vsec-head:hover{background:rgba(255,255,255,.55);}
+/* Nyitott sidebar-kategória: csak a kategória-fejléc kap indigó hátteret,
+   a leckelista világosabb marad */
+.vsec.open{border-color:var(--indigo-200,#c7cdfb);}
+.vsec.open .vsec-head{background:var(--indigo-50,#eef1fd);}
+.vsec.open .vsec-head:hover{background:var(--indigo-100,#e2e7fb);}
 .vsec.open .vsec-bar{background:rgba(255,255,255,.9);}
+.vsec.open .vsec-lessons{background:var(--neutral-canvas,#fff);}
