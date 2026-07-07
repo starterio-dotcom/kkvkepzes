@@ -1034,3 +1034,7 @@ button.btn{font-family:var(--font-primary);}
 .vsec.open .vsec-head:hover{background:var(--indigo-100,#e2e7fb);}
 .vsec.open .vsec-bar{background:rgba(255,255,255,.9);}
 .vsec.open .vsec-lessons{background:var(--neutral-canvas,#fff);}
+
+/* Szolid sidebar-görgetősáv: vékony, halvány, csak hoverre erősödik */
+.vside-scroll{scrollbar-width:thin;scrollbar-color:var(--cold-grey-300,#d3d7e3) transparent;}
+.vside-scroll:hover{scrollbar-color:var(--cold-grey-500,#aab1c2) transparent;}
