@@ -30,7 +30,7 @@ export default async function Page() {
       <Header user={user} />
       <main id="main">
 
-      <section className="pagehead" style={{ ["--cover" as string]: "url(/covers/novekedes.webp)" } as React.CSSProperties}>
+      <section className="pagehead">
         <div className="container">
           <div className="eyebrow light">Hírek</div>
           <h1 className="h1 white">Program hírek és tájékoztatók</h1>

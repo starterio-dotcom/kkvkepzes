@@ -28,7 +28,7 @@ export default async function Page() {
       <Header user={user} />
       <main id="main">
 
-      <section className="pagehead" style={{ ["--cover" as string]: "url(/covers/tech.webp)" } as React.CSSProperties}>
+      <section className="pagehead">
         <div className="container">
           <div className="eyebrow light">Elérhetőségek</div>
           <h1 className="h1 white">Hogyan tudunk segíteni?</h1>

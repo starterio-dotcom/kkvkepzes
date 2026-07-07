@@ -62,7 +62,7 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
     <>
       <Header user={user} />
       <main id="main">
-        <section className="pagehead grad">
+        <section className="pagehead">
           <div className="container">
             <Link href="/kurzusok" className="pagehead-back"><i className="ri-arrow-left-line" /> Vissza a kurzusokhoz</Link>
             <div className="pagehead-tags">
