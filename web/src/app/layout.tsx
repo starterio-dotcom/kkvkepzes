@@ -46,7 +46,7 @@ export default function RootLayout({
         <a href="#main" className="skip-link">Ugrás a tartalomra</a>
         {process.env.DEMO_LOREM === "1" && (
           <div className="demo-strip" role="note">
-            <i className="ri-flask-line" /> DEMÓ — a szövegek helyén lorem ipsum áll, a tartalom nem végleges
+            <i className="ri-flask-line" /> DEMÓ — a szövegek helyén vakszöveg áll, a tartalom nem végleges
           </div>
         )}
         {children}

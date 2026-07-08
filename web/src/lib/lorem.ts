@@ -1,59 +1,99 @@
-// Demó-mód (DEMO_LOREM=1): determinisztikus, hossz-tartó lorem ipsum transzformáció.
-// A szó-alakot (hossz, kezdőbetű-nagyság, írásjelek) megőrzi, így a tipográfia és a
-// tördelés a valódi tartalommal azonos képet ad — a szöveg maga viszont semleges.
-// Tiszta számok (évszám, ár) változatlanok maradnak; a HTML-címkék érintetlenek.
+// Demó-mód (DEMO_LOREM=1): determinisztikus magyar VAKSZÖVEG-transzformáció.
+// A szöveg helyére semleges, önmagát helykitöltőként azonosító magyar mondatok
+// kerülnek, az eredetihez közeli hosszban — így a tipográfia és a tördelés a
+// valódi tartalommal azonos képet ad, de egyértelmű, hogy a szöveg nem végleges.
 
 export const DEMO_LOREM = process.env.DEMO_LOREM === "1";
 
-const WORDS = (
-  "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor " +
-  "incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud " +
-  "exercitation ullamco laboris nisi aliquip ex ea commodo consequat duis aute irure " +
-  "in reprehenderit voluptate velit esse cillum eu fugiat nulla pariatur excepteur " +
-  "sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim " +
-  "id est laborum perspiciatis unde omnis iste natus error voluptatem accusantium"
-).split(" ");
+// Mondatkészlet hosszú szövegekhez (bekezdések, leírások)
+const SENTENCES = [
+  "Ez a bekezdés helykitöltő vakszöveg, a végleges tananyag szakmai és jogi lektorálás után kerül a helyére.",
+  "A vakszöveg célja, hogy a tipográfia, a sortávolságok és a tördelés a valódi tartalommal azonos képet adjon.",
+  "A mintaszöveg nem hordoz tartalmi jelentést, kizárólag a szövegkép megítélését szolgálja.",
+  "A bekezdések hossza és ritmusa a készülő tananyagot követi, így az oldal képe életszerű marad.",
+  "A kiemelések, felsorolások és hivatkozások helye a végleges változatban is itt lesz.",
+  "Az itt olvasható sorok a felület véleményezéséhez készültek.",
+  "A szakaszok tagolása a szerkesztői mesterpéldány szerkezetét tükrözi.",
+  "A végleges szövegezés a lektorálás lezárultáig még változhat.",
+  "Minden fejezethez ábrák, gyakorlati példák és önellenőrző kérdések tartoznak majd.",
+  "A helykitöltő mondatok ismétlődhetnek, ez a próbanézet természetes velejárója.",
+  "A képernyőképek és videók helyét semleges minták jelölik.",
+  "A gombok, menük és visszajelzések működése a végleges felülettel megegyezik.",
+];
 
-// szavak hossz szerint csoportosítva, a hossz-tartó cseréhez
-const BY_LEN = new Map<number, string[]>();
-for (const w of WORDS) {
-  const arr = BY_LEN.get(w.length) ?? [];
-  arr.push(w);
-  BY_LEN.set(w.length, arr);
+// Rövid készlet címekhez, feliratokhoz, válaszlehetőségekhez
+const PHRASES = [
+  "Helykitöltő cím",
+  "Mintaszakasz",
+  "Vakszöveg-fejezet",
+  "Próbanézeti alcím",
+  "Helykitöltő szövegrész",
+  "Minta megnevezés",
+  "Vakszöveges mintaelem",
+  "Minta válaszlehetőség",
+  "Helykitöltő felirat",
+  "Mintaszöveg",
+  "Helykitöltő fejezetcím a próbanézethez",
+  "Mintaszakasz a felület véleményezéséhez",
+  "Vakszöveges cím a tördelés bemutatásához",
+  "Helykitöltő megnevezés a szövegkép teszteléséhez",
+];
+
+function seedOf(s: string): number {
+  let h = s.length;
+  for (let i = 0; i < Math.min(s.length, 32); i++) h = (h * 31 + s.charCodeAt(i)) % 100003;
+  return h;
 }
 
-function pick(len: number, seed: number): string {
-  for (let l = len; l >= 2; l--) {
-    const arr = BY_LEN.get(l);
-    if (arr) return arr[seed % arr.length];
+/** A célhosszhoz illő elem a készletből — a tűrésen belüliek közül a seed választ,
+    hogy az azonos hosszúságú szövegek ne mindig ugyanazt a mintát kapják. */
+function bestFit(pool: string[], target: number, seed: number): string {
+  const tolerance = Math.max(10, target * 0.4);
+  const close = pool.filter((p) => Math.abs(p.length - target) <= tolerance);
+  if (close.length) return close[seed % close.length];
+  let best = pool[0];
+  let bestDiff = Math.abs(best.length - target);
+  for (const cand of pool) {
+    const diff = Math.abs(cand.length - target);
+    if (diff < bestDiff) { best = cand; bestDiff = diff; }
   }
-  return "lorem";
+  return best;
 }
 
-/** Egy szöveg (HTML nélkül) loremizálása. Determinisztikus, SSR-biztos. */
+/** Egy szöveg (HTML nélkül) vakszövegesítése az eredetihez közeli hosszban. */
 export function loremText(s: string): string {
-  let seed = 0;
-  return s.replace(/[A-Za-zÁÉÍÓÖŐÚÜŰáéíóöőúüű0-9]+/g, (w) => {
-    if (/^\d+$/.test(w)) return w; // tiszta szám marad
-    seed += w.length;
-    let out = pick(Math.min(w.length, 14), seed);
-    while (out.length < w.length) {
-      seed++;
-      out += " " + pick(Math.min(w.length - out.length - 1, 14), seed);
-      if (out.length >= w.length) break;
-    }
-    if (/^[A-ZÁÉÍÓÖŐÚÜŰ]/.test(w)) out = out.charAt(0).toUpperCase() + out.slice(1);
+  const target = s.trim().length;
+  if (target === 0) return s;
+  let seed = seedOf(s);
+
+  // rövid szöveg (cím, felirat, opció): egyetlen illő kifejezés
+  if (target < 75) {
+    let out = bestFit(PHRASES, target, seed);
+    if (/^[a-záéíóöőúüű]/.test(s.trim())) out = out.charAt(0).toLowerCase() + out.slice(1);
     return out;
-  });
+  }
+
+  // hosszú szöveg: mondatokból építkezünk a célhosszig
+  const parts: string[] = [];
+  let len = 0;
+  while (len < target - 20) {
+    const next = bestFit(SENTENCES, Math.min(target - len, 110), seed);
+    parts.push(next);
+    len += next.length + 1;
+    seed = (seed * 7 + 13) % 100003;
+  }
+  if (parts.length === 0) parts.push(SENTENCES[seed % SENTENCES.length]);
+  return parts.join(" ");
 }
 
-/** HTML-tartalom loremizálása: csak a címkéken kívüli szövegrészek cserélődnek. */
+/** HTML-tartalom vakszövegesítése: csak a címkéken kívüli szövegrészek cserélődnek. */
 export function loremHtml(html: string): string {
-  return html.replace(/>([^<]+)</g, (_, txt) => ">" + loremText(txt) + "<")
-    .replace(/^([^<]+)/, (m) => loremText(m));
+  return html.replace(/>([^<]+)</g, (_, txt: string) =>
+    ">" + (txt.trim() ? loremText(txt) : txt) + "<"
+  ).replace(/^([^<]+)/, (m) => (m.trim() ? loremText(m) : m));
 }
 
-/** Demó-módban loremizált, egyébként változatlan szöveg (UI-szövegekhez). */
+/** Demó-módban vakszövegesített, egyébként változatlan szöveg (UI-szövegekhez). */
 export function demoText(s: string): string {
   return DEMO_LOREM ? loremText(s) : s;
 }
