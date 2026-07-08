@@ -281,8 +281,8 @@ function BlockView({ b, lesson, variant }: { b: Block; lesson: PlayerLesson; var
       );
     case "img":
       return (
-        <details className="limg">
-          <summary><i className="ri-image-line" /> {b.label || "Kapcsolódó képernyőkép"} <em>— kattints a megtekintéshez</em></summary>
+        <details className="limg" open>
+          <summary><i className="ri-image-line" /> {b.label || "Kapcsolódó képernyőkép"} <em>— kattintva elrejthető</em></summary>
           <div className="limg-body">
             {b.srcs.map((s, i) => (
               // eslint-disable-next-line @next/next/no-img-element
