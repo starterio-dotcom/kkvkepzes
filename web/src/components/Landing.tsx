@@ -5,6 +5,7 @@ import FeaturedCard from "./FeaturedCard";
 import YouTubeEmbed from "./YouTubeEmbed";
 import NewsletterForm from "./NewsletterForm";
 import { allVideoPlans, firstLessonId, totalLessons, totalModules } from "@/lib/tananyag";
+import { demoText as dt } from "@/lib/lorem";
 import { getSession } from "@/lib/auth";
 
 const FEATURES = [
@@ -42,10 +43,9 @@ export default async function Landing() {
         <div className="container-wide hero2-grid">
           <div className="hero2-copy">
             <div className="hero2-eyebrow"><i className="ri-shield-check-line" /> Ingyenes online képzés · KKV-knak</div>
-            <h1 className="hero2-title">Közbeszerzés,<br />érthetően.</h1>
+            <h1 className="hero2-title">{dt("Közbeszerzés,")}<br />{dt("érthetően.")}</h1>
             <p className="hero2-lead">
-              Ismerd meg a közbeszerzési eljárások törvényes keretét és az EKR használatát —
-              saját tempóban, ingyen. A modulok végén letölthető oklevél jár.
+              {dt("Ismerd meg a közbeszerzési eljárások törvényes keretét és az EKR használatát — saját tempóban, ingyen. A modulok végén letölthető oklevél jár.")}
             </p>
             <div className="hero2-cta">
               <Link href="#kurzusok" className="btn btn-light btn-lg"><i className="ri-book-open-line" /> Böngészd a kurzusokat</Link>
@@ -58,7 +58,18 @@ export default async function Landing() {
           </div>
 
           {/* Kiemelt kurzus – animált haladás-demó (a terv szerint) */}
-          <FeaturedCard href={ctaHref} />
+          <FeaturedCard
+            href={ctaHref}
+            title={dt("Közbeszerzési szakmai tananyag")}
+            modules={[
+              "A közbeszerzés mint üzleti lehetőség",
+              "Belépés és eljárások keresése",
+              "Az ajánlattétel",
+              "A bírálati szakasz",
+              "A szerződés teljesítése",
+              "Vitarendezés és jogorvoslat",
+            ].map(dt)}
+          />
         </div>
       </section>
 
@@ -70,11 +81,11 @@ export default async function Landing() {
             <h2 className="h2">Képzés, ami a vállalkozásod<br />sikeréért van</h2>
           </div>
           <div className="feature-grid">
-            {FEATURES.map((f) => (
-              <div className="feature-card" key={f.title}>
+            {FEATURES.map((f, fi) => (
+              <div className="feature-card" key={fi}>
                 <div className={`feature-ico ${f.cls}`}><i className={f.icon} /></div>
-                <h3 className="h5">{f.title}</h3>
-                <p className="meta">{f.text}</p>
+                <h3 className="h5">{dt(f.title)}</h3>
+                <p className="meta">{dt(f.text)}</p>
               </div>
             ))}
           </div>
@@ -95,8 +106,8 @@ export default async function Landing() {
             <div className="ccard">
               <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Szakmai tananyag</span><i className="ri-book-open-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Közbeszerzési szakmai tananyag</h3>
-                <p className="body">A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.</p>
+                <h3 className="h4">{dt("Közbeszerzési szakmai tananyag")}</h3>
+                <p className="body">{dt("A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.")}</p>
                 <div className="ccard-meta">
                   <span><i className="ri-stack-line" /> {totalModules} modul</span>
                   <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
@@ -108,8 +119,8 @@ export default async function Landing() {
             <div className="ccard">
               <div className="ccard-banner teal" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Videókkal bővítve</span><i className="ri-play-circle-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Közbeszerzési szakmai tananyag (videókkal bővítve)</h3>
-                <p className="body">Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.</p>
+                <h3 className="h4">{dt("Közbeszerzési szakmai tananyag (videókkal bővítve)")}</h3>
+                <p className="body">{dt("Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.")}</p>
                 <div className="ccard-meta">
                   <span><i className="ri-film-line" /> {videoCount} videó</span>
                   <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
@@ -121,8 +132,8 @@ export default async function Landing() {
             <div className="ccard">
               <div className="ccard-banner green" style={{ ["--cbcover" as string]: "url(/covers/podium.webp)" } as React.CSSProperties}><span className="ccard-tag">Élő képzés</span><i className="ri-team-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Ingyenes Közbeszerzési Képzések</h3>
-                <p className="body">Online és személyes formában megrendezett, jelentkezéshez kötött ingyenes képzések gyakorló szakemberek vezetésével.</p>
+                <h3 className="h4">{dt("Ingyenes Közbeszerzési Képzések")}</h3>
+                <p className="body">{dt("Online és személyes formában megrendezett, jelentkezéshez kötött ingyenes képzések gyakorló szakemberek vezetésével.")}</p>
                 <div className="ccard-meta">
                   <span><i className="ri-calendar-event-line" /> 2 alkalom</span>
                   <span><i className="ri-global-line" /> Online + személyes</span>
@@ -188,11 +199,11 @@ export default async function Landing() {
             <Link href="/hirek" className="sec-link">Összes hír <i className="ri-arrow-right-line" /></Link>
           </div>
           <div className="news-grid">
-            {NEWS.map((n) => (
-              <article className={`news-card ${n.cls}`} key={n.title}>
+            {NEWS.map((n, ni) => (
+              <article className={`news-card ${n.cls}`} key={ni}>
                 <div className="news-meta"><span className="news-tag">{n.tag}</span><span className="meta">{n.date}</span></div>
-                <h3 className="h5">{n.title}</h3>
-                <p className="meta">{n.text}</p>
+                <h3 className="h5">{dt(n.title)}</h3>
+                <p className="meta">{dt(n.text)}</p>
                 <Link href="/hirek" className="news-link">Tovább <i className="ri-arrow-right-line" /></Link>
               </article>
             ))}

@@ -1,6 +1,6 @@
 # Tananyag-import riport
 
-Generálva: 2026-07-07T21:23:12+00:00
+Generálva: 2026-07-08T09:15:04+00:00
 
 ## Modulzáró kérdésbankok
 - **m0**: 7 kérdés (dokumentumból)

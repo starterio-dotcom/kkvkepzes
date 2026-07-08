@@ -3,6 +3,7 @@
 // a kliens csak az aktív leckét és a könnyű vázlatot kapja propként.
 import tananyagData from "@/data/tananyag.json";
 import segedletekData from "@/data/segedletek.json";
+import { DEMO_LOREM, loremHtml, loremText } from "@/lib/lorem";
 
 /* ---- kvíz (formátum azonos a korábbi H5P-exporttal) ---- */
 export type QuizQ = {
@@ -21,6 +22,8 @@ export type Block =
   | { t: "h"; level: number; text: string }
   | { t: "list"; ordered: boolean; items: string[] }
   | { t: "transition"; html: string }
+  | { t: "note"; kind: "warn" | "info"; html: string }
+  | { t: "foot"; html: string }
   | { t: "think"; title: string; items: string[] }
   | { t: "img"; label?: string; srcs: string[] }
   | { t: "imgph"; label?: string }
@@ -78,14 +81,86 @@ type RawSeg = { items: { id: string; module: string; title: string; download: st
 const raw = tananyagData as unknown as Raw;
 const segRaw = segedletekData as unknown as RawSeg;
 
+/* ---- Demó-mód (DEMO_LOREM=1): a tartalom lorem ipsumra cserélve ----
+   A szerkezet (modulok, blokkok, hosszak) megmarad; a valódi tartalom a
+   forrás-JSON-okban érintetlen — a transzformáció csak betöltéskor fut. */
+function loremBlock(b: Block): Block {
+  const x = { ...b } as Block & Record<string, unknown>;
+  if ("html" in x && typeof x.html === "string") x.html = loremHtml(x.html);
+  if ("text" in x && typeof x.text === "string") x.text = loremText(x.text as string);
+  if ("label" in x && typeof x.label === "string") x.label = loremText(x.label as string);
+  if ("title" in x && typeof x.title === "string") x.title = loremText(x.title as string);
+  if ("items" in x && Array.isArray(x.items)) x.items = (x.items as string[]).map(loremHtml);
+  if ("rows" in x && Array.isArray(x.rows)) x.rows = (x.rows as string[][]).map((r) => r.map(loremHtml));
+  if ("panels" in x && Array.isArray(x.panels))
+    x.panels = (x.panels as { title: string; html: string }[]).map((p) => ({ title: loremText(p.title), html: loremHtml(p.html) }));
+  if ("quiz" in x && x.quiz) x.quiz = loremQuiz(x.quiz as LessonQuiz);
+  if (x.t === "img") {
+    // képernyőképek helyett semleges placeholder
+    (x as { srcs: string[] }).srcs = ["/demo/placeholder.svg"];
+  }
+  if (x.t === "h5p" && "youtubeId" in x) {
+    // meglévő videók helyett "Hamarosan" keret jelenik meg
+    delete (x as Record<string, unknown>).youtubeId;
+  }
+  return x as Block;
+}
+
+function loremQuiz(q: LessonQuiz): LessonQuiz {
+  return {
+    ...q,
+    questions: q.questions.map((question) => ({
+      ...question,
+      q: loremText(question.q),
+      options: question.options.map((o) => ({ ...o, label: loremText(o.label) })),
+      ok: loremText(question.ok),
+      no: loremText(question.no),
+    })),
+  };
+}
+
+function loremize(data: Raw): Raw {
+  return {
+    ...data,
+    title: loremText(data.title),
+    modules: data.modules.map((m) => ({
+      ...m,
+      title: loremText(m.title),
+      intro: loremText(m.intro),
+      lessons: m.lessons.map((l) => ({
+        ...l,
+        title: loremText(l.title),
+        objectives: l.objectives.map(loremHtml),
+        blocks: l.blocks.map(loremBlock),
+        videos: l.videos.map((v) => ({ ...v, title: loremText(v.title), desc: loremText(v.desc) })),
+        quiz: l.quiz ? loremQuiz(l.quiz) : undefined,
+      })),
+    })),
+    glossary: data.glossary.map((g) => ({ concept: loremText(g.concept), definition: loremText(g.definition) })),
+  };
+}
+
+function loremizeSeg(data: RawSeg): RawSeg {
+  return {
+    items: data.items.map((s) => ({
+      ...s,
+      title: loremText(s.title),
+      blocks: s.blocks.map(loremBlock),
+    })),
+  };
+}
+
+const src = DEMO_LOREM ? loremize(raw) : raw;
+const segSrc = DEMO_LOREM ? loremizeSeg(segRaw) : segRaw;
+
 /* ---- segédletek beszúrása a moduljuk végére, egyszeri összeállítás ---- */
 function buildModules(): TModule[] {
-  const modules = raw.modules.map((m) => ({ ...m, lessons: [...m.lessons] }));
+  const modules = src.modules.map((m) => ({ ...m, lessons: [...m.lessons] }));
   // a fogalomtár-lecke megkapja a szócikkeket
   for (const m of modules)
     for (const l of m.lessons)
-      if (l.kind === "fogalomtar") l.glossary = raw.glossary;
-  for (const s of segRaw.items) {
+      if (l.kind === "fogalomtar") l.glossary = src.glossary;
+  for (const s of segSrc.items) {
     const mod = modules.find((m) => m.key === s.module);
     if (!mod) continue;
     mod.lessons.push({
@@ -104,12 +179,12 @@ function buildModules(): TModule[] {
 }
 const MODULES = buildModules();
 
-export const courseTitle = raw.title;
-export const glossary = raw.glossary;
+export const courseTitle = src.title;
+export const glossary = src.glossary;
 
 /** A tanfolyam megjelenített neve variánsonként. */
 export function courseName(variant: Variant): string {
-  return variant === "videos" ? `${raw.title} (videókkal bővítve)` : raw.title;
+  return variant === "videos" ? `${src.title} (videókkal bővítve)` : src.title;
 }
 
 /* ---- vázlat (könnyű, kliensnek adható) ---- */

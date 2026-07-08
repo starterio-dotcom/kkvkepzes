@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-07T21:23:12+00:00",
+ "generatedAt": "2026-07-08T09:15:04+00:00",
  "source": "kozbeszerzesi_tananyag_mesterpeldany_videokkal.docx",
  "title": "Közbeszerzési szakmai tananyag",
  "modules": [
@@ -87,11 +87,11 @@
        "html": "Rendelkezésre állnak azonban különböző útmutatók, tájékoztatók, amelyeket a Közbeszerzési Hatóság (elérhetők a www.kozbeszerzes.hu oldalon) és más szervezetek tesznek közzé különböző témákban, és amelyek segítséget nyújthatnak eligazodni a sokrétű szabályozásban. A közbeszerzési eljárásokban való részvételhez szakmai segítség, támogatás is igénybe vehető a gazdasági szereplők részéről, így például ügyvédek, közbeszerzési tanácsadók vonhatók be.[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] <a href=\"https://dontobizottsag.kozbeszerzes.hu/\" target=\"_blank\" rel=\"noopener\">https://dontobizottsag.kozbeszerzes.hu/</a>"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A felelős akkreditált közbeszerzési szaktanácsadók névjegyzéke itt érhető el: https:// kozbeszerzes.hu/adatbazisok/faksz/"
       },
       {
@@ -107,11 +107,11 @@
        "html": "A verseny helyzetét a gazdasági helyzet is alapvetően befolyásolja, vagyis gazdasági válság, recesszió esetén például mérsékeltebbek a magán üzleti lehetőségek, és felértékelődnek a közbeszerzések, megnő az eljárások iránti érdeklődés. Ami pedig hatással lehet az árképzésre is, különösen akkor, ha egyes gazdasági szereplők számára a profit másodlagossá válik, mert a puszta túlélés, a piacon maradás, adott esetben a fizetésképtelenség elkerülése a cél."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. az egyajánlatos közbeszerzések számának csökkentését szolgáló intézkedésekről szóló 63/2022. (II. 28.) Korm. rendeletet."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 75. § (2) bekezdés e) pontját."
       },
       {
@@ -133,14 +133,6 @@
       {
        "t": "p",
        "html": "3. a tárgyat és"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
       },
       {
        "t": "p",
@@ -167,7 +159,7 @@
        "html": "4. Végül megadott értékű beszerzések megvalósítására vonatkozik a közbeszerzési kötelezettség. Nyilván célszerűtlen, indokolatlan lenne a Kbt. hatálya alá vonni a csekélyebb értékű beszerzéseket, hiszen a közbeszerzési eljárások költségesek és időigényesek. Ebből adódóan meg kell határozni azokat az értékhatárokat, amelyeket elérő (meghaladó) becsült értékű beszerzések esetében már fennáll a közbeszerzési jogszabályok alkalmazásának kötelezettsége. Ezeket az értékhatárokat a jogalkotó időről időre felülvizsgálja, de évente nem szokták őket emelni. Ezen túlmenően az EU is megállapítja az uniós értékhatárokat, amelyek magasabbak, mint a nemzeti értékhatárok, és euróban rögzítik őket, de külön közleményben közzéteszik az átváltási értékeket az eurót nem használó tagállamok nemzeti valutáihoz kapcsolódóan. (Ennek megfelelően nem az ajánlatkérők végzik el az átváltást, hanem az adott időszaka közzétett közleményben megadott átváltási értékeket alkalmazzák.) Fontos az is, hogy az értékhatárokat a közbeszerzési jogban mindig általános forgalmi adó (hozzáadottértékadó) nélkül kell érteni. Mivel az uniós értékhatárok magasabbak, mint a nemzeti értékhatárok, ezért a közbeszerzési kötelezettség fennállásának szempontjából az utóbbiaknak van jelentőségük. Ha az uniós értékhatárt is eléri a beszerzés becsült értéke, akkor uniós eljárásrendben kell az eljárást lefolytatni."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] „Közbeszerzésnek minősül a közbeszerzési szerződés, valamint az építési vagy szolgáltatási koncesszió e törvény szerinti megkötése. A közbeszerzési szerződés tárgya árubeszerzés, építési beruházás vagy szolgáltatás megrendelése lehet.” [Kbt. 8. § (1)"
       },
       {
@@ -195,7 +187,7 @@
        "html": "A becsült érték meghatározása, felmérése az ajánlatkérő feladata, a Kbt. különböző lehetséges módszereket említ ebben a körben. Így például korábbi szerződések elemzése, igazságügyi szakértői vélemény, szakmai kamarák, testületek által karbantartott adatbázisok vagy indikatív árajánlatok. Ez utóbbiak kapcsán a későbbi ajánlattevőknek is lehet jelentőségük a közbeszerzési eljárás előkészítése során, például úgy, hogy indikatív árajánlatot adnak az ajánlatkérő számára. Az ajánlatkérők általában több szakcéget keresnek meg egymástól függetlenül, hogy az adott beszerzési mennyiségre és tárgyra adjanak írásbeli ajánlatot. Az indikatív árajánlatkérés tehát egy szerződéskötési igény nélküli előzetes felmérés a becsült érték meghatározása céljából. Az ajánlatkérő általában a kapott árajánlatok számtani átlagát veszik alapul, de nincs arra vonatkozó tilalom, hogy például a legmagasabb összegű indikatív ajánlati árral megegyező mértékben határozza meg a becsült értéket. Tehát előfordulhat, hogy a gazdasági szereplő indikatív ajánlatot ad, majd később a közbeszerzési eljárásban ajánlatot is tesz. Ajánlati kötöttség hiányában értelemszerűen nincs kötve az ajánlattevő a korábbi indikatív ajánlatához (vagyis attól eltérhet).[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Figyelembe kell venni azonban a Kbt. 25. § (9) bekezdés a)-c) pontjaiban foglalt esetekben azt a követelményt, nem közölhetnek vele a közbeszerzési eljárás során az összes ajánlattevő részére rendelkezésre bocsátott adatok körét meghaladó információt, valamint az ajánlattételi határidő meghatározása biztosítja az egyenlő bánásmód elvének érvényesülését. Ellenkező esetben felmerülhet a verseny tisztaságának sérelme, illetve az összeférhetetlenség."
       },
       {
@@ -216,18 +208,6 @@
       },
       {
        "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
        "html": "mennyire jelentene számukra kihívást az ajánlattétel és nyertesség esetén a szerződés teljesítése, kikkel kell versenyezni az adott területen, van-e egyáltalán reális esélyük a szerződéskötés jogának elnyerésére."
       },
       {
@@ -240,18 +220,6 @@
        "file": "modul-1-video-1-300.h5p",
        "title": "Modul-1_Video-1",
        "youtubeId": "eJhouoxdUWw"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
       },
       {
        "t": "video",
@@ -316,7 +284,7 @@
        "html": "Egyszakaszos eljárás például a nyílt eljárás és a hirdetmény nélküli tárgyalásos eljárás, mivel nem válik el egymástól a részvételi szakasz és az ajánlattételi szakasz. A kétszakaszos eljárásokban (meghívásos vagy a tárgyalásos eljárás) a két szakasz elkülönül, az első, részvételi szakaszban nem tehető ajánlat, csak részvételi jelentkezés, és e szakasz célja az alkalmas részvételre jelentkezők kiválasztása, akik majd megkapják az ajánlattételi felhívást, és akiknek ezáltal ajánlattevőként lehetőségük nyílik ajánlatot tenni a második szakaszban. Egyik eljárásfajtáról nem lehet áttérni a másikra egy adott eljárás során. A nyílt és a meghívásos eljárásban nem lehet tárgyalni, az ajánlati kötöttség az ajánlattételi határidő lejártakor beáll, így az ajánlatkérőnek a feltételeket előre pontosan meg kell határoznia. Az ajánlattételi határidő lejártakor beáll az ajánlatkérői, illetve ajánlattevői ajánlati kötöttség, ami azt jelenti, hogy az ajánlatkérő nem módosíthatja a feltételeit, az ajánlattevő pedig az ajánlatában meghatározott vállalásokat nem változtathatja meg. A nyílt eljárástól eltérően tárgyalásos eljárásban az ajánlati kötöttség csak a tárgyalások lezárásával áll be, hiszen ott a felek a későbbiekben tárgyalnak a feltételekről, az első, ajánlati kötöttséggel nem terhelt ajánlatok alapján."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A „jelző” nélküli tárgyalásos eljárás a hirdetménnyel induló tárgyalásos eljárás."
       },
       {
@@ -353,15 +321,15 @@
        "file": "modul-1-kviz-1-64.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Kbt. 117. §"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Kbt. 115. §"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ez azt jelenti a gyakorlatban, hogy először általában kedvezőtlenebb vállalásokat (például lényegesen magasabb árat) adnak meg az ajánlattevők, és csak a végleges felhívás alapján teszik meg azokat a vállalásokat, amelyeket a részükről ténylegesen versenyképesnek tartanak."
       }
      ],
@@ -479,15 +447,15 @@
        "html": "a) A közös ajánlattevői konstrukciót szokás konzorciumnak is nevezni. A konzorcium nem önálló jogalany, eseti együttműködés, amelynek kereteit megállapodásban szokás rögzíteni, képviselőt kell jelölniük, továbbá a szerződés teljesítéséért egyetemlegesen felelnek.[1] Az ajánlatkérő által az eljárást megindító felhívásban előírt alkalmassági követelményeknek együttesen is megfelelhetnek. b) A második említendő alanyi kör az ajánlattevői oldalon az alvállalkozó. Olyan gazdasági szereplőről van szó, aki (amely) a szerződés teljesítésében az ajánlattevő által bevontan közvetlenül vesz részt. A jogszabály erejénél fogva azonban bizonyos gazdasági szereplők nem minősülnek alvállalkozónak (például a gyártó, forgalmazó vagy építési beruházás esetén az építőanyag-eladó), vagyis kivételnek számítanak. Az alvállalkozó igénybevétele csak kivételes esetben, a Kbt. alapján korlátozható ajánlatkérői előírás alapján.[2] Az ajánlattevők tehát alapvetően szabadon dönthetnek arról, hogy vonnak-e be alvállalkozó(ka)t, vagy pedig saját maguk teljesítik a szerződést. Az ajánlattételkor ismert alvállalkozókat, illetve az általuk teljesítendő részeket és az alvállalkozói teljesítés tervezett százalékos arányát az ajánlatban meg kell jelölni, ha az ajánlatkérő azt előírja. Továbbá be kell jelenteni legkésőbb a teljesítésbe való bevonásuk előtt előzetesen az új alvállalkozókat, és nyilatkozni kell arról a szerződésben, hogy nem állnak az eljárásban előírt kizáró okok hatálya alatt. Nemcsak adminisztratív, hanem pénzügyi oldala is van az alvállalkozók megfelelő kezelésének, ugyanis építési beruházások esetében, a lánc- és körbetartozások elkerülése érdekében különleges védelmet nyújtó szabályok vonatkoznak az alvállalkozókat megillető ellenérték kifizetésére.[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.459/27/2012. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. az Európai Unió Bíróságának C-406/14. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a 322/2015. (X. 30.) Korm. rendelet 32/A. §-át."
       },
       {
@@ -518,7 +486,7 @@
        "youtubeId": "WRH4lqVUEeg"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Fővárosi Törvényszék 104.K.706.110/2020/19. számú ítéletét."
       }
      ],
@@ -638,7 +606,8 @@
        "html": "- Előzetes vitarendezés megválaszolása eljárási cselekmény"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy minden eljárási cselekmény csak abban az esetben tekinthető megküldöttnek/ befejezettnek, ha az eljárási cselekmény státusza befejezett státuszba kerül. (Ennek pontos megnevezése változó lehet az egyes eljárási cselekményekben.) A benyújtás, megküldés időpontjának is az az időpont számít, amikor az adott eljárási cselekmény befejezett státuszba kerül. Erről nem feltétlenül küld automatikus e-mail értesítőt a rendszer, ezért javasolt az eljárás/ajánlat aktuális állapotát folyamatosan figyelemmel kísérni az EKR-ben. Regisztráció nélkül elérhető felület"
       },
       {
@@ -1116,7 +1085,8 @@
        "html": "Függetlenül attól, hogy a későbbiekben milyen tevékenységet szeretnénk végezni az EKR-ben, a kibővített funkciók használatához, szervezethez történő csatlakozáshoz ez a lépés megkerülhetetlen. Nem szükséges, és nem is tanácsos több felhasználói fiókot létrehozni különböző célokra, helyette egy felhasználói fiók használata javasolt a szervezeten belüli és azon kívüli célokra, valamint FAKSZ-ként (=Felelős akkreditált közbeszerzési szaktanácsadó) vagy ÁKSZ-ként (=Állami közbeszerzési szaktanácsadó) való működésre is."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos tisztában lenni azzal, hogy a szervezetek nem külön felhasználóként működnek a rendszerben, hanem elektronikus csoportként, melyekhez a személyes fiókunkkal van lehetőség csatlakozni, majd a személyes fiókunkkal tudunk az adott szervezet nevében különböző tevékenységeket végezni attól függően, hogy milyen jogosultságokkal rendelkezünk."
       },
       {
@@ -1167,7 +1137,8 @@
        "html": "Dr. Opcionális Doktori cím esetén bepipálható."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "<strong>Figyelem! Ez a mező nem a doktori cím</strong>"
       },
       {
@@ -1192,22 +1163,6 @@
       },
       {
        "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
        "html": "<strong>Mező neve Kötelező/</strong>"
       },
       {
@@ -1219,7 +1174,8 @@
        "html": "<strong>Leírása/Művelet</strong>"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "<strong>Figyelem! Amennyiben az Ön doktori címe a</strong>"
       },
       {
@@ -1267,7 +1223,8 @@
        "html": "1967.05.14)"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "<strong>Figyelem! Elválasztó karakterként csak pont</strong>"
       },
       {
@@ -1335,7 +1292,8 @@
        "html": "Miután beírtuk a képen látható szöveget, a Kód küldése gombra kell kattintani, hogy a telefonszám megerősítéséhez szükséges sms-kód kiküldésre kerüljön."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy mindaddig, amíg a CAPTCHA kód nem kerül beírásra, addig a Kód küldése gomb inaktív marad. Kiemelendő továbbá, hogy egy telefonszámmal csak egyszer lehet regisztrálni az EKR-be. Ez azt jelenti, hogy amennyiben olyan telefonszám kerül megadásra, amellyel korábban már regisztráltak az EKR-ben, úgy a Kód küldése gombra kattintva figyelmeztető üzenet jelenik meg az oldal jobb felső sarkában az alábbi szöveggel: „A"
       },
       {
@@ -1459,7 +1417,8 @@
        "html": "Miután beírtuk a képen látható szöveget, a Kód küldése gombra kell kattintani, hogy a telefonszám megerősítéséhez szükséges sms-kód kiküldésre kerüljön."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy mindaddig, amíg a CAPTCHA kód nem kerül beírásra, addig a Kód küldése gomb inaktív marad. Kiemelendő továbbá, hogy egy telefonszámmal csak egyszer lehet regisztrálni az EKR-be. Ez azt jelenti, hogy amennyiben olyan telefonszám kerül megadásra, amellyel korábban már regisztráltak az EKR-ben, úgy a Kód küldése gombra kattintva figyelmeztető üzenet jelenik meg az oldal jobb felső sarkában az alábbi szöveggel: „A megadott telefonszám már foglalt!”"
       },
       {
@@ -1973,18 +1932,6 @@
       },
       {
        "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
-      },
-      {
-       "t": "p",
        "html": "<strong>Egyéb érdekelt szervezet</strong>"
       },
       {
@@ -2012,7 +1959,8 @@
        "html": "Cég székhelye Kötelező A szervezet székhelye."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "<strong>Figyelem! A székhelyhez tartozó azonosítót kötelező</strong>"
       },
       {
@@ -2046,10 +1994,6 @@
       {
        "t": "p",
        "html": "Adószám Kötelező/ Opcionális A szervezet magyar adószáma. Magyar székhelyű szervezetek esetén kötelező."
-      },
-      {
-       "t": "p",
-       "html": "<strong>•</strong>"
       },
       {
        "t": "p",
@@ -2352,7 +2296,8 @@
        "html": "megadását követően válik szerkeszthetővé."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "<strong>Figyelem! A házszám és Közterület neve vagy a</strong>"
       },
       {
@@ -2376,7 +2321,8 @@
        "html": "megadását követően válik szerkeszthetővé."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "<strong>Figyelem! A házszám és a Közterület neve vagy a</strong>"
       },
       {
@@ -2999,7 +2945,8 @@
        "html": "Szervezet szintű szerepkör választása esetén a felhasználó összes szervezet szintű jogosultságát ki fogja listázni a rendszer, minden olyan szervezetre vonatkozóan, amelyben szuper user jogosultsággal rendelkezünk. A jogosultságok elvételéhez itt is kattintsunk a megfelelő sorok Műveletek oszlopában található piros mínuszra, majd a lap alján a Mentés gombra, végül pedig a felugró megerősítő ablakban a Mehet gombra."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos megjegyezni, hogy felhasználót (személyes fiók) törölni nem lehet, csak jogosultságokat tudunk elvenni tőle."
       },
       {
@@ -3423,7 +3370,8 @@
        "html": "A Nyitó képernyő bal felső sarkában a szerver idő kerül megjelenítésre."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy a rendszer ez alapján működik, ehhez mérten nézi a különböző határidőket, eljárási cselekmények indításának- és lezárásának az idejét."
       },
       {
@@ -3606,7 +3554,8 @@
        "html": "A mentett találatok a Mentett eljárások menüpont alatt érhetők el."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az eljárások kedvencként történő megjelölésével, azaz mentett eljárások közé helyezésével automatikusan bekapcsol a hirdetmény értesítő funkció is! Ez azt jelenti, hogy az így megjelölt eljárásokban megjelenő hirdetményekről a rendszer automatikus e-mail értesítőt küld a felhasználónak. Az értesítőnek nincs érvényességi ideje, a rendszer egészen addig küldi a hirdetmény értesítőt az adott eljárás vonatkozásában, amíg az a mentett eljárások között szerepel."
       },
       {
@@ -4310,7 +4259,8 @@
        "html": "Bal oldalon gyorskereső funkciók kerültek beépítésre, itt a Keresés szűkítése elnevezés alatt a következő szempontok alapján szűkíthető a találati lista a részletes kereső felület használata nélkül: Szerződés típusa, CPV kód, Teljesítés helye NUTS, Eljárásrend és típus, Közzététel dátuma, Legközelebbi határidő, Eljárás aktuális szakasza, KKV-k számára alkalmas."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy a Kkv-k számára alkalmas szűrési lehetőséget használva a rendszer csak az uniós eljárásokban futtatja le a keresést, nemzeti eljárások és előzetes piaci konzultációk nem fognak megjelenni a találatok között!"
       },
       {
@@ -4348,7 +4298,8 @@
        "html": "Az értesítéseket az EKR este küldi meg, érvényességi ideje 2 hónap, melyről a rendszer a lejárat előtt 5 és 1 nappal értesítést küld a felhasználónak. Az e-mailben kapott linken keresztül újabb 2 hónappal meg lehet hosszabbítani az érvényességét, de az első értesítéstől kezdődően le is lehet arról iratkozni.Az Értesítés kérés gombra kattintva kiválasztható, hogy miről küldjön értesítést a rendszer: - Az Új eljárás kiválasztásakor a beállított keresési feltételeknek megfelelő új eljárásokról küld értesítést. - A Kapcsolódó hirdetmények kiválasztásával a beállított paramétereknek megfelelő eljárásokban, az értesítés beállítását követően megjelenő hirdetményekről küld értesítést."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az Értesítés kérés rögzítése csak abban az esetben történik meg, ha a felhasználó a Mentés gombra kattint és ezt követően a megadott e-mail címre kapott megerősítő linkre kattintva megerősíti az értesítés kérési szándékát."
       },
       {
@@ -4440,7 +4391,8 @@
        "html": "Az eljárás főbb adatait tartalmazza, úgy mint EKR azonosító, eljárásrend, eljárás típusa, eljárás szintű CPV-kód, szerződés típusa, eljárás aktuális szakasza, eljárás megindításának dátuma, legközelebbi határidő. DBR2 és KM2 eljárásoknál megjelenik még a Szülőeljárás azonosító is, ami a KM1-et és a DBR1-et jelöli. Az eljáráshoz kapcsolódó szerződések is itt érhetők el, az Eljáráshoz tartozó szerződések linkre kattintva."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy eljárás azonosítója nem egyenlő a szervezet azonosítóval, amit szintén EKR azonosítónak nevez a rendszer, de más a formátuma. Az eljárás azonosítója a következőképpen néz ki: elválasztások nélkül EKR + 8 darab számjegy + évszám, pl. EKR000123452023. A szervezet azonosító felépítése kismértékben eltér: EKRSZ_8db szám pl. EKRSZ_12345678"
       },
       {
@@ -4500,7 +4452,8 @@
        "html": "A dokumentumok azok nevére kattintva tölthetők le, több dokumentum esetén itt is lehetőség van több dokumentum egyidejűleg történő letöltésére."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az eljárás adatlapjának jobb felső sarkában található Érdeklődés jelzése funkció csak az EKR-ben regisztrált felhasználók számára érhető el bejelentkezést követően!"
       },
       {
@@ -4536,7 +4489,8 @@
        "html": "A CPV kód mezőben található + jelre kattintva egy külön ablakban megjelenik a CPV-kiválasztó, ahol kiválaszthatók a szükséges CPV kódok, de szabadszavas keresésre is lehetőség van."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy amennyiben a felhasználó olyan fő CPV kódot választ ki, amely alatt több (al) CPV kód is található, akkor a rendszer ezekben is automatikusan elvégzi a keresést."
       },
       {
@@ -4560,7 +4514,8 @@
        "html": "A Kkv-k számára alkalmaz mező kitöltése nem kötelező, használata esetén a felhasználónak egy legördülő listából szükséges kiválasztania a számára megfelelő opciót, amely lehet „-”, „igen” vagy „nem”. A „-” érték választásakor a rendszer nem szűri, hogy az eljárás kkv számára alkalmas-e."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy a keresőmező csak uniós eljárásrendben megindított eljárások esetén működik! Teljesítés helye"
       },
       {
@@ -4612,7 +4567,8 @@
        "html": "Ebben a blokkban a következőkre lehet szűrni: stratégiai közbeszerzés célja, zöld közbeszerzés célja, környezeti hatások csökkentését célzó módszer, közvetett szociális cél, innovációs közbeszerzés célja, akadálymentességi kritériumok, valamint tiszta járművekről szóló irányelv."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy a blokk összes mezője csak uniós eljárásrendben lefolytatott eljárások között végzi el a keresést!"
       },
       {
@@ -4640,7 +4596,8 @@
        "html": "<strong>Közbeszerzési hirdetmények</strong>"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az EKR-ben tájékoztató jelleggel jelennek meg a közbeszerzési hirdetmények, joghatállyal, eljárás rendtől függően a TED-en vagy a KÉ-ben megjelent verzió bír!"
       },
       {
@@ -5604,11 +5561,11 @@
        "html": "benne leképezni."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a 321/2015. (X. 30.) Korm. rendelet 46-48. §-ait."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a 322/2015. (X. 30.) Korm. rendelet 1. és 2. számú mellékletét."
       },
       {
@@ -5628,7 +5585,8 @@
        "html": "Nyílt eljárásban az ajánlatkérő állapítja meg egyoldalúan a feltételeket, követelményeket. Ha ezeket az ajánlattevők nem vitatják az ajánlattételi határidő lejártát megelőzően, akkor azokat teljesíteniük kell az érvényes ajánlattétel érdekében. Legfeljebb kiegészítő tájékoztatáskéréssel, előzetes vitarendezéssel, vagy legvégső esetben jogorvoslati kérelemmel képesek arra, hogy az ajánlatkérőt a feltételei újragondolására, módosítására késztessék. A tárgyalásos eljárásokban azonban lehetőséget kapnak arra, hogy közreműködjenek a végleges ajánlattételi feltételek kidolgozásában, javaslatokat tehetnek különböző tárgyalási témákra. Ezen kívül egy jogintézmény van, amely lehetőséget kínál - az eljárásfajtától függetlenül arra -, hogy a gazdasági szereplőket bevonják a követelményrendszer kidolgozásába: ez pedig nem más, mint az előzetes piaci konzultáció, amely még az eljárás megindítását megelőzően, az előkészítés körében alkalmazható. Az EKR alkalmas ennek lebonyolítására. Az ajánlatkérő közzéteszi a műszaki leírás, valamint a szerződés tervezetét, amelyeket a gazdasági szereplők véleményezhetnek, de úgyis lefolytatható, hogy az ajánlatkérő független szakértőkkel, hatóságokkal, illetve piaci résztvevőkkel előzetes konzultációkat folytat. Így a közbeszerzési dokumentumok hibái, különösen az esetleges versenykorlátozó előírások már az eljárás megindítását megelőzően kiszűrhetők, korrigálhatók. Bizonyos esetekben piaci konzultáció alkalmazása kötelező, különösen azokon a területeken, ahol szűkkörű ajánlattételre (egy ajánlatra) lehet számítani. Ebből adódóan az ajánlattevőknek célszerű figyelemmel kísérniük az előzetes piaci konzultációkra vonatkozóan közzétett lehetőségeket is, hiszen alkalmuk nyílthat bekapcsolódni a feltételek kialakításába, továbbá már a közbeszerzési eljárás tényleges megindítását megelőzően elkezdhetnek felkészülni az ajánlat összeállítására (pl. árazás megkezdése, szakmai ajánlat, mellékletek összegyűjtése, alvállalkozók megkeresése stb.)."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Lényeges annak a vizsgálata is, hogy van-e akadálya az eljárásba való bekapcsolódásnak, így különösen áll-e fenn kizáró ok a vállalkozással szemben vagy sem. A kizáró okok a Kbt.-ben meghatározott olyan megbízhatatlanságot jelentő körülmények, amelyek közül bármelyik fennállása kizárást, és főszabály szerint az ajánlat érvénytelenségét eredményezi. Ha a megjelölt alvállalkozó, illetve a kapacitást nyújtó szervezet esetében áll fenn kizáró ok, akkor a hiánypótlásra vonatkozó szabályok keretei között van lehetőség cserére.[1]"
       },
       {
@@ -5657,11 +5615,11 @@
        "html": "Továbbá kizáró ok az adott közbeszerzési eljárás során is felmerülhet az adott eljárással összefüggésben (például hamis adatszolgáltatás vagy az ajánlatkérő jogtalan befolyásolása). Ha a gazdasági szereplő valamely kizáró ok hatálya alatt áll, akkor lehetősége van arra, hogy öntisztázás keretében bizonyítsa megbízhatóságát. Az öntisztázásra vonatkozó eljárás lefolytatása a Közbeszerzési Hatóság hatáskörébe tartozik, és ha sikerül a megbízhatóságot az ajánlattételi határidő lejártáig bizonyítani, akkor a kizáró ok ellenére a kizárás nem alkalmazható vele szemben. Bizonyos kizáró okok fennállása esetében szükség van arra is a megbízhatóság vizsgálata körében, hogy az ajánlattevő részleteket közöljön a korábbi kizárás körülményeiről, valamint arra, hogy megadja a szerződés teljesítésére való képességével kapcsolatos információkat.[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 71. § (4) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a 321/2021. (X. 30.) Korm. rendelet 17. § (1a)-(1b) bekezdéseit."
       },
       {
@@ -5703,7 +5661,7 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a 321/2021. (X. 30.) Korm. rendelet 19-26. §-ait."
       },
       {
@@ -5751,7 +5709,7 @@
        "html": "számukra aránytalan nehézséget a szerződés teljesítésének (elő)finanszírozása."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 36. § (1) bekezdése értelmében „Az ajánlattevő vagy részvételre jelentkező ugyanabban a közbeszerzési eljárásban – részajánlat-tételi lehetőség biztosítása esetén ugyanazon rész tekintetében – a) nem tehet másik ajánlatot más ajánlattevővel közösen, illetve nem nyújthat be másik részvételi jelentkezést más részvételre jelentkezővel közösen, b) más ajánlattevő, illetve részvételre jelentkező alvállalkozójaként nem vehet részt, c) más ajánlattevő, illetve részvételre jelentkező szerződés teljesítésére való alkalmasságát nem igazolhatja [65. § (7) bekezdés].”"
       },
       {
@@ -5775,7 +5733,7 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. pl. a KDB D.362/8/2018. számú határozatát."
       },
       {
@@ -5803,7 +5761,7 @@
        "html": "Az említettek minimális törvényi határidők, minden esetben megfelelő időtartamnak kell rendelkezésre állnia, tehát ha például a közbeszerzés tárgya összetett (pl. tervezés és kivitelezés egyben), az értéke jelentősebb, terjedelmes mennyiségű iratot kell elkészíteni, az ajánlattétel előtt helyszíni bejárásra kerül sor, nem lehet teljes terjedelmében elektronikusan benyújtani az ajánlatot stb., akkor az ajánlatkérő a törvényi minimumokhoz képest hosszabb benyújtási határidőt köteles biztosítani. Ezen túlmenően szigorú határidők vonatkoznak a kiegészítő tájékoztatás kérésére (meddig lehet kérni) és az előzetes vitarendezési kérelem benyújtására is. A bírálat során pedig az ajánlatkérő által megszabott határidők az irányadók, például a hiánypótlás benyújtására tűzött határidő. Általánosságban elmondható, hogy legalább két teljes munkanapot célszerű biztosítani az ajánlatkérőnek legalább egy-egy eljárási cselekményhez kapcsolódóan a megküldés és a lejárat napját nem számítva. Ha az ajánlattevő úgy ítéli meg, hogy túl rövid határidőt tűzött az ajánlatkérő, akkor az vitatható, például akkor, ha számos olyan dokumentumot kell benyújtani hiánypótlás keretében, amit harmadik személyektől kell beszerezni (például referencia-igazolások, bankinformációk)."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ezen kívül arra is van lehetőség, hogy az ajánlatkérő behatárolja a minimum és maximum vállalási határokat. Az ajánlatkérő az ár esetében minimumértéket nem írhat elő, viszont – a túlárazás elkerülése érdekében – meghatározhat olyan értéket az eljárást megindító felhívásban, amelyet meghaladó értékű ajánlati árat tartalmazó ajánlatot érvénytelenné nyilvánít."
       },
       {
@@ -6009,7 +5967,8 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos felhívni a figyelmet arra, hogy a 424/2017 (XII.19.) Korm. rendelet 20. § (4)"
       },
       {
@@ -6152,7 +6111,7 @@
        "html": "A felhívás megjelenését, valamint a közbeszerzési eljárás feltételrendszerének megismerését követően az ajánlattevőnek el kell döntenie, hogy minden ajánlatkérői előírás egyértelmű-e, biztosított-e a megfelelő ajánlattétel lehetősége vagy sem. Ha ugyanis az ajánlatkérő előírásai kétértelműek, ellentmondásosak, eltérőképpen értelmezhetők, akkor nem valósul meg az egyenlő eséllyel történő ajánlattétel lehetősége, az ajánlatok összehasonlíthatósága, hiszen nem állapítható meg, hogy pontosan mire is tesznek a gazdasági szereplők ajánlatot, vállalásokat. Az ajánlattevőknek lehetőségük van kiegészítő tájékoztatás kérésére: írásban tehetők fel a kérdések az ajánlatkérőnek. A kiegészítő tájékoztatás folyamata kérdések ajánlattevői feltételéből és ajánlatkérői megválaszolásából áll, lényege a meglévő előírások egyértelműsítése, értelmezése, magyarázata. A gyakorlatban azonban figyelemfelhívó javaslatok, észrevételek megfogalmazására is használják ezt a jogintézményt. Az ajánlatkérőnek írásban kell választ adni, amely választ valamennyi ajánlattevőnek meg kell küldeni, nemcsak a kérdést feltevőnek. A Kbt. különböző határidőket állapít meg e folyamattal kapcsolatban, azokat feltétlenül érdemes szem előtt tartani, tekintettel arra is, hogy az ajánlattevők alapvető érdeke is az, hogy egy kommunikáció eredményeként egyértelmű, ellentmondásmentes ajánlattételi feltételrendszer jöjjön létre. Sajnos a gyakorlatban még a legkörültekintőbb ajánlatkérői előkészítés mellett is előfordulhatnak, maradhatnak hibás, hiányos, ellentmondásos elemek a közbeszerzési dokumentumokban. Jogsértést valósít meg az ajánlatkérő, ha a határidőben feltett, a kiegészítő tájékoztatásra vonatkozó szabályok körébe tartozó kérdésekre egyáltalán nem ad választ, vagy nem ad érdemi, tényleges értelmező választ. A Kbt. az eljárásrendekhez kapcsolódóan eltérő kérdezési és válaszadási határidőket rögzít.[1] Az ajánlattevők segíthetik a közbeszerzési eljárás gyorsabb és hatékonyabb megvalósítását, ha valóban érdemi kérdéseket tesznek fel, továbbá, ha a kérdéseiket átgondoltan, tudatosan és világosan szerkesztve, nem az utolsó napon teszik fel. A nyújtott kiegészítő tájékoztatás is a közbeszerzési dokumentumok közé tartozik, az abban meghatározottak is kötelező erővel bírnak, az azokban megfogalmazott követelmények is az érvényes ajánlattétel feltételei. (Ha a közbeszerzési dokumentumok módosításra, javításra szorulnak, akkor a következő bekezdésben tárgyalt szabályszerű módosítástól nem lehet eltekinteni, így például akkor, ha az ajánlatkérő egy építési beruházás esetén kiegészíti a tervdokumentációt hiányzó elemekkel, vagy javítja a rendelkezésre bocsátott árazatlan költségvetéseket.)"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 56. § (2) és (3) bekezdését, valamint a Kbt. 114. § (6) bekezdését."
       },
       {
@@ -6160,7 +6119,7 @@
        "html": "Az ajánlatkérő módosíthatja a közbeszerzési dokumentumokat, az eljárást megindító felhívást. Ha olyan előírást módosít, amelyet hirdetményben közzétett, illetve, ha meghosszabbítja az ajánlattételi határidőt, akkor a módosításról hirdetményt kell közzétenni. Módosítás esetén, főszabály szerint az ajánlattételi határidőt a módosításokkal arányban álló jelleggel meg kell hosszabbítani, a módosításról (a hirdetmény feladásáról) az ajánlattevőket értesíteni kell. Ha hirdetmény kerül feladásra, akkor a módosító hirdetmény megjelenéséig az eljárásban döntéseket hozni, intézkedéseket tenni, illetve iratokat beadni nem lehet, így az ajánlattevőknek is figyelemmel kell kísérniük a folyamatot. Fontos, hogy a Kbt. 55. § (6) bekezdésében[1] meghatározott jelentősebb módosításokat nem lehet végrehajtani. Vagyis, ha az ajánlatkérő olyan hibákkal szembesül, amelyek korrigálása már e törvényi határokat átlépné, akkor kénytelen a felhívást visszavonni, a feltételeket átdolgozni, és egy teljesen új eljárást indítani. E szabálynak az az oka, hogy ha az ajánlatkérő például enyhítene módosítás keretében a különböző követelményeken (például törölne alkalmassági követelményt, könnyítene a műszaki feltételeken), akkor azok az ajánlattevők, akik már lemondtak a részvétel lehetőségéről a korábban közzétett szigorúbb felhívás alapján, és emiatt nem olvassák el a módosításról szóló értesítést, illetve a módosító hirdetményt, akkor nem értesülnek arról, hogy esetleg az új feltételeknek már megfelelnének, mert a módosításokkal már nem foglalkoznak, nem értékelik újra a helyzetet, vagy ha mégis, akkor sem maradt már annyi idejük ajánlattételre, mint azoknak, akik folyamatosan követték az eljárás sorsát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] „A felhívás és az egyéb közbeszerzési dokumentumok módosítása nem eredményezheti a beszerzés tárgyára vagy a szerződés feltételeire vonatkozó feltételek olyan jelentőségű módosítását, ahol az új feltételek ismerete alapvetően befolyásolhatta volna az érdekelt gazdasági szereplők arra vonatkozó döntését, hogy a közbeszerzési eljárásban tudnak-e részvételre jelentkezni vagy ajánlatot tenni, vagy a változást figyelembe véve az ajánlatkérőnek az alkalmassági követelményeket úgy kellett volna meghatároznia, hogy az"
       },
       {
@@ -6457,7 +6416,8 @@
        "html": "Tartalmi az olyan követelmény, amelynek érdemi kihatása van (csatolták-e a nyilatkozatot vagy sem, tartalmazta-e az igazolás az összes előírt adatot vagy sem)."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az ajánlatkérő által előírt formai követelménynek való meg nem felelőség okán nem lehet egy ajánlatot érvénytelenné nyilvánítani, a tartalmi előírások teljesítése azonban kötelező. Az ajánlat összeállítása technikai szempontból két fő részből áll:"
       },
       {
@@ -6498,11 +6458,11 @@
        "html": "Az ajánlatokhoz kapcsolódóan általános nyilatkozatokat is meg kell tenni, például tartalmaz-e az ajánlat üzleti titkot, nyilatkozni kell a kapacitást nyújtó szervezetekről, ha az ajánlatkérő előírja, akkor az alvállalkozókról is, a feltételek megismeréséről és elfogadásáról, az ajánlattevő tényleges tulajdonosairól és más strukturális adatairól. Ezek megtétele jellemzően EKR-űrlapok alkalmazásával történik. Uniós eljárásrendben alkalmazandó a már említett ún. EEKD, amely lehetőséget nyújt a kizáró okok és az alkalmasság előzetes igazolására.[2] Ahogy említés történt arról, hogy további, papíralapú dokumentumokról készített elektronikus másolatok is csatolandók, így például árazott költségvetések vagy ártáblázatok, ajánlati biztosíték rendelkezésre bocsátását igazoló okirat, Elektronikus aláírás csak kivételesen követelhető meg az ajánlatkérő részéről (pl. ajánlati biztosítékot képező bankgarancia elektronikus okiratán), egyébként egyszerű, adott esetben aláírt iratról készített, szkennelt pdf-fájl (vagy éppen xls) is elfogadható, de a fájlformátumra vonatkozó ajánlatkérői előírásokat is figyelembe kell venni. Emellett „az ajánlatkérő a nem magyar nyelven benyújtott dokumentumok ajánlattevő általi fordítását is köteles elfogadni.”[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. pl. a Fővárosi Törvényszék 103.K.705.108/2020/10. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A kiindulópont a nyilatkozati elv, vagyis a kizáró okok és az alkalmassági követelmények körében előzetes igazolásként el kell fogadni az ajánlattevők részéről az"
       },
       {
@@ -6514,7 +6474,7 @@
        "html": "Könnyebbséget jelent az ajánlattevők számára, ha az EEKD-ban az ajánlatkérő nem kéri az alkalmasság körében a részletes adatok megadását (például nem kell felsorolni a referenciákat), és csak nyilatkozni kell általában az alkalmassági követelményeknek való megfelelőségről."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Kbt. 47. § (2) bekezdése."
       },
       {
@@ -6531,7 +6491,7 @@
        "file": "modul-1-kviz-4-8.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 44. §-át."
       }
      ],
@@ -6708,7 +6668,8 @@
        "html": "<strong>rögzítése</strong>"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az ajánlat/részvételi jelentkezés szerkesztéséhez először rögzíteni kell a Gazdasági szereplők adatait."
       },
       {
@@ -6815,7 +6776,8 @@
        "html": "<strong>További gazdasági szereplő típusú szervezet hozzáadása</strong>"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy az ajánlathoz hozzáadott gazdasági szereplők minősítése kellő körültekintéssel, pontosan kerüljön megadásra, ugyanis ezen adatok alapján fogja az EKR létrehozni az érvényes ajánlattételhez, illetve jelentkezéshez szükséges űrlapokat."
       },
       {
@@ -6823,7 +6785,8 @@
        "html": "Több gazdasági szereplő részvétele esetén rögzíteni kell valamennyi gazdasági szereplő adatait a Gazdasági szereplő hozzáadása funkciógomb segítségével. Itt ugyanazokat az adatokat kell megadni, mint amelyek a vezető Ajánlattevő esetében is megadásra kerültek, illetve fel kell tüntetni azt is, hogy az újonnan hozzáadott Gazdasági szereplő milyen minőségben vesz részt az ajánlatban. Itt három opció közül lehet választani: Ajánlattevő, olyan Alvállalkozó, aki nem kapacitásnyújtó szervezet, illetve Kapacitásnyújtó szervezet. Megjegyzendő viszont, hogy egy Gazdasági szereplőhöz csak egy minősítés rendelhető."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy amennyiben a manuális kitöltéskor olyan adószám kerül megadásra, amellyel már regisztráltak szervezetet az EKR-ben, az alábbi hibaüzenet fog megjelenni:"
       },
       {
@@ -6923,7 +6886,8 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos felhívni a figyelmet arra, hogy egy részvételre jelentkezés/ajánlat nem maradhat vezető ajánlattevő nélkül, tehát ha törölni akarjuk a vezető ajánlattevőként megjelölt"
       },
       {
@@ -6931,7 +6895,8 @@
        "html": "Gazdasági szereplőt, akkor első lépésben a fentebb ismertetett módon le kell cserélnünk a vezető ajánlattevőt, ezt követően tudjuk törölni a már nem vezető ajánlattevőként rögzített gazdasági szereplőt."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "info",
        "html": "Megjegyzendő továbbá, hogy csak a vezető ajánlattevőnek van jogosultsága az ajánlat/ jelentkezés szerkesztésére. Ez azt jelenti, hogy a korábban vezető ajánlattevő szervezet akkor is elveszíti valamennyi jogosultságát az üggyel kapcsolatban, ha nem került törlésre, továbbra is közös ajánlattevő marad, de helyette mást jelöltek ki vezető ajánlattevőnek. Az új vezető ajánlattevő szervezet tudja a továbbiakban szerkeszteni az ajánlatot/részvételre jelentkezést. Az új vezető ajánlattevő szervezet szuper usere tud jogosultságokat adni a szervezet felhasználói számára, illetve tud betekintési jogot adni a többi ajánlattevőnek. Ha elvégeztük a cserét, az oldal alján a Vissza a gazdasági szereplők módosításához funkciógombra kattintva automatikusan visszakerülünk az ATL005 – Gazdasági szereplők rögzítése lépésbe."
       },
       {
@@ -7149,7 +7114,8 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos megjegyezni, hogy amennyiben nem jelöljük be, hogy be kívánjuk nyújtani a nyilatkozatot, akkor az semmilyen formában, tehát üresen sem kerül benyújtásra, erre egyébként maga az EKR is figyelmeztet."
       },
       {
@@ -7757,7 +7723,8 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos felhívni rá a figyelmet, hogy egy eljárási cselekmény lezárását követően a már feltöltött dokumentumot nem tudjuk később az EKR-ből törölni."
       },
       {
@@ -7791,7 +7758,8 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos kiemelni, hogy az ajánlat visszanyitásával az egyben visszavonásra is kerül, így a zárolás feloldását követően azt ismételten be kell nyújtanunk! Arról, hogy sikeres volt-e a benyújtás, érdemes meggyőződni az ajánlat fejlécéből - sikeres benyújtás esetén az ajánlat az A50 – Benyújtott ajánlat szakaszba lép."
       },
       {
@@ -8197,7 +8165,8 @@
        "html": "Az EKR-ben lehetőség van nyilatkozat sablonok létrehozására, melyeket a későbbiek során az Ajánlat/ Részvételi jelentkezés összeállításakor tudunk felhasználni az EKR-es nyilatkozatok és az EEKD nyilatkozatok egyszerűbb és gyorsabb benyújtása érdekében. Különösen hasznos több részes eljárásokban, ahol egy adott nyilatkozatot minden egyes részre külön-külön is be kell nyújtani – sablon használatával nem szükséges minden rész esetén egyesével kitölteni a nyilatkozatokat, azok betölthetők a sablonból."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos megjegyezni, hogy sablon űrlapok szervezethez kapcsolódóan hozhatók létre, egy felhasználó csak annál a szervezetnél használhatja a nyilatkozatokat, ahol azokat létrehozta, annak ellenére is, hogy esetlegesen több szervezetnek is tagja."
       },
       {
@@ -8327,7 +8296,7 @@
        "html": "A következőkben egy nyílt eljárás alapvető cselekményei kerülnek bemutatásra az eljárás megindításától az ajánlattételi határidő lejártáig, illetve az ajánlatok felbontásáig."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 80. § (1) bekezdés a) és b) pontját, valamint a Kbt. 114. § (13) bekezdését. Az ajánlattételi határidő lejártát megelőzően az ajánlatkérő tehát jogosult a felhívás visszavonására (visszalépés a közbeszerzéstől), módosítására, az ajánlattételi határidő meghosszabbítására. Az ajánlattételi határidő lejártakor beáll az ajánlatkérői, illetve ajánlattevői ajánlati kötöttség. Ami az ajánlatkérő részéről azt jelenti, hogy:"
       },
       {
@@ -8362,7 +8331,7 @@
        "html": "Az ajánlat ajánlattevői módosítására, visszavonására tehát az ajánlattételi határidő lejártáig van lehetőség. Visszavonás esetén nincs további teendője az ajánlattevőnek, a visszalépés megvalósult, az eljárásban a továbbiakban nem vesz részt. Technikailag a módosítás úgy valósulhat meg, hogy az ajánlattevő visszavonja a benyújtott és zár alá került ajánlatát, visszanyitja az EKR-ben, elvégzi a szükséges változtatásokat (például újabb vagy javított dokumentumokat csatol, meglévőket töröl, átírja az űrlapok tartalmát), majd újból benyújtja a teljes ajánlatot."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 54. §-át."
       },
       {
@@ -8548,7 +8517,8 @@
        "html": "A Módosított ajánlat benyújtása, vagy az Eredeti ajánlat benyújtása funkciógomb megnyomása után, az ajánlat benyújtásakor végig vitt lépésekkel megegyező módon van lehetőség lezárni a cselekményt."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos felhívni arra a figyelmet, hogy az Eredeti ajánlat benyújtása gomb megnyomásával az eredeti ajánlatot fogja megküldeni a rendszer az Ajánlatkérő felé, így az esetleges módosítások elvesznek. Éppen ezért érdemes kellő körültekintéssel kiválasztani a megfelelő funkciógombot."
       },
       {
@@ -9269,7 +9239,7 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 81. § (4)-(5) bekezdését."
       },
       {
@@ -9301,7 +9271,7 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 72. §-át, vö. Kbt. 114. § (6a) bekezdésével."
       },
       {
@@ -9309,7 +9279,8 @@
        "html": "Az ajánlatkérőnek pontosan kell a kérdéseit feltenni, pontos útmutatásokat kell adnia arra nézve, hogy milyen adatok, számítások közlését várja el az ajánlattevőtől. Az ajánlattevőnek pedig konkrét, részletes, alátámasztott objektív indokolást kell benyújtania, általános közlések nem elegendőek. Ha az ajánlattevői oldalról a hiányokat nem pótolják, a felvilágosítást nem adják meg, az indokolást nem nyújtják be vagy az nem támasztja alá a vállalást, vagy a számítási hibát nem vagy nem megfelelően javítják, akkor az az ajánlat érvénytelenségéhez vezet."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos a kétlépcsős bírálat, ami azt jelenti, hogy nem kell valamennyi ajánlattevőnek valamennyi igazolást benyújtania az ajánlata részeként, kivéve akkor, ha nemzeti eljárásrendben az ajánlatkérő az ún. egylépcsős bírálatot ír elő.[1] (Uniós eljárásrendben az egylépcsős bírálat előírására nincs lehetőség.) Egyébként kétlépcsős bírálatnál is csatolhatja saját belátás alapján az ajánlattevő az igazolásokat az alapajánlatában, ami egyébként meggyorsítja a bírálat folyamatát, tehát célszerű megfontolniuk az ajánlattevőknek ezt a megoldást is. Ennek megfelelően a bírálat következő fázisa, amikor az ajánlatkérő azon ajánlattevőt szólítja fel a döntéshozatalt megelőzően az igazolások benyújtására, amelyik a legkedvezőbb ajánlatot tette vagy emellett még felszólíthatják erre a második, illetve a további legkedvezőbb ajánlatot tevőket is."
       },
       {
@@ -9348,7 +9319,7 @@
        "html": "Dönteni kell mindezek alapján az eljárás eredményességének, illetve eredménytelenségének kérdéskörében is. Az eljárás csak akkor nem eredményes (vagyis nem kerül sor nyertes kihirdetésére), ha fennáll valamely eredménytelenségi ok, például kizárólag érvénytelen ajánlatokat nyújtottak be vagy nem nyújtottak be egyáltalán ajánlatot. Vannak olyan esetek, amikor az ajánlatkérő dönthet az eredménytelenné nyilvánításról, mert annak jogszabályi feltételei fennállnak, például a legkedvezőbb ajánlatban meghatározott ellenszolgáltatásra nem elegendő a rendelkezésre álló fedezet összege, és nincs lehetőség további fedezet bevonására."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 114/A. §-át."
       },
       {
@@ -9529,7 +9500,8 @@
        "html": "Az AMHP - Hiánypótlás összeállítása eljárási cselekmény az Ajánlatkérő által, az EKR-ben küldött hiánypótlási felhívás teljesítésére-, illetve a tájékoztatás kérés megválaszolására szolgál az Ajánlattevő által benyújtott ajánlat, részvételre jelentkezés szerkesztése által. Fontos, hogy a hiánypótlás összeállítása eljárási cselekménnyel párhuzamosan nem indítható a Számítási hiba javítása- és az Igazolások benyújtása eljárási cselekményekkel. Egyszerre csak egy hiánypótlás összeállítása eljárási cselekmény lehet folyamatban, noha hiánypótlást, felvilágosítást több körben is lehet kérni/benyújtani. Amennyiben az Új eljárási cselekmény gomb megnyomását követően a legördülő listában nem jelenik meg a hiánypótlás összeállítása eljárási cselekmény, úgy szükséges megvizsgálni az eljárási cselekmény kereső felületen, hogy nem maradt-e folyamatban-, vagy nem került-e korábban elindításra már az eljárási cselekmény."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "info",
        "html": "Megjegyzendő továbbá, hogy a hiánypótlási felhívás abban az esetben is megküldöttnek minősül, ha az az EKR-ben megküldésre került, ugyanakkor külön e-mail értesítőt nem kapott az Ajánlattevő róla."
       },
       {
@@ -10301,7 +10273,7 @@
        "html": "lehetséges, az ajánlattevő nem veheti át az ajánlatkérőtől a bíráló szerepét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 45. § (2) bekezdését."
       },
       {
@@ -10314,11 +10286,11 @@
        "file": "modul-1-kviz-5-9.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 131. § (9) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.46/8/2019. számú határozatát."
       },
       {
@@ -10754,7 +10726,7 @@
        "html": "Szükség van tehát – egyebek mellett – olyan, a teljesítésre vonatkozó különleges követelményekre, amelyek biztosítják a vállalások kikényszerítését, ellenőrizhetőségét és jogsértés esetén annak hatékony szankcionálását."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 2. § (8) bekezdését."
       },
       {
@@ -10762,7 +10734,8 @@
        "html": "Emellett a teljesítésre vonatkozó közbeszerzési szabályok körében helyet kaphatnak olyan további rendelkezések, amelyek általános gazdaságpolitikai célkitűzések érvényesülését segíthetik elő. Ilyenek például azok, amelyek a nyertes ajánlattevőt vagy (építési beruházásnál) az alvállalkozókat megillető ellenszolgáltatás kifizetésére, védelmére vonatkoznak, vagy amelyek az ellenőrizhetőség, átláthatóság és nyilvánosság szempontjából jelentősek. Így hangsúlyos például a teljesítés minden körülményének dokumentálási kötelezettsége vagy az, hogy a szerződés teljesítésére vagy az alvállalkozókra vonatkozó bizonyos adatokat az EKR-ben közzé kell tenni.[1] A közbeszerzési jog egyébként nem kívánja a szerződések teljesítésének hagyományos, klasszikus kérdéseit szabályozni. Szükségtelen is lenne, hiszen a magánjogi szabályok külön ismétlés nélkül is alkalmazandók (például a szerződésszegésre, a szerződések megszüntetésére, a biztosítékok fajtáira és érvényesítésére vagy a szerződések típusaira vonatkozó szabályok). A különleges előírásokat egyrészt a Kbt., másrészt pedig építési beruházások esetében rendeleti szabályozás[2] tartalmazza."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy a közbeszerzési jogi szabályok kikényszeríthetőségét biztosítja a jogorvoslat lehetősége. Vagyis, ha a szerződés teljesítése során a közbeszerzési szabályozás valamely rendelkezése sérül, valamelyik fél nem tesz eleget valamely közbeszerzési jogi kötelezettségének, akkor a KDB jogorvoslati eljárást folytathat le, és jogsértés megállapítása esetén bírságot szabhat ki, akár a nyertes ajánlattevőként szerződő féllel szemben is. Ezért különösen fontos, hogy a vállalkozások kellően felkészültek legyenek a közbeszerzési szerződések teljesítésére és módosítására vonatkozó kötelezettségeikkel is. Hiszen nem támaszkodhatnak minden esetben az ajánlatkérőként szerződő fél útmutatásaira és arra, hogy majd jelzik, ha valamit tenniük kell, továbbá nem menti ki az esetleges jogsértésüket az, ha adminisztratív hibára vagy a munkatársaik felkészületlenségére hivatkoznak.[3] Sőt, némely esetben az ajánlatkérőként szerződő félnek kell a KDB-hez fordulnia vele szemben, ha a közbeszerzési jogsértés kiküszöbölése a célja. Rendkívül hangsúlyos azonban, hogy a KDB nem vizsgálhat hagyományos polgári jogi igényeket, azok elbírálása nem tartozik a hatáskörébe, ilyen esetben a jogvitával polgári bírósághoz kell fordulni. A szerződésekhez kapcsolódó kötelezettségek kikényszerítésének alapvető fórumai tehát a KDB és a különböző bíróságok, a hatásköri szabályok függvényében."
       },
       {
@@ -10771,11 +10744,11 @@
        "file": "modul-2-kviz-1-11.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 43. § (1) bekezdés c) pontját, valamint a Kbt. 43. § (2) bekezdés e) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. az építési beruházások, valamint az építési beruházásokhoz kapcsolódó tervezői és mérnöki szolgáltatások közbeszerzésének részletes szabályairól 322/2015. (X. 30.) Korm."
       },
       {
@@ -10783,7 +10756,7 @@
        "html": "rendeletet."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.422/11/2022. számú határozatát."
       }
      ],
@@ -10894,11 +10867,11 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.431/11/2022. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] l. Kbt. 142. § (3) bekezdése."
       },
       {
@@ -11022,11 +10995,11 @@
        "html": "Példa: az ajánlatkérőként szerződő fél csak 63 napos késlekedéssel tudta átadni az építési beruházás teljesítésének egyik helyszínét, a fogorvosi rendelőt, mert nem mérte fel azt az eljárás előkészítése során, hogy az azt használó szolgáltató mikor és hogyan tudja kiüríteni. Az előzetes vizsgálatot annak ellenére mulasztotta el az ajánlatkérőként szerződő fél, hogy ő volt az ingatlan kezelője, tehát erre minden lehetőség biztosított lett volna. A KDB megállapította, hogy a közbeszerzéssel kapcsolatos helyzetfelmérésnek minősül a teljesítés helyszínének olyan mértékű vizsgálata, hogy annak teljes területén a munkálatok mikor kezdődhetnek el. Az ajánlatkérőként szerződő félnek a teljesítési határidő mértékét e vizsgálata eredményeképpen kellett volna meghatároznia már a közbeszerzési eljárásban. Ennek megfelelően a KDB megállapította, hogy a teljesítési határidő meghosszabbítása (a szerződés módosítása) jogsértő volt, és bírságot szabott ki mind az ajánlatkérőként, mind pedig a nyertes ajánlattevőként szerződő féllel szemben.[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 134. § (4) bekezdését"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.445/10/2022. számú határozatát."
       },
       {
@@ -11043,7 +11016,7 @@
        "file": "modul-2-kviz-2-12.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.422/11/2022. számú határozata"
       }
      ],
@@ -11127,23 +11100,23 @@
        "html": "a) A nyertes ajánlattevőként szerződő fél köteles teljesíteni a szerződést. Ebből adódóan a szerződés lényeges – és tilalmazott – módosításának minősülne az, ha valaki más válthatná fel minden további nélkül az eredeti nyertes ajánlattevőt a kötelezetti pozícióban. Ennek megfelelően a Kbt. meghatározza azokat az eseteket, amikor a nyertes ajánlattevőként szerződő fél (felek) személye megváltozhat, ilyen például bizonyos jogutódlások esete.[3] b) Ha közös ajánlattétel valósult meg, akkor a közös ajánlattevőknek kell a szerződést teljesíteniük. Fontos, hogy a közös ajánlattevők a szerződés teljesítéséért az ajánlatkérőként szerződő fél felé egyetemlegesen felelnek,[4] ami azt jelenti, hogy az ajánlatkérőként szerződő fél probléma esetén bármelyik féltől követelheti az egész szerződés teljesítését attól függetlenül, hogy milyen mértékben kívánták egymás között a teljesítést megosztani. Amelyik gazdasági szereplő ennek kockázatát nem kívánja vállalni, annak alvállalkozóként vagy más közreműködőként (például beszállítóként) van lehetősége bekapcsolódni a folyamatba. Az is lényeges szempont, hogy a konzorciumi megállapodásban nem lehet jogszerűen úgy rendelkezni, hogy egyik közös ajánlatot tevő állítja ki a másik helyett is a számláit, vagyis nem lehet ilyen módon „átvállalni” a számlázás lehetőségét a teljesítés során.[5] c) Említést kell továbbá tenni a projekttársaságról. Kivételes eset, ha az ajánlatkérő előírja a közbeszerzési eljárásban azt, hogy projekttársaságot kell létrehozni a szerződés teljesítésére, rendszerint „gazdálkodó szervezet” alapításának lehetőségét kizárják. Ebben a körben a Kbt. előírásai az alábbiak."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 138. § (1) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A Kbt. 138. § (4) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 139. § (1) és (2) bekezdését, valamint az Európai Unió Bíróságának C-461/20. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A Kbt. 35. § (6) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.459/27/2012. számú határozatát."
       },
       {
@@ -11176,19 +11149,19 @@
        "html": "Ugyanis „[k]övetelmény előírása az arányosság elvébe ütközik, tekintettel arra, hogy egy gazdasági társaság létrehozásának és hosszú távon történő működtetésének jelentős költségei vannak, ilyenek pl. a gazdasági társaság létrehozásának, a közzétételnek költségei, a működés személyi és adminisztratív kiadásai. A szolgáltatás természete sem teszi indokolttá a gazdasági társaság létrehozásának kötelező előírását, a közös ajánlattevők egyetemleges felelősségvállalásán túl a konzorciumi megállapodásban és a nyertessel megkötendő szerződésben a felelősségi kérdések egyértelműen rendezhetők.”[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Kbt. 35. § (8) bekezdés"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Kbt. 35. § (9) bekezdés"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.645/14/2009. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.645/14/2009. számú határozata."
       },
       {
@@ -11204,15 +11177,15 @@
        "html": "2. példa: nemcsak építési beruházások esetén, építési naplóból lehet tudomást szerezni arról a tényről, hogy a nyertes ajánlattevőként szerződő fél a megajánlott szakembereket nem vonja be a teljesítésbe. Egy élőerős őrzés-védelmi szolgáltatás esetében az ajánlatkérőként szerződő fél azt vette észre, hogy a megjelölt szakemberek sem szakmai irányítóként, sem más minőségükben semmilyen módon nem léptek kapcsolatba vele a szerződés teljesítése, illetve annak megkezdése érdekében, a nyertes ajánlattevőként szerződő fél a teljesítés megkezdésekor nem igényelt a megajánlott szakemberek részére belépőkártyákat, ezek nélkül pedig a szerződés nem teljesíthető. Az ajánlatkérőként szerződő fél bejelentést tett emiatt a Közbeszerzési Hatóságnak súlyos szerződésszegésre hivatkozva. A Hatóság megkereste mind a nyertes ajánlattevőként szerződő felet, mind pedig az érintett alvállalkozót, azonban ők – a törvényi kötelezettségüket megszegve ezzel – egyáltalán nem reagáltak. Jogorvoslati eljárás indult, a KDB mindkettőjüket bírsággal sújtotta a különböző jogsértések megállapításán kívül, figyelembe véve a közreműködés teljes hiányát is.[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.556/5/2017. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 138. § (2) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.421/10/2020. számú határozatát. A kereset elutasításáról ld. a Fővárosi"
       },
       {
@@ -11220,7 +11193,7 @@
        "html": "Törvényszék 104.K.708.281/2020/15. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a KDB D.513/5/2022. számú határozatát."
       },
       {
@@ -11232,27 +11205,27 @@
        "html": "f) Rendkívül fontos teljesítésben közreműködői kör az alvállalkozók csoportja. Kulcselemei az alvállalkozó fogalmi meghatározásának,[4] hogy olyan gazdasági szereplőről van szó, aki (amely) a közbeszerzési eljárás eredményeként megkötött szerződés teljesítésében az ajánlattevő által bevontan közvetlenül vesz részt. Emellett a törvény meghatároz kivételeket, azaz a jogszabály erejénél fogva bizonyos gazdasági szereplők – a Kbt. szempontjából – nem minősülnek alvállalkozónak (például a gyártó, forgalmazó vagy építési beruházás esetén az építőanyag-eladó). Az alvállalkozó igénybevétele csak a Kbt. 65. § (10) bekezdése alapján korlátozható kivételesen ajánlatkérői előírás alapján, egyébként nem állapítható meg további szükségtelen korlátozás az alvállalkozói közreműködés arányára nézve.[5] Az ajánlattevők tehát alapvetően szabadon dönthetnek arról, hogy vonnak-e be alvállalkozó(ka)t, vagy pedig saját maguk teljesítik a szerződést. Ahogy egy bírósági ítélet fogalmazott, a bevonás ajánlattevői döntés függvénye, és az ajánlatkérő olyan döntésre sem kényszerítheti az ajánlattevőket, hogy alvállalkozót vegyenek igénybe, főként nem határozhatja meg annak a személyét.[6] Természetesen olyan alvállalkozó jogszerűen nem vonható be a teljesítésbe, amelyik az ajánlatkérő által előírt valamely kizáró ok hatálya alatt áll."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.56/7/2019., D.52/7/2020. vagy a D.14/10/2021. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.314/13/2019. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 65. § (7) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a Kbt. 3. § 2. pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. az Európai Unió Bíróságának C-406/14. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A Fővárosi Törvényszék 3.Kf.649.989/2013/4. számú ítélete."
       },
       {
@@ -11264,51 +11237,51 @@
        "html": "Az alvállalkozók szabályszerű bejelentését ellenőrzik, és ha a nyertes ajánlattevőként szerződő fél nem teljesítette szabályszerűen a bejelentési kötelezettségét, akkor jogorvoslati eljárás indulhat. Ilyen esetben jogviták bontakozhatnak ki arra nézve, hogy az adott gazdasági szereplő a Kbt. értelmező rendelkezése alapján valóban alvállalkozónak minősült-e. Vagyis bevonták-e a közvetlenül a teljesítésbe, vagy hiányzik a közvetlenség,[3] vagy ha erre sor is került, nem tartozik-e valamelyik kivételi körbe. Ugyancsak jelentőséggel bír, hogy az ajánlatkérő milyen feladatok teljesítését írta elő, ehhez kapcsolódik-e az adott gazdasági szereplő bevonása. Így vizsgálható a fuvarozást, a raktározást[4] vagy éppen a munkaerőátirányítást végző gazdasági szereplő tevékenysége,[5] továbbá el kell végezni a „közvetlen” szó megfelelő értelmezését is (például egy gyártó és a kereskedelmi kapcsolatot biztosító társaság kapcsán)."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] E kérdések vizsgálata során is érvényesül az az általános jogelv, hogy az ajánlattevő és az alvállalkozó közötti kapcsolatot szabályozó szerződéseket nem az elnevezésük, hanem tényleges tartalmuk alapján kell megítélni.[7] Ha a szerződés teljesítése során a nyertes ajánlattevőként szerződő fél nem tesz eleget az előírtak szerint a bejelentési kötelezettségének, akkor az súlyos jogsértésnek számít a KDB joggyakorlatában, és rendszerint bírság kiszabását eredményezi.[8] Fontos az is, hogy a nyertes ajánlattevőként szerződő fél megfelelő módon igazolni tudja, hogy a bejelentést elküldte az ajánlatkérő előírt kapcsolattartójának.[9] Megjegyzendő, hogy 2021-től a jogalkotó észszerűsítette a szabályozást, és immár nem kell minden egyes bejelentéssel egyidejűleg nyilatkozni a kizáró okok fenn nem állásáról, hanem a szerződésbe foglaltan kell ezt a nyilatkozatot megtenni. Korábban ugyanis számos jogorvoslati eljárás alapja volt az is, hogy a bejelentés mellett megtörtént-e az egyidejű nyilatkozattétel vagy sem.[10] Építési beruházás esetében az építési napló ellenőrzése alapvető jelentőségű, hogy abban milyen gazdasági szereplők kerültek alvállalkozóként bejegyzésre, az ajánlatkérőt pedig ellenőrzési kötelezettség terheli.[11] Ebből adódóan az ajánlatkérő felelőssége is hangsúlyos, ellenőriznie kell a rendelkezésére álló dokumentumokból, hogy szabályszerűen bejelentett alvállalkozók működnek-e közre."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 66. § (6) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 138. § (3) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KBB D.657/21/2016. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a KDB D.171/16/2017. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.535/10/2017. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. a KDB D.791/11/2010. számú határozatát. A döntés felülvizsgálatáról (a jogerős ítélet helyben hagyásáról) ld. a Kúria Kfv.II.37.574/2013/4. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] A KDB D.657/21/2016. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[8] A KDB D.640/8/2017. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[9] Ld. a KDB D.400/4/2018. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[10] Ld. pl. a KDB D.162/36/2018. vagy a D.398/15/2018. számú határozatát"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[11] Ld. az építési beruházások, valamint az építési beruházásokhoz kapcsolódó tervezői és mérnöki szolgáltatások közbeszerzésének részletes szabályairól szóló 322/2015. (X. 30.)"
       },
       {
@@ -11324,7 +11297,7 @@
        "html": "Példa: Az ajánlatkérő nem biztosíthatja túl magát további, az alvállalkozók bevonására vonatkozó döntést korlátozó szerződéses rendelkezésekkel, például úgy, hogy az ajánlatkérő előzetes írásbeli jóváhagyásához köti az alvállalkozó szerződés teljesítésébe történő bevonását. Egy esetben a következő előírás szerepelt a kivitelezési szerződésben: „A Megrendelő jogosult az alvállalkozók alkalmasságát ellenőrizni és amennyiben valamely jogszabályi feltételnek valamely alvállalkozó nem felel meg, a Megrendelő jogosult az alvállalkozó közreműködése ellen kifogást emelni.” A KDB megállapította a jogsértést a következők szerint: „A tárgyi közbeszerzési eljárásokban megkötött vállalkozási szerződések 4.3 pontja szerint azonban az ajánlatkérő előzetes írásbeli jóváhagyására volt szükség az új alvállalkozó teljesítésbe történő bevonásához. Ennek elmaradása súlyos szerződésszegésnek minősült és a szerződés azonnali hatályú felmondására adott okot. Az ajánlatkérő ezen szerződéses előírása nem értelmezhető másként – a szerződésben foglalt további előírások ismerete mellett sem –, mint hogy az ajánlattevő akkor vonhat be új alvállalkozót a teljesítésbe, ha az ajánlatkérő ahhoz előzetesen írásban hozzájárult. A Kbt. szabályaitól csak annyiban lehet eltérni, amennyiben e törvény az eltérést kifejezetten megengedi. Az ajánlatkérő azzal a kikötésével, hogy csak az ajánlatkérő előzetes engedélyével vonhat be a teljesítésbe új alvállalkozót a kérelmezett, olyan további feltételt határozott meg az alvállalkozók bevonásával kapcsolatosan, amelyre a jogszabály nem biztosít lehetőséget.” [1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.426/8/2021. számú határozata."
       },
       {
@@ -11365,31 +11338,31 @@
        "file": "modul-2-kviz-3-13.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.162/36/2018. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.230/9/2018. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.400/4/2018. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.462/22/2019. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.68/20/2021. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.462/22/2019. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] Ld. a Kbt. 138. § (3) bekezdését."
       }
      ],
@@ -11544,11 +11517,11 @@
        "html": "Az első esetben a teljes mennyiség megvételére nem vállal az ajánlatkérő kötelezettséget, hanem attól „lefelé” térhet el anélkül, hogy ezt előre vagy külön jeleznie kellene, míg opció esetében kötelező az alapmennyiség biztosan, viszont az ezt meghaladó többlet nem feltétlenül kerül megrendelésre, ezért csak az ajánlatkérő általi külön lehívás alapján teljesítendő. Nincs ugyan kifejezett jogszabályi korlátja, de a gazdaságilag reális ajánlattételre alkalmas kiírás követelményének való megfelelés érdekében a közbeszerzési hatósági ellenőrzési gyakorlat ajánlatkérői indokolás nélkül 30%-os mértékű mennyiségi eltérést enged a kiírásba foglalni. Keretszerződés esetében elvárják, hogy legalább 70%-os lehívásra vállaljon kötelezettséget az ajánlatkérő, míg opció alkalmazása esetén az alapmennyiséghez képest legfeljebb 30%-os többlet írható elő. Ezek a határértékek kizárólag akkor értelmezhetők, ha az alapmennyiség körében előírt tárgyakra vonatkozik az eltérés is, ha viszont más termékek, szolgáltatások képezik az opciós mennyiségek tárgyát, akkor ezek a „szokásjogi” határok nem értelmezhetők. A KDB úgy fogalmazott egy esetben, hogy „A jogalkotó nem határozott meg olyan arányt vagy százalékos eltérés mértéket, amely az ajánlatkérői döntés korlátozását jelentené. Opcionális rész előírása esetén a közbeszerzési eljárás eredményes lefolytatását követően az alapmennyiség vonatkozásában beáll az ajánlatkérő szerződéskötési kötelezettsége, az opciós rész vonatkozásában viszont a felhívásban rögzített feltételek keretei között gyakorolhatja majd az opciós rész lehívását, vagy eltekint tőle. Ebből kifolyólag mellőzhetetlen a beszerzés alapmennyiségének a meghatározása opcionális rész előírásakor, és az opciós rész elkülönített, körülhatárolt meghatározása.”[2] Vannak olyan beszerzési tárgyak, ahol lényegesen jelentősebb eltérés is alátámasztható."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 58. § (1) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A D.12/23/2022. számú határozata."
       },
       {
@@ -11556,7 +11529,7 @@
        "html": "Példa: a Közbeszerzési Hatóság „[á]lláspontja szerint jelen esetben azért jogszerűtlen az opció alkalmazása valamennyi rész tekintetében, mert túlzó (200 és 600 %), továbbá az 1., 2. és 10. rész esetében azért is, mert az opcionális rész körében olyan további szolgáltatásfajták is megjelennek, amelyek az eredeti mennyiségnél nincsenek jelen. A Döntőbizottság megállapította, hogy jelen közbeszerzési eljárás 1-13. részei tárgya szúnyogirtás, a felhívás II.2.4) pontja, valamint a műszaki leírás szerint az egyes részek esetében a feladatok típusai és mennyiségei eltérőek. Az irtási tevékenység száma és az érintett terület méretei a felhívás egyes részekre vonatkozó előírásainál, valamint a műszaki leírásban egyértelműen feltüntetésre kerültek. Az ajánlatkérők a felhívás említett pontjában, illetve azzal megegyezően a műszaki leírásban az opciót úgy alkalmazták, hogy az irtással érintett területet legalább egy alkalommal kell, legfeljebb részenként eltérően, de jellemzően három alkalommal lehet – az ajánlatkérők döntésétől függően – kezelni. Rögzítendő, hogy az 1., 2. és 10. részek esetében az opcionális mennyiség további megvalósítandó szolgáltatást is tartalmaz. A Döntőbizottság a kezdeményezés keretei között elsősorban azt vizsgálta, hogy az ajánlattevőknek a közbeszerzés tárgya és mennyiségi adatai ismeretében valamennyi ajánlattevő számára egyértelműen és pontosan megismerhető volt-e, hogy milyen szolgáltatásokra kellett ajánlatot tenni. A Döntőbizottság megállapította, hogy az opció jelen közbeszerzésben történő alkalmazása nem zárt el egyes ajánlattevőket a versenytől, nem sértette az átláthatóság, esélyegyenlőség alapelvét, tekintettel arra, hogy valamennyi ajánlattevő számára egyértelműen és egyformán érthetően került megfogalmazásra a beszerzés tárgya, a műszaki leírás és ehhez képest az opció alkalmazásának ajánlatkérők által előadott szakmai indokai is elfogadhatók voltak, az ajánlatkérő előírásaiból megállapítható, hogy jelen szolgáltatás tárgyát egy olyan kiegészítő tevékenység képezi, amely szolgáltatás igénybevételére bizonyosan évi egy alkalommal kerül sor, ezt meghaladóan az opciós mennyiség teljesítésére pedig csak akkor, ha az elsődlegesen már elvégzett szúnyoggyérítést követően, amely nyújtására az állami védekezés körében került sor, mégis felmerülnek olyan előre nem látható, előre pontosan fel nem mérhető tényezők okozta helyzetek, amelyek indokolják, hogy az adott évben az opció lehívására is sor kerüljön. A Döntőbizottság vizsgálata megállapította, hogy az ajánlatkérők ugyan a hirdetményben rövid indokát adták az opcionális mennyiség meghatározásának, azonban részletes érveiket a hirdetményellenőrzési eljárásban nem, csak a jogorvoslati eljárásban fejtették ki teljeskörűen.”[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.157/11/2021. számú határozata."
       },
       {
@@ -11568,11 +11541,11 @@
        "html": "Rendkívül lényeges, hogy az opció lehívására vonatkozó, a szerződésben megállapított szabályokat is meg kell tartani, továbbá azt megfelelő módon dokumentálni kell, ellenkező esetben jogsértés állapíthat meg a KDB."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A D.12/23/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.479/15/2022. számú határozata."
       },
       {
@@ -11585,7 +11558,7 @@
        "file": "modul-2-kviz-4-14.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.163/23/2021. számú határozata."
       }
      ],
@@ -11669,11 +11642,11 @@
        "html": "2. példa: jogsértőnek minősítette viszont a KDB egy ajánlatkérő azon előírását, amely nem pontosan határozta meg a kifizethető előleg mértékét. Az ajánlatkérő az eljárást megindító felhívásában és a szerződéstervezetben csak annyit rögzített, hogy a vállalkozó „a teljesítés során – az ajánlatkérővel egyeztetve – minimum 5 % előlegre jogosult”, valamint, hogy az „előleg és a részszámlák alapján történő kifizetések összértéke nem lehet kevesebb a szerződés” nettó értékének 70 %-ánál. A KDB a következőket állapította meg: „Az előleg jelentősége nyilvánvalóan abban áll, hogy a kivitelezést teljesítő nyertes ajánlattevő az adott építőipari tevékenység megkezdése előtt hozzájut az ellenérték egy részéhez: erre tekintettel az előleg konkrét összegének a közbeszerzési dokumentumokban, szerződéstervezetben történő rögzítése a Kbt. fentebb ismertetett alapelvei szempontjából különösen fontos. Az ajánlattevőknek azonos, konkrét ismeretekkel kell rendelkezniük arról, hogy a kivitelezést mekkora garantált összegű előleg birtokában kezdhetik majd el, mindez a szerződéses feladat elvállalása, a munka előzetes kalkulációja és végső soron az árképzés szempontjából is fontos információ.” Továbbá „Az ajánlattevőknek azonos, konkrét ismeretekkel kell rendelkezniük arról, hogy a kivitelezést mekkora garantált összegű előleg birtokában kezdhetik majd el, mindez a szerződéses feladat elvállalása, a munka előzetes kalkulációja és végső soron az árképzés szempontjából is fontos információ. A Döntőbizottság álláspontja szerint az ajánlatkérő nem készítette elő megfelelő alapossággal a közbeszerzési eljárást akkor, mikor a közbeszerzési dokumentumokban nem rögzítette egyértelműen az előleg összegét.”[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] D.329/13/2020. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.40/12/2021. számú határozatát."
       },
       {
@@ -11709,23 +11682,23 @@
        "html": "Azaz, hogy az ajánlatkérő milyen rendelkezéseket határozott meg a közbeszerzési dokumentumokban a kifizetésre. Nem jogsértő az, ha a nyertes ajánlattevőként szerződő fél euróban állítja ki a számlát, de feltünteti a forintértékeket is az átváltásra vonatkozó adatokkal együtt, ezzel nem valósul meg a szerződés jogellenes módosítása."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 135. § (7) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a 322/2015. (X. 30.) Korm. rendelet 31. §-át."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Kbt. 135. § (1) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.180/13/2020. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.229/12/2021. számú határozatát."
       },
       {
@@ -11733,7 +11706,7 @@
        "html": "Példa: „Az előírások alapján tényként megállapítható, hogy az ajánlatkérő az elszámolás pénznemeként forintot határozott meg, más devizanemre vonatkozó előírása nem volt. A Döntőbizottság megállapította, hogy a közbeszerzési eljárásban a kérelmezett, mint nyertes ajánlattevő forintban határozta meg az ajánlati árát, ugyanezen adat került rögzítésre a szerződésbe, és ezen számadat került részszámlákban felbontásra. A Döntőbizottság ezt követően megvizsgálta a kérelmezett által kibocsátott és az ajánlatkérő által befogadott számlákat. A fenti számlákból jól látható, hogy nem kizárólag euró pénznemben kerültek kiállításra, hanem forintban is megjelölésre került a számla összege. A Döntőbizottság szerint nem kötelezhető egy nem magyarországi székhelyű európai uniós gazdasági társaság arra, hogy a számláit kizárólag forintban állítsa ki, így megfelelő az elszámolás alapjaként az, ha mind az euró, mind a forint megjelölésre kerül a számlában és annak átváltási árfolyama. Az is megállapítható, hogy az ajánlatkérő számlája forint alapú, így ő kizárólag forintot tud utalásként indítani, amelyet alátámasztanak a banki kivonatok, illetőleg a bank nyilatkozata. A fentiek alapján megállapítható, hogy a kérelmezett által kiállított számla összege forintban is megjelölésre került, mely forint összeg átutalásáról intézkedett az ajánlatkérő. A jelenlegi piaci helyzetben nem életszerű az az elvárás, hogy az ajánlatkérő számára a számlák átutalása nem járjon költséggel. Az is fontos, hogy a kizárólag támogatás okán ajánlatkérőnek minősülő gazdasági társaság banki tranzakciós díjai nem közpénzek, így kizárólag a támogatási összeg minősül közpénznek. A fentiek alapján a Döntőbizottság megállapította, hogy a számlák és annak kifizetése forintban történt, így az ajánlatkérő és a kérelmezett részéről a Kbt. 141. §-ban foglalt szerződésmódosításra nem került sor, ennek okán a Döntőbizottság jogsértés hiányát állapította meg.”[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.558/12/2019. számú határozata."
       },
       {
@@ -11769,19 +11742,19 @@
        "html": "2. példa: „A Döntőbizottság […] kiemeli, hogy az ajánlatkérő legtöbb esetben valóban csak azon alvállalkozói számlák kifizetését tudja ellenőrizni, amiről az ajánlattevőként szerződő féltől tudomása van, azonban […] a szerződés teljesítésében folyamatosan résztvevő, nem eredménykötelemmel szerződött alvállalkozók (jellemzően a munkákat irányító vezetők, felelős műszaki vezetők, stb.) esetén a %-os teljesítéshez kötött ajánlattevői részszámlákban meg kell jelennie az ilyen jellegű munkát végzők teljesítésének, hiszen az ő teljesítésük – mivel nem termelő-építő tevékenység, nem köthető egyes folyamatokhoz, munkarészekhez – a teljes beruházás százalékos készültségével vagy időarányosan fejezhető ki.”[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a 2021–2027 programozási időszakban az egyes európai uniós alapokból származó támogatások felhasználásának rendjéről szóló 256/2021. (V. 18.) Korm. rendeletet."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a 322/2015. (X. 30.) Korm. rendelet 32/A. §-át."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.40/12/2021. számú határozatát, a kereset elutasításáról pedig a Fővárosi Törvényszék 103.K.703.294/2021/12. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.422/11/2022. számú határozata."
       },
       {
@@ -11793,7 +11766,7 @@
        "html": "A tartalékkeret mértéke legfeljebb a szerződés szerinti teljes ellenszolgáltatás 10%-a lehet, biztosítása nem kötelezettség. Azonban, ha az ajánlatkérő tartalékkeretet bocsát rendelkezésre, annak összegére és felhasználására vonatkozóan a jogszabály tartalmaz szigorú szabályokat. Tipikusan a kivitelezés során felmerült pót- vagy többletmunkák ellentételezésére szolgál, amelynek összegét a közbeszerzés becsült értékébe is be kell számítani. A tartalékkeret terhére csak az építési beruházás teljesítéséhez, a rendeltetésszerű és biztonságos használathoz szükséges munkák számolhatók el.[2] Fontos, hogy tartalékkeret felhasználásának lehetséges eseteit és pénzügyi feltételeit a szerződésben egyértelműen, minden ajánlattevő számára előre megismerhető módon rögzíteni kell. A tartalékkeret előnye, hogy az előírt keretek közötti felhasználása esetén nem kell a szerződést módosítani, illetve új eljárást lefolytatni. Példa: vannak olyan helyzetek, amikor az ajánlatkérői fogalomhasználat nem következetes, nem határolja el egymástól a tartalékkeretet és az opciót. Ilyen esetben a jogsértés megállapítható, hiszen, ha az ajánlatkérő tartalékkeretről kíván ténylegesen rendelkezni, akkor a jogszabályban meghatározott 10%-is felső mértéket nem lépheti át. A KDB egy esetben a következőket állapította meg: „Az ajánlatkérő eljárást megindító felhívásának II.2.4) pontja szerint – mindkét rész esetében – opcionálisan +290% összegű tartalékkeretet biztosított az esetleges 2021. évi munkák vonatkozásában, mely opció feltétele a képviselő - testületi döntés rendelkezésre állása. Arra hivatkozott, hogy opciót határozott meg, nem pedig tartalékkeretet, a két fogalom tartalma pedig különböző, az opció mértékének nincs felső határa, ezért jogszerűen alkalmazta a +290%-os opció meghatározását. A felhívás szövegezéséből megállapítható volt, hogy az ajánlatkérő nem opciót (választási lehetőséget) határozott meg, hanem opcionálisan, azaz eshetőlegesen (választható, nem kötelező módon) határozott meg 290% összegű tartalékkeretet az esetleges 2021. évi munkák vonatkozásában, melynek feltétele a képviselő-testületi döntés. Az ajánlatkérő ezt a felhívásban rögzített, ugyanezen tartalmú megfogalmazást alkalmazta és ismételte a közbeszerzési dokumentumokban 14 helyen, a szerződéstervezetekben pedig 8 ponton hivatkozott ily módon a tartalékkeretre. Ugyanakkor a tartalékkeret tekintetében a jogszabályokban rögzített tartalmától eltérő egyéb meghatározást az ajánlatkérő nem alkalmazott, ilyet a közbeszerzési dokumentumok sem tartalmaztak. Az opció fogalmát nem határozta meg az ajánlatkérő sem a felhívásban, sem a közbeszerzési dokumentumokban. Az ajánlatkérő sajátosan értelmezett tartalékkeret és opció fogalmára megjegyzi a Döntőbizottság, hogy sem a Kbt., sem a Korm. rendelet nem tartalmazza az opció fogalmát, a tartalékkeretről ezzel szemben a jogszabályok kifejezetten rendelkeznek. A felhívásban és a dokumentációban megjelenő ajánlatkérői vállalást nyelvtanilag sem lehet másként értelmezni csakis tartalékkeretként, ettől eltérő következtetés a megfogalmazásból nem vonható le. Mindezek alapján a Döntőbizottság megállapította, hogy az ajánlatkérő megsértette a Korm. rendelet 20. § (2) bekezdésében foglaltakat, mert a felhívásában és a közbeszerzési dokumentumokban a 10%-os mértékű tartalékkeret összegét jelentősen meghaladó 290%-os mértékű tartalékkeretet biztosított. A Kbt. kógens, a jogsértés megtörtént az eljárást megindító felhívásban és az összegezésben rögzítettekkel, a jogsértés tényén nem változtat az sem, hogy az ajánlatkérő utóbb az eredménytájékoztató hirdetményből felhívásra mellőzte ezen előírását.”[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a 322/2015. (X. 30.) Korm. rendelet 20. §-át."
       },
       {
@@ -11801,7 +11774,7 @@
        "html": "[2]A KDB D.119/9/2020. számú határozata. A kereset elutasításáról ld. a Fővárosi Törvényszék 103.K.704.941/2020/29. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.119/9/2020. számú határozata. A kereset elutasításáról ld. a Fővárosi"
       },
       {
@@ -11830,15 +11803,15 @@
        "file": "modul-2-kviz-5-15.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] D.362/8/2018. számú határozata. A kereset elutasításáról ld. Fővárosi Törvényszék 103.K. 705.320/2020/5. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.540/14/2020. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.16/12/2021. számú határozata."
       }
      ],
@@ -11970,11 +11943,11 @@
        "html": "Alapvető elvárás, hogy a szerződések úgy teljesüljenek, ahogyan azt az ajánlatkérőként szerződő fél és a nyertes ajánlattevőként szerződő fél megkötötték, az eredeti feltételek szerint. A szerződés módosításának lehetősége ezért korlátozott, vagyis nem érvényesülhet a Ptk.-ban meghatározott általános, feltétel nélküli lehetőség arra nézve, hogy felek a szerződést módosítsák szabad belátásuk szerint. A jogalkotónak e korlátok meghatározásakor egyrészt azt kell alapul vennie, hogy a szerződéseket indokolatlanul, az alapelvekbe ütköző módon ne módosíthassák. Másrészt pedig figyelemmel kell lennie arra is, hogy valóban lehetnek olyan – például a felek által előre nem látható – körülmények, amelyek indokolhatóvá tehetik a szerződés módosítását, például a teljesítési határidő meghosszabbítását vagy a műszaki tartalom megváltoztatását. A Kbt. szerződés módosítására vonatkozó feltételeinek teljesülését több szervezet is ellenőrzi, így például a Közbeszerzési Hatóság, valamint támogatott közbeszerzések esetében támogatást nyújtó, illetve azok felhasználását ellenőrző szervezetek. Ha a módosítás a Kbt.-be ütköző módon valósult meg, akkor a KDB jogorvoslati eljárásának van helye. A feleknek tehát mindig gondosan kell megvizsgálnia azt a kérdést, hogy fennállnak-e a módosítás feltételei, továbbá a Kbt. 141. §-a által felkínált jogalapok közül melyik alkalmazható, illetve a választott jogalapot alá kell tudniuk támasztani. Ennek sikertelensége esetén a szerződés módosításának jogellenessége és annak jogkövetkezményei állapíthatók meg a KDB által, így a bírság (amellyel a nyertes ajánlattevőként szerződő fél is sújtható),[1] illetve a Kbt. 141. § (8) bekezdése szerinti feltétel fennállása esetén semmisség.[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. az Európai Unió Bíróságának C‑263/19. sz. ügyben hozott ítéletét, valamint például a KDB D.62/19/2020. számú határozatát, amelyet keresettel támadtak. A kereset elutasításáról ld. a Fővárosi Törvényszék 104.K.704.988/2020/11. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.88/6/2021. számú határozatát."
       },
       {
@@ -11998,7 +11971,7 @@
        "html": "Ez azt jelenti, hogy meg kell vizsgálni a Kbt. által felkínált lehetséges jogalapokat. Ha egyik jogalap sem tűnik alkalmazhatónak az adott módosítási szándékra, akkor a szerződésmódosítás jogszerűtlen. Ha valamelyik jogalapnak megfeleltethető a tervezett szerződésmódosítás, akkor is tiltott lehet, mivel a Kbt. abszolút (minden körülmények között betartandó) tilalmakat is rögzít a szerződésmódosítások terén: „Semmis a szerződés módosítása, ha az arra irányul, hogy a nyertes ajánlattevőként szerződő felet mentesítsék az olyan szerződésszegés (illetve szerződésszegésbe esés) és annak jogkövetkezményei – ide nem értve a felmondás vagy elállás jogának gyakorlását – alkalmazása alól, amelyért felelős (illetve felelős lenne), vagy amely arra irányul, hogy az ajánlatkérő átvállaljon a nyertes ajánlattevőt terhelő többletmunkaköltségeket vagy indokolatlanul egyéb, a szerződés alapján a nyertes ajánlattevőt terhelő kockázatokat.”[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 142. § (3) bekezdése."
       },
       {
@@ -12006,7 +11979,8 @@
        "html": "3. Ha a felek a szerződést módosítják, akkor azt írásban, az alakiságra vonatkozó követelmények megtartásával szükséges megtenni."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy ha a felek nem „szerződésmódosítás”-nak neveznek egy okiratot, attól még az is szerződésmódosításnak minősülhet, így például egy egyeztetésről készített, mindkét fél által aláírt „emlékeztető.”[1] Emellett formális módosítás hiánya sem zárja ki a feltételek vizsgálatát: „Bár a Kbt. a szerződés megkötésére, valamint ezáltal annak módosítására is írásbeli formát ír elő, azonban az, hogy a felek ennek hiányában közös megegyezéssel módosították a szerződés feltételeit az előleg kifizetése és összege vonatkozásában nem zárja ki a Kbt. szerződésmódosításra vonatkozó szabályai megsértésének megállapítását.”[2]"
       },
       {
@@ -12051,31 +12025,32 @@
        "html": "5. A szerződésmódosítást a hirdetmény megjelenését követően haladéktalanul közzé kell tenni az EKR-ben, külön funkcióval, megadva a szerződésmódosítás releváns adatait is."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos, hogy a szerződésmódosítás közzététele nem válthatja ki a hirdetményközzétételi kötelezettséget. Példa: „Az eljárási cselekmények nyilvánosságát kizárólag az Értesítőben történő közzététel biztosítja. Az EKR a közbeszerzési eljárás (elektronikus) lebonyolításának, illetve az eljárásban résztvevők egymás közti kommunikációjának eszköze, kötelezően igénybeveendő keretrendszere. Az EKR-ben is hozzáférhetők azok a hirdetmények, amelyek közzétételre kerülnek az Értesítőben. Azonban valamely dokumentum kizárólag EKR-ben történő publikálása nem helyettesíti az Értesítőben közzétenni elmulasztott információ nyilvánosságát, annak joghatályos közzétételét.”[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.518/7/2021. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.362/8/2018. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 37. § (5) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A Kúria Kfv.VI.37.948/2019/5. számú ítélete, [25] pont."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. Pfeffer Zsolt: Bíró alkotta jog a közbeszerzésekben – jogvitákból jogalkotás? II. Közbeszerzési Értesítő Plusz, 2022/1., 32-36. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.64/11/2021. számú határozata."
       },
       {
@@ -12122,23 +12097,23 @@
        "html": "Alapvetően lényeges és ezáltal tilalmazott szerződésmódosításnak minősül az is, ha a szerződő fél pozíciójában változás következik be, azonban a szerződésmódosításra vonatkozó irányelvi szabályok engednek kivételeket, amelyek alkalmazása esetén nem szükséges új közbeszerzési eljárást lefolytatni. Nem tekinthető ugyanakkor szokatlannak, hogy felmerül az arra vonatkozó igény, hogy azt a szerződő felet, akinek a szerződést eredetileg odaítélték, egy másikkal helyettesítsék. Ennek oka lehet például az, hogy időközben a szerződő fél megbízhatatlanná vagy fizetésképtelenné vált, esetleg nem tartja be a szerződéses feltételeket.[5] Annak érdekében, hogy ne kelljen minden esetben költséges és időigényes új közbeszerzési eljárásokat lefolytatni az alanyváltozás megvalósítása céljából, a Kbt. bizonyos esetekben megengedi azt, hogy az eredeti szerződő fél helyébe egy másik gazdasági szereplő lépjen.[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 141. § (2) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 141. § (4) bekezdés c) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 141. § (6) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A Közbeszerzési Hatóság keretében működő Tanács útmutatója a közbeszerzési eljárások eredményeként megkötött szerződések Kbt. szerinti módosításával, valamint teljesítésével kapcsolatos egyes kérdésekről (2022. szeptember 29.). <a href=\"https://www.kozbeszerzes.hu/\" target=\"_blank\" rel=\"noopener\">https://www.kozbeszerzes.hu/</a> kozbeszerzesek-az/magyar-jogi-hatter/a-kozbeszerzesi-hatosag-utmutatoi/a-kozbeszerzesihatosag-kereteben-mukodo-tanacs-utmutatoja-a-kozbeszerzesi-eljarasok-eredmenyekentmegkotott-szerzodesek-kbt-szerinti-modositasaval-valamint-teljesitesevel-kapcsolatosegyes-kerdesekrol_2022-09-29/"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Abby Semple &amp; Marta Andrecka: Classification, Conflicts of Interest and Change of"
       },
       {
@@ -12150,7 +12125,7 @@
        "html": "Procurement &amp; Public Private Partnership Law Review (EPPPL) 10, no. 3 (2015), 184. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. a Kbt. 139. § (1) és (2) bekezdését."
       },
       {
@@ -12162,7 +12137,7 @@
        "html": "Mivel a közbeszerzési eljárás jogtalan mellőzésének egyik jogkövetkezménye a szerződés semmissége,"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] ezért a Kbt. úgy rendelkezik, hogy amennyiben a szerződés módosítására közbeszerzési eljárás jogtalan mellőzésével kerül sor a módosítás ennek megfelelően semmis.[3]"
       },
       {
@@ -12182,23 +12157,23 @@
        "html": "Másképpen fogalmazva: „Bár a korábbi szabályozás alapján kialakult gyakorlat szolgáltatás megrendelés esetén az időbeli hatály eképpeni módosítását a tiltott szerződésmódosításként kezelte, hisz az ajánlatkérő újabb beszerzési igényét elégíti ki, melyre vonatkozóan közbeszerzési kötelezettsége van, ugyanakkor az idézett irányelvi szabályok, valamint a nemzeti szabály mellé fűzött miniszteri indokolás alapján a Döntőbizottság álláspontja szerint önmagában a szerződés értékének kismértékben történő eképpeni módosítása, tehát további meghatározott időre történő szolgáltatásmegrendelés, amennyiben a feltételek teljesülnek, jogszerű.”[7]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.42/17/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 137. § (1) bekezdés a) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 141. § (8) bekezdés 2. mondatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.445/10/2022. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.260/6/2013. számú határozata. A döntés felülvizsgálatáról ld. a Fővárosi"
       },
       {
@@ -12206,11 +12181,11 @@
        "html": "Törvényszék 4.P.25.438/2013/9. számú ítéletét. Ld. még a KDB D.261/5/2016. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.350/4/2016. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] A KDB D.427/15/2018. számú határozata"
       },
       {
@@ -12240,27 +12215,27 @@
        "file": "modul-2-kviz-6-16.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.449/11/2019. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.145/9/2020. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.146/11/2010. számú határozata. Megjegyzendő, hogy a teljesítési határidő meghosszabbítása azonban nem kizárt: „A Döntőbizottság nem látta megalapozottnak a hivatalbóli kezdeményezés azon hivatkozását, hogy a teljesítési határidő leteltét követően nem lenne közbeszerzési jogi szempontból lehetőség a szerződés módosítására. A jelen jogorvoslat keretében vizsgált szerződés a szerződés módosításakor nem szűnt meg, a szerződésben nem rendelkeztek annak határozott idejéről, továbbá az ellenszolgáltatás teljesítése sem történt még meg.” A KDB D.245/13/2016. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.158/10/2020. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.350/4/2016. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. a KDB D.223/19/2018. számú határozatát."
       }
      ],
@@ -12318,11 +12293,11 @@
        "html": "A Kbt. összesen 5 lehetséges jogalapot különít el, ezt egészíti ki az alanyváltozásra vonatkozó lehetőség. A következő bekezdésekben az öt lehetséges esetkör feltételei kerülnek röviden áttekintésre. a) Az első az ún. de minimis esete. „A de minimis esetkör alkalmazhatóságának tárgyi és mértékbeli konjunktív feltételei vannak. A tárgyi feltételek közé tartozik, hogy kizárólag azon szerződésmódosítások jogszerűségét alapozzák meg, melyek a szerződés értékének változásával jár, nem változtatja meg a szerződés általános jellegét és illeszkedik az eredeti szerződés jellegéhez. A Kbt. idézett szakaszának vizsgálata körében alapvető feltétel, hogy csak olyan módosításra alkalmazható az eset, mely a szerződés értékének változásával jár.”[1] Fontos ugyanakkor, hogy a módosítás értéke a küszöbértéket (tárgytól függően 10-15%, illetve a vonatkozó uniós értékhatár)[2] nem haladhatja meg, hiszen ilyen esetben jogszerűen nem lehet e jogalapot alkalmazni a szerződésmódosítás alátámasztása körében."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.551/8/2019. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 141. § (2) bekezdés a) és b) pontját: ."
       },
       {
@@ -12334,7 +12309,7 @@
        "html": "„A tényállásban rögzített módon a felek a szerződés időbeli hatályát módosították, mely keretében a Kbt. 141. § (4) bekezdés c) pontja szerinti módosítási esetkört hivatkozták, valamint a jogorvoslati eljárásban hivatkoztak a Kbt. 141. § (2) bekezdés szerinti esetkörre. A de minimis esetkör alkalmazhatóságának tárgyi és mértékbeli konjunktív feltételei vannak. A tárgyi feltételek közé tartozik, hogy kizárólag azon szerződésmódosítások jogszerűségét alapozzák meg, melyek a szerződés értékének változásával jár, nem változtatja meg a szerződés általános jellegét és illeszkedik az eredeti szerződés jellegéhez. A Kbt. idézett szakaszának vizsgálata körében alapvető feltétel, hogy csak olyan módosításra alkalmazható az eset, mely a szerződés értékének változásával jár. A felek a módosítás során a szerződés időbeli hatályát növelték meg 4 hónap időtartammal. A szolgáltatás megrendelés esetén ugyanakkor az időbeli hatály módosítása a szerződés értékének növekedésével is együtt járt, hisz további 4 hónapon keresztül rendelt meg az ajánlatkérő szolgáltatást a kérelmezettől. Ennek megfelelően a Kbt. 141. § (3) bekezdése alapján a módosítási esetkör alkalmazható volt, feltéve, hogy az összes törvényi követelménynek eleget tett volna a módosítás. Bár a korábbi szabályozás alapján kialakult gyakorlat szolgáltatás megrendelés esetén az időbeli hatály ekképpeni módosítását tiltott szerződésmódosításként kezelte, hisz az ajánlatkérő újabb beszerzési igényét elégíti ki, melyre vonatkozóan közbeszerzési kötelezettsége van, ugyanakkor az idézett irányelvi szabályok, valamint a nemzeti szabály mellé fűzött miniszteri indokolás alapján a Döntőbizottság álláspontja szerint önmagában a szerződés értékének kismértékben történő ekképpeni módosítása, tehát további meghatározott időre történő szolgáltatásmegrendelés, amennyiben a feltételek teljesülnek, jogszerű. […] A szerződés általános jellegét általánosságban a szerződés időbeli hatálya nem érinti. A Döntőbizottság álláspontja szerint ugyanakkor egy határozott időre kötött szerződés határozatlan időre történő módosítása már a szerződés általános jellegét megváltoztató módosításnak minősül ez ugyanakkor jelen helyzetben nem áll fenn. A de minimis esetkör alkalmazhatóságának mértékre vonatkozó előírásoknak való megfelelőség vizsgálata körében alapvető kiindulási pont az eredeti szerződéses érték fogalma. A Kbt. 141. § (5) bekezdése határozza meg az eredeti szerződés értékét. Jelen tényállásbeli helyzetben ugyanakkor nem vizsgálható önmagában a szerződésmódosítás, hisz a törvényi feltételeknek megfelelően valamennyi módosítás nettó összértékét kellett figyelembe venni. Az eredeti szerződéses érték a 2018. január 1. és 2018. december 31. napja között teljesített szolgáltatások ellenértéke, mely a közbeszerzési eljárás eredménytájékoztatója szerint nettó 13.578.000.-Ft volt. A módosításokról közétett hirdetmény tanúsága szerint a módosítást követő szerződéses érték 18.042.000.-Ft. A fentiek alapján anélkül, hogy a többi szerződésmódosítás összértékét vizsgálnánk megállapítható, hogy a hivatkozott de minimis módosítási esetkör mértékre vonatkozó feltételét a felek nem teljesítették, így a szerződésmódosítás jogszerűségét ezen esetkör nem alapozza meg, tekintettel arra, hogy az értéknövekedés a 10%-os törvényi küszöböt meghaladja.” Felmerült még hivatkozási alapként az előre nem láthatóságra alapított módosítási jogalap, azonban a KDB az erre vonatkozó hivatkozást sem fogadta el: „E körben a felek előre nem látható körülménynek értékelték azt a körülményt, hogy a közbeszerzési eljárása eredménytelen lett. Jelen tényállásbeli helyzetben a módosítást két körülmény tette szükségessé. Egyrészt az ellátási kötelezettséggel terhelt beszerzési igény kielégítésére vonatkozó közbeszerzési szerződés határozott idejének lejárta, és az új közbeszerzési eljárás eredménytelensége. A határozott idejű közbeszerzési szerződés időbeli hatályának 2018. december 31. napi lejárata a felek számára a kötelem létrejöttekor, sőt tulajdonképp az ajánlattételi határidő lejártakor ismert volt, azt a felek láthatták előre. A közbeszerzési eljárás eredménytelensége körében az előre nem láthatóság szintén nem igazolt. Az előre nem láthatóság körében rögzíti továbbá a Döntőbizottság, hogy az eljárások során az ajánlatkérőknek számolniuk kell azzal, hogy a közbeszerzési eljárás keretében a gazdasági szereplők olyan eljárási cselekményeket tesznek, melyek az egyébként jogszerű közbeszerzési eljárás időkeretét a törvényi minimumhatáridőkhöz képest meghosszabbítják. Számolniuk kell továbbá arra is, hogy kizárólag érvénytelen ajánlat kerül benyújtásra, hisz a közbeszerzési eljárás kimenetele szempontjából ez egy előre látható alternatíva. Ennek megfelelően a beszerzési igényük kielégítésére vonatkozó közbeszerzések tervezése során a fenti körülményekkel előre számolniuk kell. Ezen körülményeket a beszerzésük időfaktora körében számításba kell venniük, s amennyiben valamely gazdasági szereplő, vagy akár hivatalbóli kezdeményező jogorvoslati eljárást kezdeményez, vagy kizárólag érvénytelen ajánlat kerül benyújtásra, annak időszükségletét számításba kell vennie az ajánlatkérőnek, s önmagában nem szolgálhat alapjául a korábbi közbeszerzési szerződés módosításának. 49. Fentiek alapján a ca) pontban foglalt törvényi feltétel jelen módosítás kapcsán nem állt fenn, így a szerződésmódosítás jogszerűségét ezen esetkör nem alapozza meg.”[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.551/8/2019. számú határozatát."
       },
       {
@@ -12350,15 +12325,15 @@
        "html": "Amennyiben a szerződés nem tartalmaz árindexálásra vonatkozó záradékot, az általában azt jelenti, hogy a költség vagy árfolyam növekedés árdrágító kockázatát a szerződés alapján a nyertes ajánlattevő viseli, vagyis akár veszteségesen is köteles a teljesítést elvégezni. Extrém mértékű és előre nem látható piaci árnövekedés esetén természetesen felmerülhet az áremelés igénye a vállalkozónál, de fontos tudni, hogy a Kbt. alapján többletmunka díjat egyáltalán nem, más üzleti kockázatot pedig csak kifejezetten indokolt esetben vállalhat át az ajánlatkérő, vagyis ezt a törvény még akkor is korlátozza, ha a felek egyébként meg kívánnak állapodni egy szerződésmódosításban. Ennek a problémának a megelőzésére is javasolt, hogy ha a szerződéstervezet nem tartalmaz árindexálási klauzulát, akkor ennek beiktatására a gazdasági szereplő még a közbeszerzési eljárás előtt piaci konzultáció során, vagy az eljárás ajánlattételi szakaszában kiegészítési tájékoztatást kérésben, vagy – tárgyalásos eljárás esetén – a tárgyalások során tegyen javaslatot az ajánlatkérőnek."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 141. § (4) bekezdés a) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.12/23/2022. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Közbeszerzési Hatóság keretében működő Tanács útmutatója a közbeszerzési eljárások eredményeként megkötött szerződések Kbt. szerinti módosításával, valamint teljesítésével kapcsolatos egyes kérdésekről (2022. szeptember 29.). <a href=\"https://www.kozbeszerzes.hu/\" target=\"_blank\" rel=\"noopener\">https://www.kozbeszerzes.hu/</a> kozbeszerzesek-az/magyar-jogi-hatter/a-kozbeszerzesi-hatosag-utmutatoi/a-kozbeszerzesihatosag-kereteben-mukodo-tanacs-utmutatoja-a-kozbeszerzesi-eljarasok-eredmenyekentmegkotott-szerzodesek-kbt-szerinti-modositasaval-valamint-teljesitesevel-kapcsolatosegyes-kerdesekrol_2022-09-29/ c) A harmadik esetkör az olyan további építési munkák, szolgáltatás vagy áruk beszerzése, amelyek nem szerepeltek az eredeti szerződésben: ennek azonban feltétele, hogy a szerződő fél személyének változása a Kbt.-ben meghatározottak szerint nehézségbe ütközne, vagy az ajánlatkérő számára jelentős hátránnyal vagy a költségek megsokszorozódásával járna.[1]"
       },
       {
@@ -12374,27 +12349,27 @@
        "html": "Tehát a kulcsszavak: „kellő gondosság”, és „előre nem láthatóság.” Fontos, hogy ebben a körben „Csak azok az indokok vizsgálhatók, amelyeket az ajánlatkérő a szerződésmódosítás indokaként a közzétett hirdetményben megjelölt.”[5] Továbbá figyelembe kell venni azt a követelményt is, hogy „nem elegendő az ajánlatkérő által előre nem látható körülményeket pusztán megjelölni, azt bizonyítania is tudni kell.”[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 141. § (4) bekezdés b) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.25/7/2017. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.33/14/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a Kbt. 141. § (4) bekezdés c) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A Kúria Kfv.VI.37.948/2019/5. sz. ítélete, [34] pontban kifejtett elvi tartalom."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.42/17/2022. számú határozata"
       },
       {
@@ -12414,27 +12389,27 @@
        "html": "- Fontos lehet az építési beruházás tárgya is: „Régi épületek felújításánál ismert építészeti probléma, hogy a kivitelező előre nem látható építészeti megoldással találkozik a kivitelezés megkezdése után.”[2] - „A közbeszerzési eljárás megfelelő, gondos előkészítése az ajánlatkérő érdekkörébe tartozik, így nem hivatkozhat alappal az ezzel összefüggésben adódó késedelem előre nem láthatóságára.”[3] - Az előre nem láthatóság követelménye alapvetően akkor valósulhat meg, „ha a szerződés módosítását indokoló körülmény jövőbeli bekövetkezéséről a feleknek nem volt tudomásuk és arra a felek a legnagyobb gondosság mellett sem számíthattak.”[4] Vagyis „nyilvánvalóan nem tekinthető előre nem látható oknak az a körülmény, amelyet a felek egybehangzóan már a szerződéskötés időpontjában is ismertek”, így példaként említhetők a teljesítést érintő időjárási körülmények.[5] - „Amennyiben az építőanyagok megrendelése során nehézségekbe ütközött az építőanyagkereskedelmi piacon kialakult helyzet miatt, a piaci helyzet nem a szerződés aláírása és az anyagok megrendelése közötti rövid idő alatt állt elő, az fennállt a szerződés aláírásának időpontjában is. A vállalkozó építés kivitelezést végző szakcég, így az ajánlattételkor és a szerződés aláírásakor fennálló, a munkájára jelentős hatással bíró piaci viszonyokat ismernie kell. Az ajánlatkérő érvelése szerint, mint önkormányzat nem végez építőipari tevékenységet, így nem ismerhette a piaci helyzetet. A Döntőbizottság rámutat, hogy a Kbt. 27. § (3) bekezdésének kógens rendelkezése szerint az ajánlatkérőnek a teljes közbeszerzési eljárásban biztosítania kell a szakértelmet, így amennyiben ilyen piaci helyzet állt fenn, erről a szerződéskötéskor az ajánlatkérőnek is tudnia kellett. A Döntőbizottság megjegyzi, hogy az utóellenőrzési eljárásban az ellenőrző szervezet kifejezett felhívására sem az ajánlatkérő, sem a vállalkozó nem tudott bemutatni olyan dokumentumot, amely az általuk állított helyzet kialakulását igazolta volna. Az ajánlatkérő kifejezetten nyilatkozott róla, hogy a vállalkozó állításának alátámasztására végzett ellenőrzéséről nem készített írásos dokumentumot, holott a Kbt. 46. § (1) bekezdése szerint az ajánlatkérő a közbeszerzési eljárását – annak előkészítésétől az eljárás alapján kötött szerződés teljesítéséig – írásban köteles dokumentálni.”[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.274/11/2012. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.640/8/2015. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.77/7/2010. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.761/9/2011. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.201/6/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.53/8/2020. számú határozata."
       },
       {
@@ -12450,19 +12425,19 @@
        "html": "- „A Döntőbizottság álláspontja szerint, amennyiben az ajánlatkérő közbeszerzési eljárását a Kbt. 28. § (1) bekezdésében megkövetelt „megfelelő” alapossággal készíti elő, beszerzési igényét előzetesen gondosan felméri. Mindez a jogszabály azon előírásával összhangban, mely szerint az ajánlatkérőnek törekednie kell a szerződésmódosítás elkerülésére, a jelen esetben azt jelenti, hogy a szerződés szakszerű és eredményes teljesítéséhez szükséges összes felmerülhető tényezőt számba veszi és ezeket a tételes költségvetés részévé kell tennie. […] A Döntőbizottság álláspontja szerint továbbá annak ellenére, hogy az elektromos vezetékek a közbeszerzés előkészítésekor az ajánlatkérő által elzárva voltak, a közbeszerzés Kbt. 28. § (1) bekezdésével adekvát előkészítésekor az ajánlatkérő akkor járt volna el a „megfelelő” gondossággal, ha az elektromos vezetékek részletes vizsgálatát is elvégzi és ezek valós állapotának megfelelően tervezi meg a beruházást.[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.62/19/2020. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.385/24/2018. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.376/10/2019. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.530/11/2019. számú határozata."
       },
       {
@@ -12478,15 +12453,16 @@
        "html": "7. ábra: KDB joggyakorlata szerződésmódosítás kapcsán – előre nem láthatóság esetei"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.425/7/2020. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.197/13/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos szempont a módosítás megengedhetőségének mérlegelésekor az is, hogy a törvényszöveg csak a körülmények által „szükségessé” tett módosításokra ad lehetőséget, ezért a szerződésbe foglalt új feltételek nem mehetnek túl a szükséges mértéken, és azzal arányosnak kell maradniuk (például, ha egy utólagos tervmódosítás miatt 20 napig akadályozva volt a teljesítés teljes munkafolyamata, akkor a szerződéses teljesítési határidőt legfeljebb ennyivel szabad hosszabbítani)."
       },
       {
@@ -12494,11 +12470,11 @@
        "html": "Itt is emlékeztetünk arra, hogy a Kbt. tiltja a nyertes ajánlattevő szerződésszegő magatartásáért való felelősség alóli felmentést, amiből az következik, hogy nem csak azt kell vizsgálni, mi volt az ajánlatkérő számára előre nem látható, hanem azt is figyelembe kell venni, hogy a szerződésszerű teljesítést megakadályozó körülményként a nyertes ajánlattevőként szerződő fél is csak a saját maga számára a szerződéskötéskor előre nem látható körülményekre hivatkozhat, amikért nem felelős a Ptk. alapján.[1] e) Végül említést kell tenni a nem lényeges módosításokról is.[2] Ennek is megvannak a jogszabályi feltételei, korlátai, a Kbt. meghatározza azt, hogy mikor tekintendő egy módosítás mindenképpen lényegesnek. Ebben az esetben is a gyakorlatnak kell tartalommal megtöltenie, hogy miképpen értelmezhetők a Kbt. által használt kifejezések („jelentős”, „új elem” stb.), azok hogyan tölthetők meg tényleges tartalommal. Az adott eset összes körülményét kell vizsgálni, hogy megfelel-e a feltételeknek vagy sem a módosítás."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ptk. 6:142. §"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 141. § (6) bekezdését."
       },
       {
@@ -12530,15 +12506,15 @@
        "file": "modul-2-video-2-plus-200.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.86/9/2017. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.8/10/2020. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.33/14/2021. számú határozata."
       }
      ],
@@ -12570,31 +12546,32 @@
        "html": "Ebből adódóan „A Kbt. 141. § szerinti jogsértés olyan közbeszerzési jogsértés, melyet a közbeszerzési szerződést kötő felek együttesen tudják megvalósítani,”[4] így a tiltott szerződésmódosítás jogkövetkezményeit is a feleknek kell viselniük. Nem fogadható el továbbá az az érv, hogy a szerződésmódosításokat az ajánlatkérőként szerződő fél kezdeményezte, és ebből adódóan csak őt terhelné felelősség.[5] Megjegyzendő, hogy a hivatkozott európai bírósági ítélet az arányosság követelményével is foglalkozott a bírság összegének meghatározása körében. Ennek megfelelően értékelni kell, hogy a nyertes ajánlattevőként szerződő fél milyen magatartást tanúsított, így figyelembe lehet venni, hogy ő kezdeményezte-e a szerződés módosítását, ő sugalmazta. Avagy éppen követelte azt az ajánlatkérőként szerződő féltől, hogy ne indítson új közbeszerzési eljárást. Ugyanakkor „a kiszabott bírság összege nem függhet attól a körülménytől, hogy a szerződés módosítása érdekében nem folytattak le közbeszerzési eljárást, mivel az ilyen eljárás lefolytatására vonatkozó döntés kizárólag az ajánlatkérő hatáskörébe tartozik.”[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. Pfeffer Zsolt: Mérlegelési és diszkrecionális jogkörön alapuló döntések a közbeszerzések területén I. Közbeszerzési Értesítő Plusz, 2020/5., 51-58. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.154/13/2020. számú határozata. Ld. még pl. a D.455/7/2020. számú határozatot."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.62/19/2020. vagy a KDB D.381/19/2018. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.427/15/2018. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.223/19/2018. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Az Európai Unió Bíróságának C‑263/19. sz. ügyben hozott ítélete, [71]-[75]"
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos továbbá, hogy „[a] közbeszerzési jogsértésért való felelősség objektív, a Döntőbizottságnak nem kell vizsgálnia, hogy mely okból, vagy milyen vélekedés alapján nem kerültek betartásra a közbeszerzési szabályok.”[1]"
       },
       {
@@ -12607,7 +12584,7 @@
        "file": "modul-2-kviz-7-18.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.540/14/2020. számú határozata, amely idézte a Kúria Kfv.II.37.434/2017/12."
       },
       {
@@ -12615,11 +12592,11 @@
        "html": "számú ítéletét. Ld. még a KDB D.518/13/2020. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.427/15/2018. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Kbt. 142. § (3) bekezdése."
       }
      ],
@@ -12688,7 +12665,7 @@
        "html": "Ilyen célkitűzéseket a szerződés módosításával sem lehet megvalósítani, hiszen az említettek szerint a módosítás semmissége is megállapítható. Mivel jelentős pénzügyi érdeksérelmek, veszteségek, károk merülhetnek fel a szerződések teljesítése kapcsán, ezért különösen fontos a megfelelő ellenőrzési mechanizmusok működtetése. Ennek megfelelően például külön szervezeti egység foglalkozik a szerződések teljesítésének és módosításának hatósági ellenőrzésével a Közbeszerzési Hatóságon belül."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Megemlíthető továbbá az európai uniós források ellenőrzését végző intézmények munkája is. Elsődleges garancia az átláthatóság,[2] ellenőrizhetőség és számon kérhetőség szempontjából, hogy „Az ajánlatkérő köteles dokumentálni a szerződés teljesítésére vonatkozó adatokat, ennek keretében köteles ellenőrizni és dokumentálni azon szerződéses kötelezettségek teljesítését, amelyeket a közbeszerzési eljárásban az értékelés során figyelembe vett, valamint minden, a szerződésben foglaltaktól eltérő teljesítést, annak okait és – adott esetben – a szerződésszegéssel kapcsolatos igények érvényesítését.”[3]"
       },
       {
@@ -12696,19 +12673,19 @@
        "html": "Vagyis egyrészt „A törvényi szabályozás célja az, hogy az ajánlatkérő a szerződés teljesítését, nemteljesítését, vagy nem szerződésszerű teljesítését felügyelje, ellenőrizze és dokumentálja, melynek kezdő időpontja nyilvánvalóan a szerződés létrejöttének napja, az ellenőrzési és dokumentálási kötelezettség befejezése a szerződés teljesítésének befejezéséhez kötődik. Az ajánlatkérői kötelezettség időtartama és határideje nyilvánvalóan a szerződésben foglalt rendelkezésektől függ.”[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a közbeszerzési eljárás eredményeként megkötött szerződések teljesítésének és módosításának Közbeszerzési Hatóság által végzett ellenőrzéséről szóló 308/2015. (X. 27.) Korm. rendeletet."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.201/6/2022. számú határozatnak [83] bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Kbt. 142. § (1) bekezdés."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.171/14/2020. számú határozata."
       },
       {
@@ -12724,35 +12701,35 @@
        "html": "Viszont a „szóbeliség” nem fogadható el, így az például, ha az ajánlatkérő szóban rendeli meg a keretszerződés során teljesítendő munkákat, mert így utóbb nincs lehetőség ellenőrizni azt, hogy a nyertes ajánlattevőként szerződő fél az ajánlatkérőként szerződő fél megrendelését teljesítette-e.[5] Ugyancsak jogsértő módon jár el az ajánlatkérőként szerződő fél, ha olyan teljesítést fogad el, amely nem felel meg az előírt követelményeknek, ilyenkor „tartalmilag szerződésmódosítás valósul meg.” Így példaként említhető az az eset, amikor olyan autóbuszokat vontak be a teljesítésbe, amelyek átlagéletkora 7,48 év, amely meghaladta az előírt 5 évet. Ez pedig a szerződés gazdasági egyensúlyának eltolódását eredményezte.[6] De ugyanígy említhető az el nem végzett, minőségcsökkent vagy selejtnek minősülő kivitelezési munkák átvétele és teljes körű kifizetése. Bár ilyen esetben felmerülhet az, hogy hol húzódik a bíróság és a KDB hatáskörének határa, mi a közbeszerzési és mi a hagyományos polgári jogi jogsértés,[7] vagyis hogyan képezhetők le közbeszerzési jogi szempontból a jogszerűtlen teljesítések. Érdemes arra is figyelemmel lenni, hogy amikor a nyertes ajánlattevő a közbeszerzési jogszabályok előírásait nem tartja be a teljesítés során (pl. nem megfelelő időpontban vagy tartalommal tesz eleget az ajánlattevők bejelentésének), annak vizsgálata kifejezetten beletartozik a KDB hatáskörébe,[8] aki ilyen jogsértések miatt meg is bírságolhatja a nyertes ajánlattevőt."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.171/14/2020. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.163/15/2020. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.171/14/2020. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.201/6/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.201/6/2022. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. a KDB D.10/33/2019. számú határozatát, amelyet elkésettség okán megváltoztatott a Fővárosi Törvényszék 104.K.705.821/2020/7.számú ítélete."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] Ld. a KDB D.401/25/2017. számú határozatát. A felülvizsgálatról ld. a Kúria Kfv.III. 38.151/2018/11. számú ítéletét."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[8] Kbt. 145. § (3)"
       },
       {
@@ -12777,15 +12754,15 @@
        "file": "modul-2-kviz-8-19.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 143. §-át."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.712/6/2006. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 43. § (1) bekezdés c) pontját, valamint a (7) bekezdését."
       }
      ],
@@ -13318,7 +13295,7 @@
        "html": "A joghatások ugyan mások, a gyakorlat viszont rugalmasabb keretek között működik."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A 2008. évi CVIII. törvény javaslati állapotához fűzött indokolás"
       },
       {
@@ -13512,7 +13489,7 @@
        "html": "- A hatékonyság pedig azt jelenti, hogy biztosítani kell azokat a jogi eszközöket a KDB számára, amelyek lehetővé teszik, hogy a jogsértések érdemben orvosolhatók legyenek. Ennek megfelelően például tilos megkötni mindaddig az eljárás eredményeként a szerződést, amíg jogorvoslati eljárás van folyamatban (kivéve, ha kifejezetten engedélyezte a KDB a szerződés megkötését), vagy például a KDB számára biztosított a törvényben az a jogkör is, hogy az ajánlatkérő döntését megsemmisítse, ami által a jogsértések korrigálhatók."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 177. §-át."
       },
       {
@@ -13731,7 +13708,7 @@
        "html": "Ehhez hozzá kell tenni a nyertes ajánlattevőként szerződő fél által megvalósított jogsértéseket is, hiszen például egy szerződés jogellenes módosítása vagy alvállalkozói bejelentés elmulasztása esetén őket is bírsággal sújthatják."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. Pfeffer Zsolt: A magyar közbeszerzési jog elmélete és gyakorlata II. Menedzser Praxis Kiadó, Budapest, 2017., 573-576. o."
       },
       {
@@ -13755,15 +13732,15 @@
        "html": "Az ajánlatkérőnek tehát minden előírásának megtartását számon kell kérnie, utóbb nem tekinthet el a saját előírásainak maradéktalan érvényesítésétől (ahogyan erről az érvénytelenség körében már részletesen szó volt)."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Kbt. 66. § (1) bekezdés"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Kbt. 69. § (1) bekezdés"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Kbt. 69. § (2) bekezdés"
       },
       {
@@ -13791,7 +13768,7 @@
        "html": "- „A Döntőbizottság fontosnak tartja annak kiemelését, hogy ajánlatkérőnek a szakmai gyakorlat meglétének igazolására más dokumentum (pl. szakmai önéletrajz, munkáltatói igazolás stb.) becsatolását kellett volna előírnia, melyből köteles meggyőződni az alkalmassági feltételeinek teljesüléséről, így jelen esetben ajánlatkérő ezt sem hiánypótlással, sem [felvilágosításkérés] alkalmazásával nem orvosolhatta.”[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.530/5/2009. számú határozata."
       },
       {
@@ -13803,11 +13780,11 @@
        "html": "Összefoglalásképp megállapítható, hogy a Kbt. elsősorban az ajánlatkérő jogkörébe utalta az adott közbeszerzési eljárás követelményrendszerének kialakítási jogát (a törvényi keretek között), azonban ezen általa megalkotott szabályokhoz kötve van. Ha azonban az előírásokat nem megfelelően alkotja meg, akkor nemcsak ezen helytelenül megfogalmazott szabályok vitathatók jogorvoslati eljárás keretében, hanem az arra épülő ajánlatkérői döntések is. Jogsértő magatartások (mulasztások) nemcsak egy-egy konkrét közbeszerzési eljáráshoz kapcsolódhatnak, hanem egyéb, eljárástól független törvényi kötelezettségekhez is, valamint a közbeszerzési eljárás eredményeként megkötött szerződésekhez is. Megjegyzendő, hogy a jogsértés megállapíthatóságának szempontjából irreleváns az, hogy az adott előírás megszegése szándékos volt, vagy csak téves jogértelmezésen alapult (a szándékosság kérdése a bírság kiszabásánál lehet irányadó szempont). Ez utóbbi esetek valószínűségét növeli az, ha a jogszabályi környezet túlságosan általános."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.170/14/2008. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.327/20/2012. számú határozatát."
       }
      ],
@@ -13955,7 +13932,7 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 145. § (7) bekezdés"
       },
       {
@@ -13975,15 +13952,15 @@
        "html": "Példa: rendkívül fontos a megfelelő, szabályszerű meghatalmazás, az ügyvédi törvényben meghatározott elektronikus aláírás megléte. Ezek hiánya a jogorvoslati kérelem érdemi vizsgálat nélküli visszautasításához vezet. „A jogorvoslati eljárásban kizárólag a Kbt. 145. § (7) bekezdése szerinti képviselő járhat el, azaz felelős akkreditált közbeszerzési szaktanácsadó, ügyvéd vagy jogtanácsos, a képviseleti jogot pedig igazolni kell. A jogorvoslati eljárásban […] írásban és csak köz-, illetve magánokirati formában lehet képviselőt meghatalmazni […] Jelen esetben a Döntőbizottság felhívására a kérelmező törvényes képviselő ügyvezetője úgy nyilatkozott, hogy a képviseletét ügyvéd látja el, az ügyvédi munkadíj felszámítását is kérte, csatolta a képviseletre vonatkozó meghatalmazást. A meghatalmazás azonban nem ügyvéd, hanem ügyvédi iroda részére szólt, tehát nem személyes ügyvédi képviselet ellátására, amely már önmagában nem felel meg a Kbt. 145. § (7) bekezdésben rögzített szabályának, […] tekintettel arra, hogy a jogorvoslati eljárás során ez esetben kizárólag ügyvéd járhat el. Ugyanakkor a meghatalmazás nem felel meg sem a közokirati sem a teljes bizonyító erejű magánokirati formában létrejött okiratnak. A meghatalmazott, mint ügyvédi iroda sajátkezű aláírása nem értelmezhető. A csatolt meghatalmazás tehát a hiánypótlást követően sem alkalmas a Kbt. 145. § (7) bekezdésében foglalt képviselet igazolására. A jogorvoslati kérelmet a hiánypótlásban továbbra is az ügyvezető írta alá. […] A kérelmező tehát a Döntőbizottság hiánypótlásában foglaltakat nem teljeskörűen teljesítette, mert a képviseletét nem megfelelően igazolta, valamint a hiánypótlását sem a Kbt. 145. § (7) bekezdésében foglalt képviselő útján terjesztette elő. Mivel a hiánypótlásban foglaltaknak a kérelmezőnem tett hiánytalanul eleget, és a Kbt. 151. § (3) bekezdése alkalmazásának sincs helye, ezért a Döntőbizottság a Kbt. 151. § (2) bekezdése alapján a jogorvoslati kérelmet visszautasította.”[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.885/16/2016. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.613/12/2017. számú vagy a D.532/11/2021. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.162/6/2021. számú végzése"
       },
       {
@@ -14004,11 +13981,11 @@
        "file": "modul-3-kviz-3-23.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.247/16/2012. számú végzése"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.143/27/2020. számú határozatát."
       }
      ],
@@ -14175,7 +14152,7 @@
        "html": "Az eljárási akadályok egymáshoz fűződő viszonyában pedig az alábbi megállapítás is idézhető: „A hatásköri kifogás elsődleges vizsgálati kötelezettségére figyelemmel az ajánlatkérőnek a kérelmező ügyfélképessége hiányára, valamint a jogorvoslati kérelem elkésettségére vonatkozó eljárási kifogásai kizárják egymást. A hatáskör hiányában ugyanis az ügyfélképesség és az elkésettség nem vizsgálható a Döntőbizottság részéről.”[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ez a megtámadott fél, valamint az egyéb érdekeltek válaszbeadványa („ellenkérelme”), amelyekben az érintettek reagálhatnak a jogorvoslati kérelemben előadottakra. „A"
       },
       {
@@ -14187,15 +14164,15 @@
        "html": "<strong>észrevételeiket.” [Kbt. 154. § (1) bekezdés]</strong>"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Kengyel Miklós: Polgári eljárásjog (Osiris Kiadó, Budapest, 2004), 243. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.261/12/2012. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.944/16/2016. számú határozata."
       },
       {
@@ -14244,11 +14221,11 @@
        "html": "Ha valamely kérelmező olyan ügyben nyújt be kérelmet a KDB-hez, amely nem tartozik a hatáskörébe, akkor a jogorvoslati eljárás nem folytatható le."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.150/4/2016. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 145. § (2)-(4) bekezdései."
       },
       {
@@ -14268,27 +14245,27 @@
        "html": "4. példa: „A kérelmező jogorvoslati kérelmében előadottak és a csatolt vállalkozási szerződések és számlák, valamint fizetési felszólítás alapján megállapította, hogy a kérelmező a közbeszerzési eljárást követően a közbeszerzési szerződés szerinti vállalkozói díj nemteljesítése miatt kezdeményezte a Döntőbizottság eljárását. A közbeszerzési szerződésben foglalt rendelkezések megszegése miatt kizárólag akkor van helye a Döntőbizottság eljárásának, amennyiben azt a Kbt. rögzíti. A Döntőbizottság azonban a közbeszerzési szerződésből eredő polgári jogi igények elbírálására nem jogosult a Kbt. 145. § (3) bekezdése alapján.”[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.395/12/2017. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.115/4/2018. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.210/9/2020. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.467/17/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.516/8/2021. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.79/2/2020. számú végzése."
       },
       {
@@ -14312,35 +14289,35 @@
        "html": "Utóbbi egyéb joghátrányt von maga után és a jogvesztő határidők általában rövidebbek, míg az elévülési idő hosszabb időtartamú.[2] A jogvesztő határidő – amelyet a Kbt. is alkalmaz a kérelmek (kezdeményezések) benyújtására – azt jelenti, hogy nincs helye a mulasztás kimentésének, „A jogvesztő határidő elmulasztásához a jog elenyészése fűződik, eljárásjogi akadálya van az érdemi vizsgálatnak.”[3] Ezen túlmenően azt is jelenti, hogy „[a] határidő letelte után az igényérvényesítés lehetősége kizárt. Nem áll fenn jogi lehetőség a határidők nyugvására, meghosszabbodására sem.”[4] E jellemzőre tekintettel pedig „A jogvesztés súlyos következménye csak a jogszabály kifejezett rendelkezése alapján állhat be.”[5] A Kbt. deklarálja egyértelműen, hogy határidők elmulasztása jogvesztéssel jár.[6] A rövid, jogvesztő határidők összhangban állnak az Európa Unió jogával és a gyors és hatékony jogorvoslat elvével, a hatékony jogvédelemhez való joggal.[7] Az a szabályozási megoldás, hogy „időben”, és a jogsértések megjelölésével, jogvesztés terhe mellet kell benyújtani a kérelmet, a közbeszerzési irányelvek hatékony alkalmazását szolgálja, hiszen nem kell azzal számolni végig, hogy egy korábbi jogsértés kapcsán az eljárás későbbi fázisában indul jogorvoslati eljárás.[8]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Részletesen ld. Pfeffer Zsolt: A jogvesztő közbeszerzési jogorvoslati határidők a gyakorlat tükrében (I. rész). Közjogi Szemle, 2016/4, 75-84. o., valamint Pfeffer Zsolt: A jogvesztő közbeszerzési jogorvoslati határidők a gyakorlat tükrében (II. rész). Közjogi Szemle, 2017/1, 35-40. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Kilényi Géza: Az elévülés az államigazgatási jogban. Jogtudományi Közlöny 1969. 5. sz. 248. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.565/12/2007. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] D.45/15/2011. számú döntőbizottság határozat (döntéshozatal időpontja: 2011. február 25.)."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] 4/2003.PJE.szám."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Kbt. 148. § (10) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] Az Európai Unió Bíróságának C-532/20. számú ítélete, [21]-[22]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[8] Ld. az Európai Unió Bíróságának C‑54/18. számú ítélete, [40]-[41]"
       },
       {
@@ -14365,7 +14342,7 @@
        ]
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.339/2/2013. számú végzése."
       },
       {
@@ -14398,11 +14375,11 @@
        "html": "Ha a Kbt. 115. §-a szerinti eljárásban kívánja a kérelmező az eljárást lezáró döntést vitatni, akkor erre az említett 10 napos helyett csak 5 napos határidő áll rendelkezésre. A Kbt. részletes szabályokat tartalmaz arra nézve, hogy mit kell tekinteni a jogsértésről való tudomásszerzésnek, illetve a jogsértés megtörténtének.[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.498/10/2011. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 148. § (3)-(9) bekezdéseit."
       },
       {
@@ -14434,31 +14411,31 @@
        "html": "6. példa: „Tekintettel arra, hogy a hiánypótlási felhívás 2021. március 16. napján került megküldésre, így a kérelmező a hiánypótlással összefüggő jogorvoslattal legkésőbb 2021. június 14. napjáig élhetett volna, így a 2021. június 18. napján előterjesztett kérelem elkésettsége megállapítható volt.”[7]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.680/11/2009. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.845/11/2011. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.370/21/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.179/19/2010. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.484/22/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.440/13/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] A KDB D.290/27/2021. számú határozata."
       },
       {
@@ -14478,23 +14455,23 @@
        "html": "3. példa: a Kbt. előírja, hogy a kizáró ok, illetve az alkalmassági követelmények igazolására való felhívásának jogsértő jellege miatt külön jogorvoslati kérelem nem nyújtható be, ezen jogsértés ellen a közbeszerzési eljárást lezáró jogsértő döntéssel szembeni jogorvoslati kérelemben lehet kérelmet előterjeszteni.[4] Így idő előttiség valósulhat meg egy korai kérelem esetén: „A jogorvoslati kérelem 3. kérelmi elemében vélelmezett jogsértésként a kérelmező azt jelölte meg, hogy az ajánlatkérő jogsértően járt el akkor, amikor nem nyilvánította érvénytelenné az egyéb érdekelt ajánlatát a Kbt. 65. § (1) bekezdés c) pontja szerint előírt részvételi feltétellel összefüggésben. A kérelmező a jogsértő eseményről való tudomásszerzésének időpontjaként az ajánlatkérőnek a Kbt. 69. § (4) bekezdése szerinti felhívás megküldéséről szóló tájékoztató EKR-be feltöltésének napját jelölte meg. [...] A Döntőbizottság ténybelileg rögzíti, hogy a közbeszerzési eljárás jelen szakaszában az ajánlatkérő még nem zárta le az egyéb érdekelt ajánlatának érvényességi vizsgálatát, nem hozott döntést az ajánlattevő alkalmasságáról vagy alkalmatlanságáról, adott esetben kizáró ok fennállásáról. Az ajánlatkérő még nem döntött az egyéb érdekelt ajánlatának érvényességéről vagy érvénytelenségéről, még nem hozta meg az eljárást lezáró döntését. A Döntőbizottság megállapította továbbá, hogy az ajánlati kötöttség beálltát követően az ajánlatkérő nem hozott döntést a részvételi feltételek módosításáról sem. A fentiekre tekintettel a Döntőbizottság megállapította, hogy jogorvoslati kérelem 3. kérelmi eleme az ajánlatkérő Kbt. 69. § (4) bekezdése szerinti eljárási cselekményére vonatkozik, amely miatt a Kbt. 148. § (6) bekezdése értelmében külön jogorvoslati kérelem nem nyújtható be. A Kbt. 69. § (4) bekezdése alapján bekért igazolások vizsgálatának lezárásáig az alkalmassággal vagy a kizáró okokkal összefüggő döntés nem kérhető számon az ajánlatkérőn, ennélfogva jelenleg nincs joghatályosan támadható ajánlatkérői döntés, eljárási cselekmény vagy mulasztás.”[5]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.623/21/2017. számú végzése"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.92/18/2022. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.658/12/2017. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a Kbt. 148. § (6) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.402/2/2018. számú végzése."
       },
       {
@@ -14506,23 +14483,23 @@
        "html": "Azáltal, hogy a Kbt. rögzíti, ki jogosult jogorvoslati kérelmet előterjeszteni, kizárja az ún. „közérdekű kereset” benyújtásának lehetőségét.[4] A jogalkotó közel másfél évtizede némiképpen lazított ezen a tilalmi elven, és az érdek-képviseleti szervezeteket is felhatalmazta jogorvoslati kérelem előterjesztésére, mivel „Az ajánlattevők gyakran nem mernek maguk indítani jogorvoslati eljárást, hogy az ajánlatkérővel való viszonyuk ne romoljon el. A Kbt. azért teszi lehetővé a nem ajánlattevői kérelmezést csak a felhívásokkal és dokumentációval, valamint azok módosításával kapcsolatban, hogy ösztönözze ezek megtámadását, mivel – az előzetes vitarendezésnél kifejtettekkel azonosan – a közbeszerzési eljárások jogsértő volta a jogsértő ajánlati felhívás vagy dokumentáció miatt szokott fennállni, a közbeszerzési eljárás későbbi időszakában elkövetett jogsértések ennek már csak következményei.”[5]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 148. § (2) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.261/12/2012. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.373/15/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A Közbeszerzési Döntőbizottság egyik 1999-es határozatában a következőket rögzítette: „Nem nevezhető közvetlen érdeknek az a körülmény, hogy az állami és önkormányzati szervek által végzett beszerzések közpénzből történnek, és így gyakorlatilag, mint adófizetőnek minden állampolgárnak jogos érdeke fűződhet ahhoz, hogy ezek felhasználása miként történik. Az ilyen értelmezés ugyanis valójában ahhoz vezetne, hogy bármely személy ügyfélképességét el kellene fogadni.” Ezt a tételt a KDB egy olyan ügyben fogalmazta meg, amelyben a kérelmezők önkormányzati képviselők voltak, illetve egy személy a pénzügyi ellenőrző bizottság tagja. A Kbt. kifejezett felhatalmazása hiányában nem kifogásolhatták az önkormányzat, mint ajánlatkérő egyik képviselő-testületi határozatát, amely álláspontjuk szerint közbeszerzési eljárás jogtalan mellőzésével megvalósított beszerzés megvalósítására vonatkozott. (A KDB D.131/6/1999. számú határozata.)"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A Kbt. 148. § (2) bekezdése."
       },
       {
@@ -14534,19 +14511,19 @@
        "html": "Alapvető követelmény, hogy az ajánlattevő kedvezőbb pozícióba kerülhessen a jogorvoslati eljárás eredményeként, vagyis, hogy ajánlatot tudjon tenni, vagy hogy nyertes ajánlattevő lehessen. Egy egyszerű példával lehet szemléltetni, hogy pontosan mit jelent ez. Ha egy közbeszerzési eljárásban benyújtásra került hét ajánlat, akkor a második helyezett ajánlattevő vitathatja az összegezés megküldését követően az első helyezett nyertes ajánlattevő ajánlatának érvényességét, hiszen, ha eléri, hogy a nyertes ajánlat érvénytelen legyen végül, akkor ő kerül a helyére, és elnyerheti a szerződéskötés jogát. De a sorban következő ajánlattevőknek már az őket megelőző ajánlattevők ajánlatának érvényességét is vitatniuk kell, hiszen, ha az ötödik helyezett csak a nyertes ajánlat érvényességét kifogásolja, hiába járna sikerrel, attól ő nem kerülne kedvezőbb helyzetbe. („Valóban jogos igény az ajánlattevő részéről, hogy az ajánlatkérő az ajánlatok bírálatát a jogszabályoknak megfelelően végezze el, de ez még önmagában nem teremti meg az adott ajánlattevő jogos érdekének fennállását, ehhez az szükséges, hogy a jogorvoslati kérelemmel elérni kívánt cél alapján az ajánlattevő kedvezőbb helyzetbe kerülhessen.”)[3] Ha nem az eljárást lezáró döntés, hanem már a közbeszerzési dokumentumok tartalma képezi a jogvita tárgyát (például egy túlzott alkalmassági követelmény vagy egy versenykorlátozó műszaki paraméter), akkor alapvető feltétel, hogy milyen tevékenységet végez a piacon ténylegesen az ajánlattevő, valóban képes lenne a vitatott feltételek eltörlésével ajánlatot tenni. Így például egy „közvetítő” cég ne vitasson építési beruházás tárgyú közbeszerzési eljárást, hanem nyújtson be az a kivitelező vállalkozás jogorvoslati kérelmet, amely ténylegesen végez építőipari tevékenységet, mert csak az ő esetében állhat fenn közvetlen érdeksérelem. Ugyancsak megtagadja az ügyfélképességet a joggyakorlat, ha a közös ajánlattevők (konzorcium) egy „fantázianév” alatt nyújtják be a kérelmet. Annak nincs akadálya, hogy az egyik közös ajánlattevő vagy mindkét ajánlattevő a saját neve alatt közösen nyújtsa be a kérelmet, vagyis jogilag létező vállalkozási nevek kerüljenek feltüntetésre a kérelmezői megnevezések körében.[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.320/19/2010. számú határozata. Ld. még a D.845/14/2009. számú határozatát vagy a D.567/14/2010. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.79/23/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Fővárosi Törvényszék 25.K.700.307/2018/19. számú ítélete."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Legfelsőbb Bíróság, a Kfv.VI.39.075/2010/17. számú eseti döntését (EBH2011. 2373.), valamint a KDB D.232/34/2021. számú végzését."
       },
       {
@@ -14558,11 +14535,11 @@
        "html": "Számos tényező és lehetséges helyzet befolyásolja az ügyfélképesség fennállását, ezért célszerű néhány példával részletesebben bemutatni ezt a problémakört."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.345/22/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.139/22/2012. számú határozata. Ld. még a D.77/18/2017. számú határozatot."
       },
       {
@@ -14602,47 +14579,47 @@
        "html": "9. példa: „Az alvállalkozó csak a reá közvetlenül vonatkozó, a jogi helyzetét közvetlenül érintő ajánlatkérői eljárási cselekmények vagy mulasztások tárgyában rendelkezik ügyfélképességgel. A Döntőbizottság a fentiek szerint megállapította, hogy a kérelmező jogát, jogos érdekét csak közvetett módon, a fővállalkozóval fennálló szerződése alapján sértheti a felhívás és a dokumentáció kifogásolt alkalmassági előírása, ezért a kérelmező ügyfélképessége nem állapítható meg.”[11]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.223/13/2021. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.242/17/2021. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.271/20/2021. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.549/16/2021. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.348/13/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.390/16/2022. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] A KDB D.507/4/2022. számú végzése"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[8] A KDB D.533/23/2022. számú végzése"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[9] A KDB D.533/23/2022. számú végzése"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[10] A KDB D.217/17/2018. számú végzése. Ld. még a D.211/19/2018. számú végzést (a végzést jóváhagyta: Fővárosi Törvényszék 106.K.700.741/2018/21. számú ítélete)"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[11] A KDB D.186/6/2016. számú végzése."
       },
       {
@@ -14669,15 +14646,15 @@
        "html": "A jogorvoslati kérelem visszavonásának lehetőségéről a későbbiekben részletesebben szó lesz."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. pl. a KDB D.203/19/2021. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.20/14/2020. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.446/08/2019. számú végzését."
       }
      ],
@@ -14701,7 +14678,7 @@
        "html": "A jogorvoslati kérelmet meghatározott tartalmi elemekkel kell elkészíteni, valamint csatolni kell a szükséges mellékleteket. A kötelező tartalmi elemekre vonatkozóan a jogszabály ad tételes felsorolást."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ennek megfelelően a jogorvoslati kérelemben a következőket kell megjelölni:"
       },
       {
@@ -14733,7 +14710,7 @@
        "html": "az esetleges előzetes vitarendezés lefolytatását, továbbá annak eredményét, illetve az ajánlatkérő válaszát, amelyet csatolni is kell."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 149. § (1) bekezdését."
       },
       {
@@ -14777,7 +14754,7 @@
        "html": "8."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A KDB D.278/5/2012. számú végzése."
       },
       {
@@ -14809,27 +14786,27 @@
        "html": "- A kérelem végén elmaradhatatlanok a szükséges hivatkozások (például az igazgatási szolgáltatási díj megfizetésre került, vagy kérik ehhez kapcsolódóan a becsült érték megadását, vagy hogy a kérelmező eleget tett az ellenérdekű fél értesítési kötelezettségének).[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ákr. 20. § (1) bekezdés"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.993/3/2011. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] EBH2012.K.12. Ld. a KDB D.504/18/2022. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.504/18/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.726/11/2009. számú határozatát: „A Döntőbizottság álláspontja szerint nem elegendő általánosságban hivatkozni az ajánlati tartalomnak a gazdasági ésszerűséggel való összeegyeztethetetlenségére, a jogorvoslati kérelemben pontosan meg kell jelölni azt az értékelt tartalmat, amely vonatkozásában hozott ajánlatkérői döntést a kérelmező vitatja.”"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Pfeffer Zsolt: A magyar közbeszerzési jog elmélete és gyakorlata II. (Menedzser Praxis Kiadó, Budapest, 2017), 629. o."
       },
       {
@@ -14853,19 +14830,20 @@
        "html": "A jogorvoslati kérelmében a kérelmező tehát nem kérhet mást, a KDB pedig nem hozhat más érdemi döntést, mint amelyet a törvény nevesít. A jogsértés orvoslásának eszköze a vitatott döntés KDB általi megsemmisítése. A „döntés” fogalma tágan értelmezendő, hiszen ebbe a körbe tartozhat az eljárást lezáró döntés mellett az eljárást megindító felhívás, egy kiegészítő tájékoztatás, egy hiánypótlási felhívás vagy egy iratbetekintési jegyzőkönyvbe foglalt, az iratbetekintést korlátozó ajánlatkérői rendelkezés is. A megsemmisítési jogkörből az is következik, hogy a kérelmező nem kérheti például azt, hogy valamely ajánlatot nyilvánítson a KDB érvénytelenné,[2] vagy hogy jelölje meg őt az eljárás nyertesének.[3] Vagyis a bírálat és döntéshozatal ajánlatkérőt megillető jogát és felelősségét a KDB nem veheti át. Ennek megfelelően célszerű átgondolni a döntésre irányuló indítványok tartalmát."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos megemlíteni, hogy a KDB-vel elektronikus úton kötelező kommunikálni a jogorvoslati eljárásban,[4] de bizonyos személyek – elektronikus ügyintézésre kötelezettek – a Közbeszerzési Hatóságnál is csak elektronikus úton intézhetik az egyéb ügyeiket.[5] A jogilag szabályozott „elektronikus út” nem azonos a hétköznapokban használt elektronikus levelezéssel (e-maillel),[6] hanem ügyfélkapu (hivatali kapu, cégkapu) alkalmazásával kell a meghatározott elektronikus nyomtatványokat használni. A Kbt. előírja, hogy a kérelem benyújtása előtt a kérelmező köteles erről – az általa feltételezett jogsértés megjelölésével – az ajánlatkérőt értesíteni.[7] Ezen értesítési kötelezettség elmulasztása nem jelenti a jogorvoslati eljárás lefolytatásának akadályát, nem eljárási feltétel. Ezen túlmenően a törvény nem is határozhatná meg eljárási feltételként, figyelemmel az uniós jog azon követelményre, amely szerint a jogorvoslati eljárás megindításának ilyen jellegű feltételhez kötése sértené az irányelvekben foglalt jogorvoslathoz való jogot. És mivel e kötelezettség nem része a jogorvoslati eljárásnak, ezért az eljárási bírság nem alkalmazható szankcióként arra az esetre, ha a kérelmező elmulasztja e kötelezettség teljesítését.[8]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 165. §-át."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. pl. a KDB D.166/21/2018. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] „A Döntőbizottság jogsértés kimondása esetén sem veheti át az ajánlatkérő szerepét, nem dönthet helyette az eljárás eredményessé, avagy eredménytelenné nyilvánításáról.” A"
       },
       {
@@ -14873,7 +14851,7 @@
        "html": "KDB D.273/18/2012. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. az elektronikus ügyintézés és a bizalmi szolgáltatások általános szabályairól szóló 2015. évi CCXXII. törvényt."
       },
       {
@@ -14881,15 +14859,15 @@
        "html": "[5]Ld. <a href=\"https://www.kozbeszerzes.hu/e-ugyintezes/a-kozbeszerzesi-hatosag-kozlemenye-azelektronikus-ugyintezesrol-/\" target=\"_blank\" rel=\"noopener\">https://www.kozbeszerzes.hu/e-ugyintezes/a-kozbeszerzesi-hatosag-kozlemenye-azelektronikus-ugyintezesrol-/</a>"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. pl. a KDB D.551/13/2021. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] Ld. a Kbt. 148. § (12) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[8] Ld. pl. a KDB D.614/9/2010., a D.620/10/2010. számú határozatát, valamint a D."
       },
       {
@@ -14917,15 +14895,15 @@
        "html": "A megindítás azt jelenti, hogy a KDB megteszi a jogorvoslati eljárás érdemi lefolytatásához kapcsolódó első jogi aktusokat, azaz megküldi az értesítést a megindításról, továbbá a közbeszerzési eljárás (egyes) iratainak megküldésére (elérhetővé tételére), az érdeklődés jelzésére, valamint az észrevételek előterjesztésre szólítja fel az érintetteket.[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A különbségtételről ld. a KDB D.202/27/2011. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 148. § (11) bekezdését, valamint a Kbt. 193. § (1) bekezdés e) pontját."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. Kbt. 154. § (1) és (2) bekezdését."
       },
       {
@@ -14933,15 +14911,15 @@
        "html": "Rendkívül fontos, hogy az ajánlatkérőnek a Közbeszerzési Hatóság honlapján közzétett adatokból akkor is tudomást kell szereznie a jogorvoslati kérelem benyújtásáról, ha a kérelmező nem küldte meg a kérelem benyújtásáról szóló értesítést. Ennek a szerződéskötési moratórium törvényi meghosszabbodása szempontjából is jelentősége van. Ugyanis a Kbt. úgy rendelkezik, hogy „Ha jogorvoslati kérelmet [148. § (2) bekezdés] vagy kezdeményezést [152. §] nyújtanak be, a szerződést – a (3) bekezdés szerinti esetben a jogorvoslati eljárással érintett részre vonatkozó szerződést – az ügy érdemében hozott vagy a közbeszerzési ügy befejezését eredményező határozat meghozataláig nem lehet megkötni, kivéve, ha a Közbeszerzési Döntőbizottság – vagy a Közbeszerzési Döntőbizottság végzésével szemben indított közigazgatási perben a bíróság – a szerződés megkötését engedélyezi [156. § (4) bekezdés]. Ha időközben a nyertes ajánlattevő ajánlati kötöttsége lejárt, az ajánlatkérő akkor köthet vele szerződést, ha a nyertes ajánlattevő nyilatkozik, hogy ajánlatát fenntartja.”[1] Alapvető ugyanis a jogsértés orvosolhatóságának fenntartása, hiszen a KDB a jogsértő döntést, illetve döntéseket megsemmisítheti, ha a szerződést még nem kötötték meg. Lehetőség van azonban arra, hogy a jogorvoslati eljárás folyamán kérjék a KDB-től a szerződés megkötésének engedélyezését, ha halasztást nem tűrő kiemelkedően fontos érdek vagy közérdek (ideértve a nemzetgazdasági okot) védelme azt indokolja, valamint, ha annak előnyei meghaladják a szerződéskötéssel járó hátrányokat.[2] A szerződéskötéskötési moratórium megsértése – egyéb feltételek fennállása esetén – a megkötött szerződés semmisségét eredményezi, de ez nem automatikus jogkövetkezmény.[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 131. § (7) bekezdés."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 156. § (4) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. pl. a KDB D.515/6/2022. számú határozatát. (Keresettel támadták.)"
       },
       {
@@ -14949,7 +14927,7 @@
        "html": "A jogorvoslati eljárás megindításának további feltétele, hogy az igazgatási szolgáltatási díjat megfizesse és a megfizetést megfelelő módon igazolja a kérelmező, ugyanis a megfizetést igazoló dokumentumot csatolni kell a kérelemhez. (Nem elegendő az átutalás elindításáról szóló dokumentum.)"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A jogorvoslati kérelemhez kapcsolódó hiánypótlási esetként definiálja a Kbt., ha a díj megfizetéséről szóló igazolást nem csatolták.[2] A jogszabály nem írja elő, hogy „[a] befizetést a hiánypótló felhívás kiadását megelőzően kell teljesíteni. Amennyiben a hiánypótlás eredményeként történik meg a díj befizetése és ebből következően az arról kiállított igazolás benyújtása, a jogorvoslati kérelem a vele szemben támasztott alaki követelményeknek megfelel és érdemben elbírálható.”[3]"
       },
       {
@@ -15002,23 +14980,23 @@
        "html": "- 1–3 közötti számú kérelmi esetén a díj nem változik, - 4–6 közötti számú kérelmi elem esetén a 125%-a, - 7–10 közötti számú kérelmi elem esetén a 150%-a, - 11–15 közötti számú kérelmi elem esetén a 175%-a, - 16 vagy annál több kérelmi esetén pedig az alapdíj kétszerese fizetendő meg.[5]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.326/4/2012. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 151. § (2) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Fővárosi Ítélőtábla 3.Kf.27.024/2011/6. számú ítélet"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a 45/2015. (XI. 2.) MvM rendelet 1. § (1) bekezdését és 2. §-át, valamint a Kbt. 151. § (3)-(4) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a 45/2015. (XI. 2.) MvM rendelet 1. § (3) bekezdését."
       },
       {
@@ -15039,11 +15017,11 @@
        "file": "modul-3-kviz-4-24.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a 45/2015. (XI. 2.) MvM rendelet 2. § (3) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.29/25/2018. számú határozatát."
       }
      ],
@@ -15168,27 +15146,27 @@
        "html": "- „Más a helyzet a visszavont kérelmi elemek esetén. A visszavont kérelmi elemek esetében, az e vonatkozásban tett jognyilatkozattal végérvényesen beállt az erre alapított eljárás megszüntetési ok, így a visszavonó nyilatkozatok visszavonására ezt követően már nem áll fenn jogszerű lehetőség, e kérelmi elemek már nem képezhetik a jogorvoslati eljárás tárgyát. A Döntőbizottság e kérelmi elemek esetében a kialakult joggyakorlat szerint (ld. D.290/29/2010. sz. határozat) nem folytathatta a jogorvoslati eljárást, így e kérelmi elemek érdemben már nem bírálhatók el […].”[6]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 151. § (7) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.92/18/2022. végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Kbt. 158. § (2) bekezdése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a Kbt. 151. § (8) bekezdését. Ld. pl. a KDB D.23/10/2017. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.95/14/2017. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] A KDB D.407/11/2011. számú határozata Ld. még a D.697/15/2010. számú határozatot."
       },
       {
@@ -15205,11 +15183,11 @@
        "file": "modul-3-kviz-5-25.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. pl. a KDB D.112/6/2017. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A Kbt. 151. § (8) bekezdése. Ld. pl. a KDB D.31/18/2023. számú végzését."
       }
      ],
@@ -15284,19 +15262,20 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos szabály, hogy nem minden érintett lesz egyéb érdekelt (például az összes ajánlattevő). A KDB az ajánlatkérőn, a kérelmezőn (hivatalbóli kezdeményezőn) kívül csak azokat vonja be az eljárásba, akik a részvételi szándékukat jelezték, vagy azokat, akiket kérelmezettként be kell vonni. Vagyis az eljárás megindításáról szóló végzés átvételét követő három munkanapon belül elektronikus kapcsolattartás útján jelezhetik a jogorvoslati eljárásban történő részvételi szándékukat jogi képviselő meghatalmazásának csatolásával azok, akik szükségesnek tartják a részvételt. E három munkanapos határidő elmulasztása jogvesztéssel jár.[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 146-147. §-aihoz fűzött miniszteri indokolás."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a Kbt. 193. § (4) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. Kbt. 154. § (1a) bekezdését."
       },
       {
@@ -15323,11 +15302,11 @@
        "html": "Az ajánlatkérő úgy is dönthet, hogy nem terjeszt elő észrevételeket (ezzel azonban megfosztja magát attól, hogy az álláspontját kifejtse). Ezen kívül nem szükségszerű, hogy az észrevételek bármilyen védekezést tartalmazzanak: az sem ritka, hogy az ajánlatkérő elismeri a jogsértést, és nem bocsátkozik vitába a tények nyilvánvalósága okán. Ha az ajánlatkérő a jogsértést elismeri, együttműködő magatartást tanúsít, az a bírság kiszabása körében értékelhető körülményként vehető figyelembe a javára. A gyakorlatban elvárás, hogy a többi résztvevőnek is meg kell küldeni a beadványokat, nemcsak a KDBnek, továbbá az jogszabályi követelmény, hogy „A papíralapon rendelkezésre bocsátott iratokkal együtt azoknak az iratoknak az informatikai eszköz alkalmazásával megszerkesztett, szerkeszthető formátumú változatát is meg kell küldeni, amelyek ilyen formátumban rendelkezésre állnak.”[1] A felek egymás beadványaira reagálhatnak, a nyilatkozatok megtételére a KDB határidőt tűzhet. Ezen kívül, ha tárgyalás tartására kerül sor, akkor legkésőbb az ügyfelek a tárgyalást megelőzően kötelesek valamennyi érdemi nyilatkozat, észrevétel megtételére. Ezt követően a KDB felhívása nélkül előterjesztett további észrevételeket vagy nyilatkozatokat nem veszi figyelembe a döntése meghozatalakor.[2]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 154. § (2) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A Kbt. 160. § (3)-(4) bekezdése."
       },
       {
@@ -15347,11 +15326,11 @@
        "html": "Az eljárás hivatalbóli kiterjesztésével kapcsolatban azonban a Kbt. korlátozást is tartalmaz: „Az eljárás kiterjesztésére akkor van lehetőség, ha a feltárt jogsértés sérti a verseny tisztaságát vagy nyilvánosságát, az ajánlattevők esélyegyenlőségét vagy érdemben kihatott az ajánlatkérő döntésére.”[1] A KDB összegző megállapítása szerint „A hivatalbóli kiterjesztés egyrészt diszkrecionális jog, másrészt nem lehet parttalan, mert éppen maga a törvény szabja meg annak kógens feltételeit.”[2] A kiterjesztéshez kapcsolódóan az a korlátozás is megemlíthető, amely szerint „A Döntőbizottság és a közigazgatási bíróság töretlen gyakorlata szerint a hivatalból történő vizsgálat kiterjesztése nem terjedhet ki az egyébként a jogvesztő határidőn túl előterjesztett, elkésett jogorvoslati kérelem elbírálásának a lehetőségére, mivel az ellenkező álláspont a jogvesztő határidők tartalmi kiüresedéséhez, félre tételéhez vezetne.”[3] Vagyis „A hivatalbóli kiterjesztés „[n]em lehet eszköze más eljárásjogi akadály miatt nem vizsgált jogsértések vizsgálata kikényszerítésének sem.”[4] Ebből adódóan nem célravezető az a stratégia, hogy nem vitatja a közbeszerzési dokumentumok tartalmát jogvesztő határidőn belül az ajánlattevő abban bízva, hogy majd az ajánlatkérői döntés meghozatalát követően elegendő lesz a döntés támadása, és majd hivatalbóli kiterjesztés kérése kapcsán kerül sor a jogsértések feltárására. „A kérelmező jogorvoslati kérelmében indítványozta a jogorvoslati eljárás hivatalbóli kiterjesztését is arra, hogy a Döntőbizottság vizsgálja a Kbt. 50. § (4) bekezdése ajánlatkérői megsértését. A jogorvoslati eljárás során – az indítvánnyal ellentétben – hivatalbóli kiterjesztésre nem került sor, tekintettel a Kbt. 158. § (1) bekezdésében foglalt, említett jogintézmény diszkrecionális jellegére.”[5] Kiterjesztésre egyébként általában akkor szokott sor kerülni, ha a bírálat jogszerűsége nem ítélhető meg hiányos, ellentmondásos vagy nem kellően részletezett ajánlatkérői előírások folytán. Vagyis nem lehet megállapítani, hogy a referencia-igazolás megfelelt az ajánlatkérői követelményeknek vagy sem,[6] vagy hogy pontosan mit is várt el az ajánlatkérő a teljesítendő szolgáltatással kapcsolatban.[7]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Kbt. 158. § (1) bekezdés."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.808/18/2015. számú határozata. Hatályon kívül helyezte a Székesfehérvári"
       },
       {
@@ -15359,23 +15338,23 @@
        "html": "Közigazgatási és Munkaügyi Bíróság 13.K.27.011/2016/23. számú ítélete."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.663/18/2011. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.439/30/2020. számú végzése. A kereset elutasításáról ld. Fővárosi Törvényszék 103.K.707.826/2020/10 számú ítélete"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A KDB D.43/20/2019. sz. határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. pl. a KDB D.172/21/2022. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] Ld. pl. a KDB D.469/21/2022. számú határozatát."
       },
       {
@@ -15387,15 +15366,15 @@
        "html": "Az ajánlatkérőnek is lehetősége van a közbeszerzési eljárás felfüggesztésére: „A Közbeszerzési Döntőbizottság eljárásának megindítása esetén az ajánlatkérő a folyamatban levő közbeszerzési eljárását felfüggesztheti, amiről köteles a Közbeszerzési Döntőbizottságot értesíteni. A felfüggesztés a folyamatban lévő eljárási határidőket a felfüggesztés időtartamával meghosszabbítja.”[1] A KDB e rendelkezéssel kapcsolatban a következőkre mutatott rá: „A fenti rendelkezés alapján megállapítható, hogy a jogorvoslati kérelem benyújtása és a jogorvoslati eljárás megindítása nem eredményezi automatikusan a folyamatban lévő közbeszerzési eljárás felfüggesztését. Ajánlatkérőnek azonban lehetősége van arra, hogy – ha úgy ítéli meg a kérelem vagy más kapcsolódó releváns adatok alapján – a közbeszerzési eljárását felfüggeszthesse. A felfüggesztés hiányában folytathatja a közbeszerzési eljárást. Abban az esetben azonban, ha ajánlatkérő dönt a közbeszerzési eljárás felfüggesztéséről, a közbeszerzési eljárási határidők a felfüggesztés időtartamával meghosszabbodnak.”[2] Ha az ajánlatkérő dönt a felfüggesztésről, akkor az a bírság kiszabásának mérlegelése körében az ajánlatkérő javára értékelhető körülmény. („A Döntőbizottság az ajánlatkérő javára értékelte, hogy a közbeszerzési eljárást felfüggesztette.”)[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Kbt. 154. § (3) bekezdés"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.498/10/2011. számú végzése."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.1032/24/2016. számú végzése."
       },
       {
@@ -15452,11 +15431,11 @@
        "html": "eljárásban a szerződést már megkötötték."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Kbt. 161. § (1) bekezdés."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] <a href=\"https://www.kozbeszerzes.hu/media/documents/\" target=\"_blank\" rel=\"noopener\">https://www.kozbeszerzes.hu/media/documents/</a>"
       },
       {
@@ -15496,7 +15475,7 @@
        "html": "2. az eljárás során felmerült minden más kérdésben végzést bocsátanak ki."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Fővárosi Bíróság 13.K.32.041/2009/12. számú ítélete; ld. még a Legfelsőbb Bíróság"
       },
       {
@@ -15548,7 +15527,7 @@
        "html": "10. ábra: Jogorvoslati eljárás"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a Kbt. 165. § (2)-(3) bekezdéseit."
       },
       {
@@ -15807,11 +15786,11 @@
        "html": "A „különösen” kitételből eredően a jogszabályi felsorolás nem zárt, további, az ügyhöz (a jogsértés jellegéhez, vagy éppen orvoslásához) kapcsolódó releváns szempontok is figyelembe vehetők a döntés meghozatalakor."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] A Székesfehérvári Közigazgatási és Munkaügyi Bíróság 14.K.27.323/2016/30. sz. ítélete."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A Kúria Kfv.IV.37.737/2018/13. sz. ítélete, [59]"
       },
       {
@@ -15855,15 +15834,15 @@
        "html": "<strong>megsemmisítésével a jogsértés).[3]</strong>"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] 3188/2017. (VII. 21.) AB határozat"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A Kúria Kfv.III.37.953/2017/5. sz. ítélete"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 165. § (11) bekezdését, valamint Pfeffer Zsolt: Mérlegelési és diszkrecionális jogkörön alapuló döntések a közbeszerzések területén I. Közbeszerzési Értesítő Plusz,"
       },
       {
@@ -15875,11 +15854,11 @@
        "html": "A következő jogkövetkezmény a döntés megsemmisítése, amely akkor alkalmazható, ha a szerződést még nem kötötték meg. Ilyen esetben a jogsértés helyrehozható. A KDB – ahogyan arról korábban szó volt –, nem változtathatja meg a jogsértő ajánlatkérői döntést, nem veheti át a döntési jogkört. A KDB által megsemmisített döntések „törlésre kerülnek”, az eljárás abba a fázisba kerül vissza, ameddig a döntéseket nem semmisítette meg a KDB.[1] Ha megsemmisítik az eljárást megindító felhívást és az azt követően hozott döntéseket, akkor a közbeszerzési eljárás nem folytatható, eredménytelenné nyilvánítást követően újraindítható. Ha az eljárást lezáró döntést semmisíti meg a KDB, akkor az ajánlatkérő visszakerül a bírálat szakaszába, újra jogosult a bírálathoz kapcsolódóan eljárási cselekményeket gyakorolni, elmaradt cselekményeket pótolni. Viszont a megsemmisítéssel nem érintett döntések és az arra adott ajánlattevői válaszok továbbra is hatályosak, tehát nem lehet és nem is kell a teljes bírálatot elölről kezdeni. Például, ha valamely ajánlattevőt az ajánlatkérő hiánypótlásra szólított fel, a hiánypótlást nem teljesítette, akkor nem nyílik meg az újbóli hiánypótlási lehetőség, tekintettel arra, hogy „Az eljárást lezáró döntés megsemmisítése nem eredményezi annak egyenes következményeként a közbenső eljárási döntések, így a hiánypótlás elrendelésére vonatkozó döntés megsemmisítését.”[2] Egyébként bármilyen más bírálati eljárási cselekmény teljesíthető (kérhető további felvilágosítás, hiánypótlás, árindokolás stb.). Az ajánlatkérő köteles 30 napon belül új eljárást lezáró döntést hozni, az ajánlattevői fenntartó nyilatkozatok beszerzését követően.[3] A Kbt. egyébként biztosítja az eredménytelenné nyilvánítás lehetőségét akkor, ha a KDB megsemmisíti az ajánlatkérő valamely döntését, és az ajánlatkérő új közbeszerzési eljárás lefolytatását határozza el vagy eláll az eljárás lefolytatásának szándékától. Az ajánlatkérő azonban nem nyilváníthatja eredménytelennek az eljárást akkor, ha a jogszerűtlen eljárást lezáró döntés megsemmisítését követően jogszerű döntés meghozatalával az eljárás jogszerűsége helyreállítható.[4]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. Pfeffer Zsolt: A korrekció (reparálás) lehetőségei és határai a közbeszerzési jogban – az ajánlatkérő döntésének megsemmisítéshez kapcsolódó jogi problémák. In: Ádám, Antal (szerk.): PhD tanulmányok 11 (PTE ÁJK Doktori Iskola, Pécs, 2012), 479-496."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] D.441/12/2011. számú döntőbizottsági határozat (a döntéshozatal időpontja: 2011."
       },
       {
@@ -15887,11 +15866,11 @@
        "html": "augusztus 8.)"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Kbt. 165. § (12) bekezdését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a Kbt. 75. § (2) bekezdés d) pontját."
       },
       {
@@ -15915,15 +15894,15 @@
        "html": "Meg kell ilyen esetben vizsgálni azt is, hogy helyreállítható-e az eredeti állapot, vagyis a szerződés a tárgyánál fogva visszafordítható-e vagy sem. Ha nem, akkor további bírság kiszabásáról rendelkeznek, szintén mérlegelési jogkör gyakorlásával."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.290/27/2021. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.368/16/2021. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A Kbt. 137. § (1) bekezdése."
       },
       {
@@ -15952,7 +15931,7 @@
        "file": "modul-3-kviz-7-28.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Kbt. 177. §"
       }
      ],
@@ -16019,23 +15998,23 @@
        "html": "A költségtérítés megállapítására vonatkozó mérlegelési jogkör általános megalapozását az Ákr. végzi el a következőképpen: „A hatóság az indokolatlanul magas eljárási költség helyett alacsonyabb összeget állapít meg.”[3] Ez azt jelenti, hogy a fél által bemutatott és igazolt (például bizonylattal, számlával, költség-, illetve tevékenységkimutatással, szerződéssel)[4] költséget a KDB felülbírálhatja, és nem a teljes összeget rendeli megtéríteni, hanem annak csak egy részét. Vagyis ugyan a megbízási díj az ügyfél és a jogi képviselője között létrejött, a magánjogi szerződési szabadság elvén nyugvó megállapodáson alapul, azonban „amennyiben indokolatlanul magas, azt nem köteles elfogadni, jogszabályi felhatalmazás alapján mérlegelési jogkörben leszállíthatja” a KDB. Másképpen fogalmazva: a jogszabály „nem biztosít alanyi jogot a pernyertes ügyfélnek arra, hogy az eljárással felmerült költségei teljes mértékben megtérüljenek. […] Nem jogszabálysértő tehát, ha a hatóság a fél és jogi képviselője igazolt megállapodásától eltérően […] mérlegeléssel a megállapodottnál alacsonyabb összegben határozza meg az ügyvédi munkadíjat. Az ügyvédi munkadíj megállapításánál ugyanis arra is figyelemmel kell lenni, hogy milyen volt a kifejtett ügyvédi tevékenység idő- és munkaigényessége, színvonala. Más oldalról figyelemmel kell lenni arra is, hogy a kirívóan magas összegben, a kifejtett munkavégzés mértékétől aránytalanul eltérő ügyvédi munkadíj sértheti a társadalom értékítéletét.”[5]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. az Ákr. 129. §-át."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. az eljárási költségekről, az iratbetekintéssel összefüggő költségtérítésről, a költségek megfizetéséről, valamint a költségmentességről szóló 469/2017. (XII. 28.) Korm. rendeletet."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Az Ákr. 129. § (3) bekezdése"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a KDB D.183/21/2009. számú határozatát, vö. D.885/16/2016. számú határozattal."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] A Fővárosi Ítélőtábla 4.Kf.27.459/2007/7. sz. ítélete. Ld. még a KDB D.190/4/2011. számú határozatát."
       },
       {
@@ -16043,35 +16022,36 @@
        "html": "A mérlegelési jogkör tartalmának vizsgálatakor meg kell határozni azokat a szempontokat, amelyeket a KDB figyelembe vesz (vehet) a döntése meghozatalakor (azaz, hogy jogosnak, arányosnak tartja-e kért munkadíjat vagy azt leszállítja). A vonatkozó joggyakorlatban a következő szempontok szoktak felmerülni azzal, hogy az utóbbi időben rendszerint az utolsó franciabekezdésben említett formulát emeli be a KDB a döntése indokolásába akkor, amikor a képviselői munkadíj elfogadásáról vagy mérsékléséről dönt: - az elkészített beadványok száma, terjedelme, ezek minősége, az elutasított kérelmi elemek száma, (lényegi kérelmi elem került-e elutasításra), az ügy bonyolultsága, a beadványok hasonlósága (pl. több kérelmező vett részt több párhuzamos jogorvoslati eljárásban);[1] - az eldöntendő jogkérdés jellege;[2] - a beadványok elkészítésére fordított idő, e beadványok jogi indokolása, tárgyalás tartására sor került-e, és ha igen, az milyen hosszú volt;[3] - fenntartotta-e a kérelmező teljes terjedelmében a jogorvoslati kérelmét, illetve módosította-e azt;[4] - ügyvédjelölt vagy ügyvéd képviselt-e a tárgyaláson a felet;[5] - a képviseleti munka színvonala;[6] - a beadványok megszerkesztésének időigényessége, a beadványok és a tárgyalási nyilatkozat terjedelme, valamint az azokban kifejezésre juttatott jogi érvelés bonyolultságának foka és helytállósága.[7]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.788/17/2010. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.31/16/2010. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a KDB D.657/15/2009. számú és a D.891/17/2015. számú határozatait."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] Ld. a KDB D.189/12 /2008. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a KDB D.201/7/2009. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[6] Ld. a KDB D.416/17/2017. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[7] Ld. pl. a KDB D.2/17/2019. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "note",
+       "kind": "warn",
        "html": "Fontos ugyanakkor, hogy mi tekintendő egyáltalán „eljárási költségnek”, vagyis, hogy mit sorol az említett kormányrendelet normatív meghatározása ebbe a körbe. A gyakorlatban a munkadíjon kívül felmerülhet a szemle költsége vagy az útiköltség, de vannak olyan kérelmezők, akik a néhány ezer forint mértékű fénymásolási költséget is fel kívánták számítani.[1] A költségek általános csökkentését teszi lehetővé, hogy a KDB immár elektronikus úton tartja a tárgyalásait.[2]"
       },
       {
@@ -16084,11 +16064,11 @@
        "file": "modul-3-kviz-8-29.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Ld. a KDB D.404/41/2017. számú határozatát."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] <a href=\"https://www.kozbeszerzes.hu/media/documents/\" target=\"_blank\" rel=\"noopener\">https://www.kozbeszerzes.hu/media/documents/</a>"
       },
       {
@@ -16096,15 +16076,15 @@
        "html": "<strong>targyalasok_elektronikusan_torteno_megtartasara.pdf</strong>"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] A KDB D.348/22/2019. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[4] A KDB D.276/21/2018. számú határozata"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[5] Ld. a Kúria Kfv.V.35.172/2014/4. számú ítéletét, illetve a KDB D.145/28/2021. számú határozatát."
       }
      ],
@@ -16751,7 +16731,7 @@
        "html": "Példa: a Kbt. rögzíti, hogy az iratbetekintés során nincs lehetőség más ajánlattevő ajánlatának teljes körű átvizsgálására. Ha viszont az ajánlattevő többször kérhetne iratbetekintést, amelyek során csak bizonyos részeket tekint meg, viszont összességében több alkalommal a teljes ajánlatot átnézhetné, akkor már megvalósul a joggal való visszaélés tilalma.[2] De ugyanúgy a joggal való visszaélés szempontjából aggályos az, ha az ajánlattevő a saját ajánlatának érvénytelenné nyilvánítását kívánja elérni.[3]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Korrupcióellenes munkacsoport 2022. évre vonatkozó jelentése. (Budapest, 2023."
       },
       {
@@ -16767,11 +16747,11 @@
        "html": "42. o."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] Ld. a KDB D.579/10/2017. számú végzését."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Ld. a Fővárosi Közigazgatási és Munkaügyi Bíróság 14.K.33.629/2013/9. számú ítéletét. A Közbeszerzési Hatóság etikai kódexe[1] számos hasznos szempontot említ, amelyet az ajánlattevőknek célszerű áttekinteni. Ebben a körben kiemelendő a felelős ajánlattétel kérdése. Ez azt jelenti, hogy a gazdasági szereplők figyelembe veszik a közpénzek felelős és hatékony felhasználásának követelményét, tartózkodnak a teljesíthetetlen ajánlatok megtételétől, nem támasztanak lehetetlen feltételeket, a piaci viszonyoknak megfelelő árakat ajánlanak meg. Továbbá csak akkor vesznek részt a közbeszerzési eljárásban, ha ténylegesen hajlandók és képesek a szerződés teljesítésére. Emellett nem alakítanak ki indokolatlanul hosszú alvállalkozói láncolatokat, nem vonnak be felesleges, érdemi tevékenységet nem végző alvállalkozókat."
       },
       {
@@ -16784,15 +16764,15 @@
        "file": "modul-1-kviz-6-10.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] <a href=\"https://www.kozbeszerzes.hu/hatosag/kozbeszerzesi-hatosag/kozbeszerzesi-etikai-kodex/\" target=\"_blank\" rel=\"noopener\">https://www.kozbeszerzes.hu/hatosag/kozbeszerzesi-hatosag/kozbeszerzesi-etikai-kodex/</a>"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[2] A KDB D.479/15/2022. számú határozata."
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[3] Korrupcióellenes munkacsoport 2022. évre vonatkozó jelentése. (Budapest, 2023."
       },
       {
@@ -16821,7 +16801,7 @@
        "html": "Különösen fontos a megfelelő intézményrendszer működtetése, a különböző ellenőrzést végző hatóságok ellenőrzési tevékenysége. A közbeszerzési és a különböző támogatások felhasználására vonatkozó jogszabályok különböző ellenőrzési mechanizmusokat állapítanak meg. Az uniós támogatásokat nyújtó irányító hatóságok ellenőrzései mellett különösen hangsúlyos a Közbeszerzési Hatóság szerződésellenőrzési tevékenysége: 2022-ben 91 db ellenőrzési eljárást rendeltek el, de a vizsgálatok köre ennél szélesebb körű. Ugyanebben az évben 15 esetben tettek büntetőfeljelentést, 8 esetben korrupciós bűntett gyanúját megjelölve.[1]"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Korrupcióellenes munkacsoport 2022. évre vonatkozó jelentése. (Budapest, 2023."
       },
       {
@@ -16870,7 +16850,7 @@
        "file": "modul-2-kviz-9-20.h5p"
       },
       {
-       "t": "p",
+       "t": "foot",
        "html": "[1] Korrupcióellenes munkacsoport 2022. évre vonatkozó jelentése. (Budapest, 2023."
       },
       {

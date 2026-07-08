@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const MODULES = [
+const DEFAULT_MODULES = [
   "A közbeszerzés mint üzleti lehetőség",
   "Belépés és eljárások keresése",
   "Az ajánlattétel",
@@ -12,7 +12,8 @@ const MODULES = [
 ];
 
 /** Élő haladás-demó: a modulok egyesével pipálódnak, a csík lépcsőzetesen tölt (a terv szerint). */
-export default function FeaturedCard({ href }: { href: string }) {
+export default function FeaturedCard({ href, title, modules }: { href: string; title?: string; modules?: string[] }) {
+  const MODULES = modules ?? DEFAULT_MODULES;
   const [step, setStep] = useState(0); // teljesített modulok száma (0..4)
 
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function FeaturedCard({ href }: { href: string }) {
     };
     loop();
     return () => clearTimeout(t);
-  }, []);
+  }, [MODULES.length]);
 
   const pct = Math.round((step / MODULES.length) * 100);
 
@@ -38,7 +39,7 @@ export default function FeaturedCard({ href }: { href: string }) {
         <span className="feat-ico"><i className="ri-scales-3-line" /></span>
         <div className="feat-head-txt">
           <span className="feat-eyebrow">Kiemelt kurzus</span>
-          <p className="feat-title">Közbeszerzési szakmai tananyag</p>
+          <p className="feat-title">{title ?? "Közbeszerzési szakmai tananyag"}</p>
         </div>
         <span className="feat-badge">{step}/{MODULES.length}</span>
       </div>

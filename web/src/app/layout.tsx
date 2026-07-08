@@ -16,20 +16,23 @@ const robotoMono = Roboto_Mono({
   display: "swap",
 });
 
+import { demoText as dt } from "@/lib/lorem";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://kkvkepzes.gov.hu"),
   title: {
-    default: "KKV Képzés – Ingyenes közbeszerzési képzés",
+    default: dt("KKV Képzés – Ingyenes közbeszerzési képzés"),
     template: "%s | KKV Képzés",
   },
-  description:
-    "Ingyenes, nyilvántartott felnőttképzés a közbeszerzési eljárások gyakorlati elsajátításához. Digitális Állampolgárság Program.",
+  description: dt(
+    "Ingyenes, nyilvántartott felnőttképzés a közbeszerzési eljárások gyakorlati elsajátításához. Digitális Állampolgárság Program."
+  ),
   openGraph: {
     type: "website",
     locale: "hu_HU",
     siteName: "KKV Képzés",
-    title: "KKV Képzés – Ingyenes közbeszerzési képzés",
-    description: "Tanuld meg a közbeszerzést a gyakorlatban — ingyen, saját tempóban, letölthető oklevéllel.",
+    title: dt("KKV Képzés – Ingyenes közbeszerzési képzés"),
+    description: dt("Tanuld meg a közbeszerzést a gyakorlatban — ingyen, saját tempóban, letölthető oklevéllel."),
     images: [{ url: "/covers/merleg.webp", width: 1920, height: 800 }],
   },
 };
@@ -41,6 +44,11 @@ export default function RootLayout({
     <html lang="hu" data-scroll-behavior="smooth" className={`${inter.variable} ${robotoMono.variable}`}>
       <body>
         <a href="#main" className="skip-link">Ugrás a tartalomra</a>
+        {process.env.DEMO_LOREM === "1" && (
+          <div className="demo-strip" role="note">
+            <i className="ri-flask-line" /> DEMÓ — a szövegek helyén lorem ipsum áll, a tartalom nem végleges
+          </div>
+        )}
         {children}
       </body>
     </html>

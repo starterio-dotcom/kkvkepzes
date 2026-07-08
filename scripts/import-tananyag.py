@@ -310,6 +310,11 @@ def parse_master(path, report):
     return modules
 
 
+# Kiemelés-mintázatok: a törzsszöveg figyelmeztető/megjegyzés-bekezdései infoboxba
+RE_NOTE_WARN = re.compile(r"^(Kiemelten fontos|Fontos|Figyelem|Felhívjuk a figyelmet|Lényeges)\b")
+RE_NOTE_INFO = re.compile(r"^(Megjegyzendő|Jó tudni|Tipp\b|Érdemes tudni)")
+
+
 def post_blocks(lesson, report):
     """Listák/gondolkodtatók csoportosítása, tanulási célok kiemelése, kvíz-parse."""
     blocks = []
@@ -328,6 +333,19 @@ def post_blocks(lesson, report):
                 blocks.append({"t": "list", "ordered": b["kind"] == "ordered", "items": [b["html"]]})
             continue
         objectives_mode = False
+        if b["t"] == "p" and lesson["kind"] in ("lecke", "esettanulmany"):
+            txt = b.get("text", "")
+            if txt in ("•", "-", "–"):
+                continue  # árva felsorolásjel (docx-konverziós maradvány)
+            if re.match(r"^\[\d+\]\s", txt):
+                blocks.append({"t": "foot", "html": b["html"], "text": txt})
+                continue
+            if RE_NOTE_WARN.match(txt):
+                blocks.append({"t": "note", "kind": "warn", "html": b["html"], "text": txt})
+                continue
+            if RE_NOTE_INFO.match(txt):
+                blocks.append({"t": "note", "kind": "info", "html": b["html"], "text": txt})
+                continue
         if b["t"] == "_think_raw":
             if blocks and blocks[-1]["t"] == "think":
                 blocks[-1]["items"].append(b["html"])

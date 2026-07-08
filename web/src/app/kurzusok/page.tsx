@@ -2,12 +2,12 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { allVideoPlans, getOutline, totalLessons, totalModules } from "@/lib/tananyag";
+import { demoText as dt } from "@/lib/lorem";
 import { getSession } from "@/lib/auth";
 
 export const metadata = {
-  title: "Kurzusok",
-  description:
-    "Felvehető ingyenes közbeszerzési képzések: hagyományos és videókkal bővített tanfolyam a teljes tematikával, valamint élő képzések.",
+  title: dt("Kurzusok"),
+  description: dt("Felvehető ingyenes közbeszerzési képzések: hagyományos és videókkal bővített tanfolyam a teljes tematikával, valamint élő képzések."),
 };
 
 export default async function Page() {
@@ -37,8 +37,8 @@ export default async function Page() {
             <div className="ccard">
               <div className="ccard-banner indigo" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Szakmai tananyag</span><i className="ri-book-open-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Közbeszerzési szakmai tananyag</h3>
-                <p className="body">A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.</p>
+                <h3 className="h4">{dt("Közbeszerzési szakmai tananyag")}</h3>
+                <p className="body">{dt("A teljes, folyamatalapú tananyag olvasmányos leckékkel, képernyőképekkel, esettanulmány-fonállal és modulzáró kvízekkel.")}</p>
                 <div className="ccard-meta">
                   <span><i className="ri-stack-line" /> {totalModules} modul</span>
                   <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
@@ -50,8 +50,8 @@ export default async function Page() {
             <div className="ccard">
               <div className="ccard-banner teal" style={{ ["--cbcover" as string]: "url(/covers/merleg.webp)" } as React.CSSProperties}><span className="ccard-tag">Videókkal bővítve</span><i className="ri-play-circle-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Közbeszerzési szakmai tananyag (videókkal bővítve)</h3>
-                <p className="body">Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.</p>
+                <h3 className="h4">{dt("Közbeszerzési szakmai tananyag (videókkal bővítve)")}</h3>
+                <p className="body">{dt("Ugyanaz a teljes tananyag, kiegészítve képernyős videókkal a legfontosabb EKR-műveletekhez — a szöveges tartalom is elérhető.")}</p>
                 <div className="ccard-meta">
                   <span><i className="ri-film-line" /> {videoCount} videó</span>
                   <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
@@ -63,8 +63,8 @@ export default async function Page() {
             <div className="ccard">
               <div className="ccard-banner green" style={{ ["--cbcover" as string]: "url(/covers/podium.webp)" } as React.CSSProperties}><span className="ccard-tag">Élő képzés</span><i className="ri-team-line" /></div>
               <div className="ccard-body">
-                <h3 className="h4">Ingyenes Közbeszerzési Képzések</h3>
-                <p className="body">Online és személyes formában megrendezett, jelentkezéshez kötött ingyenes képzések gyakorló szakemberek vezetésével.</p>
+                <h3 className="h4">{dt("Ingyenes Közbeszerzési Képzések")}</h3>
+                <p className="body">{dt("Online és személyes formában megrendezett, jelentkezéshez kötött ingyenes képzések gyakorló szakemberek vezetésével.")}</p>
                 <div className="ccard-meta">
                   <span><i className="ri-calendar-event-line" /> 2 alkalom</span>
                   <span><i className="ri-global-line" /> Online + személyes</span>
@@ -80,7 +80,7 @@ export default async function Page() {
       <section className="sec sec-alt">
         <div className="container">
           <div className="eyebrow" style={{ marginBottom: "var(--space-300)" }}>Tematika</div>
-          <h2 className="h2" style={{ marginBottom: "var(--space-200)" }}>Közbeszerzési szakmai tananyag</h2>
+          <h2 className="h2" style={{ marginBottom: "var(--space-200)" }}>{dt("Közbeszerzési szakmai tananyag")}</h2>
           <p className="body" style={{ marginBottom: "var(--space-1200)" }}>
             {totalModules} modul · {totalLessons} lecke · folyamatalapú felépítés — a teljes anyag ingyenes.
           </p>

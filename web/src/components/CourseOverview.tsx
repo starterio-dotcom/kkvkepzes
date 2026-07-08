@@ -8,6 +8,7 @@ import {
   courseName, firstLessonId, getOutline, totalLessons, totalMinutes,
   type Variant,
 } from "@/lib/tananyag";
+import { demoText as dt } from "@/lib/lorem";
 import { getSession } from "@/lib/auth";
 
 const COPY: Record<Variant, { label: string; lead: string; icon: string }> = {
@@ -70,7 +71,7 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
               <span className="ptag green">Ingyenes</span>
             </div>
             <h1 className="h1 white">{courseName(variant)}</h1>
-            <p className="pagehead-lead">{copy.lead}</p>
+            <p className="pagehead-lead">{dt(copy.lead)}</p>
             <div className="ovr-meta">
               <span><i className="ri-stack-line" /> {outline.length} szakasz</span>
               <span><i className="ri-list-check-2" /> {totalLessons} lecke</span>
@@ -86,8 +87,8 @@ export default async function CourseOverview({ variant }: { variant: Variant }) 
               <div className="ovr-learn">
                 <h2 className="h3">Mit tanulsz meg?</h2>
                 <ul>
-                  {LEARN.map((x) => (
-                    <li key={x}><i className="ri-checkbox-circle-fill" /> {x}</li>
+                  {LEARN.map((x, i) => (
+                    <li key={i}><i className="ri-checkbox-circle-fill" /> {dt(x)}</li>
                   ))}
                 </ul>
               </div>

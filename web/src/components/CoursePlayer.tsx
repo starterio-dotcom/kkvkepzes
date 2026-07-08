@@ -260,6 +260,18 @@ function BlockView({ b, lesson, variant }: { b: Block; lesson: PlayerLesson; var
         : <ul>{b.items.map((it, i) => <li key={i} dangerouslySetInnerHTML={{ __html: it }} />)}</ul>;
     case "transition":
       return <blockquote className="ltrans" dangerouslySetInnerHTML={{ __html: b.html }} />;
+    case "foot":
+      return <p className="lfoot" dangerouslySetInnerHTML={{ __html: b.html }} />;
+    case "note":
+      return (
+        <div className={`lnote ${b.kind}`}>
+          <span className="lnote-label">
+            <i className={b.kind === "warn" ? "ri-alarm-warning-line" : "ri-information-line"} />
+            {b.kind === "warn" ? "Fontos" : "Jó tudni"}
+          </span>
+          <p dangerouslySetInnerHTML={{ __html: b.html }} />
+        </div>
+      );
     case "think":
       return (
         <div className="lthink">
@@ -316,7 +328,11 @@ function BlockView({ b, lesson, variant }: { b: Block; lesson: PlayerLesson; var
             </div>
           );
         }
-        return <div className="lchip lchip-video"><i className="ri-film-line" /> Meglévő interaktív videó — átemelés alatt <code>({b.file})</code></div>;
+        return (
+          <div className="vplan">
+            <VideoFrame title={b.title ?? "Videó a leckéhez"} genre="videó" length="—" />
+          </div>
+        );
       }
       return <div className="lchip"><i className="ri-drag-drop-line" /> Interaktív gyakorlat (H5P) — a Moodle-változatban érhető el.</div>;
     case "video":
@@ -385,30 +401,37 @@ function TableBlock({ rows }: { rows: string[][] }) {
   );
 }
 
-/* ---- Tervezett videó: a videós lejátszó kerete, "Hamarosan" jelzéssel ---- */
+/* ---- A videós lejátszó kerete "Hamarosan" jelzéssel (tervezett/demó videó) ---- */
+function VideoFrame({ title, genre, length }: { title: string; genre: string; length: string }) {
+  return (
+    <div className="vvideo">
+      <span className="vvideo-tag"><i className="ri-play-circle-fill" /> Videós lecke · {genre}</span>
+      <div className="vvideo-mock">
+        <div className="vvideo-mock-bar"><i /><i /><i /><span>ekr.gov.hu</span></div>
+        <div className="vvideo-mock-body"><span className="w1" /><span /><span /><span className="half" /><span className="half" /></div>
+      </div>
+      <div className="vvideo-play soon" aria-hidden="true"><i className="ri-play-fill" /></div>
+      <div className="vvideo-soon"><b>Hamarosan</b><span>A videó gyártás alatt áll</span></div>
+      <div className="vvideo-title">{title}</div>
+      <div className="vvideo-ctrl">
+        <i className="ri-play-line" />
+        <i className="ri-volume-up-line" />
+        <span className="vvideo-time">0:00 / {length}</span>
+        <div className="vvideo-track"><span style={{ width: "0%" }} /></div>
+        <span className="vvideo-chip">1.0×</span>
+        <i className="ri-closed-captioning-line" />
+        <i className="ri-fullscreen-line" />
+      </div>
+    </div>
+  );
+}
+
+/* ---- Tervezett videó kártyája: keret + tartalmi leírás ---- */
 function VideoPlanCard({ v }: { v: VideoPlan }) {
   if (!v) return null;
   return (
     <div className="vplan">
-      <div className="vvideo">
-        <span className="vvideo-tag"><i className="ri-play-circle-fill" /> Videós lecke · {v.genre}</span>
-        <div className="vvideo-mock">
-          <div className="vvideo-mock-bar"><i /><i /><i /><span>ekr.gov.hu</span></div>
-          <div className="vvideo-mock-body"><span className="w1" /><span /><span /><span className="half" /><span className="half" /></div>
-        </div>
-        <div className="vvideo-play soon" aria-hidden="true"><i className="ri-play-fill" /></div>
-        <div className="vvideo-soon"><b>Hamarosan</b><span>A videó gyártás alatt áll</span></div>
-        <div className="vvideo-title">{v.title}</div>
-        <div className="vvideo-ctrl">
-          <i className="ri-play-line" />
-          <i className="ri-volume-up-line" />
-          <span className="vvideo-time">0:00 / {v.length}</span>
-          <div className="vvideo-track"><span style={{ width: "0%" }} /></div>
-          <span className="vvideo-chip">1.0×</span>
-          <i className="ri-closed-captioning-line" />
-          <i className="ri-fullscreen-line" />
-        </div>
-      </div>
+      <VideoFrame title={v.title} genre={v.genre} length={v.length} />
       <div className="vplan-info">
         <p>{v.desc}</p>
         <div className="vplan-meta">

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#eef1fd"/>
+  <rect x="24" y="24" width="752" height="56" rx="8" fill="#dde3fa"/>
+  <rect x="24" y="104" width="480" height="20" rx="6" fill="#d3dbf8"/>
+  <rect x="24" y="140" width="600" height="20" rx="6" fill="#dde3fa"/>
+  <rect x="24" y="176" width="380" height="20" rx="6" fill="#dde3fa"/>
+  <rect x="24" y="228" width="360" height="120" rx="10" fill="#d3dbf8"/>
+  <rect x="416" y="228" width="360" height="120" rx="10" fill="#dde3fa"/>
+  <rect x="24" y="372" width="752" height="20" rx="6" fill="#e2e7fb"/>
+  <g fill="#8e9dee" font-family="system-ui, sans-serif" font-size="26" font-weight="600" text-anchor="middle">
+    <text x="400" y="60">Képernyőkép helye — demó</text>
+  </g>
+</svg>
